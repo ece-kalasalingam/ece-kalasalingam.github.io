@@ -3,7 +3,7 @@ h1 {
 }
 
 .subtext {
-  color: #555;
+  color: var(--muted);
   margin-bottom: 24px;
 }
 
@@ -17,17 +17,17 @@ h1 {
   display: block;
   text-decoration: none;
   color: inherit;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border);
   border-radius: 10px;
   padding: 16px;
-  background: #fff;
+  background: var(--surface);
   transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
 .card:hover,
 .card:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--text) 16%, transparent);
   outline: none;
   text-decoration: none;
 }
@@ -52,7 +52,7 @@ h1 {
 
 .cta {
   margin-top: 12px;
-  color: #0a58ca;
+  color: var(--link);
   font-weight: 600;
   font-size: 0.95rem;
 }

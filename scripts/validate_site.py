@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import sys
 from pathlib import Path
 from typing import Any
@@ -47,13 +48,16 @@ def validate_faculty_file(repo_root: Path) -> list[dict[str, str]]:
     return validated
 
 
-def validate_data_files(repo_root: Path, faculty_list: list[dict[str, str]]) -> None:
+def validate_data_files(repo_root: Path, faculty_list: list[dict[str, str]], allow_missing: bool) -> None:
     data_dir = repo_root / "data"
     require(data_dir.exists(), "data directory is missing")
 
     for faculty in faculty_list:
         slug = faculty["slug"]
         data_path = data_dir / f"{slug}.json"
+        if not data_path.exists() and allow_missing:
+            print(f"Validation note: data file not found yet for slug '{slug}' (allowed in batching mode).")
+            continue
         data_raw = load_json(data_path)
         require(isinstance(data_raw, dict), f"{data_path} must contain an object")
         require(data_raw.get("slug") == slug, f"{data_path} has mismatched slug")
@@ -86,8 +90,9 @@ def validate_html_files(repo_root: Path) -> None:
 
 def main() -> int:
     repo_root = Path(__file__).resolve().parent.parent
+    allow_missing = os.getenv("VALIDATE_ALLOW_MISSING", "").strip() == "1"
     faculty_list = validate_faculty_file(repo_root)
-    validate_data_files(repo_root, faculty_list)
+    validate_data_files(repo_root, faculty_list, allow_missing=allow_missing)
     validate_html_files(repo_root)
     print("Validation passed.")
     return 0

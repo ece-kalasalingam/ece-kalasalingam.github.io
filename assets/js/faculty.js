@@ -352,6 +352,15 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
   total.textContent = `Total Publications: ${facultyData.total_publications ?? publications.length}`;
   headerInfo.appendChild(total);
 
+  const totalCitationsValue = publications.reduce((sum, pub) => {
+    const citations = Number(pub.citations ?? 0);
+    return sum + (Number.isFinite(citations) ? citations : 0);
+  }, 0);
+  const totalCitations = document.createElement("p");
+  totalCitations.className = "meta";
+  totalCitations.textContent = `Total Citations: ${totalCitationsValue}`;
+  headerInfo.appendChild(totalCitations);
+
   const hIndex = document.createElement("p");
   hIndex.className = "meta";
   hIndex.textContent = `h-index: ${facultyData.h_index ?? "N/A"}`;

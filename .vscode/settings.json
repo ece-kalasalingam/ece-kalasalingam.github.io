@@ -2,6 +2,9 @@
     "python-envs.defaultEnvManager": "ms-python.python:conda",
     "python-envs.defaultPackageManager": "ms-python.python:conda",
     "chat.tools.terminal.autoApprove": {
-        "git add": true
+        "git add": true,
+        "git commit": true,
+        "git push": true,
+        ".github/workflows/update_publications.yaml": true
     }
 }

@@ -11,7 +11,20 @@ Serve the repository root with any static server (for example, `python -m http.s
 - Source faculty list: `faculty.json`
 - Faculty metadata output: `data/<slug>.json`
 - Publications payload output: `data/publications/<slug>.json`
+- Sync checkpoint state: `data/sync_state.json`
 - Fetch script: `scripts/fetch_publications.py`
+
+### Scalable Fetch Modes
+
+The fetch script supports scalable operation for larger faculty counts:
+
+- `FETCH_MODE=incremental|full`
+- `BATCH_SIZE=<positive integer>`
+- `INCREMENTAL_YEARS=<positive integer>`
+
+`incremental` mode fetches recent publications only and merges with existing cached publications.
+`full` mode refreshes full publication history for processed faculty.
+Batch checkpoint progress is persisted in `data/sync_state.json`.
 
 ## Faculty Photos
 

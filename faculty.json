@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Dr. Jeya Prakash K",
+    "slug": "jeyaprakash",
+    "author_id": "57195717091",
+    "department": "ECE",
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Faculty Member 2",
+    "slug": "faculty2",
+    "author_id": "12345678900",
+    "department": "ECE",
+    "designation": "Assistant Professor"
+  }
+]

@@ -20,7 +20,11 @@ from requests.exceptions import ConnectionError as RequestsConnectionError
 from requests.exceptions import Timeout
 
 SEARCH_URL: Final[str] = "https://api.elsevier.com/content/search/scopus"
+AUTHOR_URL_TEMPLATE: Final[str] = "https://api.elsevier.com/content/author/author_id/{author_id}"
+
 API_KEY: Final[str | None] = os.getenv("ELSEVIER_API_KEY")
+INST_TOKEN: Final[str | None] = os.getenv("ELSEVIER_INST_TOKEN")
+
 OUTPUT_DIR: Final[Path] = Path("data")
 STATE_FILE: Final[Path] = OUTPUT_DIR / "sync_state.json"
 
@@ -64,6 +68,13 @@ class PublicationsFileOutput(TypedDict):
     publications: list[PublicationEntry]
 
 
+class FacultyRunStatus(TypedDict, total=False):
+    last_synced_at: str
+    last_mode: str
+    status: str
+    message: str
+
+
 class SyncState(TypedDict, total=False):
     cursor: int
     last_run_at: str
@@ -71,7 +82,14 @@ class SyncState(TypedDict, total=False):
     batch_size: int
     incremental_years: int
     processed_slugs: list[str]
-    faculty_status: dict[str, dict[str, str]]
+    faculty_status: dict[str, FacultyRunStatus]
+
+
+class RequestResult(TypedDict):
+    ok: bool
+    status_code: int | None
+    response: Response | None
+    error: str | None
 
 
 def ensure_object(value: object, context: str) -> JSONObject:
@@ -146,9 +164,17 @@ def utc_now_iso() -> str:
 
 
 def validate_mode(mode: str) -> str:
-    if mode not in ("incremental", "full"):
-        return "incremental"
-    return mode
+    return mode if mode in ("incremental", "full") else "incremental"
+
+
+def build_headers(api_key: str) -> dict[str, str]:
+    headers = {
+        "X-ELS-APIKey": api_key,
+        "Accept": "application/json",
+    }
+    if INST_TOKEN and INST_TOKEN.strip():
+        headers["X-ELS-Insttoken"] = INST_TOKEN.strip()
+    return headers
 
 
 def load_faculty_list(path: Path) -> list[FacultyEntry]:
@@ -181,21 +207,28 @@ def load_faculty_list(path: Path) -> list[FacultyEntry]:
 def load_sync_state(path: Path) -> SyncState:
     if not path.exists():
         return SyncState(cursor=0, processed_slugs=[], faculty_status={})
+
     raw_data: object = json.loads(path.read_text(encoding="utf-8"))
     obj = ensure_object(raw_data, "sync_state.json")
+
     state: SyncState = {}
     state["cursor"] = get_int_field(obj, "cursor", 0)
+
     processed = obj.get("processed_slugs")
     state["processed_slugs"] = [str(x) for x in processed] if isinstance(processed, list) else []
+
     faculty_status_raw = obj.get("faculty_status")
+    normalized: dict[str, FacultyRunStatus] = {}
     if isinstance(faculty_status_raw, dict):
-        normalized: dict[str, dict[str, str]] = {}
         for slug, status in faculty_status_raw.items():
             if isinstance(status, dict):
-                normalized[str(slug)] = {str(k): str(v) for k, v in status.items()}
-        state["faculty_status"] = normalized
-    else:
-        state["faculty_status"] = {}
+                normalized[str(slug)] = {
+                    "last_synced_at": get_str_field(cast(JSONObject, status), "last_synced_at"),
+                    "last_mode": get_str_field(cast(JSONObject, status), "last_mode"),
+                    "status": get_str_field(cast(JSONObject, status), "status"),
+                    "message": get_str_field(cast(JSONObject, status), "message"),
+                }
+    state["faculty_status"] = normalized
     return state
 
 
@@ -211,17 +244,30 @@ def perform_request(
     headers: dict[str, str],
     params: dict[str, Union[str, int]],
     author_id: str,
-    url: str = SEARCH_URL,
+    url: str,
     max_retries: int = 4,
-) -> Response:
+) -> RequestResult:
     for attempt in range(max_retries):
         try:
-            response: Response = session.get(url, headers=headers, params=params, timeout=30)
+            response = session.get(url, headers=headers, params=params, timeout=30)
+
             if response.status_code in (401, 403):
-                raise RuntimeError(f"Auth failure ({response.status_code}) for {author_id}")
+                return {
+                    "ok": False,
+                    "status_code": response.status_code,
+                    "response": None,
+                    "error": f"Auth failure ({response.status_code}) for {author_id}",
+                }
+
             if response.status_code == 429:
                 if attempt == max_retries - 1:
-                    raise RuntimeError(f"Rate limit exceeded (429) for {author_id}")
+                    return {
+                        "ok": False,
+                        "status_code": 429,
+                        "response": None,
+                        "error": f"Rate limit exceeded (429) for {author_id}",
+                    }
+
                 retry_after_raw = response.headers.get("Retry-After", "").strip()
                 retry_after_seconds: float | None = None
                 if retry_after_raw:
@@ -229,21 +275,58 @@ def perform_request(
                         retry_after_seconds = float(retry_after_raw)
                     except ValueError:
                         retry_after_seconds = None
-                wait_seconds = retry_after_seconds if retry_after_seconds is not None else (2**attempt) + random.uniform(0, 0.8)
+
+                wait_seconds = (
+                    retry_after_seconds
+                    if retry_after_seconds is not None
+                    else (2**attempt) + random.uniform(0, 0.8)
+                )
                 time.sleep(max(wait_seconds, 0.5))
                 continue
+
             if response.status_code >= 500:
                 if attempt == max_retries - 1:
-                    raise RuntimeError(f"Server error ({response.status_code}) after {max_retries} attempts")
+                    return {
+                        "ok": False,
+                        "status_code": response.status_code,
+                        "response": None,
+                        "error": f"Server error ({response.status_code}) after {max_retries} attempts for {author_id}",
+                    }
                 time.sleep((2**attempt) + random.uniform(0, 0.6))
                 continue
+
             response.raise_for_status()
-            return response
+            return {
+                "ok": True,
+                "status_code": response.status_code,
+                "response": response,
+                "error": None,
+            }
+
         except (Timeout, RequestsConnectionError) as exc:
             if attempt == max_retries - 1:
-                raise RuntimeError(f"Network failure for {author_id}") from exc
+                return {
+                    "ok": False,
+                    "status_code": None,
+                    "response": None,
+                    "error": f"Network failure for {author_id}: {exc}",
+                }
             time.sleep((2**attempt) + random.uniform(0, 0.6))
-    raise RuntimeError(f"Unexpected retry failure for {author_id}")
+
+        except requests.RequestException as exc:
+            return {
+                "ok": False,
+                "status_code": None,
+                "response": None,
+                "error": f"Request failed for {author_id}: {exc}",
+            }
+
+    return {
+        "ok": False,
+        "status_code": None,
+        "response": None,
+        "error": f"Unexpected retry failure for {author_id}",
+    }
 
 
 def transform_entry(entry: JSONObject) -> PublicationEntry:
@@ -287,15 +370,25 @@ def extract_h_index(raw_data: object) -> int | None:
     return walk(raw_data)
 
 
-def fetch_author_h_index(author_id: str, api_key: str) -> int | None:
-    headers = {"X-ELS-APIKey": api_key, "Accept": "application/json"}
-    author_url = f"https://api.elsevier.com/content/author/author_id/{author_id}"
+def fetch_author_h_index(author_id: str, api_key: str) -> tuple[int | None, str | None]:
+    headers = build_headers(api_key)
+    author_url = AUTHOR_URL_TEMPLATE.format(author_id=author_id)
     params: dict[str, Union[str, int]] = {"view": "ENHANCED"}
 
     with requests.Session() as session:
-        response = perform_request(session, headers, params, author_id, url=author_url)
-        raw_json: object = response.json()
-        return extract_h_index(raw_json)
+        result = perform_request(session, headers, params, author_id, url=author_url)
+        if not result["ok"]:
+            return None, result["error"]
+
+        response = result["response"]
+        if response is None:
+            return None, f"Empty response for h-index fetch of {author_id}"
+
+        try:
+            raw_json: object = response.json()
+            return extract_h_index(raw_json), None
+        except ValueError as exc:
+            return None, f"Invalid JSON in h-index response for {author_id}: {exc}"
 
 
 def fetch_author_publications(
@@ -304,9 +397,10 @@ def fetch_author_publications(
     mode: str,
     incremental_years: int,
     count: int = 25,
-) -> list[PublicationEntry]:
-    headers = {"X-ELS-APIKey": api_key, "Accept": "application/json"}
+) -> tuple[list[PublicationEntry], str | None]:
+    headers = build_headers(api_key)
     query = f"AU-ID({author_id})"
+
     if mode == "incremental":
         cutoff_year = datetime.now(timezone.utc).year - max(incremental_years, 1)
         query = f"{query} AND PUBYEAR > {cutoff_year}"
@@ -317,15 +411,26 @@ def fetch_author_publications(
         "start": 0,
         "sort": "-coverDate",
     }
+
     results: list[PublicationEntry] = []
 
     with requests.Session() as session:
         while True:
-            response = perform_request(session, headers, params, author_id, url=SEARCH_URL)
-            raw_json: object = response.json()
-            data = ensure_object(raw_json, "API response")
-            search_results = get_json_object_field(data, "search-results", default={})
-            entries_raw = get_json_array_field(search_results, "entry", default=[])
+            request_result = perform_request(session, headers, params, author_id, url=SEARCH_URL)
+            if not request_result["ok"]:
+                return results, request_result["error"]
+
+            response = request_result["response"]
+            if response is None:
+                return results, f"Empty response while fetching publications for {author_id}"
+
+            try:
+                raw_json: object = response.json()
+                data = ensure_object(raw_json, "API response")
+                search_results = get_json_object_field(data, "search-results", default={})
+                entries_raw = get_json_array_field(search_results, "entry", default=[])
+            except Exception as exc:
+                return results, f"Invalid JSON structure for {author_id}: {exc}"
 
             if not entries_raw:
                 break
@@ -335,6 +440,7 @@ def fetch_author_publications(
                 if isinstance(raw_item, dict):
                     results.append(transform_entry(cast(JSONObject, raw_item)))
                     valid_found = True
+
             if not valid_found:
                 break
 
@@ -345,29 +451,33 @@ def fetch_author_publications(
             next_start = start_index + items_per_page
             if next_start >= total_results or items_per_page <= 0:
                 break
+
             params["start"] = next_start
 
-    return results
+    return results, None
 
 
 def read_publications_file(path: Path) -> list[PublicationEntry]:
     if not path.exists():
         return []
+
     raw_data: object = json.loads(path.read_text(encoding="utf-8"))
     obj = ensure_object(raw_data, str(path))
     pubs_raw = get_json_array_field(obj, "publications", default=[])
+
     pubs: list[PublicationEntry] = []
     for item in pubs_raw:
         if isinstance(item, dict):
+            entry = cast(JSONObject, item)
             pubs.append(
                 {
-                    "title": get_str_field(cast(JSONObject, item), "title"),
-                    "source": get_str_field(cast(JSONObject, item), "source"),
-                    "date": get_str_field(cast(JSONObject, item), "date"),
-                    "doi": get_str_field(cast(JSONObject, item), "doi"),
-                    "citations": get_int_field(cast(JSONObject, item), "citations", 0),
-                    "eid": get_str_field(cast(JSONObject, item), "eid"),
-                    "link": get_str_field(cast(JSONObject, item), "link"),
+                    "title": get_str_field(entry, "title"),
+                    "source": get_str_field(entry, "source"),
+                    "date": get_str_field(entry, "date"),
+                    "doi": get_str_field(entry, "doi"),
+                    "citations": get_int_field(entry, "citations", 0),
+                    "eid": get_str_field(entry, "eid"),
+                    "link": get_str_field(entry, "link"),
                 }
             )
     return pubs
@@ -386,8 +496,10 @@ def publication_key(pub: PublicationEntry) -> str:
 
 def merge_publications(existing: list[PublicationEntry], incoming: list[PublicationEntry]) -> list[PublicationEntry]:
     merged: dict[str, PublicationEntry] = {}
+
     for pub in existing:
         merged[publication_key(pub)] = pub
+
     for pub in incoming:
         merged[publication_key(pub)] = pub
 
@@ -405,6 +517,7 @@ def write_outputs_atomic(
     output_dir.mkdir(exist_ok=True)
     publications_dir = output_dir / "publications"
     publications_dir.mkdir(exist_ok=True)
+
     temp_files: list[Path] = []
 
     try:
@@ -420,8 +533,10 @@ def write_outputs_atomic(
 
         for slug in outputs:
             os.replace(output_dir / f".{slug}.json.tmp", output_dir / f"{slug}.json")
+
         for slug in publication_outputs:
             os.replace(publications_dir / f".{slug}.json.tmp", publications_dir / f"{slug}.json")
+
     finally:
         for temp_file in temp_files:
             if temp_file.exists():
@@ -436,6 +551,7 @@ def select_batch(
 ) -> tuple[list[FacultyEntry], int]:
     if not faculty_list:
         return ([], 0)
+
     capped_size = min(batch_size, len(faculty_list))
 
     missing = [fac for fac in faculty_list if not (output_dir / f"{fac['slug']}.json").exists()]
@@ -447,6 +563,7 @@ def select_batch(
     selected: list[FacultyEntry] = []
     for i in range(capped_size):
         selected.append(faculty_list[(start + i) % len(faculty_list)])
+
     next_cursor = (start + capped_size) % len(faculty_list)
     return (selected, next_cursor)
 
@@ -464,6 +581,7 @@ def main() -> int:
         faculty_list = load_faculty_list(Path("faculty.json"))
         sync_state = load_sync_state(STATE_FILE)
         cursor = max(sync_state.get("cursor", 0), 0)
+
         batch, next_cursor = select_batch(faculty_list, batch_size, cursor, OUTPUT_DIR)
         if not batch:
             print("No faculty entries available for processing.")
@@ -475,47 +593,86 @@ def main() -> int:
         collected_outputs: dict[str, FacultyOutput] = {}
         collected_publications: dict[str, PublicationsFileOutput] = {}
 
+        faculty_status = sync_state.get("faculty_status", {})
+        processed_slugs = sync_state.get("processed_slugs", [])
+
+        success_count = 0
+        full_fail_count = 0
+
         for fac in batch:
             slug = fac["slug"]
+            author_id = fac["author_id"]
             print(f"Fetching publications for {fac['name']} ({slug})...")
-            h_index = fetch_author_h_index(fac["author_id"], API_KEY)
-            incoming_publications = fetch_author_publications(
-                fac["author_id"],
+
+            h_index, h_error = fetch_author_h_index(author_id, API_KEY)
+            if h_error:
+                print(f"Warning: h-index fetch failed for {slug}: {h_error}")
+
+            incoming_publications, pub_error = fetch_author_publications(
+                author_id,
                 API_KEY,
                 mode=mode,
                 incremental_years=incremental_years,
             )
+            if pub_error:
+                print(f"Warning: publication fetch issue for {slug}: {pub_error}")
 
             publications_path = OUTPUT_DIR / "publications" / f"{slug}.json"
+
             if mode == "incremental":
                 existing_publications = read_publications_file(publications_path)
                 publications = merge_publications(existing_publications, incoming_publications)
             else:
                 publications = incoming_publications
 
+            # Decide if this faculty is a complete failure
+            # Complete failure = h-index failed AND no incoming publications AND there is a publication error
+            is_complete_failure = (h_error is not None) and (pub_error is not None) and (len(incoming_publications) == 0)
+
+            if is_complete_failure:
+                faculty_status[slug] = {
+                    "last_synced_at": utc_now_iso(),
+                    "last_mode": mode,
+                    "status": "failed",
+                    "message": pub_error or h_error or "Unknown failure",
+                }
+                full_fail_count += 1
+                print(f"Skipping output write for {slug} due to complete failure.")
+                continue
+
             publications_file = f"publications/{slug}.json"
             collected_outputs[slug] = {
                 "name": fac["name"],
                 "slug": slug,
-                "author_id": fac["author_id"],
+                "author_id": author_id,
                 "h_index": h_index,
                 "total_publications": len(publications),
                 "publications_file": publications_file,
             }
             collected_publications[slug] = {"publications": publications}
 
-        write_outputs_atomic(collected_outputs, collected_publications, OUTPUT_DIR)
+            status_message_parts: list[str] = []
+            if h_error:
+                status_message_parts.append(f"h-index issue: {h_error}")
+            if pub_error:
+                status_message_parts.append(f"publications issue: {pub_error}")
+            if not status_message_parts:
+                status_message_parts.append("success")
 
-        faculty_status = sync_state.get("faculty_status", {})
-        processed_slugs = sync_state.get("processed_slugs", [])
-        for fac in batch:
-            slug = fac["slug"]
             faculty_status[slug] = {
                 "last_synced_at": utc_now_iso(),
                 "last_mode": mode,
+                "status": "partial_success" if (h_error or pub_error) else "success",
+                "message": " | ".join(status_message_parts),
             }
+
             if slug not in processed_slugs:
                 processed_slugs.append(slug)
+
+            success_count += 1
+
+        if collected_outputs or collected_publications:
+            write_outputs_atomic(collected_outputs, collected_publications, OUTPUT_DIR)
 
         new_state: SyncState = {
             "cursor": next_cursor,
@@ -527,8 +684,16 @@ def main() -> int:
             "faculty_status": faculty_status,
         }
         save_sync_state_atomic(new_state, STATE_FILE)
+
+        print(f"Batch summary: success={success_count}, full_failures={full_fail_count}, batch_size={len(batch)}")
+
+        if success_count == 0:
+            print("::error::Workflow failed: all faculty fetches in this batch failed.")
+            return 1
+
         print("Batch update completed successfully.")
         return 0
+
     except Exception as exc:
         print(f"::error::Workflow failed: {exc}")
         return 1

@@ -1,16 +1,16 @@
 [
   {
-    "name": "Dr. Jeya Prakash K",
-    "slug": "jeyaprakash",
-    "author_id": "57195717091",
-    "department": "ECE",
-    "designation": "Associate Professor"
-  },
-  {
     "name": "Dr. Charles Pravin J.",
     "slug": "charles-pravin",
     "author_id": "57191345241",
     "department": "ECE",
     "designation": "Professor, HoD"
+  },
+  {
+    "name": "Dr. Jeya Prakash K",
+    "slug": "jeyaprakash",
+    "author_id": "57195717091",
+    "department": "ECE",
+    "designation": "Associate Professor"
   }
 ]

@@ -35,16 +35,33 @@ jobs:
         run: |
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
+      - name: Validate project structure
+        run: |
+          python -m py_compile scripts/fetch_publications.py scripts/validate_site.py
+          python scripts/validate_site.py
+
+      - name: Validate API key presence
+        env:
+          ELSEVIER_API_KEY: ${{ secrets.ELSEVIER_API_KEY }}
+        run: |
+          if [ -z "${ELSEVIER_API_KEY}" ]; then
+            echo "::error::ELSEVIER_API_KEY is missing. Configure this repository secret before running updates."
+            exit 1
+          fi
+
       - name: Fetch publications
         env:
           ELSEVIER_API_KEY: ${{ secrets.ELSEVIER_API_KEY }}
         run: python scripts/fetch_publications.py
 
+      - name: Validate generated data
+        run: python scripts/validate_site.py
+
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/*.json
+          git add data
           if ! git diff --staged --quiet; then
             git commit -m "Update faculty publications"
             git push

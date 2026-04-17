@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 16px;
+  line-height: 1.5;
+  color: #1a1a1a;
+}
+
+a {
+  color: #0a58ca;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+.meta {
+  margin: 4px 0;
+  color: #555;
+  font-size: 0.96rem;
+}
+
+.photo-wrap {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f4f6f8;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-fallback {
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: #4a5560;
+  font-weight: 700;
+  background: linear-gradient(145deg, #e7edf3, #f7fafc);
+}

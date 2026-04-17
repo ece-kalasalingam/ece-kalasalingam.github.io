@@ -215,12 +215,18 @@ def load_sync_state(path: Path) -> SyncState:
     state["cursor"] = get_int_field(obj, "cursor", 0)
 
     processed = obj.get("processed_slugs")
-    state["processed_slugs"] = [str(x) for x in processed] if isinstance(processed, list) else []
+    if isinstance(processed, list):
+        # Narrow the type once for the whole block
+        safe_list = cast("list[Any]", processed)
+        state["processed_slugs"] = [str(x) for x in safe_list]
+    else:
+        state["processed_slugs"] = []
 
     faculty_status_raw = obj.get("faculty_status")
     normalized: dict[str, FacultyRunStatus] = {}
     if isinstance(faculty_status_raw, dict):
-        for slug, status in faculty_status_raw.items():
+        faculty_status = cast("dict[str, Any]", faculty_status_raw)
+        for slug, status in faculty_status.items():
             if isinstance(status, dict):
                 normalized[str(slug)] = {
                     "last_synced_at": get_str_field(cast(JSONObject, status), "last_synced_at"),
@@ -341,11 +347,21 @@ def transform_entry(entry: JSONObject) -> PublicationEntry:
     }
 
 
+from typing import Any, cast, Union
+
 def extract_h_index(raw_data: object) -> int | None:
+    """
+    Recursively searches for h-index values in a nested JSON-like structure.
+    """
     def walk(value: object) -> int | None:
+        # Case 1: Handle Dictionaries
         if isinstance(value, dict):
+            # Narrow 'value' to dict[str, Any]
+            obj = cast("dict[str, Any]", value)
+            
+            # Step A: Check current level for known keys
             for key in ("h-index", "h_index", "hIndex"):
-                raw = value.get(key)
+                raw = obj.get(key)
                 if raw is not None:
                     if isinstance(raw, int):
                         return raw
@@ -356,15 +372,22 @@ def extract_h_index(raw_data: object) -> int | None:
                             return int(raw.strip())
                         except ValueError:
                             pass
-            for nested in value.values():
+            
+            # Step B: Recurse into dictionary values
+            # Cast to list[Any] to ensure 'nested' is not 'Unknown'
+            for nested in list(obj.values()):
                 found = walk(nested)
                 if found is not None:
                     return found
+
+        # Case 2: Handle Lists
         elif isinstance(value, list):
-            for nested in value:
-                found = walk(nested)
+            # Cast the list elements to Any for the recursive call
+            for item in cast("list[Any]", value):
+                found = walk(item)
                 if found is not None:
                     return found
+
         return None
 
     return walk(raw_data)

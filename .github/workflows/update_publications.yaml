@@ -63,3 +63,41 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+      - name: Write success summary
+        if: success()
+        run: |
+          {
+            echo "## Faculty Publications Update"
+            echo ""
+            echo "Status: Success"
+            echo ""
+            echo "- Repository: ${{ github.repository }}"
+            echo "- Workflow: ${{ github.workflow }}"
+            echo "- Run ID: ${{ github.run_id }}"
+            echo "- Commit: ${{ github.sha }}"
+            echo "- Triggered by: ${{ github.actor }}"
+            echo ""
+            echo "Run URL:"
+            echo "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Write failure summary
+        if: failure()
+        run: |
+          {
+            echo "## Faculty Publications Update Failed"
+            echo ""
+            echo "One or more steps failed."
+            echo ""
+            echo "- Repository: ${{ github.repository }}"
+            echo "- Workflow: ${{ github.workflow }}"
+            echo "- Run ID: ${{ github.run_id }}"
+            echo "- Commit: ${{ github.sha }}"
+            echo "- Triggered by: ${{ github.actor }}"
+            echo ""
+            echo "Open the failed run:"
+            echo "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            echo ""
+            echo "Check the failed step logs in this run."
+          } >> "$GITHUB_STEP_SUMMARY"

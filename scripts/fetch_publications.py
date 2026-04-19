@@ -393,6 +393,17 @@ def extract_h_index(raw_data: object) -> int | None:
     return walk(raw_data)
 
 
+def compute_h_index(publications: list[PublicationEntry]) -> int:
+    citations = sorted((p.get("citations") or 0 for p in publications), reverse=True)
+    h = 0
+    for i, c in enumerate(citations, start=1):
+        if c >= i:
+            h = i
+        else:
+            break
+    return h
+
+
 def fetch_author_h_index(author_id: str, api_key: str) -> tuple[int | None, str | None]:
     headers = build_headers(api_key)
     author_url = AUTHOR_URL_TEMPLATE.format(author_id=author_id)
@@ -662,6 +673,12 @@ def main() -> int:
                 full_fail_count += 1
                 print(f"Skipping output write for {slug} due to complete failure.")
                 continue
+
+            if h_index is None:
+                h_index = compute_h_index(publications)
+                if h_error:
+                    print(f"Using locally computed h-index for {slug}: {h_index}")
+                    h_error = None
 
             publications_file = f"publications/{slug}.json"
             collected_outputs[slug] = {

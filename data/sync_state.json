@@ -1,6 +1,6 @@
 {
   "cursor": 0,
-  "last_run_at": "2026-04-19T05:32:43+00:00",
+  "last_run_at": "2026-04-19T17:25:18+00:00",
   "last_mode": "full",
   "batch_size": 20,
   "incremental_years": 2,
@@ -10,16 +10,16 @@
   ],
   "faculty_status": {
     "charles-pravin": {
-      "last_synced_at": "2026-04-19T05:32:42+00:00",
+      "last_synced_at": "2026-04-19T17:25:17+00:00",
       "last_mode": "full",
-      "status": "partial_success",
-      "message": "h-index issue: Auth failure (401) for 57191345241"
+      "status": "success",
+      "message": "success"
     },
     "jeyaprakash": {
-      "last_synced_at": "2026-04-19T05:32:43+00:00",
+      "last_synced_at": "2026-04-19T17:25:18+00:00",
       "last_mode": "full",
-      "status": "partial_success",
-      "message": "h-index issue: Auth failure (401) for 57195717091"
+      "status": "success",
+      "message": "success"
     }
   }
 }

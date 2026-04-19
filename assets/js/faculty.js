@@ -295,7 +295,7 @@ async function resolvePublicationsData(facultyData) {
     return facultyData.publications;
   }
   if (typeof facultyData.publications_file === "string" && facultyData.publications_file.trim()) {
-    const pubsRes = await fetch(`../data/${facultyData.publications_file}`);
+    const pubsRes = await fetch(`../data/${facultyData.publications_file}`, { cache: "no-cache" });
     if (!pubsRes.ok) {
       throw new Error("Unable to load publications file");
     }
@@ -408,7 +408,7 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
 }
 
 async function loadFacultyPage() {
-  const facultyRes = await fetch("../faculty.json");
+  const facultyRes = await fetch("../faculty.json", { cache: "no-cache" });
   if (!facultyRes.ok) {
     throw new Error("Unable to load faculty list");
   }
@@ -420,7 +420,7 @@ async function loadFacultyPage() {
     return;
   }
 
-  const detailsRes = await fetch(`../data/${facultyMeta.slug}.json`);
+  const detailsRes = await fetch(`../data/${facultyMeta.slug}.json`, { cache: "no-cache" });
   if (!detailsRes.ok) {
     setError("Publication data not found for this faculty.");
     return;

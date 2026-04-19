@@ -1,5 +1,5 @@
 async function loadFacultyList() {
-  const facultyRes = await fetch("faculty.json");
+  const facultyRes = await fetch("faculty.json", { cache: "no-cache" });
   if (!facultyRes.ok) {
     throw new Error("Unable to load faculty.json");
   }

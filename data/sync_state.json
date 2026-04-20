@@ -6,7 +6,7 @@
   "incremental_years": 2,
   "processed_slugs": [
     "charles-pravin",
-    "jeyaprakash"
+    "kjpece"
   ],
   "faculty_status": {
     "charles-pravin": {
@@ -15,7 +15,7 @@
       "status": "success",
       "message": "success"
     },
-    "jeyaprakash": {
+    "kjpece": {
       "last_synced_at": "2026-04-19T17:25:18+00:00",
       "last_mode": "full",
       "status": "success",

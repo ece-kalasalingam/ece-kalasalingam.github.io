@@ -1,7 +1,7 @@
 {
   "cursor": 0,
-  "last_run_at": "2026-04-26T05:16:38+00:00",
-  "last_mode": "incremental",
+  "last_run_at": "2026-04-26T05:43:01+00:00",
+  "last_mode": "full",
   "batch_size": 20,
   "incremental_years": 2,
   "processed_slugs": [
@@ -10,14 +10,14 @@
   ],
   "faculty_status": {
     "charles-pravin": {
-      "last_synced_at": "2026-04-26T05:16:37+00:00",
-      "last_mode": "incremental",
+      "last_synced_at": "2026-04-26T05:43:00+00:00",
+      "last_mode": "full",
       "status": "success",
       "message": "success"
     },
     "kjpece": {
-      "last_synced_at": "2026-04-26T05:16:38+00:00",
-      "last_mode": "incremental",
+      "last_synced_at": "2026-04-26T05:43:01+00:00",
+      "last_mode": "full",
       "status": "success",
       "message": "success"
     }

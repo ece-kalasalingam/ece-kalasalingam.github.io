@@ -86,13 +86,15 @@ jobs:
           fi
           python - <<'PY'
           import json
+          import os
           from pathlib import Path
 
           faculty = json.loads(Path("faculty.json").read_text(encoding="utf-8"))
           valid_slugs = {str(item.get("slug", "")).strip() for item in faculty if isinstance(item, dict)}
           valid_slugs.discard("")
 
-          raw = json.loads("""${FACULTY_SHEET_IDS_JSON}""")
+          secret_value = os.getenv("FACULTY_SHEET_IDS_JSON", "").strip()
+          raw = json.loads(secret_value)
           if not isinstance(raw, dict):
               raise SystemExit("FACULTY_SHEET_IDS_JSON must be a JSON object of slug -> sheet_id")
 

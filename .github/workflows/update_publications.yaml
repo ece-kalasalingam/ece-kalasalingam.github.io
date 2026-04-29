@@ -90,6 +90,8 @@ jobs:
       - name: Fetch publications
         env:
           ELSEVIER_API_KEY: ${{ secrets.ELSEVIER_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          FACULTY_SHEET_IDS_JSON: ${{ secrets.FACULTY_SHEET_IDS_JSON }}
           FETCH_MODE: ${{ env.FETCH_MODE }}
           BATCH_SIZE: ${{ env.BATCH_SIZE }}
           INCREMENTAL_YEARS: ${{ env.INCREMENTAL_YEARS }}

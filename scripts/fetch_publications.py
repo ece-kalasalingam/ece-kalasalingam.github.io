@@ -37,7 +37,7 @@ FACULTY_SHEET_IDS_JSON_ENV: Final[str] = os.getenv("FACULTY_SHEET_IDS_JSON", "")
 GOOGLE_API_KEY: Final[str | None] = os.getenv("GOOGLE_API_KEY")
 SHEETS_META_URL_TEMPLATE: Final[str] = "https://sheets.googleapis.com/v4/spreadsheets/{sheet_id}"
 SHEETS_VALUES_URL_TEMPLATE: Final[str] = "https://sheets.googleapis.com/v4/spreadsheets/{sheet_id}/values/{range_name}"
-TAB_NAME_PATTERN: Final[re.Pattern[str]] = re.compile(r"^(?:(\d{2})__)?(.+?)__(kv|md|markdown|table)$", re.IGNORECASE)
+TAB_NAME_PATTERN: Final[re.Pattern[str]] = re.compile(r"^(?:(\d{2})__)?(.+?)__(kv|md|table)$")
 
 JSONScalar: TypeAlias = Union[None, bool, int, float, str]
 JSONObject: TypeAlias = dict[str, Any]
@@ -192,6 +192,13 @@ def parse_positive_int(raw: str, default: int) -> int:
 def slugify(value: str) -> str:
     normalized = re.sub(r"[^a-z0-9]+", "-", value.strip().lower()).strip("-")
     return normalized or "section"
+
+
+def to_title_case(value: str) -> str:
+    parts = [part for part in re.split(r"\s+", value.strip()) if part]
+    if not parts:
+        return value.strip()
+    return " ".join(part[:1].upper() + part[1:].lower() for part in parts)
 
 
 def utc_now_iso() -> str:
@@ -389,10 +396,9 @@ def parse_tab_descriptor(tab_name: str) -> SheetTabDescriptor | None:
     match = TAB_NAME_PATTERN.match(raw_name)
     if not match:
         return None
-    _, title_raw, section_type_raw = match.groups()
-    title = title_raw.strip()
-    section_type = section_type_raw.strip().lower()
-    normalized_type = "markdown" if section_type in ("md", "markdown") else section_type
+    _, title_raw, section_type = match.groups()
+    title = to_title_case(title_raw.strip())
+    normalized_type = "markdown" if section_type == "md" else section_type
     descriptor: SheetTabDescriptor = {
         "title": title,
         "section_type": normalized_type,
@@ -427,7 +433,7 @@ def fetch_sheet_tabs(sheet_id: str, google_api_key: str) -> tuple[list[SheetTabD
             continue
         parsed = parse_tab_descriptor(tab_name)
         if parsed is None:
-            print(f"Warning: ignored tab '{tab_name}' (must match Title__kv|md|markdown|table).")
+            print(f"Warning: ignored tab '{tab_name}' (must match Title__kv|md|table with lowercase suffix).")
             continue
         descriptors.append(parsed)
     return descriptors, None

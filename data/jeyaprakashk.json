@@ -5,5 +5,56 @@
   "h_index": 6,
   "total_publications": 25,
   "publications_file": "publications/jeyaprakashk.json",
-  "sections": []
+  "sections": [
+    {
+      "id": "profile",
+      "title": "Profile",
+      "type": "kv",
+      "items": [
+        {
+          "label": "Name",
+          "value": "Dr. Jeya prakash K."
+        },
+        {
+          "label": "E-mail",
+          "value": "k.jeyaprakash@klu.ac.in, jeyaprakashk.ecevlsi@gmail.com"
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "type": "table",
+      "columns": [
+        "Examination / Degree",
+        "Name of Institution/ University",
+        "Year of Passing",
+        "Class",
+        "Specialization"
+      ],
+      "rows": [
+        [
+          "Ph.D",
+          "Kalasalingam Academy of Research and Education (Deemed to be University)",
+          "2022",
+          "",
+          "VLSI Physical Design"
+        ],
+        [
+          "M.E.",
+          "Arulmigu Kalasalingam College of Engineering / Anna University",
+          "2007",
+          "First Class with Distinction",
+          "VLSI Design"
+        ],
+        [
+          "B.E.",
+          "Shri Angala Amman College of Engineering and Technology / Bharathidasan University",
+          "2000",
+          "First Class",
+          "Electronics and Communication Engineering"
+        ]
+      ]
+    }
+  ]
 }

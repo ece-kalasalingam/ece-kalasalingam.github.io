@@ -3,6 +3,14 @@ function getFacultyFromQuery() {
   return (params.get("faculty") || "").trim();
 }
 
+function getFacultyFromBareQuery() {
+  const raw = window.location.search || "";
+  if (!raw.startsWith("?")) return "";
+  const stripped = raw.slice(1).trim();
+  if (!stripped || stripped.includes("=") || stripped.includes("&")) return "";
+  return decodeURIComponent(stripped).trim();
+}
+
 function getLegacyNameFromQuery() {
   const params = new URLSearchParams(window.location.search);
   return (params.get("name") || "").trim();
@@ -280,11 +288,13 @@ function buildPublicationsControls(publications, renderCallback) {
 
 async function resolveFacultyMeta(facultyList) {
   const faculty = getFacultyFromQuery();
+  const bareFaculty = getFacultyFromBareQuery();
   const legacyName = getLegacyNameFromQuery();
   const legacySlug = getLegacySlugFromQuery();
 
   if (!Array.isArray(facultyList)) return null;
   if (faculty) return facultyList.find(f => f.slug === faculty) || null;
+  if (bareFaculty) return facultyList.find(f => f.slug === bareFaculty) || null;
   if (legacyName) return facultyList.find(f => f.slug === legacyName || f.name === legacyName) || null;
   if (legacySlug) return facultyList.find(f => f.slug === legacySlug) || null;
   return null;

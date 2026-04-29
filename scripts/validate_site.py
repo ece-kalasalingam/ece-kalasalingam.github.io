@@ -130,8 +130,8 @@ def validate_data_files(repo_root: Path, faculty_list: list[dict[str, str]], all
 def validate_html_files(repo_root: Path) -> None:
     index_js = (repo_root / "assets" / "js" / "index.js").read_text(encoding="utf-8")
     faculty_js = (repo_root / "assets" / "js" / "faculty.js").read_text(encoding="utf-8")
-    require("faculty/?faculty=" in index_js, "index.js should link to faculty pages with '?faculty=' parameter")
-    require("getFacultyFromQuery" in faculty_js, "faculty.js should resolve query with getFacultyFromQuery")
+    require("faculty/?${encodeURIComponent(person.slug || \"\")}" in index_js, "index.js should link to faculty pages with bare '?slug' query")
+    require("getFacultyFromBareQuery" in faculty_js, "faculty.js should resolve bare '?slug' query format")
 
 
 def main() -> int:

@@ -17,7 +17,7 @@ async function loadFacultyList() {
   for (const person of faculty) {
     const card = document.createElement("a");
     card.className = "card";
-    card.href = `faculty/?faculty=${encodeURIComponent(person.slug || "")}`;
+    card.href = `faculty/?${encodeURIComponent(person.slug || "")}`;
 
     const top = document.createElement("div");
     top.className = "card-top";

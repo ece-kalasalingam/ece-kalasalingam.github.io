@@ -3,11 +3,13 @@ from __future__ import annotations
 import json
 import os
 import random
+import re
 import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Final, TypedDict, Union, cast
+from urllib.parse import quote
 
 if sys.version_info >= (3, 10):
     from typing import TypeAlias
@@ -31,6 +33,11 @@ STATE_FILE: Final[Path] = OUTPUT_DIR / "sync_state.json"
 FETCH_MODE_ENV: Final[str] = os.getenv("FETCH_MODE", "incremental").strip().lower()
 BATCH_SIZE_ENV: Final[str] = os.getenv("BATCH_SIZE", "20").strip()
 INCREMENTAL_YEARS_ENV: Final[str] = os.getenv("INCREMENTAL_YEARS", "2").strip()
+FACULTY_SHEET_IDS_JSON_ENV: Final[str] = os.getenv("FACULTY_SHEET_IDS_JSON", "").strip()
+GOOGLE_API_KEY: Final[str | None] = os.getenv("GOOGLE_API_KEY")
+SHEETS_META_URL_TEMPLATE: Final[str] = "https://sheets.googleapis.com/v4/spreadsheets/{sheet_id}"
+SHEETS_VALUES_URL_TEMPLATE: Final[str] = "https://sheets.googleapis.com/v4/spreadsheets/{sheet_id}/values/{range_name}"
+TAB_NAME_PATTERN: Final[re.Pattern[str]] = re.compile(r"^(?:(\d{2})__)?(.+?)__(kv|md|markdown|table)$", re.IGNORECASE)
 
 JSONScalar: TypeAlias = Union[None, bool, int, float, str]
 JSONObject: TypeAlias = dict[str, Any]
@@ -62,6 +69,22 @@ class FacultyOutput(TypedDict):
     h_index: int | None
     total_publications: int
     publications_file: str
+    sections: list["FacultySection"]
+
+
+class SectionKVItem(TypedDict):
+    label: str
+    value: str
+
+
+class FacultySection(TypedDict, total=False):
+    id: str
+    title: str
+    type: str
+    items: list[SectionKVItem]
+    markdown: str
+    columns: list[str]
+    rows: list[list[str]]
 
 
 class PublicationsFileOutput(TypedDict):
@@ -90,6 +113,13 @@ class RequestResult(TypedDict):
     status_code: int | None
     response: Response | None
     error: str | None
+
+
+class SheetTabDescriptor(TypedDict):
+    title: str
+    section_type: str
+    tab_name: str
+    section_id: str
 
 
 def ensure_object(value: object, context: str) -> JSONObject:
@@ -157,6 +187,11 @@ def parse_positive_int(raw: str, default: int) -> int:
     if value <= 0:
         return default
     return value
+
+
+def slugify(value: str) -> str:
+    normalized = re.sub(r"[^a-z0-9]+", "-", value.strip().lower()).strip("-")
+    return normalized or "section"
 
 
 def utc_now_iso() -> str:
@@ -333,6 +368,220 @@ def perform_request(
         "response": None,
         "error": f"Unexpected retry failure for {author_id}",
     }
+
+
+def parse_sheet_id_map(raw_json: str) -> dict[str, str]:
+    if not raw_json:
+        return {}
+    parsed: object = json.loads(raw_json)
+    obj = ensure_object(parsed, "FACULTY_SHEET_IDS_JSON")
+    mapping: dict[str, str] = {}
+    for slug_raw, sheet_id_raw in obj.items():
+        slug = str(slug_raw).strip()
+        sheet_id = str(sheet_id_raw).strip()
+        if slug and sheet_id:
+            mapping[slug] = sheet_id
+    return mapping
+
+
+def parse_tab_descriptor(tab_name: str) -> SheetTabDescriptor | None:
+    raw_name = tab_name.strip()
+    match = TAB_NAME_PATTERN.match(raw_name)
+    if not match:
+        return None
+    _, title_raw, section_type_raw = match.groups()
+    title = title_raw.strip()
+    section_type = section_type_raw.strip().lower()
+    normalized_type = "markdown" if section_type in ("md", "markdown") else section_type
+    descriptor: SheetTabDescriptor = {
+        "title": title,
+        "section_type": normalized_type,
+        "tab_name": tab_name,
+        "section_id": slugify(title),
+    }
+    return descriptor
+
+
+def fetch_sheet_tabs(sheet_id: str, google_api_key: str) -> tuple[list[SheetTabDescriptor], str | None]:
+    url = SHEETS_META_URL_TEMPLATE.format(sheet_id=sheet_id)
+    params: dict[str, str] = {
+        "fields": "sheets.properties.title",
+        "key": google_api_key,
+    }
+    try:
+        response = requests.get(url, params=params, timeout=20)
+        response.raise_for_status()
+        payload: object = response.json()
+        obj = ensure_object(payload, "Sheets metadata")
+        sheets_raw = get_json_array_field(obj, "sheets", default=[])
+    except Exception as exc:
+        return [], f"Unable to fetch sheet tabs: {exc}"
+
+    descriptors: list[SheetTabDescriptor] = []
+    for sheet in sheets_raw:
+        if not isinstance(sheet, dict):
+            continue
+        properties = get_json_object_field(cast(JSONObject, sheet), "properties", default={})
+        tab_name = get_str_field(properties, "title").strip()
+        if not tab_name:
+            continue
+        parsed = parse_tab_descriptor(tab_name)
+        if parsed is None:
+            print(f"Warning: ignored tab '{tab_name}' (must match Title__kv|md|markdown|table).")
+            continue
+        descriptors.append(parsed)
+    return descriptors, None
+
+
+def fetch_sheet_values(sheet_id: str, tab_name: str, google_api_key: str) -> tuple[list[list[str]], str | None]:
+    range_name = quote(tab_name, safe="")
+    url = SHEETS_VALUES_URL_TEMPLATE.format(sheet_id=sheet_id, range_name=range_name)
+    params: dict[str, str] = {"key": google_api_key}
+    try:
+        response = requests.get(url, params=params, timeout=20)
+        response.raise_for_status()
+        payload: object = response.json()
+        obj = ensure_object(payload, "Sheets values")
+        values_raw = get_json_array_field(obj, "values", default=[])
+    except Exception as exc:
+        return [], f"Unable to fetch tab '{tab_name}': {exc}"
+
+    rows: list[list[str]] = []
+    for row in values_raw:
+        if not isinstance(row, list):
+            continue
+        rows.append([str(cell) for cell in cast("list[Any]", row)])
+    return rows, None
+
+
+def parse_kv_section(rows: list[list[str]]) -> tuple[list[SectionKVItem], str | None]:
+    if not rows:
+        return [], "kv tab is empty"
+
+    first_row = rows[0] if rows else []
+    normalized_headers = [cell.strip().lower() for cell in first_row]
+    has_label_value_headers = ("label" in normalized_headers) and ("value" in normalized_headers)
+
+    # Prefer explicit header mapping when available.
+    if has_label_value_headers:
+        label_idx = normalized_headers.index("label")
+        value_idx = normalized_headers.index("value")
+        data_rows = rows[1:]
+    else:
+        # Generic fallback: first column = label, remaining columns joined as value.
+        label_idx = 0
+        value_idx = -1
+        data_rows = rows
+
+    items: list[SectionKVItem] = []
+    for row in data_rows:
+        label = row[label_idx].strip() if label_idx < len(row) else ""
+        if value_idx >= 0:
+            value = row[value_idx].strip() if value_idx < len(row) else ""
+        else:
+            value = " | ".join(cell.strip() for cell in row[1:] if cell.strip())
+        if not label and not value:
+            continue
+        if not label:
+            label = "Detail"
+        items.append({"label": label, "value": value})
+    return items, None
+
+
+def parse_markdown_section(rows: list[list[str]]) -> tuple[str, str | None]:
+    for row in rows:
+        for cell in row:
+            text = cell.strip()
+            if text:
+                return text, None
+    return "", "markdown tab has no non-empty content"
+
+
+def parse_table_section(rows: list[list[str]]) -> tuple[list[str], list[list[str]], str | None]:
+    if not rows:
+        return [], [], "table tab is empty"
+
+    raw_headers = rows[0]
+    headers = [cell.strip() for cell in raw_headers if cell.strip()]
+    if not headers:
+        return [], [], "table tab must include a non-empty header row"
+
+    expected_len = len(headers)
+    parsed_rows: list[list[str]] = []
+    for row in rows[1:]:
+        normalized = [cell.strip() for cell in row[:expected_len]]
+        while len(normalized) < expected_len:
+            normalized.append("")
+        if not any(normalized):
+            continue
+        parsed_rows.append(normalized)
+
+    return headers, parsed_rows, None
+
+
+def fetch_sheet_sections(sheet_id: str, google_api_key: str) -> tuple[list[FacultySection], list[str]]:
+    sections: list[FacultySection] = []
+    warnings: list[str] = []
+
+    tabs, tab_error = fetch_sheet_tabs(sheet_id, google_api_key)
+    if tab_error:
+        return [], [tab_error]
+
+    for tab in tabs:
+        rows, value_error = fetch_sheet_values(sheet_id, tab["tab_name"], google_api_key)
+        if value_error:
+            warnings.append(value_error)
+            continue
+
+        if tab["section_type"] == "kv":
+            items, parse_error = parse_kv_section(rows)
+            if parse_error:
+                warnings.append(f"tab '{tab['tab_name']}': {parse_error}")
+                continue
+            if not items:
+                continue
+            sections.append(
+                {
+                    "id": tab["section_id"],
+                    "title": tab["title"],
+                    "type": "kv",
+                    "items": items,
+                }
+            )
+            continue
+
+        if tab["section_type"] == "table":
+            columns, table_rows, parse_error = parse_table_section(rows)
+            if parse_error:
+                warnings.append(f"tab '{tab['tab_name']}': {parse_error}")
+                continue
+            if not table_rows:
+                continue
+            sections.append(
+                {
+                    "id": tab["section_id"],
+                    "title": tab["title"],
+                    "type": "table",
+                    "columns": columns,
+                    "rows": table_rows,
+                }
+            )
+            continue
+
+        markdown, parse_error = parse_markdown_section(rows)
+        if parse_error:
+            warnings.append(f"tab '{tab['tab_name']}': {parse_error}")
+            continue
+        sections.append(
+            {
+                "id": tab["section_id"],
+                "title": tab["title"],
+                "type": "markdown",
+                "markdown": markdown,
+            }
+        )
+
+    return sections, warnings
 
 
 def transform_entry(entry: JSONObject) -> PublicationEntry:
@@ -613,6 +862,7 @@ def main() -> int:
 
     try:
         faculty_list = load_faculty_list(Path("faculty.json"))
+        faculty_sheet_ids = parse_sheet_id_map(FACULTY_SHEET_IDS_JSON_ENV)
         sync_state = load_sync_state(STATE_FILE)
         cursor = max(sync_state.get("cursor", 0), 0)
 
@@ -681,6 +931,16 @@ def main() -> int:
                     h_error = None
 
             publications_file = f"publications/{slug}.json"
+            sections: list[FacultySection] = []
+            sheet_id = faculty_sheet_ids.get(slug, "")
+            if sheet_id:
+                if GOOGLE_API_KEY and GOOGLE_API_KEY.strip():
+                    sections, section_warnings = fetch_sheet_sections(sheet_id, GOOGLE_API_KEY.strip())
+                    for warning in section_warnings:
+                        print(f"Warning: sheet parse issue for {slug}: {warning}")
+                else:
+                    print(f"Warning: GOOGLE_API_KEY missing; skipping sheet sections for {slug}.")
+
             collected_outputs[slug] = {
                 "name": fac["name"],
                 "slug": slug,
@@ -688,6 +948,7 @@ def main() -> int:
                 "h_index": h_index,
                 "total_publications": len(publications),
                 "publications_file": publications_file,
+                "sections": sections,
             }
             collected_publications[slug] = {"publications": publications}
 

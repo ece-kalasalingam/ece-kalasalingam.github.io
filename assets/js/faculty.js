@@ -326,45 +326,10 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
   title.textContent = facultyMeta.name || facultyData.name || "Faculty Member";
   headerInfo.appendChild(title);
 
-  const designation = document.createElement("p");
-  designation.className = "meta";
-  designation.textContent = `Designation: ${facultyMeta.designation || "N/A"}`;
-  headerInfo.appendChild(designation);
-
-  const authorId = document.createElement("p");
-  authorId.className = "meta";
-  const authorIdValue = facultyData.author_id || "";
-  authorId.textContent = "Scopus Author ID: ";
-  if (authorIdValue) {
-    const authorLink = document.createElement("a");
-    authorLink.href = `https://www.scopus.com/authid/detail.uri?authorId=${encodeURIComponent(authorIdValue)}`;
-    authorLink.target = "_blank";
-    authorLink.rel = "noopener noreferrer";
-    authorLink.textContent = authorIdValue;
-    authorId.appendChild(authorLink);
-  } else {
-    authorId.appendChild(document.createTextNode("N/A"));
-  }
-  headerInfo.appendChild(authorId);
-
-  const total = document.createElement("p");
-  total.className = "meta";
-  total.textContent = `Total Publications: ${facultyData.total_publications ?? publications.length}`;
-  headerInfo.appendChild(total);
-
   const totalCitationsValue = publications.reduce((sum, pub) => {
     const citations = Number(pub.citations ?? 0);
     return sum + (Number.isFinite(citations) ? citations : 0);
   }, 0);
-  const totalCitations = document.createElement("p");
-  totalCitations.className = "meta";
-  totalCitations.textContent = `Total Citations: ${totalCitationsValue}`;
-  headerInfo.appendChild(totalCitations);
-
-  const hIndex = document.createElement("p");
-  hIndex.className = "meta";
-  hIndex.textContent = `h-index: ${facultyData.h_index ?? "N/A"}`;
-  headerInfo.appendChild(hIndex);
 
   const photoWrap = document.createElement("div");
   photoWrap.className = "photo-wrap";
@@ -380,31 +345,225 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
   attachFacultyPhoto(photo, fallback, facultyMeta.slug || "", facultyMeta.name || "", "../images/faculty");
   photoWrap.appendChild(photo);
   photoWrap.appendChild(fallback);
-  headerGrid.appendChild(photoWrap);
 
   container.appendChild(header);
 
-  const pubTitle = document.createElement("h2");
-  pubTitle.className = "section-title";
-  pubTitle.textContent = "Scopus Publications";
-  container.appendChild(pubTitle);
+  const sheetSections = Array.isArray(facultyData.sections) ? [...facultyData.sections] : [];
 
-  buildPublicationsControls(publications, (controls, pager, resultsMeta, pubList) => {
-    container.appendChild(controls);
-    container.appendChild(pager);
-    container.appendChild(resultsMeta);
-    container.appendChild(pubList);
+  const pageSections = [
+    ...sheetSections,
+    { id: "publications", title: "Publications", type: "publications" }
+  ];
+
+  const detailsLayout = document.createElement("section");
+  detailsLayout.className = "details-layout";
+
+  const menu = document.createElement("nav");
+  menu.className = "details-menu";
+  menu.setAttribute("aria-label", "Faculty detail sections");
+
+  const photoCard = document.createElement("div");
+  photoCard.className = "menu-photo-card";
+  menu.appendChild(photoCard);
+  photoCard.appendChild(photoWrap);
+
+  const content = document.createElement("div");
+  content.className = "details-content";
+
+  const renderMarkdown = markdownText => {
+    const lines = String(markdownText || "").split(/\r?\n/);
+    let listElement = null;
+    lines.forEach(rawLine => {
+      const line = rawLine.trim();
+      if (!line) {
+        listElement = null;
+        return;
+      }
+      if (line.startsWith("- ")) {
+        if (!listElement) {
+          listElement = document.createElement("ul");
+          listElement.className = "detail-list";
+          content.appendChild(listElement);
+        }
+        const li = document.createElement("li");
+        li.textContent = line.slice(2).trim();
+        listElement.appendChild(li);
+        return;
+      }
+      listElement = null;
+      const p = document.createElement("p");
+      p.className = "detail-markdown";
+      p.textContent = line;
+      content.appendChild(p);
+    });
+  };
+
+  const renderSectionContent = section => {
+    content.innerHTML = "";
+    const heading = document.createElement("h3");
+    heading.className = "detail-title";
+    heading.textContent = section.title || "Section";
+    content.appendChild(heading);
+
+    if (section.type === "kv" && Array.isArray(section.items)) {
+      const table = document.createElement("dl");
+      table.className = "detail-kv";
+      section.items.forEach(item => {
+        const label = document.createElement("dt");
+        label.textContent = item.label || "";
+        const value = document.createElement("dd");
+        value.textContent = item.value || "";
+        table.appendChild(label);
+        table.appendChild(value);
+      });
+      content.appendChild(table);
+      return;
+    }
+
+    if (section.type === "markdown") {
+      renderMarkdown(section.markdown || "");
+      return;
+    }
+
+    if (section.type === "table") {
+      const columns = Array.isArray(section.columns) ? section.columns : [];
+      const rows = Array.isArray(section.rows) ? section.rows : [];
+      if (!columns.length || !rows.length) {
+        const empty = document.createElement("p");
+        empty.className = "meta";
+        empty.textContent = "No table data available.";
+        content.appendChild(empty);
+        return;
+      }
+
+      const wrap = document.createElement("div");
+      wrap.className = "detail-table-wrap";
+
+      const table = document.createElement("table");
+      table.className = "detail-table";
+
+      const thead = document.createElement("thead");
+      const headRow = document.createElement("tr");
+      columns.forEach(col => {
+        const th = document.createElement("th");
+        th.scope = "col";
+        th.textContent = col || "";
+        headRow.appendChild(th);
+      });
+      thead.appendChild(headRow);
+      table.appendChild(thead);
+
+      const tbody = document.createElement("tbody");
+      rows.forEach(row => {
+        const tr = document.createElement("tr");
+        columns.forEach((_, idx) => {
+          const td = document.createElement("td");
+          td.textContent = (row[idx] ?? "").toString();
+          tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+      });
+      table.appendChild(tbody);
+      wrap.appendChild(table);
+      content.appendChild(wrap);
+      return;
+    }
+
+    if (section.type === "publications") {
+      const pubStats = document.createElement("div");
+      pubStats.className = "pub-stats";
+
+      const authorId = document.createElement("p");
+      authorId.className = "meta";
+      const authorIdValue = facultyData.author_id || "";
+      authorId.textContent = "Scopus Author ID: ";
+      if (authorIdValue) {
+        const authorLink = document.createElement("a");
+        authorLink.href = `https://www.scopus.com/authid/detail.uri?authorId=${encodeURIComponent(authorIdValue)}`;
+        authorLink.target = "_blank";
+        authorLink.rel = "noopener noreferrer";
+        authorLink.textContent = authorIdValue;
+        authorId.appendChild(authorLink);
+      } else {
+        authorId.appendChild(document.createTextNode("N/A"));
+      }
+      pubStats.appendChild(authorId);
+
+      const total = document.createElement("p");
+      total.className = "meta";
+      total.textContent = `Total Publications: ${facultyData.total_publications ?? publications.length}`;
+      pubStats.appendChild(total);
+
+      const totalCitations = document.createElement("p");
+      totalCitations.className = "meta";
+      totalCitations.textContent = `Total Citations: ${totalCitationsValue}`;
+      pubStats.appendChild(totalCitations);
+
+      const hIndex = document.createElement("p");
+      hIndex.className = "meta";
+      hIndex.textContent = `h-index: ${facultyData.h_index ?? "N/A"}`;
+      pubStats.appendChild(hIndex);
+
+      content.appendChild(pubStats);
+
+      buildPublicationsControls(publications, (controls, pager, resultsMeta, pubList) => {
+        content.appendChild(controls);
+        content.appendChild(pager);
+        content.appendChild(resultsMeta);
+        content.appendChild(pubList);
+      });
+      return;
+    }
+
+    const fallback = document.createElement("p");
+    fallback.className = "meta";
+    fallback.textContent = "Section content unavailable.";
+    content.appendChild(fallback);
+  };
+
+  let activeSectionId = "";
+  const buttons = [];
+
+  const setActive = id => {
+    activeSectionId = id;
+    const target = pageSections.find(s => s.id === id) || pageSections[0];
+    renderSectionContent(target);
+    buttons.forEach(btn => {
+      const isActive = btn.dataset.sectionId === target.id;
+      btn.classList.toggle("active", isActive);
+      btn.setAttribute("aria-current", isActive ? "true" : "false");
+    });
+  };
+
+  pageSections.forEach((section, index) => {
+    if (!section || typeof section !== "object") return;
+    const id = (section.id || `section-${index + 1}`).trim();
+    if (!id) return;
+    const title = (section.title || `Section ${index + 1}`).trim();
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "details-menu-item";
+    btn.dataset.sectionId = id;
+    btn.textContent = title;
+    btn.addEventListener("click", () => setActive(id));
+    buttons.push(btn);
+    menu.appendChild(btn);
   });
 
-  const futureSection = document.createElement("h2");
-  futureSection.className = "section-title";
-  futureSection.textContent = "More Details";
-  container.appendChild(futureSection);
+  detailsLayout.appendChild(menu);
+  detailsLayout.appendChild(content);
+  container.appendChild(detailsLayout);
 
-  const futureText = document.createElement("p");
-  futureText.className = "meta";
-  futureText.textContent = "This page is ready for future additions like profile links, research areas, projects, and contact details.";
-  container.appendChild(futureText);
+  if (buttons.length === 0) {
+    const empty = document.createElement("p");
+    empty.className = "meta";
+    empty.textContent = "No additional details available.";
+    content.appendChild(empty);
+    return;
+  }
+
+  activeSectionId = buttons[0].dataset.sectionId || "";
+  setActive(activeSectionId);
 }
 
 async function loadFacultyPage() {

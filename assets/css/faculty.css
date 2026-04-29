@@ -2,31 +2,40 @@
   display: inline-block;
   margin-bottom: 14px;
   font-weight: 600;
+  font-size: 0.92rem;
 }
 
 .header {
   border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 16px;
-  margin-bottom: 20px;
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 18px;
   background: var(--surface);
 }
 
 .header-grid {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 16px;
+  display: block;
 }
 
 .header-info {
-  flex: 1;
   min-width: 0;
 }
 
+.header-eyebrow {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .header h1 {
-  margin: 0 0 10px;
-  font-size: 1.6rem;
+  margin: 0;
+  font-size: clamp(1.4rem, 1.1rem + 1vw, 1.9rem);
+  line-height: 1.2;
+  letter-spacing: 0;
+  font-weight: 700;
 }
 
 .section-title {
@@ -116,9 +125,143 @@
   font-style: italic;
 }
 
+.details-layout {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 16px;
+  align-items: start;
+  min-height: calc(100dvh - 190px);
+}
+
+.details-menu {
+  position: sticky;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  padding: 10px;
+}
+
+.details-menu-item {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 9px 11px;
+  text-align: left;
+  font: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+.details-menu-item.active {
+  border-color: #2f6db3;
+  background: color-mix(in srgb, var(--surface) 86%, #e8f1fb 14%);
+}
+
+.details-menu-item:hover {
+  border-color: #7da9d8;
+}
+
+.details-content {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  padding: 16px;
+  min-height: calc(100dvh - 230px);
+}
+
+.detail-title {
+  margin: 0 0 10px;
+  font-size: 1.06rem;
+}
+
+.detail-kv {
+  margin: 0;
+  display: grid;
+  grid-template-columns: minmax(120px, 220px) 1fr;
+  gap: 8px 12px;
+}
+
+.detail-kv dt {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.detail-kv dd {
+  margin: 0;
+  color: var(--text);
+}
+
+.detail-markdown {
+  margin: 0 0 8px;
+}
+
+.detail-list {
+  margin: 0 0 8px 18px;
+}
+
+.detail-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+  min-width: 640px;
+}
+
+.detail-table th,
+.detail-table td {
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
+  line-height: 1.45;
+}
+
+.detail-table th {
+  background: #6d6d6d;
+  color: #fff;
+  font-weight: 700;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.detail-table td:empty::after {
+  content: "-";
+  color: var(--muted);
+}
+
+.menu-photo-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
 .photo-wrap {
-  width: 140px;
-  height: 170px;
+  width: 100%;
+  height: 240px;
+  border-radius: 8px;
+  border-width: 1px;
+  box-shadow: none;
 }
 
 .photo-fallback {
@@ -141,14 +284,54 @@
 @media (max-width: 640px) {
   .header-grid {
     flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .header {
+    padding: 16px;
+    border-radius: 10px;
   }
 
   .controls {
     grid-template-columns: 1fr;
   }
 
+  .details-layout {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .details-menu {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 10px;
+  }
+
+  .details-menu-item {
+    text-align: center;
+    flex: 1 1 auto;
+  }
+
+  .menu-photo-card {
+    width: 100%;
+  }
+
+  .detail-kv {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .detail-table {
+    min-width: 520px;
+  }
+
   .photo-wrap {
-    width: 110px;
-    height: 135px;
+    width: 100%;
+    height: 180px;
+  }
+
+  .details-content {
+    min-height: auto;
   }
 }

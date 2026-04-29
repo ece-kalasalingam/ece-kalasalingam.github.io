@@ -80,6 +80,52 @@ def validate_data_files(repo_root: Path, faculty_list: list[dict[str, str]], all
             pubs = pubs_raw.get("publications")
             require(isinstance(pubs, list), f"{publications_path} must contain 'publications' array")
 
+        sections = data_raw.get("sections")
+        if sections is not None:
+            require(isinstance(sections, list), f"{data_path} 'sections' must be an array")
+            for idx, section in enumerate(sections):
+                prefix = f"{data_path} sections[{idx}]"
+                require(isinstance(section, dict), f"{prefix} must be an object")
+                require(isinstance(section.get("id"), str) and section["id"].strip(), f"{prefix} missing non-empty 'id'")
+                require(isinstance(section.get("title"), str) and section["title"].strip(), f"{prefix} missing non-empty 'title'")
+                require(section.get("type") in ("kv", "markdown", "table"), f"{prefix} 'type' must be 'kv', 'markdown', or 'table'")
+
+                if section.get("type") == "kv":
+                    items = section.get("items")
+                    require(isinstance(items, list), f"{prefix} with type 'kv' must include 'items' array")
+                    for item_idx, item in enumerate(items):
+                        item_prefix = f"{prefix} items[{item_idx}]"
+                        require(isinstance(item, dict), f"{item_prefix} must be an object")
+                        require(
+                            isinstance(item.get("label"), str) and item["label"].strip(),
+                            f"{item_prefix} missing non-empty 'label'",
+                        )
+                        require(
+                            isinstance(item.get("value"), str) and item["value"].strip(),
+                            f"{item_prefix} missing non-empty 'value'",
+                        )
+                elif section.get("type") == "markdown":
+                    markdown = section.get("markdown")
+                    require(
+                        isinstance(markdown, str) and markdown.strip(),
+                        f"{prefix} with type 'markdown' must include non-empty 'markdown'",
+                    )
+                else:
+                    columns = section.get("columns")
+                    rows = section.get("rows")
+                    require(isinstance(columns, list) and len(columns) > 0, f"{prefix} with type 'table' must include non-empty 'columns'")
+                    require(isinstance(rows, list), f"{prefix} with type 'table' must include 'rows' array")
+                    for col_idx, col in enumerate(columns):
+                        require(
+                            isinstance(col, str) and col.strip(),
+                            f"{prefix} columns[{col_idx}] must be a non-empty string",
+                        )
+                    for row_idx, row in enumerate(rows):
+                        require(
+                            isinstance(row, list),
+                            f"{prefix} rows[{row_idx}] must be an array",
+                        )
+
 
 def validate_html_files(repo_root: Path) -> None:
     index_js = (repo_root / "assets" / "js" / "index.js").read_text(encoding="utf-8")

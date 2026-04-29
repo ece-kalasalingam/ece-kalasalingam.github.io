@@ -832,6 +832,34 @@ def write_outputs_atomic(
                 temp_file.unlink()
 
 
+def remove_retired_faculty_files(output_dir: Path, active_slugs: set[str]) -> list[str]:
+    removed_paths: list[str] = []
+    publications_dir = output_dir / "publications"
+
+    def maybe_remove_json_file(path: Path) -> None:
+        if not path.exists() or path.suffix.lower() != ".json":
+            return
+        if path.name == "sync_state.json":
+            return
+        slug = path.stem
+        if slug in active_slugs:
+            return
+        path.unlink()
+        removed_paths.append(str(path))
+
+    if output_dir.exists():
+        for child in output_dir.iterdir():
+            if child.is_file():
+                maybe_remove_json_file(child)
+
+    if publications_dir.exists():
+        for child in publications_dir.iterdir():
+            if child.is_file():
+                maybe_remove_json_file(child)
+
+    return removed_paths
+
+
 def select_batch(
     faculty_list: list[FacultyEntry],
     batch_size: int,
@@ -980,6 +1008,11 @@ def main() -> int:
 
         if collected_outputs or collected_publications:
             write_outputs_atomic(collected_outputs, collected_publications, OUTPUT_DIR)
+
+        active_slugs = {fac["slug"] for fac in faculty_list if fac.get("slug")}
+        removed_files = remove_retired_faculty_files(OUTPUT_DIR, active_slugs)
+        for removed in removed_files:
+            print(f"Removed retired faculty data file: {removed}")
 
         new_state: SyncState = {
             "cursor": next_cursor,

@@ -38,6 +38,7 @@ GOOGLE_API_KEY: Final[str | None] = os.getenv("GOOGLE_API_KEY")
 SHEETS_META_URL_TEMPLATE: Final[str] = "https://sheets.googleapis.com/v4/spreadsheets/{sheet_id}"
 SHEETS_VALUES_URL_TEMPLATE: Final[str] = "https://sheets.googleapis.com/v4/spreadsheets/{sheet_id}/values/{range_name}"
 TAB_NAME_PATTERN: Final[re.Pattern[str]] = re.compile(r"^(?:(\d{2})__)?(.+?)__(kv|md|table)$")
+IGNORED_TITLE_PATTERNS: Final[tuple[str, ...]] = ("publications", "research publications")
 
 JSONScalar: TypeAlias = Union[None, bool, int, float, str]
 JSONObject: TypeAlias = dict[str, Any]
@@ -398,6 +399,9 @@ def parse_tab_descriptor(tab_name: str) -> SheetTabDescriptor | None:
         return None
     _, title_raw, section_type = match.groups()
     title = to_title_case(title_raw.strip())
+    title_lower = title.lower()
+    if any(pattern in title_lower for pattern in IGNORED_TITLE_PATTERNS):
+        return None
     normalized_type = "markdown" if section_type == "md" else section_type
     descriptor: SheetTabDescriptor = {
         "title": title,

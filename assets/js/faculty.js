@@ -308,6 +308,7 @@ async function resolvePublicationsData(facultyData) {
 }
 
 function renderFacultyPage(facultyMeta, facultyData, publications) {
+  document.title = "Faculty Profile";
   const container = document.getElementById("content");
   container.innerHTML = "";
 

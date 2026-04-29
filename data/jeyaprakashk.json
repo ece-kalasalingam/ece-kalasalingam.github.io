@@ -55,6 +55,12 @@
           "Electronics and Communication Engineering"
         ]
       ]
+    },
+    {
+      "id": "awards",
+      "title": "Awards",
+      "type": "markdown",
+      "markdown": "1. Received an award"
     }
   ]
 }

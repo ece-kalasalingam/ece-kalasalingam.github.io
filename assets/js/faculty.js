@@ -344,7 +344,6 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
   pdfButton.className = "btn";
   pdfButton.textContent = "Download Profile as PDF";
   pdfButton.setAttribute("aria-label", "Download this faculty profile as PDF");
-  pdfButton.addEventListener("click", () => window.print());
   headerActions.appendChild(pdfButton);
   headerInfo.appendChild(headerActions);
 
@@ -391,6 +390,8 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
 
   const content = document.createElement("div");
   content.className = "details-content";
+  const printAllSections = document.createElement("section");
+  printAllSections.className = "print-all-sections";
 
   const renderMarkdown = markdownText => {
     const lines = String(markdownText || "").split(/\r?\n/);
@@ -575,6 +576,7 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
   detailsLayout.appendChild(menu);
   detailsLayout.appendChild(content);
   container.appendChild(detailsLayout);
+  container.appendChild(printAllSections);
 
   if (buttons.length === 0) {
     const empty = document.createElement("p");
@@ -586,6 +588,113 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
 
   activeSectionId = buttons[0].dataset.sectionId || "";
   setActive(activeSectionId);
+
+  const buildAllSectionsForPrint = () => {
+    printAllSections.innerHTML = "";
+    const originalActiveSectionId = activeSectionId;
+
+    buttons.forEach(btn => {
+      const sectionId = btn.dataset.sectionId || "";
+      const section = pageSections.find(s => s.id === sectionId);
+      if (!section) return;
+
+      const wrapper = document.createElement("section");
+      wrapper.className = "print-section";
+
+      const heading = document.createElement("h3");
+      heading.className = "detail-title";
+      heading.textContent = section.title || "Section";
+      wrapper.appendChild(heading);
+
+      if (section.type === "publications") {
+        const pubStats = document.createElement("div");
+        pubStats.className = "pub-stats";
+
+        const authorId = document.createElement("p");
+        authorId.className = "meta";
+        authorId.textContent = `Scopus Author ID: ${facultyData.author_id || "N/A"}`;
+        pubStats.appendChild(authorId);
+
+        const total = document.createElement("p");
+        total.className = "meta";
+        total.textContent = `Total Publications: ${facultyData.total_publications ?? publications.length}`;
+        pubStats.appendChild(total);
+
+        const totalCitations = document.createElement("p");
+        totalCitations.className = "meta";
+        totalCitations.textContent = `Total Citations: ${totalCitationsValue}`;
+        pubStats.appendChild(totalCitations);
+
+        const hIndex = document.createElement("p");
+        hIndex.className = "meta";
+        hIndex.textContent = `h-index: ${facultyData.h_index ?? "N/A"}`;
+        pubStats.appendChild(hIndex);
+
+        wrapper.appendChild(pubStats);
+
+        if (!publications.length) {
+          const empty = document.createElement("p");
+          empty.className = "empty";
+          empty.textContent = "No publications available.";
+          wrapper.appendChild(empty);
+        } else {
+          const pubList = document.createElement("div");
+          pubList.className = "pub-list";
+          publications.forEach((pub, index) => {
+            const serialNumber = index + 1;
+            const card = document.createElement("article");
+            card.className = "pub";
+
+            const pubHeading = document.createElement("h3");
+            pubHeading.className = "pub-title";
+            pubHeading.textContent = `${serialNumber}. ${pub.title || "Untitled"}`;
+            card.appendChild(pubHeading);
+
+            const source = document.createElement("p");
+            source.className = "meta";
+            source.textContent = `Source: ${pub.source || "Unknown source"}`;
+            card.appendChild(source);
+
+            const published = document.createElement("p");
+            published.className = "meta";
+            published.textContent = `Published: ${formatMonthYear(pub.date)}`;
+            card.appendChild(published);
+
+            const citations = document.createElement("p");
+            citations.className = "meta";
+            citations.textContent = `Citations: ${pub.citations ?? 0}`;
+            card.appendChild(citations);
+
+            if (pub.doi) {
+              const doi = document.createElement("p");
+              doi.className = "meta";
+              doi.textContent = `DOI: ${pub.doi}`;
+              card.appendChild(doi);
+            }
+
+            pubList.appendChild(card);
+          });
+          wrapper.appendChild(pubList);
+        }
+      } else {
+        setActive(sectionId);
+        Array.from(content.children).forEach(node => {
+          if (!node.classList || !node.classList.contains("detail-title")) {
+            wrapper.appendChild(node.cloneNode(true));
+          }
+        });
+      }
+
+      printAllSections.appendChild(wrapper);
+    });
+
+    setActive(originalActiveSectionId);
+  };
+
+  pdfButton.addEventListener("click", () => {
+    buildAllSectionsForPrint();
+    window.print();
+  });
 }
 
 async function loadFacultyPage() {

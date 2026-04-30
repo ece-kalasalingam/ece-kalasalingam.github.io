@@ -38,6 +38,10 @@
   font-weight: 700;
 }
 
+.header-actions {
+  margin-top: 10px;
+}
+
 .section-title {
   margin: 20px 0 10px;
   font-size: 1.15rem;
@@ -332,6 +336,35 @@
   }
 
   .details-content {
+    min-height: auto;
+  }
+}
+
+@media print {
+  .back,
+  .details-menu,
+  .controls,
+  .pager,
+  .results-meta,
+  .header-actions {
+    display: none !important;
+  }
+
+  .details-layout {
+    display: block;
+    min-height: auto;
+  }
+
+  .details-content,
+  .header,
+  .pub {
+    border: 0;
+    box-shadow: none;
+    background: #fff;
+  }
+
+  .details-content {
+    padding: 0;
     min-height: auto;
   }
 }

@@ -337,6 +337,17 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
   title.textContent = facultyMeta.name || facultyData.name || "Faculty Member";
   headerInfo.appendChild(title);
 
+  const headerActions = document.createElement("div");
+  headerActions.className = "header-actions";
+  const pdfButton = document.createElement("button");
+  pdfButton.type = "button";
+  pdfButton.className = "btn";
+  pdfButton.textContent = "Download Profile as PDF";
+  pdfButton.setAttribute("aria-label", "Download this faculty profile as PDF");
+  pdfButton.addEventListener("click", () => window.print());
+  headerActions.appendChild(pdfButton);
+  headerInfo.appendChild(headerActions);
+
   const totalCitationsValue = publications.reduce((sum, pub) => {
     const citations = Number(pub.citations ?? 0);
     return sum + (Number.isFinite(citations) ? citations : 0);

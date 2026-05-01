@@ -57,132 +57,140 @@ function extractYear(rawDate) {
 }
 
 function buildPublicationsControls(publications, renderCallback) {
-  const controls = document.createElement("div");
-  controls.className = "controls";
-
-  const searchLabel = document.createElement("label");
-  searchLabel.className = "sr-only";
-  searchLabel.textContent = "Search publications";
-  searchLabel.setAttribute("for", "pub-search");
-  controls.appendChild(searchLabel);
-
-  const searchInput = document.createElement("input");
-  searchInput.className = "control";
-  searchInput.type = "search";
-  searchInput.id = "pub-search";
-  searchInput.placeholder = "Search by title, source, or DOI";
-  searchInput.setAttribute("aria-label", "Search publications by title, source, or DOI");
-  controls.appendChild(searchInput);
-
-  const yearFilter = document.createElement("select");
-  yearFilter.className = "control";
-  yearFilter.setAttribute("aria-label", "Filter by publication year");
-  const allYearsOption = document.createElement("option");
-  allYearsOption.value = "";
-  allYearsOption.textContent = "All Years";
-  yearFilter.appendChild(allYearsOption);
-  const yearValues = [...new Set(publications.map(pub => extractYear(pub.date)).filter(Boolean))].sort((a, b) => b.localeCompare(a));
-  for (const year of yearValues) {
-    const option = document.createElement("option");
-    option.value = year;
-    option.textContent = year;
-    yearFilter.appendChild(option);
-  }
-  controls.appendChild(yearFilter);
-
-  const sourceFilter = document.createElement("select");
-  sourceFilter.className = "control";
-  sourceFilter.setAttribute("aria-label", "Filter by publication source");
-  const allSourcesOption = document.createElement("option");
-  allSourcesOption.value = "";
-  allSourcesOption.textContent = "All Sources";
-  sourceFilter.appendChild(allSourcesOption);
-  const sourceValues = [...new Set(publications.map(pub => (pub.source || "").trim()).filter(Boolean))].sort((a, b) => a.localeCompare(b));
-  for (const sourceName of sourceValues) {
-    const option = document.createElement("option");
-    option.value = sourceName;
-    option.textContent = sourceName;
-    sourceFilter.appendChild(option);
-  }
-  controls.appendChild(sourceFilter);
-
-  const pager = document.createElement("div");
-  pager.className = "pager";
-
-  const pagerLeft = document.createElement("div");
-  pagerLeft.className = "pager-left";
-  pager.appendChild(pagerLeft);
-
-  const pageSizeLabel = document.createElement("label");
-  pageSizeLabel.textContent = "Per page:";
-  pageSizeLabel.setAttribute("for", "page-size");
-  pagerLeft.appendChild(pageSizeLabel);
-
-  const pageSizeSelect = document.createElement("select");
-  pageSizeSelect.id = "page-size";
-  pageSizeSelect.className = "control";
-  pageSizeSelect.style.maxWidth = "88px";
-  pageSizeSelect.setAttribute("aria-label", "Select number of publications per page");
-  [25, 50, 100].forEach(size => {
-    const option = document.createElement("option");
-    option.value = String(size);
-    option.textContent = String(size);
-    pageSizeSelect.appendChild(option);
-  });
-  pageSizeSelect.value = "25";
-  pagerLeft.appendChild(pageSizeSelect);
-
-  const pagerActions = document.createElement("div");
-  pagerActions.className = "pager-actions";
-  pager.appendChild(pagerActions);
-
-  const prevBtn = document.createElement("button");
-  prevBtn.className = "btn";
-  prevBtn.type = "button";
-  prevBtn.textContent = "Previous";
-  prevBtn.setAttribute("aria-label", "Previous page");
-  pagerActions.appendChild(prevBtn);
-
-  const pageInfo = document.createElement("span");
-  pageInfo.className = "meta";
-  pageInfo.style.margin = "0";
-  pageInfo.setAttribute("aria-live", "polite");
-  pageInfo.setAttribute("aria-atomic", "true");
-  pagerActions.appendChild(pageInfo);
-
-  const nextBtn = document.createElement("button");
-  nextBtn.className = "btn";
-  nextBtn.type = "button";
-  nextBtn.textContent = "Next";
-  nextBtn.setAttribute("aria-label", "Next page");
-  pagerActions.appendChild(nextBtn);
-
-  const resultsMeta = document.createElement("div");
-  resultsMeta.className = "results-meta";
-  resultsMeta.setAttribute("aria-live", "polite");
-  resultsMeta.setAttribute("aria-atomic", "true");
-
+  const root = document.createElement("div");
   const pubList = document.createElement("div");
   pubList.className = "pub-list";
-
+  const yearValues = [...new Set(publications.map(pub => extractYear(pub.date)).filter(Boolean))].sort((a, b) => b.localeCompare(a));
+  const sourceValues = [...new Set(publications.map(pub => (pub.source || "").trim()).filter(Boolean))].sort((a, b) => a.localeCompare(b));
   let currentPage = 1;
-  let searchDebounceTimer = null;
+  const state = { query: "", year: "", source: "", pageSize: 25 };
+  const sets = [];
+
+  function createControlSet(position) {
+    const controls = document.createElement("div");
+    controls.className = "controls";
+
+    const searchLabel = document.createElement("label");
+    searchLabel.className = "sr-only";
+    searchLabel.textContent = "Search publications";
+    searchLabel.setAttribute("for", `pub-search-${position}`);
+    controls.appendChild(searchLabel);
+
+    const searchInput = document.createElement("input");
+    searchInput.className = "control";
+    searchInput.type = "search";
+    searchInput.id = `pub-search-${position}`;
+    searchInput.placeholder = "Search by title, source, or DOI";
+    searchInput.setAttribute("aria-label", "Search publications by title, source, or DOI");
+    controls.appendChild(searchInput);
+
+    const yearFilter = document.createElement("select");
+    yearFilter.className = "control";
+    yearFilter.setAttribute("aria-label", "Filter by publication year");
+    const allYearsOption = document.createElement("option");
+    allYearsOption.value = "";
+    allYearsOption.textContent = "All Years";
+    yearFilter.appendChild(allYearsOption);
+    for (const year of yearValues) {
+      const option = document.createElement("option");
+      option.value = year;
+      option.textContent = year;
+      yearFilter.appendChild(option);
+    }
+    controls.appendChild(yearFilter);
+
+    const sourceFilter = document.createElement("select");
+    sourceFilter.className = "control";
+    sourceFilter.setAttribute("aria-label", "Filter by publication source");
+    const allSourcesOption = document.createElement("option");
+    allSourcesOption.value = "";
+    allSourcesOption.textContent = "All Sources";
+    sourceFilter.appendChild(allSourcesOption);
+    for (const sourceName of sourceValues) {
+      const option = document.createElement("option");
+      option.value = sourceName;
+      option.textContent = sourceName;
+      sourceFilter.appendChild(option);
+    }
+    controls.appendChild(sourceFilter);
+
+    const pager = document.createElement("div");
+    pager.className = "pager";
+
+    const pagerLeft = document.createElement("div");
+    pagerLeft.className = "pager-left";
+    pager.appendChild(pagerLeft);
+
+    const pageSizeLabel = document.createElement("label");
+    pageSizeLabel.textContent = "Per page:";
+    pageSizeLabel.setAttribute("for", `page-size-${position}`);
+    pagerLeft.appendChild(pageSizeLabel);
+
+    const pageSizeSelect = document.createElement("select");
+    pageSizeSelect.id = `page-size-${position}`;
+    pageSizeSelect.className = "control";
+    pageSizeSelect.style.maxWidth = "88px";
+    pageSizeSelect.setAttribute("aria-label", "Select number of publications per page");
+    [25, 50, 100].forEach(size => {
+      const option = document.createElement("option");
+      option.value = String(size);
+      option.textContent = String(size);
+      pageSizeSelect.appendChild(option);
+    });
+    pagerLeft.appendChild(pageSizeSelect);
+
+    const pagerActions = document.createElement("div");
+    pagerActions.className = "pager-actions";
+    pager.appendChild(pagerActions);
+
+    const prevBtn = document.createElement("button");
+    prevBtn.className = "btn";
+    prevBtn.type = "button";
+    prevBtn.textContent = "Previous";
+    prevBtn.setAttribute("aria-label", "Previous page");
+    pagerActions.appendChild(prevBtn);
+
+    const pageInfo = document.createElement("span");
+    pageInfo.className = "meta";
+    pageInfo.style.margin = "0";
+    pageInfo.setAttribute("aria-live", "polite");
+    pageInfo.setAttribute("aria-atomic", "true");
+    pagerActions.appendChild(pageInfo);
+
+    const nextBtn = document.createElement("button");
+    nextBtn.className = "btn";
+    nextBtn.type = "button";
+    nextBtn.textContent = "Next";
+    nextBtn.setAttribute("aria-label", "Next page");
+    pagerActions.appendChild(nextBtn);
+
+    const resultsMeta = document.createElement("div");
+    resultsMeta.className = "results-meta";
+    resultsMeta.setAttribute("aria-live", "polite");
+    resultsMeta.setAttribute("aria-atomic", "true");
+
+    return { controls, searchInput, yearFilter, sourceFilter, pager, pageSizeSelect, prevBtn, pageInfo, nextBtn, resultsMeta };
+  }
+
+  function syncAllControls() {
+    for (const set of sets) {
+      set.searchInput.value = state.query;
+      set.yearFilter.value = state.year;
+      set.sourceFilter.value = state.source;
+      set.pageSizeSelect.value = String(state.pageSize);
+    }
+  }
 
   const getFilteredPublications = () => {
-    const query = searchInput.value.trim().toLowerCase();
-    const selectedYear = yearFilter.value;
-    const selectedSource = sourceFilter.value;
-
     return publications.filter(pub => {
       const pubTitleText = (pub.title || "").toLowerCase();
       const pubSourceText = (pub.source || "").toLowerCase();
       const pubDoiText = (pub.doi || "").toLowerCase();
       const year = extractYear(pub.date);
 
-      const matchesSearch = !query || pubTitleText.includes(query) || pubSourceText.includes(query) || pubDoiText.includes(query);
-      const matchesYear = !selectedYear || year === selectedYear;
-      const matchesSource = !selectedSource || (pub.source || "").trim() === selectedSource;
-
+      const matchesSearch = !state.query || pubTitleText.includes(state.query) || pubSourceText.includes(state.query) || pubDoiText.includes(state.query);
+      const matchesYear = !state.year || year === state.year;
+      const matchesSource = !state.source || (pub.source || "").trim() === state.source;
       return matchesSearch && matchesYear && matchesSource;
     });
   };
@@ -190,7 +198,7 @@ function buildPublicationsControls(publications, renderCallback) {
   const renderPublicationList = () => {
     pubList.innerHTML = "";
     const filteredPublications = getFilteredPublications();
-    const pageSize = Number(pageSizeSelect.value) || 25;
+    const pageSize = state.pageSize;
     const totalFiltered = filteredPublications.length;
     const totalPages = Math.max(1, Math.ceil(totalFiltered / pageSize));
     if (currentPage > totalPages) currentPage = totalPages;
@@ -200,10 +208,12 @@ function buildPublicationsControls(publications, renderCallback) {
     const end = Math.min(start + pageSize, totalFiltered);
     const visiblePublications = filteredPublications.slice(start, end);
 
-    pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
-    prevBtn.disabled = currentPage <= 1;
-    nextBtn.disabled = currentPage >= totalPages;
-    resultsMeta.textContent = totalFiltered === 0 ? "0 results" : `Showing ${start + 1}-${end} of ${totalFiltered} results`;
+    for (const set of sets) {
+      set.pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+      set.prevBtn.disabled = currentPage <= 1;
+      set.nextBtn.disabled = currentPage >= totalPages;
+      set.resultsMeta.textContent = totalFiltered === 0 ? "0 results" : `Showing ${start + 1}-${end} of ${totalFiltered} results`;
+    }
 
     if (visiblePublications.length === 0) {
       const empty = document.createElement("p");
@@ -262,28 +272,60 @@ function buildPublicationsControls(publications, renderCallback) {
 
   const onFilterChanged = () => {
     currentPage = 1;
+    syncAllControls();
     renderPublicationList();
   };
 
-  searchInput.addEventListener("input", () => {
-    if (searchDebounceTimer) clearTimeout(searchDebounceTimer);
-    searchDebounceTimer = setTimeout(onFilterChanged, 220);
-  });
-  yearFilter.addEventListener("change", onFilterChanged);
-  sourceFilter.addEventListener("change", onFilterChanged);
-  pageSizeSelect.addEventListener("change", onFilterChanged);
-  prevBtn.addEventListener("click", () => {
-    currentPage -= 1;
-    renderPublicationList();
-  });
-  nextBtn.addEventListener("click", () => {
-    currentPage += 1;
-    renderPublicationList();
-  });
+  function bindControlSet(set) {
+    let searchDebounceTimer = null;
+    set.searchInput.addEventListener("input", () => {
+      if (searchDebounceTimer) clearTimeout(searchDebounceTimer);
+      searchDebounceTimer = setTimeout(() => {
+        state.query = set.searchInput.value.trim().toLowerCase();
+        onFilterChanged();
+      }, 220);
+    });
+    set.yearFilter.addEventListener("change", () => {
+      state.year = set.yearFilter.value;
+      onFilterChanged();
+    });
+    set.sourceFilter.addEventListener("change", () => {
+      state.source = set.sourceFilter.value;
+      onFilterChanged();
+    });
+    set.pageSizeSelect.addEventListener("change", () => {
+      state.pageSize = Number(set.pageSizeSelect.value) || 25;
+      onFilterChanged();
+    });
+    set.prevBtn.addEventListener("click", () => {
+      currentPage -= 1;
+      syncAllControls();
+      renderPublicationList();
+    });
+    set.nextBtn.addEventListener("click", () => {
+      currentPage += 1;
+      syncAllControls();
+      renderPublicationList();
+    });
+  }
+
+  const topSet = createControlSet("top");
+  const bottomSet = createControlSet("bottom");
+  sets.push(topSet, bottomSet);
+  bindControlSet(topSet);
+  bindControlSet(bottomSet);
+  syncAllControls();
+
+  root.appendChild(topSet.controls);
+  root.appendChild(topSet.pager);
+  root.appendChild(topSet.resultsMeta);
+  root.appendChild(pubList);
+  root.appendChild(bottomSet.controls);
+  root.appendChild(bottomSet.pager);
+  root.appendChild(bottomSet.resultsMeta);
 
   renderPublicationList();
-
-  renderCallback(controls, pager, resultsMeta, pubList);
+  renderCallback(root);
 }
 
 async function resolveFacultyMeta(facultyList) {
@@ -306,12 +348,11 @@ async function resolvePublicationsData(facultyData) {
   }
   if (typeof facultyData.publications_file === "string" && facultyData.publications_file.trim()) {
     const pubsRes = await fetch(`../data/${facultyData.publications_file}`, { cache: "no-cache" });
-    if (!pubsRes.ok) {
-      throw new Error("Unable to load publications file");
-    }
-    const pubsPayload = await pubsRes.json();
-    if (pubsPayload && Array.isArray(pubsPayload.publications)) {
-      return pubsPayload.publications;
+    if (pubsRes.ok) {
+      const pubsPayload = await pubsRes.json();
+      if (pubsPayload && Array.isArray(pubsPayload.publications)) {
+        return pubsPayload.publications;
+      }
     }
   }
   return [];
@@ -529,11 +570,8 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
 
       content.appendChild(pubStats);
 
-      buildPublicationsControls(publications, (controls, pager, resultsMeta, pubList) => {
-        content.appendChild(controls);
-        content.appendChild(pager);
-        content.appendChild(resultsMeta);
-        content.appendChild(pubList);
+      buildPublicationsControls(publications, (publicationsBlock) => {
+        content.appendChild(publicationsBlock);
       });
       return;
     }
@@ -711,12 +749,20 @@ async function loadFacultyPage() {
   }
 
   const detailsRes = await fetch(`../data/${facultyMeta.slug}.json`, { cache: "no-cache" });
+  let facultyData;
   if (!detailsRes.ok) {
-    setError("Publication data not found for this faculty.");
-    return;
+    facultyData = {
+      name: facultyMeta.name || "Faculty Member",
+      slug: facultyMeta.slug || "",
+      scopus_id: facultyMeta.scopus_id || "NA",
+      total_publications: 0,
+      h_index: null,
+      sections: []
+    };
+  } else {
+    facultyData = await detailsRes.json();
   }
 
-  const facultyData = await detailsRes.json();
   const publications = await resolvePublicationsData(facultyData);
   renderFacultyPage(facultyMeta, facultyData, publications);
 }

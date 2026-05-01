@@ -10,24 +10,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105036664816"
     },
     {
-      "title": "AdaptiveRL-MAC: A Reinforcement Learning-Based Scalable and Resilient MAC Protocol for Underwater Wireless Sensor Networks",
-      "source": "Proceedings of 2025 6th International Conference on Communication Computing and Industry 6 0 C2i6 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/C2I666499.2025.11366968",
-      "citations": 0,
-      "eid": "2-s2.0-105034368172",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034368172"
-    },
-    {
-      "title": "Child Safety Net: An IoT-Driven Wearable Solution using Arduino UNO",
-      "source": "Proceedings of the 7th International Conference on Innovative Data Communication Technologies and Application Icidca 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICIDCA66325.2025.11280353",
-      "citations": 0,
-      "eid": "2-s2.0-105031401931",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105031401931"
-    },
-    {
       "title": "Enhancing Device Performance using GaAs Substrate and Al2O3 Gate Oxide in Double Gate MOSFETs",
       "source": "Proceedings of the 7th International Conference on Intelligent Sustainable Systems Iciss 2025",
       "date": "2025-01-01",
@@ -46,6 +28,15 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105020958328"
     },
     {
+      "title": "Child Safety Net: An IoT-Driven Wearable Solution using Arduino UNO",
+      "source": "Proceedings of the 7th International Conference on Innovative Data Communication Technologies and Application Icidca 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICIDCA66325.2025.11280353",
+      "citations": 0,
+      "eid": "2-s2.0-105031401931",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105031401931"
+    },
+    {
       "title": "Advanced Vehicle Safety and Driver Health Monitoring System",
       "source": "Proceedings of 7th International Conference on Inventive Material Science and Applications Icima 2025",
       "date": "2025-01-01",
@@ -53,6 +44,15 @@
       "citations": 0,
       "eid": "2-s2.0-105013847187",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105013847187"
+    },
+    {
+      "title": "AdaptiveRL-MAC: A Reinforcement Learning-Based Scalable and Resilient MAC Protocol for Underwater Wireless Sensor Networks",
+      "source": "Proceedings of 2025 6th International Conference on Communication Computing and Industry 6 0 C2i6 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/C2I666499.2025.11366968",
+      "citations": 0,
+      "eid": "2-s2.0-105034368172",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034368172"
     },
     {
       "title": "Effective recognition of glaucoma using SIFT and RFSO classifier",

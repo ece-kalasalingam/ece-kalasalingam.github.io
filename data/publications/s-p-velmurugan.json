@@ -28,15 +28,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105034900649"
     },
     {
-      "title": "A novel deep learning framework for intracranial hemorrhage segmentation and detection using advanced U-Net and metaheuristic optimization",
-      "source": "Journal of the Chinese Institute of Engineers Transactions of the Chinese Institute of Engineers Series A",
-      "date": "2025-01-01",
-      "doi": "10.1080/02533839.2025.2504707",
-      "citations": 0,
-      "eid": "2-s2.0-105005796193",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105005796193"
-    },
-    {
       "title": "Inclusive Education via Emotion-Aware Tutoring using Real-Time Recognition",
       "source": "Proceedings of the 7th International Conference on Innovative Data Communication Technologies and Application Icidca 2025",
       "date": "2025-01-01",
@@ -44,6 +35,15 @@
       "citations": 1,
       "eid": "2-s2.0-105031405818",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105031405818"
+    },
+    {
+      "title": "A novel deep learning framework for intracranial hemorrhage segmentation and detection using advanced U-Net and metaheuristic optimization",
+      "source": "Journal of the Chinese Institute of Engineers Transactions of the Chinese Institute of Engineers Series A",
+      "date": "2025-01-01",
+      "doi": "10.1080/02533839.2025.2504707",
+      "citations": 0,
+      "eid": "2-s2.0-105005796193",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105005796193"
     },
     {
       "title": "Enhanced CNN Model Techniques for Classification of Brain Tumor and Approaches",

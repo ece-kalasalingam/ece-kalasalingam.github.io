@@ -498,7 +498,7 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
 
       const authorId = document.createElement("p");
       authorId.className = "meta";
-      const authorIdValue = facultyData.author_id || "";
+      const authorIdValue = facultyData.scopus_id || facultyData.author_id || "";
       authorId.textContent = "Scopus Author ID: ";
       if (authorIdValue) {
         const authorLink = document.createElement("a");
@@ -612,7 +612,7 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
 
         const authorId = document.createElement("p");
         authorId.className = "meta";
-        authorId.textContent = `Scopus Author ID: ${facultyData.author_id || "N/A"}`;
+        authorId.textContent = `Scopus Author ID: ${facultyData.scopus_id || facultyData.author_id || "N/A"}`;
         pubStats.appendChild(authorId);
 
         const total = document.createElement("p");

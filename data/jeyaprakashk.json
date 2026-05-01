@@ -1,7 +1,6 @@
 {
   "name": "Dr. Jeya Prakash K.",
   "slug": "jeyaprakashk",
-  "author_id": "57195717091",
   "h_index": 6,
   "total_publications": 25,
   "publications_file": "publications/jeyaprakashk.json",
@@ -62,5 +61,6 @@
       "type": "markdown",
       "markdown": "1. Received an award\n2. Got a certificate"
     }
-  ]
+  ],
+  "scopus_id": "57195717091"
 }

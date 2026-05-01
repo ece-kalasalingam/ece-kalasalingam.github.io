@@ -48,7 +48,7 @@ JSONArray: TypeAlias = list[Any]
 class FacultyEntry(TypedDict):
     name: str
     slug: str
-    author_id: str
+    scopus_id: str
     department: str
     designation: str
 
@@ -66,7 +66,7 @@ class PublicationEntry(TypedDict):
 class FacultyOutput(TypedDict):
     name: str
     slug: str
-    author_id: str
+    scopus_id: str
     h_index: int | None
     total_publications: int
     publications_file: str
@@ -195,6 +195,19 @@ def slugify(value: str) -> str:
     return normalized or "section"
 
 
+def normalize_scopus_id(value: object) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, str):
+        cleaned = value.strip()
+        if not cleaned or cleaned.upper() in {"NA", "N/A", "NULL"}:
+            return ""
+        return cleaned
+    if isinstance(value, (int, float)) and not isinstance(value, bool):
+        return str(int(value))
+    return ""
+
+
 def to_title_case(value: str) -> str:
     parts = [part for part in re.split(r"\s+", value.strip()) if part]
     if not parts:
@@ -236,7 +249,7 @@ def load_faculty_list(path: Path) -> list[FacultyEntry]:
                 {
                     "name": get_str_field(item, "name").strip(),
                     "slug": get_str_field(item, "slug").strip(),
-                    "author_id": get_str_field(item, "author_id").strip(),
+                    "scopus_id": normalize_scopus_id(item.get("scopus_id")),
                     "department": get_str_field(item, "department").strip(),
                     "designation": get_str_field(item, "designation").strip(),
                 }
@@ -923,23 +936,32 @@ def main() -> int:
 
         for fac in batch:
             slug = fac["slug"]
-            author_id = fac["author_id"]
+            scopus_id = fac["scopus_id"]
             print(f"Fetching publications for {fac['name']} ({slug})...")
 
-            h_index, h_error = fetch_author_h_index(author_id, API_KEY)
-            if h_error:
-                print(f"Warning: h-index fetch failed for {slug}: {h_error}")
-
-            incoming_publications, pub_error = fetch_author_publications(
-                author_id,
-                API_KEY,
-                mode=mode,
-                incremental_years=incremental_years,
-            )
-            if pub_error:
-                print(f"Warning: publication fetch issue for {slug}: {pub_error}")
-
             publications_path = OUTPUT_DIR / "publications" / f"{slug}.json"
+            h_index: int | None = None
+            h_error: str | None = None
+            incoming_publications: list[PublicationEntry] = []
+            pub_error: str | None = None
+
+            if scopus_id:
+                h_index, h_error = fetch_author_h_index(scopus_id, API_KEY)
+                if h_error:
+                    print(f"Warning: h-index fetch failed for {slug}: {h_error}")
+
+                incoming_publications, pub_error = fetch_author_publications(
+                    scopus_id,
+                    API_KEY,
+                    mode=mode,
+                    incremental_years=incremental_years,
+                )
+                if pub_error:
+                    print(f"Warning: publication fetch issue for {slug}: {pub_error}")
+            else:
+                print(f"Warning: missing scopus_id for {slug}; skipping Scopus API fetch.")
+                h_error = "Missing scopus_id"
+                pub_error = "Missing scopus_id"
 
             if mode == "incremental":
                 existing_publications = read_publications_file(publications_path)
@@ -982,7 +1004,7 @@ def main() -> int:
             collected_outputs[slug] = {
                 "name": fac["name"],
                 "slug": slug,
-                "author_id": author_id,
+                "scopus_id": scopus_id if scopus_id else "NA",
                 "h_index": h_index,
                 "total_publications": len(publications),
                 "publications_file": publications_file,

@@ -21,19 +21,30 @@ def require(condition: bool, message: str) -> None:
         raise RuntimeError(message)
 
 
-def validate_faculty_file(repo_root: Path) -> list[dict[str, str]]:
+def validate_faculty_file(repo_root: Path, allow_missing: bool) -> list[dict[str, str]]:
     faculty_path = repo_root / "faculty.json"
     faculty_raw = load_json(faculty_path)
     require(isinstance(faculty_raw, list), "faculty.json must contain a JSON array")
     require(len(faculty_raw) > 0, "faculty.json must contain at least one faculty entry")
 
     seen_slugs: set[str] = set()
-    validated: list[dict[str, str]] = []
+    validated: list[dict[str, str | None]] = []
     for i, item in enumerate(faculty_raw):
         require(isinstance(item, dict), f"faculty.json entry #{i + 1} must be an object")
-        for key in ("name", "slug", "author_id", "designation"):
+        for key in ("name", "slug", "designation"):
             value = item.get(key)
             require(isinstance(value, str) and value.strip(), f"faculty.json entry #{i + 1}: '{key}' is required")
+        scopus_id = item.get("scopus_id")
+        normalized_scopus_id: str | None
+        if scopus_id is None:
+            normalized_scopus_id = None
+        elif isinstance(scopus_id, str):
+            cleaned = scopus_id.strip()
+            normalized_scopus_id = None if (not cleaned or cleaned.upper() in {"NA", "N/A", "NULL"}) else cleaned
+        else:
+            raise RuntimeError(f"faculty.json entry #{i + 1}: 'scopus_id' must be a string, null, or 'NA'")
+        if normalized_scopus_id is None and allow_missing:
+            print(f"Validation note: faculty.json entry #{i + 1} has missing 'scopus_id' (allowed in batching mode).")
         slug = item["slug"].strip()
         require(slug not in seen_slugs, f"Duplicate slug in faculty.json: {slug}")
         seen_slugs.add(slug)
@@ -41,14 +52,14 @@ def validate_faculty_file(repo_root: Path) -> list[dict[str, str]]:
             {
                 "name": item["name"].strip(),
                 "slug": slug,
-                "author_id": item["author_id"].strip(),
+                "scopus_id": normalized_scopus_id,
                 "designation": item["designation"].strip(),
             }
         )
     return validated
 
 
-def validate_data_files(repo_root: Path, faculty_list: list[dict[str, str]], allow_missing: bool) -> None:
+def validate_data_files(repo_root: Path, faculty_list: list[dict[str, str | None]], allow_missing: bool) -> None:
     data_dir = repo_root / "data"
     require(data_dir.exists(), "data directory is missing")
 
@@ -62,7 +73,7 @@ def validate_data_files(repo_root: Path, faculty_list: list[dict[str, str]], all
         require(isinstance(data_raw, dict), f"{data_path} must contain an object")
         require(data_raw.get("slug") == slug, f"{data_path} has mismatched slug")
         require(isinstance(data_raw.get("name"), str), f"{data_path} missing 'name'")
-        require(isinstance(data_raw.get("author_id"), str), f"{data_path} missing 'author_id'")
+        require(isinstance(data_raw.get("scopus_id"), str), f"{data_path} missing 'scopus_id'")
         require(isinstance(data_raw.get("total_publications"), int), f"{data_path} missing integer 'total_publications'")
 
         has_inline_publications = isinstance(data_raw.get("publications"), list)
@@ -137,7 +148,7 @@ def validate_html_files(repo_root: Path) -> None:
 def main() -> int:
     repo_root = Path(__file__).resolve().parent.parent
     allow_missing = os.getenv("VALIDATE_ALLOW_MISSING", "").strip() == "1"
-    faculty_list = validate_faculty_file(repo_root)
+    faculty_list = validate_faculty_file(repo_root, allow_missing=allow_missing)
     validate_data_files(repo_root, faculty_list, allow_missing=allow_missing)
     validate_html_files(repo_root)
     print("Validation passed.")

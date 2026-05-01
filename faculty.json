@@ -2,15 +2,157 @@
   {
     "name": "Dr. Charles Pravin J.",
     "slug": "charles-pravin",
-    "author_id": "57191345241",
-    "department": "ECE",
+    "scopus_id": "57191345241",
     "designation": "Professor, HoD"
+  },
+  {
+    "name": "Dr. P. Sivakumar",
+    "slug": "p-sivakumar",
+    "scopus_id": "53871895300",
+    "designation": "Professor/Dean"
+  },
+  {
+    "name": "Dr. M. Pallikonda Rajasekaran",
+    "slug": "m-pallikonda-rajasekaran",
+    "scopus_id": "35185553400",
+    "designation": "Professor/Director (R&D)"
+  },
+  {
+    "name": "Dr. M. Kalpana",
+    "slug": "m-kalpana",
+    "scopus_id": "57220464288",
+    "designation": "Professor/Dean(FE)"
+  },
+  {
+    "name": "Dr. B. Perumal",
+    "slug": "b-perumal",
+    "scopus_id": "56352303700",
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. Shashi Kant Dargar",
+    "slug": "shashi-kant-dargar",
+    "scopus_id": "57193235245",
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. K. S. Dhanalakshmi",
+    "slug": "k-s-dhanalakshmi",
+    "scopus_id": null,
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. S.Diwakaran",
+    "slug": "s-diwakaran",
+    "scopus_id": "56736854500",
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. J. Deny",
+    "slug": "j-deny",
+    "scopus_id": "57190001425",
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. Josephine Selle Jeyanathan",
+    "slug": "josephine-selle-jeyanathan",
+    "scopus_id": "57207916322",
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. V. Muneeswaran",
+    "slug": "v-muneeswaran",
+    "scopus_id": "57191622200",
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. D. Ganeshaperumal",
+    "slug": "d-ganeshaperumal",
+    "scopus_id": "57192268536",
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. Aarthi@Ananthakirupa VPMB",
+    "slug": "aarthi-ananthakirupa-vpmb",
+    "scopus_id": "57191487344",
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. K.Pandiaraj",
+    "slug": "k-pandiaraj",
+    "scopus_id": "57202111379",
+    "designation": "Associate Professor"
   },
   {
     "name": "Dr. Jeya Prakash K.",
     "slug": "jeyaprakashk",
-    "author_id": "57195717091",
-    "department": "ECE",
+    "scopus_id": "57195717091",
     "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. P. Manikandan",
+    "slug": "p-manikandan",
+    "scopus_id": "57547504800",
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. S.P.Velmurugan",
+    "slug": "s-p-velmurugan",
+    "scopus_id": "57216655372",
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. M. Ramesh",
+    "slug": "m-ramesh",
+    "scopus_id": "57206567456",
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. Jenyfal Sampson",
+    "slug": "jenyfal-sampson",
+    "scopus_id": "57216659850",
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. N. Bhuvaneswary",
+    "slug": "n-bhuvaneswary",
+    "scopus_id": "57220258176",
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. R. Kottaimalai",
+    "slug": "r-kottaimalai",
+    "scopus_id": "55811890500",
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. J. Bennilo Fernandes",
+    "slug": "j-bennilo-fernandes",
+    "scopus_id": "57202249273",
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. V. Sathya Narayanan",
+    "slug": "v-sathya-narayanan",
+    "scopus_id": "58764910600",
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. Abha Dargar",
+    "slug": "abha-dargar",
+    "scopus_id": "57215316237",
+    "designation": "Assistant Professor"
+  },
+  {
+    "name": "Mrs. Sheeba Jeya Sophia",
+    "slug": "mrs-sheeba-jeya-sophia",
+    "scopus_id": "56878915500",
+    "designation": "Assistant Professor"
+  },
+  {
+    "name": "Ms. Loyola Jasmine J",
+    "slug": "ms-loyola-jasmine-j",
+    "scopus_id": "57957045300",
+    "designation": "Assistant Professor"
   }
 ]

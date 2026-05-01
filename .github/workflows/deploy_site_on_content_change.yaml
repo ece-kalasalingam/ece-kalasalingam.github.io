@@ -1,0 +1,42 @@
+name: Deploy Site On Content Change
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "index.html"
+      - "faculty.json"
+      - "images/**"
+      - "assets/**"
+      - "faculty/**"
+      - "data/**"
+      - ".github/workflows/deploy_site_on_content_change.yaml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages-deploy-only"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v5

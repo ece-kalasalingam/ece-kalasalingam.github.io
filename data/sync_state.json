@@ -1,6 +1,6 @@
 {
   "cursor": 0,
-  "last_run_at": "2026-05-01T13:01:45+00:00",
+  "last_run_at": "2026-05-01T13:11:15+00:00",
   "last_mode": "full",
   "batch_size": 20,
   "incremental_years": 2,
@@ -26,7 +26,10 @@
     "n-bhuvaneswary",
     "r-kottaimalai",
     "j-bennilo-fernandes",
-    "v-sathya-narayanan"
+    "v-sathya-narayanan",
+    "abha-dargar",
+    "sheeba-jeya-sophia",
+    "loyola-jasmine-j"
   ],
   "faculty_status": {
     "charles-pravin": {
@@ -78,7 +81,7 @@
       "message": "success"
     },
     "k-s-dhanalakshmi": {
-      "last_synced_at": "2026-05-01T13:01:20+00:00",
+      "last_synced_at": "2026-05-01T13:11:13+00:00",
       "last_mode": "full",
       "status": "failed",
       "message": "Missing scopus_id"
@@ -163,6 +166,24 @@
     },
     "v-sathya-narayanan": {
       "last_synced_at": "2026-05-01T13:01:45+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "abha-dargar": {
+      "last_synced_at": "2026-05-01T13:11:14+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "sheeba-jeya-sophia": {
+      "last_synced_at": "2026-05-01T13:11:15+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "loyola-jasmine-j": {
+      "last_synced_at": "2026-05-01T13:11:15+00:00",
       "last_mode": "full",
       "status": "success",
       "message": "success"

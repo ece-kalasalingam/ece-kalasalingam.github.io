@@ -1,0 +1,220 @@
+{
+  "publications": [
+    {
+      "title": "Early Detection of Apraxia of Speech in Children using MATLAB",
+      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICECMSN68058.2025.11382894",
+      "citations": 0,
+      "eid": "2-s2.0-105035501886",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035501886"
+    },
+    {
+      "title": "Artificial Intelligence GIS Algorithm Based on Deep Learning Technology for Land and Water Detection",
+      "source": "Proceedings of the 1st IEEE International Conference on Advances in Next Gen Computer Science Icancs 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICANCS65819.2025.11377906",
+      "citations": 0,
+      "eid": "2-s2.0-105035626466",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035626466"
+    },
+    {
+      "title": "Strain Net-Sparse Multi Attention Residual Transformer Network",
+      "source": "2025 8th International Conference on Circuit Power and Computing Technologies Iccpct 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICCPCT65132.2025.11176722",
+      "citations": 0,
+      "eid": "2-s2.0-105020178063",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105020178063"
+    },
+    {
+      "title": "Early Uterine Cancer Detection Using Ultrasound Images by Different Machine Learning Techniques",
+      "source": "2025 Global Conference on Information Technology and Communication Networks Gitcon 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/GITCON65266.2025.11376852",
+      "citations": 0,
+      "eid": "2-s2.0-105035599225",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035599225"
+    },
+    {
+      "title": "Tea Leaves Disease Multi Class Classification using MobileNet-V2",
+      "source": "2025 Global Conference on Information Technology and Communication Networks Gitcon 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/GITCON65266.2025.11377940",
+      "citations": 0,
+      "eid": "2-s2.0-105035592047",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035592047"
+    },
+    {
+      "title": "Smart Healthcare Systems with IoT-Based used Hunger Games Search Optimization and Deep Learning",
+      "source": "2025 Global Conference on Information Technology and Communication Networks Gitcon 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/GITCON65266.2025.11377492",
+      "citations": 0,
+      "eid": "2-s2.0-105035601672",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035601672"
+    },
+    {
+      "title": "Solar-Powered Hand Gesture-Controlled Compact Lawn Mower",
+      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICECMSN68058.2025.11383074",
+      "citations": 0,
+      "eid": "2-s2.0-105035478748",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035478748"
+    },
+    {
+      "title": "AI-Based Classification and Detection of Multi Cancer from Histopathology and Microscopic Images using CNN",
+      "source": "4th International Conference on Automation Computing and Renewable Systems Icacrs 2025 Proceedings",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICACRS67045.2025.11324206",
+      "citations": 0,
+      "eid": "2-s2.0-105032724322",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105032724322"
+    },
+    {
+      "title": "Convolutional Neural Networks for the Identification and Forecasting of Potato Leaf Disease",
+      "source": "2025 6th International Conference for Emerging Technology Incet 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/INCET64471.2025.11140785",
+      "citations": 0,
+      "eid": "2-s2.0-105016788822",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105016788822"
+    },
+    {
+      "title": "Investigating the Potential Therapeutic Mechanisms of Puerarin in Neurological Diseases",
+      "source": "Molecular Neurobiology",
+      "date": "2024-12-01",
+      "doi": "10.1007/s12035-024-04222-4",
+      "citations": 27,
+      "eid": "2-s2.0-85193970068",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85193970068"
+    },
+    {
+      "title": "Performance Estimation of Multilayer-Stack-Channel IGZO-Based Thin-Film Transistor in Double-Gate Mode",
+      "source": "Lecture Notes in Electrical Engineering",
+      "date": "2024-01-01",
+      "doi": "10.1007/978-981-99-4795-9_8",
+      "citations": 0,
+      "eid": "2-s2.0-85180625076",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85180625076"
+    },
+    {
+      "title": "Design and Development of Serial Driver Verification Scoreboard Module using UVM",
+      "source": "7th International Conference on Inventive Computation Technologies Icict 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICICT60155.2024.10544523",
+      "citations": 1,
+      "eid": "2-s2.0-85196067155",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85196067155"
+    },
+    {
+      "title": "Development of Serial Driver Verification Environment Module Using UVM Method",
+      "source": "Proceedings 2024 5th International Conference on Intelligent Communication Technologies and Virtual Mobile Networks Icicv 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICICV62344.2024.00090",
+      "citations": 4,
+      "eid": "2-s2.0-85193258259",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85193258259"
+    },
+    {
+      "title": "An Effective Investigation on Implementation of Different Learning Techniques Used for Heart Disease Prediction",
+      "source": "2024 11th International Conference on Reliability Infocom Technologies and Optimization Trends and Future Directions Icrito 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICRITO61523.2024.10522150",
+      "citations": 4,
+      "eid": "2-s2.0-85193789532",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85193789532"
+    },
+    {
+      "title": "Improved Extreme Learning Machine Based Hunger Games Search for Automatic IP Configuration and Duplicate Node Detection",
+      "source": "Journal of Communications",
+      "date": "2024-01-01",
+      "doi": "10.12720/jcm.19.3.152-160",
+      "citations": 4,
+      "eid": "2-s2.0-85189139812",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85189139812"
+    },
+    {
+      "title": "Developing a Smart Wireless Sensor System Using IoT Network Architecture for Precision Agriculture",
+      "source": "Smart Innovation Systems and Technologies",
+      "date": "2023-01-01",
+      "doi": "10.1007/978-981-99-4717-1_48",
+      "citations": 1,
+      "eid": "2-s2.0-85174448749",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85174448749"
+    },
+    {
+      "title": "Markov Chain Model Used in Agricultural Yield Predictions Utilizing on Indian Agriculture",
+      "source": "Proceedings 2023 IEEE World Conference on Applied Intelligence and Computing Aic 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/AIC57670.2023.10263850",
+      "citations": 4,
+      "eid": "2-s2.0-85174522800",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85174522800"
+    },
+    {
+      "title": "TiO2Thick film Gas sensor for Detection H2S Gas Using ANN and Machine Learning Technique",
+      "source": "Iccece 2023 International Conference on Computer Electrical and Communication Engineering",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICCECE51049.2023.10085220",
+      "citations": 1,
+      "eid": "2-s2.0-85153337198",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153337198"
+    },
+    {
+      "title": "Analytical Modeling of Cylindrical Surrounding Double-Gate MOSFET Including Channel Quantum Confinement",
+      "source": "Silicon",
+      "date": "2022-08-01",
+      "doi": "10.1007/s12633-021-01558-7",
+      "citations": 3,
+      "eid": "2-s2.0-85123079868",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85123079868"
+    },
+    {
+      "title": "House Prices Prediction Using Machine Learning Regression Models",
+      "source": "2022 IEEE 2nd International Conference on Mobile Networks and Wireless Communications Icmnwc 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICMNWC56175.2022.10031728",
+      "citations": 9,
+      "eid": "2-s2.0-85148291040",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148291040"
+    },
+    {
+      "title": "Thickness modeling of short-channel cylindrical surrounding double-gate mosfet at strong inversion using depletion depth analysis",
+      "source": "Micro and Nanosystems",
+      "date": "2021-01-01",
+      "doi": "10.2174/1876402912666200831175936",
+      "citations": 5,
+      "eid": "2-s2.0-85104227605",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85104227605"
+    },
+    {
+      "title": "Performance comparison of stacked dual-metal gate engineered cylindrical surrounding double-gate MOSFET",
+      "source": "International Journal of Electronics and Telecommunications",
+      "date": "2021-01-01",
+      "doi": "10.24425/ijet.2021.135940",
+      "citations": 2,
+      "eid": "2-s2.0-85102618710",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85102618710"
+    },
+    {
+      "title": "Capacitive Model of CSDG MOSFET at Pinch-off for Switching Characteristics",
+      "source": "2019 10th International Conference on Computing Communication and Networking Technologies Icccnt 2019",
+      "date": "2019-07-01",
+      "doi": "10.1109/ICCCNT45670.2019.8944904",
+      "citations": 4,
+      "eid": "2-s2.0-85078172414",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85078172414"
+    },
+    {
+      "title": "Analysis of Electrical field in Uniformly doped Cylindrical Surrounding Double-Gate MOSFET",
+      "source": "2019 10th International Conference on Computing Communication and Networking Technologies Icccnt 2019",
+      "date": "2019-07-01",
+      "doi": "10.1109/ICCCNT45670.2019.8944882",
+      "citations": 3,
+      "eid": "2-s2.0-85078216895",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85078216895"
+    }
+  ]
+}

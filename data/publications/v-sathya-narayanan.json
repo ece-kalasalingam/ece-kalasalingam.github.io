@@ -1,0 +1,76 @@
+{
+  "publications": [
+    {
+      "title": "Multidimensional calcium phosphate coatings for bio activation of titanium implant surfaces using methodological approach",
+      "source": "Journal of Industrial and Engineering Chemistry",
+      "date": "2024-05-25",
+      "doi": "10.1016/j.jiec.2023.11.061",
+      "citations": 6,
+      "eid": "2-s2.0-85179829834",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85179829834"
+    },
+    {
+      "title": "Medical Image Recognition for Diagnosis",
+      "source": "2024 15th International Conference on Computing Communication and Networking Technologies Icccnt 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICCCNT61001.2024.10726025",
+      "citations": 3,
+      "eid": "2-s2.0-85212815514",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85212815514"
+    },
+    {
+      "title": "CNN based encoder and decoder model for sign language communication",
+      "source": "2024 15th International Conference on Computing Communication and Networking Technologies Icccnt 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICCCNT61001.2024.10725577",
+      "citations": 0,
+      "eid": "2-s2.0-85212924337",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85212924337"
+    },
+    {
+      "title": "MACHINE LEARNING AND BLOCK CHAIN MODEL FOR SUPPLYING FOOD PRODUCTS AND MAINTAIN FOOD QUALITY",
+      "source": "Carpathian Journal of Food Science and Technology",
+      "date": "2023-01-01",
+      "doi": "10.34302/SI/233",
+      "citations": 1,
+      "eid": "2-s2.0-85188250079",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85188250079"
+    },
+    {
+      "title": "A Next-Gen Automated Reading Companion for the Visually Impaired",
+      "source": "2023 IEEE International Conference on Research Methodologies in Knowledge Management Artificial Intelligence and Telecommunication Engineering Rmkmate 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/RMKMATE59243.2023.10369761",
+      "citations": 3,
+      "eid": "2-s2.0-85183533716",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85183533716"
+    },
+    {
+      "title": "An efficient recognition system for preserving ancient historical documents of English characters",
+      "source": "Journal of Ambient Intelligence and Humanized Computing",
+      "date": "2021-06-01",
+      "doi": "10.1007/s12652-020-02201-w",
+      "citations": 5,
+      "eid": "2-s2.0-85086744016",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85086744016"
+    },
+    {
+      "title": "An efficient binarization and segmentation technique for the recognition of ancient degraded historical documents",
+      "source": "International Journal of Scientific and Technology Research",
+      "date": "2020-03-01",
+      "doi": "",
+      "citations": 0,
+      "eid": "2-s2.0-85082847665",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85082847665"
+    },
+    {
+      "title": "Performance evaluation of image binarization technique for recognition of ancient historical documents",
+      "source": "Proceedings of IEEE International Conference on Intelligent Computing and Communication for Smart World I2c2sw 2018",
+      "date": "2018-12-01",
+      "doi": "10.1109/I2C2SW45816.2018.8997155",
+      "citations": 1,
+      "eid": "2-s2.0-85081128513",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85081128513"
+    }
+  ]
+}

@@ -1,13 +1,32 @@
 {
   "cursor": 0,
-  "last_run_at": "2026-05-01T05:46:43+00:00",
-  "last_mode": "incremental",
+  "last_run_at": "2026-05-01T13:01:45+00:00",
+  "last_mode": "full",
   "batch_size": 20,
   "incremental_years": 2,
   "processed_slugs": [
     "charles-pravin",
     "kjpece",
-    "jeyaprakashk"
+    "jeyaprakashk",
+    "p-sivakumar",
+    "m-pallikonda-rajasekaran",
+    "m-kalpana",
+    "b-perumal",
+    "shashi-kant-dargar",
+    "s-diwakaran",
+    "josephine-selle-jeyanathan",
+    "v-muneeswaran",
+    "d-ganeshaperumal",
+    "aarthi-ananthakirupa-vpmb",
+    "k-pandiaraj",
+    "p-manikandan",
+    "s-p-velmurugan",
+    "m-ramesh",
+    "jenyfal-sampson",
+    "n-bhuvaneswary",
+    "r-kottaimalai",
+    "j-bennilo-fernandes",
+    "v-sathya-narayanan"
   ],
   "faculty_status": {
     "charles-pravin": {
@@ -25,6 +44,126 @@
     "jeyaprakashk": {
       "last_synced_at": "2026-05-01T05:46:43+00:00",
       "last_mode": "incremental",
+      "status": "success",
+      "message": "success"
+    },
+    "p-sivakumar": {
+      "last_synced_at": "2026-05-01T13:01:13+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "m-pallikonda-rajasekaran": {
+      "last_synced_at": "2026-05-01T13:01:13+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "m-kalpana": {
+      "last_synced_at": "2026-05-01T13:01:15+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "b-perumal": {
+      "last_synced_at": "2026-05-01T13:01:18+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "shashi-kant-dargar": {
+      "last_synced_at": "2026-05-01T13:01:20+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "k-s-dhanalakshmi": {
+      "last_synced_at": "2026-05-01T13:01:20+00:00",
+      "last_mode": "full",
+      "status": "failed",
+      "message": "Missing scopus_id"
+    },
+    "s-diwakaran": {
+      "last_synced_at": "2026-05-01T13:01:22+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "josephine-selle-jeyanathan": {
+      "last_synced_at": "2026-05-01T13:01:24+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "v-muneeswaran": {
+      "last_synced_at": "2026-05-01T13:01:29+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "d-ganeshaperumal": {
+      "last_synced_at": "2026-05-01T13:01:29+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "aarthi-ananthakirupa-vpmb": {
+      "last_synced_at": "2026-05-01T13:01:31+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "k-pandiaraj": {
+      "last_synced_at": "2026-05-01T13:01:32+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "p-manikandan": {
+      "last_synced_at": "2026-05-01T13:01:34+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "s-p-velmurugan": {
+      "last_synced_at": "2026-05-01T13:01:36+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "m-ramesh": {
+      "last_synced_at": "2026-05-01T13:01:37+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "jenyfal-sampson": {
+      "last_synced_at": "2026-05-01T13:01:38+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "n-bhuvaneswary": {
+      "last_synced_at": "2026-05-01T13:01:40+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "r-kottaimalai": {
+      "last_synced_at": "2026-05-01T13:01:43+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "j-bennilo-fernandes": {
+      "last_synced_at": "2026-05-01T13:01:44+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "v-sathya-narayanan": {
+      "last_synced_at": "2026-05-01T13:01:45+00:00",
+      "last_mode": "full",
       "status": "success",
       "message": "success"
     }

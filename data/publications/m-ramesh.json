@@ -1,0 +1,220 @@
+{
+  "publications": [
+    {
+      "title": "U-Net based landmark detection of facial structures in cephalometric images",
+      "source": "Aip Conference Proceedings",
+      "date": "2026-03-23",
+      "doi": "10.1063/5.0317380",
+      "citations": 0,
+      "eid": "2-s2.0-105035489948",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035489948"
+    },
+    {
+      "title": "Optimised CSRR-loaded antenna for high-efficiency THz communication: a link budget perspective",
+      "source": "Pramana Journal of Physics",
+      "date": "2026-03-01",
+      "doi": "10.1007/s12043-025-03081-5",
+      "citations": 0,
+      "eid": "2-s2.0-105029687171",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105029687171"
+    },
+    {
+      "title": "Pancreatic Cancer Detection Using ResNet and Graph Attention Network",
+      "source": "2nd Asian Conference on Intelligent Technologies Acoit 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ACOIT66109.2025.11436457",
+      "citations": 0,
+      "eid": "2-s2.0-105036000769",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105036000769"
+    },
+    {
+      "title": "Oil Spill Detection using Deep Learning and CNN: Polarimetric Scattering Information from S-1 SAR Images",
+      "source": "International Conference on Computational Robotics Testing and Engineering Evaluation Iccrtee 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICCRTEE64519.2025.11052935",
+      "citations": 0,
+      "eid": "2-s2.0-105012171865",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105012171865"
+    },
+    {
+      "title": "Neuro-Signal-Informed AI Models for Comprehensive Diagnosis of Dermatological Disorders",
+      "source": "Proceedings of 8th International Conference on Computing Methodologies and Communication Iccmc 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICCMC65190.2025.11140663",
+      "citations": 0,
+      "eid": "2-s2.0-105016902151",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105016902151"
+    },
+    {
+      "title": "10GB MAC CORE verification-Missing EOP ethernet test",
+      "source": "Aip Conference Proceedings",
+      "date": "2024-08-05",
+      "doi": "10.1063/5.0210188",
+      "citations": 0,
+      "eid": "2-s2.0-85201263077",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85201263077"
+    },
+    {
+      "title": "Advanced Spirometer Based Human Respiration Diagnosis",
+      "source": "Proceedings 2024 5th International Conference on Intelligent Communication Technologies and Virtual Mobile Networks Icicv 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICICV62344.2024.00081",
+      "citations": 0,
+      "eid": "2-s2.0-85193530014",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85193530014"
+    },
+    {
+      "title": "Deep Learning Based Voice Assisted Traffic Sign Detection Using RCNN",
+      "source": "2024 International Conference on Recent Innovation in Smart and Sustainable Technology Icrisst 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICRISST59181.2024.10922024",
+      "citations": 0,
+      "eid": "2-s2.0-105001663338",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105001663338"
+    },
+    {
+      "title": "Implementation of a PnR Flow at Block Level to Achieve the High Utilisation Rate",
+      "source": "7th International Conference on Inventive Computation Technologies Icict 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICICT60155.2024.10544638",
+      "citations": 2,
+      "eid": "2-s2.0-85196119418",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85196119418"
+    },
+    {
+      "title": "Development of a Solar-Powered Small Autonomous Water Surface Vehicle",
+      "source": "2nd International Conference on Intelligent Cyber Physical Systems and Internet of Things Icoici 2024 Proceedings",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICoICI62503.2024.10696198",
+      "citations": 2,
+      "eid": "2-s2.0-85207216923",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85207216923"
+    },
+    {
+      "title": "HOEEACR: Hybrid Optimized Energy-Efficient Adaptive Clustered Routing for WSN",
+      "source": "IETE Journal of Research",
+      "date": "2024-01-01",
+      "doi": "10.1080/03772063.2023.2298510",
+      "citations": 15,
+      "eid": "2-s2.0-85187435652",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85187435652"
+    },
+    {
+      "title": "10 GB MAC CORE Verification Zero Inter Packet Gap Module for Ethernet Technology",
+      "source": "Proceedings of the 7th International Conference on Intelligent Computing and Control Systems Iciccs 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICICCS56967.2023.10142494",
+      "citations": 1,
+      "eid": "2-s2.0-85163886469",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163886469"
+    },
+    {
+      "title": "Five Stage Pipelined MIPS Processor Verification Interface and Test Module using UVM",
+      "source": "International Conference on Sustainable Computing and Smart Systems Icscss 2023 Proceedings",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICSCSS57650.2023.10169648",
+      "citations": 1,
+      "eid": "2-s2.0-85166208447",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85166208447"
+    },
+    {
+      "title": "IoT-Based App for Commuter Travel Tracking System: A Review",
+      "source": "Lecture Notes on Data Engineering and Communications Technologies",
+      "date": "2023-01-01",
+      "doi": "10.1007/978-981-99-1767-9_20",
+      "citations": 0,
+      "eid": "2-s2.0-85161398394",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161398394"
+    },
+    {
+      "title": "Deep Learning Based Facial Obfuscation Using MobileNet",
+      "source": "2023 World Conference on Communication and Computing Wconf 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/WCONF58270.2023.10234991",
+      "citations": 1,
+      "eid": "2-s2.0-85173064126",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85173064126"
+    },
+    {
+      "title": "IoT-based Web Application for Passenger Travel Tracking System",
+      "source": "7th International Conference on Trends in Electronics and Informatics Icoei 2023 Proceedings",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICOEI56765.2023.10125610",
+      "citations": 0,
+      "eid": "2-s2.0-85161199203",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161199203"
+    },
+    {
+      "title": "Cloud based Analysis and Testing of Operations in a Flight System using Embedded Sensors and Microcontrollers",
+      "source": "7th International Conference on Trends in Electronics and Informatics Icoei 2023 Proceedings",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICOEI56765.2023.10125707",
+      "citations": 1,
+      "eid": "2-s2.0-85161167657",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161167657"
+    },
+    {
+      "title": "Five Stage Pipelined MIPS Processor Verification Scoreboard Module using UVM",
+      "source": "2023 International Conference in Advances in Power Signal and Information Technology Apsit 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/APSIT58554.2023.10201745",
+      "citations": 3,
+      "eid": "2-s2.0-85168669485",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85168669485"
+    },
+    {
+      "title": "Miniaturized four port MIMO antenna for automotive communications",
+      "source": "Analog Integrated Circuits and Signal Processing",
+      "date": "2022-04-01",
+      "doi": "10.1007/s10470-022-01988-2",
+      "citations": 10,
+      "eid": "2-s2.0-85124203936",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85124203936"
+    },
+    {
+      "title": "Minimization of Loss and Mutual Coupling Using Tiny Antenna Arrays for UWB Applications",
+      "source": "6th International Conference on Electronics Communication and Aerospace Technology Iceca 2022 Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICECA55336.2022.10009489",
+      "citations": 1,
+      "eid": "2-s2.0-85147524260",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85147524260"
+    },
+    {
+      "title": "A novel semi-folded parallel successive cancellation-based polar decoder for optimal-register allocation",
+      "source": "Journal of Supercomputing",
+      "date": "2019-11-01",
+      "doi": "10.1007/s11227-018-2519-y",
+      "citations": 0,
+      "eid": "2-s2.0-85051459216",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85051459216"
+    },
+    {
+      "title": "A review on resource efficient polar decoders-present and past",
+      "source": "Proceedings of the 2017 IEEE International Conference on Communication and Signal Processing Iccsp 2017",
+      "date": "2017-07-02",
+      "doi": "10.1109/ICCSP.2017.8286701",
+      "citations": 1,
+      "eid": "2-s2.0-85046666274",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85046666274"
+    },
+    {
+      "title": "A review on security aspects in 5G systems: VLSI perspective",
+      "source": "Proceedings of the 2017 International Conference on Wireless Communications Signal Processing and Networking Wispnet 2017",
+      "date": "2017-07-02",
+      "doi": "10.1109/WiSPNET.2017.8299848",
+      "citations": 0,
+      "eid": "2-s2.0-85046361818",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85046361818"
+    },
+    {
+      "title": "A design of SRAM structure for low power using heterojunction cmos with single bit line",
+      "source": "Arpn Journal of Engineering and Applied Sciences",
+      "date": "2015-01-01",
+      "doi": "",
+      "citations": 3,
+      "eid": "2-s2.0-84928577301",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/84928577301"
+    }
+  ]
+}

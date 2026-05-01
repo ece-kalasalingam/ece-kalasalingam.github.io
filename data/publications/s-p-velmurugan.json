@@ -1,0 +1,373 @@
+{
+  "publications": [
+    {
+      "title": "A Multimodal Medical Image Fusion-Based of Glioma Grading Classification System With Adaptive Dilated ResNet and ResUnet++-Aided Segmentation",
+      "source": "Computational Intelligence",
+      "date": "2026-02-01",
+      "doi": "10.1111/coin.70194",
+      "citations": 0,
+      "eid": "2-s2.0-105029582126",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105029582126"
+    },
+    {
+      "title": "Design and Development of a Fractal Antenna for Material Classification",
+      "source": "2025 11th International Conference on Smart Computing and Communications Intelligent Technologies for A Sustainable World Icscc 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICSCC66177.2025.11233617",
+      "citations": 0,
+      "eid": "2-s2.0-105029617310",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105029617310"
+    },
+    {
+      "title": "Convolutional Attention Capsule Network with Migrating Walrus Optimization for Multi-View 3D Object Detection in Autonomous Driving",
+      "source": "Proceedings of the 9th International Conference on Electronics Communication and Aerospace Technology Iceca 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICECA66444.2025.11382682",
+      "citations": 0,
+      "eid": "2-s2.0-105034900649",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034900649"
+    },
+    {
+      "title": "A novel deep learning framework for intracranial hemorrhage segmentation and detection using advanced U-Net and metaheuristic optimization",
+      "source": "Journal of the Chinese Institute of Engineers Transactions of the Chinese Institute of Engineers Series A",
+      "date": "2025-01-01",
+      "doi": "10.1080/02533839.2025.2504707",
+      "citations": 0,
+      "eid": "2-s2.0-105005796193",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105005796193"
+    },
+    {
+      "title": "Inclusive Education via Emotion-Aware Tutoring using Real-Time Recognition",
+      "source": "Proceedings of the 7th International Conference on Innovative Data Communication Technologies and Application Icidca 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICIDCA66325.2025.11280349",
+      "citations": 1,
+      "eid": "2-s2.0-105031405818",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105031405818"
+    },
+    {
+      "title": "Enhanced CNN Model Techniques for Classification of Brain Tumor and Approaches",
+      "source": "Lecture Notes in Electrical Engineering",
+      "date": "2025-01-01",
+      "doi": "10.1007/978-981-96-7249-3_24",
+      "citations": 0,
+      "eid": "2-s2.0-105021397751",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105021397751"
+    },
+    {
+      "title": "Optimizing Brain Tumor Classification with GridSearchCV using Multimodal Image Fusion: A Hyperparameter Tuning Approach",
+      "source": "Proceedings of 8th International Conference on Inventive Computation Technologies Icict 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICICT64420.2025.11004891",
+      "citations": 0,
+      "eid": "2-s2.0-105007419701",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007419701"
+    },
+    {
+      "title": "Leukemia Blood Cancer Detection using Mobile Net",
+      "source": "3rd International Conference on Intelligent Data Communication Technologies and Internet of Things Idciot 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/IDCIOT64235.2025.10914829",
+      "citations": 1,
+      "eid": "2-s2.0-105001666166",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105001666166"
+    },
+    {
+      "title": "Morlet Empowering Wavelet Decision Neural Network with Lotus Effect Optimization Algorithm based Classification of Skin Cancer",
+      "source": "Proceedings of the 9th International Conference on Electronics Communication and Aerospace Technology Iceca 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICECA66444.2025.11383508",
+      "citations": 0,
+      "eid": "2-s2.0-105034832426",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034832426"
+    },
+    {
+      "title": "Impact of Cr3+ substitution on Co0.5Ni0.25Mg0.25Fe2−xCrxO4 nano ferrites: structural and magnetic characteristics",
+      "source": "Applied Physics A Materials Science and Processing",
+      "date": "2024-12-01",
+      "doi": "10.1007/s00339-024-08054-w",
+      "citations": 0,
+      "eid": "2-s2.0-85210179759",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85210179759"
+    },
+    {
+      "title": "Effect of Cr3+ substitution on the structural and magnetic properties of Co0.5Cu0.25Mg0.25Fe2−xCrxO4 nano ferrites",
+      "source": "Journal of Materials Science Materials in Electronics",
+      "date": "2024-06-01",
+      "doi": "10.1007/s10854-024-13007-3",
+      "citations": 1,
+      "eid": "2-s2.0-85196804391",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85196804391"
+    },
+    {
+      "title": "Blockchain-assisted secure image transmission and diagnosis model on Internet of Medical Things Environment",
+      "source": "Personal and Ubiquitous Computing",
+      "date": "2024-02-01",
+      "doi": "10.1007/s00779-021-01543-2",
+      "citations": 40,
+      "eid": "2-s2.0-85101785726",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85101785726"
+    },
+    {
+      "title": "Enhanced Galactic Swarm Algorithm with Encryption Technique for Medical Image Security in Internet of Things environment",
+      "source": "Securing Next Generation Connected Healthcare Systems Artificial Intelligence Technologies",
+      "date": "2024-01-01",
+      "doi": "10.1016/B978-0-443-13951-2.00008-8",
+      "citations": 0,
+      "eid": "2-s2.0-85199021415",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85199021415"
+    },
+    {
+      "title": "Detection of Intracranial Aneurysms by using 3-Dimensional Multiscale Vessel Enhanced Filtering",
+      "source": "Isml 2024 Intelligent Systems and Machine Learning Conference",
+      "date": "2024-01-01",
+      "doi": "10.1109/ISML60050.2024.11007417",
+      "citations": 0,
+      "eid": "2-s2.0-105010212824",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105010212824"
+    },
+    {
+      "title": "An intelligent water drop algorithm with deep learning driven vehicle detection and classification",
+      "source": "Aims Mathematics",
+      "date": "2024-01-01",
+      "doi": "10.3934/math.2024557",
+      "citations": 3,
+      "eid": "2-s2.0-85191839945",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85191839945"
+    },
+    {
+      "title": "Sandpiper Optimization Algorithm With Region Growing Based Robust Retinal Blood Vessel Segmentation Approach",
+      "source": "IEEE Access",
+      "date": "2024-01-01",
+      "doi": "10.1109/ACCESS.2024.3365273",
+      "citations": 5,
+      "eid": "2-s2.0-85186092788",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85186092788"
+    },
+    {
+      "title": "Fusion-based Digital Twin Framework with Convolutional Neural Networks (CNN) for Real-Time Threat Detection and Image Enhancement in Low-Light IoT Environments",
+      "source": "2nd IEEE International Conference on Integrated Intelligence and Communication Systems Iciics 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICIICS63763.2024.10859361",
+      "citations": 0,
+      "eid": "2-s2.0-85218180717",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85218180717"
+    },
+    {
+      "title": "Synthesis of silver nanoparticles employing Bryophyllum pinnatum leaf extract and it's efficiency towards photocatalytic and antibacterial properties",
+      "source": "Chemical Data Collections",
+      "date": "2023-12-01",
+      "doi": "10.1016/j.cdc.2023.101085",
+      "citations": 4,
+      "eid": "2-s2.0-85174969497",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85174969497"
+    },
+    {
+      "title": "A Novel Bacterial Foraging Optimization Based Multimodal Medical Image Fusion Approach",
+      "source": "Applied Science and Engineering Progress",
+      "date": "2023-10-01",
+      "doi": "10.14416/j.asep.2023.03.004",
+      "citations": 0,
+      "eid": "2-s2.0-85166920104",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85166920104"
+    },
+    {
+      "title": "Effect of Work Function Tuning over the Device Characteristics of GAA SNSTFT",
+      "source": "Silicon",
+      "date": "2023-05-01",
+      "doi": "10.1007/s12633-022-02241-1",
+      "citations": 2,
+      "eid": "2-s2.0-85143370968",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85143370968"
+    },
+    {
+      "title": "Effective Return Rate Prediction of Blockchain Financial Products Using Machine Learning",
+      "source": "Computers Materials and Continua",
+      "date": "2023-01-01",
+      "doi": "10.32604/cmc.2023.033162",
+      "citations": 12,
+      "eid": "2-s2.0-85139819339",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85139819339"
+    },
+    {
+      "title": "10 GE MAC CORE Verification Driver-Module",
+      "source": "2023 International Conference on Sustainable Emerging Innovations in Engineering and Technology Icseiet 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICSEIET58677.2023.10303040",
+      "citations": 0,
+      "eid": "2-s2.0-85179128966",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85179128966"
+    },
+    {
+      "title": "A Novel Hybrid Optimization for Cluster‐Based Routing Protocol in Information-Centric Wireless Sensor Networks for IoT Based Mobile Edge Computing",
+      "source": "Wireless Personal Communications",
+      "date": "2022-11-01",
+      "doi": "10.1007/s11277-021-08088-w",
+      "citations": 82,
+      "eid": "2-s2.0-85099867827",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85099867827"
+    },
+    {
+      "title": "Deep Learning Enabled Object Detection and Tracking Model for Big Data Environment",
+      "source": "Computers Materials and Continua",
+      "date": "2022-01-01",
+      "doi": "10.32604/cmc.2022.028570",
+      "citations": 1,
+      "eid": "2-s2.0-85132113177",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85132113177"
+    },
+    {
+      "title": "Design of Multimodal Fusion-Based Deep Learning Approach for COVID-19 Diagnosis Using Chest X-Ray Images",
+      "source": "Intelligent Systems Reference Library",
+      "date": "2022-01-01",
+      "doi": "10.1007/978-981-19-1476-8_6",
+      "citations": 0,
+      "eid": "2-s2.0-85128197430",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85128197430"
+    },
+    {
+      "title": "AI based traffic flow prediction model for connected and autonomous electric vehicles",
+      "source": "Computers Materials and Continua",
+      "date": "2022-01-01",
+      "doi": "10.32604/cmc.2022.020197",
+      "citations": 15,
+      "eid": "2-s2.0-85115989379",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85115989379"
+    },
+    {
+      "title": "Deep learning enabled predictive model for p2p energy trading in tem",
+      "source": "Computers Materials and Continua",
+      "date": "2022-01-01",
+      "doi": "10.32604/cmc.2022.022110",
+      "citations": 4,
+      "eid": "2-s2.0-85118605691",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85118605691"
+    },
+    {
+      "title": "IoT enabled depthwise separable convolution neural network with deep support vector machine for COVID-19 diagnosis and classification",
+      "source": "International Journal of Machine Learning and Cybernetics",
+      "date": "2021-11-01",
+      "doi": "10.1007/s13042-020-01248-7",
+      "citations": 136,
+      "eid": "2-s2.0-85098765216",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85098765216"
+    },
+    {
+      "title": "An intelligent energy management and traffic predictive model for autonomous vehicle systems",
+      "source": "Soft Computing",
+      "date": "2021-09-01",
+      "doi": "10.1007/s00500-021-05614-7",
+      "citations": 26,
+      "eid": "2-s2.0-85100351887",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85100351887"
+    },
+    {
+      "title": "Optimal deep learning based image compression technique for data transmission on industrial Internet of things applications",
+      "source": "Transactions on Emerging Telecommunications Technologies",
+      "date": "2021-07-01",
+      "doi": "10.1002/ett.3976",
+      "citations": 65,
+      "eid": "2-s2.0-85083764662",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85083764662"
+    },
+    {
+      "title": "Automated Internet of Medical Things (IoMT) Based Healthcare Monitoring System",
+      "source": "Studies in Systems Decision and Control",
+      "date": "2021-01-01",
+      "doi": "10.1007/978-3-030-55833-8_7",
+      "citations": 20,
+      "eid": "2-s2.0-85093857852",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85093857852"
+    },
+    {
+      "title": "Hyperparameter Optimization of Deep Neural Network in Multimodality Fused Medical Image Classification for Medical and Industrial IoT",
+      "source": "Internet of Things",
+      "date": "2021-01-01",
+      "doi": "10.1007/978-3-030-52624-5_9",
+      "citations": 5,
+      "eid": "2-s2.0-85101156884",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85101156884"
+    },
+    {
+      "title": "Multimodality medical image fusion based on non-sub-sampled contourlet transform",
+      "source": "International Journal of Computer Applications in Technology",
+      "date": "2021-01-01",
+      "doi": "10.1504/IJCAT.2021.117279",
+      "citations": 4,
+      "eid": "2-s2.0-85114344853",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85114344853"
+    },
+    {
+      "title": "A novel approach in multimodality medical image fusion using optimal shearlet and deep learning",
+      "source": "International Journal of Imaging Systems and Technology",
+      "date": "2020-12-01",
+      "doi": "10.1002/ima.22436",
+      "citations": 38,
+      "eid": "2-s2.0-85084198108",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85084198108"
+    },
+    {
+      "title": "Multi-modality medical image fusion using hybridization of binary crow search optimization",
+      "source": "Health Care Management Science",
+      "date": "2020-12-01",
+      "doi": "10.1007/s10729-019-09492-2",
+      "citations": 43,
+      "eid": "2-s2.0-85068834030",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85068834030"
+    },
+    {
+      "title": "Privacy preservation in edge consumer electronics by combining anomaly detection with dynamic attribute-based re-encryption",
+      "source": "Mathematics",
+      "date": "2020-11-01",
+      "doi": "10.3390/math8111871",
+      "citations": 10,
+      "eid": "2-s2.0-85094665159",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85094665159"
+    },
+    {
+      "title": "Optimal Deep Neural Network model based multimodality fused medical image classification",
+      "source": "Physical Communication",
+      "date": "2020-08-01",
+      "doi": "10.1016/j.phycom.2020.101119",
+      "citations": 25,
+      "eid": "2-s2.0-85084336075",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85084336075"
+    },
+    {
+      "title": "Analysis of GAA SNTFT with Different Dielectric Materials",
+      "source": "Icdcs 2020 2020 5th International Conference on Devices Circuits and Systems",
+      "date": "2020-03-01",
+      "doi": "10.1109/ICDCS48716.2020.243599",
+      "citations": 2,
+      "eid": "2-s2.0-85084663426",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85084663426"
+    },
+    {
+      "title": "Simulation and Performance Analysis of a Triple-material Gate GAA SNSTFT",
+      "source": "Journal of Nano and Electronic Physics",
+      "date": "2020-01-01",
+      "doi": "10.21272/jnep.12(6).06006",
+      "citations": 1,
+      "eid": "2-s2.0-85127876590",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85127876590"
+    },
+    {
+      "title": "Development and Implementation of Efficient Water and Energy Management System for Indian Villages",
+      "source": "IEEE International Conference on Intelligent Techniques in Control Optimization and Signal Processing Incos 2019",
+      "date": "2019-04-01",
+      "doi": "10.1109/INCOS45849.2019.8951362",
+      "citations": 0,
+      "eid": "2-s2.0-85078823010",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85078823010"
+    },
+    {
+      "title": "Multimodality image fusion using centre-based genetic algorithm and fuzzy logic",
+      "source": "International Journal of Biomedical Engineering and Technology",
+      "date": "2018-01-01",
+      "doi": "10.1504/IJBET.2018.095982",
+      "citations": 12,
+      "eid": "2-s2.0-85056409678",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85056409678"
+    }
+  ]
+}

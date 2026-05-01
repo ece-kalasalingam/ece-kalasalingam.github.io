@@ -1,10 +1,15 @@
 :root {
   color-scheme: light dark;
+  --brand-blue: #0d5cab;
+  --brand-blue-ink: #123f73;
+  --brand-blue-muted: #4b6789;
+  --brand-blue-soft: #f4f8fe;
+  --brand-blue-border: #d3dfef;
   --bg: #f7f9fc;
   --surface: #ffffff;
   --text: #1a1a1a;
   --muted: #555555;
-  --link: #0a58ca;
+  --link: var(--brand-blue);
   --border: #d9dee5;
   --photo-bg: #f4f6f8;
   --photo-fallback-text: #4a5560;
@@ -28,7 +33,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   max-width: 1000px;
   margin: 30px auto;
   padding: 0 16px;

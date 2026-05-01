@@ -11,6 +11,11 @@ async function loadFacultyList() {
   const container = document.getElementById("content");
   container.innerHTML = "";
 
+  const intro = document.createElement("p");
+  intro.className = "subtext";
+  intro.textContent = `${faculty.length} faculty members`;
+  container.appendChild(intro);
+
   const grid = document.createElement("div");
   grid.className = "grid";
 
@@ -31,11 +36,6 @@ async function loadFacultyList() {
     name.className = "name";
     name.textContent = person.name || "Faculty Member";
     info.appendChild(name);
-
-    const designation = document.createElement("p");
-    designation.className = "meta";
-    designation.textContent = person.designation || "Designation not listed";
-    info.appendChild(designation);
 
     const photoWrap = document.createElement("div");
     photoWrap.className = "photo-wrap";

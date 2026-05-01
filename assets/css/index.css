@@ -1,16 +1,27 @@
 h1 {
-  margin-bottom: 8px;
+  margin: 0 0 8px;
+  font-size: clamp(1.55rem, 2.1vw, 2rem);
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+#content {
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
 }
 
 .subtext {
+  margin: 0 0 14px;
   color: var(--muted);
-  margin-bottom: 24px;
+  font-size: 0.95rem;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
 }
 
 .card {
@@ -19,15 +30,15 @@ h1 {
   color: inherit;
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 16px;
+  padding: 12px;
   background: var(--surface);
-  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
 }
 
 .card:hover,
 .card:focus-visible {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px color-mix(in srgb, var(--text) 16%, transparent);
+  border-color: color-mix(in srgb, var(--text) 28%, var(--border));
+  background-color: color-mix(in srgb, var(--surface) 88%, var(--text));
   outline: none;
   text-decoration: none;
 }
@@ -36,8 +47,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 8px;
+  gap: 10px;
 }
 
 .card-info {
@@ -46,24 +56,28 @@ h1 {
 }
 
 .name {
-  margin: 0 0 8px;
-  font-size: 1.08rem;
-}
-
-.cta {
-  margin-top: 12px;
-  color: var(--link);
-  font-weight: 600;
-  font-size: 0.95rem;
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.35;
 }
 
 .photo-wrap {
-  width: 64px;
-  height: 78px;
-  border-radius: 8px;
+  width: 46px;
+  height: 56px;
+  border-radius: 6px;
 }
 
 .photo-fallback {
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+  letter-spacing: 0.4px;
+}
+
+@media (max-width: 700px) {
+  #content {
+    padding: 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }

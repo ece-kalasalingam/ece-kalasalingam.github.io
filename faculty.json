@@ -1,9 +1,15 @@
 [
+    {
+    "name": "Dr. Jeya Prakash K.",
+    "slug": "jeyaprakashk",
+    "scopus_id": "57195717091",
+    "designation": "Associate Professor"
+  },
   {
     "name": "Dr. Charles Pravin J.",
     "slug": "charles-pravin",
     "scopus_id": "57191345241",
-    "designation": "Professor, HoD"
+    "designation": "Professor/HoD"
   },
   {
     "name": "Dr. P. Sivakumar",
@@ -48,12 +54,6 @@
     "designation": "Associate Professor"
   },
   {
-    "name": "Dr. J. Deny",
-    "slug": "j-deny",
-    "scopus_id": "57190001425",
-    "designation": "Associate Professor"
-  },
-  {
     "name": "Dr. Josephine Selle Jeyanathan",
     "slug": "josephine-selle-jeyanathan",
     "scopus_id": "57207916322",
@@ -81,12 +81,6 @@
     "name": "Dr. K.Pandiaraj",
     "slug": "k-pandiaraj",
     "scopus_id": "57202111379",
-    "designation": "Associate Professor"
-  },
-  {
-    "name": "Dr. Jeya Prakash K.",
-    "slug": "jeyaprakashk",
-    "scopus_id": "57195717091",
     "designation": "Associate Professor"
   },
   {
@@ -144,14 +138,14 @@
     "designation": "Assistant Professor"
   },
   {
-    "name": "Mrs. Sheeba Jeya Sophia",
-    "slug": "mrs-sheeba-jeya-sophia",
+    "name": "Dr. Sheeba Jeya Sophia",
+    "slug": "sheeba-jeya-sophia",
     "scopus_id": "56878915500",
     "designation": "Assistant Professor"
   },
   {
     "name": "Ms. Loyola Jasmine J",
-    "slug": "ms-loyola-jasmine-j",
+    "slug": "loyola-jasmine-j",
     "scopus_id": "57957045300",
     "designation": "Assistant Professor"
   }

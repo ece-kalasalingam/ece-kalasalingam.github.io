@@ -883,22 +883,23 @@ def select_batch(
     cursor: int,
     output_dir: Path,
 ) -> tuple[list[FacultyEntry], int]:
-    if not faculty_list:
+    eligible_faculty = [fac for fac in faculty_list if fac.get("scopus_id", "").strip()]
+    if not eligible_faculty:
         return ([], 0)
 
-    capped_size = min(batch_size, len(faculty_list))
+    capped_size = min(batch_size, len(eligible_faculty))
 
-    missing = [fac for fac in faculty_list if not (output_dir / f"{fac['slug']}.json").exists()]
+    missing = [fac for fac in eligible_faculty if not (output_dir / f"{fac['slug']}.json").exists()]
     if missing:
         selected = missing[:capped_size]
-        return (selected, cursor % len(faculty_list))
+        return (selected, cursor % len(eligible_faculty))
 
-    start = cursor % len(faculty_list)
+    start = cursor % len(eligible_faculty)
     selected: list[FacultyEntry] = []
     for i in range(capped_size):
-        selected.append(faculty_list[(start + i) % len(faculty_list)])
+        selected.append(eligible_faculty[(start + i) % len(eligible_faculty)])
 
-    next_cursor = (start + capped_size) % len(faculty_list)
+    next_cursor = (start + capped_size) % len(eligible_faculty)
     return (selected, next_cursor)
 
 
@@ -919,7 +920,7 @@ def main() -> int:
 
         batch, next_cursor = select_batch(faculty_list, batch_size, cursor, OUTPUT_DIR)
         if not batch:
-            print("No faculty entries available for processing.")
+            print("No eligible faculty entries (with scopus_id) available for processing.")
             return 0
 
         print(f"Mode: {mode}; Batch size: {batch_size}; Incremental years: {incremental_years}")

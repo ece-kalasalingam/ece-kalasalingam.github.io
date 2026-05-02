@@ -12,7 +12,7 @@ AFFILIATION_URL: Final[str] = "https://api.elsevier.com/content/search/affiliati
 RESEARCH_QUERY: Final[str] = 'AFFIL("Electronics and Communication Engineering" AND "Kalasalingam Academy of Research and Education")'
 OUTPUT_PATH: Final[Path] = Path("data/research.json")
 
-API_KEY = "os.getenv("ELSEVIER_API_KEY")
+API_KEY = os.getenv("ELSEVIER_API_KEY")
 INST_TOKEN = os.getenv("ELSEVIER_INST_TOKEN")
 
 JSONScalar: TypeAlias = None | bool | int | float | str

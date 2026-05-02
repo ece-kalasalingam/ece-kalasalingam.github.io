@@ -24,21 +24,9 @@ async function loadFacultyList() {
     card.className = "card";
     card.href = `faculty/?${encodeURIComponent(person.slug || "")}`;
 
-    const top = document.createElement("div");
-    top.className = "card-top";
-    card.appendChild(top);
-
-    const info = document.createElement("div");
-    info.className = "card-info";
-    top.appendChild(info);
-
-    const name = document.createElement("h2");
-    name.className = "name";
-    name.textContent = person.name || "Faculty Member";
-    info.appendChild(name);
-
     const photoWrap = document.createElement("div");
-    photoWrap.className = "photo-wrap";
+    photoWrap.className = "photo-wrap card-photo";
+    card.appendChild(photoWrap);
 
     const photo = document.createElement("img");
     photo.className = "photo";
@@ -51,7 +39,16 @@ async function loadFacultyList() {
     attachFacultyPhoto(photo, fallback, person.slug || "", person.name || "", "images/faculty");
     photoWrap.appendChild(photo);
     photoWrap.appendChild(fallback);
-    top.appendChild(photoWrap);
+
+    const name = document.createElement("h2");
+    name.className = "name";
+    name.textContent = person.name || "Faculty Member";
+    card.appendChild(name);
+
+    const designation = document.createElement("p");
+    designation.className = "designation";
+    designation.textContent = person.designation || "Faculty";
+    card.appendChild(designation);
 
     grid.appendChild(card);
   }

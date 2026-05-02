@@ -78,6 +78,33 @@ def normalize_entry(item: JSONObject) -> dict[str, str]:
     }
 
 
+def print_auth_diagnostic(response: requests.Response) -> None:
+    status = response.status_code
+    if status not in (401, 403):
+        return
+
+    has_inst_token = bool(INST_TOKEN and INST_TOKEN.strip())
+    print("::error::Elsevier authorization failed for affiliation search endpoint.")
+    print(f"::error::HTTP status: {status}")
+    print(f"::error::Endpoint: {AFFILIATION_URL}")
+    print(f"::error::Institution token provided: {'yes' if has_inst_token else 'no'}")
+    print("::error::Likely cause: API key/token lacks access to this endpoint or view.")
+    print("::error::Confirm ELSEVIER_API_KEY is correct and, if required, set ELSEVIER_INST_TOKEN.")
+
+    try:
+        payload = response.json()
+        service_error = payload.get("service-error") if isinstance(payload, dict) else None
+        status_obj = service_error.get("status") if isinstance(service_error, dict) else None
+        status_code = status_obj.get("statusCode") if isinstance(status_obj, dict) else None
+        status_text = status_obj.get("statusText") if isinstance(status_obj, dict) else None
+        if isinstance(status_code, str) and status_code.strip():
+            print(f"::error::Elsevier statusCode: {status_code.strip()}")
+        if isinstance(status_text, str) and status_text.strip():
+            print(f"::error::Elsevier statusText: {status_text.strip()}")
+    except ValueError:
+        print("::warning::Could not parse Elsevier error JSON payload.")
+
+
 def main() -> int:
     if not API_KEY or not API_KEY.strip():
         print("::error::ELSEVIER_API_KEY is required but missing.")
@@ -90,6 +117,9 @@ def main() -> int:
         params=params,
         timeout=30,
     )
+    print(f"Request URL: {response.url}")
+    if response.status_code in (401, 403):
+        print_auth_diagnostic(response)
     response.raise_for_status()
 
     raw_payload: object = response.json()

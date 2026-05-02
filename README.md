@@ -13,6 +13,16 @@ Serve the repository root with any static server (for example, `python -m http.s
 - Publications payload output: `data/publications/<slug>.json`
 - Sync checkpoint state: `data/sync_state.json`
 - Fetch script: `scripts/fetch_publications.py`
+- Research affiliation fetch script: `scripts/fetch_research.py`
+
+### Research Page Data
+
+The `research/` page reads from `data/research.json`.
+
+To refresh it with the same Elsevier key flow used by faculty fetch:
+
+1. Set `ELSEVIER_API_KEY` (and optional `ELSEVIER_INST_TOKEN`).
+2. Run `python scripts/fetch_research.py`.
 
 ### Scalable Fetch Modes
 

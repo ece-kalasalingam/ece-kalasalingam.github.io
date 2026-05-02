@@ -2,12 +2,22 @@ from __future__ import annotations
 
 import json
 import os
-import sys
 from pathlib import Path
-from typing import Any
+from typing import TypedDict, TypeAlias, cast
+
+JSONValue: TypeAlias = str | int | float | bool | None | dict[str, "JSONValue"] | list["JSONValue"]
+JSONObject: TypeAlias = dict[str, JSONValue]
+JSONArray: TypeAlias = list[JSONValue]
 
 
-def load_json(path: Path) -> Any:
+class FacultyRecord(TypedDict):
+    name: str
+    slug: str
+    scopus_id: str | None
+    designation: str
+
+
+def load_json(path: Path) -> object:
     try:
         return json.loads(path.read_text(encoding="utf-8"))
     except FileNotFoundError as exc:
@@ -21,20 +31,51 @@ def require(condition: bool, message: str) -> None:
         raise RuntimeError(message)
 
 
-def validate_faculty_file(repo_root: Path, allow_missing: bool) -> list[dict[str, str]]:
+def ensure_object(value: object, context: str) -> JSONObject:
+    if not isinstance(value, dict):
+        raise RuntimeError(f"{context} must contain an object")
+    return cast(JSONObject, value)
+
+
+def ensure_array(value: object, context: str) -> JSONArray:
+    if not isinstance(value, list):
+        raise RuntimeError(f"{context} must contain a JSON array")
+    return cast(JSONArray, value)
+
+
+def get_optional_string_field(obj: JSONObject, key: str) -> str | None:
+    raw_value = obj.get(key)
+    if raw_value is None:
+        return None
+    if not isinstance(raw_value, str):
+        raise RuntimeError(f"Field '{key}' must be a string when present")
+    value = raw_value.strip()
+    return value if value else None
+
+
+def get_required_string_field(obj: JSONObject, key: str, context: str) -> str:
+    value = get_optional_string_field(obj, key)
+    if value is None:
+        raise RuntimeError(f"{context}: '{key}' is required")
+    return value
+
+
+def validate_faculty_file(repo_root: Path, allow_missing: bool) -> list[FacultyRecord]:
     faculty_path = repo_root / "faculty.json"
-    faculty_raw = load_json(faculty_path)
-    require(isinstance(faculty_raw, list), "faculty.json must contain a JSON array")
+    faculty_raw = ensure_array(load_json(faculty_path), "faculty.json")
     require(len(faculty_raw) > 0, "faculty.json must contain at least one faculty entry")
 
     seen_slugs: set[str] = set()
-    validated: list[dict[str, str | None]] = []
+    validated: list[FacultyRecord] = []
     for i, item in enumerate(faculty_raw):
-        require(isinstance(item, dict), f"faculty.json entry #{i + 1} must be an object")
+        context = f"faculty.json entry #{i + 1}"
+        obj = ensure_object(item, context)
+
         for key in ("name", "slug", "designation"):
-            value = item.get(key)
-            require(isinstance(value, str) and value.strip(), f"faculty.json entry #{i + 1}: '{key}' is required")
-        scopus_id = item.get("scopus_id")
+            value = obj.get(key)
+            require(isinstance(value, str) and bool(value.strip()), f"{context}: '{key}' is required")
+
+        scopus_id = obj.get("scopus_id")
         normalized_scopus_id: str | None
         if scopus_id is None:
             normalized_scopus_id = None
@@ -42,35 +83,36 @@ def validate_faculty_file(repo_root: Path, allow_missing: bool) -> list[dict[str
             cleaned = scopus_id.strip()
             normalized_scopus_id = None if (not cleaned or cleaned.upper() in {"NA", "N/A", "NULL"}) else cleaned
         else:
-            raise RuntimeError(f"faculty.json entry #{i + 1}: 'scopus_id' must be a string, null, or 'NA'")
+            raise RuntimeError(f"{context}: 'scopus_id' must be a string, null, or 'NA'")
         if normalized_scopus_id is None and allow_missing:
-            print(f"Validation note: faculty.json entry #{i + 1} has missing 'scopus_id' (allowed in batching mode).")
-        slug = item["slug"].strip()
+            print(f"Validation note: {context} has missing 'scopus_id' (allowed in batching mode).")
+        name = get_required_string_field(obj, "name", context)
+        slug = get_required_string_field(obj, "slug", context)
+        designation = get_required_string_field(obj, "designation", context)
         require(slug not in seen_slugs, f"Duplicate slug in faculty.json: {slug}")
         seen_slugs.add(slug)
         validated.append(
             {
-                "name": item["name"].strip(),
+                "name": name,
                 "slug": slug,
                 "scopus_id": normalized_scopus_id,
-                "designation": item["designation"].strip(),
+                "designation": designation,
             }
         )
     return validated
 
 
-def validate_data_files(repo_root: Path, faculty_list: list[dict[str, str | None]], allow_missing: bool) -> None:
+def validate_data_files(repo_root: Path, faculty_list: list[FacultyRecord], allow_missing: bool) -> None:
     data_dir = repo_root / "data"
     require(data_dir.exists(), "data directory is missing")
 
     for faculty in faculty_list:
-        slug = faculty["slug"]
+        slug = faculty["slug"].strip()
         data_path = data_dir / f"{slug}.json"
         if not data_path.exists() and allow_missing:
             print(f"Validation note: data file not found yet for slug '{slug}' (allowed in batching mode).")
             continue
-        data_raw = load_json(data_path)
-        require(isinstance(data_raw, dict), f"{data_path} must contain an object")
+        data_raw = ensure_object(load_json(data_path), str(data_path))
         require(data_raw.get("slug") == slug, f"{data_path} has mismatched slug")
         require(isinstance(data_raw.get("name"), str), f"{data_path} missing 'name'")
         require(isinstance(data_raw.get("scopus_id"), str), f"{data_path} missing 'scopus_id'")
@@ -84,51 +126,53 @@ def validate_data_files(repo_root: Path, faculty_list: list[dict[str, str | None
             f"{data_path} must contain 'publications' array or 'publications_file' path",
         )
 
-        if has_external_publications:
-            publications_path = data_dir / publications_file
-            pubs_raw = load_json(publications_path)
-            require(isinstance(pubs_raw, dict), f"{publications_path} must contain an object")
+        if isinstance(publications_file, str) and publications_file.strip():
+            publications_path = data_dir / publications_file.strip()
+            pubs_raw = ensure_object(load_json(publications_path), str(publications_path))
             pubs = pubs_raw.get("publications")
             require(isinstance(pubs, list), f"{publications_path} must contain 'publications' array")
 
         sections = data_raw.get("sections")
         if sections is not None:
-            require(isinstance(sections, list), f"{data_path} 'sections' must be an array")
-            for idx, section in enumerate(sections):
+            section_array = ensure_array(sections, f"{data_path} 'sections'")
+            for idx, section in enumerate(section_array):
                 prefix = f"{data_path} sections[{idx}]"
-                require(isinstance(section, dict), f"{prefix} must be an object")
-                require(isinstance(section.get("id"), str) and section["id"].strip(), f"{prefix} missing non-empty 'id'")
-                require(isinstance(section.get("title"), str) and section["title"].strip(), f"{prefix} missing non-empty 'title'")
-                require(section.get("type") in ("kv", "markdown", "table"), f"{prefix} 'type' must be 'kv', 'markdown', or 'table'")
+                section_obj = ensure_object(section, prefix)
+                section_id = get_optional_string_field(section_obj, "id")
+                section_title = get_optional_string_field(section_obj, "title")
+                section_type = get_optional_string_field(section_obj, "type")
+                require(section_id is not None, f"{prefix} missing non-empty 'id'")
+                require(section_title is not None, f"{prefix} missing non-empty 'title'")
+                require(section_type in ("kv", "markdown", "table"), f"{prefix} 'type' must be 'kv', 'markdown', or 'table'")
 
-                if section.get("type") == "kv":
-                    items = section.get("items")
-                    require(isinstance(items, list), f"{prefix} with type 'kv' must include 'items' array")
-                    for item_idx, item in enumerate(items):
+                if section_type == "kv":
+                    items_array = ensure_array(section_obj.get("items"), f"{prefix} with type 'kv' items")
+                    for item_idx, item in enumerate(items_array):
                         item_prefix = f"{prefix} items[{item_idx}]"
-                        require(isinstance(item, dict), f"{item_prefix} must be an object")
+                        item_obj = ensure_object(item, item_prefix)
+                        label = get_optional_string_field(item_obj, "label")
+                        value = get_optional_string_field(item_obj, "value")
                         require(
-                            isinstance(item.get("label"), str) and item["label"].strip(),
+                            label is not None,
                             f"{item_prefix} missing non-empty 'label'",
                         )
                         require(
-                            isinstance(item.get("value"), str) and item["value"].strip(),
+                            value is not None,
                             f"{item_prefix} missing non-empty 'value'",
                         )
-                elif section.get("type") == "markdown":
-                    markdown = section.get("markdown")
+                elif section_type == "markdown":
+                    markdown = get_optional_string_field(section_obj, "markdown")
                     require(
-                        isinstance(markdown, str) and markdown.strip(),
+                        markdown is not None,
                         f"{prefix} with type 'markdown' must include non-empty 'markdown'",
                     )
                 else:
-                    columns = section.get("columns")
-                    rows = section.get("rows")
-                    require(isinstance(columns, list) and len(columns) > 0, f"{prefix} with type 'table' must include non-empty 'columns'")
-                    require(isinstance(rows, list), f"{prefix} with type 'table' must include 'rows' array")
+                    columns = ensure_array(section_obj.get("columns"), f"{prefix} with type 'table' columns")
+                    rows = ensure_array(section_obj.get("rows"), f"{prefix} with type 'table' rows")
+                    require(len(columns) > 0, f"{prefix} with type 'table' must include non-empty 'columns'")
                     for col_idx, col in enumerate(columns):
                         require(
-                            isinstance(col, str) and col.strip(),
+                            isinstance(col, str) and bool(col.strip()),
                             f"{prefix} columns[{col_idx}] must be a non-empty string",
                         )
                     for row_idx, row in enumerate(rows):

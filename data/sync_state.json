@@ -1,7 +1,7 @@
 {
   "cursor": 8,
-  "last_run_at": "2026-05-02T05:16:22+00:00",
-  "last_mode": "incremental",
+  "last_run_at": "2026-05-02T05:59:08+00:00",
+  "last_mode": "full",
   "batch_size": 20,
   "incremental_years": 2,
   "processed_slugs": [
@@ -29,7 +29,9 @@
     "v-sathya-narayanan",
     "abha-dargar",
     "sheeba-jeya-sophia",
-    "loyola-jasmine-j"
+    "loyola-jasmine-j",
+    "SKDargar",
+    "Diwakaran"
   ],
   "faculty_status": {
     "charles-pravin": {
@@ -185,6 +187,18 @@
     "loyola-jasmine-j": {
       "last_synced_at": "2026-05-02T05:16:15+00:00",
       "last_mode": "incremental",
+      "status": "success",
+      "message": "success"
+    },
+    "SKDargar": {
+      "last_synced_at": "2026-05-02T05:59:06+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "Diwakaran": {
+      "last_synced_at": "2026-05-02T05:59:08+00:00",
+      "last_mode": "full",
       "status": "success",
       "message": "success"
     }

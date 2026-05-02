@@ -48,6 +48,7 @@ h1 {
   aspect-ratio: 4 / 3;
   height: auto;
   min-height: 220px;
+  border: none;
   border-radius: 10px;
   margin-bottom: 12px;
 }

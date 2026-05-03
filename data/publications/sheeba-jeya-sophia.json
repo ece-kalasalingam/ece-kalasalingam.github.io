@@ -10,13 +10,22 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105036664816"
     },
     {
-      "title": "MedQuery: A Comprehensive AI-Powered Healthcare Platform with Multi-Model Medical Consultation and Integrated Patient Management",
-      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
+      "title": "AdaptiveRL-MAC: A Reinforcement Learning-Based Scalable and Resilient MAC Protocol for Underwater Wireless Sensor Networks",
+      "source": "Proceedings of 2025 6th International Conference on Communication Computing and Industry 6 0 C2i6 2025",
       "date": "2025-01-01",
-      "doi": "10.1109/ICECMSN68058.2025.11382615",
+      "doi": "10.1109/C2I666499.2025.11366968",
       "citations": 0,
-      "eid": "2-s2.0-105035552915",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035552915"
+      "eid": "2-s2.0-105034368172",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034368172"
+    },
+    {
+      "title": "Child Safety Net: An IoT-Driven Wearable Solution using Arduino UNO",
+      "source": "Proceedings of the 7th International Conference on Innovative Data Communication Technologies and Application Icidca 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICIDCA66325.2025.11280353",
+      "citations": 0,
+      "eid": "2-s2.0-105031401931",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105031401931"
     },
     {
       "title": "Hybrid Eye Disease Prediction using Fundus Images and Patient Metadata in MATLAB",
@@ -46,15 +55,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105020958328"
     },
     {
-      "title": "Child Safety Net: An IoT-Driven Wearable Solution using Arduino UNO",
-      "source": "Proceedings of the 7th International Conference on Innovative Data Communication Technologies and Application Icidca 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICIDCA66325.2025.11280353",
-      "citations": 0,
-      "eid": "2-s2.0-105031401931",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105031401931"
-    },
-    {
       "title": "Advanced Vehicle Safety and Driver Health Monitoring System",
       "source": "Proceedings of 7th International Conference on Inventive Material Science and Applications Icima 2025",
       "date": "2025-01-01",
@@ -64,13 +64,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105013847187"
     },
     {
-      "title": "AdaptiveRL-MAC: A Reinforcement Learning-Based Scalable and Resilient MAC Protocol for Underwater Wireless Sensor Networks",
-      "source": "Proceedings of 2025 6th International Conference on Communication Computing and Industry 6 0 C2i6 2025",
+      "title": "MedQuery: A Comprehensive AI-Powered Healthcare Platform with Multi-Model Medical Consultation and Integrated Patient Management",
+      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
       "date": "2025-01-01",
-      "doi": "10.1109/C2I666499.2025.11366968",
+      "doi": "10.1109/ICECMSN68058.2025.11382615",
       "citations": 0,
-      "eid": "2-s2.0-105034368172",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034368172"
+      "eid": "2-s2.0-105035552915",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035552915"
     },
     {
       "title": "Effective recognition of glaucoma using SIFT and RFSO classifier",

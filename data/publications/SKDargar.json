@@ -10,6 +10,15 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105035266286"
     },
     {
+      "title": "Modeling and Simulation of a MOSFET Biosensor for Early Stage Oral Cancer Detection",
+      "source": "Proceedings of the 4th IEEE International Conference on Interdisciplinary Approaches in Technology and Management for Social Innovation Iatmsi 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/IATMSI68868.2026.11465486",
+      "citations": 0,
+      "eid": "2-s2.0-105036951266",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105036951266"
+    },
+    {
       "title": "Punishment Mechanism for Cognitive Radio Networks in Advanced Wireless Communication Systems",
       "source": "Journal of Communications",
       "date": "2025-10-21",
@@ -320,7 +329,7 @@
       "source": "Silicon",
       "date": "2022-08-01",
       "doi": "10.1007/s12633-021-01558-7",
-      "citations": 3,
+      "citations": 4,
       "eid": "2-s2.0-85123079868",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85123079868"
     },
@@ -419,7 +428,7 @@
       "source": "Proceedings of the 2nd International Conference on Artificial Intelligence and Smart Energy Icais 2022",
       "date": "2022-01-01",
       "doi": "10.1109/ICAIS53314.2022.9742948",
-      "citations": 32,
+      "citations": 33,
       "eid": "2-s2.0-85128190730",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85128190730"
     },

@@ -145,15 +145,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85165743164"
     },
     {
-      "title": "Detection of Lung Nodule using Novel Deep Learning Algorithm based on Computed Tomographic Images",
-      "source": "Proceedings of 8th IEEE International Conference on Science Technology Engineering and Mathematics Iconstem 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICONSTEM56934.2023.10142876",
-      "citations": 3,
-      "eid": "2-s2.0-105003852724",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105003852724"
-    },
-    {
       "title": "Experimental Design of a Robotic Ventilator to Support Covid-19 and Related Pandemic Situations",
       "source": "Proceedings of 8th IEEE International Conference on Science Technology Engineering and Mathematics Iconstem 2023",
       "date": "2023-01-01",
@@ -161,6 +152,15 @@
       "citations": 1,
       "eid": "2-s2.0-105003852674",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105003852674"
+    },
+    {
+      "title": "Detection of Lung Nodule using Novel Deep Learning Algorithm based on Computed Tomographic Images",
+      "source": "Proceedings of 8th IEEE International Conference on Science Technology Engineering and Mathematics Iconstem 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICONSTEM56934.2023.10142876",
+      "citations": 4,
+      "eid": "2-s2.0-105003852724",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105003852724"
     },
     {
       "title": "A Robust and Improved sparrow search algorithm for optimization in wireless sensor network",
@@ -329,7 +329,7 @@
       "source": "Proceedings IEEE International Conference on Advances in Computing Communication and Applied Informatics Accai 2022",
       "date": "2022-01-01",
       "doi": "10.1109/ACCAI53970.2022.9752483",
-      "citations": 2,
+      "citations": 4,
       "eid": "2-s2.0-85128870325",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85128870325"
     },

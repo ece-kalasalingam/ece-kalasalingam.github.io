@@ -1,6 +1,15 @@
 {
   "publications": [
     {
+      "title": "Modeling and Simulation of a MOSFET Biosensor for Early Stage Oral Cancer Detection",
+      "source": "Proceedings of the 4th IEEE International Conference on Interdisciplinary Approaches in Technology and Management for Social Innovation Iatmsi 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/IATMSI68868.2026.11465486",
+      "citations": 0,
+      "eid": "2-s2.0-105036951266",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105036951266"
+    },
+    {
       "title": "Tea Leaves Disease Multi Class Classification using MobileNet-V2",
       "source": "2025 Global Conference on Information Technology and Communication Networks Gitcon 2025",
       "date": "2025-01-01",

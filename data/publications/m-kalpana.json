@@ -28,15 +28,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105015641820"
     },
     {
-      "title": "Decision Support System for Crop Planning and Agricultural Health using Machine and Deep Learning Methods",
-      "source": "Proceedings 4th International Conference on Smart Technologies Communication and Robotics 2025 Stcr 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/STCR62650.2025.11019984",
-      "citations": 0,
-      "eid": "2-s2.0-105008424727",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105008424727"
-    },
-    {
       "title": "Cloud Based Proficient Cardiovascular Disease Prediction Using Hybrid Machine Learning Models",
       "source": "2025 5th International Conference on Advances in Electrical Computing Communication and Sustainable Technologies Icaect 2025",
       "date": "2025-01-01",
@@ -55,6 +46,15 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105015623926"
     },
     {
+      "title": "Decision Support System for Crop Planning and Agricultural Health using Machine and Deep Learning Methods",
+      "source": "Proceedings 4th International Conference on Smart Technologies Communication and Robotics 2025 Stcr 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/STCR62650.2025.11019984",
+      "citations": 0,
+      "eid": "2-s2.0-105008424727",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105008424727"
+    },
+    {
       "title": "Modeling and realization of photonic biosensor for hazardous virus detection using ML approach",
       "source": "Journal of Optics India",
       "date": "2024-11-01",
@@ -64,67 +64,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85184180286"
     },
     {
-      "title": "Voice-Assisted Navigation System for Geriatrics with Panic Button Integration",
-      "source": "Proceedings of the 9th International Conference on Communication and Electronics Systems Icces 2024",
+      "title": "A SYSTEMATIC REVIEW FOR THE CLASSIFICATION AND SEGMENTATION OF DIABETIC RETINOPATHY LESION FROM FUNDUS",
+      "source": "Artificial Intelligence and Machine Learning Techniques in Image Processing and Computer Vision",
       "date": "2024-01-01",
-      "doi": "10.1109/ICCES63552.2024.10859858",
+      "doi": "",
       "citations": 0,
-      "eid": "2-s2.0-85218422466",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85218422466"
-    },
-    {
-      "title": "Smart IoT Medication Companion",
-      "source": "2024 3rd International Conference on Smart Technologies and Systems for Next Generation Computing Icstsn 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICSTSN61422.2024.10671211",
-      "citations": 2,
-      "eid": "2-s2.0-85205293069",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85205293069"
-    },
-    {
-      "title": "Proctored Secure Face Lock System",
-      "source": "Industrial Control Systems",
-      "date": "2024-01-01",
-      "doi": "10.1002/9781119829430.ch4",
-      "citations": 0,
-      "eid": "2-s2.0-85194770797",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85194770797"
-    },
-    {
-      "title": "Monitoring and Storage of Health Data in Secured Cloud Environment: A Detailed Survey",
-      "source": "2024 2nd International Conference on Computer Communication and Control Ic4 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/IC457434.2024.10486629",
-      "citations": 1,
-      "eid": "2-s2.0-85190520746",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85190520746"
-    },
-    {
-      "title": "IoT Enabled Diabetic Health Surveillance",
-      "source": "3rd International Conference on Automation Computing and Renewable Systems Icacrs 2024 Proceedings",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICACRS62842.2024.10841749",
-      "citations": 1,
-      "eid": "2-s2.0-85217397860",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85217397860"
-    },
-    {
-      "title": "Electromyography Controlled Smart Prosthetic Arm",
-      "source": "2024 IEEE International Conference on Intelligent Techniques in Control Optimization and Signal Processing Incos 2024 Proceedings",
-      "date": "2024-01-01",
-      "doi": "10.1109/INCOS59338.2024.10527527",
-      "citations": 6,
-      "eid": "2-s2.0-85194034082",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85194034082"
-    },
-    {
-      "title": "Development of an IoT Based Sugar Tracker Diabetic Monitoring System",
-      "source": "Proceedings of 5th International Conference on Iot Based Control Networks and Intelligent Systems Icicnis 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICICNIS64247.2024.10823123",
-      "citations": 0,
-      "eid": "2-s2.0-85217177887",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85217177887"
+      "eid": "2-s2.0-105000572762",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105000572762"
     },
     {
       "title": "Design and Development of Serial Driver Verification and Test Module using Universal Verification Methodology",
@@ -136,6 +82,60 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85201685837"
     },
     {
+      "title": "Voice-Assisted Navigation System for Geriatrics with Panic Button Integration",
+      "source": "Proceedings of the 9th International Conference on Communication and Electronics Systems Icces 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICCES63552.2024.10859858",
+      "citations": 0,
+      "eid": "2-s2.0-85218422466",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85218422466"
+    },
+    {
+      "title": "Proctored Secure Face Lock System",
+      "source": "Industrial Control Systems",
+      "date": "2024-01-01",
+      "doi": "10.1002/9781119829430.ch4",
+      "citations": 0,
+      "eid": "2-s2.0-85194770797",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85194770797"
+    },
+    {
+      "title": "Smart IoT Medication Companion",
+      "source": "2024 3rd International Conference on Smart Technologies and Systems for Next Generation Computing Icstsn 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICSTSN61422.2024.10671211",
+      "citations": 2,
+      "eid": "2-s2.0-85205293069",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85205293069"
+    },
+    {
+      "title": "Electromyography Controlled Smart Prosthetic Arm",
+      "source": "2024 IEEE International Conference on Intelligent Techniques in Control Optimization and Signal Processing Incos 2024 Proceedings",
+      "date": "2024-01-01",
+      "doi": "10.1109/INCOS59338.2024.10527527",
+      "citations": 6,
+      "eid": "2-s2.0-85194034082",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85194034082"
+    },
+    {
+      "title": "Monitoring and Storage of Health Data in Secured Cloud Environment: A Detailed Survey",
+      "source": "2024 2nd International Conference on Computer Communication and Control Ic4 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/IC457434.2024.10486629",
+      "citations": 1,
+      "eid": "2-s2.0-85190520746",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85190520746"
+    },
+    {
+      "title": "Development of an IoT Based Sugar Tracker Diabetic Monitoring System",
+      "source": "Proceedings of 5th International Conference on Iot Based Control Networks and Intelligent Systems Icicnis 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICICNIS64247.2024.10823123",
+      "citations": 0,
+      "eid": "2-s2.0-85217177887",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85217177887"
+    },
+    {
       "title": "Design and Development of Pulse Rate Monitoring System Powered by STM32 Microcontroller",
       "source": "Proceedings of 5th International Conference on Iot Based Control Networks and Intelligent Systems Icicnis 2024",
       "date": "2024-01-01",
@@ -145,13 +145,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85217185404"
     },
     {
-      "title": "A SYSTEMATIC REVIEW FOR THE CLASSIFICATION AND SEGMENTATION OF DIABETIC RETINOPATHY LESION FROM FUNDUS",
-      "source": "Artificial Intelligence and Machine Learning Techniques in Image Processing and Computer Vision",
+      "title": "IoT Enabled Diabetic Health Surveillance",
+      "source": "3rd International Conference on Automation Computing and Renewable Systems Icacrs 2024 Proceedings",
       "date": "2024-01-01",
-      "doi": "",
-      "citations": 0,
-      "eid": "2-s2.0-105000572762",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105000572762"
+      "doi": "10.1109/ICACRS62842.2024.10841749",
+      "citations": 1,
+      "eid": "2-s2.0-85217397860",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85217397860"
     },
     {
       "title": "An exploration enhanced dynamic arithmetic optimization based modified fuzzy clustering framework for ischemic stroke lesion segmentation",
@@ -172,13 +172,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85177596927"
     },
     {
-      "title": "Residential Home Surveillance System",
-      "source": "2023 World Conference on Communication and Computing Wconf 2023",
+      "title": "Enhancing Textile Quality Assurance with TensorFlow: Detecting Fabric Anomalies",
+      "source": "Proceedings of the 2nd International Conference on Applied Artificial Intelligence and Computing Icaaic 2023",
       "date": "2023-01-01",
-      "doi": "10.1109/WCONF58270.2023.10234836",
-      "citations": 0,
-      "eid": "2-s2.0-85173003166",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85173003166"
+      "doi": "10.1109/ICAAIC56838.2023.10141312",
+      "citations": 3,
+      "eid": "2-s2.0-85163663264",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163663264"
     },
     {
       "title": "Quantitative analysis of Fundus Image Enhancement in the Detection of Diabetic Retinopathy Using Deep Convolutional Neural Network",
@@ -190,15 +190,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85119833537"
     },
     {
-      "title": "Printed rGO-Based Temperature Sensor for Wireless Body Area Network Applications",
-      "source": "Nature Inspired Methods for Smart Healthcare Systems and Medical Data",
-      "date": "2023-01-01",
-      "doi": "10.1007/978-3-031-45952-8_10",
-      "citations": 0,
-      "eid": "2-s2.0-85196250087",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85196250087"
-    },
-    {
       "title": "Performance Analysis of Ischemic Stroke Lesion Segmentation in Brain MR Images using Histogram based Filter Enhanced FCM",
       "source": "Proceedings 5th International Conference on Smart Systems and Inventive Technology Icssit 2023",
       "date": "2023-01-01",
@@ -208,22 +199,22 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85150683709"
     },
     {
-      "title": "Enhancing Textile Quality Assurance with TensorFlow: Detecting Fabric Anomalies",
-      "source": "Proceedings of the 2nd International Conference on Applied Artificial Intelligence and Computing Icaaic 2023",
+      "title": "Residential Home Surveillance System",
+      "source": "2023 World Conference on Communication and Computing Wconf 2023",
       "date": "2023-01-01",
-      "doi": "10.1109/ICAAIC56838.2023.10141312",
-      "citations": 3,
-      "eid": "2-s2.0-85163663264",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163663264"
+      "doi": "10.1109/WCONF58270.2023.10234836",
+      "citations": 0,
+      "eid": "2-s2.0-85173003166",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85173003166"
     },
     {
-      "title": "Design and Implementation of an Interoperable IoT Based Health Monitoring System for Diabetes",
-      "source": "Proceedings 5th International Conference on Smart Systems and Inventive Technology Icssit 2023",
+      "title": "A Review on Ongoing Medical Care Observing Framework for Cardiovascular Patients Utilizing IoT",
+      "source": "Proceedings 7th International Conference on Computing Methodologies and Communication Iccmc 2023",
       "date": "2023-01-01",
-      "doi": "10.1109/ICSSIT55814.2023.10061057",
-      "citations": 8,
-      "eid": "2-s2.0-85150682731",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85150682731"
+      "doi": "10.1109/ICCMC56507.2023.10084082",
+      "citations": 5,
+      "eid": "2-s2.0-85153564166",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153564166"
     },
     {
       "title": "Arithmetic optimization-based K means algorithm for segmentation of ischemic stroke lesion",
@@ -235,15 +226,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85153383749"
     },
     {
-      "title": "An Efficient IoT Device for Chronic Kidney Disease affected Patient Data Collection",
-      "source": "2023 International Conference on Energy Materials and Communication Engineering Icemce 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICEMCE57940.2023.10434095",
-      "citations": 1,
-      "eid": "2-s2.0-85186770778",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85186770778"
-    },
-    {
       "title": "Air Cushion Restraint and Extended Safety System with Sensor and Control Module",
       "source": "2023 2nd International Conference on Smart Technologies and Systems for Next Generation Computing Icstsn 2023",
       "date": "2023-01-01",
@@ -253,13 +235,31 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85164265976"
     },
     {
-      "title": "A Review on Ongoing Medical Care Observing Framework for Cardiovascular Patients Utilizing IoT",
-      "source": "Proceedings 7th International Conference on Computing Methodologies and Communication Iccmc 2023",
+      "title": "An Efficient IoT Device for Chronic Kidney Disease affected Patient Data Collection",
+      "source": "2023 International Conference on Energy Materials and Communication Engineering Icemce 2023",
       "date": "2023-01-01",
-      "doi": "10.1109/ICCMC56507.2023.10084082",
-      "citations": 5,
-      "eid": "2-s2.0-85153564166",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153564166"
+      "doi": "10.1109/ICEMCE57940.2023.10434095",
+      "citations": 1,
+      "eid": "2-s2.0-85186770778",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85186770778"
+    },
+    {
+      "title": "Design and Implementation of an Interoperable IoT Based Health Monitoring System for Diabetes",
+      "source": "Proceedings 5th International Conference on Smart Systems and Inventive Technology Icssit 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICSSIT55814.2023.10061057",
+      "citations": 8,
+      "eid": "2-s2.0-85150682731",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85150682731"
+    },
+    {
+      "title": "Printed rGO-Based Temperature Sensor for Wireless Body Area Network Applications",
+      "source": "Nature Inspired Methods for Smart Healthcare Systems and Medical Data",
+      "date": "2023-01-01",
+      "doi": "10.1007/978-3-031-45952-8_10",
+      "citations": 0,
+      "eid": "2-s2.0-85196250087",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85196250087"
     },
     {
       "title": "Monitoring body temperature of cattle using an innovative infrared photodiode thermometer",
@@ -289,31 +289,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85120075095"
     },
     {
-      "title": "Prototype Implementation of Neural Networks based Agricultural Farm Monitoring and Rain Prediction",
-      "source": "1st IEEE International Conference on Smart Technologies and Systems for Next Generation Computing Icstsn 2022",
+      "title": "A Survey on Design Parameters of Antenna in Terahertz Wireless Body Area Networks",
+      "source": "2022 International Conference on Advanced Computing Technologies and Applications Icacta 2022",
       "date": "2022-01-01",
-      "doi": "10.1109/ICSTSN53084.2022.9761333",
-      "citations": 9,
-      "eid": "2-s2.0-85130016890",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85130016890"
-    },
-    {
-      "title": "Osteomyelitis Patients Monitoring System Using IoT",
-      "source": "2022 International Conference on Advances in Computing Communication and Materials Icaccm 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICACCM56405.2022.10009536",
-      "citations": 0,
-      "eid": "2-s2.0-85146885802",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85146885802"
-    },
-    {
-      "title": "IoT Based Diabetic Retinopathy Monitoring System",
-      "source": "Proceedings of 2022 IEEE International Conference of Electron Devices Society Kolkata Chapter Edkcon 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/EDKCON56221.2022.10032854",
-      "citations": 1,
-      "eid": "2-s2.0-85148685711",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148685711"
+      "doi": "10.1109/ICACTA54488.2022.9753091",
+      "citations": 4,
+      "eid": "2-s2.0-85129190778",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85129190778"
     },
     {
       "title": "Integration of pH and Temperature Sensor for Biomedical Applications",
@@ -334,6 +316,33 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85137790388"
     },
     {
+      "title": "Prototype Implementation of Neural Networks based Agricultural Farm Monitoring and Rain Prediction",
+      "source": "1st IEEE International Conference on Smart Technologies and Systems for Next Generation Computing Icstsn 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICSTSN53084.2022.9761333",
+      "citations": 9,
+      "eid": "2-s2.0-85130016890",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85130016890"
+    },
+    {
+      "title": "IoT Based Diabetic Retinopathy Monitoring System",
+      "source": "Proceedings of 2022 IEEE International Conference of Electron Devices Society Kolkata Chapter Edkcon 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/EDKCON56221.2022.10032854",
+      "citations": 1,
+      "eid": "2-s2.0-85148685711",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148685711"
+    },
+    {
+      "title": "Osteomyelitis Patients Monitoring System Using IoT",
+      "source": "2022 International Conference on Advances in Computing Communication and Materials Icaccm 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICACCM56405.2022.10009536",
+      "citations": 0,
+      "eid": "2-s2.0-85146885802",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85146885802"
+    },
+    {
       "title": "Design and Simulation of a Slotted Inset Feed Patch Antenna for Wireless Body Area Network Applications",
       "source": "IEEE International Conference on Knowledge Engineering and Communication Systems Ickes 2022",
       "date": "2022-01-01",
@@ -350,15 +359,6 @@
       "citations": 10,
       "eid": "2-s2.0-85149576292",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85149576292"
-    },
-    {
-      "title": "A Survey on Design Parameters of Antenna in Terahertz Wireless Body Area Networks",
-      "source": "2022 International Conference on Advanced Computing Technologies and Applications Icacta 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICACTA54488.2022.9753091",
-      "citations": 4,
-      "eid": "2-s2.0-85129190778",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85129190778"
     },
     {
       "title": "Smart Medical Telemetry Acquisition System",
@@ -406,15 +406,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85104932208"
     },
     {
-      "title": "The significant contextual predictors of industrial academic collaboration in engineering",
-      "source": "Journal of Engineering Education Transformations",
-      "date": "2021-01-01",
-      "doi": "10.16920/jeet/2021/v34i0/157127",
-      "citations": 3,
-      "eid": "2-s2.0-85099856773",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85099856773"
-    },
-    {
       "title": "Retinal Blood Vessels Segmentation of Diabetic Retinopathy",
       "source": "2021 IEEE International Conference on Mobile Networks and Wireless Communications Icmnwc 2021",
       "date": "2021-01-01",
@@ -422,6 +413,15 @@
       "citations": 4,
       "eid": "2-s2.0-85125718694",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85125718694"
+    },
+    {
+      "title": "The significant contextual predictors of industrial academic collaboration in engineering",
+      "source": "Journal of Engineering Education Transformations",
+      "date": "2021-01-01",
+      "doi": "10.16920/jeet/2021/v34i0/157127",
+      "citations": 3,
+      "eid": "2-s2.0-85099856773",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85099856773"
     },
     {
       "title": "Measurement of Temperature for Diagnosing, and Treating the Osteomyelitis of Rat using an InGaSb Based Infrared Sensor with ICT Infrastructure",
@@ -433,15 +433,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85125736498"
     },
     {
-      "title": "Source production for free energy generation",
-      "source": "Proceedings of the 3rd International Conference on Intelligent Sustainable Systems Iciss 2020",
-      "date": "2020-12-03",
-      "doi": "10.1109/ICISS49785.2020.9315868",
-      "citations": 2,
-      "eid": "2-s2.0-85100716622",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85100716622"
-    },
-    {
       "title": "Smart automated pesticide spraying bot",
       "source": "Proceedings of the 3rd International Conference on Intelligent Sustainable Systems Iciss 2020",
       "date": "2020-12-03",
@@ -449,6 +440,15 @@
       "citations": 14,
       "eid": "2-s2.0-85100742820",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85100742820"
+    },
+    {
+      "title": "Source production for free energy generation",
+      "source": "Proceedings of the 3rd International Conference on Intelligent Sustainable Systems Iciss 2020",
+      "date": "2020-12-03",
+      "doi": "10.1109/ICISS49785.2020.9315868",
+      "citations": 2,
+      "eid": "2-s2.0-85100716622",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85100716622"
     },
     {
       "title": "Bio-inspired Mimosa pudica algorithm for energy-efficient wireless video sensor networks",
@@ -460,15 +460,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85089090718"
     },
     {
-      "title": "Safe biometrics system integrated with srmed security",
-      "source": "Journal of Green Engineering",
-      "date": "2020-04-01",
-      "doi": "",
-      "citations": 0,
-      "eid": "2-s2.0-85086990628",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85086990628"
-    },
-    {
       "title": "Ear recognition system using adaptive approach Runge-Kutta (AARK) threshold segmentation with cart classifier",
       "source": "Multimedia Tools and Applications",
       "date": "2020-04-01",
@@ -476,6 +467,15 @@
       "citations": 8,
       "eid": "2-s2.0-85063203465",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85063203465"
+    },
+    {
+      "title": "Safe biometrics system integrated with srmed security",
+      "source": "Journal of Green Engineering",
+      "date": "2020-04-01",
+      "doi": "",
+      "citations": 0,
+      "eid": "2-s2.0-85086990628",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85086990628"
     },
     {
       "title": "Computerized Smart Luminous System using Passive Infrared by Motion Recognition (CSLS-WIFI)",

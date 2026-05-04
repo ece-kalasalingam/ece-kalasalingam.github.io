@@ -33,7 +33,7 @@ STATE_FILE: Final[Path] = OUTPUT_DIR / "sync_state.json"
 FETCH_MODE_ENV: Final[str] = os.getenv("FETCH_MODE", "incremental").strip().lower()
 BATCH_SIZE_ENV: Final[str] = os.getenv("BATCH_SIZE", "20").strip()
 INCREMENTAL_YEARS_ENV: Final[str] = os.getenv("INCREMENTAL_YEARS", "2").strip()
-FACULTY_SHEET_IDS_JSON_ENV: Final[str] = os.getenv("FACULTY_SHEET_IDS_JSON", "").strip()
+FACULTY_SHEET_IDS_FILE: Final[Path] = Path("faculty_sheet_ids_json.json")
 FACULTY_SLUG_ENV: Final[str] = os.getenv("FACULTY_SLUG", "").strip()
 GOOGLE_API_KEY: Final[str | None] = os.getenv("GOOGLE_API_KEY")
 SHEETS_META_URL_TEMPLATE: Final[str] = "https://sheets.googleapis.com/v4/spreadsheets/{sheet_id}"
@@ -396,7 +396,7 @@ def parse_sheet_id_map(raw_json: str) -> dict[str, str]:
     if not raw_json:
         return {}
     parsed: object = json.loads(raw_json)
-    obj = ensure_object(parsed, "FACULTY_SHEET_IDS_JSON")
+    obj = ensure_object(parsed, "faculty_sheet_ids_json.json")
     mapping: dict[str, str] = {}
     for slug_raw, sheet_id_raw in obj.items():
         slug = str(slug_raw).strip()
@@ -404,6 +404,13 @@ def parse_sheet_id_map(raw_json: str) -> dict[str, str]:
         if slug and sheet_id:
             mapping[slug] = sheet_id
     return mapping
+
+
+def load_sheet_id_map(path: Path) -> dict[str, str]:
+    if not path.exists():
+        raise ValueError(f"{path.as_posix()} is required but was not found.")
+    file_text = path.read_text(encoding="utf-8").strip()
+    return parse_sheet_id_map(file_text)
 
 
 def mask_sheet_id(sheet_id: str) -> str:
@@ -957,8 +964,8 @@ def main() -> int:
 
     try:
         faculty_list = load_faculty_list(Path("faculty.json"))
-        faculty_sheet_ids = parse_sheet_id_map(FACULTY_SHEET_IDS_JSON_ENV)
-        print(f"[Sheets] Loaded FACULTY_SHEET_IDS_JSON mappings: {len(faculty_sheet_ids)}")
+        faculty_sheet_ids = load_sheet_id_map(FACULTY_SHEET_IDS_FILE)
+        print(f"[Sheets] Loaded sheet-id mappings: {len(faculty_sheet_ids)} (source=file:{FACULTY_SHEET_IDS_FILE.as_posix()})")
         sync_state = load_sync_state(STATE_FILE)
         cursor = max(sync_state.get("cursor", 0), 0)
 

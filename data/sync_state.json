@@ -1,8 +1,8 @@
 {
   "cursor": 8,
-  "last_run_at": "2026-05-04T19:28:44+00:00",
+  "last_run_at": "2026-05-04T19:30:11+00:00",
   "last_mode": "full",
-  "batch_size": 20,
+  "batch_size": 1,
   "incremental_years": 2,
   "processed_slugs": [
     "charles-pravin",
@@ -227,7 +227,7 @@
       "message": "success"
     },
     "aarthi-vpmb": {
-      "last_synced_at": "2026-05-04T19:20:20+00:00",
+      "last_synced_at": "2026-05-04T19:30:11+00:00",
       "last_mode": "full",
       "status": "success",
       "message": "success"

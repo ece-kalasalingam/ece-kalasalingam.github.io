@@ -927,6 +927,20 @@ def remove_retired_faculty_files(output_dir: Path, active_slugs: set[str]) -> li
     return removed_paths
 
 
+def prune_sync_state_to_active_slugs(
+    processed_slugs: list[str],
+    faculty_status: dict[str, FacultyRunStatus],
+    active_slugs: set[str],
+) -> tuple[list[str], dict[str, FacultyRunStatus], list[str]]:
+    pruned_processed = [slug for slug in processed_slugs if slug in active_slugs]
+    pruned_status = {slug: status for slug, status in faculty_status.items() if slug in active_slugs}
+    removed_slugs = sorted(
+        {slug for slug in processed_slugs if slug not in active_slugs}
+        | {slug for slug in faculty_status.keys() if slug not in active_slugs}
+    )
+    return pruned_processed, pruned_status, removed_slugs
+
+
 def select_batch(
     faculty_list: list[FacultyEntry],
     batch_size: int,
@@ -1104,6 +1118,11 @@ def main() -> int:
         removed_files = remove_retired_faculty_files(OUTPUT_DIR, active_slugs)
         for removed in removed_files:
             print(f"Removed retired faculty data file: {removed}")
+        processed_slugs, faculty_status, removed_sync_slugs = prune_sync_state_to_active_slugs(
+            processed_slugs, faculty_status, active_slugs
+        )
+        for removed_slug in removed_sync_slugs:
+            print(f"Removed retired faculty slug from sync_state.json: {removed_slug}")
 
         new_state: SyncState = {
             "cursor": next_cursor,

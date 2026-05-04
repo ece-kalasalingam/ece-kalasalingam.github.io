@@ -406,6 +406,13 @@ def parse_sheet_id_map(raw_json: str) -> dict[str, str]:
     return mapping
 
 
+def mask_sheet_id(sheet_id: str) -> str:
+    cleaned = sheet_id.strip()
+    if len(cleaned) <= 10:
+        return cleaned
+    return f"{cleaned[:6]}...{cleaned[-4:]}"
+
+
 def parse_tab_descriptor(tab_name: str) -> SheetTabDescriptor | None:
     raw_name = tab_name.strip()
     match = TAB_NAME_PATTERN.match(raw_name)
@@ -433,13 +440,27 @@ def fetch_sheet_tabs(sheet_id: str, google_api_key: str) -> tuple[list[SheetTabD
         "key": google_api_key,
     }
     try:
+        print(f"[Sheets] Metadata request started for sheet_id={mask_sheet_id(sheet_id)}")
         response = requests.get(url, params=params, timeout=20)
         response.raise_for_status()
         payload: object = response.json()
         obj = ensure_object(payload, "Sheets metadata")
         sheets_raw = get_json_array_field(obj, "sheets", default=[])
+        print(
+            f"[Sheets] Metadata request succeeded for sheet_id={mask_sheet_id(sheet_id)}; "
+            f"tabs_discovered={len(sheets_raw)}"
+        )
+    except requests.HTTPError as exc:
+        status_code = exc.response.status_code if exc.response is not None else "unknown"
+        body_preview = ""
+        if exc.response is not None and exc.response.text:
+            body_preview = exc.response.text[:250].replace("\n", " ")
+        detail = f"HTTP {status_code}"
+        if body_preview:
+            detail = f"{detail}; body={body_preview}"
+        return [], f"Unable to fetch sheet tabs for sheet_id={mask_sheet_id(sheet_id)}: {detail}"
     except Exception as exc:
-        return [], f"Unable to fetch sheet tabs: {exc}"
+        return [], f"Unable to fetch sheet tabs for sheet_id={mask_sheet_id(sheet_id)}: {exc}"
 
     descriptors: list[SheetTabDescriptor] = []
     for sheet in sheets_raw:
@@ -462,13 +483,29 @@ def fetch_sheet_values(sheet_id: str, tab_name: str, google_api_key: str) -> tup
     url = SHEETS_VALUES_URL_TEMPLATE.format(sheet_id=sheet_id, range_name=range_name)
     params: dict[str, str] = {"key": google_api_key}
     try:
+        print(f"[Sheets] Values request started for sheet_id={mask_sheet_id(sheet_id)} tab='{tab_name}'")
         response = requests.get(url, params=params, timeout=20)
         response.raise_for_status()
         payload: object = response.json()
         obj = ensure_object(payload, "Sheets values")
         values_raw = get_json_array_field(obj, "values", default=[])
+        print(
+            f"[Sheets] Values request succeeded for sheet_id={mask_sheet_id(sheet_id)} "
+            f"tab='{tab_name}' rows={len(values_raw)}"
+        )
+    except requests.HTTPError as exc:
+        status_code = exc.response.status_code if exc.response is not None else "unknown"
+        body_preview = ""
+        if exc.response is not None and exc.response.text:
+            body_preview = exc.response.text[:250].replace("\n", " ")
+        detail = f"HTTP {status_code}"
+        if body_preview:
+            detail = f"{detail}; body={body_preview}"
+        return [], (
+            f"Unable to fetch tab '{tab_name}' from sheet_id={mask_sheet_id(sheet_id)}: {detail}"
+        )
     except Exception as exc:
-        return [], f"Unable to fetch tab '{tab_name}': {exc}"
+        return [], f"Unable to fetch tab '{tab_name}' from sheet_id={mask_sheet_id(sheet_id)}: {exc}"
 
     rows: list[list[str]] = []
     for row in values_raw:
@@ -550,6 +587,7 @@ def fetch_sheet_sections(sheet_id: str, google_api_key: str) -> tuple[list[Facul
     tabs, tab_error = fetch_sheet_tabs(sheet_id, google_api_key)
     if tab_error:
         return [], [tab_error]
+    print(f"[Sheets] Processing {len(tabs)} supported tabs for sheet_id={mask_sheet_id(sheet_id)}")
 
     for tab in tabs:
         rows, value_error = fetch_sheet_values(sheet_id, tab["tab_name"], google_api_key)
@@ -605,6 +643,10 @@ def fetch_sheet_sections(sheet_id: str, google_api_key: str) -> tuple[list[Facul
             }
         )
 
+    print(
+        f"[Sheets] Section build completed for sheet_id={mask_sheet_id(sheet_id)}; "
+        f"sections={len(sections)} warnings={len(warnings)}"
+    )
     return sections, warnings
 
 
@@ -916,6 +958,7 @@ def main() -> int:
     try:
         faculty_list = load_faculty_list(Path("faculty.json"))
         faculty_sheet_ids = parse_sheet_id_map(FACULTY_SHEET_IDS_JSON_ENV)
+        print(f"[Sheets] Loaded FACULTY_SHEET_IDS_JSON mappings: {len(faculty_sheet_ids)}")
         sync_state = load_sync_state(STATE_FILE)
         cursor = max(sync_state.get("cursor", 0), 0)
 
@@ -1006,12 +1049,15 @@ def main() -> int:
             sections: list[FacultySection] = []
             sheet_id = faculty_sheet_ids.get(slug, "")
             if sheet_id:
+                print(f"[Sheets] Mapping found for slug='{slug}' -> sheet_id={mask_sheet_id(sheet_id)}")
                 if GOOGLE_API_KEY and GOOGLE_API_KEY.strip():
                     sections, section_warnings = fetch_sheet_sections(sheet_id, GOOGLE_API_KEY.strip())
                     for warning in section_warnings:
                         print(f"Warning: sheet parse issue for {slug}: {warning}")
                 else:
                     print(f"Warning: GOOGLE_API_KEY missing; skipping sheet sections for {slug}.")
+            else:
+                print(f"[Sheets] No mapping found for slug='{slug}'; skipping sheet sections.")
 
             collected_outputs[slug] = {
                 "name": fac["name"],

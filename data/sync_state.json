@@ -1,8 +1,8 @@
 {
   "cursor": 16,
-  "last_run_at": "2026-05-04T07:26:22+00:00",
+  "last_run_at": "2026-05-04T07:36:04+00:00",
   "last_mode": "full",
-  "batch_size": 20,
+  "batch_size": 1,
   "incremental_years": 2,
   "processed_slugs": [
     "charles-pravin",
@@ -212,7 +212,7 @@
       "message": "success"
     },
     "Jenyfal": {
-      "last_synced_at": "2026-05-04T07:18:25+00:00",
+      "last_synced_at": "2026-05-04T07:36:04+00:00",
       "last_mode": "full",
       "status": "success",
       "message": "success"

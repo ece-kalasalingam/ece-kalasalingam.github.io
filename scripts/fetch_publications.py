@@ -34,6 +34,7 @@ FETCH_MODE_ENV: Final[str] = os.getenv("FETCH_MODE", "incremental").strip().lowe
 BATCH_SIZE_ENV: Final[str] = os.getenv("BATCH_SIZE", "20").strip()
 INCREMENTAL_YEARS_ENV: Final[str] = os.getenv("INCREMENTAL_YEARS", "2").strip()
 FACULTY_SHEET_IDS_JSON_ENV: Final[str] = os.getenv("FACULTY_SHEET_IDS_JSON", "").strip()
+FACULTY_SLUG_ENV: Final[str] = os.getenv("FACULTY_SLUG", "").strip()
 GOOGLE_API_KEY: Final[str | None] = os.getenv("GOOGLE_API_KEY")
 SHEETS_META_URL_TEMPLATE: Final[str] = "https://sheets.googleapis.com/v4/spreadsheets/{sheet_id}"
 SHEETS_VALUES_URL_TEMPLATE: Final[str] = "https://sheets.googleapis.com/v4/spreadsheets/{sheet_id}/values/{range_name}"
@@ -918,7 +919,17 @@ def main() -> int:
         sync_state = load_sync_state(STATE_FILE)
         cursor = max(sync_state.get("cursor", 0), 0)
 
-        batch, next_cursor = select_batch(faculty_list, batch_size, cursor, OUTPUT_DIR)
+        if FACULTY_SLUG_ENV:
+            selected_slug = FACULTY_SLUG_ENV.strip()
+            selected_faculty = next((fac for fac in faculty_list if fac.get("slug", "").strip() == selected_slug), None)
+            if selected_faculty is None:
+                print(f"::error::FACULTY_SLUG '{selected_slug}' not found in faculty.json.")
+                return 1
+            batch = [selected_faculty]
+            next_cursor = cursor
+            print(f"FACULTY_SLUG mode enabled: processing only '{selected_slug}'.")
+        else:
+            batch, next_cursor = select_batch(faculty_list, batch_size, cursor, OUTPUT_DIR)
         if not batch:
             print("No eligible faculty entries (with scopus_id) available for processing.")
             return 0

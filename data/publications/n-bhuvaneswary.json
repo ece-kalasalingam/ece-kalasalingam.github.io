@@ -1,13 +1,13 @@
 {
   "publications": [
     {
-      "title": "Real Time Eye Blink Recognition for Virtual Mouse using Raspberry Pi",
-      "source": "3rd International Conference on Intelligent Data Communication Technologies and Internet of Things Idciot 2025",
+      "title": "Design and Development of an IoT and Web-Integrated Respiratory Disease Prediction System using Machine Learning",
+      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
       "date": "2025-01-01",
-      "doi": "10.1109/IDCIOT64235.2025.10915003",
-      "citations": 1,
-      "eid": "2-s2.0-105001663016",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105001663016"
+      "doi": "10.1109/ICECMSN68058.2025.11383348",
+      "citations": 0,
+      "eid": "2-s2.0-105035522215",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035522215"
     },
     {
       "title": "Quadcopter with Fuzzy Logic based Self-Tuning PID Controller",
@@ -19,6 +19,15 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105008005713"
     },
     {
+      "title": "Building Climate Resilience in Urban Infrastructure with Machine Learning Techniques",
+      "source": "Sustainable Civil Infrastructures",
+      "date": "2025-01-01",
+      "doi": "10.1007/978-3-031-84335-8_4",
+      "citations": 0,
+      "eid": "2-s2.0-105008760459",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105008760459"
+    },
+    {
       "title": "Power Fault Analysis and Monitoring System using Simulink",
       "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
       "date": "2025-01-01",
@@ -26,15 +35,6 @@
       "citations": 0,
       "eid": "2-s2.0-105007989811",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105007989811"
-    },
-    {
-      "title": "PID - Based Boiler Control System for Optimized Sterilization and Disinfection in Hospital Environments",
-      "source": "International Conference on Computational Robotics Testing and Engineering Evaluation Iccrtee 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICCRTEE64519.2025.11052918",
-      "citations": 0,
-      "eid": "2-s2.0-105012157772",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105012157772"
     },
     {
       "title": "Optimizing Inverted Pendulum Stability: Performance Analysis of Self-Tuning Fuzzy PID and PID",
@@ -46,24 +46,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105007984299"
     },
     {
-      "title": "Motor Drive Fault Detection and Control System for Industrial Robots",
-      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICTMIM65579.2025.10988309",
-      "citations": 0,
-      "eid": "2-s2.0-105007975509",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007975509"
-    },
-    {
-      "title": "Hybrid Deep Learning with Explainable AI for Multimodal Fake News Detection",
-      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICECMSN68058.2025.11382799",
-      "citations": 0,
-      "eid": "2-s2.0-105035496279",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035496279"
-    },
-    {
       "title": "Eco-Agri Bot: An AI-Powered Drone Payload for Early Disease Detection and Organic Control in Tomato and Banana Crops",
       "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
       "date": "2025-01-01",
@@ -73,22 +55,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105035550829"
     },
     {
-      "title": "Design and Development of an IoT and Web-Integrated Respiratory Disease Prediction System using Machine Learning",
-      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
+      "title": "Motor Drive Fault Detection and Control System for Industrial Robots",
+      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
       "date": "2025-01-01",
-      "doi": "10.1109/ICECMSN68058.2025.11383348",
+      "doi": "10.1109/ICTMIM65579.2025.10988309",
       "citations": 0,
-      "eid": "2-s2.0-105035522215",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035522215"
-    },
-    {
-      "title": "Building Climate Resilience in Urban Infrastructure with Machine Learning Techniques",
-      "source": "Sustainable Civil Infrastructures",
-      "date": "2025-01-01",
-      "doi": "10.1007/978-3-031-84335-8_4",
-      "citations": 0,
-      "eid": "2-s2.0-105008760459",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105008760459"
+      "eid": "2-s2.0-105007975509",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007975509"
     },
     {
       "title": "AI-Based Trash Collector Boat for Autonomous Waterway Pollution Management",
@@ -98,6 +71,33 @@
       "citations": 1,
       "eid": "2-s2.0-105002273931",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105002273931"
+    },
+    {
+      "title": "PID - Based Boiler Control System for Optimized Sterilization and Disinfection in Hospital Environments",
+      "source": "International Conference on Computational Robotics Testing and Engineering Evaluation Iccrtee 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICCRTEE64519.2025.11052918",
+      "citations": 0,
+      "eid": "2-s2.0-105012157772",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105012157772"
+    },
+    {
+      "title": "Real Time Eye Blink Recognition for Virtual Mouse using Raspberry Pi",
+      "source": "3rd International Conference on Intelligent Data Communication Technologies and Internet of Things Idciot 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/IDCIOT64235.2025.10915003",
+      "citations": 1,
+      "eid": "2-s2.0-105001663016",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105001663016"
+    },
+    {
+      "title": "Hybrid Deep Learning with Explainable AI for Multimodal Fake News Detection",
+      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICECMSN68058.2025.11382799",
+      "citations": 0,
+      "eid": "2-s2.0-105035496279",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035496279"
     },
     {
       "title": "Serial Peripheral Interface with SOC Using Universal Verification Methodology",
@@ -118,15 +118,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85214974940"
     },
     {
-      "title": "Deep Learning-Based Efficient Framework for Predicting Lane Change",
-      "source": "5th International Conference on Sustainable Communication Networks and Application Icscna 2024 Proceedings",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICSCNA63714.2024.10864287",
-      "citations": 0,
-      "eid": "2-s2.0-85219597218",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85219597218"
-    },
-    {
       "title": "Automatic Saline Reversal Control System using IoT",
       "source": "2024 IEEE International Conference on Intelligent Techniques in Control Optimization and Signal Processing Incos 2024 Proceedings",
       "date": "2024-01-01",
@@ -134,6 +125,15 @@
       "citations": 1,
       "eid": "2-s2.0-85194106570",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85194106570"
+    },
+    {
+      "title": "Deep Learning-Based Efficient Framework for Predicting Lane Change",
+      "source": "5th International Conference on Sustainable Communication Networks and Application Icscna 2024 Proceedings",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICSCNA63714.2024.10864287",
+      "citations": 0,
+      "eid": "2-s2.0-85219597218",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85219597218"
     },
     {
       "title": "RETRACTION:Hybrid Optimized Verification Methodology using Deep Reinforcement Neural Network",
@@ -172,42 +172,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85165744070"
     },
     {
-      "title": "Smart Voting Machine using Fingerprint Sensor and Face Recognition",
-      "source": "Proceedings International Conference on Applied Artificial Intelligence and Computing Icaaic 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICAAIC53929.2022.9792643",
-      "citations": 10,
-      "eid": "2-s2.0-85133449383",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85133449383"
-    },
-    {
-      "title": "Retraction Notice: Artificial Intelligent Based Smart Electricity Billing Management System (2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering, ICACITE 2022 DOI: 10.1109/ICACITE53722.2022.9823515)",
-      "source": "2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering Icacite 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICACITE53722.2022.11269051",
-      "citations": 0,
-      "eid": "2-s2.0-105032202694",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105032202694"
-    },
-    {
-      "title": "Retracted: Artificial Intelligent Based Smart Electricity Billing Management System (2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering (ICACITE) DOI: 10.1109/ICACITE53722.2022.11269051)",
-      "source": "2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering Icacite 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICACITE53722.2022.9823515",
-      "citations": 0,
-      "eid": "2-s2.0-105037010627",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105037010627"
-    },
-    {
-      "title": "Multi Modal Image Fusion Technique For Detecting Brain Tumor",
-      "source": "Proceedings 6th International Conference on Computing Methodologies and Communication Iccmc 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICCMC53470.2022.9753734",
-      "citations": 6,
-      "eid": "2-s2.0-85129143479",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85129143479"
-    },
-    {
       "title": "IoT-Based Smart Helmet for Riders",
       "source": "Lecture Notes in Networks and Systems",
       "date": "2022-01-01",
@@ -217,13 +181,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85113373752"
     },
     {
-      "title": "Exploration on Reusability of Universal Verification Methodology",
-      "source": "2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering Icacite 2022",
+      "title": "Retracted: Multi Modal Image Fusion Technique for Detecting Brain Tumor (2022 6th International Conference on Computing Methodologies and Communication (ICCMC) DOI: 10.1109/ICCMC53470.2022.10703379)",
+      "source": "Proceedings 6th International Conference on Computing Methodologies and Communication Iccmc 2022",
       "date": "2022-01-01",
-      "doi": "10.1109/ICACITE53722.2022.9823570",
-      "citations": 10,
-      "eid": "2-s2.0-85135471443",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85135471443"
+      "doi": "10.1109/ICCMC53470.2022.9753734",
+      "citations": 0,
+      "eid": "2-s2.0-105037107469",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105037107469"
     },
     {
       "title": "Collision Avoidance in Vehicles Using Ultrasonic Sensor",
@@ -235,6 +199,42 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85113413738"
     },
     {
+      "title": "Retracted: Artificial Intelligent Based Smart Electricity Billing Management System (2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering (ICACITE) DOI: 10.1109/ICACITE53722.2022.11269051)",
+      "source": "2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering Icacite 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICACITE53722.2022.9823515",
+      "citations": 0,
+      "eid": "2-s2.0-105037010627",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105037010627"
+    },
+    {
+      "title": "Retraction Notice: Artificial Intelligent Based Smart Electricity Billing Management System (2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering, ICACITE 2022 DOI: 10.1109/ICACITE53722.2022.9823515)",
+      "source": "2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering Icacite 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICACITE53722.2022.11269051",
+      "citations": 0,
+      "eid": "2-s2.0-105032202694",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105032202694"
+    },
+    {
+      "title": "Multi Modal Image Fusion Technique For Detecting Brain Tumor",
+      "source": "Proceedings 6th International Conference on Computing Methodologies and Communication Iccmc 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICCMC53470.2022.9753734",
+      "citations": 6,
+      "eid": "2-s2.0-85129143479",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85129143479"
+    },
+    {
+      "title": "Exploration on Reusability of Universal Verification Methodology",
+      "source": "2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering Icacite 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICACITE53722.2022.9823570",
+      "citations": 10,
+      "eid": "2-s2.0-85135471443",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85135471443"
+    },
+    {
       "title": "Artificial Intelligent Based Smart Electricity Billing Management System",
       "source": "2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering Icacite 2022",
       "date": "2022-01-01",
@@ -242,6 +242,15 @@
       "citations": 0,
       "eid": "2-s2.0-85135484293",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85135484293"
+    },
+    {
+      "title": "Smart Voting Machine using Fingerprint Sensor and Face Recognition",
+      "source": "Proceedings International Conference on Applied Artificial Intelligence and Computing Icaaic 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICAAIC53929.2022.9792643",
+      "citations": 10,
+      "eid": "2-s2.0-85133449383",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85133449383"
     },
     {
       "title": "Low Power Reversible Parallel and Serial Binary Adder/Subtractor",

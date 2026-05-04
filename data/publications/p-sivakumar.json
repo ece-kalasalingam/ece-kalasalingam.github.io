@@ -244,15 +244,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85193204372"
     },
     {
-      "title": "Design and Implementation of Frame Work for Building Extraction using Fast Accurate Bilateral Filter, Fast Corner Method and Improved Gaussian Blur",
-      "source": "2nd International Conference on Self Sustainable Artificial Intelligence Systems Icssas 2024 Proceedings",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICSSAS64001.2024.10760395",
-      "citations": 1,
-      "eid": "2-s2.0-85213397414",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85213397414"
-    },
-    {
       "title": "Robust Serial Driver Verification Through UVM Framework",
       "source": "2024 Control Instrumentation System Conference Guiding Tomorrow Emerging Trends in Control Instrumentation and Systems Engineering Ciscon 2024",
       "date": "2024-01-01",
@@ -260,6 +251,15 @@
       "citations": 2,
       "eid": "2-s2.0-85207064042",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85207064042"
+    },
+    {
+      "title": "Design and Implementation of Frame Work for Building Extraction using Fast Accurate Bilateral Filter, Fast Corner Method and Improved Gaussian Blur",
+      "source": "2nd International Conference on Self Sustainable Artificial Intelligence Systems Icssas 2024 Proceedings",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICSSAS64001.2024.10760395",
+      "citations": 1,
+      "eid": "2-s2.0-85213397414",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85213397414"
     },
     {
       "title": "RETRACTION:Trust based access control with hybrid cryptographic algorithm based data security on cloud for e-learning application",

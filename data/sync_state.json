@@ -1,33 +1,23 @@
 {
   "cursor": 8,
-  "last_run_at": "2026-05-04T19:30:11+00:00",
-  "last_mode": "full",
-  "batch_size": 1,
+  "last_run_at": "2026-05-05T05:19:46+00:00",
+  "last_mode": "incremental",
+  "batch_size": 20,
   "incremental_years": 2,
   "processed_slugs": [
     "charles-pravin",
-    "kjpece",
     "jeyaprakashk",
     "p-sivakumar",
     "m-pallikonda-rajasekaran",
     "m-kalpana",
     "b-perumal",
-    "shashi-kant-dargar",
-    "s-diwakaran",
-    "josephine-selle-jeyanathan",
     "v-muneeswaran",
     "d-ganeshaperumal",
-    "aarthi-ananthakirupa-vpmb",
     "k-pandiaraj",
     "p-manikandan",
     "s-p-velmurugan",
-    "m-ramesh",
-    "jenyfal-sampson",
-    "n-bhuvaneswary",
-    "r-kottaimalai",
     "j-bennilo-fernandes",
     "v-sathya-narayanan",
-    "abha-dargar",
     "sheeba-jeya-sophia",
     "loyola-jasmine-j",
     "SKDargar",
@@ -37,17 +27,12 @@
     "Abha",
     "aarthi-vpmb",
     "mr",
-    "RKM"
+    "RKM",
+    "Buvi"
   ],
   "faculty_status": {
     "charles-pravin": {
       "last_synced_at": "2026-05-04T19:28:20+00:00",
-      "last_mode": "full",
-      "status": "success",
-      "message": "success"
-    },
-    "kjpece": {
-      "last_synced_at": "2026-04-29T07:47:28+00:00",
       "last_mode": "full",
       "status": "success",
       "message": "success"
@@ -82,29 +67,11 @@
       "status": "success",
       "message": "success"
     },
-    "shashi-kant-dargar": {
-      "last_synced_at": "2026-05-02T05:16:21+00:00",
-      "last_mode": "incremental",
-      "status": "success",
-      "message": "success"
-    },
     "k-s-dhanalakshmi": {
       "last_synced_at": "2026-05-01T13:11:13+00:00",
       "last_mode": "full",
       "status": "failed",
       "message": "Missing scopus_id"
-    },
-    "s-diwakaran": {
-      "last_synced_at": "2026-05-02T05:16:22+00:00",
-      "last_mode": "incremental",
-      "status": "success",
-      "message": "success"
-    },
-    "josephine-selle-jeyanathan": {
-      "last_synced_at": "2026-05-04T05:39:43+00:00",
-      "last_mode": "incremental",
-      "status": "success",
-      "message": "success"
     },
     "v-muneeswaran": {
       "last_synced_at": "2026-05-04T07:46:26+00:00",
@@ -114,12 +81,6 @@
     },
     "d-ganeshaperumal": {
       "last_synced_at": "2026-05-04T07:46:27+00:00",
-      "last_mode": "full",
-      "status": "success",
-      "message": "success"
-    },
-    "aarthi-ananthakirupa-vpmb": {
-      "last_synced_at": "2026-05-04T07:46:28+00:00",
       "last_mode": "full",
       "status": "success",
       "message": "success"
@@ -142,30 +103,6 @@
       "status": "success",
       "message": "success"
     },
-    "m-ramesh": {
-      "last_synced_at": "2026-05-04T07:26:22+00:00",
-      "last_mode": "full",
-      "status": "success",
-      "message": "success"
-    },
-    "jenyfal-sampson": {
-      "last_synced_at": "2026-05-04T05:39:48+00:00",
-      "last_mode": "incremental",
-      "status": "success",
-      "message": "success"
-    },
-    "n-bhuvaneswary": {
-      "last_synced_at": "2026-05-04T19:28:06+00:00",
-      "last_mode": "full",
-      "status": "success",
-      "message": "success"
-    },
-    "r-kottaimalai": {
-      "last_synced_at": "2026-05-04T07:45:55+00:00",
-      "last_mode": "full",
-      "status": "success",
-      "message": "success"
-    },
     "j-bennilo-fernandes": {
       "last_synced_at": "2026-05-04T19:28:12+00:00",
       "last_mode": "full",
@@ -174,12 +111,6 @@
     },
     "v-sathya-narayanan": {
       "last_synced_at": "2026-05-04T19:28:13+00:00",
-      "last_mode": "full",
-      "status": "success",
-      "message": "success"
-    },
-    "abha-dargar": {
-      "last_synced_at": "2026-05-03T06:07:52+00:00",
       "last_mode": "full",
       "status": "success",
       "message": "success"
@@ -241,6 +172,12 @@
     "RKM": {
       "last_synced_at": "2026-05-04T19:28:10+00:00",
       "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "Buvi": {
+      "last_synced_at": "2026-05-05T05:19:46+00:00",
+      "last_mode": "incremental",
       "status": "success",
       "message": "success"
     }

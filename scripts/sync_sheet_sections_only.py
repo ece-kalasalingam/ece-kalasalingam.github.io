@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 from typing import Any, cast
 
-from scripts.fetch_publications import (
+from fetch_publications import (
     ensure_object,
     fetch_sheet_sections,
     load_sheet_id_map,

@@ -5,5 +5,156 @@
   "h_index": 10,
   "total_publications": 96,
   "publications_file": "publications/RKM.json",
-  "sections": []
+  "sections": [
+    {
+      "id": "profile",
+      "title": "Profile",
+      "type": "kv",
+      "items": [
+        {
+          "label": "Name",
+          "value": "Dr. R. Kottaimalai"
+        },
+        {
+          "label": "E-mail",
+          "value": "r.kottaimalai@klu.ac.in, rkottaimalai@gmail.com"
+        },
+        {
+          "label": "Designation",
+          "value": "Associate Professor"
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "type": "table",
+      "columns": [
+        "Examination / Degree",
+        "Name of Institution/ University",
+        "Year of Passing",
+        "Class",
+        "Specialization"
+      ],
+      "rows": [
+        [
+          "Ph.D",
+          "Kalasalingam Academy of Research and Education (Deemed to be University)",
+          "2022",
+          "-",
+          "Biomedical Image Processing"
+        ],
+        [
+          "M.E.",
+          "Kalasalingam University",
+          "2013",
+          "First Class with Distinction",
+          "Control and Instrumentation"
+        ],
+        [
+          "B.E.",
+          "Arulmigu Kalasalingam College of Engineering / Anna University",
+          "2007",
+          "First Class",
+          "Instrumentation and Control Engineering"
+        ]
+      ]
+    },
+    {
+      "id": "experience",
+      "title": "Experience",
+      "type": "table",
+      "columns": [
+        "S. No",
+        "Organization",
+        "Designation",
+        "Duration",
+        "Experience"
+      ],
+      "rows": [
+        [
+          "1",
+          "Kalasalingam Academy of Research and Education, Krishnankoil",
+          "Associate Professor",
+          "15.11.2023 – Till Date",
+          "Ongoing"
+        ],
+        [
+          "2",
+          "Kalasalingam Academy of Research and Education, Krishnankoil",
+          "Project Associate",
+          "10.07.2021 – 30.06.2023",
+          "2 Years"
+        ],
+        [
+          "3",
+          "Sree Sowdambika College of Engineering, Aruppukottai",
+          "Assistant Professor",
+          "03.06.2013 – 30.06.2021",
+          "8 Years 1 Month"
+        ],
+        [
+          "4",
+          "Himu Accessories Private Ltd, Chennai",
+          "New Product Development & Testing Engineer",
+          "28.12.2009 – 24.06.2011",
+          "1 Year 6 Months"
+        ],
+        [
+          "5",
+          "Vibromech Engineers & Services Ltd, Chennai",
+          "New Product Development & Testing Engineer",
+          "11.08.2007 – 26.12.2009",
+          "2 Years 4 Months"
+        ]
+      ]
+    },
+    {
+      "id": "patents-published",
+      "title": "Patents Published",
+      "type": "table",
+      "columns": [
+        "S.No.",
+        "Application No.",
+        "Title of the Invention"
+      ],
+      "rows": [
+        [
+          "1",
+          "202441104762",
+          "AUTOMATIC GREETING MACHINE"
+        ],
+        [
+          "2",
+          "202541046705",
+          "AUTOMATED DRIVER EVALUATION SYSTEM FOR MOTORCYCLE AND FOUR-WHEELER LICENSING USING SENSOR BASED MONITORING"
+        ],
+        [
+          "3",
+          "202541091231",
+          "DESIGN AND DEVELOPMENT OF A SMART WEARABLE DEVICE FOR MONITORING STRESS AND EMOTIONAL RESPONSE IN CHILDREN WITH AUTISM"
+        ],
+        [
+          "4",
+          "202541101957",
+          "SMART BIODEGRADABLE MEDBOX FOR AUTOMATED DOSAGE DELIVERY, INSULIN STORAGE, AND REAL-TIME PATIENT ACCESS"
+        ],
+        [
+          "5",
+          "202541101993",
+          "LIGHT-ACTIVATED POWER SUPPLY SYSTEM USING NON-SOLAR PHOTOCONDUCTIVE MATERIALS FOR DIRECT SMARTPHONE OPERATION"
+        ],
+        [
+          "6",
+          "202641023309",
+          "DESIGN AND DEVELOPMENT OF A ACOST-EFFECTIVE, PORTABLE, AND WIRELESS CONTROLLED TERAHERTZ DEVICE FOR PHYSIOTHERAPY APPLICATIONS"
+        ],
+        [
+          "7",
+          "202641023328",
+          "DESIGN AND DEVELOPMENT OF SMART URINAL SYSTEM FOR EARLY DETECTION OF KIDNEY STONES THROUGH URINALYSI"
+        ]
+      ]
+    }
+  ]
 }

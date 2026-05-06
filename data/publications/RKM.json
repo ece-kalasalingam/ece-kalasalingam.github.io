@@ -73,13 +73,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85219124153"
     },
     {
-      "title": "Tumor extraction from MR brain images using modified seeded region growing algorithm",
+      "title": "Dehazing the Hazed images for buildings and underwater objects using KWM algorithm",
       "source": "A Study on Next Generation Materials and Devicesv",
       "date": "2025-01-01",
-      "doi": "10.1201/9781003675259-13",
-      "citations": 2,
-      "eid": "2-s2.0-105021727001",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105021727001"
+      "doi": "10.1201/9781003675259-63",
+      "citations": 0,
+      "eid": "2-s2.0-105021760976",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105021760976"
     },
     {
       "title": "Unveiling the challenges in extracting cerebral tumour on MRI utilizing Glowworm Swarm Optimization based PCM Clustering",
@@ -91,13 +91,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105021792732"
     },
     {
-      "title": "Dehazing the Hazed images for buildings and underwater objects using KWM algorithm",
+      "title": "Tumor extraction from MR brain images using modified seeded region growing algorithm",
       "source": "A Study on Next Generation Materials and Devicesv",
       "date": "2025-01-01",
-      "doi": "10.1201/9781003675259-63",
-      "citations": 0,
-      "eid": "2-s2.0-105021760976",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105021760976"
+      "doi": "10.1201/9781003675259-13",
+      "citations": 2,
+      "eid": "2-s2.0-105021727001",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105021727001"
     },
     {
       "title": "Diagnosis of PCOS using the optimal bald eagle based SVM model",

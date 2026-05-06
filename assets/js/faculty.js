@@ -56,6 +56,54 @@ function extractYear(rawDate) {
   return match ? match[1] : "";
 }
 
+function isSafeExternalUrl(rawValue) {
+  if (!rawValue || typeof rawValue !== "string") return false;
+  const value = rawValue.trim();
+  if (!value) return false;
+  try {
+    const parsed = new URL(value);
+    if (parsed.protocol !== "https:") return false;
+    if (!parsed.hostname) return false;
+    if (parsed.username || parsed.password) return false;
+    return true;
+  } catch (error) {
+    return false;
+  }
+}
+
+function appendSafeLinkedText(container, rawText) {
+  const text = String(rawText ?? "");
+  const urlPattern = /https?:\/\/[^\s<>"']+/g;
+  let lastIndex = 0;
+  let match = urlPattern.exec(text);
+
+  while (match) {
+    const urlText = match[0];
+    const start = match.index;
+    if (start > lastIndex) {
+      container.appendChild(document.createTextNode(text.slice(lastIndex, start)));
+    }
+
+    if (isSafeExternalUrl(urlText)) {
+      const link = document.createElement("a");
+      link.href = urlText;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer nofollow";
+      link.textContent = urlText;
+      container.appendChild(link);
+    } else {
+      container.appendChild(document.createTextNode(urlText));
+    }
+
+    lastIndex = start + urlText.length;
+    match = urlPattern.exec(text);
+  }
+
+  if (lastIndex < text.length) {
+    container.appendChild(document.createTextNode(text.slice(lastIndex)));
+  }
+}
+
 function buildPublicationsControls(publications, renderCallback) {
   const root = document.createElement("div");
   const pubList = document.createElement("div");
@@ -450,14 +498,14 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
           content.appendChild(listElement);
         }
         const li = document.createElement("li");
-        li.textContent = line.slice(2).trim();
+        appendSafeLinkedText(li, line.slice(2).trim());
         listElement.appendChild(li);
         return;
       }
       listElement = null;
       const p = document.createElement("p");
       p.className = "detail-markdown";
-      p.textContent = line;
+      appendSafeLinkedText(p, line);
       content.appendChild(p);
     });
   };
@@ -476,7 +524,7 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
         const label = document.createElement("dt");
         label.textContent = item.label || "";
         const value = document.createElement("dd");
-        value.textContent = item.value || "";
+        appendSafeLinkedText(value, item.value || "");
         table.appendChild(label);
         table.appendChild(value);
       });
@@ -522,7 +570,7 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
         const tr = document.createElement("tr");
         columns.forEach((_, idx) => {
           const td = document.createElement("td");
-          td.textContent = (row[idx] ?? "").toString();
+          appendSafeLinkedText(td, (row[idx] ?? "").toString());
           tr.appendChild(td);
         });
         tbody.appendChild(tr);

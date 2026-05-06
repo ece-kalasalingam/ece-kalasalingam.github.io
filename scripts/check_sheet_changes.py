@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any, TypedDict, cast
 
 import requests
+from requests import HTTPError
 
 SHEET_ID_MAP_PATH = Path("faculty_sheet_ids_json.json")
 STATE_PATH = Path("data/sheet_change_state.json")
@@ -94,6 +95,15 @@ def fetch_modified_time(sheet_id: str, api_key: str) -> str:
     return modified_time
 
 
+def is_public_access_error(exc: Exception) -> bool:
+    if not isinstance(exc, HTTPError):
+        return False
+    response = exc.response
+    if response is None:
+        return False
+    return response.status_code in (403, 404)
+
+
 def write_github_output(changed_slugs: list[str]) -> None:
     output_path = os.getenv("GITHUB_OUTPUT", "").strip()
     if not output_path:
@@ -121,6 +131,7 @@ def main() -> int:
     next_sheets: dict[str, SheetStateEntry] = {}
     changed: list[str] = []
     errors: list[str] = []
+    skipped_private_or_missing: list[str] = []
 
     for slug in sorted(mapping.keys()):
         sheet_id = mapping[slug]
@@ -135,7 +146,14 @@ def main() -> int:
                 "checked_at": now_iso,
             }
         except Exception as exc:
-            errors.append(f"{slug}: {exc}")
+            if is_public_access_error(exc):
+                skipped_private_or_missing.append(slug)
+                print(
+                    f"::notice::Skipping non-public or missing sheet for slug='{slug}' "
+                    f"(public-only mode): {exc}"
+                )
+            else:
+                errors.append(f"{slug}: {exc}")
             prev = previous.get(slug)
             if prev is not None:
                 next_sheets[slug] = prev
@@ -146,6 +164,12 @@ def main() -> int:
         print(f"Changed sheets: {', '.join(changed)}")
     else:
         print("No sheet changes detected.")
+
+    if skipped_private_or_missing:
+        print(
+            "Public-only skip list: "
+            + ", ".join(sorted(skipped_private_or_missing))
+        )
 
     write_github_output(changed)
 
@@ -158,4 +182,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-

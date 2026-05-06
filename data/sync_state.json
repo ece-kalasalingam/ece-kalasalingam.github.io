@@ -1,6 +1,6 @@
 {
   "cursor": 8,
-  "last_run_at": "2026-05-06T02:37:07+00:00",
+  "last_run_at": "2026-05-06T02:38:33+00:00",
   "last_mode": "full",
   "batch_size": 1,
   "incremental_years": 2,
@@ -27,7 +27,8 @@
     "aarthi-vpmb",
     "mr",
     "RKM",
-    "Buvi"
+    "Buvi",
+    "Pandiaraj-K"
   ],
   "faculty_status": {
     "charles-pravin": {
@@ -171,6 +172,12 @@
     "Buvi": {
       "last_synced_at": "2026-05-05T05:19:46+00:00",
       "last_mode": "incremental",
+      "status": "success",
+      "message": "success"
+    },
+    "Pandiaraj-K": {
+      "last_synced_at": "2026-05-06T02:38:33+00:00",
+      "last_mode": "full",
       "status": "success",
       "message": "success"
     }

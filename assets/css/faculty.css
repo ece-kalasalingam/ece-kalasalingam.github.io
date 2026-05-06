@@ -40,6 +40,9 @@
 
 .header-actions {
   margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .section-title {

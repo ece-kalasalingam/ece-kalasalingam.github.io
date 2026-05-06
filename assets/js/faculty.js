@@ -26,6 +26,108 @@ function setError(message) {
   container.textContent = message;
 }
 
+function normalizeLabel(label) {
+  return String(label || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, "");
+}
+
+function getProfileItems(facultyData) {
+  const sections = Array.isArray(facultyData?.sections) ? facultyData.sections : [];
+  const profileSection = sections.find(section => section && section.type === "kv" && normalizeLabel(section.title) === "profile");
+  return Array.isArray(profileSection?.items) ? profileSection.items : [];
+}
+
+function getProfileValueByLabel(items, candidateLabels) {
+  const labelSet = new Set(candidateLabels.map(normalizeLabel));
+  const matched = items.find(item => labelSet.has(normalizeLabel(item?.label)));
+  return String(matched?.value || "").trim();
+}
+
+function parseEmails(rawValue) {
+  const emailPattern = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi;
+  const matches = String(rawValue || "").match(emailPattern) || [];
+  return [...new Set(matches.map(email => email.toLowerCase()))];
+}
+
+function parsePhones(rawValue) {
+  const parts = String(rawValue || "")
+    .split(/[,/|]/)
+    .map(part => part.trim())
+    .filter(Boolean);
+  const phones = parts.filter(part => /[\d]{6,}/.test(part.replace(/[^\d+]/g, "")));
+  return [...new Set(phones)];
+}
+
+function vcardEscape(value) {
+  return String(value || "")
+    .replace(/\\/g, "\\\\")
+    .replace(/\n/g, "\\n")
+    .replace(/;/g, "\\;")
+    .replace(/,/g, "\\,");
+}
+
+function cleanFileName(value) {
+  return String(value || "faculty")
+    .replace(/[<>:"/\\|?*\x00-\x1F]/g, "-")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "")
+    .toLowerCase();
+}
+
+function buildFacultyVcard(facultyMeta, facultyData) {
+  const profileItems = getProfileItems(facultyData);
+  const fullName = String(facultyData?.name || facultyMeta?.name || "Faculty Member").trim();
+  const designationFromProfile = getProfileValueByLabel(profileItems, ["designation", "role", "position"]);
+  const designation = designationFromProfile || String(facultyMeta?.designation || "").trim();
+  const emailRaw = getProfileValueByLabel(profileItems, ["email", "e-mail", "mail"]);
+  const phoneRaw = getProfileValueByLabel(profileItems, ["phone", "mobile", "contact", "telephone", "tel"]);
+  const department = getProfileValueByLabel(profileItems, ["department", "dept"]);
+  const office = getProfileValueByLabel(profileItems, ["office", "address", "location"]);
+  const emails = parseEmails(emailRaw);
+  const phones = parsePhones(phoneRaw);
+  const profileUrl = window.location.href;
+  const scopusId = String(facultyData?.scopus_id || facultyMeta?.scopus_id || "").trim();
+
+  const lines = [
+    "BEGIN:VCARD",
+    "VERSION:3.0",
+    `FN:${vcardEscape(fullName)}`,
+    `ORG:${vcardEscape(
+      department
+        ? `Kalasalingam Academy of Research and Education;${department}`
+        : "Kalasalingam Academy of Research and Education"
+    )}`
+  ];
+
+  if (designation) lines.push(`TITLE:${vcardEscape(designation)}`);
+  emails.forEach(email => lines.push(`EMAIL;TYPE=INTERNET:${vcardEscape(email)}`));
+  phones.forEach(phone => lines.push(`TEL;TYPE=WORK,VOICE:${vcardEscape(phone)}`));
+  if (office) lines.push(`ADR;TYPE=WORK:;;${vcardEscape(office)};;;;`);
+  lines.push(`URL:${vcardEscape(profileUrl)}`);
+  if (scopusId) {
+    lines.push(`URL;TYPE=SCOPUS:${vcardEscape(`https://www.scopus.com/authid/detail.uri?authorId=${encodeURIComponent(scopusId)}`)}`);
+  }
+  lines.push("END:VCARD");
+
+  return `${lines.join("\r\n")}\r\n`;
+}
+
+function triggerVcardDownload(facultyMeta, facultyData) {
+  const vcardText = buildFacultyVcard(facultyMeta, facultyData);
+  const blob = new Blob([vcardText], { type: "text/vcard;charset=utf-8" });
+  const objectUrl = URL.createObjectURL(blob);
+  const anchor = document.createElement("a");
+  const fallbackName = facultyMeta?.slug || facultyData?.slug || facultyData?.name || facultyMeta?.name || "faculty";
+  anchor.href = objectUrl;
+  anchor.download = `${cleanFileName(fallbackName)}.vcf`;
+  document.body.appendChild(anchor);
+  anchor.click();
+  anchor.remove();
+  URL.revokeObjectURL(objectUrl);
+}
+
 function formatMonthYear(rawDate) {
   if (!rawDate || typeof rawDate !== "string") {
     return "Not available";
@@ -438,6 +540,13 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
 
   const headerActions = document.createElement("div");
   headerActions.className = "header-actions";
+  const vcardButton = document.createElement("button");
+  vcardButton.type = "button";
+  vcardButton.className = "btn";
+  vcardButton.textContent = "Download vCard";
+  vcardButton.setAttribute("aria-label", "Download this faculty contact as a vCard");
+  headerActions.appendChild(vcardButton);
+
   const pdfButton = document.createElement("button");
   pdfButton.type = "button";
   pdfButton.className = "btn";
@@ -790,6 +899,10 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
   pdfButton.addEventListener("click", () => {
     buildAllSectionsForPrint();
     window.print();
+  });
+
+  vcardButton.addEventListener("click", () => {
+    triggerVcardDownload(facultyMeta, facultyData);
   });
 }
 

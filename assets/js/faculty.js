@@ -1000,6 +1000,9 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
   qrButton.addEventListener("click", () => {
     qrModal.openModal();
   });
+
+  // Show the QR modal on initial page load for quick contact sharing.
+  qrModal.openModal();
 }
 
 async function loadFacultyPage() {

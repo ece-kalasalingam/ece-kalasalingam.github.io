@@ -71,9 +71,18 @@ function isSafeExternalUrl(rawValue) {
   }
 }
 
+function normalizeCandidateUrl(rawValue) {
+  const value = String(rawValue || "").trim();
+  if (!value) return "";
+  if (/^www\./i.test(value)) {
+    return `https://${value}`;
+  }
+  return value;
+}
+
 function appendSafeLinkedText(container, rawText) {
   const text = String(rawText ?? "");
-  const urlPattern = /https?:\/\/[^\s<>"']+/g;
+  const urlPattern = /(?:https?:\/\/|www\.)[^\s<>"']+/gi;
   let lastIndex = 0;
   let match = urlPattern.exec(text);
 
@@ -84,9 +93,10 @@ function appendSafeLinkedText(container, rawText) {
       container.appendChild(document.createTextNode(text.slice(lastIndex, start)));
     }
 
-    if (isSafeExternalUrl(urlText)) {
+    const normalizedUrl = normalizeCandidateUrl(urlText);
+    if (isSafeExternalUrl(normalizedUrl)) {
       const link = document.createElement("a");
-      link.href = urlText;
+      link.href = normalizedUrl;
       link.target = "_blank";
       link.rel = "noopener noreferrer nofollow";
       link.textContent = urlText;

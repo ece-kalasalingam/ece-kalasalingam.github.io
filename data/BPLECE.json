@@ -1,0 +1,94 @@
+{
+  "name": "Dr. B. Perumal",
+  "slug": "BPLECE",
+  "scopus_id": "56352303700",
+  "h_index": 11,
+  "total_publications": 64,
+  "publications_file": "publications/BPLECE.json",
+  "sections": [
+    {
+      "id": "profile",
+      "title": "Profile",
+      "type": "kv",
+      "items": [
+        {
+          "label": "Name",
+          "value": "Dr. Jeya prakash K."
+        },
+        {
+          "label": "E-mail",
+          "value": "perumal@klu.ac.in, palanimet@gmail.com"
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "type": "table",
+      "columns": [
+        "Examination / Degree",
+        "Name of Institution/ University",
+        "Year of Passing",
+        "Class",
+        "Specialization"
+      ],
+      "rows": [
+        [
+          "PDF",
+          "Lincoln University College, Malaysia",
+          "2026",
+          "",
+          "Medical Image Compression"
+        ],
+        [
+          "PDF",
+          "Cracow University of Technology/Krakow, Poland",
+          "2018",
+          "",
+          "Medical Image Compression"
+        ],
+        [
+          "Ph.D",
+          "Kalasalingam Academy of Research and Education (Deemed to be University)",
+          "2016",
+          "",
+          "Medical Image Compression"
+        ],
+        [
+          "M.E.",
+          "Arulmigu Kalasalingam College of Engineering / Anna University",
+          "2006",
+          "First Class",
+          "Digital Communication and Networking"
+        ],
+        [
+          "B.E.",
+          "Odaiyappa College of Engineering and technology,  Theni.",
+          "2003",
+          "First Class",
+          "Electronics and Communication Engineering"
+        ],
+        [
+          "DECE",
+          "Thangam muthu Polytechnic, Periyakulam.",
+          "2000",
+          "First Class",
+          "Electronics and Communication Engineering"
+        ],
+        [
+          "Higher Secondary",
+          "Z.K.M. Hr. Sec. School, Bodinayakanur-626513",
+          "1998",
+          "",
+          "General Machinist"
+        ]
+      ]
+    },
+    {
+      "id": "awards",
+      "title": "Awards",
+      "type": "markdown",
+      "markdown": "1"
+    }
+  ]
+}

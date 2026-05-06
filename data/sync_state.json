@@ -1,6 +1,6 @@
 {
   "cursor": 4,
-  "last_run_at": "2026-05-06T08:25:59+00:00",
+  "last_run_at": "2026-05-06T08:27:23+00:00",
   "last_mode": "full",
   "batch_size": 1,
   "incremental_years": 2,
@@ -27,7 +27,8 @@
     "RKM",
     "Buvi",
     "Pandiaraj-K",
-    "DGPECE"
+    "DGPECE",
+    "BPLECE"
   ],
   "faculty_status": {
     "charles-pravin": {
@@ -170,6 +171,12 @@
     },
     "DGPECE": {
       "last_synced_at": "2026-05-06T08:25:59+00:00",
+      "last_mode": "full",
+      "status": "success",
+      "message": "success"
+    },
+    "BPLECE": {
+      "last_synced_at": "2026-05-06T08:27:23+00:00",
       "last_mode": "full",
       "status": "success",
       "message": "success"

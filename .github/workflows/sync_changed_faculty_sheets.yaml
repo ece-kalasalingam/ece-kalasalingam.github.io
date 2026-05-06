@@ -1,0 +1,86 @@
+name: Sync Changed Faculty Sheets
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  detect-and-sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Validate API key presence
+        env:
+          ELSEVIER_API_KEY: ${{ secrets.ELSEVIER_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: |
+          if [ -z "${ELSEVIER_API_KEY}" ]; then
+            echo "::error::ELSEVIER_API_KEY is missing."
+            exit 1
+          fi
+          if [ -z "${GOOGLE_API_KEY}" ]; then
+            echo "::error::GOOGLE_API_KEY is missing."
+            exit 1
+          fi
+
+      - name: Detect changed sheets
+        id: detect
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: python scripts/check_sheet_changes.py
+
+      - name: Sync changed faculty records
+        if: steps.detect.outputs.changed_count != '0'
+        env:
+          ELSEVIER_API_KEY: ${{ secrets.ELSEVIER_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          CHANGED_SLUGS_CSV: ${{ steps.detect.outputs.changed_slugs_csv }}
+          FETCH_MODE: incremental
+          BATCH_SIZE: "1"
+          INCREMENTAL_YEARS: "2"
+        run: |
+          IFS=',' read -ra SLUGS <<< "${CHANGED_SLUGS_CSV}"
+          for slug in "${SLUGS[@]}"; do
+            slug="$(echo "$slug" | xargs)"
+            if [ -z "$slug" ]; then
+              continue
+            fi
+            echo "Syncing changed sheet for: $slug"
+            FACULTY_SLUG="$slug" python scripts/fetch_publications.py
+          done
+
+      - name: Validate generated data
+        if: steps.detect.outputs.changed_count != '0'
+        env:
+          VALIDATE_ALLOW_MISSING: "1"
+        run: python scripts/validate_site.py
+
+      - name: Commit synced data/state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if ! git diff --staged --quiet; then
+            git commit -m "Sync changed faculty sheets"
+            git push
+          else
+            echo "No changes to commit"
+          fi
+

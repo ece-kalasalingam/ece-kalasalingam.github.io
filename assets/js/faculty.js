@@ -128,6 +128,11 @@ function triggerVcardDownload(facultyMeta, facultyData) {
   URL.revokeObjectURL(objectUrl);
 }
 
+function buildVcardQrUrl(facultyMeta, facultyData) {
+  const vcardText = buildFacultyVcard(facultyMeta, facultyData);
+  return `https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=${encodeURIComponent(vcardText)}`;
+}
+
 function formatMonthYear(rawDate) {
   if (!rawDate || typeof rawDate !== "string") {
     return "Not available";
@@ -576,6 +581,28 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
   photoWrap.appendChild(fallback);
 
   container.appendChild(header);
+
+  const qrCard = document.createElement("section");
+  qrCard.className = "qr-card";
+
+  const qrTitle = document.createElement("h2");
+  qrTitle.className = "qr-title";
+  qrTitle.textContent = "Scan to Add Contact";
+  qrCard.appendChild(qrTitle);
+
+  const qrDescription = document.createElement("p");
+  qrDescription.className = "meta";
+  qrDescription.textContent = "Scan this QR code using your phone camera to add this faculty contact.";
+  qrCard.appendChild(qrDescription);
+
+  const qrImage = document.createElement("img");
+  qrImage.className = "qr-image";
+  qrImage.loading = "lazy";
+  qrImage.alt = `QR code to add ${facultyMeta.name || facultyData.name || "faculty"} as a contact`;
+  qrImage.src = buildVcardQrUrl(facultyMeta, facultyData);
+  qrCard.appendChild(qrImage);
+
+  container.appendChild(qrCard);
 
   const sheetSections = Array.isArray(facultyData.sections) ? [...facultyData.sections] : [];
 

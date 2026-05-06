@@ -50,6 +50,29 @@
   font-size: 1.15rem;
 }
 
+.qr-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 18px;
+  background: var(--surface);
+}
+
+.qr-title {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+.qr-image {
+  display: block;
+  width: min(260px, 100%);
+  height: auto;
+  margin-top: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+}
+
 .controls {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;

@@ -1,6 +1,6 @@
 {
   "cursor": 8,
-  "last_run_at": "2026-05-06T02:35:03+00:00",
+  "last_run_at": "2026-05-06T02:37:07+00:00",
   "last_mode": "full",
   "batch_size": 1,
   "incremental_years": 2,
@@ -37,7 +37,7 @@
       "message": "success"
     },
     "jeyaprakashk": {
-      "last_synced_at": "2026-05-04T19:28:17+00:00",
+      "last_synced_at": "2026-05-06T02:37:07+00:00",
       "last_mode": "full",
       "status": "success",
       "message": "success"

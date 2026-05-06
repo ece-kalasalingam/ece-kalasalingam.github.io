@@ -76,6 +76,13 @@ function cleanFileName(value) {
     .toLowerCase();
 }
 
+function buildCanonicalFacultyProfileUrl(facultyMeta, facultyData) {
+  const slug = String(facultyMeta?.slug || facultyData?.slug || "").trim();
+  const baseUrl = `${window.location.origin}${window.location.pathname}`;
+  if (!slug) return baseUrl;
+  return `${baseUrl}?faculty=${encodeURIComponent(slug)}`;
+}
+
 function buildFacultyVcard(facultyMeta, facultyData) {
   const profileItems = getProfileItems(facultyData);
   const fullName = String(facultyData?.name || facultyMeta?.name || "Faculty Member").trim();
@@ -87,7 +94,7 @@ function buildFacultyVcard(facultyMeta, facultyData) {
   const office = getProfileValueByLabel(profileItems, ["office", "address", "location"]);
   const emails = parseEmails(emailRaw);
   const phones = parsePhones(phoneRaw);
-  const profileUrl = window.location.href;
+  const profileUrl = buildCanonicalFacultyProfileUrl(facultyMeta, facultyData);
   const scopusId = String(facultyData?.scopus_id || facultyMeta?.scopus_id || "").trim();
 
   const lines = [

@@ -104,13 +104,15 @@ def is_public_access_error(exc: Exception) -> bool:
     return response.status_code in (403, 404)
 
 
-def write_github_output(changed_slugs: list[str]) -> None:
+def write_github_output(changed_slugs: list[str], skipped_slugs: list[str]) -> None:
     output_path = os.getenv("GITHUB_OUTPUT", "").strip()
     if not output_path:
         return
     with open(output_path, "a", encoding="utf-8") as handle:
         handle.write(f"changed_count={len(changed_slugs)}\n")
         handle.write(f"changed_slugs_csv={','.join(changed_slugs)}\n")
+        handle.write(f"skipped_count={len(skipped_slugs)}\n")
+        handle.write(f"skipped_slugs_csv={','.join(skipped_slugs)}\n")
 
 
 def main() -> int:
@@ -171,7 +173,7 @@ def main() -> int:
             + ", ".join(sorted(skipped_private_or_missing))
         )
 
-    write_github_output(changed)
+    write_github_output(changed, sorted(skipped_private_or_missing))
 
     if errors:
         for msg in errors:

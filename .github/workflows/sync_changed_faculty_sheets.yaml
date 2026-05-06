@@ -47,6 +47,7 @@ jobs:
         run: python scripts/check_sheet_changes.py
 
       - name: Sync changed faculty records
+        id: sync
         if: steps.detect.outputs.changed_count != '0'
         env:
           ELSEVIER_API_KEY: ${{ secrets.ELSEVIER_API_KEY }}
@@ -57,6 +58,7 @@ jobs:
           INCREMENTAL_YEARS: "2"
         run: |
           IFS=',' read -ra SLUGS <<< "${CHANGED_SLUGS_CSV}"
+          synced_slugs=()
           for slug in "${SLUGS[@]}"; do
             slug="$(echo "$slug" | xargs)"
             if [ -z "$slug" ]; then
@@ -64,13 +66,22 @@ jobs:
             fi
             echo "Syncing changed sheet for: $slug"
             FACULTY_SLUG="$slug" python scripts/fetch_publications.py
+            synced_slugs+=("$slug")
           done
+          synced_csv="$(IFS=','; echo "${synced_slugs[*]}")"
+          echo "synced_slugs_csv=${synced_csv}" >> "$GITHUB_OUTPUT"
 
       - name: Validate generated data
         if: steps.detect.outputs.changed_count != '0'
         env:
           VALIDATE_ALLOW_MISSING: "1"
         run: python scripts/validate_site.py
+
+      - name: Capture changed files
+        id: changes
+        run: |
+          changed_files="$(git status --short data | awk '{print $2}' | paste -sd, -)"
+          echo "changed_files_csv=${changed_files}" >> "$GITHUB_OUTPUT"
 
       - name: Commit synced data/state
         run: |
@@ -84,3 +95,14 @@ jobs:
             echo "No changes to commit"
           fi
 
+      - name: Write run summary
+        run: |
+          {
+            echo "## Sheet Sync Summary"
+            echo ""
+            echo "- Changed sheets detected: ${{ steps.detect.outputs.changed_count }}"
+            echo "- Changed sheet slugs: ${{ steps.detect.outputs.changed_slugs_csv }}"
+            echo "- Skipped (non-public/missing) sheet slugs: ${{ steps.detect.outputs.skipped_slugs_csv }}"
+            echo "- Synced faculty slugs: ${{ steps.sync.outputs.synced_slugs_csv }}"
+            echo "- Updated data files: ${{ steps.changes.outputs.changed_files_csv }}"
+          } >> "$GITHUB_STEP_SUMMARY"

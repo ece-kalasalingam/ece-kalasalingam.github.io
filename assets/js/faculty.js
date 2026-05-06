@@ -133,6 +133,84 @@ function buildVcardQrUrl(facultyMeta, facultyData) {
   return `https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=${encodeURIComponent(vcardText)}`;
 }
 
+function createQrModal(facultyMeta, facultyData) {
+  const fullName = facultyMeta.name || facultyData.name || "Faculty";
+  const overlay = document.createElement("div");
+  overlay.className = "qr-modal-overlay";
+  overlay.hidden = true;
+  overlay.setAttribute("aria-hidden", "true");
+
+  const dialog = document.createElement("section");
+  dialog.className = "qr-modal";
+  dialog.setAttribute("role", "dialog");
+  dialog.setAttribute("aria-modal", "true");
+  dialog.setAttribute("aria-label", `Contact QR for ${fullName}`);
+  overlay.appendChild(dialog);
+
+  const title = document.createElement("h2");
+  title.className = "qr-title";
+  title.textContent = "Scan to Add Contact";
+  dialog.appendChild(title);
+
+  const subtitle = document.createElement("p");
+  subtitle.className = "meta";
+  subtitle.textContent = fullName;
+  dialog.appendChild(subtitle);
+
+  const helper = document.createElement("p");
+  helper.className = "meta";
+  helper.textContent = "Open your phone camera and scan. Most phones will show Add Contact directly.";
+  dialog.appendChild(helper);
+
+  const qrImage = document.createElement("img");
+  qrImage.className = "qr-image";
+  qrImage.loading = "lazy";
+  qrImage.alt = `QR code to add ${fullName} as a contact`;
+  qrImage.src = buildVcardQrUrl(facultyMeta, facultyData);
+  dialog.appendChild(qrImage);
+
+  const actions = document.createElement("div");
+  actions.className = "qr-modal-actions";
+  dialog.appendChild(actions);
+
+  const downloadBtn = document.createElement("button");
+  downloadBtn.type = "button";
+  downloadBtn.className = "btn";
+  downloadBtn.textContent = "Download vCard";
+  downloadBtn.addEventListener("click", () => triggerVcardDownload(facultyMeta, facultyData));
+  actions.appendChild(downloadBtn);
+
+  const closeBtn = document.createElement("button");
+  closeBtn.type = "button";
+  closeBtn.className = "btn";
+  closeBtn.textContent = "Close";
+  actions.appendChild(closeBtn);
+
+  function closeModal() {
+    overlay.hidden = true;
+    overlay.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+  }
+
+  function openModal() {
+    overlay.hidden = false;
+    overlay.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+  }
+
+  closeBtn.addEventListener("click", closeModal);
+  overlay.addEventListener("click", event => {
+    if (event.target === overlay) closeModal();
+  });
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && !overlay.hidden) {
+      closeModal();
+    }
+  });
+
+  return { overlay, openModal, closeModal };
+}
+
 function formatMonthYear(rawDate) {
   if (!rawDate || typeof rawDate !== "string") {
     return "Not available";
@@ -552,6 +630,13 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
   vcardButton.setAttribute("aria-label", "Download this faculty contact as a vCard");
   headerActions.appendChild(vcardButton);
 
+  const qrButton = document.createElement("button");
+  qrButton.type = "button";
+  qrButton.className = "btn";
+  qrButton.textContent = "Show Contact QR";
+  qrButton.setAttribute("aria-label", "Show QR code to add this faculty contact");
+  headerActions.appendChild(qrButton);
+
   const pdfButton = document.createElement("button");
   pdfButton.type = "button";
   pdfButton.className = "btn";
@@ -581,28 +666,8 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
   photoWrap.appendChild(fallback);
 
   container.appendChild(header);
-
-  const qrCard = document.createElement("section");
-  qrCard.className = "qr-card";
-
-  const qrTitle = document.createElement("h2");
-  qrTitle.className = "qr-title";
-  qrTitle.textContent = "Scan to Add Contact";
-  qrCard.appendChild(qrTitle);
-
-  const qrDescription = document.createElement("p");
-  qrDescription.className = "meta";
-  qrDescription.textContent = "Scan this QR code using your phone camera to add this faculty contact.";
-  qrCard.appendChild(qrDescription);
-
-  const qrImage = document.createElement("img");
-  qrImage.className = "qr-image";
-  qrImage.loading = "lazy";
-  qrImage.alt = `QR code to add ${facultyMeta.name || facultyData.name || "faculty"} as a contact`;
-  qrImage.src = buildVcardQrUrl(facultyMeta, facultyData);
-  qrCard.appendChild(qrImage);
-
-  container.appendChild(qrCard);
+  const qrModal = createQrModal(facultyMeta, facultyData);
+  container.appendChild(qrModal.overlay);
 
   const sheetSections = Array.isArray(facultyData.sections) ? [...facultyData.sections] : [];
 
@@ -930,6 +995,10 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
 
   vcardButton.addEventListener("click", () => {
     triggerVcardDownload(facultyMeta, facultyData);
+  });
+
+  qrButton.addEventListener("click", () => {
+    qrModal.openModal();
   });
 }
 

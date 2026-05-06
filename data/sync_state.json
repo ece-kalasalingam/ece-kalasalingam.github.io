@@ -1,8 +1,8 @@
 {
   "cursor": 8,
-  "last_run_at": "2026-05-05T05:19:46+00:00",
-  "last_mode": "incremental",
-  "batch_size": 20,
+  "last_run_at": "2026-05-06T02:35:03+00:00",
+  "last_mode": "full",
+  "batch_size": 1,
   "incremental_years": 2,
   "processed_slugs": [
     "charles-pravin",
@@ -13,7 +13,6 @@
     "b-perumal",
     "v-muneeswaran",
     "d-ganeshaperumal",
-    "k-pandiaraj",
     "p-manikandan",
     "s-p-velmurugan",
     "j-bennilo-fernandes",
@@ -85,12 +84,6 @@
       "status": "success",
       "message": "success"
     },
-    "k-pandiaraj": {
-      "last_synced_at": "2026-05-04T19:27:55+00:00",
-      "last_mode": "full",
-      "status": "success",
-      "message": "success"
-    },
     "p-manikandan": {
       "last_synced_at": "2026-05-04T19:27:58+00:00",
       "last_mode": "full",
@@ -128,7 +121,7 @@
       "message": "success"
     },
     "SKDargar": {
-      "last_synced_at": "2026-05-04T19:28:42+00:00",
+      "last_synced_at": "2026-05-06T02:35:03+00:00",
       "last_mode": "full",
       "status": "success",
       "message": "success"

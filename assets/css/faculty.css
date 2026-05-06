@@ -75,6 +75,10 @@
   padding: 16px;
 }
 
+.qr-modal-overlay[hidden] {
+  display: none !important;
+}
+
 .qr-modal {
   width: min(440px, 100%);
   background: var(--surface);

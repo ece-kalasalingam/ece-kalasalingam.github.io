@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   detect-and-sync:
@@ -28,13 +30,8 @@ jobs:
 
       - name: Validate API key presence
         env:
-          ELSEVIER_API_KEY: ${{ secrets.ELSEVIER_API_KEY }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
         run: |
-          if [ -z "${ELSEVIER_API_KEY}" ]; then
-            echo "::error::ELSEVIER_API_KEY is missing."
-            exit 1
-          fi
           if [ -z "${GOOGLE_API_KEY}" ]; then
             echo "::error::GOOGLE_API_KEY is missing."
             exit 1
@@ -50,12 +47,8 @@ jobs:
         id: sync
         if: steps.detect.outputs.changed_count != '0'
         env:
-          ELSEVIER_API_KEY: ${{ secrets.ELSEVIER_API_KEY }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           CHANGED_SLUGS_CSV: ${{ steps.detect.outputs.changed_slugs_csv }}
-          FETCH_MODE: incremental
-          BATCH_SIZE: "1"
-          INCREMENTAL_YEARS: "2"
         run: |
           IFS=',' read -ra SLUGS <<< "${CHANGED_SLUGS_CSV}"
           synced_slugs=()
@@ -65,7 +58,7 @@ jobs:
               continue
             fi
             echo "Syncing changed sheet for: $slug"
-            FACULTY_SLUG="$slug" python scripts/fetch_publications.py
+            FACULTY_SLUG="$slug" python scripts/sync_sheet_sections_only.py
             synced_slugs+=("$slug")
           done
           synced_csv="$(IFS=','; echo "${synced_slugs[*]}")"
@@ -94,6 +87,18 @@ jobs:
           else
             echo "No changes to commit"
           fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
 
       - name: Write run summary
         run: |

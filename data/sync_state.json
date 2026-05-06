@@ -1,8 +1,8 @@
 {
   "cursor": 4,
-  "last_run_at": "2026-05-06T05:34:36+00:00",
-  "last_mode": "incremental",
-  "batch_size": 20,
+  "last_run_at": "2026-05-06T08:25:59+00:00",
+  "last_mode": "full",
+  "batch_size": 1,
   "incremental_years": 2,
   "processed_slugs": [
     "charles-pravin",
@@ -10,9 +10,7 @@
     "p-sivakumar",
     "m-pallikonda-rajasekaran",
     "m-kalpana",
-    "b-perumal",
     "v-muneeswaran",
-    "d-ganeshaperumal",
     "p-manikandan",
     "s-p-velmurugan",
     "j-bennilo-fernandes",
@@ -28,7 +26,8 @@
     "mr",
     "RKM",
     "Buvi",
-    "Pandiaraj-K"
+    "Pandiaraj-K",
+    "DGPECE"
   ],
   "faculty_status": {
     "charles-pravin": {
@@ -61,12 +60,6 @@
       "status": "success",
       "message": "success"
     },
-    "b-perumal": {
-      "last_synced_at": "2026-05-04T19:28:39+00:00",
-      "last_mode": "full",
-      "status": "success",
-      "message": "success"
-    },
     "k-s-dhanalakshmi": {
       "last_synced_at": "2026-05-01T13:11:13+00:00",
       "last_mode": "full",
@@ -75,12 +68,6 @@
     },
     "v-muneeswaran": {
       "last_synced_at": "2026-05-06T05:34:16+00:00",
-      "last_mode": "incremental",
-      "status": "success",
-      "message": "success"
-    },
-    "d-ganeshaperumal": {
-      "last_synced_at": "2026-05-06T05:34:17+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
@@ -178,6 +165,12 @@
     "Pandiaraj-K": {
       "last_synced_at": "2026-05-06T05:34:20+00:00",
       "last_mode": "incremental",
+      "status": "success",
+      "message": "success"
+    },
+    "DGPECE": {
+      "last_synced_at": "2026-05-06T08:25:59+00:00",
+      "last_mode": "full",
       "status": "success",
       "message": "success"
     }

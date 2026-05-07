@@ -230,43 +230,63 @@
       "columns": [
         "S.No.",
         "Application No.",
-        "Title of the Invention"
+        "Title of the Invention",
+        "Year"
       ],
       "rows": [
         [
           "1",
           "202441104762",
-          "AUTOMATIC GREETING MACHINE"
+          "AUTOMATIC GREETING MACHINE",
+          "2025"
         ],
         [
           "2",
           "202541046705",
-          "AUTOMATED DRIVER EVALUATION SYSTEM FOR MOTORCYCLE AND FOUR-WHEELER LICENSING USING SENSOR BASED MONITORING"
+          "AUTOMATED DRIVER EVALUATION SYSTEM FOR MOTORCYCLE AND FOUR-WHEELER LICENSING USING SENSOR BASED MONITORING",
+          "2025"
         ],
         [
           "3",
           "202541091231",
-          "DESIGN AND DEVELOPMENT OF A SMART WEARABLE DEVICE FOR MONITORING STRESS AND EMOTIONAL RESPONSE IN CHILDREN WITH AUTISM"
+          "DESIGN AND DEVELOPMENT OF A SMART WEARABLE DEVICE FOR MONITORING STRESS AND EMOTIONAL RESPONSE IN CHILDREN WITH AUTISM",
+          "2025"
         ],
         [
           "4",
           "202541101957",
-          "SMART BIODEGRADABLE MEDBOX FOR AUTOMATED DOSAGE DELIVERY, INSULIN STORAGE, AND REAL-TIME PATIENT ACCESS"
+          "SMART BIODEGRADABLE MEDBOX FOR AUTOMATED DOSAGE DELIVERY, INSULIN STORAGE, AND REAL-TIME PATIENT ACCESS",
+          "2025"
         ],
         [
           "5",
-          "202541101993",
-          "LIGHT-ACTIVATED POWER SUPPLY SYSTEM USING NON-SOLAR PHOTOCONDUCTIVE MATERIALS FOR DIRECT SMARTPHONE OPERATION"
+          "202541101959",
+          "MULTI-MODAL EQUIPMENT FOR EARLY DETECTION OF ALZHEIMERS DISEASE USING COGNITIVE,PHYSIOLOGICAL AND AI-BASED ANALYSIS",
+          "2025"
         ],
         [
           "6",
-          "202641023309",
-          "DESIGN AND DEVELOPMENT OF A ACOST-EFFECTIVE, PORTABLE, AND WIRELESS CONTROLLED TERAHERTZ DEVICE FOR PHYSIOTHERAPY APPLICATIONS"
+          "202541101993",
+          "LIGHT-ACTIVATED POWER SUPPLY SYSTEM USING NON-SOLAR PHOTOCONDUCTIVE MATERIALS FOR DIRECT SMARTPHONE OPERATION",
+          "2025"
         ],
         [
           "7",
+          "202541101994",
+          "AUTOMATED INTRAVENOUS INFUSION SYSTEM WITH REAL-TIME MONITORING AND GLUCOSE-LEVEL-BASED ADJUSTMENT USING RASPBERRY PI",
+          "2025"
+        ],
+        [
+          "8",
+          "202641023309",
+          "DESIGN AND DEVELOPMENT OF A ACOST-EFFECTIVE, PORTABLE, AND WIRELESS CONTROLLED TERAHERTZ DEVICE FOR PHYSIOTHERAPY APPLICATIONS",
+          "2026"
+        ],
+        [
+          "9",
           "202641023328",
-          "DESIGN AND DEVELOPMENT OF SMART URINAL SYSTEM FOR EARLY DETECTION OF KIDNEY STONES THROUGH URINALYSI"
+          "DESIGN AND DEVELOPMENT OF SMART URINAL SYSTEM FOR EARLY DETECTION OF KIDNEY STONES THROUGH URINALYSI",
+          "2026"
         ]
       ]
     },
@@ -280,7 +300,7 @@
       "id": "research-centre-lab-at-irc",
       "title": "Research Centre (lab At Irc)",
       "type": "markdown",
-      "markdown": "Centre for Biomedical Research and Diagnostic Techniques Development\r\n\r\nAbout the Centre:\r\nThe Centre for Biomedical Research and Diagnostic Techniques Development is established with the vision of advancing innovative healthcare technologies through interdisciplinary research and development. The centre focuses on designing and developing cost-effective, non-invasive diagnostic solutions to address critical challenges in modern healthcare.\r\nThe centre aims to bridge the gap between engineering and medical sciences by integrating advanced methodologies such as Artificial Intelligence, Machine Learning, Medical Image Processing, and Biomedical Instrumentation. It actively promotes translational research that can be applied in real-world clinical environments for early diagnosis, monitoring, and treatment support.\r\n\r\nObjectives:\r\n•\tTo develop innovative diagnostic systems for early disease detection \r\n•\tTo promote AI-driven healthcare solutions \r\n•\tTo design low-cost biomedical devices for societal impact \r\n•\tTo encourage interdisciplinary collaboration between engineers, clinicians, and researchers \r\n•\tTo support student research, innovation, and entrepreneurship in healthcare technologies \r\n\r\nKey Focus Areas:\r\n•\tMedical Image Processing and Analysis \r\n•\tAI and Machine Learning in Healthcare \r\n•\tBone Health and Osteoporosis Detection \r\n•\tNeurological Disorder Analysis (Brain Imaging) \r\n•\tBiomedical Signal Processing (ECG, EEG) \r\n•\tIoT-based Healthcare Systems \r\n•\tNon-invasive Diagnostic Device Development \r\n\r\nFacilities & Expertise:\r\nThe centre is equipped with tools and platforms supporting:\r\n•\tSimulation and modeling (MATLAB, LabVIEW) \r\n•\tMedical data analysis and AI frameworks \r\n•\tBiomedical instrumentation setups \r\n•\tSensor-based system development \r\nThe centre also benefits from strong expertise in:\r\n•\tClinical image analysis \r\n•\tAlgorithm development \r\n•\tEmbedded system design for healthcare \r\n\r\nResearch & Contributions:\r\nThe centre actively contributes through:\r\n•\tHigh-quality publications in SCI and Scopus-indexed journals \r\n•\tFunded research projects from government and innovation agencies \r\n•\tDevelopment of prototypes and patented technologies \r\n•\tCollaboration with healthcare professionals for clinical validation \r\n\r\nVision:\r\nTo become a centre of excellence in biomedical research and diagnostic innovation, delivering impactful solutions for improving healthcare accessibility and quality.\r\n\r\nMission:\r\n•\tTo foster research-driven innovation in healthcare technologies \r\n•\tTo develop affordable and accessible diagnostic solutions \r\n•\tTo nurture skilled researchers and innovators in biomedical engineering \r\n•\tTo contribute to societal well-being through technology"
+      "markdown": "Centre for Biomedical Research and Diagnostic Techniques Development\r\n\r\n\r\nAbout the Centre:\r\nThe Centre for Biomedical Research and Diagnostic Techniques Development is established with the vision of advancing innovative healthcare technologies through interdisciplinary research and development. The centre focuses on designing and developing cost-effective, non-invasive diagnostic solutions to address critical challenges in modern healthcare.\r\nThe centre aims to bridge the gap between engineering and medical sciences by integrating advanced methodologies such as Artificial Intelligence, Machine Learning, Medical Image Processing, and Biomedical Instrumentation. It actively promotes translational research that can be applied in real-world clinical environments for early diagnosis, monitoring, and treatment support.\r\n\r\n\r\nObjectives:\r\n•        To develop innovative diagnostic systems for early disease detection \r\n•        To promote AI-driven healthcare solutions \r\n•        To design low-cost biomedical devices for societal impact \r\n•        To encourage interdisciplinary collaboration between engineers, clinicians, and researchers \r\n•        To support student research, innovation, and entrepreneurship in healthcare technologies \r\n\r\n\r\nKey Focus Areas:\r\n•        Medical Image Processing and Analysis \r\n•        AI and Machine Learning in Healthcare \r\n•        Bone Health and Osteoporosis Detection \r\n•        Neurological Disorder Analysis (Brain Imaging) \r\n•        Biomedical Signal Processing (ECG, EEG) \r\n•        IoT-based Healthcare Systems \r\n•        Non-invasive Diagnostic Device Development \r\n\r\n\r\nFacilities & Expertise:\r\nThe centre is equipped with tools and platforms supporting:\r\n•        Simulation and modeling (MATLAB, LabVIEW) \r\n•        Medical data analysis and AI frameworks \r\n•        Biomedical instrumentation setups \r\n•        Sensor-based system development \r\nThe centre also benefits from strong expertise in:\r\n•        Clinical image analysis \r\n•        Algorithm development \r\n•        Embedded system design for healthcare \r\n\r\n\r\nResearch & Contributions:\r\nThe centre actively contributes through:\r\n•        High-quality publications in SCI and Scopus-indexed journals \r\n•        Funded research projects from government and innovation agencies \r\n•        Development of prototypes and patented technologies \r\n•        Collaboration with healthcare professionals for clinical validation \r\n\r\n\r\nVision:\r\nTo become a centre of excellence in biomedical research and diagnostic innovation, delivering impactful solutions for improving healthcare accessibility and quality.\r\n\r\n\r\nMission:\r\n•        To foster research-driven innovation in healthcare technologies \r\n•        To develop affordable and accessible diagnostic solutions \r\n•        To nurture skilled researchers and innovators in biomedical engineering \r\n•        To contribute to societal well-being through technology"
     }
   ]
 }

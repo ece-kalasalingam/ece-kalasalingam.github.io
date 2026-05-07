@@ -55,40 +55,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105010940511"
     },
     {
-      "title": "Deep Learning Framework for IRS in Next-Generation Wireless Systems",
-      "source": "Proceedings of the 6th International Conference on Electronics and Sustainable Communication Systems Icesc 2025",
+      "title": "Performance Tuning of GaN/InGaN HEMTs: Enhancing Performance via Mn-Trap Doping",
+      "source": "Proceedings of the 7th International Conference on Innovative Data Communication Technologies and Application Icidca 2025",
       "date": "2025-01-01",
-      "doi": "10.1109/ICESC65114.2025.11212404",
+      "doi": "10.1109/ICIDCA66325.2025.11280441",
       "citations": 0,
-      "eid": "2-s2.0-105022606746",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105022606746"
-    },
-    {
-      "title": "Deep learning based denoising and enhancement of satellite images using DA-CNN and ORHE techniques",
-      "source": "Earth Science Informatics",
-      "date": "2025-01-01",
-      "doi": "10.1007/s12145-024-01578-y",
-      "citations": 3,
-      "eid": "2-s2.0-85217716202",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85217716202"
-    },
-    {
-      "title": "Hardware-Efficient ASIC CNN Accelerator with Approximate Computing for Edge AI",
-      "source": "Proceedings of the 6th International Conference on Electronics and Sustainable Communication Systems Icesc 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICESC65114.2025.11212300",
-      "citations": 0,
-      "eid": "2-s2.0-105022616598",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105022616598"
-    },
-    {
-      "title": "Effect of temperature on EMI shielding behavior of jack fruit rags biochar and waste silk fiber-reinforced vinyl ester composite",
-      "source": "Journal of Materials Science Materials in Electronics",
-      "date": "2025-01-01",
-      "doi": "10.1007/s10854-024-14161-4",
-      "citations": 8,
-      "eid": "2-s2.0-85214239791",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85214239791"
+      "eid": "2-s2.0-105031399901",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105031399901"
     },
     {
       "title": "Optimizing satellite image brightness and entropy with the african vulture algorithm for enhanced visual quality",
@@ -100,13 +73,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85218994491"
     },
     {
-      "title": "Performance Tuning of GaN/InGaN HEMTs: Enhancing Performance via Mn-Trap Doping",
-      "source": "Proceedings of the 7th International Conference on Innovative Data Communication Technologies and Application Icidca 2025",
+      "title": "Hardware-Efficient ASIC CNN Accelerator with Approximate Computing for Edge AI",
+      "source": "Proceedings of the 6th International Conference on Electronics and Sustainable Communication Systems Icesc 2025",
       "date": "2025-01-01",
-      "doi": "10.1109/ICIDCA66325.2025.11280441",
+      "doi": "10.1109/ICESC65114.2025.11212300",
       "citations": 0,
-      "eid": "2-s2.0-105031399901",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105031399901"
+      "eid": "2-s2.0-105022616598",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105022616598"
     },
     {
       "title": "Evaluating the effects of doping dynamics to unveiling the GaN MOSFET edge",
@@ -118,15 +91,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105027300873"
     },
     {
-      "title": "A Hybrid Spatial Temporal Transformer Network Optimised for Accurate Disease Identification in Shrimp Producers",
-      "source": "Iranian Journal of Science and Technology Transactions of Electrical Engineering",
-      "date": "2025-01-01",
-      "doi": "10.1007/s40998-025-00929-9",
-      "citations": 0,
-      "eid": "2-s2.0-105021225838",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105021225838"
-    },
-    {
       "title": "Enhancing MOSFET Performance using InGaN Single Substrate and HfO2 Gate Oxide with TiN Gate Metal",
       "source": "Proceedings of the 7th International Conference on Intelligent Sustainable Systems Iciss 2025",
       "date": "2025-01-01",
@@ -134,6 +98,42 @@
       "citations": 1,
       "eid": "2-s2.0-105012168537",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105012168537"
+    },
+    {
+      "title": "Effect of temperature on EMI shielding behavior of jack fruit rags biochar and waste silk fiber-reinforced vinyl ester composite",
+      "source": "Journal of Materials Science Materials in Electronics",
+      "date": "2025-01-01",
+      "doi": "10.1007/s10854-024-14161-4",
+      "citations": 8,
+      "eid": "2-s2.0-85214239791",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85214239791"
+    },
+    {
+      "title": "Deep learning based denoising and enhancement of satellite images using DA-CNN and ORHE techniques",
+      "source": "Earth Science Informatics",
+      "date": "2025-01-01",
+      "doi": "10.1007/s12145-024-01578-y",
+      "citations": 3,
+      "eid": "2-s2.0-85217716202",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85217716202"
+    },
+    {
+      "title": "Deep Learning Framework for IRS in Next-Generation Wireless Systems",
+      "source": "Proceedings of the 6th International Conference on Electronics and Sustainable Communication Systems Icesc 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICESC65114.2025.11212404",
+      "citations": 0,
+      "eid": "2-s2.0-105022606746",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105022606746"
+    },
+    {
+      "title": "A Hybrid Spatial Temporal Transformer Network Optimised for Accurate Disease Identification in Shrimp Producers",
+      "source": "Iranian Journal of Science and Technology Transactions of Electrical Engineering",
+      "date": "2025-01-01",
+      "doi": "10.1007/s40998-025-00929-9",
+      "citations": 0,
+      "eid": "2-s2.0-105021225838",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105021225838"
     },
     {
       "title": "Dielectric, magnetic, microwave shielding, and mechanical behavior of flexible NiFe2O4 and black gram pod biocarbon PVA composites in E, F, I, and J band frequencies",
@@ -145,15 +145,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85160439008"
     },
     {
-      "title": "Advance routing strategy for MANET",
-      "source": "Aip Conference Proceedings",
-      "date": "2024-08-30",
-      "doi": "10.1063/5.0229414",
-      "citations": 0,
-      "eid": "2-s2.0-85203967565",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85203967565"
-    },
-    {
       "title": "Big data and machine learning-based financial companies framework",
       "source": "Aip Conference Proceedings",
       "date": "2024-08-30",
@@ -161,6 +152,15 @@
       "citations": 0,
       "eid": "2-s2.0-85203960755",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85203960755"
+    },
+    {
+      "title": "Advance routing strategy for MANET",
+      "source": "Aip Conference Proceedings",
+      "date": "2024-08-30",
+      "doi": "10.1063/5.0229414",
+      "citations": 0,
+      "eid": "2-s2.0-85203967565",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85203967565"
     },
     {
       "title": "One-pot hydrothermal method of green-synthesized nitrogen-doped carbon quantum dots for ultra-sensitive dual detection of tannic acid and Hg2+ ions",
@@ -172,49 +172,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105014230575"
     },
     {
-      "title": "Cubic Boron Arsenide MOSFETs: A DC Characterization study for Next Generation Semiconductor Devices",
-      "source": "2024 Control Instrumentation System Conference Guiding Tomorrow Emerging Trends in Control Instrumentation and Systems Engineering Ciscon 2024",
+      "title": "Security challenges for routing protocols in mobile ad hoc network",
+      "source": "International Journal of Electronic Security and Digital Forensics",
       "date": "2024-01-01",
-      "doi": "10.1109/CISCON62171.2024.10696506",
-      "citations": 10,
-      "eid": "2-s2.0-85207066844",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85207066844"
-    },
-    {
-      "title": "Exploring Performance Characteristics of Static and Dynamic CMOS Designs Using Cadence Tools",
-      "source": "4th International Conference on Sustainable Expert Systems Icses 2024 Proceedings",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICSES63445.2024.10763242",
-      "citations": 2,
-      "eid": "2-s2.0-85214816791",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85214816791"
-    },
-    {
-      "title": "Exploring the Performance of NOMA Systems with Intelligent Surface Assistance",
-      "source": "Proceedings IEEE 5th International Conference on Communication Computing and Industry 6 0 2024 C2i6 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/C2I663243.2024.10895562",
-      "citations": 0,
-      "eid": "2-s2.0-105000443985",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105000443985"
-    },
-    {
-      "title": "Harnessing Image Analysis for Early Leukemia Detection in Bone Marrow Samples",
-      "source": "Proceedings 2024 IEEE International Conference on Signal Processing Informatics Communication and Energy Systems Harmonizing Signals Data and Energy Bridging the Digital Future Spices 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/SPICES62143.2024.10779690",
-      "citations": 0,
-      "eid": "2-s2.0-85215277908",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85215277908"
-    },
-    {
-      "title": "A novel deep learning model for diabetes melliuts prediction in IoT-based healthcare environment with effective feature selection mechanism",
-      "source": "Journal of Supercomputing",
-      "date": "2024-01-01",
-      "doi": "10.1007/s11227-023-05496-6",
-      "citations": 24,
-      "eid": "2-s2.0-85162682665",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85162682665"
+      "doi": "10.1504/IJESDF.2024.138338",
+      "citations": 3,
+      "eid": "2-s2.0-85193204372",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85193204372"
     },
     {
       "title": "Satellite Image Denoising Using Optimized Pulse Coupling Network",
@@ -226,6 +190,15 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85194108491"
     },
     {
+      "title": "Robust Serial Driver Verification Through UVM Framework",
+      "source": "2024 Control Instrumentation System Conference Guiding Tomorrow Emerging Trends in Control Instrumentation and Systems Engineering Ciscon 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/CISCON62171.2024.10696231",
+      "citations": 2,
+      "eid": "2-s2.0-85207064042",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85207064042"
+    },
+    {
       "title": "Hybrid Logic Style CMOS Full Adder Using 10-T XOR & XNOR Circuit",
       "source": "Proceedings of International Conference on Circuit Power and Computing Technologies Iccpct 2024",
       "date": "2024-01-01",
@@ -235,13 +208,31 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85205567987"
     },
     {
-      "title": "Security challenges for routing protocols in mobile ad hoc network",
-      "source": "International Journal of Electronic Security and Digital Forensics",
+      "title": "Harnessing Image Analysis for Early Leukemia Detection in Bone Marrow Samples",
+      "source": "Proceedings 2024 IEEE International Conference on Signal Processing Informatics Communication and Energy Systems Harmonizing Signals Data and Energy Bridging the Digital Future Spices 2024",
       "date": "2024-01-01",
-      "doi": "10.1504/IJESDF.2024.138338",
-      "citations": 3,
-      "eid": "2-s2.0-85193204372",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85193204372"
+      "doi": "10.1109/SPICES62143.2024.10779690",
+      "citations": 0,
+      "eid": "2-s2.0-85215277908",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85215277908"
+    },
+    {
+      "title": "Exploring the Performance of NOMA Systems with Intelligent Surface Assistance",
+      "source": "Proceedings IEEE 5th International Conference on Communication Computing and Industry 6 0 2024 C2i6 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/C2I663243.2024.10895562",
+      "citations": 0,
+      "eid": "2-s2.0-105000443985",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105000443985"
+    },
+    {
+      "title": "Exploring Performance Characteristics of Static and Dynamic CMOS Designs Using Cadence Tools",
+      "source": "4th International Conference on Sustainable Expert Systems Icses 2024 Proceedings",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICSES63445.2024.10763242",
+      "citations": 2,
+      "eid": "2-s2.0-85214816791",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85214816791"
     },
     {
       "title": "Design and Implementation of Frame Work for Building Extraction using Fast Accurate Bilateral Filter, Fast Corner Method and Improved Gaussian Blur",
@@ -253,13 +244,22 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85213397414"
     },
     {
-      "title": "Robust Serial Driver Verification Through UVM Framework",
+      "title": "Cubic Boron Arsenide MOSFETs: A DC Characterization study for Next Generation Semiconductor Devices",
       "source": "2024 Control Instrumentation System Conference Guiding Tomorrow Emerging Trends in Control Instrumentation and Systems Engineering Ciscon 2024",
       "date": "2024-01-01",
-      "doi": "10.1109/CISCON62171.2024.10696231",
-      "citations": 2,
-      "eid": "2-s2.0-85207064042",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85207064042"
+      "doi": "10.1109/CISCON62171.2024.10696506",
+      "citations": 10,
+      "eid": "2-s2.0-85207066844",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85207066844"
+    },
+    {
+      "title": "A novel deep learning model for diabetes melliuts prediction in IoT-based healthcare environment with effective feature selection mechanism",
+      "source": "Journal of Supercomputing",
+      "date": "2024-01-01",
+      "doi": "10.1007/s11227-023-05496-6",
+      "citations": 24,
+      "eid": "2-s2.0-85162682665",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85162682665"
     },
     {
       "title": "RETRACTION:Trust based access control with hybrid cryptographic algorithm based data security on cloud for e-learning application",
@@ -325,13 +325,49 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85104536119"
     },
     {
-      "title": "Low power reduction techniques for a 6T-SRAM cell design using CNTFET technology",
-      "source": "Low Power Designs in Nanodevices and Circuits for Emerging Applications",
+      "title": "Satellite Image-Based Wildfire Detection and Alerting System Using Machine Learning",
+      "source": "2023 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2023",
       "date": "2023-01-01",
-      "doi": "10.1201/9781003459231-12",
+      "doi": "10.1109/ICDSAAI59313.2023.10452467",
+      "citations": 1,
+      "eid": "2-s2.0-85187784096",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85187784096"
+    },
+    {
+      "title": "RETRACTION:An energy efficient deep learning model for intrusion detection in smart healthcare with optimal feature selection mechanism",
+      "source": "Journal of Intelligent and Fuzzy Systems",
+      "date": "2023-01-01",
+      "doi": "10.3233/JIFS-223166",
+      "citations": 2,
+      "eid": "2-s2.0-85148070662",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148070662"
+    },
+    {
+      "title": "Mobility Aware Zone-Based Routing in Vehicle Ad hoc Networks Using Hybrid Metaheuristic Algorithm",
+      "source": "Intelligent Automation and Soft Computing",
+      "date": "2023-01-01",
+      "doi": "10.32604/iasc.2023.031103",
+      "citations": 6,
+      "eid": "2-s2.0-85139197790",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85139197790"
+    },
+    {
+      "title": "Mobile Sink based Data-Gathering Method to Minimize the Network Delay",
+      "source": "Proceedings 5th International Conference on Smart Systems and Inventive Technology Icssit 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICSSIT55814.2023.10061125",
       "citations": 0,
-      "eid": "2-s2.0-85199236214",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85199236214"
+      "eid": "2-s2.0-85150675819",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85150675819"
+    },
+    {
+      "title": "Method of Fuel Control and Monitoring System Under Electromagnetic Impulses using STM32 Microcontroller",
+      "source": "Proceedings of the 2nd International Conference on Applied Artificial Intelligence and Computing Icaaic 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICAAIC56838.2023.10141230",
+      "citations": 1,
+      "eid": "2-s2.0-85163584784",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163584784"
     },
     {
       "title": "MODELLING OF THERMAL EFFECT IN THROUGH-SILICON VIA FOR 3D IC",
@@ -341,6 +377,24 @@
       "citations": 0,
       "eid": "2-s2.0-85174499185",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85174499185"
+    },
+    {
+      "title": "Low power reduction techniques for a 6T-SRAM cell design using CNTFET technology",
+      "source": "Low Power Designs in Nanodevices and Circuits for Emerging Applications",
+      "date": "2023-01-01",
+      "doi": "10.1201/9781003459231-12",
+      "citations": 0,
+      "eid": "2-s2.0-85199236214",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85199236214"
+    },
+    {
+      "title": "Low Power Designs in Nanodevices and Circuits for Emerging Applications",
+      "source": "Low Power Designs in Nanodevices and Circuits for Emerging Applications",
+      "date": "2023-01-01",
+      "doi": "10.1201/9781003459231",
+      "citations": 1,
+      "eid": "2-s2.0-85199243714",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85199243714"
     },
     {
       "title": "Design and Implementation of System for Rider's Safety Against Extreme Climatic Conditions and Uneven Road",
@@ -361,33 +415,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85163827846"
     },
     {
-      "title": "10GB MAC CORE Verification Reference (Input Monitor) Module",
-      "source": "Proceedings of the 7th International Conference on Intelligent Computing and Control Systems Iciccs 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICICCS56967.2023.10142866",
-      "citations": 1,
-      "eid": "2-s2.0-85163877523",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163877523"
-    },
-    {
-      "title": "RETRACTION:An energy efficient deep learning model for intrusion detection in smart healthcare with optimal feature selection mechanism",
-      "source": "Journal of Intelligent and Fuzzy Systems",
-      "date": "2023-01-01",
-      "doi": "10.3233/JIFS-223166",
-      "citations": 2,
-      "eid": "2-s2.0-85148070662",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148070662"
-    },
-    {
-      "title": "Satellite Image-Based Wildfire Detection and Alerting System Using Machine Learning",
-      "source": "2023 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICDSAAI59313.2023.10452467",
-      "citations": 1,
-      "eid": "2-s2.0-85187784096",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85187784096"
-    },
-    {
       "title": "A Novel Sensing System to Detect the Overflow of Septic Tanks",
       "source": "Proceedings of the 3rd International Conference on Artificial Intelligence and Smart Energy Icais 2023",
       "date": "2023-01-01",
@@ -406,40 +433,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85149897387"
     },
     {
-      "title": "Mobility Aware Zone-Based Routing in Vehicle Ad hoc Networks Using Hybrid Metaheuristic Algorithm",
-      "source": "Intelligent Automation and Soft Computing",
+      "title": "10GB MAC CORE Verification Reference (Input Monitor) Module",
+      "source": "Proceedings of the 7th International Conference on Intelligent Computing and Control Systems Iciccs 2023",
       "date": "2023-01-01",
-      "doi": "10.32604/iasc.2023.031103",
-      "citations": 6,
-      "eid": "2-s2.0-85139197790",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85139197790"
-    },
-    {
-      "title": "Low Power Designs in Nanodevices and Circuits for Emerging Applications",
-      "source": "Low Power Designs in Nanodevices and Circuits for Emerging Applications",
-      "date": "2023-01-01",
-      "doi": "10.1201/9781003459231",
+      "doi": "10.1109/ICICCS56967.2023.10142866",
       "citations": 1,
-      "eid": "2-s2.0-85199243714",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85199243714"
-    },
-    {
-      "title": "Method of Fuel Control and Monitoring System Under Electromagnetic Impulses using STM32 Microcontroller",
-      "source": "Proceedings of the 2nd International Conference on Applied Artificial Intelligence and Computing Icaaic 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICAAIC56838.2023.10141230",
-      "citations": 1,
-      "eid": "2-s2.0-85163584784",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163584784"
-    },
-    {
-      "title": "Mobile Sink based Data-Gathering Method to Minimize the Network Delay",
-      "source": "Proceedings 5th International Conference on Smart Systems and Inventive Technology Icssit 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICSSIT55814.2023.10061125",
-      "citations": 0,
-      "eid": "2-s2.0-85150675819",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85150675819"
+      "eid": "2-s2.0-85163877523",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163877523"
     },
     {
       "title": "Novel method of Braille-based system for visually impaired people",
@@ -451,13 +451,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85140252062"
     },
     {
-      "title": "Fractal Based Switchable Multiband Antenna for 5G Applications",
-      "source": "Proceedings 2022 4th International Conference on Advances in Computing Communication Control and Networking Icac3n 2022",
+      "title": "Soil nutrients monitoring and analyzing system using Internet of Things",
+      "source": "2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering Icacite 2022",
       "date": "2022-01-01",
-      "doi": "10.1109/ICAC3N56670.2022.10074300",
-      "citations": 2,
-      "eid": "2-s2.0-85152188008",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85152188008"
+      "doi": "10.1109/ICACITE53722.2022.9823486",
+      "citations": 16,
+      "eid": "2-s2.0-85135472238",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85135472238"
     },
     {
       "title": "RETRACTION:An advanced electrical vehicle charging station using adaptive hybrid particle swarm optimization intended for renewable energy system for simultaneous distributions",
@@ -469,24 +469,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85136797418"
     },
     {
-      "title": "A Novel Hyperparameter Tuned Deep Learning Model for Content based Image Retrieval",
-      "source": "International Conference on Sustainable Computing and Data Communication Systems Icscds 2022 Proceedings",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICSCDS53736.2022.9760906",
-      "citations": 1,
-      "eid": "2-s2.0-85130094033",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85130094033"
-    },
-    {
-      "title": "Soil nutrients monitoring and analyzing system using Internet of Things",
-      "source": "2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering Icacite 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICACITE53722.2022.9823486",
-      "citations": 16,
-      "eid": "2-s2.0-85135472238",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85135472238"
-    },
-    {
       "title": "Multi-band Antenna with CSRR Loaded Ground Plane and Stubs Incorporated Patch for WiMAX/WLAN Applications",
       "source": "Pertanika Journal of Science and Technology",
       "date": "2022-01-01",
@@ -494,6 +476,24 @@
       "citations": 6,
       "eid": "2-s2.0-85127418115",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85127418115"
+    },
+    {
+      "title": "Fractal Based Switchable Multiband Antenna for 5G Applications",
+      "source": "Proceedings 2022 4th International Conference on Advances in Computing Communication Control and Networking Icac3n 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICAC3N56670.2022.10074300",
+      "citations": 2,
+      "eid": "2-s2.0-85152188008",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85152188008"
+    },
+    {
+      "title": "A Novel Hyperparameter Tuned Deep Learning Model for Content based Image Retrieval",
+      "source": "International Conference on Sustainable Computing and Data Communication Systems Icscds 2022 Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICSCDS53736.2022.9760906",
+      "citations": 1,
+      "eid": "2-s2.0-85130094033",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85130094033"
     },
     {
       "title": "Adaptive morphological and bilateral filtering with ensemble convolutional neural network for pose-invariant face recognition",
@@ -541,13 +541,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85111930438"
     },
     {
-      "title": "A saboteur and mutant based built-in self-test and counting threshold-based built-in self repairing mechanism for memories",
-      "source": "Journal of Ambient Intelligence and Humanized Computing",
+      "title": "Machine learning based effective linear regression model for TSV layer assignment in 3DIC",
+      "source": "Microprocessors and Microsystems",
       "date": "2021-06-01",
-      "doi": "10.1007/s12652-020-02284-5",
-      "citations": 8,
-      "eid": "2-s2.0-85087623003",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85087623003"
+      "doi": "10.1016/j.micpro.2021.103953",
+      "citations": 16,
+      "eid": "2-s2.0-85099608579",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85099608579"
     },
     {
       "title": "Floor Planning of 3D IC Design Using Hybrid Multi-verse Optimizer",
@@ -559,13 +559,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85100922531"
     },
     {
-      "title": "Machine learning based effective linear regression model for TSV layer assignment in 3DIC",
-      "source": "Microprocessors and Microsystems",
+      "title": "A saboteur and mutant based built-in self-test and counting threshold-based built-in self repairing mechanism for memories",
+      "source": "Journal of Ambient Intelligence and Humanized Computing",
       "date": "2021-06-01",
-      "doi": "10.1016/j.micpro.2021.103953",
-      "citations": 16,
-      "eid": "2-s2.0-85099608579",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85099608579"
+      "doi": "10.1007/s12652-020-02284-5",
+      "citations": 8,
+      "eid": "2-s2.0-85087623003",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85087623003"
     },
     {
       "title": "Optimized counting threshold Built-in redundancy analysis for memories",
@@ -577,33 +577,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85098727302"
     },
     {
-      "title": "Automated Internet of Medical Things (IoMT) Based Healthcare Monitoring System",
-      "source": "Studies in Systems Decision and Control",
-      "date": "2021-01-01",
-      "doi": "10.1007/978-3-030-55833-8_7",
-      "citations": 20,
-      "eid": "2-s2.0-85093857852",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85093857852"
-    },
-    {
-      "title": "Image Fusion Based Selective Optimal Restoration of Colors in Single Underwater Images",
-      "source": "International Symposium on Ocean Electronics Sympol",
-      "date": "2021-01-01",
-      "doi": "10.1109/SYMPOL53555.2021.9689288",
-      "citations": 6,
-      "eid": "2-s2.0-85126054179",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85126054179"
-    },
-    {
-      "title": "GPU Implementation of Thermal Aware 3D IC Floorplanning",
-      "source": "International Journal of Computer Information Systems and Industrial Management Applications",
-      "date": "2021-01-01",
-      "doi": "",
-      "citations": 3,
-      "eid": "2-s2.0-85111261682",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85111261682"
-    },
-    {
       "title": "Thermal analysis for power efficient 3d IC routing using memetic algorithm based on hill climbing algorithm",
       "source": "Journal of Green Engineering",
       "date": "2021-01-01",
@@ -611,42 +584,6 @@
       "citations": 2,
       "eid": "2-s2.0-85100040850",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85100040850"
-    },
-    {
-      "title": "Human Emotions Detection using Kernel Nonlinear Collaborative Discriminant Regression Classifier : HHuman Emotions Detection using KNCDRC",
-      "source": "Proceedings 2nd International Conference on Smart Electronics and Communication Icosec 2021",
-      "date": "2021-01-01",
-      "doi": "10.1109/ICOSEC51865.2021.9591878",
-      "citations": 10,
-      "eid": "2-s2.0-85123222412",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85123222412"
-    },
-    {
-      "title": "Digital pedagogy implementation in engineering using SMART mobiles",
-      "source": "Journal of Engineering Education Transformations",
-      "date": "2021-01-01",
-      "doi": "10.16920/jeet/2021/v34i0/157163",
-      "citations": 2,
-      "eid": "2-s2.0-85099846779",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85099846779"
-    },
-    {
-      "title": "An efficient partitioning and placement based fault TSV detection in 3D-IC using deep learning approach",
-      "source": "Journal of Ambient Intelligence and Humanized Computing",
-      "date": "2021-01-01",
-      "doi": "10.1007/s12652-021-02964-w",
-      "citations": 10,
-      "eid": "2-s2.0-85102257088",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85102257088"
-    },
-    {
-      "title": "Hyperparameter Optimization of Deep Neural Network in Multimodality Fused Medical Image Classification for Medical and Industrial IoT",
-      "source": "Internet of Things",
-      "date": "2021-01-01",
-      "doi": "10.1007/978-3-030-52624-5_9",
-      "citations": 5,
-      "eid": "2-s2.0-85101156884",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85101156884"
     },
     {
       "title": "Multimodality medical image fusion based on non-sub-sampled contourlet transform",
@@ -658,13 +595,67 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85114344853"
     },
     {
-      "title": "A novel approach in multimodality medical image fusion using optimal shearlet and deep learning",
-      "source": "International Journal of Imaging Systems and Technology",
-      "date": "2020-12-01",
-      "doi": "10.1002/ima.22436",
-      "citations": 38,
-      "eid": "2-s2.0-85084198108",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85084198108"
+      "title": "Image Fusion Based Selective Optimal Restoration of Colors in Single Underwater Images",
+      "source": "International Symposium on Ocean Electronics Sympol",
+      "date": "2021-01-01",
+      "doi": "10.1109/SYMPOL53555.2021.9689288",
+      "citations": 6,
+      "eid": "2-s2.0-85126054179",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85126054179"
+    },
+    {
+      "title": "Hyperparameter Optimization of Deep Neural Network in Multimodality Fused Medical Image Classification for Medical and Industrial IoT",
+      "source": "Internet of Things",
+      "date": "2021-01-01",
+      "doi": "10.1007/978-3-030-52624-5_9",
+      "citations": 5,
+      "eid": "2-s2.0-85101156884",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85101156884"
+    },
+    {
+      "title": "Human Emotions Detection using Kernel Nonlinear Collaborative Discriminant Regression Classifier : HHuman Emotions Detection using KNCDRC",
+      "source": "Proceedings 2nd International Conference on Smart Electronics and Communication Icosec 2021",
+      "date": "2021-01-01",
+      "doi": "10.1109/ICOSEC51865.2021.9591878",
+      "citations": 10,
+      "eid": "2-s2.0-85123222412",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85123222412"
+    },
+    {
+      "title": "GPU Implementation of Thermal Aware 3D IC Floorplanning",
+      "source": "International Journal of Computer Information Systems and Industrial Management Applications",
+      "date": "2021-01-01",
+      "doi": "",
+      "citations": 3,
+      "eid": "2-s2.0-85111261682",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85111261682"
+    },
+    {
+      "title": "Digital pedagogy implementation in engineering using SMART mobiles",
+      "source": "Journal of Engineering Education Transformations",
+      "date": "2021-01-01",
+      "doi": "10.16920/jeet/2021/v34i0/157163",
+      "citations": 2,
+      "eid": "2-s2.0-85099846779",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85099846779"
+    },
+    {
+      "title": "Automated Internet of Medical Things (IoMT) Based Healthcare Monitoring System",
+      "source": "Studies in Systems Decision and Control",
+      "date": "2021-01-01",
+      "doi": "10.1007/978-3-030-55833-8_7",
+      "citations": 20,
+      "eid": "2-s2.0-85093857852",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85093857852"
+    },
+    {
+      "title": "An efficient partitioning and placement based fault TSV detection in 3D-IC using deep learning approach",
+      "source": "Journal of Ambient Intelligence and Humanized Computing",
+      "date": "2021-01-01",
+      "doi": "10.1007/s12652-021-02964-w",
+      "citations": 10,
+      "eid": "2-s2.0-85102257088",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85102257088"
     },
     {
       "title": "Multi-modality medical image fusion using hybridization of binary crow search optimization",
@@ -674,6 +665,15 @@
       "citations": 43,
       "eid": "2-s2.0-85068834030",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85068834030"
+    },
+    {
+      "title": "A novel approach in multimodality medical image fusion using optimal shearlet and deep learning",
+      "source": "International Journal of Imaging Systems and Technology",
+      "date": "2020-12-01",
+      "doi": "10.1002/ima.22436",
+      "citations": 38,
+      "eid": "2-s2.0-85084198108",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85084198108"
     },
     {
       "title": "An efficient high-speed test pattern generation schemes for memory built-in self-test",
@@ -712,15 +712,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85084663426"
     },
     {
-      "title": "P2CTS-3D IC: An efficient placement aware partitioning and clock tree synthesis in 3d-integrated circuits",
-      "source": "Applied Science and Engineering Progress",
-      "date": "2020-01-01",
-      "doi": "10.14416/J.ASEP.2020.09.001",
-      "citations": 2,
-      "eid": "2-s2.0-85092640041",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85092640041"
-    },
-    {
       "title": "Simulation and Performance Analysis of a Triple-material Gate GAA SNSTFT",
       "source": "Journal of Nano and Electronic Physics",
       "date": "2020-01-01",
@@ -728,6 +719,15 @@
       "citations": 1,
       "eid": "2-s2.0-85127876590",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85127876590"
+    },
+    {
+      "title": "P2CTS-3D IC: An efficient placement aware partitioning and clock tree synthesis in 3d-integrated circuits",
+      "source": "Applied Science and Engineering Progress",
+      "date": "2020-01-01",
+      "doi": "10.14416/J.ASEP.2020.09.001",
+      "citations": 2,
+      "eid": "2-s2.0-85092640041",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85092640041"
     },
     {
       "title": "A novel method to detect bleeding frame and region in wireless capsule endoscopy video",
@@ -757,33 +757,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85052948841"
     },
     {
-      "title": "Fault tolerant improvement mechanism for 3D memories using built-in self repair scheme",
-      "source": "Proceedings 2017 IEEE International Conference on Electrical Instrumentation and Communication Engineering Iceice 2017",
-      "date": "2017-12-12",
-      "doi": "10.1109/ICEICE.2017.8192446",
-      "citations": 1,
-      "eid": "2-s2.0-85047211858",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85047211858"
-    },
-    {
-      "title": "Comparison on 6T, 5T and 4T SRAM cell using 22nm technology",
-      "source": "Proceedings 2017 IEEE International Conference on Electrical Instrumentation and Communication Engineering Iceice 2017",
-      "date": "2017-12-12",
-      "doi": "10.1109/ICEICE.2017.8191924",
-      "citations": 11,
-      "eid": "2-s2.0-85047176480",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85047176480"
-    },
-    {
-      "title": "Minimizationof wirelength in 3d IC routing by using differential evolution algorithm",
-      "source": "Proceedings 2017 IEEE International Conference on Electrical Instrumentation and Communication Engineering Iceice 2017",
-      "date": "2017-12-12",
-      "doi": "10.1109/ICEICE.2017.8191950",
-      "citations": 7,
-      "eid": "2-s2.0-85047219533",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85047219533"
-    },
-    {
       "title": "Reduction of temperature rise in 3D IC routing",
       "source": "Proceedings 2017 IEEE International Conference on Electrical Instrumentation and Communication Engineering Iceice 2017",
       "date": "2017-12-12",
@@ -800,6 +773,33 @@
       "citations": 9,
       "eid": "2-s2.0-85047224329",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85047224329"
+    },
+    {
+      "title": "Minimizationof wirelength in 3d IC routing by using differential evolution algorithm",
+      "source": "Proceedings 2017 IEEE International Conference on Electrical Instrumentation and Communication Engineering Iceice 2017",
+      "date": "2017-12-12",
+      "doi": "10.1109/ICEICE.2017.8191950",
+      "citations": 7,
+      "eid": "2-s2.0-85047219533",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85047219533"
+    },
+    {
+      "title": "Fault tolerant improvement mechanism for 3D memories using built-in self repair scheme",
+      "source": "Proceedings 2017 IEEE International Conference on Electrical Instrumentation and Communication Engineering Iceice 2017",
+      "date": "2017-12-12",
+      "doi": "10.1109/ICEICE.2017.8192446",
+      "citations": 1,
+      "eid": "2-s2.0-85047211858",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85047211858"
+    },
+    {
+      "title": "Comparison on 6T, 5T and 4T SRAM cell using 22nm technology",
+      "source": "Proceedings 2017 IEEE International Conference on Electrical Instrumentation and Communication Engineering Iceice 2017",
+      "date": "2017-12-12",
+      "doi": "10.1109/ICEICE.2017.8191924",
+      "citations": 11,
+      "eid": "2-s2.0-85047176480",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85047176480"
     },
     {
       "title": "Optimization of wire-length and block rearrangements for a modern IC placement using evolutionary techniques",

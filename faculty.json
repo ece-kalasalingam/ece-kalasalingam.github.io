@@ -1,11 +1,5 @@
 [
-  {
-    "name": "Dr. Jeya Prakash K.",
-    "slug": "jeyaprakashk",
-    "scopus_id": "57195717091",
-    "designation": "Associate Professor"
-  },
-  {
+   {
     "name": "Dr. Charles Pravin J.",
     "slug": "charles-pravin",
     "scopus_id": "57191345241",
@@ -31,7 +25,7 @@
   },
   {
     "name": "Dr. B. Perumal",
-    "slug": "b-perumal",
+    "slug": "BPLECE",
     "scopus_id": "56352303700",
     "designation": "Associate Professor"
   },
@@ -67,20 +61,26 @@
   },
   {
     "name": "Dr. D. Ganeshaperumal",
-    "slug": "d-ganeshaperumal",
+    "slug": "DGPECE",
     "scopus_id": "57192268536",
     "designation": "Associate Professor"
   },
   {
     "name": "Dr. Aarthi@Ananthakirupa VPMB",
-    "slug": "aarthi-ananthakirupa-vpmb",
+    "slug": "aarthi-vpmb",
     "scopus_id": "57191487344",
     "designation": "Associate Professor"
   },
   {
     "name": "Dr. K.Pandiaraj",
-    "slug": "k-pandiaraj",
+    "slug": "Pandiaraj-K",
     "scopus_id": "57202111379",
+    "designation": "Associate Professor"
+  },
+  {
+    "name": "Dr. Jeya Prakash K.",
+    "slug": "jeyaprakashk",
+    "scopus_id": "57195717091",
     "designation": "Associate Professor"
   },
   {
@@ -97,7 +97,7 @@
   },
   {
     "name": "Dr. M. Ramesh",
-    "slug": "m-ramesh",
+    "slug": "mr",
     "scopus_id": "57206567456",
     "designation": "Associate Professor"
   },
@@ -109,13 +109,13 @@
   },
   {
     "name": "Dr. N. Bhuvaneswary",
-    "slug": "n-bhuvaneswary",
+    "slug": "Buvi",
     "scopus_id": "57220258176",
     "designation": "Associate Professor"
   },
   {
     "name": "Dr. R. Kottaimalai",
-    "slug": "r-kottaimalai",
+    "slug": "RKM",
     "scopus_id": "55811890500",
     "designation": "Associate Professor"
   },

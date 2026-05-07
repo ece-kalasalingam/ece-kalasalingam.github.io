@@ -1,0 +1,80 @@
+{
+  "name": "Dr. K.Pandiaraj",
+  "slug": "Pandiaraj-K",
+  "scopus_id": "57202111379",
+  "h_index": 6,
+  "total_publications": 30,
+  "publications_file": "publications/Pandiaraj-K.json",
+  "sections": [
+    {
+      "id": "profile",
+      "title": "Profile",
+      "type": "kv",
+      "items": [
+        {
+          "label": "Name",
+          "value": "Dr. K. Pandiaraj"
+        },
+        {
+          "label": "E-mail",
+          "value": "pandiaraj@klu.ac.in, pandian.raj@gmail.com"
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "type": "table",
+      "columns": [
+        "Examination / Degree",
+        "Name of Institution/ University",
+        "Year of Passing",
+        "Class",
+        "Specialization"
+      ],
+      "rows": [
+        [
+          "Ph.D",
+          "Kalasalingam Academy of Research and Education",
+          "2021",
+          "",
+          "VLSI Physical Design"
+        ],
+        [
+          "Master of Engineering",
+          "Arulmigu Kalasalingam College of Engineering, Krishnankoil/ Anna University, Chennai.",
+          "2008",
+          "76/(I Class with Distinction)",
+          "VLSI Deisgn"
+        ],
+        [
+          "Bachelor of Engineering",
+          "Pavendar Bharathidasan College of Engineering and Technology, Trichy/ Anna University, Chennai.",
+          "2006",
+          "74/(I Class)",
+          "Electronics and Communication Engineering"
+        ],
+        [
+          "Higher Secondary",
+          "S.S.H.N.H.R.SEC.SCHOOL, MUHAVOOR",
+          "2002",
+          "88",
+          "BIO/MATHS"
+        ],
+        [
+          "S.S.L.C",
+          "S.S.H.N.H.R.SEC.SCHOOL, MUHAVOOR",
+          "2000",
+          "79",
+          "Maths and Science"
+        ]
+      ]
+    },
+    {
+      "id": "awards",
+      "title": "Awards",
+      "type": "markdown",
+      "markdown": "1.\tTeaching Competence award – course plan and Lecture note Preparation and Implementation for the Academic Year 2016-2017.\r\n2.\tCompetence award for Faculty Advisorship for the Academic Year 2016-2017.\r\n3.\tCompetence award for Faculty Advisorship for the Academic Year 2015-2016.\r\n4.\tReceived Appreciation Award from Texas Instruments for conducting an Analog Contest Test-2014.\r\n5.\tReceived “ACTIVE PARTICIPATION IN NBA” for the academic year 2014-2015 awarded by IQAC of Kalasalingam University.\r\n6.\tAwarded certificate of appreciation for adopting impartus lecture capture and being part of the digital revolution in education – 2018.\r\n7.\tReceived the award for research incentive for the publication of two papers in Scopus indexed journal from KARE-2018.\r\n8.\tCertified LabVIEW Associate developer from 2018 to 2020.\r\n9.\tGot Appreciated for being extremely supportive and dedicated for our endeavor towards ensuring the success of our students in SAP Global Certification, 2021.\r\n10.\tActed as Session chair at the International Conference on Advance Computing and Ingenious Technologies in Engineering Science at Galgotias College of Engineering and Technology on 30th and 31st December 2021.\r\n11.\tActed as Session chair at 2nd International Conference on Advance Computing and Innovative Technologies in Engineering at Galgotias College of Engineering and Technology on 28th and 29th April 2022.\r\n12.\tActed as a Reviewer for IEEE Sponsored Second International Conference on Networking and Communications 2024 (ICNWC 2024) organized by Department of Networking and Communications, School of Computing, SRM Institute of Science and Technology, Kattankulathur on 02nd to 04th April 2024.\r\n13.\tActed as Session chair at  The International Conference on Information Technology, Electronics and Intelligent Communication Systems (ICITEICS-24 ) is technically Co-sponsored by IEEE Bangalore section in Vemana Institute of Technology, Bangalore, Karnataka, India.\r\n14.\tActed as a reviewer for IEEE International Conference on Data Science and Network Security (ICDSNS – 2024) organized by Kalpataru Institute of Technology, Tiptur on 26th – 27th July 2024.\r\n15.\tCompleted the Faculty Orientation Program (FOP) for delivering the Ignite Entrepreneurship Course conducted by Wadhwani Entrepreneur Network (NEN), Wadhwani Foundation from 26th June, 2024 to 31st July, 2024.\r\n16.\tActed as a session chair in the International Conference on Developments in Alzheimer's Disease Treatment and Early Intervention through Cutting Edge Technologies (INCDAD2024) Organized by the Dept. of ECE and Biomedical Engineering, Kalasalingam Academy of Research and Education, Tamilnadu on August 2 & 3, 2024.\r\n17.\tActed as a Session chair in the DST SERB Sponsored International Conference on Sustainable Materials and Technologies in VLSI and Information Processing Organized by the Dept. of ECE, Kalasalingam Academy of Research and Education, Tamilnadu on December 13-14, 2024."
+    }
+  ]
+}

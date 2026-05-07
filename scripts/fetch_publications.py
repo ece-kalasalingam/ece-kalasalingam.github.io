@@ -33,7 +33,7 @@ STATE_FILE: Final[Path] = OUTPUT_DIR / "sync_state.json"
 FETCH_MODE_ENV: Final[str] = os.getenv("FETCH_MODE", "incremental").strip().lower()
 BATCH_SIZE_ENV: Final[str] = os.getenv("BATCH_SIZE", "20").strip()
 INCREMENTAL_YEARS_ENV: Final[str] = os.getenv("INCREMENTAL_YEARS", "2").strip()
-FACULTY_SHEET_IDS_JSON_ENV: Final[str] = os.getenv("FACULTY_SHEET_IDS_JSON", "").strip()
+FACULTY_SHEET_IDS_FILE: Final[Path] = Path("faculty_sheet_ids_json.json")
 FACULTY_SLUG_ENV: Final[str] = os.getenv("FACULTY_SLUG", "").strip()
 GOOGLE_API_KEY: Final[str | None] = os.getenv("GOOGLE_API_KEY")
 SHEETS_META_URL_TEMPLATE: Final[str] = "https://sheets.googleapis.com/v4/spreadsheets/{sheet_id}"
@@ -396,7 +396,7 @@ def parse_sheet_id_map(raw_json: str) -> dict[str, str]:
     if not raw_json:
         return {}
     parsed: object = json.loads(raw_json)
-    obj = ensure_object(parsed, "FACULTY_SHEET_IDS_JSON")
+    obj = ensure_object(parsed, "faculty_sheet_ids_json.json")
     mapping: dict[str, str] = {}
     for slug_raw, sheet_id_raw in obj.items():
         slug = str(slug_raw).strip()
@@ -404,6 +404,13 @@ def parse_sheet_id_map(raw_json: str) -> dict[str, str]:
         if slug and sheet_id:
             mapping[slug] = sheet_id
     return mapping
+
+
+def load_sheet_id_map(path: Path) -> dict[str, str]:
+    if not path.exists():
+        raise ValueError(f"{path.as_posix()} is required but was not found.")
+    file_text = path.read_text(encoding="utf-8").strip()
+    return parse_sheet_id_map(file_text)
 
 
 def mask_sheet_id(sheet_id: str) -> str:
@@ -920,6 +927,20 @@ def remove_retired_faculty_files(output_dir: Path, active_slugs: set[str]) -> li
     return removed_paths
 
 
+def prune_sync_state_to_active_slugs(
+    processed_slugs: list[str],
+    faculty_status: dict[str, FacultyRunStatus],
+    active_slugs: set[str],
+) -> tuple[list[str], dict[str, FacultyRunStatus], list[str]]:
+    pruned_processed = [slug for slug in processed_slugs if slug in active_slugs]
+    pruned_status = {slug: status for slug, status in faculty_status.items() if slug in active_slugs}
+    removed_slugs = sorted(
+        {slug for slug in processed_slugs if slug not in active_slugs}
+        | {slug for slug in faculty_status.keys() if slug not in active_slugs}
+    )
+    return pruned_processed, pruned_status, removed_slugs
+
+
 def select_batch(
     faculty_list: list[FacultyEntry],
     batch_size: int,
@@ -957,8 +978,8 @@ def main() -> int:
 
     try:
         faculty_list = load_faculty_list(Path("faculty.json"))
-        faculty_sheet_ids = parse_sheet_id_map(FACULTY_SHEET_IDS_JSON_ENV)
-        print(f"[Sheets] Loaded FACULTY_SHEET_IDS_JSON mappings: {len(faculty_sheet_ids)}")
+        faculty_sheet_ids = load_sheet_id_map(FACULTY_SHEET_IDS_FILE)
+        print(f"[Sheets] Loaded sheet-id mappings: {len(faculty_sheet_ids)} (source=file:{FACULTY_SHEET_IDS_FILE.as_posix()})")
         sync_state = load_sync_state(STATE_FILE)
         cursor = max(sync_state.get("cursor", 0), 0)
 
@@ -1097,6 +1118,11 @@ def main() -> int:
         removed_files = remove_retired_faculty_files(OUTPUT_DIR, active_slugs)
         for removed in removed_files:
             print(f"Removed retired faculty data file: {removed}")
+        processed_slugs, faculty_status, removed_sync_slugs = prune_sync_state_to_active_slugs(
+            processed_slugs, faculty_status, active_slugs
+        )
+        for removed_slug in removed_sync_slugs:
+            print(f"Removed retired faculty slug from sync_state.json: {removed_slug}")
 
         new_state: SyncState = {
             "cursor": next_cursor,

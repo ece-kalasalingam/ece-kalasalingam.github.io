@@ -26,6 +26,198 @@ function setError(message) {
   container.textContent = message;
 }
 
+function normalizeLabel(label) {
+  return String(label || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, "");
+}
+
+function getProfileItems(facultyData) {
+  const sections = Array.isArray(facultyData?.sections) ? facultyData.sections : [];
+  const profileSection = sections.find(section => section && section.type === "kv" && normalizeLabel(section.title) === "profile");
+  return Array.isArray(profileSection?.items) ? profileSection.items : [];
+}
+
+function getProfileValueByLabel(items, candidateLabels) {
+  const labelSet = new Set(candidateLabels.map(normalizeLabel));
+  const matched = items.find(item => labelSet.has(normalizeLabel(item?.label)));
+  return String(matched?.value || "").trim();
+}
+
+function parseEmails(rawValue) {
+  const emailPattern = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi;
+  const matches = String(rawValue || "").match(emailPattern) || [];
+  return [...new Set(matches.map(email => email.toLowerCase()))];
+}
+
+function parsePhones(rawValue) {
+  const parts = String(rawValue || "")
+    .split(/[,/|]/)
+    .map(part => part.trim())
+    .filter(Boolean);
+  const phones = parts.filter(part => /[\d]{6,}/.test(part.replace(/[^\d+]/g, "")));
+  return [...new Set(phones)];
+}
+
+function vcardEscape(value) {
+  return String(value || "")
+    .replace(/\\/g, "\\\\")
+    .replace(/\n/g, "\\n")
+    .replace(/;/g, "\\;")
+    .replace(/,/g, "\\,");
+}
+
+function cleanFileName(value) {
+  return String(value || "faculty")
+    .replace(/[<>:"/\\|?*\x00-\x1F]/g, "-")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "")
+    .toLowerCase();
+}
+
+function buildCanonicalFacultyProfileUrl(facultyMeta, facultyData) {
+  const slug = String(facultyMeta?.slug || facultyData?.slug || "").trim();
+  const baseUrl = `${window.location.origin}${window.location.pathname}`;
+  if (!slug) return baseUrl;
+  return `${baseUrl}?faculty=${encodeURIComponent(slug)}`;
+}
+
+function buildFacultyVcard(facultyMeta, facultyData) {
+  const profileItems = getProfileItems(facultyData);
+  const fullName = String(facultyData?.name || facultyMeta?.name || "Faculty Member").trim();
+  const designationFromProfile = getProfileValueByLabel(profileItems, ["designation", "role", "position"]);
+  const designation = designationFromProfile || String(facultyMeta?.designation || "").trim();
+  const emailRaw = getProfileValueByLabel(profileItems, ["email", "e-mail", "mail"]);
+  const phoneRaw = getProfileValueByLabel(profileItems, ["phone", "mobile", "contact", "telephone", "tel"]);
+  const department = getProfileValueByLabel(profileItems, ["department", "dept"]);
+  const office = getProfileValueByLabel(profileItems, ["office", "address", "location"]);
+  const emails = parseEmails(emailRaw);
+  const phones = parsePhones(phoneRaw);
+  const profileUrl = buildCanonicalFacultyProfileUrl(facultyMeta, facultyData);
+  const scopusId = String(facultyData?.scopus_id || facultyMeta?.scopus_id || "").trim();
+
+  const lines = [
+    "BEGIN:VCARD",
+    "VERSION:3.0",
+    `FN:${vcardEscape(fullName)}`,
+    `ORG:${vcardEscape(
+      department
+        ? `Kalasalingam Academy of Research and Education;${department}`
+        : "Kalasalingam Academy of Research and Education"
+    )}`
+  ];
+
+  if (designation) lines.push(`TITLE:${vcardEscape(designation)}`);
+  emails.forEach(email => lines.push(`EMAIL;TYPE=INTERNET:${vcardEscape(email)}`));
+  phones.forEach(phone => lines.push(`TEL;TYPE=WORK,VOICE:${vcardEscape(phone)}`));
+  if (office) lines.push(`ADR;TYPE=WORK:;;${vcardEscape(office)};;;;`);
+  lines.push(`URL:${vcardEscape(profileUrl)}`);
+  if (scopusId) {
+    lines.push(`URL;TYPE=SCOPUS:${vcardEscape(`https://www.scopus.com/authid/detail.uri?authorId=${encodeURIComponent(scopusId)}`)}`);
+  }
+  lines.push("END:VCARD");
+
+  return `${lines.join("\r\n")}\r\n`;
+}
+
+function triggerVcardDownload(facultyMeta, facultyData) {
+  const vcardText = buildFacultyVcard(facultyMeta, facultyData);
+  const blob = new Blob([vcardText], { type: "text/vcard;charset=utf-8" });
+  const objectUrl = URL.createObjectURL(blob);
+  const anchor = document.createElement("a");
+  const fallbackName = facultyMeta?.slug || facultyData?.slug || facultyData?.name || facultyMeta?.name || "faculty";
+  anchor.href = objectUrl;
+  anchor.download = `${cleanFileName(fallbackName)}.vcf`;
+  document.body.appendChild(anchor);
+  anchor.click();
+  anchor.remove();
+  URL.revokeObjectURL(objectUrl);
+}
+
+function buildVcardQrUrl(facultyMeta, facultyData) {
+  const vcardText = buildFacultyVcard(facultyMeta, facultyData);
+  return `https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=${encodeURIComponent(vcardText)}`;
+}
+
+function createQrModal(facultyMeta, facultyData) {
+  const fullName = facultyMeta.name || facultyData.name || "Faculty";
+  const overlay = document.createElement("div");
+  overlay.className = "qr-modal-overlay";
+  overlay.hidden = true;
+  overlay.setAttribute("aria-hidden", "true");
+
+  const dialog = document.createElement("section");
+  dialog.className = "qr-modal";
+  dialog.setAttribute("role", "dialog");
+  dialog.setAttribute("aria-modal", "true");
+  dialog.setAttribute("aria-label", `Contact QR for ${fullName}`);
+  overlay.appendChild(dialog);
+
+  const title = document.createElement("h2");
+  title.className = "qr-title";
+  title.textContent = "Scan to Add Contact";
+  dialog.appendChild(title);
+
+  const subtitle = document.createElement("p");
+  subtitle.className = "meta";
+  subtitle.textContent = fullName;
+  dialog.appendChild(subtitle);
+
+  const helper = document.createElement("p");
+  helper.className = "meta";
+  helper.textContent = "Open your phone camera and scan. Most phones will show Add Contact directly.";
+  dialog.appendChild(helper);
+
+  const qrImage = document.createElement("img");
+  qrImage.className = "qr-image";
+  qrImage.loading = "lazy";
+  qrImage.alt = `QR code to add ${fullName} as a contact`;
+  qrImage.src = buildVcardQrUrl(facultyMeta, facultyData);
+  dialog.appendChild(qrImage);
+
+  const actions = document.createElement("div");
+  actions.className = "qr-modal-actions";
+  dialog.appendChild(actions);
+
+  const downloadBtn = document.createElement("button");
+  downloadBtn.type = "button";
+  downloadBtn.className = "btn";
+  downloadBtn.textContent = "Download vCard";
+  downloadBtn.addEventListener("click", () => triggerVcardDownload(facultyMeta, facultyData));
+  actions.appendChild(downloadBtn);
+
+  const closeBtn = document.createElement("button");
+  closeBtn.type = "button";
+  closeBtn.className = "btn";
+  closeBtn.textContent = "Close";
+  actions.appendChild(closeBtn);
+
+  function closeModal() {
+    overlay.hidden = true;
+    overlay.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+  }
+
+  function openModal() {
+    overlay.hidden = false;
+    overlay.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+  }
+
+  closeBtn.addEventListener("click", closeModal);
+  overlay.addEventListener("click", event => {
+    if (event.target === overlay) closeModal();
+  });
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && !overlay.hidden) {
+      closeModal();
+    }
+  });
+
+  return { overlay, openModal, closeModal };
+}
+
 function formatMonthYear(rawDate) {
   if (!rawDate || typeof rawDate !== "string") {
     return "Not available";
@@ -54,6 +246,64 @@ function extractYear(rawDate) {
   }
   const match = rawDate.match(/^(\d{4})/);
   return match ? match[1] : "";
+}
+
+function isSafeExternalUrl(rawValue) {
+  if (!rawValue || typeof rawValue !== "string") return false;
+  const value = rawValue.trim();
+  if (!value) return false;
+  try {
+    const parsed = new URL(value);
+    if (parsed.protocol !== "https:") return false;
+    if (!parsed.hostname) return false;
+    if (parsed.username || parsed.password) return false;
+    return true;
+  } catch (error) {
+    return false;
+  }
+}
+
+function normalizeCandidateUrl(rawValue) {
+  const value = String(rawValue || "").trim();
+  if (!value) return "";
+  if (/^www\./i.test(value)) {
+    return `https://${value}`;
+  }
+  return value;
+}
+
+function appendSafeLinkedText(container, rawText) {
+  const text = String(rawText ?? "");
+  const urlPattern = /(?:https?:\/\/|www\.)[^\s<>"']+/gi;
+  let lastIndex = 0;
+  let match = urlPattern.exec(text);
+
+  while (match) {
+    const urlText = match[0];
+    const start = match.index;
+    if (start > lastIndex) {
+      container.appendChild(document.createTextNode(text.slice(lastIndex, start)));
+    }
+
+    const normalizedUrl = normalizeCandidateUrl(urlText);
+    if (isSafeExternalUrl(normalizedUrl)) {
+      const link = document.createElement("a");
+      link.href = normalizedUrl;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer nofollow";
+      link.textContent = urlText;
+      container.appendChild(link);
+    } else {
+      container.appendChild(document.createTextNode(urlText));
+    }
+
+    lastIndex = start + urlText.length;
+    match = urlPattern.exec(text);
+  }
+
+  if (lastIndex < text.length) {
+    container.appendChild(document.createTextNode(text.slice(lastIndex)));
+  }
 }
 
 function buildPublicationsControls(publications, renderCallback) {
@@ -380,6 +630,20 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
 
   const headerActions = document.createElement("div");
   headerActions.className = "header-actions";
+  const vcardButton = document.createElement("button");
+  vcardButton.type = "button";
+  vcardButton.className = "btn";
+  vcardButton.textContent = "Download vCard";
+  vcardButton.setAttribute("aria-label", "Download this faculty contact as a vCard");
+  headerActions.appendChild(vcardButton);
+
+  const qrButton = document.createElement("button");
+  qrButton.type = "button";
+  qrButton.className = "btn";
+  qrButton.textContent = "Show Contact QR";
+  qrButton.setAttribute("aria-label", "Show QR code to add this faculty contact");
+  headerActions.appendChild(qrButton);
+
   const pdfButton = document.createElement("button");
   pdfButton.type = "button";
   pdfButton.className = "btn";
@@ -409,6 +673,8 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
   photoWrap.appendChild(fallback);
 
   container.appendChild(header);
+  const qrModal = createQrModal(facultyMeta, facultyData);
+  container.appendChild(qrModal.overlay);
 
   const sheetSections = Array.isArray(facultyData.sections) ? [...facultyData.sections] : [];
 
@@ -450,14 +716,14 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
           content.appendChild(listElement);
         }
         const li = document.createElement("li");
-        li.textContent = line.slice(2).trim();
+        appendSafeLinkedText(li, line.slice(2).trim());
         listElement.appendChild(li);
         return;
       }
       listElement = null;
       const p = document.createElement("p");
       p.className = "detail-markdown";
-      p.textContent = line;
+      appendSafeLinkedText(p, line);
       content.appendChild(p);
     });
   };
@@ -476,7 +742,7 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
         const label = document.createElement("dt");
         label.textContent = item.label || "";
         const value = document.createElement("dd");
-        value.textContent = item.value || "";
+        appendSafeLinkedText(value, item.value || "");
         table.appendChild(label);
         table.appendChild(value);
       });
@@ -522,7 +788,7 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
         const tr = document.createElement("tr");
         columns.forEach((_, idx) => {
           const td = document.createElement("td");
-          td.textContent = (row[idx] ?? "").toString();
+          appendSafeLinkedText(td, (row[idx] ?? "").toString());
           tr.appendChild(td);
         });
         tbody.appendChild(tr);
@@ -733,6 +999,17 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
     buildAllSectionsForPrint();
     window.print();
   });
+
+  vcardButton.addEventListener("click", () => {
+    triggerVcardDownload(facultyMeta, facultyData);
+  });
+
+  qrButton.addEventListener("click", () => {
+    qrModal.openModal();
+  });
+
+  // Show the QR modal on initial page load for quick contact sharing.
+  qrModal.openModal();
 }
 
 async function loadFacultyPage() {

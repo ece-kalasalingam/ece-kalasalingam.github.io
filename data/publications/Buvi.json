@@ -1,0 +1,112 @@
+{
+  "publications": [
+    {
+      "title": "Real Time Eye Blink Recognition for Virtual Mouse using Raspberry Pi",
+      "source": "3rd International Conference on Intelligent Data Communication Technologies and Internet of Things Idciot 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/IDCIOT64235.2025.10915003",
+      "citations": 1,
+      "eid": "2-s2.0-105001663016",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105001663016"
+    },
+    {
+      "title": "Quadcopter with Fuzzy Logic based Self-Tuning PID Controller",
+      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICTMIM65579.2025.10988349",
+      "citations": 0,
+      "eid": "2-s2.0-105008005713",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105008005713"
+    },
+    {
+      "title": "Power Fault Analysis and Monitoring System using Simulink",
+      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICTMIM65579.2025.10988264",
+      "citations": 0,
+      "eid": "2-s2.0-105007989811",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007989811"
+    },
+    {
+      "title": "PID - Based Boiler Control System for Optimized Sterilization and Disinfection in Hospital Environments",
+      "source": "International Conference on Computational Robotics Testing and Engineering Evaluation Iccrtee 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICCRTEE64519.2025.11052918",
+      "citations": 0,
+      "eid": "2-s2.0-105012157772",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105012157772"
+    },
+    {
+      "title": "Optimizing Inverted Pendulum Stability: Performance Analysis of Self-Tuning Fuzzy PID and PID",
+      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICTMIM65579.2025.10988396",
+      "citations": 0,
+      "eid": "2-s2.0-105007984299",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007984299"
+    },
+    {
+      "title": "Motor Drive Fault Detection and Control System for Industrial Robots",
+      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICTMIM65579.2025.10988309",
+      "citations": 0,
+      "eid": "2-s2.0-105007975509",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007975509"
+    },
+    {
+      "title": "Hybrid Deep Learning with Explainable AI for Multimodal Fake News Detection",
+      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICECMSN68058.2025.11382799",
+      "citations": 0,
+      "eid": "2-s2.0-105035496279",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035496279"
+    },
+    {
+      "title": "Eco-Agri Bot: An AI-Powered Drone Payload for Early Disease Detection and Organic Control in Tomato and Banana Crops",
+      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICECMSN68058.2025.11382923",
+      "citations": 0,
+      "eid": "2-s2.0-105035550829",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035550829"
+    },
+    {
+      "title": "Dualscan.AI: A Unified Platform for Brain Tumor and Pneumonia Recognition from Medical Images",
+      "source": "2025 1st International Conference on Advancement in Futuristic Technologies Icaft 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICAFT66710.2025.11452727",
+      "citations": 0,
+      "eid": "2-s2.0-105037333933",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105037333933"
+    },
+    {
+      "title": "Design and Development of an IoT and Web-Integrated Respiratory Disease Prediction System using Machine Learning",
+      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICECMSN68058.2025.11383348",
+      "citations": 0,
+      "eid": "2-s2.0-105035522215",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035522215"
+    },
+    {
+      "title": "Building Climate Resilience in Urban Infrastructure with Machine Learning Techniques",
+      "source": "Sustainable Civil Infrastructures",
+      "date": "2025-01-01",
+      "doi": "10.1007/978-3-031-84335-8_4",
+      "citations": 0,
+      "eid": "2-s2.0-105008760459",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105008760459"
+    },
+    {
+      "title": "AI-Based Trash Collector Boat for Autonomous Waterway Pollution Management",
+      "source": "1st International Conference on Sustainable Energy Technologies and Computational Intelligence Towards Sustainable Energy Transition Setcom 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/SETCOM64758.2025.10932499",
+      "citations": 1,
+      "eid": "2-s2.0-105002273931",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105002273931"
+    }
+  ]
+}

@@ -76,37 +76,33 @@ jobs:
             exit 1
           fi
 
-      - name: Validate FACULTY_SHEET_IDS_JSON (optional)
-        env:
-          FACULTY_SHEET_IDS_JSON: ${{ secrets.FACULTY_SHEET_IDS_JSON }}
+      - name: Validate faculty_sheet_ids_json.json
         run: |
-          if [ -z "${FACULTY_SHEET_IDS_JSON}" ]; then
-            echo "FACULTY_SHEET_IDS_JSON is not set. Continuing without sheet mapping."
-            exit 0
+          if [ ! -f faculty_sheet_ids_json.json ]; then
+            echo "::error::faculty_sheet_ids_json.json is required but not found."
+            exit 1
           fi
           python - <<'PY'
           import json
-          import os
           from pathlib import Path
 
           faculty = json.loads(Path("faculty.json").read_text(encoding="utf-8"))
           valid_slugs = {str(item.get("slug", "")).strip() for item in faculty if isinstance(item, dict)}
           valid_slugs.discard("")
 
-          secret_value = os.getenv("FACULTY_SHEET_IDS_JSON", "").strip()
-          raw = json.loads(secret_value)
+          raw = json.loads(Path("faculty_sheet_ids_json.json").read_text(encoding="utf-8"))
           if not isinstance(raw, dict):
-              raise SystemExit("FACULTY_SHEET_IDS_JSON must be a JSON object of slug -> sheet_id")
+              raise SystemExit("faculty_sheet_ids_json.json must be a JSON object of slug -> sheet_id")
 
           for slug, sheet_id in raw.items():
               if not isinstance(slug, str) or not slug.strip():
-                  raise SystemExit("FACULTY_SHEET_IDS_JSON contains an empty/invalid slug key")
+                  raise SystemExit("faculty_sheet_ids_json.json contains an empty/invalid slug key")
               if slug not in valid_slugs:
-                  raise SystemExit(f"FACULTY_SHEET_IDS_JSON contains unknown slug: {slug}")
+                  raise SystemExit(f"faculty_sheet_ids_json.json contains unknown slug: {slug}")
               if not isinstance(sheet_id, str) or not sheet_id.strip():
-                  raise SystemExit(f"FACULTY_SHEET_IDS_JSON contains empty sheet id for slug: {slug}")
+                  raise SystemExit(f"faculty_sheet_ids_json.json contains empty sheet id for slug: {slug}")
 
-          print("FACULTY_SHEET_IDS_JSON validation passed.")
+          print("faculty_sheet_ids_json.json validation passed.")
           PY
 
       - name: Set fetch configuration
@@ -129,7 +125,6 @@ jobs:
         env:
           ELSEVIER_API_KEY: ${{ secrets.ELSEVIER_API_KEY }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-          FACULTY_SHEET_IDS_JSON: ${{ secrets.FACULTY_SHEET_IDS_JSON }}
           FETCH_MODE: ${{ env.FETCH_MODE }}
           BATCH_SIZE: ${{ env.BATCH_SIZE }}
           INCREMENTAL_YEARS: ${{ env.INCREMENTAL_YEARS }}

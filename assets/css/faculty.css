@@ -57,41 +57,57 @@
 
 .qr-image {
   display: block;
-  width: min(260px, 100%);
+  width: 80%;
+  max-width: 220px;
   height: auto;
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  border: 8px solid #fff;
+  box-shadow: none;
+  border-radius: 0;
   background: #fff;
+  box-sizing: border-box;
 }
 
 .qr-card {
   margin-top: 10px;
-  border-radius: 12px;
+  width: min(560px, 100%);
+  aspect-ratio: 3.5 / 2;
+  margin-inline: auto;
+  border-radius: 0;
   overflow: hidden;
-  border: 1px solid var(--border);
+  border: 1px solid #cfd7e3;
+  background: #ffffff;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.82fr);
+  box-shadow: 0 18px 30px rgba(14, 24, 40, 0.3), 0 5px 12px rgba(14, 24, 40, 0.18);
+  position: relative;
+}
+
+.qr-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #37add6 0%, #4bc4ea 52%, #37add6 100%);
+  z-index: 6;
 }
 
 .qr-card-left {
-  background:
-    repeating-linear-gradient(
-      -24deg,
-      rgba(255, 255, 255, 0.035) 0 1px,
-      rgba(255, 255, 255, 0) 1px 4px
-    ),
-    linear-gradient(145deg, #121419 0%, #1b1f27 45%, #2a303a 100%);
+  position: relative;
+  background: radial-gradient(130% 120% at 50% 45%, #3f5676 0%, #22344d 42%, #122030 100%);
   color: #fff;
-  padding: 14px;
+  padding: 16px 18px 14px;
   display: grid;
   align-content: center;
   justify-items: center;
-  gap: 8px;
+  gap: 6px;
   text-align: center;
 }
 
 .qr-card-photo-wrap {
+  position: relative;
+  z-index: 3;
   width: 84px;
   height: 84px;
   border-radius: 50%;
@@ -120,23 +136,78 @@
 }
 
 .qr-card-name {
-  margin: 0;
+  position: relative;
+  z-index: 3;
+  margin: 4px 0 0;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.25;
 }
 
 .qr-card-designation {
+  position: relative;
+  z-index: 3;
   margin: 0;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #8ddaf4;
+}
+
+.qr-card-department {
+  margin: 1px 0 0;
+  font-size: 0.78rem;
   color: rgba(255, 255, 255, 0.88);
 }
 
+.qr-card-institute {
+  margin: 4px 0 0;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 28ch;
+}
+
+.qr-card-contact {
+  width: 100%;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.qr-card-contact-line {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.92);
+  overflow-wrap: anywhere;
+}
+
 .qr-card-right {
-  background: #fff;
-  padding: 14px;
-  display: grid;
-  place-items: center;
+  position: relative;
+  z-index: 4;
+  background-color: #ffffff;
+  background-image: none;
+  padding: 14px 10px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
+  box-sizing: border-box;
+  border-left: 1px solid #d8dee8;
+  overflow: hidden;
+}
+
+.qr-card-qr-label {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: #1a4f71;
+  background: transparent;
 }
 
 .qr-modal-overlay {
@@ -154,7 +225,7 @@
 }
 
 .qr-modal {
-  width: min(560px, 100%);
+  width: min(620px, 100%);
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -435,6 +506,8 @@ body.modal-open {
   }
 
   .qr-card {
+    width: 100%;
+    aspect-ratio: auto;
     grid-template-columns: 1fr;
   }
 

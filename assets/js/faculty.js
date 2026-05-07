@@ -143,6 +143,10 @@ function buildVcardQrUrl(facultyMeta, facultyData) {
 function createQrModal(facultyMeta, facultyData) {
   const fullName = facultyMeta.name || facultyData.name || "Faculty";
   const designation = String(facultyMeta.designation || "").trim();
+  const profileItems = getProfileItems(facultyData);
+  const department = getProfileValueByLabel(profileItems, ["department", "dept"]);
+  const email = parseEmails(getProfileValueByLabel(profileItems, ["email", "e-mail", "mail"]))[0] || "";
+  const phone = parsePhones(getProfileValueByLabel(profileItems, ["phone", "mobile", "contact", "telephone", "tel"]))[0] || "";
   const overlay = document.createElement("div");
   overlay.className = "qr-modal-overlay";
   overlay.hidden = true;
@@ -206,9 +210,44 @@ function createQrModal(facultyMeta, facultyData) {
     qrCardLeft.appendChild(qrCardDesignation);
   }
 
+  if (department) {
+    const qrCardDepartment = document.createElement("p");
+    qrCardDepartment.className = "qr-card-department";
+    qrCardDepartment.textContent = department;
+    qrCardLeft.appendChild(qrCardDepartment);
+  }
+
+  const qrCardInstitute = document.createElement("p");
+  qrCardInstitute.className = "qr-card-institute";
+  qrCardInstitute.textContent = "Kalasalingam Academy of Research and Education";
+  qrCardLeft.appendChild(qrCardInstitute);
+
+  if (email || phone) {
+    const qrCardContact = document.createElement("div");
+    qrCardContact.className = "qr-card-contact";
+    if (email) {
+      const emailLine = document.createElement("p");
+      emailLine.className = "qr-card-contact-line";
+      emailLine.textContent = email;
+      qrCardContact.appendChild(emailLine);
+    }
+    if (phone) {
+      const phoneLine = document.createElement("p");
+      phoneLine.className = "qr-card-contact-line";
+      phoneLine.textContent = phone;
+      qrCardContact.appendChild(phoneLine);
+    }
+    qrCardLeft.appendChild(qrCardContact);
+  }
+
   const qrCardRight = document.createElement("div");
   qrCardRight.className = "qr-card-right";
   qrCard.appendChild(qrCardRight);
+
+  const qrCardRightLabel = document.createElement("p");
+  qrCardRightLabel.className = "qr-card-qr-label";
+  qrCardRightLabel.textContent = "SCAN TO SAVE CONTACT";
+  qrCardRight.appendChild(qrCardRightLabel);
 
   const qrImage = document.createElement("img");
   qrImage.className = "qr-image";

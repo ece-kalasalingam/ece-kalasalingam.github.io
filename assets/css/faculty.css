@@ -75,7 +75,13 @@
 }
 
 .qr-card-left {
-  background: linear-gradient(145deg, #1f232c, #2e3541);
+  background:
+    repeating-linear-gradient(
+      -24deg,
+      rgba(255, 255, 255, 0.035) 0 1px,
+      rgba(255, 255, 255, 0) 1px 4px
+    ),
+    linear-gradient(145deg, #121419 0%, #1b1f27 45%, #2a303a 100%);
   color: #fff;
   padding: 14px;
   display: grid;

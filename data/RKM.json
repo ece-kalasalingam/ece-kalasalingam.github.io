@@ -139,38 +139,44 @@
         "S.No.",
         "Project Title",
         "Funding Agency",
-        "Amount in Rs."
+        "Amount in Rs.",
+        "Year of Funding"
       ],
       "rows": [
         [
           "1",
-          "Expeditious Detection of Possibility of Kidney Stone Presence Through Modern Urinals",
+          "Smart Urinalysis Device",
           "Seed Money Scheme\n (Kalasalingam Academy of Research and Education)",
-          "2,49,990"
+          "2,49,990",
+          "2024"
         ],
         [
-          "3",
-          "Design and Development of Cost-Effective Terahertz Device",
+          "2",
+          "AI-Enabled Therapeutic System for Rehabilitation Care",
           "EDII-TN Innovation Voucher Programme",
-          "3,37,500"
+          "3,37,500",
+          "2024"
         ],
         [
           "3",
-          "Design and Development of Smart Urinal System for Early Detection of Kidney Stones through Urinalysis",
+          "Kidney Stone Prediction System",
           "MSME IDEA HACKATHON 4.0",
-          "15,00,000"
+          "15,00,000",
+          "2025"
         ],
         [
           "4",
           "Design and Development of a Cost-Effective Terahertz Device for Non-Invasive Physiotherapy Applications",
           "AICTE Research Promotion Scheme (RPS): Lab to Market – 2025",
-          "20,00,000"
+          "20,00,000",
+          "2026"
         ],
         [
           "5",
-          "Design and Development of Cost-Effective Terahertz Device for Physiotherapy applications",
+          "Portable Therapeutic Device for Pain Management",
           "MSME IDEA HACKATHON 5.0",
-          "15,00,000"
+          "15,00,000",
+          "2026"
         ]
       ]
     },
@@ -181,33 +187,39 @@
       "columns": [
         "S.No.",
         "Name of the Research Scholar",
-        "Research Title"
+        "Research Title",
+        "Year of Enrolment"
       ],
       "rows": [
         [
           "1",
           "Mr. S. Vengidusamy",
-          "Prediction of Autism Spectrum Disorder on Facial Images of Children Using Deep Learning Techniques"
+          "Prediction of Autism Spectrum Disorder on Facial Images of Children Using Deep Learning Techniques",
+          "2024"
         ],
         [
           "2",
           "Ms. T. Jeyasri",
-          "Low-Cost Portable Design and Development of an Optical Coherence Tomography (OCT) System for Retinal Disease Detection"
+          "Low-Cost Portable Design and Development of an Optical Coherence Tomography (OCT) System for Retinal Disease Detection",
+          "2024"
         ],
         [
           "3",
           "Mrs. P. Sindhuja",
-          "Automated and Intelligent Grade Classification of Ankle Osteoarthritis Using Neural Networks"
+          "Automated and Intelligent Grade Classification of Ankle Osteoarthritis Using Neural Networks",
+          "2025"
         ],
         [
           "4",
           "Mr. S. Radhakrishnan",
-          "Deep Learning-Based Diagnostic Models for Early-Stage Esophagel Cancer Using Endoscopic and Radiological Images"
+          "Deep Learning-Based Diagnostic Models for Early-Stage Esophagel Cancer Using Endoscopic and Radiological Images",
+          "2025"
         ],
         [
           "5",
           "Mrs. Divya Rajan",
-          "Otologic Disease Classification from Oto-Endoscopic Images Using Deep Learning Techniques"
+          "Otologic Disease Classification from Oto-Endoscopic Images Using Deep Learning Techniques",
+          "2025"
         ]
       ]
     },

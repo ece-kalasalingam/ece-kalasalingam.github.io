@@ -142,6 +142,7 @@ function buildVcardQrUrl(facultyMeta, facultyData) {
 
 function createQrModal(facultyMeta, facultyData) {
   const fullName = facultyMeta.name || facultyData.name || "Faculty";
+  const designation = String(facultyMeta.designation || "").trim();
   const overlay = document.createElement("div");
   overlay.className = "qr-modal-overlay";
   overlay.hidden = true;
@@ -169,12 +170,52 @@ function createQrModal(facultyMeta, facultyData) {
   helper.textContent = "Open your phone camera and scan. Most phones will show Add Contact directly.";
   dialog.appendChild(helper);
 
+  const qrCard = document.createElement("div");
+  qrCard.className = "qr-card";
+  dialog.appendChild(qrCard);
+
+  const qrCardLeft = document.createElement("div");
+  qrCardLeft.className = "qr-card-left";
+  qrCard.appendChild(qrCardLeft);
+
+  const qrCardPhotoWrap = document.createElement("div");
+  qrCardPhotoWrap.className = "qr-card-photo-wrap";
+  qrCardLeft.appendChild(qrCardPhotoWrap);
+
+  const qrCardPhoto = document.createElement("img");
+  qrCardPhoto.className = "qr-card-photo";
+  qrCardPhoto.alt = `${fullName} photograph`;
+  qrCardPhoto.loading = "lazy";
+  qrCardPhotoWrap.appendChild(qrCardPhoto);
+
+  const qrCardPhotoFallback = document.createElement("div");
+  qrCardPhotoFallback.className = "qr-card-photo-fallback";
+  qrCardPhotoWrap.appendChild(qrCardPhotoFallback);
+
+  attachFacultyPhoto(qrCardPhoto, qrCardPhotoFallback, facultyMeta.slug || "", fullName, "../images/faculty");
+
+  const qrCardName = document.createElement("p");
+  qrCardName.className = "qr-card-name";
+  qrCardName.textContent = fullName;
+  qrCardLeft.appendChild(qrCardName);
+
+  if (designation) {
+    const qrCardDesignation = document.createElement("p");
+    qrCardDesignation.className = "qr-card-designation";
+    qrCardDesignation.textContent = designation;
+    qrCardLeft.appendChild(qrCardDesignation);
+  }
+
+  const qrCardRight = document.createElement("div");
+  qrCardRight.className = "qr-card-right";
+  qrCard.appendChild(qrCardRight);
+
   const qrImage = document.createElement("img");
   qrImage.className = "qr-image";
   qrImage.loading = "lazy";
   qrImage.alt = `QR code to add ${fullName} as a contact`;
   qrImage.src = buildVcardQrUrl(facultyMeta, facultyData);
-  dialog.appendChild(qrImage);
+  qrCardRight.appendChild(qrImage);
 
   const actions = document.createElement("div");
   actions.className = "qr-modal-actions";

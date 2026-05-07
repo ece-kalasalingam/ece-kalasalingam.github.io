@@ -59,10 +59,78 @@
   display: block;
   width: min(260px, 100%);
   height: auto;
-  margin-top: 10px;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: #fff;
+}
+
+.qr-card {
+  margin-top: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.qr-card-left {
+  background: linear-gradient(145deg, #1f232c, #2e3541);
+  color: #fff;
+  padding: 14px;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.qr-card-photo-wrap {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  display: grid;
+  place-items: center;
+}
+
+.qr-card-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.qr-card-photo-fallback {
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background: #3a4658;
+}
+
+.qr-card-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+
+.qr-card-designation {
+  margin: 0;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.qr-card-right {
+  background: #fff;
+  padding: 14px;
+  display: grid;
+  place-items: center;
 }
 
 .qr-modal-overlay {
@@ -80,7 +148,7 @@
 }
 
 .qr-modal {
-  width: min(440px, 100%);
+  width: min(560px, 100%);
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -358,6 +426,10 @@ body.modal-open {
   .header {
     padding: 16px;
     border-radius: 10px;
+  }
+
+  .qr-card {
+    grid-template-columns: 1fr;
   }
 
   .controls {

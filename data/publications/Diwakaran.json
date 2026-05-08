@@ -1,6 +1,15 @@
 {
   "publications": [
     {
+      "title": "AI-Driven Exam Hall Monitoring System Using Flask and Face Recognition",
+      "source": "2026 2nd International Conference on Intelligent Systems for Communication Iot and Security Iciscois 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICISCoIS62701.2026.11447646",
+      "citations": 0,
+      "eid": "2-s2.0-105037448255",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105037448255"
+    },
+    {
       "title": "Smart Vehicular Carbon Emission Monitoring and Alert System Using IoT and Machine Learning",
       "source": "Proceedings 2025 2nd International Conference on Electronic Circuits and Signaling Technologies Icecst 2025",
       "date": "2025-01-01",

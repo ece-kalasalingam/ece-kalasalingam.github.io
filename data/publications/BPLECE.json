@@ -1,6 +1,15 @@
 {
   "publications": [
     {
+      "title": "Reconfigurable Microstrip Antenna Design Using Geometric Slot Techniques",
+      "source": "Proceedings of 5th International Conference on Communication Computing and Electronics Systems Iccces 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICCCES62661.2026.11436251",
+      "citations": 0,
+      "eid": "2-s2.0-105037430828",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105037430828"
+    },
+    {
       "title": "Efficient image fusion using multi scale decomposition and absolute maximum fusion rule for MRI and CT brain images",
       "source": "International Journal of System Assurance Engineering and Management",
       "date": "2025-10-01",

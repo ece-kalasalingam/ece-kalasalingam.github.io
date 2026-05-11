@@ -1,6 +1,33 @@
 {
   "publications": [
     {
+      "title": "Surrogate Assisted Optimization Of A Dual Band FR4 Microstrip Patch Antenna Using Random Forest Modeling And Genetic Algorithm",
+      "source": "Proceeding of International Conference on Computing Communication Control and Cyber Physical Systems I5cps 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/I5CPS67958.2026.11452286",
+      "citations": 0,
+      "eid": "2-s2.0-105037433743",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105037433743"
+    },
+    {
+      "title": "Real-Time Pain Detection using Facial Expression Analysis and Transfer Learning",
+      "source": "Proceedings of 2nd International Conference on Visual Analytics and Data Visualization Icvadv 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICVADV67766.2026.11469863",
+      "citations": 0,
+      "eid": "2-s2.0-105037442025",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105037442025"
+    },
+    {
+      "title": "Energy-Aware Routing Protocol for Wireless Sensor Networks using Reinforced Sparrow Search Optimization (RSSO)",
+      "source": "Proceedings of the 2026 International Conference on AI Driven Smart Systems and Ubiquitous Computing Icauc 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICAUC68182.2026.11441102",
+      "citations": 0,
+      "eid": "2-s2.0-105037453568",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105037453568"
+    },
+    {
       "title": "Design of an on-Chip Microring Resonator Based Silicon Photonic Sensor",
       "source": "Proceedings of the 4th IEEE International Conference on Interdisciplinary Approaches in Technology and Management for Social Innovation Iatmsi 2026",
       "date": "2026-01-01",
@@ -8,6 +35,15 @@
       "citations": 0,
       "eid": "2-s2.0-105036952082",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105036952082"
+    },
+    {
+      "title": "Design and Simulation of a Hexagonal Fractal Antenna Tuned for 5.6 GHz WLAN/ISM Band Applications",
+      "source": "Proceeding of International Conference on Computing Communication Control and Cyber Physical Systems I5cps 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/I5CPS67958.2026.11452289",
+      "citations": 0,
+      "eid": "2-s2.0-105037442571",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105037442571"
     },
     {
       "title": "Li-Fi Based Vehicle to Vehicle Communication System for Enhanced Road Safety",

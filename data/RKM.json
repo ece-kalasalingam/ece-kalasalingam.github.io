@@ -24,6 +24,14 @@
           "value": "Associate Professor"
         },
         {
+          "label": "Department",
+          "value": "Electronics and Communication Engineering"
+        },
+        {
+          "label": "School",
+          "value": "School of Electronics, Electrical and Biomedical Technology"
+        },
+        {
           "label": "Administrative Responsibility",
           "value": "Deputy Director - Accreditation & Ranking"
         },
@@ -301,6 +309,121 @@
       "title": "Research Centre (lab At Irc)",
       "type": "markdown",
       "markdown": "Centre for Biomedical Research and Diagnostic Techniques Development\r\n\r\n\r\nAbout the Centre:\r\nThe Centre for Biomedical Research and Diagnostic Techniques Development is established with the vision of advancing innovative healthcare technologies through interdisciplinary research and development. The centre focuses on designing and developing cost-effective, non-invasive diagnostic solutions to address critical challenges in modern healthcare.\r\nThe centre aims to bridge the gap between engineering and medical sciences by integrating advanced methodologies such as Artificial Intelligence, Machine Learning, Medical Image Processing, and Biomedical Instrumentation. It actively promotes translational research that can be applied in real-world clinical environments for early diagnosis, monitoring, and treatment support.\r\n\r\n\r\nObjectives:\r\n•        To develop innovative diagnostic systems for early disease detection \r\n•        To promote AI-driven healthcare solutions \r\n•        To design low-cost biomedical devices for societal impact \r\n•        To encourage interdisciplinary collaboration between engineers, clinicians, and researchers \r\n•        To support student research, innovation, and entrepreneurship in healthcare technologies \r\n\r\n\r\nKey Focus Areas:\r\n•        Medical Image Processing and Analysis \r\n•        AI and Machine Learning in Healthcare \r\n•        Bone Health and Osteoporosis Detection \r\n•        Neurological Disorder Analysis (Brain Imaging) \r\n•        Biomedical Signal Processing (ECG, EEG) \r\n•        IoT-based Healthcare Systems \r\n•        Non-invasive Diagnostic Device Development \r\n\r\n\r\nFacilities & Expertise:\r\nThe centre is equipped with tools and platforms supporting:\r\n•        Simulation and modeling (MATLAB, LabVIEW) \r\n•        Medical data analysis and AI frameworks \r\n•        Biomedical instrumentation setups \r\n•        Sensor-based system development \r\nThe centre also benefits from strong expertise in:\r\n•        Clinical image analysis \r\n•        Algorithm development \r\n•        Embedded system design for healthcare \r\n\r\n\r\nResearch & Contributions:\r\nThe centre actively contributes through:\r\n•        High-quality publications in SCI and Scopus-indexed journals \r\n•        Funded research projects from government and innovation agencies \r\n•        Development of prototypes and patented technologies \r\n•        Collaboration with healthcare professionals for clinical validation \r\n\r\n\r\nVision:\r\nTo become a centre of excellence in biomedical research and diagnostic innovation, delivering impactful solutions for improving healthcare accessibility and quality.\r\n\r\n\r\nMission:\r\n•        To foster research-driven innovation in healthcare technologies \r\n•        To develop affordable and accessible diagnostic solutions \r\n•        To nurture skilled researchers and innovators in biomedical engineering \r\n•        To contribute to societal well-being through technology"
+    },
+    {
+      "id": "professional-membership",
+      "title": "Professional Membership",
+      "type": "markdown",
+      "markdown": "Life time member in Indian Society for Technical Education (ISTE)"
+    },
+    {
+      "id": "collaborators",
+      "title": "Collaborators",
+      "type": "table",
+      "columns": [
+        "S.No.",
+        "Name of the Collaborator",
+        "Affiliation",
+        "National / International"
+      ],
+      "rows": [
+        [
+          "1",
+          "Dr Wai Kit Wong",
+          "Multimedia University, Melaka, Malaysia",
+          "International"
+        ],
+        [
+          "2",
+          "Dr Poh Kiat Ng",
+          "Multimedia University, Melaka, Malaysia",
+          "International"
+        ],
+        [
+          "3",
+          "Dr Md. Jakir Hossen",
+          "Multimedia University, Melaka, Malaysia",
+          "International"
+        ],
+        [
+          "4",
+          "Dr Yudong Zhang",
+          "University of Leicester, united kingdom",
+          "International"
+        ],
+        [
+          "5",
+          "Dr Shui-Hua Wang",
+          "University of Leicester, united kingdom",
+          "International"
+        ],
+        [
+          "6",
+          "Dr Prabu Pachiyannan",
+          "Imam Mohammad Ibn Saud Islamic University (IMSIU), Saudi Arabia",
+          "International"
+        ],
+        [
+          "7",
+          "Dr Abdul Khader Jilani Saudagar",
+          "Imam Mohammad Ibn Saud Islamic University (IMSIU), Saudi Arabia",
+          "International"
+        ],
+        [
+          "8",
+          "Dr B. Sundaravadivazhagan",
+          "University of Technology and Applied Sciences (UTAS), Oman",
+          "International"
+        ],
+        [
+          "9",
+          "Dr Baiju Karun",
+          "University of Technology and Applied Sciences (UTAS), Oman",
+          "International"
+        ],
+        [
+          "10",
+          "Dr. V Saravanan",
+          "University of Technology and Applied Sciences (UTAS), Oman",
+          "International"
+        ],
+        [
+          "11",
+          "Dr. A, Santhanavijayan",
+          "National Institute of Technology, Tiruchirappalli",
+          "National"
+        ],
+        [
+          "12",
+          "Dr L Thangamariappan",
+          "Vellore institute of technology, Vellore",
+          "National"
+        ],
+        [
+          "13",
+          "Dr.G. vishnuvarthanan",
+          "VIT Bhopal University",
+          "National"
+        ],
+        [
+          "14",
+          "Dr.R.Sayee Vengatesh, DM (Cardio)",
+          "Tamil Nadu Government Multi Super Specality Hospital, Omandurar, Chennai",
+          "National (Medical)"
+        ],
+        [
+          "15",
+          "Dr. M. Thirumurugan, MS (Ortho)",
+          "Government Hospital, Rajapalayam",
+          "National (Medical)"
+        ],
+        [
+          "16",
+          "Dr. Mohamad Saleem, BAMS, MD",
+          "ALSHIFA AYUSH Hospital, Tirunelveli",
+          "National (Medical)"
+        ]
+      ]
     }
   ]
 }

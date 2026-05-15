@@ -1,6 +1,6 @@
 {
-  "cursor": 16,
-  "last_run_at": "2026-05-14T05:53:00+00:00",
+  "cursor": 12,
+  "last_run_at": "2026-05-15T06:00:44+00:00",
   "last_mode": "incremental",
   "batch_size": 20,
   "incremental_years": 2,
@@ -32,7 +32,7 @@
   ],
   "faculty_status": {
     "charles-pravin": {
-      "last_synced_at": "2026-05-14T05:52:47+00:00",
+      "last_synced_at": "2026-05-15T06:00:30+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
@@ -44,19 +44,19 @@
       "message": "success"
     },
     "p-sivakumar": {
-      "last_synced_at": "2026-05-14T05:52:47+00:00",
+      "last_synced_at": "2026-05-15T06:00:30+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
     },
     "m-pallikonda-rajasekaran": {
-      "last_synced_at": "2026-05-14T05:52:48+00:00",
+      "last_synced_at": "2026-05-15T06:00:32+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
     },
     "m-kalpana": {
-      "last_synced_at": "2026-05-14T05:52:48+00:00",
+      "last_synced_at": "2026-05-15T06:00:32+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
@@ -68,7 +68,7 @@
       "message": "Missing scopus_id"
     },
     "v-muneeswaran": {
-      "last_synced_at": "2026-05-14T05:52:54+00:00",
+      "last_synced_at": "2026-05-15T06:00:41+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
@@ -86,61 +86,61 @@
       "message": "success"
     },
     "j-bennilo-fernandes": {
-      "last_synced_at": "2026-05-13T05:54:05+00:00",
+      "last_synced_at": "2026-05-15T05:59:58+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
     },
     "v-sathya-narayanan": {
-      "last_synced_at": "2026-05-14T05:52:44+00:00",
+      "last_synced_at": "2026-05-15T05:59:59+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
     },
     "sheeba-jeya-sophia": {
-      "last_synced_at": "2026-05-14T05:52:46+00:00",
+      "last_synced_at": "2026-05-15T06:00:28+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
     },
     "loyola-jasmine-j": {
-      "last_synced_at": "2026-05-14T05:52:46+00:00",
+      "last_synced_at": "2026-05-15T06:00:29+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
     },
     "SKDargar": {
-      "last_synced_at": "2026-05-14T05:52:51+00:00",
+      "last_synced_at": "2026-05-15T06:00:37+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
     },
     "Diwakaran": {
-      "last_synced_at": "2026-05-14T05:52:52+00:00",
+      "last_synced_at": "2026-05-15T06:00:38+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
     },
     "Josephine-Selle-J": {
-      "last_synced_at": "2026-05-14T05:52:53+00:00",
+      "last_synced_at": "2026-05-15T06:00:40+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
     },
     "Jenyfal": {
-      "last_synced_at": "2026-05-13T05:53:59+00:00",
+      "last_synced_at": "2026-05-15T05:59:51+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
     },
     "Abha": {
-      "last_synced_at": "2026-05-14T05:52:45+00:00",
+      "last_synced_at": "2026-05-15T06:00:00+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
     },
     "aarthi-vpmb": {
-      "last_synced_at": "2026-05-14T05:52:55+00:00",
+      "last_synced_at": "2026-05-15T06:00:42+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
@@ -152,31 +152,31 @@
       "message": "success"
     },
     "RKM": {
-      "last_synced_at": "2026-05-13T05:54:04+00:00",
+      "last_synced_at": "2026-05-15T05:59:57+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
     },
     "Buvi": {
-      "last_synced_at": "2026-05-13T05:54:00+00:00",
+      "last_synced_at": "2026-05-15T05:59:52+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
     },
     "Pandiaraj-K": {
-      "last_synced_at": "2026-05-14T05:52:57+00:00",
+      "last_synced_at": "2026-05-15T06:00:44+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
     },
     "DGPECE": {
-      "last_synced_at": "2026-05-14T05:52:54+00:00",
+      "last_synced_at": "2026-05-15T06:00:41+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"
     },
     "BPLECE": {
-      "last_synced_at": "2026-05-14T05:52:50+00:00",
+      "last_synced_at": "2026-05-15T06:00:35+00:00",
       "last_mode": "incremental",
       "status": "success",
       "message": "success"

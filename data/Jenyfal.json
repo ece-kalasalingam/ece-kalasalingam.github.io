@@ -7,21 +7,6 @@
   "publications_file": "publications/Jenyfal.json",
   "sections": [
     {
-      "id": "profile",
-      "title": "Profile",
-      "type": "kv",
-      "items": [
-        {
-          "label": "Name",
-          "value": "Dr. Jenyfal Sampson"
-        },
-        {
-          "label": "E-mail",
-          "value": "jenyfal.sampson@klu.ac.in, jenyfal@gmail.com"
-        }
-      ]
-    },
-    {
       "id": "education",
       "title": "Education",
       "type": "table",

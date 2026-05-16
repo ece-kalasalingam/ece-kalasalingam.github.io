@@ -82,6 +82,24 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105016902151"
     },
     {
+      "title": "Flood Dynamics in the Ganga River Basin: A Multi-Temporal SAR-Based Change Detection Approach",
+      "source": "2025 IEEE International Conference on Communication Networks and Computing Cnc 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/CNC68716.2025.11484869",
+      "citations": 0,
+      "eid": "2-s2.0-105038015510",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105038015510"
+    },
+    {
+      "title": "Design and Comparative Analysis of E-shaped Patch Antenna for Air and Water Media",
+      "source": "2025 IEEE International Conference on Communication Networks and Computing Cnc 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/CNC68716.2025.11484716",
+      "citations": 0,
+      "eid": "2-s2.0-105038010640",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105038010640"
+    },
+    {
       "title": "10GB MAC CORE verification-Missing EOP ethernet test",
       "source": "Aip Conference Proceedings",
       "date": "2024-08-05",

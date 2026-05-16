@@ -1,6 +1,15 @@
 {
   "publications": [
     {
+      "title": "Pancreatic Tumor Detection in CT Images Using a Hybrid Deep Learning Framework",
+      "source": "2026 2nd International Conference on Intelligent Systems for Communication Iot and Security Iciscois 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICISCoIS62701.2026.11447648",
+      "citations": 0,
+      "eid": "2-s2.0-105037452956",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105037452956"
+    },
+    {
       "title": "GAN-Assisted Stain Harmonization and Resnet50 Transfer Learning for Multi-Class Breast Cancer Diagnosis",
       "source": "2025 IEEE 7th International Conference on Computing Communication and Automation Iccca 2025",
       "date": "2025-01-01",

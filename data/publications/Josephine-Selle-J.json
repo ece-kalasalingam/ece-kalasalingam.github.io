@@ -10,42 +10,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105030850242"
     },
     {
-      "title": "VANET-based Ambulance Alert System for Vicinity Vehicles",
-      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICTMIM65579.2025.10988071",
-      "citations": 0,
-      "eid": "2-s2.0-105008005007",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105008005007"
-    },
-    {
-      "title": "Social interactions and attitudes toward remote learning vs perceptions of its effectiveness in the view of Education 4.0",
-      "source": "TQM Journal",
-      "date": "2025-01-01",
-      "doi": "10.1108/TQM-09-2024-0335",
-      "citations": 2,
-      "eid": "2-s2.0-86000563024",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/86000563024"
-    },
-    {
-      "title": "Simulation of WO3 Thin Film Transistor for Biosensors",
-      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICTMIM65579.2025.10988043",
-      "citations": 0,
-      "eid": "2-s2.0-105007994824",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007994824"
-    },
-    {
-      "title": "IoT-based Smart Milk Safety System for Preventing Overheating and Burn Risks",
-      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICTMIM65579.2025.10988023",
-      "citations": 0,
-      "eid": "2-s2.0-105007977692",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007977692"
-    },
-    {
       "title": "Intelligent Energy Meter with Alerting System",
       "source": "International Conference on Computational Robotics Testing and Engineering Evaluation Iccrtee 2025",
       "date": "2025-01-01",
@@ -53,33 +17,6 @@
       "citations": 2,
       "eid": "2-s2.0-105012203704",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105012203704"
-    },
-    {
-      "title": "Fabrication and Performance Analysis of Perovskite Solar Cells for High Energy Conversion",
-      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICTMIM65579.2025.10988261",
-      "citations": 0,
-      "eid": "2-s2.0-105007997460",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007997460"
-    },
-    {
-      "title": "Effect of Inquiry-based Learning on Engineering Students as Collaborative Approach in Problem-Solving and Research for Formal Language Automata Course",
-      "source": "Journal of Engineering Education Transformations",
-      "date": "2025-01-01",
-      "doi": "10.16920/jeet/2025/v38is2/25004",
-      "citations": 4,
-      "eid": "2-s2.0-105006790119",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105006790119"
-    },
-    {
-      "title": "Automated Milk Boil Prevention System using ToF Sensing and Servo-Controlled Stove Adjustment",
-      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICTMIM65579.2025.10988126",
-      "citations": 0,
-      "eid": "2-s2.0-105007991617",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007991617"
     },
     {
       "title": "Assessment of Learning: Student Teams Achievement Division Technique for Empowering Students in Problem-Solving Courses",
@@ -100,6 +37,69 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105007974549"
     },
     {
+      "title": "Fabrication and Performance Analysis of Perovskite Solar Cells for High Energy Conversion",
+      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICTMIM65579.2025.10988261",
+      "citations": 0,
+      "eid": "2-s2.0-105007997460",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007997460"
+    },
+    {
+      "title": "Simulation of WO3 Thin Film Transistor for Biosensors",
+      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICTMIM65579.2025.10988043",
+      "citations": 0,
+      "eid": "2-s2.0-105007994824",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007994824"
+    },
+    {
+      "title": "Effect of Inquiry-based Learning on Engineering Students as Collaborative Approach in Problem-Solving and Research for Formal Language Automata Course",
+      "source": "Journal of Engineering Education Transformations",
+      "date": "2025-01-01",
+      "doi": "10.16920/jeet/2025/v38is2/25004",
+      "citations": 4,
+      "eid": "2-s2.0-105006790119",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105006790119"
+    },
+    {
+      "title": "Automated Milk Boil Prevention System using ToF Sensing and Servo-Controlled Stove Adjustment",
+      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICTMIM65579.2025.10988126",
+      "citations": 0,
+      "eid": "2-s2.0-105007991617",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007991617"
+    },
+    {
+      "title": "IoT-based Smart Milk Safety System for Preventing Overheating and Burn Risks",
+      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICTMIM65579.2025.10988023",
+      "citations": 0,
+      "eid": "2-s2.0-105007977692",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007977692"
+    },
+    {
+      "title": "VANET-based Ambulance Alert System for Vicinity Vehicles",
+      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICTMIM65579.2025.10988071",
+      "citations": 0,
+      "eid": "2-s2.0-105008005007",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105008005007"
+    },
+    {
+      "title": "Social interactions and attitudes toward remote learning vs perceptions of its effectiveness in the view of Education 4.0",
+      "source": "TQM Journal",
+      "date": "2025-01-01",
+      "doi": "10.1108/TQM-09-2024-0335",
+      "citations": 2,
+      "eid": "2-s2.0-86000563024",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/86000563024"
+    },
+    {
       "title": "Connecting Engineering Student's Talents for Productive Projects Output Using Full Stack Development",
       "source": "Journal of Engineering Education Transformations",
       "date": "2024-03-01",
@@ -118,6 +118,15 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85178162197"
     },
     {
+      "title": "Advanced Intelligent Systems for Optimizing Breast Cancer Thermography",
+      "source": "2024 IEEE Silchar Subsection Conference Silcon 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/SILCON63976.2024.10910658",
+      "citations": 2,
+      "eid": "2-s2.0-105001234096",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105001234096"
+    },
+    {
       "title": "Segmentation of Bruises in Fruit Thermograms During Post Harvest Stage Using K-Means Clustering Technique",
       "source": "2024 IEEE International Conference on Intelligent Techniques in Control Optimization and Signal Processing Incos 2024 Proceedings",
       "date": "2024-01-01",
@@ -125,6 +134,24 @@
       "citations": 1,
       "eid": "2-s2.0-85194092391",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85194092391"
+    },
+    {
+      "title": "Augmented mass detection of breast cancer in mammogram images using deep intelligent neural network model",
+      "source": "Artificial Intelligence in Biomedical and Modern Healthcare Informatics",
+      "date": "2024-01-01",
+      "doi": "10.1016/B978-0-443-21870-5.00035-2",
+      "citations": 0,
+      "eid": "2-s2.0-85216397886",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85216397886"
+    },
+    {
+      "title": "Implementation of Collaborative Filtering-based Recommendation System for Grading Diabetic Foot Thermograms",
+      "source": "Proceedings of the 5th International Conference on Data Intelligence and Cognitive Informatics Icdici 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICDICI62993.2024.10810783",
+      "citations": 0,
+      "eid": "2-s2.0-85216625155",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85216625155"
     },
     {
       "title": "Pesticide Recommender System for Detecting the Paddy Crop Diseases through SVM",
@@ -145,33 +172,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85209887200"
     },
     {
-      "title": "Implementation of Collaborative Filtering-based Recommendation System for Grading Diabetic Foot Thermograms",
-      "source": "Proceedings of the 5th International Conference on Data Intelligence and Cognitive Informatics Icdici 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICDICI62993.2024.10810783",
-      "citations": 0,
-      "eid": "2-s2.0-85216625155",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85216625155"
-    },
-    {
-      "title": "Augmented mass detection of breast cancer in mammogram images using deep intelligent neural network model",
-      "source": "Artificial Intelligence in Biomedical and Modern Healthcare Informatics",
-      "date": "2024-01-01",
-      "doi": "10.1016/B978-0-443-21870-5.00035-2",
-      "citations": 0,
-      "eid": "2-s2.0-85216397886",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85216397886"
-    },
-    {
-      "title": "Advanced Intelligent Systems for Optimizing Breast Cancer Thermography",
-      "source": "2024 IEEE Silchar Subsection Conference Silcon 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/SILCON63976.2024.10910658",
-      "citations": 2,
-      "eid": "2-s2.0-105001234096",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105001234096"
-    },
-    {
       "title": "Analytical modeling and quasi-static characterization of a lithium niobate (LiNbO3)-based metal–ferroelectric–metal–insulator–semiconductor (MFMIS) NCFET",
       "source": "Journal of Computational Electronics",
       "date": "2023-10-01",
@@ -179,15 +179,6 @@
       "citations": 2,
       "eid": "2-s2.0-85164522605",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85164522605"
-    },
-    {
-      "title": "Technologies and Therapies for Disease Diagnosis and Treatment",
-      "source": "Eai Springer Innovations in Communication and Computing",
-      "date": "2023-01-01",
-      "doi": "10.1007/978-3-031-27700-9_11",
-      "citations": 1,
-      "eid": "2-s2.0-85161937086",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161937086"
     },
     {
       "title": "Optimized TSA ResNet Architecture with TSH—Discriminatory Features for Kidney Stone Classification from QUS Images",
@@ -199,6 +190,24 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85183997448"
     },
     {
+      "title": "Design of Crop Recommender System using Machine Learning and IoT",
+      "source": "7th International Conference on Trends in Electronics and Informatics Icoei 2023 Proceedings",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICOEI56765.2023.10125963",
+      "citations": 3,
+      "eid": "2-s2.0-85161151045",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161151045"
+    },
+    {
+      "title": "Accent Conversion using Neural Style Transfer",
+      "source": "2023 International Conference on Recent Advances in Electrical Electronics Ubiquitous Communication and Computational Intelligence Raeeucci 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/RAEEUCCI57140.2023.10134121",
+      "citations": 1,
+      "eid": "2-s2.0-85161532486",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161532486"
+    },
+    {
       "title": "Machine Learning Techniques for the Detection of Imposters in Credit Card Fraudulence",
       "source": "2023 World Conference on Communication and Computing Wconf 2023",
       "date": "2023-01-01",
@@ -206,6 +215,15 @@
       "citations": 0,
       "eid": "2-s2.0-85173031873",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85173031873"
+    },
+    {
+      "title": "Automated Crop Recommender System using Pattern Classifiers",
+      "source": "Idciot 2023 International Conference on Intelligent Data Communication Technologies and Internet of Things Proceedings",
+      "date": "2023-01-01",
+      "doi": "10.1109/IDCIoT56793.2023.10053451",
+      "citations": 1,
+      "eid": "2-s2.0-85149752791",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85149752791"
     },
     {
       "title": "Implementation of Faulty Pipe Detection System for Generalized Locations",
@@ -226,13 +244,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85168119648"
     },
     {
-      "title": "Design of Crop Recommender System using Machine Learning and IoT",
-      "source": "7th International Conference on Trends in Electronics and Informatics Icoei 2023 Proceedings",
+      "title": "Technologies and Therapies for Disease Diagnosis and Treatment",
+      "source": "Eai Springer Innovations in Communication and Computing",
       "date": "2023-01-01",
-      "doi": "10.1109/ICOEI56765.2023.10125963",
-      "citations": 3,
-      "eid": "2-s2.0-85161151045",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161151045"
+      "doi": "10.1007/978-3-031-27700-9_11",
+      "citations": 1,
+      "eid": "2-s2.0-85161937086",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161937086"
     },
     {
       "title": "Cloud IoT based Poultry Environment Analysis System",
@@ -244,24 +262,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85152456869"
     },
     {
-      "title": "Automated Crop Recommender System using Pattern Classifiers",
-      "source": "Idciot 2023 International Conference on Intelligent Data Communication Technologies and Internet of Things Proceedings",
-      "date": "2023-01-01",
-      "doi": "10.1109/IDCIoT56793.2023.10053451",
-      "citations": 1,
-      "eid": "2-s2.0-85149752791",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85149752791"
-    },
-    {
-      "title": "Accent Conversion using Neural Style Transfer",
-      "source": "2023 International Conference on Recent Advances in Electrical Electronics Ubiquitous Communication and Computational Intelligence Raeeucci 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/RAEEUCCI57140.2023.10134121",
-      "citations": 0,
-      "eid": "2-s2.0-85161532486",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161532486"
-    },
-    {
       "title": "Benefit of Foot Thermogram Analysis in the Treatment of Diabetic Foot Ulcer: A Systematic Review",
       "source": "Biomedical Research and Therapy",
       "date": "2022-05-31",
@@ -269,15 +269,6 @@
       "citations": 7,
       "eid": "2-s2.0-85149723334",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85149723334"
-    },
-    {
-      "title": "Performance Evaluation of LiNbO3-based Negative Capacitance Field Effect Transistors (NCFETs)",
-      "source": "Proceedings of 2022 IEEE International Conference of Electron Devices Society Kolkata Chapter Edkcon 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/EDKCON56221.2022.10032849",
-      "citations": 1,
-      "eid": "2-s2.0-85148697496",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148697496"
     },
     {
       "title": "Arduino Uno and Ultrasonic Sensor Based Social Distancing Model to Avoid Spread of COVID",
@@ -289,13 +280,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85144594842"
     },
     {
-      "title": "Analysis of a single server batch arrival non-Markovian queuing model approach in classification of foot thermograms",
-      "source": "International Journal of Mathematical Modelling and Numerical Optimisation",
+      "title": "Performance Evaluation of LiNbO3-based Negative Capacitance Field Effect Transistors (NCFETs)",
+      "source": "Proceedings of 2022 IEEE International Conference of Electron Devices Society Kolkata Chapter Edkcon 2022",
       "date": "2022-01-01",
-      "doi": "10.1504/ijmmno.2022.126555",
-      "citations": 13,
-      "eid": "2-s2.0-85142509043",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85142509043"
+      "doi": "10.1109/EDKCON56221.2022.10032849",
+      "citations": 1,
+      "eid": "2-s2.0-85148697496",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148697496"
     },
     {
       "title": "An empirical study on the effect of repeated online/offline transitions on student satisfaction",
@@ -316,6 +307,15 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85135465917"
     },
     {
+      "title": "Analysis of a single server batch arrival non-Markovian queuing model approach in classification of foot thermograms",
+      "source": "International Journal of Mathematical Modelling and Numerical Optimisation",
+      "date": "2022-01-01",
+      "doi": "10.1504/ijmmno.2022.126555",
+      "citations": 13,
+      "eid": "2-s2.0-85142509043",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85142509043"
+    },
+    {
       "title": "Classification of Foot Thermograms using Texture Features and Support Vector Machine",
       "source": "Proceedings of the 2nd International Conference on Electronics and Sustainable Communication Systems Icesc 2021",
       "date": "2021-08-04",
@@ -323,15 +323,6 @@
       "citations": 10,
       "eid": "2-s2.0-85116660478",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85116660478"
-    },
-    {
-      "title": "Statistical Analysis on Breast Thermograms using Logistic Regression for Image Classification",
-      "source": "2021 IEEE Bombay Section Signature Conference Ibssc 2021",
-      "date": "2021-01-01",
-      "doi": "10.1109/IBSSC53889.2021.9673168",
-      "citations": 5,
-      "eid": "2-s2.0-85125087150",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85125087150"
     },
     {
       "title": "Automated RoI Extraction and Pattern Classification of Breast Thermograms",
@@ -343,13 +334,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85123375861"
     },
     {
-      "title": "The Efficacy of Capturing Lateral View Breast Thermograms",
-      "source": "2019 International Conference on Clean Energy and Energy Efficient Electronics Circuit for Sustainable Development Incces 2019",
-      "date": "2019-12-01",
-      "doi": "10.1109/INCCES47820.2019.9167722",
-      "citations": 0,
-      "eid": "2-s2.0-85091508667",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85091508667"
+      "title": "Statistical Analysis on Breast Thermograms using Logistic Regression for Image Classification",
+      "source": "2021 IEEE Bombay Section Signature Conference Ibssc 2021",
+      "date": "2021-01-01",
+      "doi": "10.1109/IBSSC53889.2021.9673168",
+      "citations": 5,
+      "eid": "2-s2.0-85125087150",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85125087150"
     },
     {
       "title": "Analysis of Transform-Based Features on Lateral View Breast Thermograms",
@@ -359,6 +350,15 @@
       "citations": 10,
       "eid": "2-s2.0-85067039088",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85067039088"
+    },
+    {
+      "title": "The Efficacy of Capturing Lateral View Breast Thermograms",
+      "source": "2019 International Conference on Clean Energy and Energy Efficient Electronics Circuit for Sustainable Development Incces 2019",
+      "date": "2019-12-01",
+      "doi": "10.1109/INCCES47820.2019.9167722",
+      "citations": 0,
+      "eid": "2-s2.0-85091508667",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85091508667"
     },
     {
       "title": "Classification of Breast Thermograms Using Statistical Moments and Entropy Features with Probabilistic Neural Networks",

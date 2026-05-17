@@ -19,15 +19,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105035216777"
     },
     {
-      "title": "Early-Stage Brain Tumor Detection for Glioblastoma using Deep LSTM-CNN",
-      "source": "16th International Conference on Advances in Computing Control and Telecommunication Technologies Act 2025",
-      "date": "2025-01-01",
-      "doi": "",
-      "citations": 0,
-      "eid": "2-s2.0-105034865598",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034865598"
-    },
-    {
       "title": "Advanced Deep Learning Model for Brain Stroke Prediction using Optimized Neural Networks",
       "source": "16th International Conference on Advances in Computing Control and Telecommunication Technologies Act 2025",
       "date": "2025-01-01",
@@ -35,6 +26,15 @@
       "citations": 0,
       "eid": "2-s2.0-105034831298",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105034831298"
+    },
+    {
+      "title": "Early-Stage Brain Tumor Detection for Glioblastoma using Deep LSTM-CNN",
+      "source": "16th International Conference on Advances in Computing Control and Telecommunication Technologies Act 2025",
+      "date": "2025-01-01",
+      "doi": "",
+      "citations": 0,
+      "eid": "2-s2.0-105034865598",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034865598"
     },
     {
       "title": "A Survey Paper on Solar-Powered Induction Cooking Systems",
@@ -82,6 +82,24 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85184331425"
     },
     {
+      "title": "Reliable and Efficient Routing for Water Quality Monitoring in Underwater WSN",
+      "source": "2024 2nd International Conference on Computer Communication and Control Ic4 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/IC457434.2024.10486620",
+      "citations": 34,
+      "eid": "2-s2.0-85190509270",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85190509270"
+    },
+    {
+      "title": "Deep Learning-based Intelligent System for Managing Waste Made of Plastic",
+      "source": "15th International Conference on Advances in Computing Control and Telecommunication Technologies Act 2024",
+      "date": "2024-01-01",
+      "doi": "",
+      "citations": 0,
+      "eid": "2-s2.0-85209070157",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85209070157"
+    },
+    {
       "title": "Voice Control Assistant",
       "source": "15th International Conference on Advances in Computing Control and Telecommunication Technologies Act 2024",
       "date": "2024-01-01",
@@ -100,13 +118,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85186221228"
     },
     {
-      "title": "Reliable and Efficient Routing for Water Quality Monitoring in Underwater WSN",
-      "source": "2024 2nd International Conference on Computer Communication and Control Ic4 2024",
+      "title": "A Survey on Solar Powered Automatic Drainage Cleaning Systems",
+      "source": "Proceedings of 5th International Conference on Iot Based Control Networks and Intelligent Systems Icicnis 2024",
       "date": "2024-01-01",
-      "doi": "10.1109/IC457434.2024.10486620",
-      "citations": 34,
-      "eid": "2-s2.0-85190509270",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85190509270"
+      "doi": "10.1109/ICICNIS64247.2024.10823245",
+      "citations": 0,
+      "eid": "2-s2.0-85217175377",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85217175377"
     },
     {
       "title": "Leaf Disease Detection",
@@ -118,22 +136,13 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85209144236"
     },
     {
-      "title": "Deep Learning-based Intelligent System for Managing Waste Made of Plastic",
-      "source": "15th International Conference on Advances in Computing Control and Telecommunication Technologies Act 2024",
-      "date": "2024-01-01",
-      "doi": "",
-      "citations": 0,
-      "eid": "2-s2.0-85209070157",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85209070157"
-    },
-    {
-      "title": "A Survey on Solar Powered Automatic Drainage Cleaning Systems",
-      "source": "Proceedings of 5th International Conference on Iot Based Control Networks and Intelligent Systems Icicnis 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICICNIS64247.2024.10823245",
-      "citations": 0,
-      "eid": "2-s2.0-85217175377",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85217175377"
+      "title": "Cricket Shot Detection using 2D CNN",
+      "source": "Proceedings of the 7th International Conference on Intelligent Computing and Control Systems Iciccs 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICICCS56967.2023.10142272",
+      "citations": 11,
+      "eid": "2-s2.0-85163832299",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163832299"
     },
     {
       "title": "Website Design and Development Using Advance Technology React-Js",
@@ -163,15 +172,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85173622605"
     },
     {
-      "title": "Cricket Shot Detection using 2D CNN",
-      "source": "Proceedings of the 7th International Conference on Intelligent Computing and Control Systems Iciccs 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICICCS56967.2023.10142272",
-      "citations": 11,
-      "eid": "2-s2.0-85163832299",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163832299"
-    },
-    {
       "title": "Enhanced Deep Hierarchal GRU & BILSTM using Data Augmentation and Spatial Features for Tamil Emotional Speech Recognition",
       "source": "International Journal of Modern Education and Computer Science",
       "date": "2022-06-01",
@@ -179,24 +179,6 @@
       "citations": 14,
       "eid": "2-s2.0-85136098791",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85136098791"
-    },
-    {
-      "title": "Prediction of Malignant Lung Nodules in CT Scan Images Using CNN and Feature Selection Algorithms",
-      "source": "Proceedings International Conference on Applied Artificial Intelligence and Computing Icaaic 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICAAIC53929.2022.9792680",
-      "citations": 3,
-      "eid": "2-s2.0-85133407464",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85133407464"
-    },
-    {
-      "title": "IoT based Energy Assistive Meter to Analyse the Electricity usage in Commercial and Household uses via Wirelessly in a Cloud Network",
-      "source": "3rd International Conference on Power Energy Control and Transmission Systems Icpects 2022 Proceedings",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICPECTS56089.2022.10046793",
-      "citations": 1,
-      "eid": "2-s2.0-85150076953",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85150076953"
     },
     {
       "title": "Hadoop Map Reduce Techniques: Simplified Data Processing on Large Clusters with Data Mining",
@@ -208,6 +190,24 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85146439939"
     },
     {
+      "title": "IoT based Energy Assistive Meter to Analyse the Electricity usage in Commercial and Household uses via Wirelessly in a Cloud Network",
+      "source": "3rd International Conference on Power Energy Control and Transmission Systems Icpects 2022 Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICPECTS56089.2022.10046793",
+      "citations": 1,
+      "eid": "2-s2.0-85150076953",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85150076953"
+    },
+    {
+      "title": "Prediction of Malignant Lung Nodules in CT Scan Images Using CNN and Feature Selection Algorithms",
+      "source": "Proceedings International Conference on Applied Artificial Intelligence and Computing Icaaic 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICAAIC53929.2022.9792680",
+      "citations": 3,
+      "eid": "2-s2.0-85133407464",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85133407464"
+    },
+    {
       "title": "Enhanced deep hierarchical long short-term memory and bidirectional long short-term memory for tamil emotional speech recognition using data augmentation and spatial features",
       "source": "Pertanika Journal of Science and Technology",
       "date": "2021-10-01",
@@ -217,15 +217,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85119611127"
     },
     {
-      "title": "Speech emotion recognition using deep learning lstm for tamil language",
-      "source": "Pertanika Journal of Science and Technology",
-      "date": "2021-07-01",
-      "doi": "10.47836/pjst.29.3.33",
-      "citations": 11,
-      "eid": "2-s2.0-85112035095",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85112035095"
-    },
-    {
       "title": "An analysis of emotional speech recognition for tamil language using deep learning gate recurrent unit",
       "source": "Pertanika Journal of Science and Technology",
       "date": "2021-07-01",
@@ -233,6 +224,15 @@
       "citations": 6,
       "eid": "2-s2.0-85112043302",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85112043302"
+    },
+    {
+      "title": "Speech emotion recognition using deep learning lstm for tamil language",
+      "source": "Pertanika Journal of Science and Technology",
+      "date": "2021-07-01",
+      "doi": "10.47836/pjst.29.3.33",
+      "citations": 11,
+      "eid": "2-s2.0-85112035095",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85112035095"
     },
     {
       "title": "Lane detector for driver assistance systems",
@@ -248,7 +248,7 @@
       "source": "Education Sciences",
       "date": "2020-12-01",
       "doi": "10.3390/educsci10120376",
-      "citations": 27,
+      "citations": 28,
       "eid": "2-s2.0-85097568312",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85097568312"
     },
@@ -298,15 +298,6 @@
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85067866198"
     },
     {
-      "title": "Reversible image watermarking technique using LCWT and DGT",
-      "source": "International Journal of Engineering and Technology Uae",
-      "date": "2018-01-01",
-      "doi": "",
-      "citations": 0,
-      "eid": "2-s2.0-85047639243",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85047639243"
-    },
-    {
       "title": "Channel estimation for long term evolution downlink receiver system performance",
       "source": "International Journal of Engineering and Technology Uae",
       "date": "2018-01-01",
@@ -314,6 +305,15 @@
       "citations": 0,
       "eid": "2-s2.0-85047624314",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85047624314"
+    },
+    {
+      "title": "Reversible image watermarking technique using LCWT and DGT",
+      "source": "International Journal of Engineering and Technology Uae",
+      "date": "2018-01-01",
+      "doi": "",
+      "citations": 0,
+      "eid": "2-s2.0-85047639243",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85047639243"
     },
     {
       "title": "A PIC based energy balanced routing for wireless sensor networks",

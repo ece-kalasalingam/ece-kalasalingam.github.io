@@ -23,3 +23,9 @@
 - Files: `.github/workflows/sync_changed_faculty_sheets.yaml`, `.github/workflows/update_publications.yaml`
 - Details: Added explicit `token: ${{ secrets.GITHUB_TOKEN }}` to both `actions/configure-pages@v6` and `actions/deploy-pages@v5`, and set `enablement: true` on each `configure-pages` step for consistent Pages setup/auth behavior across workflows.
 - Revert: No
+
+## 2026-05-23 17:30 IST | author: Codex | type: fix
+- Summary: Restored vCard URL population by extracting the first valid URL from mixed website field text.
+- Files: `assets/js/faculty.js`
+- Details: Replaced strict single-value website parsing with `extractFirstSafeUrl()` so vCard generation can pick the first valid HTTPS/`www.` URL even when the profile website field contains multiple links or surrounding text, then fallback to canonical slug URL only when no safe URL is found.
+- Revert: No

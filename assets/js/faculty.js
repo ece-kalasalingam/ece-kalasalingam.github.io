@@ -105,8 +105,8 @@ function buildFacultyVcard(facultyMeta, facultyData) {
   const emails = resolveFacultyEmails(facultyMeta, facultyData);
   const phones = parsePhones(phoneRaw);
   const fallbackSlugUrl = buildCanonicalFacultyProfileUrl(facultyMeta, facultyData);
-  const websiteCandidate = normalizeCandidateUrl(websiteRaw);
-  const profileUrl = isSafeExternalUrl(websiteCandidate) ? websiteCandidate : fallbackSlugUrl;
+  const websiteCandidate = extractFirstSafeUrl(websiteRaw);
+  const profileUrl = websiteCandidate || fallbackSlugUrl;
   const scopusId = String(facultyData?.scopus_id || facultyMeta?.scopus_id || "").trim();
 
   const lines = [
@@ -362,6 +362,27 @@ function normalizeCandidateUrl(rawValue) {
     return `https://${value}`;
   }
   return value;
+}
+
+function extractFirstSafeUrl(rawValue) {
+  const raw = String(rawValue || "").trim();
+  if (!raw) return "";
+
+  const directCandidate = normalizeCandidateUrl(raw);
+  if (isSafeExternalUrl(directCandidate)) {
+    return directCandidate;
+  }
+
+  const urlPattern = /(?:https?:\/\/|www\.)[^\s,;|<>"'()]+/gi;
+  const matches = raw.match(urlPattern) || [];
+  for (const match of matches) {
+    const candidate = normalizeCandidateUrl(match);
+    if (isSafeExternalUrl(candidate)) {
+      return candidate;
+    }
+  }
+
+  return "";
 }
 
 function appendSafeLinkedText(container, rawText) {

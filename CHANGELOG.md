@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-22 16:30 IST | author: JP | type: redesign
+- Summary: Complete homepage layout overhaul inspired by institutional university department sites (NUS ECE, JHU ECE, TAMU ECEN).
+- Files: `index.html`, `assets/css/home.css`
+- Details: Replaced dark gradient hero with a clean institutional layout: (1) thin identity header with university name + dept name separated by a 2px brand-blue bottom border; (2) white hero section with a short blue accent bar, large bold h1, and muted tagline; (3) 3-column resources row (Social Pages, Magazines, Faculty Directory) as cards with a 3px blue top border and hover lift — replacing hero CTA buttons entirely; (4) videos section with a ruled section header above the YouTube grid. Platform pills changed from pill to rectangular badge. Responsive: 2-col stacked on tablet (last card full-width), 1-col on mobile. Removed all gradient, circle, and ghost-button styles.
+- Revert: No
+
 ## 2026-05-22 15:30 IST | author: JP | type: tweak
 - Summary: Homepage now shows 6 recent YouTube videos only.
 - Files: `assets/js/home.js`, `api/social-feed.js`, `index.html`

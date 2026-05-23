@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https:; connect-src 'self' https://eceklu.in; frame-src https://www.youtube.com https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta name="description" content="ECE Department at Kalasalingam Academy of Research and Education — faculty profiles, research, and department updates.">
+  <meta name="description" content="Department of Electronics and Communication Engineering, Kalasalingam Academy of Research and Education.">
   <title>ECE Department — Kalasalingam University</title>
   <link rel="stylesheet" href="assets/css/common.css">
   <link rel="stylesheet" href="assets/css/home.css">
@@ -13,24 +13,47 @@
   <script src="assets/js/home.js" defer></script>
 </head>
 <body>
-  <header class="site-hero">
-    <div class="hero-inner">
-      <p class="hero-eyebrow">Kalasalingam Academy of Research and Education</p>
-      <h1>Department of Electronics &amp; Communication Engineering</h1>
-      <p class="hero-lead">Advancing knowledge in VLSI, signal processing, communications, and embedded systems through world-class research and teaching.</p>
-      <nav class="hero-nav" aria-label="Quick links">
-        <a href="https://linktr.ee/kalasalingam.ece" class="hero-btn" target="_blank" rel="noopener noreferrer">All Social Pages</a>
-        <a href="https://magazines.eceklu.in/" class="hero-btn hero-btn-outline" target="_blank" rel="noopener noreferrer">Magazines</a>
-      </nav>
-    </div>
+
+  <header class="site-header">
+    <p class="sh-univ">Kalasalingam Academy of Research and Education</p>
+    <p class="sh-dept">Department of Electronics &amp; Communication Engineering</p>
   </header>
 
   <main>
-    <div class="section-header">
-      <h2>Latest Updates</h2>
-      <p>Recent videos from our official YouTube channel.</p>
-    </div>
-    <div id="content" role="status" aria-live="polite">Loading recent posts...</div>
+
+    <section class="hero">
+      <div class="hero-accent"></div>
+      <h1>Electronics &amp; Communication Engineering</h1>
+      <p class="hero-tagline">Advancing knowledge in VLSI, signal processing, embedded systems, and communications through rigorous research and industry-focused education.</p>
+    </section>
+
+    <section class="resources" aria-label="Department resources">
+      <a href="https://linktr.ee/kalasalingam.ece" class="res-card" target="_blank" rel="noopener noreferrer">
+        <span class="res-label">Social Pages</span>
+        <span class="res-desc">All department social media in one place</span>
+        <span class="res-arrow" aria-hidden="true">&#8599;</span>
+      </a>
+      <a href="https://magazines.eceklu.in/" class="res-card" target="_blank" rel="noopener noreferrer">
+        <span class="res-label">Magazines</span>
+        <span class="res-desc">Department publications and newsletters</span>
+        <span class="res-arrow" aria-hidden="true">&#8599;</span>
+      </a>
+      <a href="directory/" class="res-card">
+        <span class="res-label">Faculty Directory</span>
+        <span class="res-desc">Meet our professors and researchers</span>
+        <span class="res-arrow" aria-hidden="true">&#8594;</span>
+      </a>
+    </section>
+
+    <section class="videos">
+      <div class="videos-header">
+        <h2>Latest Videos</h2>
+        <p>Recent from our official YouTube channel.</p>
+      </div>
+      <div id="content" role="status" aria-live="polite">Loading recent posts...</div>
+    </section>
+
   </main>
+
 </body>
 </html>

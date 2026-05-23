@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-22 15:00 IST | author: JP | type: tweak
+- Summary: Redesigned homepage with a modern hero section and refined social feed card styles.
+- Files: `index.html`, `assets/css/home.css`
+- Details: Replaced minimal `.home-header` with a full-width gradient hero (`.site-hero`) featuring the department title, university eyebrow text, a one-line tagline, and a Faculty Directory CTA button with a hover-lift effect. Extracted the social feed into a `<main>` block with a labelled section header. Refreshed `.feed-card` styles with layered `box-shadow`, a `translateY(-3px)` hover lift, refined `.platform-pill` using brand-blue CSS tokens, and a top-border separator on the `.feed-actions` row. Added `backdrop-filter: blur(4px)` to the video modal backdrop. Removed obsolete `.home-header`, `.eyebrow`, `.lead`, `.home-nav`, and bare `h1` rules. All JS hook points (`#content`, `.feed-grid`, `.feed-card`, `.feed-watch-btn`, `#video-modal`, etc.) are unchanged.
+- Revert: No
+
 ## 2026-05-23 18:37 IST | author: Codex | type: fix
 - Summary: Hardened Google Drive photo rendering by trying multiple embeddable image URL variants.
 - Files: `assets/js/common.js`

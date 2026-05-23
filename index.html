@@ -5,22 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https:; connect-src 'self' https://eceklu.in; frame-src https://www.youtube.com https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>ECE Department Social Feed</title>
+  <meta name="description" content="ECE Department at Kalasalingam Academy of Research and Education — faculty profiles, research, and department updates.">
+  <title>ECE Department — Kalasalingam University</title>
   <link rel="stylesheet" href="assets/css/common.css">
   <link rel="stylesheet" href="assets/css/home.css">
   <script src="assets/js/common.js" defer></script>
   <script src="assets/js/home.js" defer></script>
 </head>
 <body>
-  <header class="home-header">
-    <p class="eyebrow">Kalasalingam University</p>
-    <h1>ECE Department Updates</h1>
-    <p class="lead">Recent posts from our official LinkedIn and YouTube accounts.</p>
-    <nav class="home-nav" aria-label="Primary">
-      <a href="directory/">Faculty Directory</a>
-    </nav>
+  <header class="site-hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Kalasalingam Academy of Research and Education</p>
+      <h1>Department of Electronics &amp; Communication Engineering</h1>
+      <p class="hero-lead">Advancing knowledge in VLSI, signal processing, communications, and embedded systems through world-class research and teaching.</p>
+      <nav class="hero-nav" aria-label="Quick links">
+        <a href="directory/" class="hero-btn">Faculty Directory</a>
+      </nav>
+    </div>
   </header>
 
-  <main id="content" role="status" aria-live="polite">Loading recent posts...</main>
+  <main>
+    <div class="section-header">
+      <h2>Latest Updates</h2>
+      <p>Recent posts from our official LinkedIn and YouTube channels.</p>
+    </div>
+    <div id="content" role="status" aria-live="polite">Loading recent posts...</div>
+  </main>
 </body>
 </html>

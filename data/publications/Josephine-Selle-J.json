@@ -8,7 +8,11 @@
       "citations": 0,
       "eid": "2-s2.0-105030850242",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105030850242",
-      "abstract": {}
+      "abstract": {
+        "text": "Engineering education increasingly emphasizes the need for pedagogies that move beyond rote learning to foster problem-solving, teamwork, and innovation. Project and Problem-Based Learning (P2BL) provides such a framework by integrating authentic tasks within the curriculum. This study reports on the design, implementation, and evaluation of P2BL in the IoT Sensors and Devices course for second-year Electronics and Communication Engineering students. A total of 123 students participated, with 60 enrolled in the P2BL section and 63 in a lecture-based control group. The P2BL design included quizzes, laboratory tasks, idea pitching, hackathon participation, and prototype expo evaluation. Comparative quantitative analyses showed that the P2BL group outperformed the control group in quizzes (t(118) = 3.50, p = .001) and laboratory performance (t(118) = 5.80, p &lt; .001), though composite performance indices were comparable. One-sample t-tests against a benchmark of 70/100 indicated that P2BL students significantly exceeded expectations in Pitch (M = 74.2, p = .009), Hackathon (M = 77.0, p &lt; .001), and Prototype Expo (M = 74.9, p &lt; .001). Correlation analysis revealed that Pitch scores were the strongest predictor of Prototype quality (r = 0.80), followed by Lab (r = 0.40), while Quiz showed only a weak association (r = 0.30). Qualitative reflections reinforced these findings, with themes of teamwork, creativity, and applied problem-solving frequently reported. Overall, the study demonstrates that P2BL strengthens conceptual learning while fostering innovation and teamwork and can be embedded within existing curricula without altering syllabus structures.",
+        "source": "crossref",
+        "fetched_at": "2026-05-23T17:27:47+00:00"
+      }
     },
     {
       "title": "Intelligent Energy Meter with Alerting System",
@@ -28,7 +32,11 @@
       "citations": 4,
       "eid": "2-s2.0-105006742089",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105006742089",
-      "abstract": {}
+      "abstract": {
+        "text": "Nowadays, there is a growing interest in group activities as interdisciplinary and teamwork raises effective learning among the students than the conventional teaching methodology. It has become a huge challenge to foster learning interest among students and engage them during long hours of problem-solving courses. This study explores the effects of Student Teams Achievement Divisions (STAD) as a cooperative learning technique in classroom teaching, on student learning experiences focusing on engineering students' learning experiences within team dynamics. Through an online survey question, (n=89) responses were collected that included four main categorical questions. The questions were divided into the following four input attributes such as ‘Student – Professor Interaction’, ‘Student – Team Interaction’, ‘Learning Tool’ and ‘Assessment Methodology’ and each of these inputs were further divided into sub attributes. Regression analysis and correlation was examined to analyze the association between the inputs and the Student Learning Experience as the output for the purpose of this research. The findings indicate that STAD promoted positive correlation with (R2 = 0.71) on student learning experience for the input attributes like ‘Student – Team Interaction’ and (R2 = 0.77) for ‘Assessment’ respectively where the students exhibited problem solving skills particularly in the context of the control systems course, suggesting that STAD methodology fosters a conducive environment for active learning and motivation within engineering education.",
+        "source": "crossref",
+        "fetched_at": "2026-05-23T17:27:48+00:00"
+      }
     },
     {
       "title": "An IoT-Enabled Whistle Counter System for Automated Monitoring and Control in the Cookers",

@@ -7,61 +7,8 @@
       "doi": "10.1007/978-3-032-16102-4_10",
       "citations": 0,
       "eid": "2-s2.0-105036664816",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105036664816"
-    },
-    {
-      "title": "MedQuery: A Comprehensive AI-Powered Healthcare Platform with Multi-Model Medical Consultation and Integrated Patient Management",
-      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICECMSN68058.2025.11382615",
-      "citations": 0,
-      "eid": "2-s2.0-105035552915",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035552915"
-    },
-    {
-      "title": "Hybrid Eye Disease Prediction using Fundus Images and Patient Metadata in MATLAB",
-      "source": "Proceedings of 5th International Conference on Ubiquitous Computing and Intelligent Information Systems Icuis 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICUIS67429.2025.11380623",
-      "citations": 0,
-      "eid": "2-s2.0-105034892696",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034892696"
-    },
-    {
-      "title": "Enhancing Device Performance using GaAs Substrate and Al2O3 Gate Oxide in Double Gate MOSFETs",
-      "source": "Proceedings of the 7th International Conference on Intelligent Sustainable Systems Iciss 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICISS63372.2025.11076416",
-      "citations": 0,
-      "eid": "2-s2.0-105012216521",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105012216521"
-    },
-    {
-      "title": "Effective Detection of Glaucoma Using Multilevel Cnn Classification Approach",
-      "source": "Proceedings of the 9th International Conference on Inventive Systems and Control Icisc 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICISC65841.2025.11188114",
-      "citations": 0,
-      "eid": "2-s2.0-105020958328",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105020958328"
-    },
-    {
-      "title": "Child Safety Net: An IoT-Driven Wearable Solution using Arduino UNO",
-      "source": "Proceedings of the 7th International Conference on Innovative Data Communication Technologies and Application Icidca 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICIDCA66325.2025.11280353",
-      "citations": 0,
-      "eid": "2-s2.0-105031401931",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105031401931"
-    },
-    {
-      "title": "Advanced Vehicle Safety and Driver Health Monitoring System",
-      "source": "Proceedings of 7th International Conference on Inventive Material Science and Applications Icima 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICIMA64861.2025.11074155",
-      "citations": 0,
-      "eid": "2-s2.0-105013847187",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105013847187"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105036664816",
+      "abstract": {}
     },
     {
       "title": "AdaptiveRL-MAC: A Reinforcement Learning-Based Scalable and Resilient MAC Protocol for Underwater Wireless Sensor Networks",
@@ -70,7 +17,48 @@
       "doi": "10.1109/C2I666499.2025.11366968",
       "citations": 0,
       "eid": "2-s2.0-105034368172",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034368172"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034368172",
+      "abstract": {}
+    },
+    {
+      "title": "Child Safety Net: An IoT-Driven Wearable Solution using Arduino UNO",
+      "source": "Proceedings of the 7th International Conference on Innovative Data Communication Technologies and Application Icidca 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICIDCA66325.2025.11280353",
+      "citations": 0,
+      "eid": "2-s2.0-105031401931",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105031401931",
+      "abstract": {}
+    },
+    {
+      "title": "Hybrid Eye Disease Prediction using Fundus Images and Patient Metadata in MATLAB",
+      "source": "Proceedings of 5th International Conference on Ubiquitous Computing and Intelligent Information Systems Icuis 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICUIS67429.2025.11380623",
+      "citations": 0,
+      "eid": "2-s2.0-105034892696",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034892696",
+      "abstract": {}
+    },
+    {
+      "title": "Enhancing Device Performance using GaAs Substrate and Al2O3 Gate Oxide in Double Gate MOSFETs",
+      "source": "Proceedings of the 7th International Conference on Intelligent Sustainable Systems Iciss 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICISS63372.2025.11076416",
+      "citations": 0,
+      "eid": "2-s2.0-105012216521",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105012216521",
+      "abstract": {}
+    },
+    {
+      "title": "Effective Detection of Glaucoma Using Multilevel Cnn Classification Approach",
+      "source": "Proceedings of the 9th International Conference on Inventive Systems and Control Icisc 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICISC65841.2025.11188114",
+      "citations": 0,
+      "eid": "2-s2.0-105020958328",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105020958328",
+      "abstract": {}
     },
     {
       "title": "A Spatio-Temporal Generative Adversarial Network for High-Resolution Rainfall Nowcasting",
@@ -79,7 +67,28 @@
       "doi": "10.1109/ICOIICS67115.2025.11390414",
       "citations": 0,
       "eid": "2-s2.0-105036689561",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105036689561"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105036689561",
+      "abstract": {}
+    },
+    {
+      "title": "Advanced Vehicle Safety and Driver Health Monitoring System",
+      "source": "Proceedings of 7th International Conference on Inventive Material Science and Applications Icima 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICIMA64861.2025.11074155",
+      "citations": 0,
+      "eid": "2-s2.0-105013847187",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105013847187",
+      "abstract": {}
+    },
+    {
+      "title": "MedQuery: A Comprehensive AI-Powered Healthcare Platform with Multi-Model Medical Consultation and Integrated Patient Management",
+      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICECMSN68058.2025.11382615",
+      "citations": 0,
+      "eid": "2-s2.0-105035552915",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035552915",
+      "abstract": {}
     },
     {
       "title": "Effective recognition of glaucoma using SIFT and RFSO classifier",
@@ -88,7 +97,8 @@
       "doi": "10.1007/s11042-023-17109-8",
       "citations": 4,
       "eid": "2-s2.0-85173731193",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85173731193"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85173731193",
+      "abstract": {}
     },
     {
       "title": "Hybrid muddy electric fish and grasshopper optimization algorithm (MEF-GOA) based CNN for detection and severity differentiation of glaucoma in retinal fundus image",
@@ -97,7 +107,8 @@
       "doi": "10.3233/JIFS-221262",
       "citations": 0,
       "eid": "2-s2.0-85147988634",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85147988634"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85147988634",
+      "abstract": {}
     },
     {
       "title": "Low flicker noise asic preamplifier designed in cmos technology for neural network",
@@ -106,7 +117,8 @@
       "doi": "",
       "citations": 0,
       "eid": "2-s2.0-84942764985",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/84942764985"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/84942764985",
+      "abstract": {}
     }
   ]
 }

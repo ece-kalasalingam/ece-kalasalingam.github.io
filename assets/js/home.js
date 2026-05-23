@@ -39,7 +39,7 @@ function postCard(item) {
 
 async function loadSocialFeed() {
   const root = document.getElementById("content");
-  const endpoint = `${window.location.origin}/api/social-feed?limit=12`;
+  const endpoint = `${window.location.origin}/api/social-feed?limit=4`;
 
   const res = await fetch(endpoint, { cache: "no-cache" });
   if (!res.ok) {
@@ -63,3 +63,4 @@ loadSocialFeed().catch((error) => {
   root.innerHTML = '<p class="feed-meta">Unable to load social feed at the moment. Please try again later.</p>';
   console.error(error);
 });
+

@@ -119,3 +119,9 @@
 - Files: `index.html`, `directory/index.html`, `assets/js/home.js`, `assets/css/home.css`, `assets/js/directory.js`, `assets/css/directory.css`, `faculty/index.html`, `assets/css/faculty.css`, `api/social-feed.js`, `api/README.md`, `README.md`, `.github/workflows/deploy_site_on_content_change.yaml`, `assets/js/index.js` (deleted), `assets/css/index.css` (deleted)
 - Details: Root page now renders LinkedIn/YouTube social posts by calling `GET /api/social-feed?limit=<n>`, with loading/error/empty states and post cards. Existing faculty listing logic/styles were moved from root assets to dedicated directory assets and route (`/directory/`), keeping profile URLs at `/faculty/?faculty=<slug>`. Removed the "Back to Faculty Directory" link from faculty profile page and dropped obsolete `.back` styling. Added backend endpoint implementation (`api/social-feed.js`) with env-secret based LinkedIn/YouTube integration and normalized response contract, plus backend setup docs in `api/README.md`. Updated deploy workflow path filters and top-level README route documentation.
 - Revert: No
+
+## 2026-05-23 19:20 IST | author: Codex | type: tweak
+- Summary: Reduced homepage social feed fetch size from 12 to 4 recent items.
+- Files: `assets/js/home.js`
+- Details: Updated the home feed endpoint query from `limit=12` to `limit=4` so the homepage now displays only the most recent four posts/videos.
+- Revert: No

@@ -125,3 +125,9 @@
 - Files: `assets/js/home.js`
 - Details: Updated the home feed endpoint query from `limit=12` to `limit=4` so the homepage now displays only the most recent four posts/videos.
 - Revert: No
+
+## 2026-05-23 19:35 IST | author: Codex | type: feature
+- Summary: Added in-site YouTube playback modal for social feed cards.
+- Files: `assets/js/home.js`, `assets/css/home.css`, `index.html`
+- Details: Implemented homepage modal/lightbox video player for YouTube items so videos can be watched without leaving the site. Added watch-in-site action for YouTube cards, ESC/backdrop/close-button handling, iframe lifecycle reset on close, and modal styling. Updated home CSP to allow YouTube frame embedding (`frame-src` for `youtube.com` and `youtube-nocookie.com`).
+- Revert: No

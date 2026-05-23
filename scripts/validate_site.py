@@ -28,6 +28,20 @@ def is_valid_photo_url(value: str) -> bool:
     return bool(re.fullmatch(r"[A-Za-z0-9_-]{20,}", raw))
 
 
+def photo_url_debug_summary(value: str) -> str:
+    raw = str(value)
+    trimmed = raw.strip()
+    extracted_match = re.search(r"https://[^\s\"')]+", trimmed, flags=re.IGNORECASE)
+    extracted_url = extracted_match.group(0) if extracted_match else ""
+    first_char = f"U+{ord(raw[0]):04X}" if raw else "n/a"
+    trimmed_first_char = f"U+{ord(trimmed[0]):04X}" if trimmed else "n/a"
+    return (
+        f"raw_repr={raw!r}; trimmed_repr={trimmed!r}; raw_len={len(raw)}; trimmed_len={len(trimmed)}; "
+        f"first_char={first_char}; trimmed_first_char={trimmed_first_char}; "
+        f"contains_https={bool(extracted_url)}; extracted_url={extracted_url!r}"
+    )
+
+
 def load_json(path: Path) -> object:
     try:
         return json.loads(path.read_text(encoding="utf-8"))
@@ -133,7 +147,10 @@ def validate_data_files(repo_root: Path, faculty_list: list[FacultyRecord], allo
             require(isinstance(photo_url, str), f"{data_path} 'photo_url' must be a string when present")
             require(
                 is_valid_photo_url(photo_url),
-                f"{data_path} 'photo_url' must be an https URL or Google Drive file id",
+                (
+                    f"{data_path} 'photo_url' must be an https URL or Google Drive file id | "
+                    f"debug: {photo_url_debug_summary(photo_url)}"
+                ),
             )
 
         has_inline_publications = isinstance(data_raw.get("publications"), list)

@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 2026-05-23 18:15 IST | author: Codex | type: fix
+- Summary: Restored strict `photo_url` validation and added detailed debug trace fields on failure.
+- Files: `scripts/validate_site.py`
+- Details: Reverted warning-only handling for invalid `photo_url` values and now fail validation with an expanded debug summary (raw/trimmed repr, lengths, first-character codepoints, HTTPS extraction status, and extracted URL token) to diagnose hidden characters or malformed sheet cell content in CI.
+- Revert: Yes (reverts warning-only behavior introduced at 18:10 IST)
+
+## 2026-05-23 18:10 IST | author: Codex | type: fix
+- Summary: Changed invalid `photo_url` validation from hard-failure to warning to prevent CI blockage.
+- Files: `scripts/validate_site.py`
+- Details: Updated data validation so malformed `photo_url` values emit a validation note instead of failing the workflow; runtime behavior remains safe because remote-photo failure already falls back to local image and initials placeholder.
+- Revert: No
+
 ## 2026-05-23 18:08 IST | author: Codex | type: fix
 - Summary: Relaxed `photo_url` validation to accept wrapped shared URLs emitted by Google Sheets.
 - Files: `scripts/validate_site.py`

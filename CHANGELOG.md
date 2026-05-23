@@ -113,3 +113,9 @@
 - Files: `assets/js/faculty.js`
 - Details: Replaced strict single-value website parsing with `extractFirstSafeUrl()` so vCard generation can pick the first valid HTTPS/`www.` URL even when the profile website field contains multiple links or surrounding text, then fallback to canonical slug URL only when no safe URL is found.
 - Revert: No
+
+## 2026-05-23 18:55 IST | author: Codex | type: feature
+- Summary: Replaced faculty-directory homepage with live social feed home, moved directory to `/directory/`, and removed profile back-link.
+- Files: `index.html`, `directory/index.html`, `assets/js/home.js`, `assets/css/home.css`, `assets/js/directory.js`, `assets/css/directory.css`, `faculty/index.html`, `assets/css/faculty.css`, `api/social-feed.js`, `api/README.md`, `README.md`, `.github/workflows/deploy_site_on_content_change.yaml`, `assets/js/index.js` (deleted), `assets/css/index.css` (deleted)
+- Details: Root page now renders LinkedIn/YouTube social posts by calling `GET /api/social-feed?limit=<n>`, with loading/error/empty states and post cards. Existing faculty listing logic/styles were moved from root assets to dedicated directory assets and route (`/directory/`), keeping profile URLs at `/faculty/?faculty=<slug>`. Removed the "Back to Faculty Directory" link from faculty profile page and dropped obsolete `.back` styling. Added backend endpoint implementation (`api/social-feed.js`) with env-secret based LinkedIn/YouTube integration and normalized response contract, plus backend setup docs in `api/README.md`. Updated deploy workflow path filters and top-level README route documentation.
+- Revert: No

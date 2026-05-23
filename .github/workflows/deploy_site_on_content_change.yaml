@@ -10,6 +10,8 @@ on:
       - "images/**"
       - "assets/**"
       - "faculty/**"
+      - "directory/**"
+      - "api/**"
       - "data/**"
       - ".github/workflows/deploy_site_on_content_change.yaml"
   workflow_dispatch:

@@ -1,10 +1,3 @@
-.back {
-  display: inline-block;
-  margin-bottom: 14px;
-  font-weight: 600;
-  font-size: 0.92rem;
-}
-
 .header {
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -555,9 +548,7 @@ body.modal-open {
   }
 }
 
-@media print {
-  .back,
-  .details-menu,
+@media print {  .details-menu,
   .details-content,
   .print-all-sections .controls,
   .print-all-sections .pager,
@@ -592,3 +583,4 @@ body.modal-open {
     min-height: auto;
   }
 }
+

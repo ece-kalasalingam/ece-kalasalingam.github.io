@@ -1,5 +1,5 @@
 async function loadFacultyList() {
-  const facultyRes = await fetch("faculty.json", { cache: "no-cache" });
+  const facultyRes = await fetch("../faculty.json", { cache: "no-cache" });
   if (!facultyRes.ok) {
     throw new Error("Unable to load faculty.json");
   }
@@ -13,7 +13,7 @@ async function loadFacultyList() {
       const slug = String(person?.slug || "").trim();
       if (!slug) return;
       try {
-        const detailsRes = await fetch(`data/${encodeURIComponent(slug)}.json`, { cache: "no-cache" });
+        const detailsRes = await fetch(`../data/${encodeURIComponent(slug)}.json`, { cache: "no-cache" });
         if (!detailsRes.ok) return;
         const details = await detailsRes.json();
         const photoUrl = String(details?.photo_url || "").trim();
@@ -40,7 +40,7 @@ async function loadFacultyList() {
   for (const person of faculty) {
     const card = document.createElement("a");
     card.className = "card";
-    card.href = `faculty/?${encodeURIComponent(person.slug || "")}`;
+    card.href = `../faculty/?faculty=${encodeURIComponent(person.slug || "")}`;
 
     const photoWrap = document.createElement("div");
     photoWrap.className = "photo-wrap card-photo";
@@ -55,7 +55,7 @@ async function loadFacultyList() {
     fallback.className = "photo-fallback";
 
     const remotePhotoUrl = photoUrlMap[person.slug] || person.photo_url || "";
-    attachFacultyPhoto(photo, fallback, person.slug || "", person.name || "", "images/faculty", remotePhotoUrl);
+    attachFacultyPhoto(photo, fallback, person.slug || "", person.name || "", "../images/faculty", remotePhotoUrl);
     photoWrap.appendChild(photo);
     photoWrap.appendChild(fallback);
 
@@ -80,3 +80,5 @@ loadFacultyList().catch(err => {
   container.textContent = "Failed to load faculty list.";
   console.error(err);
 });
+
+

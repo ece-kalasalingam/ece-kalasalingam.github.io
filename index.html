@@ -3,16 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https:; connect-src 'self' https://eceklu.in; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>ECE Faculty Directory</title>
+  <title>ECE Department Social Feed</title>
   <link rel="stylesheet" href="assets/css/common.css">
-  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/home.css">
   <script src="assets/js/common.js" defer></script>
-  <script src="assets/js/index.js" defer></script>
+  <script src="assets/js/home.js" defer></script>
 </head>
 <body>
-  <h1>ECE Faculty Directory</h1>
-  <div id="content" role="status" aria-live="polite">Loading...</div>
+  <header class="home-header">
+    <p class="eyebrow">Kalasalingam University</p>
+    <h1>ECE Department Updates</h1>
+    <p class="lead">Recent posts from our official LinkedIn and YouTube accounts.</p>
+    <nav class="home-nav" aria-label="Primary">
+      <a href="directory/">Faculty Directory</a>
+    </nav>
+  </header>
+
+  <main id="content" role="status" aria-live="polite">Loading recent posts...</main>
 </body>
 </html>

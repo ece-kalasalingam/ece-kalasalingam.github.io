@@ -2,9 +2,21 @@
 
 ECE Department, Kalasalingam University
 
+## Site Routes
+
+- `/` - Social feed home (LinkedIn + YouTube recent posts)
+- `/directory/` - Faculty directory listing
+- `/faculty/?faculty=<slug>` - Individual faculty profile
+
 ## Local Run
 
 Serve the repository root with any static server (for example, `python -m http.server`) and open `index.html`.
+
+## Social Feed Backend
+
+The homepage fetches live data from `GET /api/social-feed?limit=<n>`.
+
+Backend contract and required secrets are documented in `api/README.md`.
 
 ## Data Pipeline
 

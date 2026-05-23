@@ -622,6 +622,17 @@ def parse_photo_link_value(rows: list[list[str]]) -> str:
                 value = match.group(0).strip()
         if value:
             return value
+
+    # Fallback extraction: if key matching fails, pick the first HTTPS URL token
+    # found anywhere in the tab cells (covers accidental key typos like "1ink").
+    for row in data_rows:
+        for cell in row:
+            text = str(cell).strip()
+            if not text:
+                continue
+            match = re.search(r"https://[^\s\"')]+", text, flags=re.IGNORECASE)
+            if match:
+                return match.group(0).strip()
     return ""
 
 

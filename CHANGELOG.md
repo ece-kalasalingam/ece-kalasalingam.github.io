@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-23 18:18 IST | author: Codex | type: fix
+- Summary: Added resilient fallback URL extraction for `photo__link` tab when key matching fails.
+- Files: `scripts/fetch_publications.py`
+- Details: Enhanced `parse_photo_link_value` to first use strict `link` key lookup and then fallback to first HTTPS URL token anywhere in tab cells, preventing empty `photo_url` when key cell is mistyped/formatted unexpectedly.
+- Revert: No
+
 ## 2026-05-23 18:15 IST | author: Codex | type: fix
 - Summary: Restored strict `photo_url` validation and added detailed debug trace fields on failure.
 - Files: `scripts/validate_site.py`

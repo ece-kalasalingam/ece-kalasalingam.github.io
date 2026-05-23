@@ -7,7 +7,8 @@
       "doi": "10.1016/j.energy.2024.132926",
       "citations": 17,
       "eid": "2-s2.0-85201712802",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85201712802"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85201712802",
+      "abstract": {}
     },
     {
       "title": "Transformerless high step-up DC-DC converter with voltage multiplier concept",
@@ -16,7 +17,8 @@
       "doi": "10.1063/5.0120163",
       "citations": 1,
       "eid": "2-s2.0-85152667528",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85152667528"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85152667528",
+      "abstract": {}
     },
     {
       "title": "Model-Based Hardware-in-the-Loop Closed-Loop Control of Brushless Direct Current Motor in Electric Vehicle Applications",
@@ -25,16 +27,8 @@
       "doi": "10.1007/978-981-19-0588-9_6",
       "citations": 0,
       "eid": "2-s2.0-85140752693",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85140752693"
-    },
-    {
-      "title": "DESIGN OPTIMISATION AND EXPERIMENTAL VERIFICATION OF SMALL ELECTRIC VEHICLES",
-      "source": "Journal of Environmental Protection and Ecology",
-      "date": "2023-01-01",
-      "doi": "",
-      "citations": 2,
-      "eid": "2-s2.0-85153291357",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153291357"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85140752693",
+      "abstract": {}
     },
     {
       "title": "Comparitive Analysis of Deep Learning Techniques for Assistive Soft Wearable Robots",
@@ -43,7 +37,18 @@
       "doi": "10.1109/ACCESS57397.2023.10199699",
       "citations": 1,
       "eid": "2-s2.0-85168690994",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85168690994"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85168690994",
+      "abstract": {}
+    },
+    {
+      "title": "DESIGN OPTIMISATION AND EXPERIMENTAL VERIFICATION OF SMALL ELECTRIC VEHICLES",
+      "source": "Journal of Environmental Protection and Ecology",
+      "date": "2023-01-01",
+      "doi": "",
+      "citations": 2,
+      "eid": "2-s2.0-85153291357",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153291357",
+      "abstract": {}
     },
     {
       "title": "IoT-Based Personalized Health Care for Elderly Diabetic Patients",
@@ -52,16 +57,8 @@
       "doi": "10.1007/978-981-16-4016-2_40",
       "citations": 6,
       "eid": "2-s2.0-85119018944",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85119018944"
-    },
-    {
-      "title": "Embedded Remote Condition Monitoring System for Industrial Machinery",
-      "source": "Lecture Notes in Mechanical Engineering",
-      "date": "2022-01-01",
-      "doi": "10.1007/978-981-19-0244-4_55",
-      "citations": 0,
-      "eid": "2-s2.0-85131918199",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85131918199"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85119018944",
+      "abstract": {}
     },
     {
       "title": "Computer Vision-based Advanced Valve Positioner",
@@ -70,7 +67,18 @@
       "doi": "10.1109/ICICICT54557.2022.9917950",
       "citations": 4,
       "eid": "2-s2.0-85141360363",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85141360363"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85141360363",
+      "abstract": {}
+    },
+    {
+      "title": "Embedded Remote Condition Monitoring System for Industrial Machinery",
+      "source": "Lecture Notes in Mechanical Engineering",
+      "date": "2022-01-01",
+      "doi": "10.1007/978-981-19-0244-4_55",
+      "citations": 0,
+      "eid": "2-s2.0-85131918199",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85131918199",
+      "abstract": {}
     },
     {
       "title": "Super Capacitor based Solar and Wind Grid Connected Storage System",
@@ -79,7 +87,8 @@
       "doi": "10.1109/ICIRCA51532.2021.9544604",
       "citations": 13,
       "eid": "2-s2.0-85116915659",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85116915659"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85116915659",
+      "abstract": {}
     },
     {
       "title": "State of charge estimation of lithium-ion battery for electric vehicles using machine learning algorithms",
@@ -88,7 +97,8 @@
       "doi": "10.3390/wevj12010038",
       "citations": 313,
       "eid": "2-s2.0-85103269242",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85103269242"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85103269242",
+      "abstract": {}
     },
     {
       "title": "Real-time extremum seeking controller for brushless DC hub motors in electric vehicles",
@@ -97,25 +107,8 @@
       "doi": "10.1049/iet-epa.2020.0117",
       "citations": 4,
       "eid": "2-s2.0-85096959710",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85096959710"
-    },
-    {
-      "title": "Parameter Estimation of Battery Pack in EV using Extended Kalman Filters",
-      "source": "2019 International Conference on Clean Energy and Energy Efficient Electronics Circuit for Sustainable Development Incces 2019",
-      "date": "2019-12-01",
-      "doi": "10.1109/INCCES47820.2019.9167740",
-      "citations": 12,
-      "eid": "2-s2.0-85091493137",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85091493137"
-    },
-    {
-      "title": "ECU design for BLDC motor using TrueTime",
-      "source": "2019 International Conference on Clean Energy and Energy Efficient Electronics Circuit for Sustainable Development Incces 2019",
-      "date": "2019-12-01",
-      "doi": "10.1109/INCCES47820.2019.9167690",
-      "citations": 0,
-      "eid": "2-s2.0-85091490217",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85091490217"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85096959710",
+      "abstract": {}
     },
     {
       "title": "Closed-loop Control of BLDC Motor in Electric Vehicle Applications",
@@ -124,7 +117,28 @@
       "doi": "10.1109/INCCES47820.2019.9167730",
       "citations": 10,
       "eid": "2-s2.0-85091531442",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85091531442"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85091531442",
+      "abstract": {}
+    },
+    {
+      "title": "Parameter Estimation of Battery Pack in EV using Extended Kalman Filters",
+      "source": "2019 International Conference on Clean Energy and Energy Efficient Electronics Circuit for Sustainable Development Incces 2019",
+      "date": "2019-12-01",
+      "doi": "10.1109/INCCES47820.2019.9167740",
+      "citations": 12,
+      "eid": "2-s2.0-85091493137",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85091493137",
+      "abstract": {}
+    },
+    {
+      "title": "ECU design for BLDC motor using TrueTime",
+      "source": "2019 International Conference on Clean Energy and Energy Efficient Electronics Circuit for Sustainable Development Incces 2019",
+      "date": "2019-12-01",
+      "doi": "10.1109/INCCES47820.2019.9167690",
+      "citations": 0,
+      "eid": "2-s2.0-85091490217",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85091490217",
+      "abstract": {}
     },
     {
       "title": "Optimal fractional controller design methodology for electric drive train",
@@ -133,7 +147,8 @@
       "doi": "10.1504/IJEHV.2016.080731",
       "citations": 10,
       "eid": "2-s2.0-85002787074",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85002787074"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85002787074",
+      "abstract": {}
     },
     {
       "title": "MILP based autonomous vehicle path-planning controller for unknown environments with dynamic obstacles",
@@ -142,7 +157,8 @@
       "doi": "10.1504/IJHVS.2016.079271",
       "citations": 9,
       "eid": "2-s2.0-84989875267",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/84989875267"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/84989875267",
+      "abstract": {}
     },
     {
       "title": "MILP based autonomous vehicle path-planning controller for unknown environments with dynamic obstacles",
@@ -151,7 +167,8 @@
       "doi": "10.1504/IJHVS.2016.079272",
       "citations": 3,
       "eid": "2-s2.0-85116267427",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85116267427"
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85116267427",
+      "abstract": {}
     },
     {
       "title": "Extended kalman filter based path-planning algorithm for autonomous vehicles with I2V communication",
@@ -160,16 +177,8 @@
       "doi": "10.1016/j.ifacol.2016.03.130",
       "citations": 13,
       "eid": "2-s2.0-84974604991",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/84974604991"
-    },
-    {
-      "title": "",
-      "source": "",
-      "date": "",
-      "doi": "",
-      "citations": 0,
-      "eid": "",
-      "link": ""
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/84974604991",
+      "abstract": {}
     }
   ]
 }

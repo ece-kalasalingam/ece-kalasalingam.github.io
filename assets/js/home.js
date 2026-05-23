@@ -121,6 +121,121 @@ function bindVideoActions() {
   });
 }
 
+function sanitizeText(value, fallback = "") {
+  const text = String(value || "").trim();
+  return text || fallback;
+}
+
+function parseEmail(value) {
+  const raw = sanitizeText(value);
+  if (!raw) return "";
+  const first = raw.split(",")[0].trim();
+  return first || "";
+}
+
+function extractProfileItems(data) {
+  const sections = Array.isArray(data?.sections) ? data.sections : [];
+  const profile = sections.find((section) => String(section?.id || "").toLowerCase() === "profile");
+  const profileItems = Array.isArray(profile?.items) ? profile.items : [];
+  const labelMap = {};
+  profileItems.forEach((item) => {
+    const key = String(item?.label || "").toLowerCase().trim();
+    if (key) labelMap[key] = sanitizeText(item?.value);
+  });
+  return labelMap;
+}
+
+function pickRandomFaculty(items, count = 3) {
+  const pool = Array.isArray(items) ? [...items] : [];
+  for (let i = pool.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }
+  return pool.slice(0, Math.min(count, pool.length));
+}
+
+function facultyCardTemplate(faculty, details) {
+  const name = sanitizeText(faculty?.name, "Faculty Member");
+  const designation = sanitizeText(faculty?.designation, "ECE Faculty");
+  const scopusId = sanitizeText(faculty?.scopus_id);
+  const email = parseEmail(details.email || faculty?.email);
+  const hIndex = Number.isFinite(Number(details.hIndex)) ? Number(details.hIndex) : null;
+  const publications = Number.isFinite(Number(details.totalPublications)) ? Number(details.totalPublications) : null;
+
+  const points = [];
+  points.push(`Designation: ${designation}`);
+  if (publications !== null) points.push(`Publications: ${publications}`);
+  if (hIndex !== null) points.push(`h-index: ${hIndex}`);
+  if (scopusId) points.push(`Scopus ID: ${scopusId}`);
+  if (email) points.push(`Email: ${email}`);
+
+  return `<article class="faculty-card">
+    <div class="faculty-photo-wrap">
+      <div class="photo-wrap">
+        <img class="photo" alt="${escapeHtml(name)} portrait" loading="lazy">
+        <div class="photo-fallback" aria-hidden="true"></div>
+      </div>
+    </div>
+    <div class="faculty-body">
+      <h3>${escapeHtml(name)}</h3>
+      <p class="faculty-role">${escapeHtml(designation)}</p>
+      <ul class="faculty-points">${points.slice(0, 4).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul>
+    </div>
+  </article>`;
+}
+
+async function fetchFacultyDetails(slug) {
+  if (!slug) return {};
+  try {
+    const res = await fetch(`data/${encodeURIComponent(slug)}.json`, { cache: "no-cache" });
+    if (!res.ok) return {};
+    const data = await res.json();
+    const profile = extractProfileItems(data);
+    return {
+      photoUrl: sanitizeText(data?.photo_url),
+      email: profile["e-mail"] || profile["email"] || "",
+      hIndex: data?.h_index,
+      totalPublications: data?.total_publications
+    };
+  } catch {
+    return {};
+  }
+}
+
+async function loadFacultySpotlights() {
+  const root = document.getElementById("faculty-spotlights");
+  if (!(root instanceof HTMLElement)) return;
+
+  try {
+    const res = await fetch("faculty.json", { cache: "no-cache" });
+    if (!res.ok) {
+      throw new Error(`faculty.json request failed with status ${res.status}`);
+    }
+    const allFaculty = await res.json();
+    const selected = pickRandomFaculty(allFaculty, 3);
+    if (!selected.length) {
+      root.innerHTML = '<article class="faculty-card faculty-loading">Faculty data is currently unavailable.</article>';
+      return;
+    }
+
+    const detailsList = await Promise.all(selected.map((faculty) => fetchFacultyDetails(faculty.slug)));
+    root.innerHTML = selected.map((faculty, index) => facultyCardTemplate(faculty, detailsList[index] || {})).join("");
+
+    const cards = root.querySelectorAll(".faculty-card");
+    cards.forEach((card, index) => {
+      const faculty = selected[index];
+      const details = detailsList[index] || {};
+      const photo = card.querySelector(".photo");
+      const fallback = card.querySelector(".photo-fallback");
+      if (!(photo instanceof HTMLImageElement) || !(fallback instanceof HTMLElement)) return;
+      attachFacultyPhoto(photo, fallback, faculty?.slug || "", faculty?.name || "", "images/faculty", details.photoUrl || "");
+    });
+  } catch (error) {
+    root.innerHTML = '<article class="faculty-card faculty-loading">Unable to load faculty spotlights right now.</article>';
+    console.error(error);
+  }
+}
+
 async function loadSocialFeed() {
   const root = document.getElementById("content");
   const endpoint = `${window.location.origin}/api/social-feed?limit=6&platform=youtube`;
@@ -144,8 +259,13 @@ async function loadSocialFeed() {
   bindVideoActions();
 }
 
-loadSocialFeed().catch((error) => {
-  const root = document.getElementById("content");
-  root.innerHTML = '<p class="feed-meta">Unable to load social feed at the moment. Please try again later.</p>';
-  console.error(error);
+Promise.allSettled([loadFacultySpotlights(), loadSocialFeed()]).then((results) => {
+  const feedFailed = results[1]?.status === "rejected";
+  if (feedFailed) {
+    const root = document.getElementById("content");
+    if (root) {
+      root.innerHTML = '<p class="feed-meta">Unable to load social feed at the moment. Please try again later.</p>';
+    }
+    console.error(results[1].reason);
+  }
 });

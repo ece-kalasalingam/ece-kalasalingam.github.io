@@ -13,107 +13,79 @@
   <script src="assets/js/home.js" defer></script>
 </head>
 <body>
-
-  <header class="utility-bar" aria-label="Quick links">
-    <a href="directory/">Faculty Directory</a>
-    <a href="https://magazines.eceklu.in/" target="_blank" rel="noopener noreferrer">Magazines</a>
-    <a href="https://linktr.ee/kalasalingam.ece" target="_blank" rel="noopener noreferrer">Social Pages</a>
+  <header class="topbar">
+    <p>Kalasalingam Academy of Research and Education</p>
+    <div class="topbar-links">
+      <a href="https://magazines.eceklu.in/" target="_blank" rel="noopener noreferrer">Publications</a>
+      <a href="https://linktr.ee/kalasalingam.ece" target="_blank" rel="noopener noreferrer">Student Life</a>
+    </div>
   </header>
 
-  <header class="site-header">
-    <p class="sh-univ">Kalasalingam Academy of Research and Education</p>
-    <p class="sh-dept">Department of Electronics &amp; Communication Engineering</p>
-  </header>
-
-  <main>
-
+  <main class="home">
     <section class="hero">
-      <div class="hero-content">
-        <p class="hero-kicker">ECE at KARE</p>
-        <h1>Building Engineers for Connected, Intelligent Systems</h1>
-        <p class="hero-tagline">Our department blends research depth with practical engineering in communication systems, embedded platforms, AI hardware, and microelectronics.</p>
-        <div class="hero-actions">
-          <a class="hero-btn hero-btn-primary" href="directory/">Meet Faculty</a>
-          <a class="hero-btn hero-btn-secondary" href="https://linktr.ee/kalasalingam.ece" target="_blank" rel="noopener noreferrer">Explore Community</a>
-        </div>
+      <div class="hero-main">
+        <p class="kicker">Department of Electronics and Communication Engineering</p>
+        <h1>Shaping Engineers for Communication, Silicon, and Intelligent Systems</h1>
+        <p class="lead">ECE at KARE blends rigorous classroom learning with design-focused labs, student chapter energy, and emerging research exposure.</p>
       </div>
-      <aside class="hero-highlight" aria-label="Department highlights">
-        <h2>At a Glance</h2>
+      <aside class="hero-note">
+        <h2>Why Students Choose ECE at KARE</h2>
         <ul>
-          <li>Research-led teaching across UG and PG pathways</li>
-          <li>Active student innovation culture and technical chapters</li>
-          <li>Strong focus on industry-ready labs and project outcomes</li>
+          <li>Strong core engineering foundation</li>
+          <li>Hands-on projects and chapter activities</li>
+          <li>Future-ready areas from VLSI to AI-enabled electronics</li>
         </ul>
       </aside>
     </section>
 
-    <section class="stats" aria-label="Department by the numbers">
-      <article class="stat-card">
-        <p class="stat-value">20+</p>
-        <p class="stat-label">Faculty &amp; Research Mentors</p>
-      </article>
-      <article class="stat-card">
-        <p class="stat-value">4</p>
-        <p class="stat-label">Core Research Domains</p>
-      </article>
-      <article class="stat-card">
-        <p class="stat-value">100%</p>
-        <p class="stat-label">Project-Oriented Learning Culture</p>
-      </article>
-    </section>
-
-    <section class="pathways" aria-label="Academic and outreach pathways">
-      <article class="path-card">
-        <h2>Academic Pathways</h2>
-        <p>Explore curriculum tracks and faculty-guided progression from fundamentals to advanced system design.</p>
-        <a href="directory/">Browse Mentors</a>
-      </article>
-      <article class="path-card">
-        <h2>Department Publications</h2>
-        <p>Stay updated with student and faculty achievements, magazines, and technical department releases.</p>
-        <a href="https://magazines.eceklu.in/" target="_blank" rel="noopener noreferrer">View Magazines</a>
-      </article>
-      <article class="path-card">
-        <h2>Community &amp; Outreach</h2>
-        <p>Follow events, talks, workshops, and social channels where ECE life and innovation are showcased.</p>
-        <a href="https://linktr.ee/kalasalingam.ece" target="_blank" rel="noopener noreferrer">Open Social Hub</a>
-      </article>
-    </section>
-
-    <section class="research" aria-label="Research focus areas">
+    <section class="section section-faculty" aria-label="Faculty spotlights">
       <div class="section-head">
-        <h2>Research and Innovation Areas</h2>
-        <p>Inspired by global ECE department models: problem-first, multidisciplinary, and impact-focused.</p>
+        <h2>Faculty Spotlights</h2>
+        <p>Randomly selected faculty highlights from department profile data.</p>
       </div>
-      <div class="research-grid">
-        <article class="research-tile">
-          <h3>Communication Systems</h3>
-          <p>Wireless networks, signal integrity, and robust digital communication frameworks.</p>
-        </article>
-        <article class="research-tile">
-          <h3>Embedded &amp; Intelligent Devices</h3>
-          <p>Edge systems, IoT platforms, and hardware-software co-design for real-world deployments.</p>
-        </article>
-        <article class="research-tile">
-          <h3>Microelectronics &amp; VLSI</h3>
-          <p>Device-level understanding and scalable circuit design for next-generation electronics.</p>
-        </article>
-        <article class="research-tile">
-          <h3>AI for Electronics</h3>
-          <p>Machine learning methods applied to sensing, diagnostics, and communication optimization.</p>
-        </article>
+      <div id="faculty-spotlights" class="faculty-grid" role="status" aria-live="polite">
+        <article class="faculty-card faculty-loading">Loading faculty spotlights...</article>
       </div>
     </section>
 
-    <section class="videos">
-      <div class="section-head videos-header">
+    <section class="section section-chapters" aria-label="Student chapters">
+      <div class="section-head">
+        <h2>Student Chapters</h2>
+        <p>Professional communities active under ECE at KARE.</p>
+      </div>
+      <div class="chapters-grid">
+        <a class="chapter-card" href="https://karesgbd.acm.org/" target="_blank" rel="noopener noreferrer"><h3>ACM Student Chapter</h3><p>Computing activities, events, and peer technical engagement.</p></a>
+        <a class="chapter-card" href="https://edu.ieee.org/in-kare/eds/" target="_blank" rel="noopener noreferrer"><h3>IEEE EDS</h3><p>Electron devices focused student chapter initiatives.</p></a>
+        <a class="chapter-card" href="https://www.linkedin.com/company/kare-ieee-sps/" target="_blank" rel="noopener noreferrer"><h3>IEEE SPS</h3><p>Signal processing events, announcements, and chapter updates.</p></a>
+        <a class="chapter-card" href="https://www.linkedin.com/in/kare-ieee-solid-state-circuits-society-700172391/" target="_blank" rel="noopener noreferrer"><h3>IEEE SSCS</h3><p>Solid-state circuits chapter networking and activity feed.</p></a>
+        <a class="chapter-card" href="https://sites.google.com/klu.ac.in/optica/" target="_blank" rel="noopener noreferrer"><h3>OPTICA</h3><p>Photonics and optics focused student chapter activities.</p></a>
+      </div>
+    </section>
+
+    <section class="section section-videos" aria-label="Latest videos">
+      <div class="section-head">
         <h2>Latest Videos</h2>
         <p>Recent highlights from our official YouTube channel.</p>
       </div>
       <div id="content" role="status" aria-live="polite">Loading recent posts...</div>
     </section>
 
+    <section class="section section-placeholder" aria-label="Future placements">
+      <div class="placeholder-grid">
+        <article class="placeholder-card">
+          <h3>Admissions and Programs</h3>
+          <p>Placeholder section ready for B.E./M.E./Ph.D. overview content.</p>
+        </article>
+        <article class="placeholder-card">
+          <h3>Labs and Infrastructure</h3>
+          <p>Placeholder section ready for lab photos, equipment, and facilities details.</p>
+        </article>
+        <article class="placeholder-card">
+          <h3>Industry and Alumni</h3>
+          <p>Placeholder section ready for alumni stories and industry collaboration details.</p>
+        </article>
+      </div>
+    </section>
   </main>
-
 </body>
 </html>

@@ -111,6 +111,7 @@ jobs:
             echo "FETCH_MODE=${{ inputs.fetch_mode }}" >> "$GITHUB_ENV"
             echo "BATCH_SIZE=${{ inputs.batch_size }}" >> "$GITHUB_ENV"
             echo "INCREMENTAL_YEARS=${{ inputs.incremental_years }}" >> "$GITHUB_ENV"
+            echo "ABSTRACT_TOP_N=3" >> "$GITHUB_ENV"
           else
             if [ "${{ github.event.schedule }}" = "0 3 * * 0" ]; then
               echo "FETCH_MODE=full" >> "$GITHUB_ENV"
@@ -119,6 +120,7 @@ jobs:
             fi
             echo "BATCH_SIZE=20" >> "$GITHUB_ENV"
             echo "INCREMENTAL_YEARS=2" >> "$GITHUB_ENV"
+            echo "ABSTRACT_TOP_N=3" >> "$GITHUB_ENV"
           fi
 
       - name: Fetch publications
@@ -128,6 +130,7 @@ jobs:
           FETCH_MODE: ${{ env.FETCH_MODE }}
           BATCH_SIZE: ${{ env.BATCH_SIZE }}
           INCREMENTAL_YEARS: ${{ env.INCREMENTAL_YEARS }}
+          ABSTRACT_TOP_N: ${{ env.ABSTRACT_TOP_N }}
         run: python scripts/fetch_publications.py
 
       - name: Validate generated data

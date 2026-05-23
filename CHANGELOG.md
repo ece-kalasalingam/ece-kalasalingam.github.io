@@ -1,5 +1,65 @@
 # CHANGELOG
 
+## 2026-05-23 22:45 IST | author: Codex | type: feature
+- Summary: Implemented Scopus abstract enrichment for top 3 recent publications with updates-only behavior after initial fill.
+- Files: `scripts/fetch_publications.py`, `.github/workflows/update_publications.yaml`, `README.md`
+- Details: Added optional nested `abstract` metadata to publication records and integrated Scopus Abstract Retrieval (identifier priority: `eid`, fallback `doi`) using existing retry/backoff request path. Added `ABSTRACT_TOP_N` env (default `3`) and enrichment policy to only process top-N recent publications that do not already have `abstract.text`, enabling initial backfill and subsequent updates-only runs. Added abstract telemetry counters (`attempted`, `fetched`, `skipped_existing`, `skipped_missing_id`, `failed`) in logs. Wired `ABSTRACT_TOP_N=3` into update workflow and documented abstract contract/behavior in README.
+- Revert: No
+
+## 2026-05-23 22:37 IST | author: Codex | type: redesign
+- Summary: Re-themed homepage from traditional institutional styling to a contemporary glass/gradient modern layout.
+- Files: `assets/css/home.css`
+- Details: Replaced the full homepage stylesheet with a modern visual system: frosted cards, sticky translucent topbar, contemporary heading rhythm, capsule utility links, softer depth/shadows, and cleaner mobile breakpoints. Kept existing HTML structure and JS behavior intact (faculty spotlights + video feed), while shifting visual tone away from the previous traditional look.
+- Revert: No
+
+## 2026-05-23 22:34 IST | author: Codex | type: redesign
+- Summary: Rebuilt homepage with a new responsive theme layout and added random faculty spotlight cards using existing photo code.
+- Files: `index.html`, `assets/css/home.css`, `assets/js/home.js`
+- Details: Replaced homepage structure with a mobile/desktop-first layout (hero, faculty spotlights, chapters, videos, and future placeholder sections). Implemented `Faculty Spotlights` rendering from `faculty.json` plus `data/<slug>.json` profile/publication metrics, randomizing selection and reusing shared `attachFacultyPhoto` for remote/local fallback images. Intentionally kept faculty display non-clickable (no faculty/directory links) and preserved existing YouTube feed/modal behavior.
+- Revert: No
+
+## 2026-05-23 22:27 IST | author: Codex | type: redesign
+- Summary: Fully revamped homepage structure and theme into a new multi-band layout with stronger visual identity.
+- Files: `index.html`, `assets/css/home.css`
+- Details: Rebuilt homepage from scratch with a new architecture: utility strip, branded header, split hero (editorial lead + strengths panel), alternating themed section bands (`Department Signals`, `Student Chapters`, `Research Areas`, `Latest Videos`), and redesigned card systems per section. Preserved existing dynamic social-feed/video modal integration by keeping required JS hook points (`#content`, feed classes) intact while replacing overall layout and visual language.
+- Revert: No
+
+## 2026-05-23 22:24 IST | author: Codex | type: tweak
+- Summary: Introduced contrasting color palettes per homepage section for clearer visual separation.
+- Files: `assets/css/home.css`
+- Details: Added distinct background/card/border color systems across major sections: warm neutral for feature panels, teal-toned student chapters, slate-lavender research area, and cool-blue videos block, while preserving hero styling and readability scale updates.
+- Revert: No
+
+## 2026-05-23 22:20 IST | author: Codex | type: tweak
+- Summary: Increased homepage typography and spacing for stronger readability and message impact.
+- Files: `assets/css/home.css`
+- Details: Enlarged key text scales (department title, hero headline/tagline, section headings, panel/chapter/research card text, and feed card text/links), increased card and hero paddings, widened CTA button prominence, and adjusted section spacing to better match the clearer high-readability presentation style requested.
+- Revert: No
+
+## 2026-05-23 22:19 IST | author: Codex | type: feature
+- Summary: Added dedicated Student Chapters section on homepage with official chapter links.
+- Files: `index.html`, `assets/css/home.css`
+- Details: Introduced a new `Student Chapters` section containing cards and external links for ACM, IEEE EDS, IEEE SPS, IEEE SSCS, and OPTICA chapters. Added responsive chapter-card styles consistent with the existing institutional homepage design.
+- Revert: No
+
+## 2026-05-23 22:17 IST | author: Codex | type: tweak
+- Summary: Removed the internal faculty-directory note text from homepage feature panel.
+- Files: `index.html`, `assets/css/home.css`
+- Details: Deleted the sentence "Faculty directory route is available internally." from the Directory feature panel and removed the now-unused `.panel-note` style block from homepage CSS.
+- Revert: No
+
+## 2026-05-23 22:16 IST | author: Codex | type: tweak
+- Summary: Hid all faculty-directory links from the homepage while preserving directory route implementation.
+- Files: `index.html`, `assets/css/home.css`
+- Details: Removed every `directory/` anchor from top utility links, header nav, hero CTA actions, and feature panel action on `index.html`. Replaced the directory action with non-clickable informational text and added `.panel-note` styling in `home.css`. No changes were made to `/directory/` route files or related JavaScript/data logic.
+- Revert: No
+
+## 2026-05-23 22:10 IST | author: Codex | type: redesign
+- Summary: Refined homepage to a cleaner Johns Hopkins ECE-inspired institutional look.
+- Files: `index.html`, `assets/css/home.css`
+- Details: Replaced the previous mixed-style homepage with a sharper academic layout: dark utility strip, structured departmental header with inline primary nav, editorial serif hero with clearer messaging and action buttons, dark highlight panel, and three uniform update panels (News/Events/Directory). Refreshed research section styling for a restrained institutional visual system and preserved existing dynamic YouTube feed + modal behavior by keeping the same JS hook points.
+- Revert: No
+
 ## 2026-05-23 22:00 IST | author: Codex | type: redesign
 - Summary: Reworked homepage into a modern institutional ECE landing page inspired by TAMU, NUS, and JHU department structures.
 - Files: `index.html`, `assets/css/home.css`

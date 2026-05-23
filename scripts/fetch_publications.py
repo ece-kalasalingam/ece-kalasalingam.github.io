@@ -23,6 +23,7 @@ from requests.exceptions import Timeout
 
 SEARCH_URL: Final[str] = "https://api.elsevier.com/content/search/scopus"
 AUTHOR_URL_TEMPLATE: Final[str] = "https://api.elsevier.com/content/author/author_id/{author_id}"
+ABSTRACT_URL_TEMPLATE: Final[str] = "https://api.elsevier.com/content/abstract/{identifier}"
 
 API_KEY: Final[str | None] = os.getenv("ELSEVIER_API_KEY")
 INST_TOKEN: Final[str | None] = os.getenv("ELSEVIER_INST_TOKEN")
@@ -33,6 +34,7 @@ STATE_FILE: Final[Path] = OUTPUT_DIR / "sync_state.json"
 FETCH_MODE_ENV: Final[str] = os.getenv("FETCH_MODE", "incremental").strip().lower()
 BATCH_SIZE_ENV: Final[str] = os.getenv("BATCH_SIZE", "20").strip()
 INCREMENTAL_YEARS_ENV: Final[str] = os.getenv("INCREMENTAL_YEARS", "2").strip()
+ABSTRACT_TOP_N_ENV: Final[str] = os.getenv("ABSTRACT_TOP_N", "3").strip()
 FACULTY_SHEET_IDS_FILE: Final[Path] = Path("faculty_sheet_ids_json.json")
 FACULTY_SLUG_ENV: Final[str] = os.getenv("FACULTY_SLUG", "").strip()
 GOOGLE_API_KEY: Final[str | None] = os.getenv("GOOGLE_API_KEY")
@@ -62,6 +64,13 @@ class PublicationEntry(TypedDict):
     citations: int
     eid: str
     link: str
+    abstract: "PublicationAbstract"
+
+
+class PublicationAbstract(TypedDict):
+    text: str
+    source: str
+    fetched_at: str
 
 
 class FacultyOutput(TypedDict, total=False):
@@ -798,6 +807,7 @@ def transform_entry(entry: JSONObject) -> PublicationEntry:
         "citations": get_int_field(entry, "citedby-count", 0),
         "eid": get_str_field(entry, "eid"),
         "link": get_str_field(entry, "prism:url"),
+        "abstract": {},
     }
 
 
@@ -945,6 +955,123 @@ def fetch_author_publications(
     return results, None
 
 
+def extract_abstract_text(raw_data: object) -> str:
+    def walk(value: object) -> str:
+        if isinstance(value, dict):
+            obj = cast("dict[str, Any]", value)
+            if "dc:description" in obj:
+                text = get_str_field(cast(JSONObject, obj), "dc:description").strip()
+                if text:
+                    return text
+            if "description" in obj:
+                text = get_str_field(cast(JSONObject, obj), "description").strip()
+                if text:
+                    return text
+            for nested in obj.values():
+                found = walk(nested)
+                if found:
+                    return found
+        elif isinstance(value, list):
+            for item in cast("list[Any]", value):
+                found = walk(item)
+                if found:
+                    return found
+        return ""
+
+    return walk(raw_data)
+
+
+def build_abstract_identifier(pub: PublicationEntry) -> str:
+    eid = get_str_field(pub, "eid").strip()
+    if eid:
+        return f"eid/{eid}"
+    doi = get_str_field(pub, "doi").strip()
+    if doi:
+        return f"doi/{quote(doi, safe='')}"
+    return ""
+
+
+def fetch_publication_abstract(
+    session: Session,
+    api_key: str,
+    author_id: str,
+    pub: PublicationEntry,
+) -> tuple[PublicationAbstract | None, str | None]:
+    identifier = build_abstract_identifier(pub)
+    if not identifier:
+        return None, "missing identifier"
+
+    headers = build_headers(api_key)
+    url = ABSTRACT_URL_TEMPLATE.format(identifier=identifier)
+    params: dict[str, Union[str, int]] = {"view": "FULL"}
+    request_result = perform_request(session, headers, params, author_id, url=url)
+    if not request_result["ok"]:
+        return None, request_result["error"]
+    response = request_result["response"]
+    if response is None:
+        return None, "empty abstract response"
+    try:
+        raw_json: object = response.json()
+    except ValueError as exc:
+        return None, f"invalid abstract json: {exc}"
+
+    abstract_text = extract_abstract_text(raw_json).strip()
+    if not abstract_text:
+        return None, "abstract unavailable"
+    abstract_obj: PublicationAbstract = {
+        "text": abstract_text,
+        "source": "scopus",
+        "fetched_at": utc_now_iso(),
+    }
+    return abstract_obj, None
+
+
+def has_abstract_text(pub: PublicationEntry) -> bool:
+    raw_abstract = pub.get("abstract")
+    if not isinstance(raw_abstract, dict):
+        return False
+    text = get_str_field(cast(JSONObject, raw_abstract), "text").strip()
+    return bool(text)
+
+
+def enrich_publications_with_abstracts(
+    publications: list[PublicationEntry],
+    api_key: str,
+    author_id: str,
+    abstract_top_n: int,
+) -> dict[str, int]:
+    stats = {
+        "abstract_attempted": 0,
+        "abstract_fetched": 0,
+        "abstract_skipped_existing": 0,
+        "abstract_skipped_missing_id": 0,
+        "abstract_failed": 0,
+    }
+    if not publications:
+        return stats
+
+    candidates = publications[: max(abstract_top_n, 0)]
+    with requests.Session() as session:
+        for pub in candidates:
+            if has_abstract_text(pub):
+                stats["abstract_skipped_existing"] += 1
+                continue
+            if not build_abstract_identifier(pub):
+                stats["abstract_skipped_missing_id"] += 1
+                continue
+            stats["abstract_attempted"] += 1
+            abstract_obj, err = fetch_publication_abstract(session, api_key, author_id, pub)
+            if abstract_obj is not None:
+                pub["abstract"] = abstract_obj
+                stats["abstract_fetched"] += 1
+            else:
+                stats["abstract_failed"] += 1
+                if err:
+                    pub_title = get_str_field(pub, "title", "Unknown title")
+                    print(f"Warning: abstract fetch issue for '{pub_title}': {err}")
+    return stats
+
+
 def read_publications_file(path: Path) -> list[PublicationEntry]:
     if not path.exists():
         return []
@@ -966,6 +1093,7 @@ def read_publications_file(path: Path) -> list[PublicationEntry]:
                     "citations": get_int_field(entry, "citations", 0),
                     "eid": get_str_field(entry, "eid"),
                     "link": get_str_field(entry, "link"),
+                    "abstract": get_json_object_field(entry, "abstract", default={}),
                 }
             )
     return pubs
@@ -1107,6 +1235,7 @@ def main() -> int:
     mode = validate_mode(FETCH_MODE_ENV)
     batch_size = parse_positive_int(BATCH_SIZE_ENV, 20)
     incremental_years = parse_positive_int(INCREMENTAL_YEARS_ENV, 2)
+    abstract_top_n = parse_positive_int(ABSTRACT_TOP_N_ENV, 3)
 
     try:
         faculty_list = load_faculty_list(Path("faculty.json"))
@@ -1130,7 +1259,10 @@ def main() -> int:
             print("No eligible faculty entries (with scopus_id) available for processing.")
             return 0
 
-        print(f"Mode: {mode}; Batch size: {batch_size}; Incremental years: {incremental_years}")
+        print(
+            f"Mode: {mode}; Batch size: {batch_size}; "
+            f"Incremental years: {incremental_years}; Abstract top-N: {abstract_top_n}"
+        )
         print(f"Processing {len(batch)} faculty entries in this run.")
 
         collected_outputs: dict[str, FacultyOutput] = {}
@@ -1176,6 +1308,29 @@ def main() -> int:
                 publications = merge_publications(existing_publications, incoming_publications)
             else:
                 publications = incoming_publications
+
+            abstract_stats = {
+                "abstract_attempted": 0,
+                "abstract_fetched": 0,
+                "abstract_skipped_existing": 0,
+                "abstract_skipped_missing_id": 0,
+                "abstract_failed": 0,
+            }
+            if scopus_id:
+                abstract_stats = enrich_publications_with_abstracts(
+                    publications=publications,
+                    api_key=API_KEY,
+                    author_id=scopus_id,
+                    abstract_top_n=abstract_top_n,
+                )
+                print(
+                    f"Abstract summary for {slug}: "
+                    f"attempted={abstract_stats['abstract_attempted']}, "
+                    f"fetched={abstract_stats['abstract_fetched']}, "
+                    f"skipped_existing={abstract_stats['abstract_skipped_existing']}, "
+                    f"skipped_missing_id={abstract_stats['abstract_skipped_missing_id']}, "
+                    f"failed={abstract_stats['abstract_failed']}"
+                )
 
             # Decide if this faculty is a complete failure
             # Complete failure = h-index failed AND no incoming publications AND there is a publication error

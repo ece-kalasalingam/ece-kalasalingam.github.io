@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-23 18:37 IST | author: Codex | type: fix
+- Summary: Hardened Google Drive photo rendering by trying multiple embeddable image URL variants.
+- Files: `assets/js/common.js`
+- Details: Updated remote photo normalization and candidate generation to support HTML-escaped links and use a prioritized set of Drive render URLs (`lh3.googleusercontent.com`, `drive.google.com/thumbnail`, `drive.google.com/uc`) before falling back to local slug images.
+- Revert: No
+
 ## 2026-05-23 18:26 IST | author: Codex | type: fix
 - Summary: Fixed `Photo__link` discovery by scanning raw sheet tab titles instead of filtered content-tab descriptors.
 - Files: `scripts/fetch_publications.py`

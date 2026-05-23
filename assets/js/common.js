@@ -46,19 +46,30 @@ function extractDriveFileId(urlText) {
 }
 
 function normalizeFacultyPhotoUrl(rawValue) {
-  const value = String(rawValue || "").trim();
+  const value = String(rawValue || "").replace(/&amp;/gi, "&").trim();
   if (!value) return "";
   if (isSafeImageUrl(value)) {
     const hostname = new URL(value).hostname.toLowerCase();
     if (hostname === "drive.google.com" || hostname.endsWith(".googleusercontent.com")) {
       const fileId = extractDriveFileId(value);
-      if (fileId) return `https://drive.google.com/uc?export=view&id=${encodeURIComponent(fileId)}`;
+      if (fileId) return `https://lh3.googleusercontent.com/d/${encodeURIComponent(fileId)}`;
     }
     return value;
   }
   const fileId = extractDriveFileId(value);
-  if (fileId) return `https://drive.google.com/uc?export=view&id=${encodeURIComponent(fileId)}`;
+  if (fileId) return `https://lh3.googleusercontent.com/d/${encodeURIComponent(fileId)}`;
   return "";
+}
+
+function buildDriveImageCandidates(rawValue) {
+  const fileId = extractDriveFileId(rawValue);
+  if (!fileId) return [];
+  const encodedId = encodeURIComponent(fileId);
+  return [
+    `https://lh3.googleusercontent.com/d/${encodedId}`,
+    `https://drive.google.com/thumbnail?id=${encodedId}&sz=w1600`,
+    `https://drive.google.com/uc?export=view&id=${encodedId}`
+  ];
 }
 
 function attachFacultyPhoto(photo, fallback, slug, name, imageRootPath, remotePhotoUrl) {
@@ -68,9 +79,14 @@ function attachFacultyPhoto(photo, fallback, slug, name, imageRootPath, remotePh
 
   const extensions = ["jpg", "jpeg", "png", "webp"];
   const candidateSources = [];
-  const normalizedRemote = normalizeFacultyPhotoUrl(remotePhotoUrl);
-  if (normalizedRemote) {
-    candidateSources.push(normalizedRemote);
+  const driveCandidates = buildDriveImageCandidates(remotePhotoUrl);
+  if (driveCandidates.length > 0) {
+    candidateSources.push(...driveCandidates);
+  } else {
+    const normalizedRemote = normalizeFacultyPhotoUrl(remotePhotoUrl);
+    if (normalizedRemote) {
+      candidateSources.push(normalizedRemote);
+    }
   }
   if (slug) {
     for (const ext of extensions) {

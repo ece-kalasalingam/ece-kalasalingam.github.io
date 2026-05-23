@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-23 22:00 IST | author: Codex | type: redesign
+- Summary: Reworked homepage into a modern institutional ECE landing page inspired by TAMU, NUS, and JHU department structures.
+- Files: `index.html`, `assets/css/home.css`
+- Details: Replaced the minimal top section with a layered university-style homepage containing (1) quick-link utility bar, (2) strong two-column hero with primary/secondary CTAs and highlight panel, (3) stats strip, (4) pathway cards for academics/publications/community, and (5) research focus grid. Preserved existing live YouTube feed integration and modal behaviors by keeping `#content` and feed card hook classes unchanged, while restyling section framing for a cleaner institutional look.
+- Revert: No
+
 ## 2026-05-22 16:30 IST | author: JP | type: redesign
 - Summary: Complete homepage layout overhaul inspired by institutional university department sites (NUS ECE, JHU ECE, TAMU ECEN).
 - Files: `index.html`, `assets/css/home.css`

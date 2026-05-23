@@ -14,6 +14,12 @@
 </head>
 <body>
 
+  <header class="utility-bar" aria-label="Quick links">
+    <a href="directory/">Faculty Directory</a>
+    <a href="https://magazines.eceklu.in/" target="_blank" rel="noopener noreferrer">Magazines</a>
+    <a href="https://linktr.ee/kalasalingam.ece" target="_blank" rel="noopener noreferrer">Social Pages</a>
+  </header>
+
   <header class="site-header">
     <p class="sh-univ">Kalasalingam Academy of Research and Education</p>
     <p class="sh-dept">Department of Electronics &amp; Communication Engineering</p>
@@ -22,33 +28,87 @@
   <main>
 
     <section class="hero">
-      <div class="hero-accent"></div>
-      <h1>Electronics &amp; Communication Engineering</h1>
-      <p class="hero-tagline">Advancing knowledge in VLSI, signal processing, embedded systems, and communications through rigorous research and industry-focused education.</p>
+      <div class="hero-content">
+        <p class="hero-kicker">ECE at KARE</p>
+        <h1>Building Engineers for Connected, Intelligent Systems</h1>
+        <p class="hero-tagline">Our department blends research depth with practical engineering in communication systems, embedded platforms, AI hardware, and microelectronics.</p>
+        <div class="hero-actions">
+          <a class="hero-btn hero-btn-primary" href="directory/">Meet Faculty</a>
+          <a class="hero-btn hero-btn-secondary" href="https://linktr.ee/kalasalingam.ece" target="_blank" rel="noopener noreferrer">Explore Community</a>
+        </div>
+      </div>
+      <aside class="hero-highlight" aria-label="Department highlights">
+        <h2>At a Glance</h2>
+        <ul>
+          <li>Research-led teaching across UG and PG pathways</li>
+          <li>Active student innovation culture and technical chapters</li>
+          <li>Strong focus on industry-ready labs and project outcomes</li>
+        </ul>
+      </aside>
     </section>
 
-    <section class="resources" aria-label="Department resources">
-      <a href="https://linktr.ee/kalasalingam.ece" class="res-card" target="_blank" rel="noopener noreferrer">
-        <span class="res-label">Social Pages</span>
-        <span class="res-desc">All department social media in one place</span>
-        <span class="res-arrow" aria-hidden="true">&#8599;</span>
-      </a>
-      <a href="https://magazines.eceklu.in/" class="res-card" target="_blank" rel="noopener noreferrer">
-        <span class="res-label">Magazines</span>
-        <span class="res-desc">Department publications and newsletters</span>
-        <span class="res-arrow" aria-hidden="true">&#8599;</span>
-      </a>
-      <a href="directory/" class="res-card">
-        <span class="res-label">Faculty Directory</span>
-        <span class="res-desc">Meet our professors and researchers</span>
-        <span class="res-arrow" aria-hidden="true">&#8594;</span>
-      </a>
+    <section class="stats" aria-label="Department by the numbers">
+      <article class="stat-card">
+        <p class="stat-value">20+</p>
+        <p class="stat-label">Faculty &amp; Research Mentors</p>
+      </article>
+      <article class="stat-card">
+        <p class="stat-value">4</p>
+        <p class="stat-label">Core Research Domains</p>
+      </article>
+      <article class="stat-card">
+        <p class="stat-value">100%</p>
+        <p class="stat-label">Project-Oriented Learning Culture</p>
+      </article>
+    </section>
+
+    <section class="pathways" aria-label="Academic and outreach pathways">
+      <article class="path-card">
+        <h2>Academic Pathways</h2>
+        <p>Explore curriculum tracks and faculty-guided progression from fundamentals to advanced system design.</p>
+        <a href="directory/">Browse Mentors</a>
+      </article>
+      <article class="path-card">
+        <h2>Department Publications</h2>
+        <p>Stay updated with student and faculty achievements, magazines, and technical department releases.</p>
+        <a href="https://magazines.eceklu.in/" target="_blank" rel="noopener noreferrer">View Magazines</a>
+      </article>
+      <article class="path-card">
+        <h2>Community &amp; Outreach</h2>
+        <p>Follow events, talks, workshops, and social channels where ECE life and innovation are showcased.</p>
+        <a href="https://linktr.ee/kalasalingam.ece" target="_blank" rel="noopener noreferrer">Open Social Hub</a>
+      </article>
+    </section>
+
+    <section class="research" aria-label="Research focus areas">
+      <div class="section-head">
+        <h2>Research and Innovation Areas</h2>
+        <p>Inspired by global ECE department models: problem-first, multidisciplinary, and impact-focused.</p>
+      </div>
+      <div class="research-grid">
+        <article class="research-tile">
+          <h3>Communication Systems</h3>
+          <p>Wireless networks, signal integrity, and robust digital communication frameworks.</p>
+        </article>
+        <article class="research-tile">
+          <h3>Embedded &amp; Intelligent Devices</h3>
+          <p>Edge systems, IoT platforms, and hardware-software co-design for real-world deployments.</p>
+        </article>
+        <article class="research-tile">
+          <h3>Microelectronics &amp; VLSI</h3>
+          <p>Device-level understanding and scalable circuit design for next-generation electronics.</p>
+        </article>
+        <article class="research-tile">
+          <h3>AI for Electronics</h3>
+          <p>Machine learning methods applied to sensing, diagnostics, and communication optimization.</p>
+        </article>
+      </div>
     </section>
 
     <section class="videos">
-      <div class="videos-header">
+      <div class="section-head videos-header">
         <h2>Latest Videos</h2>
-        <p>Recent from our official YouTube channel.</p>
+        <p>Recent highlights from our official YouTube channel.</p>
       </div>
       <div id="content" role="status" aria-live="polite">Loading recent posts...</div>
     </section>

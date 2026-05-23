@@ -470,7 +470,7 @@ def fetch_sheet_tabs(sheet_id: str, google_api_key: str) -> tuple[list[SheetTabD
     except Exception as exc:
         return [], f"Unable to fetch sheet tabs for sheet_id={mask_sheet_id(sheet_id)}: {exc}"
 
-    descriptors: list[SheetTabDescriptor] = []
+    raw_tab_names: list[str] = []
     for sheet in sheets_raw:
         if not isinstance(sheet, dict):
             continue
@@ -478,12 +478,56 @@ def fetch_sheet_tabs(sheet_id: str, google_api_key: str) -> tuple[list[SheetTabD
         tab_name = get_str_field(properties, "title").strip()
         if not tab_name:
             continue
+        raw_tab_names.append(tab_name)
+
+    descriptors: list[SheetTabDescriptor] = []
+    for tab_name in raw_tab_names:
         parsed = parse_tab_descriptor(tab_name)
         if parsed is None:
             print(f"Warning: ignored tab '{tab_name}' (must match Title__kv|md|table with lowercase suffix).")
             continue
         descriptors.append(parsed)
     return descriptors, None
+
+
+def fetch_sheet_tab_names(sheet_id: str, google_api_key: str) -> tuple[list[str], str | None]:
+    """Return all tab titles without applying __kv/__md/__table filtering."""
+    url = SHEETS_META_URL_TEMPLATE.format(sheet_id=sheet_id)
+    params: dict[str, str] = {
+        "fields": "sheets.properties.title",
+        "key": google_api_key,
+    }
+    try:
+        print(f"[Sheets] Metadata request started for sheet_id={mask_sheet_id(sheet_id)} (all-tab scan)")
+        response = requests.get(url, params=params, timeout=20)
+        response.raise_for_status()
+        payload: object = response.json()
+        obj = ensure_object(payload, "Sheets metadata")
+        sheets_raw = get_json_array_field(obj, "sheets", default=[])
+        tab_names: list[str] = []
+        for sheet in sheets_raw:
+            if not isinstance(sheet, dict):
+                continue
+            properties = get_json_object_field(cast(JSONObject, sheet), "properties", default={})
+            tab_name = get_str_field(properties, "title").strip()
+            if tab_name:
+                tab_names.append(tab_name)
+        print(
+            f"[Sheets] Metadata request succeeded for sheet_id={mask_sheet_id(sheet_id)} (all-tab scan); "
+            f"tabs_discovered={len(tab_names)}"
+        )
+        return tab_names, None
+    except requests.HTTPError as exc:
+        status_code = exc.response.status_code if exc.response is not None else "unknown"
+        body_preview = ""
+        if exc.response is not None and exc.response.text:
+            body_preview = exc.response.text[:250].replace("\n", " ")
+        detail = f"HTTP {status_code}"
+        if body_preview:
+            detail = f"{detail}; body={body_preview}"
+        return [], f"Unable to fetch sheet tabs for sheet_id={mask_sheet_id(sheet_id)}: {detail}"
+    except Exception as exc:
+        return [], f"Unable to fetch sheet tabs for sheet_id={mask_sheet_id(sheet_id)}: {exc}"
 
 
 def fetch_sheet_values(sheet_id: str, tab_name: str, google_api_key: str) -> tuple[list[list[str]], str | None]:
@@ -646,14 +690,13 @@ def parse_photo_link_value(rows: list[list[str]]) -> str:
 
 
 def fetch_photo_url_from_sheet(sheet_id: str, google_api_key: str) -> tuple[str, str | None]:
-    tabs, tab_error = fetch_sheet_tabs(sheet_id, google_api_key)
+    tab_names, tab_error = fetch_sheet_tab_names(sheet_id, google_api_key)
     if tab_error:
         return "", tab_error
-    tab_names = [str(tab.get("tab_name", "")).strip() for tab in tabs]
     print(f"[PhotoLink] tab detection candidates for sheet_id={mask_sheet_id(sheet_id)}: {tab_names}")
     target_tab_name = ""
-    for tab in tabs:
-        tab_name = str(tab.get("tab_name", "")).strip()
+    for tab_name in tab_names:
+        tab_name = str(tab_name).strip()
         if normalize_label_key(tab_name) == normalize_label_key("photo__link"):
             target_tab_name = tab_name
             break

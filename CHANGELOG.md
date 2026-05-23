@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-23 18:26 IST | author: Codex | type: fix
+- Summary: Fixed `Photo__link` discovery by scanning raw sheet tab titles instead of filtered content-tab descriptors.
+- Files: `scripts/fetch_publications.py`
+- Details: Added `fetch_sheet_tab_names()` for all-tab metadata scan and switched `fetch_photo_url_from_sheet()` to use it. This allows detection of `Photo__link` (or other non `__kv/__md/__table` tabs) while keeping section parsing filters unchanged.
+- Revert: No
+
 ## 2026-05-23 18:23 IST | author: Codex | type: feature
 - Summary: Added detailed photo-link extraction debug logging for tab/key/URL detection.
 - Files: `scripts/fetch_publications.py`

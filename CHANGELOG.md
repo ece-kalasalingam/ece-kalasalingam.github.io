@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 2026-05-23 18:23 IST | author: Codex | type: feature
+- Summary: Added detailed photo-link extraction debug logging for tab/key/URL detection.
+- Files: `scripts/fetch_publications.py`
+- Details: Added explicit `[PhotoLink]` debug logs for (1) detected tab candidates and matched `photo__link` tab, (2) key candidates and confirmed `link` key match, and (3) extracted URL detection path (key-match vs fallback scan) with final extracted value status.
+- Revert: No
+
+## 2026-05-23 18:21 IST | author: Codex | type: fix
+- Summary: Fixed photo extraction pipeline to avoid persisting empty `photo_url` values that fail validation.
+- Files: `scripts/fetch_publications.py`, `scripts/sync_sheet_sections_only.py`
+- Details: Made `photo_url` optional in generated faculty output and write it only when non-empty after trimming. Partial sync now removes stale/empty `photo_url` keys instead of storing empty strings.
+- Revert: No
+
 ## 2026-05-23 18:18 IST | author: Codex | type: fix
 - Summary: Added resilient fallback URL extraction for `photo__link` tab when key matching fails.
 - Files: `scripts/fetch_publications.py`

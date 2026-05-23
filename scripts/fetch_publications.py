@@ -64,7 +64,7 @@ class PublicationEntry(TypedDict):
     link: str
 
 
-class FacultyOutput(TypedDict):
+class FacultyOutput(TypedDict, total=False):
     name: str
     slug: str
     scopus_id: str
@@ -594,6 +594,7 @@ def normalize_label_key(value: str) -> str:
 
 def parse_photo_link_value(rows: list[list[str]]) -> str:
     if not rows:
+        print("[PhotoLink] photo__link tab is empty.")
         return ""
 
     first_row = rows[0]
@@ -612,15 +613,20 @@ def parse_photo_link_value(rows: list[list[str]]) -> str:
     for row in data_rows:
         if label_idx >= len(row):
             continue
-        label = normalize_label_key(row[label_idx])
+        raw_label = row[label_idx]
+        label = normalize_label_key(raw_label)
+        if label:
+            print(f"[PhotoLink] key candidate detected: raw={raw_label!r} normalized={label!r}")
         if label != "link":
             continue
+        print("[PhotoLink] matched key='link'.")
         value = row[value_idx].strip() if value_idx < len(row) else ""
         if value.startswith("="):
             match = re.search(r"https://[^\s\"')]+", value)
             if match:
                 value = match.group(0).strip()
         if value:
+            print(f"[PhotoLink] URL detected from key-match: {value!r}")
             return value
 
     # Fallback extraction: if key matching fails, pick the first HTTPS URL token
@@ -632,7 +638,10 @@ def parse_photo_link_value(rows: list[list[str]]) -> str:
                 continue
             match = re.search(r"https://[^\s\"')]+", text, flags=re.IGNORECASE)
             if match:
-                return match.group(0).strip()
+                fallback_url = match.group(0).strip()
+                print(f"[PhotoLink] URL detected via fallback scan: {fallback_url!r}")
+                return fallback_url
+    print("[PhotoLink] no URL detected in photo__link tab.")
     return ""
 
 
@@ -640,6 +649,8 @@ def fetch_photo_url_from_sheet(sheet_id: str, google_api_key: str) -> tuple[str,
     tabs, tab_error = fetch_sheet_tabs(sheet_id, google_api_key)
     if tab_error:
         return "", tab_error
+    tab_names = [str(tab.get("tab_name", "")).strip() for tab in tabs]
+    print(f"[PhotoLink] tab detection candidates for sheet_id={mask_sheet_id(sheet_id)}: {tab_names}")
     target_tab_name = ""
     for tab in tabs:
         tab_name = str(tab.get("tab_name", "")).strip()
@@ -647,12 +658,22 @@ def fetch_photo_url_from_sheet(sheet_id: str, google_api_key: str) -> tuple[str,
             target_tab_name = tab_name
             break
     if not target_tab_name:
+        print(f"[PhotoLink] photo__link tab not found for sheet_id={mask_sheet_id(sheet_id)}")
         return "", None
+    print(
+        f"[PhotoLink] photo__link tab detected for sheet_id={mask_sheet_id(sheet_id)}: "
+        f"{target_tab_name!r}"
+    )
 
     rows, value_error = fetch_sheet_values(sheet_id, target_tab_name, google_api_key)
     if value_error:
         return "", value_error
-    return parse_photo_link_value(rows), None
+    photo_url = parse_photo_link_value(rows)
+    if photo_url:
+        print(f"[PhotoLink] final extracted photo URL for sheet_id={mask_sheet_id(sheet_id)}: {photo_url!r}")
+    else:
+        print(f"[PhotoLink] final extracted photo URL empty for sheet_id={mask_sheet_id(sheet_id)}")
+    return photo_url, None
 
 
 def fetch_sheet_sections(sheet_id: str, google_api_key: str) -> tuple[list[FacultySection], list[str]]:
@@ -1152,16 +1173,19 @@ def main() -> int:
             else:
                 print(f"[Sheets] No mapping found for slug='{slug}'; skipping sheet sections.")
 
-            collected_outputs[slug] = {
+            output_record: FacultyOutput = {
                 "name": fac["name"],
                 "slug": slug,
                 "scopus_id": scopus_id if scopus_id else "NA",
                 "h_index": h_index,
                 "total_publications": len(publications),
                 "publications_file": publications_file,
-                "photo_url": photo_url,
                 "sections": sections,
             }
+            cleaned_photo_url = str(photo_url).strip()
+            if cleaned_photo_url:
+                output_record["photo_url"] = cleaned_photo_url
+            collected_outputs[slug] = output_record
             collected_publications[slug] = {"publications": publications}
 
             status_message_parts: list[str] = []

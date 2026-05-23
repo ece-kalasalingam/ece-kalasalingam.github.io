@@ -70,7 +70,11 @@ def main() -> int:
         print(f"::warning::{faculty_slug}: photo link tab issue: {photo_error}")
 
     data_obj["sections"] = sections
-    data_obj["photo_url"] = photo_url
+    cleaned_photo_url = str(photo_url).strip()
+    if cleaned_photo_url:
+        data_obj["photo_url"] = cleaned_photo_url
+    else:
+        data_obj.pop("photo_url", None)
     data_path.write_text(json.dumps(data_obj, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Updated sheet sections for slug '{faculty_slug}' with {len(sections)} sections.")
     return 0

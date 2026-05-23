@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-23 18:05 IST | author: Codex | type: fix
+- Summary: Accepted formula-style Google Sheets photo-link cells and normalized embedded HTTPS URLs.
+- Files: `scripts/fetch_publications.py`, `scripts/validate_site.py`
+- Details: Updated photo-link parsing to extract the first HTTPS URL when the `link` cell contains a formula-style value (for example `=HYPERLINK(...)`) and aligned validator rules to accept formula strings that embed HTTPS URLs.
+- Revert: No
+
 ## 2026-05-23 18:01 IST | author: Codex | type: fix
 - Summary: Made photo-link tab detection case-insensitive and fetch by discovered tab name.
 - Files: `scripts/fetch_publications.py`

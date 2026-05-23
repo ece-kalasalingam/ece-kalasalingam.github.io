@@ -616,6 +616,10 @@ def parse_photo_link_value(rows: list[list[str]]) -> str:
         if label != "link":
             continue
         value = row[value_idx].strip() if value_idx < len(row) else ""
+        if value.startswith("="):
+            match = re.search(r"https://[^\s\"')]+", value)
+            if match:
+                value = match.group(0).strip()
         if value:
             return value
     return ""

@@ -24,6 +24,8 @@ def is_valid_photo_url(value: str) -> bool:
         return False
     if raw.startswith("https://"):
         return True
+    if raw.startswith("="):
+        return bool(re.search(r"https://[^\s\"')]+", raw))
     # Allow plain Google Drive file-id style values to support runtime conversion.
     return bool(re.fullmatch(r"[A-Za-z0-9_-]{20,}", raw))
 

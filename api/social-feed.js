@@ -7,11 +7,14 @@ export default {
 
     const limitParam = Number.parseInt(url.searchParams.get("limit") || "12", 10);
     const limit = Number.isFinite(limitParam) ? Math.min(Math.max(limitParam, 1), 30) : 12;
+    const platformParam = (url.searchParams.get("platform") || "").toLowerCase().trim();
+    const fetchLinkedIn = !platformParam || platformParam === "linkedin";
+    const fetchYouTube = !platformParam || platformParam === "youtube";
 
     try {
       const [linkedinPosts, youtubePosts] = await Promise.all([
-        fetchLinkedInPosts(env, limit),
-        fetchYouTubePosts(env, limit)
+        fetchLinkedIn ? fetchLinkedInPosts(env, limit) : Promise.resolve([]),
+        fetchYouTube ? fetchYouTubePosts(env, limit) : Promise.resolve([])
       ]);
 
       const items = [...linkedinPosts, ...youtubePosts]

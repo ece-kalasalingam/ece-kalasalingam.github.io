@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-22 15:30 IST | author: JP | type: tweak
+- Summary: Homepage now shows 6 recent YouTube videos only.
+- Files: `assets/js/home.js`, `api/social-feed.js`, `index.html`
+- Details: Updated home feed endpoint to `?limit=6&platform=youtube`. Added `platform` query-param support to the API worker — when set, only the matching platform is fetched (skipping the other API call entirely), then sorted by date and sliced to limit. Updated section description copy to reflect YouTube-only feed.
+- Revert: No
+
 ## 2026-05-22 15:00 IST | author: JP | type: tweak
 - Summary: Redesigned homepage with a modern hero section and refined social feed card styles.
 - Files: `index.html`, `assets/css/home.css`

@@ -123,7 +123,7 @@ function bindVideoActions() {
 
 async function loadSocialFeed() {
   const root = document.getElementById("content");
-  const endpoint = `${window.location.origin}/api/social-feed?limit=4`;
+  const endpoint = `${window.location.origin}/api/social-feed?limit=6&platform=youtube`;
 
   const res = await fetch(endpoint, { cache: "no-cache" });
   if (!res.ok) {

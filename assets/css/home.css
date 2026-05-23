@@ -95,6 +95,19 @@
   transform: translateY(-1px);
 }
 
+.hero-btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+}
+
+.hero-btn-outline:hover,
+.hero-btn-outline:focus-visible {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.8);
+  color: #fff;
+}
+
 /* ─── Section header ─────────────────────────────────────────── */
 .section-header {
   margin-bottom: 18px;

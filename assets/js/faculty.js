@@ -83,18 +83,30 @@ function buildCanonicalFacultyProfileUrl(facultyMeta, facultyData) {
   return `${baseUrl}?faculty=${encodeURIComponent(slug)}`;
 }
 
+function resolveFacultyEmails(facultyMeta, facultyData) {
+  const profileItems = getProfileItems(facultyData);
+  const emailRaw = getProfileValueByLabel(profileItems, ["email", "e-mail", "mail"]);
+  const sheetEmails = parseEmails(emailRaw);
+  if (sheetEmails.length > 0) return sheetEmails;
+
+  const fallbackEmail = parseEmails(String(facultyMeta?.email || ""))[0] || "";
+  return fallbackEmail ? [fallbackEmail] : [];
+}
+
 function buildFacultyVcard(facultyMeta, facultyData) {
   const profileItems = getProfileItems(facultyData);
   const fullName = String(facultyData?.name || facultyMeta?.name || "Faculty Member").trim();
   const designationFromProfile = getProfileValueByLabel(profileItems, ["designation", "role", "position"]);
   const designation = designationFromProfile || String(facultyMeta?.designation || "").trim();
-  const emailRaw = getProfileValueByLabel(profileItems, ["email", "e-mail", "mail"]);
   const phoneRaw = getProfileValueByLabel(profileItems, ["phone", "mobile", "contact", "telephone", "tel"]);
   const department = getProfileValueByLabel(profileItems, ["department", "dept"]);
   const office = getProfileValueByLabel(profileItems, ["office", "address", "location"]);
-  const emails = parseEmails(emailRaw);
+  const websiteRaw = getProfileValueByLabel(profileItems, ["website", "web", "url", "link", "homepage"]);
+  const emails = resolveFacultyEmails(facultyMeta, facultyData);
   const phones = parsePhones(phoneRaw);
-  const profileUrl = buildCanonicalFacultyProfileUrl(facultyMeta, facultyData);
+  const fallbackSlugUrl = buildCanonicalFacultyProfileUrl(facultyMeta, facultyData);
+  const websiteCandidate = normalizeCandidateUrl(websiteRaw);
+  const profileUrl = isSafeExternalUrl(websiteCandidate) ? websiteCandidate : fallbackSlugUrl;
   const scopusId = String(facultyData?.scopus_id || facultyMeta?.scopus_id || "").trim();
 
   const lines = [
@@ -145,7 +157,7 @@ function createQrModal(facultyMeta, facultyData) {
   const designation = String(facultyMeta.designation || "").trim();
   const profileItems = getProfileItems(facultyData);
   const department = getProfileValueByLabel(profileItems, ["department", "dept"]);
-  const email = parseEmails(getProfileValueByLabel(profileItems, ["email", "e-mail", "mail"]))[0] || "";
+  const email = resolveFacultyEmails(facultyMeta, facultyData)[0] || "";
   const phone = parsePhones(getProfileValueByLabel(profileItems, ["phone", "mobile", "contact", "telephone", "tel"]))[0] || "";
   const overlay = document.createElement("div");
   overlay.className = "qr-modal-overlay";

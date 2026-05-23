@@ -1,152 +1,177 @@
 [
-   {
+  {
     "name": "Dr. Charles Pravin J.",
     "slug": "charles-pravin",
     "scopus_id": "57191345241",
-    "designation": "Professor/HoD"
+    "designation": "Professor/HoD",
+    "email": "charles@klu.ac.in"
   },
   {
     "name": "Dr. P. Sivakumar",
     "slug": "p-sivakumar",
     "scopus_id": "53871895300",
-    "designation": "Professor/Dean"
+    "designation": "Professor/Dean",
+    "email": "siva@klu.ac.in"
   },
   {
     "name": "Dr. M. Pallikonda Rajasekaran",
     "slug": "m-pallikonda-rajasekaran",
     "scopus_id": "60000019800",
-    "designation": "Professor/Director (R&D)"
+    "designation": "Professor/Director (R&D)",
+    "email": "m.p.raja@klu.ac.in"
   },
   {
     "name": "Dr. M. Kalpana",
     "slug": "m-kalpana",
     "scopus_id": "57220464288",
-    "designation": "Professor/Dean(FE)"
+    "designation": "Professor/Dean(FE)",
+    "email": "kalpana@klu.ac.in"
   },
   {
     "name": "Dr. B. Perumal",
     "slug": "BPLECE",
     "scopus_id": "56352303700",
-    "designation": "Associate Professor"
+    "designation": "Associate Professor",
+    "email": "perumal@klu.ac.in"
   },
   {
     "name": "Dr. Shashi Kant Dargar",
     "slug": "SKDargar",
     "scopus_id": "57193235245",
-    "designation": "Associate Professor"
+    "designation": "Associate Professor",
+    "email": "skdargar@klu.ac.in"
   },
   {
     "name": "Dr. K. S. Dhanalakshmi",
     "slug": "k-s-dhanalakshmi",
     "scopus_id": null,
-    "designation": "Associate Professor"
+    "designation": "Associate Professor",
+    "email": "k.s.dhanalakshmi@klu.ac.in"
   },
   {
     "name": "Dr. S.Diwakaran",
     "slug": "Diwakaran",
     "scopus_id": "56736854500",
-    "designation": "Associate Professor"
+    "designation": "Associate Professor",
+    "email": "s.divakaran@klu.ac.in"
   },
   {
     "name": "Dr. Josephine Selle Jeyanathan",
     "slug": "Josephine-Selle-J",
     "scopus_id": "57207916322",
-    "designation": "Associate Professor"
+    "designation": "Associate Professor",
+    "email": "josephine@klu.ac.in"
   },
   {
     "name": "Dr. V. Muneeswaran",
     "slug": "v-muneeswaran",
     "scopus_id": "57191622200",
-    "designation": "Associate Professor"
+    "designation": "Associate Professor",
+    "email": "v.muneeswaran@klu.ac.in"
   },
   {
     "name": "Dr. D. Ganeshaperumal",
     "slug": "DGPECE",
     "scopus_id": "57192268536",
-    "designation": "Associate Professor"
+    "designation": "Associate Professor",
+    "email": "d.ganeshaperumal@klu.ac.in"
   },
   {
     "name": "Dr. Aarthi@Ananthakirupa VPMB",
     "slug": "aarthi-vpmb",
     "scopus_id": "57191487344",
-    "designation": "Associate Professor"
+    "designation": "Associate Professor",
+    "email": "aarthi@klu.ac.in"
   },
   {
     "name": "Dr. K.Pandiaraj",
     "slug": "Pandiaraj-K",
     "scopus_id": "57202111379",
-    "designation": "Associate Professor"
+    "designation": "Associate Professor",
+    "email": "pandiaraj@klu.ac.in"
   },
   {
     "name": "Dr. Jeya Prakash K.",
     "slug": "jeyaprakashk",
     "scopus_id": "57195717091",
-    "designation": "Associate Professor"
+    "designation": "Associate Professor",
+    "email": "k.jeyaprakash@klu.ac.in"
   },
   {
     "name": "Dr. P. Manikandan",
     "slug": "p-manikandan",
     "scopus_id": "57547504800",
-    "designation": "Associate Professor"
+    "designation": "Associate Professor",
+    "email": "p.manikandan@klu.ac.in"
   },
   {
     "name": "Dr. S.P.Velmurugan",
     "slug": "s-p-velmurugan",
     "scopus_id": "57216655372",
-    "designation": "Associate Professor"
+    "designation": "Associate Professor",
+    "email": "s.p.velmurugan@klu.ac.in"
   },
   {
     "name": "Dr. M. Ramesh",
     "slug": "mr",
     "scopus_id": "57206567456",
-    "designation": "Associate Professor"
+    "designation": "Associate Professor",
+    "email": "m.ramesh@klu.ac.in"
   },
   {
     "name": "Dr. Jenyfal Sampson",
     "slug": "Jenyfal",
     "scopus_id": "57216659850",
-    "designation": "Associate Professor"
+    "designation": "Associate Professor",
+    "email": "jenyfal.sampson@klu.ac.in"
   },
   {
     "name": "Dr. N. Bhuvaneswary",
     "slug": "Buvi",
     "scopus_id": "57220258176",
-    "designation": "Associate Professor"
+    "designation": "Associate Professor",
+    "email": "bhuvaneswary.n@klu.ac.in"
   },
   {
     "name": "Dr. R. Kottaimalai",
     "slug": "RKM",
     "scopus_id": "55811890500",
-    "designation": "Associate Professor"
+    "designation": "Associate Professor",
+    "email": "r.kottaimalai@klu.ac.in"
   },
   {
     "name": "Dr. J. Bennilo Fernandes",
     "slug": "j-bennilo-fernandes",
     "scopus_id": "57202249273",
-    "designation": "Associate Professor"
+    "designation": "Associate Professor",
+    "email": "j.bennilo@klu.ac.in"
   },
   {
     "name": "Dr. V. Sathya Narayanan",
     "slug": "v-sathya-narayanan",
     "scopus_id": "58764910600",
-    "designation": "Associate Professor"
+    "designation": "Associate Professor",
+    "email": "v.sathya.narayanan@klu.ac.in"
   },
   {
     "name": "Dr. Abha Dargar",
     "slug": "Abha",
     "scopus_id": "57215316237",
-    "designation": "Assistant Professor"
+    "designation": "Assistant Professor",
+    "email": "abha@klu.ac.in"
   },
   {
     "name": "Dr. Sheeba Jeya Sophia",
     "slug": "sheeba-jeya-sophia",
     "scopus_id": "56878915500",
-    "designation": "Assistant Professor"
+    "designation": "Assistant Professor",
+    "email": "s.sheebajeyasophia@klu.ac.in"
   },
   {
     "name": "Ms. Loyola Jasmine J",
     "slug": "loyola-jasmine-j",
     "scopus_id": "57957045300",
-    "designation": "Assistant Professor"
+    "designation": "Assistant Professor",
+    "email": "loyola.jasmine.j@klu.ac.in"
   }
 ]

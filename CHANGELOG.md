@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-23 18:08 IST | author: Codex | type: fix
+- Summary: Relaxed `photo_url` validation to accept wrapped shared URLs emitted by Google Sheets.
+- Files: `scripts/validate_site.py`
+- Details: Updated `is_valid_photo_url` to accept any string containing an HTTPS URL token (case-insensitive) instead of requiring strict prefix patterns, while still supporting raw Google Drive file IDs.
+- Revert: No
+
 ## 2026-05-23 18:05 IST | author: Codex | type: fix
 - Summary: Accepted formula-style Google Sheets photo-link cells and normalized embedded HTTPS URLs.
 - Files: `scripts/fetch_publications.py`, `scripts/validate_site.py`

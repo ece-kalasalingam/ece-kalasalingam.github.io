@@ -24,6 +24,7 @@ from requests.exceptions import Timeout
 SEARCH_URL: Final[str] = "https://api.elsevier.com/content/search/scopus"
 AUTHOR_URL_TEMPLATE: Final[str] = "https://api.elsevier.com/content/author/author_id/{author_id}"
 ABSTRACT_URL_TEMPLATE: Final[str] = "https://api.elsevier.com/content/abstract/{identifier}"
+CROSSREF_WORKS_URL_TEMPLATE: Final[str] = "https://api.crossref.org/works/{doi}"
 
 API_KEY: Final[str | None] = os.getenv("ELSEVIER_API_KEY")
 INST_TOKEN: Final[str | None] = os.getenv("ELSEVIER_INST_TOKEN")
@@ -1026,6 +1027,48 @@ def fetch_publication_abstract(
     return abstract_obj, None
 
 
+def strip_tags(value: str) -> str:
+    # Crossref abstracts can be JATS-like XML; strip tags for plain-text storage.
+    no_tags = re.sub(r"<[^>]+>", " ", value)
+    compact = re.sub(r"\s+", " ", no_tags).strip()
+    return compact
+
+
+def fetch_crossref_abstract(session: Session, doi: str) -> tuple[PublicationAbstract | None, str | None]:
+    cleaned_doi = doi.strip()
+    if not cleaned_doi:
+        return None, "missing doi for crossref"
+    url = CROSSREF_WORKS_URL_TEMPLATE.format(doi=quote(cleaned_doi, safe=""))
+    headers = {
+        "Accept": "application/json",
+        "User-Agent": "ece-kalasalingam-publications-bot/1.0 (mailto:no-reply@example.com)",
+    }
+    try:
+        response = session.get(url, headers=headers, timeout=20)
+        if response.status_code == 404:
+            return None, "crossref record not found"
+        response.raise_for_status()
+    except requests.RequestException as exc:
+        return None, f"crossref request failed: {exc}"
+
+    try:
+        raw_json: object = response.json()
+    except ValueError as exc:
+        return None, f"crossref invalid json: {exc}"
+    obj = ensure_object(raw_json, "Crossref response")
+    message = get_json_object_field(obj, "message", default={})
+    raw_abstract = get_str_field(message, "abstract", "")
+    text = strip_tags(raw_abstract)
+    if not text:
+        return None, "crossref abstract unavailable"
+    abstract_obj: PublicationAbstract = {
+        "text": text,
+        "source": "crossref",
+        "fetched_at": utc_now_iso(),
+    }
+    return abstract_obj, None
+
+
 def has_abstract_text(pub: PublicationEntry) -> bool:
     raw_abstract = pub.get("abstract")
     if not isinstance(raw_abstract, dict):
@@ -1043,6 +1086,8 @@ def enrich_publications_with_abstracts(
     stats = {
         "abstract_attempted": 0,
         "abstract_fetched": 0,
+        "abstract_fetched_scopus": 0,
+        "abstract_fetched_crossref": 0,
         "abstract_skipped_existing": 0,
         "abstract_skipped_missing_id": 0,
         "abstract_failed": 0,
@@ -1051,6 +1096,7 @@ def enrich_publications_with_abstracts(
         return stats
 
     candidates = publications[: max(abstract_top_n, 0)]
+    scopus_auth_failed = False
     with requests.Session() as session:
         for pub in candidates:
             if has_abstract_text(pub):
@@ -1060,15 +1106,33 @@ def enrich_publications_with_abstracts(
                 stats["abstract_skipped_missing_id"] += 1
                 continue
             stats["abstract_attempted"] += 1
-            abstract_obj, err = fetch_publication_abstract(session, api_key, author_id, pub)
-            if abstract_obj is not None:
-                pub["abstract"] = abstract_obj
-                stats["abstract_fetched"] += 1
-            else:
-                stats["abstract_failed"] += 1
-                if err:
-                    pub_title = get_str_field(pub, "title", "Unknown title")
-                    print(f"Warning: abstract fetch issue for '{pub_title}': {err}")
+            abstract_obj: PublicationAbstract | None = None
+            err: str | None = None
+
+            if not scopus_auth_failed:
+                abstract_obj, err = fetch_publication_abstract(session, api_key, author_id, pub)
+                if abstract_obj is not None:
+                    pub["abstract"] = abstract_obj
+                    stats["abstract_fetched"] += 1
+                    stats["abstract_fetched_scopus"] += 1
+                    continue
+                if err and "Auth failure (401)" in err:
+                    scopus_auth_failed = True
+
+            doi = get_str_field(pub, "doi", "").strip()
+            if doi:
+                crossref_obj, crossref_err = fetch_crossref_abstract(session, doi)
+                if crossref_obj is not None:
+                    pub["abstract"] = crossref_obj
+                    stats["abstract_fetched"] += 1
+                    stats["abstract_fetched_crossref"] += 1
+                    continue
+                err = crossref_err if crossref_err else err
+
+            stats["abstract_failed"] += 1
+            if err:
+                pub_title = get_str_field(pub, "title", "Unknown title")
+                print(f"Warning: abstract fetch issue for '{pub_title}': {err}")
     return stats
 
 
@@ -1327,6 +1391,8 @@ def main() -> int:
                     f"Abstract summary for {slug}: "
                     f"attempted={abstract_stats['abstract_attempted']}, "
                     f"fetched={abstract_stats['abstract_fetched']}, "
+                    f"fetched_scopus={abstract_stats['abstract_fetched_scopus']}, "
+                    f"fetched_crossref={abstract_stats['abstract_fetched_crossref']}, "
                     f"skipped_existing={abstract_stats['abstract_skipped_existing']}, "
                     f"skipped_missing_id={abstract_stats['abstract_skipped_missing_id']}, "
                     f"failed={abstract_stats['abstract_failed']}"

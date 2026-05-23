@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-23 22:54 IST | author: Codex | type: feature
+- Summary: Added DOI-based Crossref abstract fallback when Scopus abstract retrieval is unavailable.
+- Files: `scripts/fetch_publications.py`, `README.md`
+- Details: Extended abstract enrichment path from `Scopus -> empty` to `Scopus -> Crossref (DOI) -> empty`, preserving top-N and updates-only behavior. Added per-faculty Scopus abstract auth short-circuit after first 401 to reduce repeated failed calls, and expanded abstract telemetry logs with `fetched_scopus` and `fetched_crossref`.
+- Revert: No
+
 ## 2026-05-23 22:49 IST | author: Codex | type: fix
 - Summary: Fixed CI validator failure by updating homepage script checks from deleted `index.js` to current `home.js` architecture.
 - Files: `scripts/validate_site.py`

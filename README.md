@@ -49,6 +49,10 @@ Batch checkpoint progress is persisted in `data/sync_state.json`.
   - only the top recent `ABSTRACT_TOP_N` publications are considered,
   - already populated abstracts are skipped,
   - missing identifier records (`eid`/`doi`) are skipped.
+- Abstract source fallback order:
+  1. Scopus Abstract Retrieval API (using `eid`, fallback `doi`),
+  2. Crossref Works API (DOI-based fallback),
+  3. empty abstract when unavailable.
 - Abstract availability depends on Scopus API entitlement and record coverage.
 
 ## Faculty Photos

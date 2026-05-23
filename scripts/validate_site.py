@@ -218,9 +218,20 @@ def validate_data_files(repo_root: Path, faculty_list: list[FacultyRecord], allo
 
 
 def validate_html_files(repo_root: Path) -> None:
-    index_js = (repo_root / "assets" / "js" / "index.js").read_text(encoding="utf-8")
+    assets_js_dir = repo_root / "assets" / "js"
+    index_js_path = assets_js_dir / "index.js"
+    home_js_path = assets_js_dir / "home.js"
     faculty_js = (repo_root / "assets" / "js" / "faculty.js").read_text(encoding="utf-8")
-    require("faculty/?${encodeURIComponent(person.slug || \"\")}" in index_js, "index.js should link to faculty pages with bare '?slug' query")
+    if index_js_path.exists():
+        index_or_home_js = index_js_path.read_text(encoding="utf-8")
+    else:
+        require(home_js_path.exists(), "assets/js/home.js is missing")
+        index_or_home_js = home_js_path.read_text(encoding="utf-8")
+    require(
+        "faculty/?${encodeURIComponent(person.slug || \"\")}" in index_or_home_js
+        or "loadFacultySpotlights" in index_or_home_js,
+        "Expected homepage script hooks are missing (legacy faculty-link hook or current home spotlight hook).",
+    )
     require("getFacultyFromBareQuery" in faculty_js, "faculty.js should resolve bare '?slug' query format")
 
 

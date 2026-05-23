@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-23 22:49 IST | author: Codex | type: fix
+- Summary: Fixed CI validator failure by updating homepage script checks from deleted `index.js` to current `home.js` architecture.
+- Files: `scripts/validate_site.py`
+- Details: Updated `validate_html_files()` to use `assets/js/home.js` when `assets/js/index.js` is absent, while retaining backward compatibility for legacy branches where `index.js` exists. Also adjusted homepage hook validation to accept either legacy faculty-link signature or current `loadFacultySpotlights` hook so validation remains aligned with active frontend structure.
+- Revert: No
+
 ## 2026-05-23 22:45 IST | author: Codex | type: feature
 - Summary: Implemented Scopus abstract enrichment for top 3 recent publications with updates-only behavior after initial fill.
 - Files: `scripts/fetch_publications.py`, `.github/workflows/update_publications.yaml`, `README.md`

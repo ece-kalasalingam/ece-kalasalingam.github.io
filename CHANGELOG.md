@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 2026-05-23 18:01 IST | author: Codex | type: fix
+- Summary: Made photo-link tab detection case-insensitive and fetch by discovered tab name.
+- Files: `scripts/fetch_publications.py`
+- Details: Updated `fetch_photo_url_from_sheet` to match tab names by normalized key (so `Photo__link` and `photo__link` both work) and fetch values using the actual tab title from metadata, preventing range parse errors caused by case mismatch.
+- Revert: No
+
+## 2026-05-23 18:00 IST | author: Codex | type: fix
+- Summary: Prevented sync warnings when `photo__link` tab is absent on a faculty sheet.
+- Files: `scripts/fetch_publications.py`
+- Details: Updated `fetch_photo_url_from_sheet` to check sheet tabs first and treat missing `photo__link` as optional (`photo_url` empty) instead of attempting a values fetch that triggers Google Sheets `Unable to parse range` HTTP 400 warnings.
+- Revert: No
+
 ## 2026-05-23 17:52 IST | author: Codex | type: fix
 - Summary: Renamed faculty photo sheet tab contract from `photos__link` to `photo__link`.
 - Files: `scripts/fetch_publications.py`, `README.md`

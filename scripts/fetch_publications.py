@@ -622,7 +622,19 @@ def parse_photo_link_value(rows: list[list[str]]) -> str:
 
 
 def fetch_photo_url_from_sheet(sheet_id: str, google_api_key: str) -> tuple[str, str | None]:
-    rows, value_error = fetch_sheet_values(sheet_id, "photo__link", google_api_key)
+    tabs, tab_error = fetch_sheet_tabs(sheet_id, google_api_key)
+    if tab_error:
+        return "", tab_error
+    target_tab_name = ""
+    for tab in tabs:
+        tab_name = str(tab.get("tab_name", "")).strip()
+        if normalize_label_key(tab_name) == normalize_label_key("photo__link"):
+            target_tab_name = tab_name
+            break
+    if not target_tab_name:
+        return "", None
+
+    rows, value_error = fetch_sheet_values(sheet_id, target_tab_name, google_api_key)
     if value_error:
         return "", value_error
     return parse_photo_link_value(rows), None

@@ -71,6 +71,7 @@ class FacultyOutput(TypedDict):
     h_index: int | None
     total_publications: int
     publications_file: str
+    photo_url: str
     sections: list["FacultySection"]
 
 
@@ -587,6 +588,46 @@ def parse_table_section(rows: list[list[str]]) -> tuple[list[str], list[list[str
     return headers, parsed_rows, None
 
 
+def normalize_label_key(value: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", str(value).strip().lower())
+
+
+def parse_photo_link_value(rows: list[list[str]]) -> str:
+    if not rows:
+        return ""
+
+    first_row = rows[0]
+    normalized_headers = [normalize_label_key(cell) for cell in first_row]
+    has_label_value_headers = ("label" in normalized_headers) and ("value" in normalized_headers)
+
+    if has_label_value_headers:
+        label_idx = normalized_headers.index("label")
+        value_idx = normalized_headers.index("value")
+        data_rows = rows[1:]
+    else:
+        label_idx = 0
+        value_idx = 1
+        data_rows = rows
+
+    for row in data_rows:
+        if label_idx >= len(row):
+            continue
+        label = normalize_label_key(row[label_idx])
+        if label != "link":
+            continue
+        value = row[value_idx].strip() if value_idx < len(row) else ""
+        if value:
+            return value
+    return ""
+
+
+def fetch_photo_url_from_sheet(sheet_id: str, google_api_key: str) -> tuple[str, str | None]:
+    rows, value_error = fetch_sheet_values(sheet_id, "photo__link", google_api_key)
+    if value_error:
+        return "", value_error
+    return parse_photo_link_value(rows), None
+
+
 def fetch_sheet_sections(sheet_id: str, google_api_key: str) -> tuple[list[FacultySection], list[str]]:
     sections: list[FacultySection] = []
     warnings: list[str] = []
@@ -1068,11 +1109,15 @@ def main() -> int:
 
             publications_file = f"publications/{slug}.json"
             sections: list[FacultySection] = []
+            photo_url = ""
             sheet_id = faculty_sheet_ids.get(slug, "")
             if sheet_id:
                 print(f"[Sheets] Mapping found for slug='{slug}' -> sheet_id={mask_sheet_id(sheet_id)}")
                 if GOOGLE_API_KEY and GOOGLE_API_KEY.strip():
                     sections, section_warnings = fetch_sheet_sections(sheet_id, GOOGLE_API_KEY.strip())
+                    photo_url, photo_error = fetch_photo_url_from_sheet(sheet_id, GOOGLE_API_KEY.strip())
+                    if photo_error:
+                        print(f"Warning: photo link tab issue for {slug}: {photo_error}")
                     for warning in section_warnings:
                         print(f"Warning: sheet parse issue for {slug}: {warning}")
                 else:
@@ -1087,6 +1132,7 @@ def main() -> int:
                 "h_index": h_index,
                 "total_publications": len(publications),
                 "publications_file": publications_file,
+                "photo_url": photo_url,
                 "sections": sections,
             }
             collected_publications[slug] = {"publications": publications}

@@ -208,7 +208,14 @@ function createQrModal(facultyMeta, facultyData) {
   qrCardPhotoFallback.className = "qr-card-photo-fallback";
   qrCardPhotoWrap.appendChild(qrCardPhotoFallback);
 
-  attachFacultyPhoto(qrCardPhoto, qrCardPhotoFallback, facultyMeta.slug || "", fullName, "../images/faculty");
+  attachFacultyPhoto(
+    qrCardPhoto,
+    qrCardPhotoFallback,
+    facultyMeta.slug || "",
+    fullName,
+    "../images/faculty",
+    facultyData?.photo_url || ""
+  );
 
   const qrCardName = document.createElement("p");
   qrCardName.className = "qr-card-name";
@@ -781,7 +788,14 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
   const fallback = document.createElement("div");
   fallback.className = "photo-fallback";
 
-  attachFacultyPhoto(photo, fallback, facultyMeta.slug || "", facultyMeta.name || "", "../images/faculty");
+  attachFacultyPhoto(
+    photo,
+    fallback,
+    facultyMeta.slug || "",
+    facultyMeta.name || "",
+    "../images/faculty",
+    facultyData?.photo_url || ""
+  );
   photoWrap.appendChild(photo);
   photoWrap.appendChild(fallback);
 

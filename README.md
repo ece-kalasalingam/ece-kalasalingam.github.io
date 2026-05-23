@@ -28,11 +28,29 @@ Batch checkpoint progress is persisted in `data/sync_state.json`.
 
 ## Faculty Photos
 
-Optional photos can be added under `images/faculty/` named by slug:
+Photo rendering uses this priority order:
+
+1. `photo__link` tab from each faculty Google Sheet, with key `link`.
+2. Local fallback image in `images/faculty/` named by slug.
+3. Initials placeholder.
+
+`photo__link` tab format:
+
+- Header row optional.
+- Key/label must be `link`.
+- Value cell is the public image URL (editable).
+
+Supported `link` values:
+
+- Direct `https://` image URL.
+- Google Drive share URL (auto-converted at runtime).
+- Google Drive file id.
+
+Google Drive files must be shared publicly for browser access.
+
+Local fallback photos can be placed as:
 
 - `images/faculty/<slug>.jpg`
 - `images/faculty/<slug>.jpeg`
 - `images/faculty/<slug>.png`
 - `images/faculty/<slug>.webp`
-
-If no photo exists, the UI shows an initials placeholder.

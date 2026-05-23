@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from pathlib import Path
 from typing import TypedDict, TypeAlias, cast
 
@@ -15,6 +16,16 @@ class FacultyRecord(TypedDict):
     slug: str
     scopus_id: str | None
     designation: str
+
+
+def is_valid_photo_url(value: str) -> bool:
+    raw = value.strip()
+    if not raw:
+        return False
+    if raw.startswith("https://"):
+        return True
+    # Allow plain Google Drive file-id style values to support runtime conversion.
+    return bool(re.fullmatch(r"[A-Za-z0-9_-]{20,}", raw))
 
 
 def load_json(path: Path) -> object:
@@ -117,6 +128,13 @@ def validate_data_files(repo_root: Path, faculty_list: list[FacultyRecord], allo
         require(isinstance(data_raw.get("name"), str), f"{data_path} missing 'name'")
         require(isinstance(data_raw.get("scopus_id"), str), f"{data_path} missing 'scopus_id'")
         require(isinstance(data_raw.get("total_publications"), int), f"{data_path} missing integer 'total_publications'")
+        photo_url = data_raw.get("photo_url")
+        if photo_url is not None:
+            require(isinstance(photo_url, str), f"{data_path} 'photo_url' must be a string when present")
+            require(
+                is_valid_photo_url(photo_url),
+                f"{data_path} 'photo_url' must be an https URL or Google Drive file id",
+            )
 
         has_inline_publications = isinstance(data_raw.get("publications"), list)
         publications_file = data_raw.get("publications_file")

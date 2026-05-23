@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## 2026-05-23 17:52 IST | author: Codex | type: fix
+- Summary: Renamed faculty photo sheet tab contract from `photos__link` to `photo__link`.
+- Files: `scripts/fetch_publications.py`, `README.md`
+- Details: Updated the dedicated photo-link tab reader to fetch from `photo__link` and aligned README documentation to the new fixed sheet name. Key/value rule remains unchanged (`link` -> URL).
+- Revert: No
+
+## 2026-05-23 17:45 IST | author: Codex | type: fix
+- Summary: Switched faculty photo source contract from Profile `Photo URL` to fixed `photos__link` tab key `link`.
+- Files: `scripts/fetch_publications.py`, `scripts/sync_sheet_sections_only.py`, `README.md`
+- Details: Removed dependency on Profile-section photo fields and introduced dedicated `photos__link` reader per faculty sheet. The sync pipeline now reads key/value rows from `photos__link` and persists `photo_url` using only key `link`, while keeping local-image and initials fallback behavior unchanged.
+- Revert: No
+
+## 2026-05-23 17:40 IST | author: Codex | type: feature
+- Summary: Implemented multi-source faculty photo lookup with Google Sheet `Photo URL` primary source, local image fallback, and initials fallback.
+- Files: `scripts/fetch_publications.py`, `scripts/sync_sheet_sections_only.py`, `assets/js/common.js`, `assets/js/index.js`, `assets/js/faculty.js`, `scripts/validate_site.py`, `README.md`
+- Details: Added sheet-profile `Photo URL` extraction and persisted `photo_url` into `data/<slug>.json` during full and partial sheet sync. Extended shared photo loader to validate/normalize remote URLs, auto-convert common Google Drive links/file-ids into direct-view URLs, then fallback to `images/faculty/<slug>.(jpg|jpeg|png|webp)` and finally initials placeholder. Updated list/profile call sites to pass remote photo URL, added validator checks for optional `photo_url`, and documented the new sheet contract/public sharing requirement.
+- Revert: No
+
 ## 2026-05-23 17:06 IST | author: Codex | type: feature
 - Summary: Added faculty-level email fallback support for vCard/QR contact generation.
 - Files: `faculty.json`, `assets/js/faculty.js`

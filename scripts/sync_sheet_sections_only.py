@@ -8,6 +8,7 @@ from typing import Any, cast
 
 from fetch_publications import (
     ensure_object,
+    fetch_photo_url_from_sheet,
     fetch_sheet_sections,
     load_sheet_id_map,
 )
@@ -64,8 +65,12 @@ def main() -> int:
     sections, warnings = fetch_sheet_sections(sheet_id, google_api_key)
     for warning in warnings:
         print(f"::warning::{faculty_slug}: {warning}")
+    photo_url, photo_error = fetch_photo_url_from_sheet(sheet_id, google_api_key)
+    if photo_error:
+        print(f"::warning::{faculty_slug}: photo link tab issue: {photo_error}")
 
     data_obj["sections"] = sections
+    data_obj["photo_url"] = photo_url
     data_path.write_text(json.dumps(data_obj, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Updated sheet sections for slug '{faculty_slug}' with {len(sections)} sections.")
     return 0

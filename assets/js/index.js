@@ -7,6 +7,24 @@ async function loadFacultyList() {
   if (!Array.isArray(faculty)) {
     throw new Error("faculty.json must be an array");
   }
+  const photoUrlMap = {};
+  await Promise.all(
+    faculty.map(async person => {
+      const slug = String(person?.slug || "").trim();
+      if (!slug) return;
+      try {
+        const detailsRes = await fetch(`data/${encodeURIComponent(slug)}.json`, { cache: "no-cache" });
+        if (!detailsRes.ok) return;
+        const details = await detailsRes.json();
+        const photoUrl = String(details?.photo_url || "").trim();
+        if (photoUrl) {
+          photoUrlMap[slug] = photoUrl;
+        }
+      } catch (error) {
+        // Ignore per-person photo lookup failures; fallback chain will handle rendering.
+      }
+    })
+  );
 
   const container = document.getElementById("content");
   container.innerHTML = "";
@@ -36,7 +54,8 @@ async function loadFacultyList() {
     const fallback = document.createElement("div");
     fallback.className = "photo-fallback";
 
-    attachFacultyPhoto(photo, fallback, person.slug || "", person.name || "", "images/faculty");
+    const remotePhotoUrl = photoUrlMap[person.slug] || person.photo_url || "";
+    attachFacultyPhoto(photo, fallback, person.slug || "", person.name || "", "images/faculty", remotePhotoUrl);
     photoWrap.appendChild(photo);
     photoWrap.appendChild(fallback);
 

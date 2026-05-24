@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-24 11:30 IST | author: JP | type: style
+- Summary: Refined homepage typography to match JHU ECE editorial quality — larger display heading, tighter tracking, improved spacing rhythm.
+- Files: `assets/css/home.css`
+- Details: Added `--heading-font` variable with `"Segoe UI Variable Display"` in stack for better Windows rendering. Bumped hero h1 to `clamp(2.6rem, 5.5vw, 4.4rem)` with weight 900 and tracking `-0.04em`. Increased `.lead` to 1.15rem/1.78 line-height. Section head h2 uses `clamp(1.6rem, 2.4vw, 2rem)` at weight 800. Tightened kicker letter-spacing to 0.14em. Applied antialiasing and `text-rendering: optimizeLegibility` to body. Widened hero column ratio to 1.6fr/1fr with 64px gap. Increased `.home` vertical padding (top 68px, bottom 100px) and section gap to 72px.
+- Revert: No
+
 ## 2026-05-24 10:00 IST | author: JP | type: redesign
 - Summary: Redesigned homepage to institutional university style inspired by JHU ECE — clean white body, navy topbar, typography-first sections.
 - Files: `assets/css/home.css`, `index.html`

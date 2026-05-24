@@ -1,16 +1,19 @@
 /* ─── Variables ──────────────────────────────────────────────── */
 :root {
-  --blue:        #0d5cab;
-  --blue-dark:   #08243f;
-  --blue-tint:   #eef5ff;
-  --blue-border: #c3d9f5;
-  --text:        #0f172a;
-  --text-2:      #374151;
-  --muted:       #6b7280;
-  --dim:         #9ca3af;
-  --border:      #e5e7eb;
-  --bg:          #f7f8fa;
+  --blue:        #004c97;   /* JHU Spirit Blue tonal match for KARE */
+  --blue-dark:   #001f3f;
+  --blue-mid:    #0d5cab;
+  --blue-tint:   #edf4ff;
+  --blue-border: #b8d3f0;
+  --text:        #12120f;   /* near-black, warm — matches JHU body text */
+  --text-2:      #2d3748;
+  --muted:       #596475;
+  --dim:         #9aa4b0;
+  --border:      #dde2e8;
+  --bg:          #f8f9fb;
   --white:       #ffffff;
+  --heading-font: system-ui, -apple-system, "Segoe UI Variable Display",
+                  "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* ─── Base overrides ─────────────────────────────────────────── */
@@ -26,9 +29,11 @@ body {
   max-width: 100%;
   background: var(--bg);
   color: var(--text);
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 /* ─── Topbar ─────────────────────────────────────────────────── */
@@ -88,19 +93,19 @@ body {
 .home {
   width: min(1100px, calc(100% - 48px));
   margin: 0 auto;
-  padding: 52px 0 80px;
+  padding: 68px 0 100px;
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 72px;
 }
 
 /* ─── Hero ───────────────────────────────────────────────────── */
 .hero {
   display: grid;
-  grid-template-columns: 1.55fr 1fr;
-  gap: 56px;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 64px;
   align-items: start;
-  padding-bottom: 64px;
+  padding-bottom: 72px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -116,43 +121,46 @@ body {
 }
 
 .kicker {
-  margin: 0 0 18px;
-  font-size: 0.75rem;
+  margin: 0 0 20px;
+  font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--blue);
+  font-family: var(--heading-font);
 }
 
 .hero-main h1 {
-  margin: 0 0 22px;
-  font-size: clamp(2.2rem, 4.6vw, 3.7rem);
-  font-weight: 800;
-  line-height: 1.06;
-  letter-spacing: -0.03em;
+  margin: 0 0 24px;
+  font-size: clamp(2.6rem, 5.5vw, 4.4rem);
+  font-weight: 900;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
   color: var(--text);
+  font-family: var(--heading-font);
 }
 
 .lead {
   margin: 0;
-  font-size: 1.1rem;
-  line-height: 1.75;
+  font-size: 1.15rem;
+  line-height: 1.78;
   color: var(--muted);
-  max-width: 48ch;
+  max-width: 46ch;
 }
 
 .hero-note {
-  padding: 28px 30px;
+  padding: 30px 32px 32px;
   background: var(--blue-tint);
   border-left: 4px solid var(--blue);
 }
 
 .hero-note h2 {
-  margin: 0 0 16px;
-  font-size: 1.05rem;
+  margin: 0 0 18px;
+  font-size: 1.08rem;
   font-weight: 700;
   color: var(--blue-dark);
   letter-spacing: -0.01em;
+  font-family: var(--heading-font);
 }
 
 .hero-note ul {
@@ -161,14 +169,14 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 11px;
-  font-size: 0.95rem;
-  line-height: 1.55;
+  gap: 12px;
+  font-size: 0.97rem;
+  line-height: 1.6;
   color: var(--text-2);
 }
 
 .hero-note li {
-  padding-left: 20px;
+  padding-left: 22px;
   position: relative;
 }
 
@@ -199,8 +207,8 @@ body {
 }
 
 .section-head {
-  margin-bottom: 28px;
-  padding-bottom: 14px;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
   border-bottom: 2px solid var(--blue);
   display: flex;
   align-items: baseline;
@@ -211,17 +219,17 @@ body {
 
 .section-head h2 {
   margin: 0;
-  font-size: 1.7rem;
+  font-size: clamp(1.6rem, 2.4vw, 2rem);
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.08;
   letter-spacing: -0.025em;
   color: var(--text);
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--heading-font);
 }
 
 .section-head p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   color: var(--muted);
   line-height: 1.5;
 }

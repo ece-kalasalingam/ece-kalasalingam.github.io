@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 2026-05-24 19:45 IST | author: Codex | type: fix
+- Summary: Fixed directory page null-container crash in faculty list loader.
+- Files: `assets/js/directory.js`, `CHANGELOG.md`
+- Details: Added `getDirectoryContainer()` resolver with `#faculty-spotlights` primary and `#content` fallback, plus null guards before DOM writes in both success and error paths. Prevents `Cannot set properties of null` runtime error.
+- Revert: No
+
+## 2026-05-24 19:45 IST | author: Codex | type: fix
+- Summary: Updated CSP to allow Cloudflare Insights script and beacon requests.
+- Files: `index.html`, `directory/index.html`, `faculty/index.html`, `CHANGELOG.md`
+- Details: Extended CSP `script-src` to include `https://static.cloudflareinsights.com` and `connect-src` to include `https://cloudflareinsights.com` across main page entry points so Cloudflare analytics beacon can load and report without CSP blocking.
+- Revert: No
+
 ## 2026-05-24 19:37 IST | author: Codex | type: fix
 - Summary: Restored QR as image output to enable save/share actions.
 - Files: `assets/js/faculty.js`, `CHANGELOG.md`

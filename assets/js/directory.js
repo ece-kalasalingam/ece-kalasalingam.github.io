@@ -1,3 +1,11 @@
+function getDirectoryContainer() {
+  const primary = document.getElementById("faculty-spotlights");
+  if (primary instanceof HTMLElement) return primary;
+  const fallback = document.getElementById("content");
+  if (fallback instanceof HTMLElement) return fallback;
+  return null;
+}
+
 async function loadFacultyList() {
   const facultyRes = await fetch("../faculty.json", { cache: "no-cache" });
   if (!facultyRes.ok) {
@@ -26,7 +34,8 @@ async function loadFacultyList() {
     })
   );
 
-  const container = document.getElementById("faculty-spotlights");
+  const container = getDirectoryContainer();
+  if (!container) return;
   container.innerHTML = "";
 
   if (!faculty.length) {
@@ -77,8 +86,10 @@ async function loadFacultyList() {
 }
 
 loadFacultyList().catch(err => {
-  const container = document.getElementById("faculty-spotlights");
-  container.innerHTML = '<article class="faculty-card faculty-loading">Failed to load faculty directory.</article>';
+  const container = getDirectoryContainer();
+  if (container) {
+    container.innerHTML = '<article class="faculty-card faculty-loading">Failed to load faculty directory.</article>';
+  }
   console.error(err);
 });
 

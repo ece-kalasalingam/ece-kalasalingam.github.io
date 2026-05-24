@@ -7,12 +7,89 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>ECE Faculty Directory</title>
   <link rel="stylesheet" href="../assets/css/common.css">
-  <link rel="stylesheet" href="../assets/css/directory.css">
+  <link rel="stylesheet" href="../assets/css/home.css">
   <script src="../assets/js/common.js" defer></script>
   <script src="../assets/js/directory.js" defer></script>
 </head>
 <body>
-  <h1>ECE Faculty Directory</h1>
-  <div id="content" role="status" aria-live="polite">Loading...</div>
+  <div class="topbar">
+    <span>Kalasalingam Academy of Research and Education</span>
+    <div class="topbar-links">
+      <a href="../">Home</a>
+      <a href="https://magazines.eceklu.in/" target="_blank" rel="noopener noreferrer">Magazines</a>
+      <div class="topbar-dropdown">
+        <button class="topbar-dropdown-btn" aria-haspopup="true" aria-expanded="false">Conferences &#9660;</button>
+        <div class="topbar-submenu" role="menu">
+          <a href="https://drive.google.com/file/d/1PoeIGBcBKkQU1iDKa0nKNNiQ-PVHzf9h/view" target="_blank" rel="noopener noreferrer" role="menuitem">ICECI 2012</a>
+          <a href="https://ncvd2014.eceklu.in/" target="_blank" rel="noopener noreferrer" role="menuitem">NCVD 2014</a>
+          <a href="https://incdad24.eceklu.in/" target="_blank" rel="noopener noreferrer" role="menuitem">INCDAD 2024</a>
+          <a href="https://smtvip.eceklu.in/" target="_blank" rel="noopener noreferrer" role="menuitem">SMTVIP 2024</a>
+          <a href="https://studentbranches.ieee.org/in-kalasalingam-ed/icfact2026/" target="_blank" rel="noopener noreferrer" role="menuitem">ICFACT 2026</a>
+        </div>
+      </div>
+      <a href="https://linktr.ee/kalasalingam.ece" target="_blank" rel="noopener noreferrer">Social</a>
+    </div>
+  </div>
+
+  <header>
+    <div class="logo">
+      <h1>Department of Electronics and Communication Engineering</h1>
+      <p>Kalasalingam Academy of Research and Education — NAAC A++, ABET, NBA (Tier-I)</p>
+    </div>
+    <nav>
+      <a href="#faculty">Faculty</a>
+      <a href="#connect">Connect</a>
+      <a href="../">Main Site</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Meet Our Faculty</h2>
+      <p>Explore the complete ECE faculty directory and open individual profiles for contact details, academic background, and publications.</p>
+      <a href="#faculty" class="btn">Browse Faculty</a>
+      <a href="../" class="btn secondary">Back to Homepage</a>
+    </div>
+  </section>
+
+  <section class="highlight" id="faculty" aria-label="Faculty directory">
+    <h2 class="section-title">Meet Our Faculty</h2>
+    <div id="faculty-spotlights" class="faculty-grid" role="status" aria-live="polite">
+      <div class="faculty-loading">Loading faculty directory...</div>
+    </div>
+  </section>
+
+  <section class="cta" id="connect">
+    <h2>Collaborate with ECE</h2>
+    <p>Connect with our faculty for mentoring, research collaboration, and academic partnerships.</p>
+    <a href="https://linktr.ee/kalasalingam.ece" target="_blank" rel="noopener noreferrer" class="btn">Connect with Us</a>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>Department of ECE</h3>
+        <p>Kalasalingam Academy of Research and Education<br>Krishnankoil, Virudhunagar District<br>Tamil Nadu — 626 126, India</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <a href="../">Home</a>
+        <a href="#faculty">Faculty Directory</a>
+        <a href="https://magazines.eceklu.in/" target="_blank" rel="noopener noreferrer">Publications</a>
+        <a href="https://linktr.ee/kalasalingam.ece" target="_blank" rel="noopener noreferrer">Social Pages</a>
+      </div>
+      <div>
+        <h3>Student Chapters</h3>
+        <a href="https://karesgbd.acm.org/" target="_blank" rel="noopener noreferrer">ACM Student Chapter</a>
+        <a href="https://edu.ieee.org/in-kare/eds/" target="_blank" rel="noopener noreferrer">IEEE EDS</a>
+        <a href="https://www.linkedin.com/company/kare-ieee-sps/" target="_blank" rel="noopener noreferrer">IEEE SPS</a>
+        <a href="https://www.linkedin.com/in/kare-ieee-solid-state-circuits-society-700172391/" target="_blank" rel="noopener noreferrer">IEEE SSCS</a>
+        <a href="https://sites.google.com/klu.ac.in/optica/" target="_blank" rel="noopener noreferrer">OPTICA</a>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2026 Department of Electronics and Communication Engineering, Kalasalingam Academy of Research and Education. All rights reserved.
+    </div>
+  </footer>
 </body>
 </html>

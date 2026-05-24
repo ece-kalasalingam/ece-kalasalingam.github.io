@@ -93,7 +93,37 @@ function resolveFacultyEmails(facultyMeta, facultyData) {
   return fallbackEmail ? [fallbackEmail] : [];
 }
 
-function buildFacultyVcard(facultyMeta, facultyData) {
+const QR_RENDER_SETTINGS = Object.freeze({
+  moduleSize: 5,
+  marginModules: 2,
+  errorCorrection: "M"
+});
+
+const QR_PHOTO_EXPERIMENT_ENABLED = new URLSearchParams(window.location.search).get("qrPhoto") === "1";
+const QR_PHOTO_MAX_WIDTH = 64;
+const QR_PHOTO_MAX_HEIGHT = 64;
+const QR_PHOTO_JPEG_QUALITY = 0.35;
+const QR_PHOTO_MAX_BASE64_CHARS = 900;
+const QR_MAX_STABLE_VCARD_CHARS = 1200;
+const DOWNLOAD_PHOTO_MAX_WIDTH = 256;
+const DOWNLOAD_PHOTO_MAX_HEIGHT = 256;
+const DOWNLOAD_PHOTO_JPEG_QUALITY = 0.7;
+const DOWNLOAD_PHOTO_MAX_BASE64_CHARS = 120000;
+
+function foldVcardLine(line) {
+  const maxChars = 73;
+  if (line.length <= maxChars) return [line];
+  const chunks = [];
+  let cursor = 0;
+  while (cursor < line.length) {
+    const chunk = line.slice(cursor, cursor + maxChars);
+    chunks.push(cursor === 0 ? chunk : ` ${chunk}`);
+    cursor += maxChars;
+  }
+  return chunks;
+}
+
+function buildFacultyVcard(facultyMeta, facultyData, options = {}) {
   const profileItems = getProfileItems(facultyData);
   const fullName = String(facultyData?.name || facultyMeta?.name || "Faculty Member").trim();
   const designationFromProfile = getProfileValueByLabel(profileItems, ["designation", "role", "position"]);
@@ -107,7 +137,9 @@ function buildFacultyVcard(facultyMeta, facultyData) {
   const fallbackSlugUrl = buildCanonicalFacultyProfileUrl(facultyMeta, facultyData);
   const websiteCandidate = extractFirstSafeUrl(websiteRaw);
   const profileUrl = websiteCandidate || fallbackSlugUrl;
-  const scopusId = String(facultyData?.scopus_id || facultyMeta?.scopus_id || "").trim();
+  const embeddedPhotoBase64 = String(options?.embeddedPhotoBase64 || "").trim();
+  const embeddedPhotoType = String(options?.embeddedPhotoType || "JPEG").trim().toUpperCase() || "JPEG";
+  const photoUri = String(options?.photoUri || "").trim();
 
   const lines = [
     "BEGIN:VCARD",
@@ -124,17 +156,42 @@ function buildFacultyVcard(facultyMeta, facultyData) {
   emails.forEach(email => lines.push(`EMAIL;TYPE=INTERNET:${vcardEscape(email)}`));
   phones.forEach(phone => lines.push(`TEL;TYPE=WORK,VOICE:${vcardEscape(phone)}`));
   if (office) lines.push(`ADR;TYPE=WORK:;;${vcardEscape(office)};;;;`);
+  // Keep a single canonical URL field for best cross-platform contact import compatibility.
   lines.push(`URL:${vcardEscape(profileUrl)}`);
-  if (scopusId) {
-    lines.push(`URL;TYPE=SCOPUS:${vcardEscape(`https://www.scopus.com/authid/detail.uri?authorId=${encodeURIComponent(scopusId)}`)}`);
+  if (embeddedPhotoBase64) {
+    const photoLine = `PHOTO;ENCODING=b;TYPE=${embeddedPhotoType}:${embeddedPhotoBase64}`;
+    lines.push(...foldVcardLine(photoLine));
+  } else if (photoUri) {
+    lines.push(`PHOTO;TYPE=JPEG;VALUE=URI:${vcardEscape(photoUri)}`);
   }
   lines.push("END:VCARD");
 
   return `${lines.join("\r\n")}\r\n`;
 }
 
-function triggerVcardDownload(facultyMeta, facultyData) {
-  const vcardText = buildFacultyVcard(facultyMeta, facultyData);
+function resolvePhotoUrlForVcard(facultyMeta, facultyData) {
+  const candidates = getFacultyPhotoCandidatesForQr(facultyMeta, facultyData);
+  return candidates.find(candidate => isSafeExternalUrl(candidate)) || "";
+}
+
+async function triggerVcardDownload(facultyMeta, facultyData) {
+  const embeddedPhotoBase64 = await buildReducedPhotoBase64ForQr(
+    facultyMeta,
+    facultyData,
+    {
+      maxWidth: DOWNLOAD_PHOTO_MAX_WIDTH,
+      maxHeight: DOWNLOAD_PHOTO_MAX_HEIGHT,
+      jpegQuality: DOWNLOAD_PHOTO_JPEG_QUALITY,
+      maxBase64Chars: DOWNLOAD_PHOTO_MAX_BASE64_CHARS
+    }
+  );
+  if (!embeddedPhotoBase64) {
+    throw new Error("Unable to embed PHOTO in vCard.");
+  }
+  const vcardText = buildFacultyVcard(facultyMeta, facultyData, {
+    embeddedPhotoBase64,
+    embeddedPhotoType: "JPEG"
+  });
   const blob = new Blob([vcardText], { type: "text/vcard;charset=utf-8" });
   const objectUrl = URL.createObjectURL(blob);
   const anchor = document.createElement("a");
@@ -147,9 +204,142 @@ function triggerVcardDownload(facultyMeta, facultyData) {
   URL.revokeObjectURL(objectUrl);
 }
 
-function buildVcardQrUrl(facultyMeta, facultyData) {
-  const vcardText = buildFacultyVcard(facultyMeta, facultyData);
-  return `https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=${encodeURIComponent(vcardText)}`;
+function createQrSvgMarkup(qrText) {
+  if (typeof qrcode !== "function") {
+    throw new Error("Local QR library is unavailable.");
+  }
+  const qr = qrcode(0, QR_RENDER_SETTINGS.errorCorrection);
+  qr.addData(qrText);
+  qr.make();
+
+  const count = qr.getModuleCount();
+  const moduleSize = QR_RENDER_SETTINGS.moduleSize;
+  const margin = QR_RENDER_SETTINGS.marginModules;
+  const viewBoxSize = (count + margin * 2) * moduleSize;
+  const parts = [
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${viewBoxSize} ${viewBoxSize}" role="img" aria-label="Contact QR code" shape-rendering="crispEdges">`,
+    `<rect width="${viewBoxSize}" height="${viewBoxSize}" fill="#ffffff"/>`
+  ];
+  for (let row = 0; row < count; row += 1) {
+    for (let col = 0; col < count; col += 1) {
+      if (!qr.isDark(row, col)) continue;
+      const x = (col + margin) * moduleSize;
+      const y = (row + margin) * moduleSize;
+      parts.push(`<rect x="${x}" y="${y}" width="${moduleSize}" height="${moduleSize}" fill="#000000"/>`);
+    }
+  }
+  parts.push("</svg>");
+  return parts.join("");
+}
+
+function buildQrSvgDataUrl(qrText) {
+  const svgMarkup = createQrSvgMarkup(qrText);
+  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgMarkup)}`;
+}
+
+function renderQrImage(imageEl, qrText) {
+  try {
+    imageEl.src = buildQrSvgDataUrl(qrText);
+  } catch (error) {
+    imageEl.removeAttribute("src");
+    imageEl.alt = "Unable to render QR code locally.";
+  }
+}
+
+function getFacultyPhotoCandidatesForQr(facultyMeta, facultyData) {
+  const candidates = [];
+  const remote = String(facultyData?.photo_url || "").trim();
+  const driveCandidates = buildDriveImageCandidates(remote);
+  if (driveCandidates.length > 0) {
+    candidates.push(...driveCandidates);
+  } else {
+    const normalized = normalizeFacultyPhotoUrl(remote);
+    if (normalized) candidates.push(normalized);
+  }
+
+  const slug = String(facultyMeta?.slug || facultyData?.slug || "").trim();
+  if (slug) {
+    const localBase = new URL(`../images/faculty/${slug}`, window.location.href).toString();
+    candidates.push(`${localBase}.jpg`, `${localBase}.jpeg`, `${localBase}.png`, `${localBase}.webp`);
+  }
+  return [...new Set(candidates)];
+}
+
+function loadImageAsElement(sourceUrl) {
+  return new Promise((resolve, reject) => {
+    const image = new Image();
+    image.crossOrigin = "anonymous";
+    image.loading = "eager";
+    image.decoding = "async";
+    image.onload = () => resolve(image);
+    image.onerror = () => reject(new Error("Image load failed"));
+    image.src = sourceUrl;
+  });
+}
+
+async function buildReducedPhotoBase64ForQr(facultyMeta, facultyData, options = {}) {
+  const maxWidth = Number(options?.maxWidth) || QR_PHOTO_MAX_WIDTH;
+  const maxHeight = Number(options?.maxHeight) || QR_PHOTO_MAX_HEIGHT;
+  const jpegQuality = Number(options?.jpegQuality ?? QR_PHOTO_JPEG_QUALITY);
+  const maxBase64Chars = Number(options?.maxBase64Chars) || QR_PHOTO_MAX_BASE64_CHARS;
+  const candidates = getFacultyPhotoCandidatesForQr(facultyMeta, facultyData);
+  for (const sourceUrl of candidates) {
+    try {
+      const image = await loadImageAsElement(sourceUrl);
+      const widthRatio = maxWidth / image.naturalWidth;
+      const heightRatio = maxHeight / image.naturalHeight;
+      const ratio = Math.min(1, widthRatio, heightRatio);
+      const targetWidth = Math.max(1, Math.round(image.naturalWidth * ratio));
+      const targetHeight = Math.max(1, Math.round(image.naturalHeight * ratio));
+
+      const canvas = document.createElement("canvas");
+      canvas.width = targetWidth;
+      canvas.height = targetHeight;
+      const ctx = canvas.getContext("2d");
+      if (!ctx) continue;
+      ctx.drawImage(image, 0, 0, targetWidth, targetHeight);
+
+      const dataUrl = canvas.toDataURL("image/jpeg", jpegQuality);
+      const base64 = dataUrl.replace(/^data:image\/jpeg;base64,/i, "").trim();
+      if (base64 && base64.length <= maxBase64Chars) {
+        return base64;
+      }
+    } catch (error) {
+      // Try next candidate.
+    }
+  }
+  return "";
+}
+
+async function buildQrVcardPayload(facultyMeta, facultyData) {
+  const lightweightVcard = buildFacultyVcard(facultyMeta, facultyData);
+  if (!QR_PHOTO_EXPERIMENT_ENABLED) {
+    return lightweightVcard;
+  }
+
+  // Step 1: Try embedded PHOTO in QR payload.
+  const embeddedPhotoBase64 = await buildReducedPhotoBase64ForQr(facultyMeta, facultyData);
+  if (embeddedPhotoBase64) {
+    const photoVcard = buildFacultyVcard(facultyMeta, facultyData, {
+      embeddedPhotoBase64,
+      embeddedPhotoType: "JPEG"
+    });
+    if (photoVcard.length <= QR_MAX_STABLE_VCARD_CHARS) {
+      return photoVcard;
+    }
+  }
+
+  // Step 2: Fallback to URL-based PHOTO.
+  const photoUri = resolvePhotoUrlForVcard(facultyMeta, facultyData);
+  if (photoUri) {
+    const photoUriVcard = buildFacultyVcard(facultyMeta, facultyData, { photoUri });
+    if (photoUriVcard.length <= QR_MAX_STABLE_VCARD_CHARS) {
+      return photoUriVcard;
+    }
+  }
+
+  // Step 3: Fallback to no PHOTO.
+  return lightweightVcard;
 }
 
 function createQrModal(facultyMeta, facultyData) {
@@ -158,6 +348,9 @@ function createQrModal(facultyMeta, facultyData) {
   const profileItems = getProfileItems(facultyData);
   const department = getProfileValueByLabel(profileItems, ["department", "dept"]);
   const email = resolveFacultyEmails(facultyMeta, facultyData)[0] || "";
+  const websiteRaw = getProfileValueByLabel(profileItems, ["website", "web", "url", "link", "homepage"]);
+  const fallbackSlugUrl = buildCanonicalFacultyProfileUrl(facultyMeta, facultyData);
+  const websiteUrl = extractFirstSafeUrl(websiteRaw) || fallbackSlugUrl;
   const phone = parsePhones(getProfileValueByLabel(profileItems, ["phone", "mobile", "contact", "telephone", "tel"]))[0] || "";
   const overlay = document.createElement("div");
   overlay.className = "qr-modal-overlay";
@@ -241,7 +434,7 @@ function createQrModal(facultyMeta, facultyData) {
   qrCardInstitute.textContent = "Kalasalingam Academy of Research and Education";
   qrCardLeft.appendChild(qrCardInstitute);
 
-  if (email || phone) {
+  if (email || websiteUrl || phone) {
     const qrCardContact = document.createElement("div");
     qrCardContact.className = "qr-card-contact";
     if (email) {
@@ -249,6 +442,12 @@ function createQrModal(facultyMeta, facultyData) {
       emailLine.className = "qr-card-contact-line";
       emailLine.textContent = email;
       qrCardContact.appendChild(emailLine);
+    }
+    if (websiteUrl) {
+      const websiteLine = document.createElement("p");
+      websiteLine.className = "qr-card-contact-line";
+      websiteLine.textContent = websiteUrl;
+      qrCardContact.appendChild(websiteLine);
     }
     if (phone) {
       const phoneLine = document.createElement("p");
@@ -272,8 +471,16 @@ function createQrModal(facultyMeta, facultyData) {
   qrImage.className = "qr-image";
   qrImage.loading = "lazy";
   qrImage.alt = `QR code to add ${fullName} as a contact`;
-  qrImage.src = buildVcardQrUrl(facultyMeta, facultyData);
   qrCardRight.appendChild(qrImage);
+
+  buildQrVcardPayload(facultyMeta, facultyData)
+    .then(qrPayload => {
+      renderQrImage(qrImage, qrPayload);
+    })
+    .catch(() => {
+      qrImage.removeAttribute("src");
+      qrImage.alt = "Unable to generate QR code.";
+    });
 
   const actions = document.createElement("div");
   actions.className = "qr-modal-actions";
@@ -282,8 +489,12 @@ function createQrModal(facultyMeta, facultyData) {
   const downloadBtn = document.createElement("button");
   downloadBtn.type = "button";
   downloadBtn.className = "btn";
-  downloadBtn.textContent = "Download vCard";
-  downloadBtn.addEventListener("click", () => triggerVcardDownload(facultyMeta, facultyData));
+  downloadBtn.textContent = "Add to my contacts";
+  downloadBtn.addEventListener("click", () => {
+    triggerVcardDownload(facultyMeta, facultyData).catch(() => {
+      // Keep download failures silent in UI.
+    });
+  });
   actions.appendChild(downloadBtn);
 
   const closeBtn = document.createElement("button");
@@ -753,8 +964,8 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
   const vcardButton = document.createElement("button");
   vcardButton.type = "button";
   vcardButton.className = "btn";
-  vcardButton.textContent = "Download vCard";
-  vcardButton.setAttribute("aria-label", "Download this faculty contact as a vCard");
+  vcardButton.textContent = "Add to my contacts";
+  vcardButton.setAttribute("aria-label", "Add this faculty contact to my contacts");
   headerActions.appendChild(vcardButton);
 
   const qrButton = document.createElement("button");
@@ -1128,7 +1339,9 @@ function renderFacultyPage(facultyMeta, facultyData, publications) {
   });
 
   vcardButton.addEventListener("click", () => {
-    triggerVcardDownload(facultyMeta, facultyData);
+    triggerVcardDownload(facultyMeta, facultyData).catch(() => {
+      // Keep download failures silent in UI.
+    });
   });
 
   qrButton.addEventListener("click", () => {

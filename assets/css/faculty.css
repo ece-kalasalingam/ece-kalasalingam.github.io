@@ -52,12 +52,18 @@
   display: block;
   width: 80%;
   max-width: 220px;
-  height: auto;
+  aspect-ratio: 1 / 1;
   border: 8px solid #fff;
   box-shadow: none;
   border-radius: 0;
   background: #fff;
   box-sizing: border-box;
+}
+
+.qr-image svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .qr-card {
@@ -456,6 +462,10 @@ body.modal-open {
   border-radius: 8px;
   border: none;
   box-shadow: none;
+}
+
+.photo-wrap .photo {
+  object-position: top center;
 }
 
 .photo-fallback {

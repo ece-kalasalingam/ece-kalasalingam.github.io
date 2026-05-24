@@ -1,5 +1,113 @@
 # CHANGELOG
 
+## 2026-05-24 19:37 IST | author: Codex | type: fix
+- Summary: Restored QR as image output to enable save/share actions.
+- Files: `assets/js/faculty.js`, `CHANGELOG.md`
+- Details: Changed local QR rendering from inline SVG-in-DIV to an actual `<img>` element using an SVG data URL source. This restores browser/device image save capability while keeping QR generation fully local.
+- Revert: No
+
+## 2026-05-24 13:49 IST | author: Codex | type: tweak
+- Summary: Removed faculty designation text from homepage and directory faculty cards.
+- Files: `assets/js/home.js`, `assets/js/directory.js`, `CHANGELOG.md`
+- Details: Deleted designation rendering from `Meet Our Faculty` card template on `index.html` and from directory faculty card construction so cards now show name, optional specialization (home), and profile link without designation lines.
+- Revert: No
+
+## 2026-05-24 13:48 IST | author: Codex | type: fix
+- Summary: Fixed incorrect homepage `Meet Our Faculty` profile links.
+- Files: `assets/js/home.js`, `CHANGELOG.md`
+- Details: Updated faculty spotlight card links from legacy `directory/<slug>` path to canonical faculty profile route `faculty/?faculty=<slug>`, ensuring cards open the correct individual faculty page.
+- Revert: No
+
+## 2026-05-24 13:45 IST | author: Codex | type: redesign
+- Summary: Rebuilt directory page using selected homepage sections and faculty-section visual style.
+- Files: `directory/index.html`, `assets/js/directory.js`, `CHANGELOG.md`
+- Details: Updated directory page to use homepage sticky topbar, sticky header, hero, `Meet Our Faculty` section styling, CTA section, and footer. Switched faculty list rendering target to `#faculty-spotlights` and refactored card markup in `directory.js` to match homepage faculty card structure/classes so the directory displays all faculty in the same section style.
+- Revert: No
+
+## 2026-05-24 13:40 IST | author: Codex | type: revert
+- Summary: Reverted directory page to a blank raw HTML page without CSS/layout.
+- Files: `directory/index.html`, `CHANGELOG.md`
+- Details: Removed all directory stylesheet links and deleted custom layout shell markup (masthead/panel wrappers). Directory page now renders as plain HTML with only `h1` and `#content`, while retaining existing JS scripts for data loading.
+- Revert: Yes (reverts recent directory layout/styling redesign)
+
+## 2026-05-24 13:39 IST | author: Codex | type: redesign
+- Summary: Completely rewrote Faculty Directory page layout and styling with a new visual system.
+- Files: `directory/index.html`, `assets/css/directory.css`, `CHANGELOG.md`
+- Details: Replaced the previous directory shell with a fresh composition (hero-like masthead + glass-style panel container), rebuilt typography scale and spacing rhythm, introduced new atmospheric layered background treatment, and redesigned faculty cards/grid interactions for a distinct modern directory experience while keeping existing JS data hooks intact.
+- Revert: No
+
+## 2026-05-24 13:37 IST | author: Codex | type: redesign
+- Summary: Restyled Faculty Directory page to match homepage layout, spacing, typography, and color system.
+- Files: `directory/index.html`, `assets/css/directory.css`, `CHANGELOG.md`
+- Details: Replaced directory page shell with homepage-style topbar and sticky department header, added a section-framed directory container, and rebuilt directory stylesheet to align with homepage visual language (font stack, heading scales, spacing rhythm, blue/gray palette, card elevation, and responsive breakpoints).
+- Revert: No
+
+## 2026-05-24 13:33 IST | author: Codex | type: tweak
+- Summary: Renamed faculty vCard action label to “Add to my contacts”.
+- Files: `assets/js/faculty.js`, `CHANGELOG.md`
+- Details: Updated both faculty header action and QR modal vCard action button text from `Download vCard` to `Add to my contacts`. Also aligned the header button aria-label to the new action wording.
+- Revert: No
+
+## 2026-05-24 13:31 IST | author: Codex | type: revert
+- Summary: Reverted vCard logo insertion/embedding path; kept only embedded `PHOTO` for `.vcf` downloads.
+- Files: `assets/js/faculty.js`, `CHANGELOG.md`
+- Details: Removed `LOGO` generation from all vCard outputs and deleted logo embedding helpers/constraints that were causing strict download failures. `.vcf` download now enforces only embedded `PHOTO` and no longer depends on logo processing.
+- Revert: Yes (reverts logo insertion/embedding behavior added in recent vCard updates)
+
+## 2026-05-24 13:30 IST | author: Codex | type: tweak
+- Summary: Removed visible vCard embed failure popups from faculty UI.
+- Files: `assets/js/faculty.js`, `CHANGELOG.md`
+- Details: Replaced `window.alert` calls in vCard download handlers with silent catch paths so users no longer see visible error messages during strict embedded export failures.
+- Revert: No
+
+## 2026-05-24 13:29 IST | author: Codex | type: fix
+- Summary: Enforced strict `.vcf` export to always use embedded base64 `PHOTO` and `LOGO` (no URI fallback).
+- Files: `assets/js/faculty.js`, `CHANGELOG.md`
+- Details: Updated download vCard flow to require embedded `PHOTO` and embedded `LOGO`; export now throws on missing embed data instead of falling back to URL fields. Added user-facing alert when strict embedded export cannot be generated for a profile.
+- Revert: No
+
+## 2026-05-24 13:24 IST | author: Codex | type: feature
+- Summary: Split `LOGO` behavior by output path: URL-based in QR payload and embedded base64 in downloaded `.vcf`.
+- Files: `assets/js/faculty.js`, `CHANGELOG.md`
+- Details: Extended vCard builder options to support embedded `LOGO` (`LOGO;ENCODING=b;TYPE=PNG`) and controlled URI fallback. QR path continues to emit URL-based `LOGO` for payload stability. Download path now attempts to embed a reduced local logo image in `.vcf`; if embedding fails/overshoots size cap, it falls back to URL-based `LOGO`.
+- Revert: No
+
+## 2026-05-24 13:23 IST | author: Codex | type: feature
+- Summary: Added organization logo asset locally and included `LOGO` field in all generated vCards.
+- Files: `images/kare-logo.png`, `assets/js/faculty.js`, `CHANGELOG.md`
+- Details: Downloaded KARE logo to local repository path `images/kare-logo.png`. Updated vCard generation to always include a standards-compliant `LOGO;TYPE=PNG;VALUE=URI` entry using absolute URL resolved from the local hosted logo path, applying to both QR-generated and downloaded vCards for all faculty profiles.
+- Revert: No
+
+## 2026-05-24 13:14 IST | author: Codex | type: feature
+- Summary: Implemented 3-step QR photo behavior and enabled photo-embedded `.vcf` downloads.
+- Files: `assets/js/faculty.js`, `CHANGELOG.md`
+- Details: Updated QR payload strategy to: (1) try embedded `PHOTO` when `?qrPhoto=1`, (2) fallback to URL-based `PHOTO;TYPE=JPEG;VALUE=URI`, and (3) fallback to no-photo QR if payload remains too large. Updated `Download vCard` to attempt embedded photo by default (larger canvas/quality budget) and fallback to URL-based `PHOTO` when embed is unavailable. Added async-safe download handlers to avoid unhandled promise errors.
+- Revert: No
+
+## 2026-05-24 13:11 IST | author: Codex | type: fix
+- Summary: Hardened `?qrPhoto=1` QR payload sizing to prevent dense/unreliable contact QR output.
+- Files: `assets/js/faculty.js`, `CHANGELOG.md`
+- Details: Reduced photo base64 cap for QR experiment and added a total vCard payload guardrail (`QR_MAX_STABLE_VCARD_CHARS`). When photo-embedded payload exceeds stable scan threshold, QR generation now automatically falls back to the lightweight (no-photo) vCard payload instead of emitting an oversized QR.
+- Revert: No
+
+## 2026-05-24 13:06 IST | author: Codex | type: feature
+- Summary: Replaced external QR API with fully local vCard QR generation and added an opt-in photo-embedded QR experiment gate.
+- Files: `faculty/index.html`, `assets/js/vendor/qrcode-generator.min.js`, `assets/js/faculty.js`, `assets/css/faculty.css`, `CHANGELOG.md`
+- Details: Added vendored `qrcode-generator` library and wired faculty page to render QR locally as SVG (no `api.qrserver.com` dependency). Preserved existing modal UX and kept default QR payload lightweight using canonical vCard fields (including single `URL`). Added phase-2 experiment toggle via query `?qrPhoto=1` that attempts client-side image reduction (canvas resize/compress) and embeds `PHOTO` in QR payload only when reduced payload stays within strict size cap; otherwise automatically falls back to lightweight QR payload. This keeps production default as local QR without embedded photo unless explicitly enabled for cross-device testing.
+- Revert: No
+
+## 2026-05-24 12:55 IST | author: Codex | type: fix
+- Summary: Normalized vCard URL export to a single standard `URL` field for better contact app compatibility.
+- Files: `assets/js/faculty.js`, `CHANGELOG.md`
+- Details: Removed the additional typed Scopus URL line from vCard generation and now emit exactly one canonical `URL:` entry (website if available, otherwise faculty profile URL), preventing extra URLs from being imported as notes/custom text fields in some clients.
+- Revert: No
+
+## 2026-05-24 12:49 IST | author: Codex | type: tweak
+- Summary: Added website URL line to the faculty contact QR/vCard card left panel, positioned after email.
+- Files: `assets/js/faculty.js`, `CHANGELOG.md`
+- Details: Updated `createQrModal` to resolve website URL from Profile labels (`website/web/url/link/homepage`) with fallback to canonical faculty profile URL. Render order in left contact block is now email -> website URL -> phone, matching requested placement.
+- Revert: No
+
 ## 2026-05-24 18:30 IST | author: JP | type: redesign
 - Summary: Homepage UX overhaul — sticky header, scroll-spy nav, testimonial slider, section renames, favicon setup, and content refinements.
 - Files: `index.html`, `assets/css/home.css`, `assets/js/home.js`, `assets/images/`, `favicons/`, `favicon.ico`

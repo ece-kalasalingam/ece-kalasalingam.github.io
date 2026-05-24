@@ -124,6 +124,73 @@ nav a.active {
   padding-bottom: 2px;
 }
 
+/* ─── Topbar dropdown (Conferences) ──────────────────────────── */
+.topbar-dropdown {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+.topbar-dropdown-btn {
+  background: none;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.82);
+  font-family: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.12s, background 0.12s;
+}
+
+.topbar-dropdown-btn:hover,
+.topbar-dropdown:hover .topbar-dropdown-btn,
+.topbar-dropdown:focus-within .topbar-dropdown-btn {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.topbar-submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--white);
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  min-width: 170px;
+  z-index: 200;
+  padding: 6px 0;
+}
+
+.topbar-dropdown:hover .topbar-submenu,
+.topbar-dropdown:focus-within .topbar-submenu {
+  display: block;
+}
+
+.topbar-submenu a {
+  display: block;
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dark);
+  margin-left: 0;
+  white-space: nowrap;
+  transition: background 0.1s, color 0.1s;
+}
+
+.topbar-submenu a:hover,
+.topbar-submenu a:focus-visible {
+  background: var(--gray);
+  color: var(--light-blue);
+}
+
 /* ─── Hero ───────────────────────────────────────────────────── */
 .hero {
   min-height: 520px;

@@ -26,25 +26,25 @@ async function loadFacultyList() {
     })
   );
 
-  const container = document.getElementById("content");
+  const container = document.getElementById("faculty-spotlights");
   container.innerHTML = "";
 
-  const intro = document.createElement("p");
-  intro.className = "subtext";
-  intro.textContent = `${faculty.length} faculty members`;
-  container.appendChild(intro);
-
-  const grid = document.createElement("div");
-  grid.className = "grid";
+  if (!faculty.length) {
+    container.innerHTML = '<article class="faculty-card faculty-loading">Faculty data is currently unavailable.</article>';
+    return;
+  }
 
   for (const person of faculty) {
-    const card = document.createElement("a");
-    card.className = "card";
-    card.href = `../faculty/?faculty=${encodeURIComponent(person.slug || "")}`;
+    const card = document.createElement("article");
+    card.className = "faculty-card";
 
     const photoWrap = document.createElement("div");
-    photoWrap.className = "photo-wrap card-photo";
+    photoWrap.className = "faculty-photo-wrap";
     card.appendChild(photoWrap);
+
+    const photoFrame = document.createElement("div");
+    photoFrame.className = "photo-wrap";
+    photoWrap.appendChild(photoFrame);
 
     const photo = document.createElement("img");
     photo.className = "photo";
@@ -56,28 +56,29 @@ async function loadFacultyList() {
 
     const remotePhotoUrl = photoUrlMap[person.slug] || person.photo_url || "";
     attachFacultyPhoto(photo, fallback, person.slug || "", person.name || "", "../images/faculty", remotePhotoUrl);
-    photoWrap.appendChild(photo);
-    photoWrap.appendChild(fallback);
+    photoFrame.appendChild(photo);
+    photoFrame.appendChild(fallback);
 
-    const name = document.createElement("h2");
-    name.className = "name";
+    const content = document.createElement("div");
+    content.className = "faculty-content";
+    card.appendChild(content);
+
+    const name = document.createElement("h3");
     name.textContent = person.name || "Faculty Member";
-    card.appendChild(name);
+    content.appendChild(name);
 
-    const designation = document.createElement("p");
-    designation.className = "designation";
-    designation.textContent = person.designation || "Faculty";
-    card.appendChild(designation);
+    const profileLink = document.createElement("a");
+    profileLink.href = `../faculty/?faculty=${encodeURIComponent(person.slug || "")}`;
+    profileLink.textContent = "View Profile →";
+    content.appendChild(profileLink);
 
-    grid.appendChild(card);
+    container.appendChild(card);
   }
-
-  container.appendChild(grid);
 }
 
 loadFacultyList().catch(err => {
-  const container = document.getElementById("content");
-  container.textContent = "Failed to load faculty list.";
+  const container = document.getElementById("faculty-spotlights");
+  container.innerHTML = '<article class="faculty-card faculty-loading">Failed to load faculty directory.</article>';
   console.error(err);
 });
 

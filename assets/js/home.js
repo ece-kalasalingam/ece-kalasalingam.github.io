@@ -156,14 +156,13 @@ function pickRandomFaculty(items, count = 3) {
 
 function facultyCardTemplate(faculty, details) {
   const name = sanitizeText(faculty?.name, "Faculty Member");
-  const designation = sanitizeText(faculty?.designation, "ECE Faculty");
   const slug = sanitizeText(faculty?.slug);
   const specialization = sanitizeText(details.specialization || "");
 
   const specHtml = specialization ? `<span>${escapeHtml(specialization)}</span>` : "";
 
   const profileHtml = slug
-    ? `<a href="directory/${encodeURIComponent(slug)}">View Profile →</a>`
+    ? `<a href="faculty/?faculty=${encodeURIComponent(slug)}">View Profile →</a>`
     : "";
 
   return `<article class="faculty-card">
@@ -175,7 +174,6 @@ function facultyCardTemplate(faculty, details) {
     </div>
     <div class="faculty-content">
       <h3>${escapeHtml(name)}</h3>
-      <p>${escapeHtml(designation)}</p>
       ${specHtml}
       ${profileHtml}
     </div>

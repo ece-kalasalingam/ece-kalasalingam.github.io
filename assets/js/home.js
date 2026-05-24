@@ -158,18 +158,9 @@ function facultyCardTemplate(faculty, details) {
   const name = sanitizeText(faculty?.name, "Faculty Member");
   const designation = sanitizeText(faculty?.designation, "ECE Faculty");
   const slug = sanitizeText(faculty?.slug);
-  const hIndex = Number.isFinite(Number(details.hIndex)) ? Number(details.hIndex) : null;
-  const publications = Number.isFinite(Number(details.totalPublications)) ? Number(details.totalPublications) : null;
   const specialization = sanitizeText(details.specialization || "");
 
-  const infoFallback = [
-    publications !== null ? `${publications} publications` : "",
-    hIndex !== null ? `h-index ${hIndex}` : ""
-  ].filter(Boolean).join(" · ");
-
-  const specHtml = specialization
-    ? `<span>${escapeHtml(specialization)}</span>`
-    : (infoFallback ? `<span>${escapeHtml(infoFallback)}</span>` : "");
+  const specHtml = specialization ? `<span>${escapeHtml(specialization)}</span>` : "";
 
   const profileHtml = slug
     ? `<a href="directory/${encodeURIComponent(slug)}">View Profile →</a>`

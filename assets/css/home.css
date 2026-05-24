@@ -221,6 +221,62 @@ section {
   color: #555;
 }
 
+/* ─── Programmes offered ─────────────────────────────────────── */
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.program-card {
+  background: white;
+  padding: 34px;
+  border-radius: 8px;
+  border-top: 6px solid var(--light-blue);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-8px);
+}
+
+.program-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--blue), var(--light-blue));
+  color: white;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+.program-card h3 {
+  color: var(--blue);
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.program-card p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+
+.program-card a {
+  color: var(--light-blue);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.program-card a:hover {
+  color: var(--blue);
+}
+
 /* ─── Program cards ──────────────────────────────────────────── */
 .cards {
   display: grid;
@@ -748,6 +804,12 @@ body.modal-open {
 @media (max-width: 1100px) {
   .chapter-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 950px) {
+  .program-grid {
+    grid-template-columns: 1fr;
   }
 }
 

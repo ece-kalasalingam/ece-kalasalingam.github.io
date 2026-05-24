@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-24 10:00 IST | author: JP | type: redesign
+- Summary: Redesigned homepage to institutional university style inspired by JHU ECE — clean white body, navy topbar, typography-first sections.
+- Files: `assets/css/home.css`, `index.html`
+- Details: Stripped all colorful section gradients, frosted-glass effects, and multi-color card palettes. Replaced with: solid deep-navy topbar with separator-style nav links; white body; typography-first hero (no card/box) with blue kicker, 800-weight h1, and a blue-left-bordered aside; all sections transparent with a 2px blue bottom-border section heading rule (JHU pattern); faculty cards are white with 1px border and 6px radius; chapter cards use blue top-border accent; placeholder cards use neutral dashed border. Added Faculty link to topbar nav. Border-radius reduced throughout (20px → 6px). Responsive: 2-col on tablet, 1-col on mobile.
+- Revert: No
+
 ## 2026-05-23 22:54 IST | author: Codex | type: feature
 - Summary: Added DOI-based Crossref abstract fallback when Scopus abstract retrieval is unavailable.
 - Files: `scripts/fetch_publications.py`, `README.md`

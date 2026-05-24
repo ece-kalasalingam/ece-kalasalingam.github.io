@@ -6,12 +6,22 @@ function getDirectoryContainer() {
   return null;
 }
 
+async function safeFetchJson(url) {
+  try {
+    const response = await fetch(url, { cache: "no-cache" });
+    if (!response.ok) return null;
+    return await response.json();
+  } catch (error) {
+    return null;
+  }
+}
+
 async function loadFacultyList() {
-  const facultyRes = await fetch("../faculty.json", { cache: "no-cache" });
-  if (!facultyRes.ok) {
+  const facultyPayload = await safeFetchJson("../faculty.json");
+  if (!facultyPayload) {
     throw new Error("Unable to load faculty.json");
   }
-  const faculty = await facultyRes.json();
+  const faculty = facultyPayload;
   if (!Array.isArray(faculty)) {
     throw new Error("faculty.json must be an array");
   }
@@ -20,16 +30,10 @@ async function loadFacultyList() {
     faculty.map(async person => {
       const slug = String(person?.slug || "").trim();
       if (!slug) return;
-      try {
-        const detailsRes = await fetch(`../data/${encodeURIComponent(slug)}.json`, { cache: "no-cache" });
-        if (!detailsRes.ok) return;
-        const details = await detailsRes.json();
-        const photoUrl = String(details?.photo_url || "").trim();
-        if (photoUrl) {
-          photoUrlMap[slug] = photoUrl;
-        }
-      } catch (error) {
-        // Ignore per-person photo lookup failures; fallback chain will handle rendering.
+      const details = await safeFetchJson(`../data/${encodeURIComponent(slug)}.json`);
+      const photoUrl = String(details?.photo_url || "").trim();
+      if (photoUrl) {
+        photoUrlMap[slug] = photoUrl;
       }
     })
   );

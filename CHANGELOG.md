@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-24 19:51 IST | author: Codex | type: fix
+- Summary: Hardened directory data loader against missing JSON files and removed ignored CSP meta directive noise.
+- Files: `assets/js/directory.js`, `directory/index.html`, `CHANGELOG.md`
+- Details: Added `safeFetchJson()` helper and switched faculty/detail fetches to non-throwing JSON resolution so missing `data/<slug>.json` files no longer destabilize rendering flow. Also removed `frame-ancestors` from `directory/index.html` meta CSP (ignored in meta-delivered CSP) to eliminate warning noise.
+- Revert: No
+
 ## 2026-05-24 19:49 IST | author: Codex | type: fix
 - Summary: Fixed topbar conferences dropdown layout/visibility issues on homepage and directory page.
 - Files: `assets/css/home.css`, `CHANGELOG.md`

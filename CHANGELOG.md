@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-24 12:30 IST | author: JP | type: redesign
+- Summary: Complete structural rewrite of homepage — dark navy hero, research focus areas section, refined chapters grid, full institutional layout.
+- Files: `index.html`, `assets/css/home.css`
+- Details: Replaced single-page layout with distinct structural zones: sticky navy topbar → full-width dark navy hero (2-col: h1+lead+CTA left, "At a Glance" aside right) → Research Focus Areas section (3-col mosaic grid, 6 ECE research domains) → Faculty Spotlights → Student Chapters (auto-fill grid with chapter-abbr badges) → Latest from YouTube. Removed old placeholder section. Added `section-wrap` inner-width containers (min 1100px). Sections alternate white/bg. Chapter cards refactored with abbreviation chip. Research cards use blue accent bar above h3. Full responsive cascade: hero stacks at 980px, 2-col grids at 980px, 1-col at 640px.
+- Revert: No
+
 ## 2026-05-24 11:30 IST | author: JP | type: style
 - Summary: Refined homepage typography to match JHU ECE editorial quality — larger display heading, tighter tracking, improved spacing rhythm.
 - Files: `assets/css/home.css`

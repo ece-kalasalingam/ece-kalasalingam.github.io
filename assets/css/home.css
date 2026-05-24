@@ -298,13 +298,25 @@ section {
 .card-img.img-admissions {
   background:
     linear-gradient(rgba(0, 45, 114, 0.45), rgba(0, 45, 114, 0.45)),
-    url("../images/kare-campus.jpg") center/cover;
+    url("../images/campus-front.jpg") center/cover;
+}
+
+.card-img.img-academics {
+  background:
+    linear-gradient(rgba(0, 45, 114, 0.45), rgba(0, 45, 114, 0.45)),
+    url("../images/campus-academic.jpg") center/cover;
 }
 
 .card-img.img-research {
   background:
     linear-gradient(rgba(0, 45, 114, 0.45), rgba(0, 45, 114, 0.45)),
-    url("../images/kare-ece-lab.jpg") center/cover;
+    url("../images/ece-lab-advance.jpg") center/cover;
+}
+
+.card-img.img-student-life {
+  background:
+    linear-gradient(rgba(0, 45, 114, 0.45), rgba(0, 45, 114, 0.45)),
+    url("../images/campus-auditorium.jpg") center/cover;
 }
 
 .card-content {
@@ -645,7 +657,9 @@ section {
 
 /* ─── CTA ────────────────────────────────────────────────────── */
 .cta {
-  background: var(--blue);
+  background:
+    linear-gradient(rgba(0, 45, 114, 0.82), rgba(0, 45, 114, 0.82)),
+    url("../images/campus-fountain.jpg") center/cover no-repeat;
   color: var(--white);
   text-align: center;
 }

@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-24 18:30 IST | author: JP | type: redesign
+- Summary: Homepage UX overhaul — sticky header, scroll-spy nav, testimonial slider, section renames, favicon setup, and content refinements.
+- Files: `index.html`, `assets/css/home.css`, `assets/js/home.js`, `assets/images/`, `favicons/`, `favicon.ico`
+- Details: Made the main header sticky (`top: 44px`, below topbar) so both bars remain visible while scrolling. Added IntersectionObserver-based scroll-spy to highlight the active nav link as sections enter the viewport. Renamed "Program Highlights" → "Department Highlights" (`id="highlights"`) and moved it before Programmes Offered. Reordered nav links to match page section order. Removed Testimonials from nav. Added Alumni Testimonials slider (infinite clone-based loop, pause-on-hover, dot navigation, touch swipe, desktop drag, prev/next buttons) with four real KARE alumni testimonials and local portrait images. Faculty spotlight selection now persists in `sessionStorage` — same three faculty per session, fresh on hard refresh. Faculty photos now use `object-fit: cover; object-position: top center` to keep faces visible without clipping. Added complete favicon/webmanifest/browserconfig set for all platforms. Updated hero CTA link and text to `#programmes` / "Explore Programmes". Renamed "Latest from YouTube" → "Latest from ECE - KARE". Updated header tagline to include ABET and NBA (Tier-I). Renamed topbar "Publications" → "Magazines". Fixed `body` margin/padding override from `common.css`. Removed invalid `frame-ancestors` from meta CSP.
+- Revert: No
+
 ## 2026-05-24 13:30 IST | author: JP | type: redesign
 - Summary: Adopted user-provided HTML layout as the new homepage structure — topbar + dept header + hero image + intro/stats + program cards + research features + dynamic faculty + YouTube feed + CTA + footer.
 - Files: `index.html`, `assets/css/home.css`

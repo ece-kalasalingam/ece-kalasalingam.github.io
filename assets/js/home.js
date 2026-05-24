@@ -201,6 +201,32 @@ async function fetchFacultyDetails(slug) {
   }
 }
 
+const SPOTLIGHT_SESSION_KEY = "faculty-spotlight-slugs";
+
+function getSessionSpotlights(allFaculty) {
+  try {
+    const saved = sessionStorage.getItem(SPOTLIGHT_SESSION_KEY);
+    if (saved) {
+      const slugs = JSON.parse(saved);
+      if (Array.isArray(slugs) && slugs.length === 3) {
+        const mapped = slugs.map((slug) => allFaculty.find((f) => f.slug === slug)).filter(Boolean);
+        if (mapped.length === 3) return mapped;
+      }
+    }
+  } catch {
+    // ignore parse errors
+  }
+  return null;
+}
+
+function saveSessionSpotlights(selected) {
+  try {
+    sessionStorage.setItem(SPOTLIGHT_SESSION_KEY, JSON.stringify(selected.map((f) => f.slug)));
+  } catch {
+    // ignore storage errors
+  }
+}
+
 async function loadFacultySpotlights() {
   const root = document.getElementById("faculty-spotlights");
   if (!(root instanceof HTMLElement)) return;
@@ -211,7 +237,9 @@ async function loadFacultySpotlights() {
       throw new Error(`faculty.json request failed with status ${res.status}`);
     }
     const allFaculty = await res.json();
-    const selected = pickRandomFaculty(allFaculty, 3);
+    const cached = getSessionSpotlights(allFaculty);
+    const selected = cached ?? pickRandomFaculty(allFaculty, 3);
+    if (!cached) saveSessionSpotlights(selected);
     if (!selected.length) {
       root.innerHTML = '<article class="faculty-card faculty-loading">Faculty data is currently unavailable.</article>';
       return;
@@ -267,4 +295,169 @@ Promise.allSettled([loadFacultySpotlights(), loadSocialFeed()]).then((results) =
     }
     console.error(results[1].reason);
   }
+});
+
+function initTestimonialSlider() {
+  const slider = document.querySelector(".testimonial-slider");
+  const track = document.querySelector(".testimonial-track");
+  const dotContainer = document.querySelector(".testimonial-dots");
+  if (!slider || !track || !dotContainer) return;
+
+  const origCards = Array.from(track.querySelectorAll(".testimonial-card"));
+  const count = origCards.length;
+  if (!count) return;
+
+  const INTERVAL = 6000;
+  const SWIPE_THRESHOLD = 50;
+
+  // Clone first and last for infinite loop: [lastClone, ...originals, firstClone]
+  const firstClone = origCards[0].cloneNode(true);
+  const lastClone  = origCards[count - 1].cloneNode(true);
+  firstClone.setAttribute("aria-hidden", "true");
+  lastClone.setAttribute("aria-hidden", "true");
+  track.appendChild(firstClone);
+  track.insertBefore(lastClone, origCards[0]);
+
+  // current index inside the extended track (1 = real first slide)
+  let current = 1;
+  let transitioning = false;
+  let timer = null;
+  let touchStartX = 0;
+  let mouseStartX = 0;
+  let isDragging = false;
+
+  const dots = Array.from(dotContainer.querySelectorAll("span"));
+
+  function realIndex(pos) {
+    return ((pos - 1) + count) % count;
+  }
+
+  function moveTo(index, animate) {
+    if (animate === false) {
+      track.style.transition = "none";
+    } else {
+      if (transitioning) return;
+      transitioning = true;
+      track.style.transition = "transform 0.45s ease";
+    }
+    current = index;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle("active", i === realIndex(current)));
+  }
+
+  // After transition ends, silently jump from clone to real slide
+  track.addEventListener("transitionend", () => {
+    transitioning = false;
+    if (current === count + 1) {
+      moveTo(1, false);
+    } else if (current === 0) {
+      moveTo(count, false);
+    }
+  });
+
+  function next() { moveTo(current + 1, true); }
+  function prev() { moveTo(current - 1, true); }
+
+  function startTimer() {
+    stopTimer();
+    timer = setInterval(next, INTERVAL);
+  }
+  function stopTimer() {
+    clearInterval(timer);
+    timer = null;
+  }
+
+  // Prev / Next buttons
+  const wrapper = slider.closest(".testimonial-wrapper") || slider.parentElement;
+  const prevBtn = wrapper.querySelector(".testimonial-prev");
+  const nextBtn = wrapper.querySelector(".testimonial-next");
+  if (prevBtn) prevBtn.addEventListener("click", () => { prev(); startTimer(); });
+  if (nextBtn) nextBtn.addEventListener("click", () => { next(); startTimer(); });
+
+  // Hover pause
+  slider.addEventListener("mouseenter", stopTimer);
+  slider.addEventListener("mouseleave", () => { if (!isDragging) startTimer(); });
+
+  // Dot clicks
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => { moveTo(i + 1, true); startTimer(); });
+  });
+
+  // Touch swipe
+  slider.addEventListener("touchstart", (e) => {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+
+  slider.addEventListener("touchend", (e) => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > SWIPE_THRESHOLD) {
+      diff > 0 ? next() : prev();
+      startTimer();
+    }
+  }, { passive: true });
+
+  // Mouse drag (desktop swipe)
+  slider.addEventListener("mousedown", (e) => {
+    mouseStartX = e.clientX;
+    isDragging = true;
+    stopTimer();
+    slider.style.cursor = "grabbing";
+  });
+
+  window.addEventListener("mouseup", (e) => {
+    if (!isDragging) return;
+    isDragging = false;
+    slider.style.cursor = "";
+    const diff = mouseStartX - e.clientX;
+    if (Math.abs(diff) > SWIPE_THRESHOLD) {
+      diff > 0 ? next() : prev();
+    }
+    startTimer();
+  });
+
+  slider.addEventListener("dragstart", (e) => e.preventDefault());
+
+  // Init at real first slide without animation
+  moveTo(1, false);
+  startTimer();
+}
+
+function initScrollSpy() {
+  const navLinks = Array.from(document.querySelectorAll("header nav a[href^='#']"));
+  if (!navLinks.length) return;
+
+  const sectionIds = navLinks.map((a) => a.getAttribute("href").slice(1));
+  const sections = sectionIds.map((id) => document.getElementById(id)).filter(Boolean);
+  if (!sections.length) return;
+
+  const topbarHeight = document.querySelector(".topbar")?.offsetHeight ?? 0;
+  const headerHeight = document.querySelector("header")?.offsetHeight ?? 0;
+  const offset = topbarHeight + headerHeight;
+
+  function setActive(id) {
+    navLinks.forEach((a) => {
+      a.classList.toggle("active", a.getAttribute("href") === `#${id}`);
+    });
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActive(entry.target.id);
+        }
+      });
+    },
+    {
+      rootMargin: `-${offset}px 0px -55% 0px`,
+      threshold: 0
+    }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initTestimonialSlider();
+  initScrollSpy();
 });

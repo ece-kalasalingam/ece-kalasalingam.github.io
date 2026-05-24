@@ -118,7 +118,7 @@ nav a:hover {
   min-height: 520px;
   background:
     linear-gradient(rgba(0, 45, 114, 0.78), rgba(0, 45, 114, 0.58)),
-    url("https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1600&q=80");
+    url("../images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   color: var(--white);
@@ -295,6 +295,18 @@ section {
   background: linear-gradient(135deg, var(--blue), var(--light-blue));
 }
 
+.card-img.img-admissions {
+  background:
+    linear-gradient(rgba(0, 45, 114, 0.45), rgba(0, 45, 114, 0.45)),
+    url("../images/kare-campus.jpg") center/cover;
+}
+
+.card-img.img-research {
+  background:
+    linear-gradient(rgba(0, 45, 114, 0.45), rgba(0, 45, 114, 0.45)),
+    url("../images/kare-ece-lab.jpg") center/cover;
+}
+
 .card-content {
   padding: 22px;
 }
@@ -462,7 +474,7 @@ section {
 .chapter-img.acm {
   background:
     linear-gradient(rgba(0, 45, 114, 0.45), rgba(0, 45, 114, 0.45)),
-    url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80");
+    url("../images/chapters/acm.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -470,7 +482,7 @@ section {
 .chapter-img.eds {
   background:
     linear-gradient(rgba(0, 45, 114, 0.45), rgba(0, 45, 114, 0.45)),
-    url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80");
+    url("../images/chapters/eds.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -478,7 +490,7 @@ section {
 .chapter-img.sps {
   background:
     linear-gradient(rgba(0, 45, 114, 0.45), rgba(0, 45, 114, 0.45)),
-    url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80");
+    url("../images/chapters/sps.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -486,7 +498,7 @@ section {
 .chapter-img.sscs {
   background:
     linear-gradient(rgba(0, 45, 114, 0.45), rgba(0, 45, 114, 0.45)),
-    url("https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=900&q=80");
+    url("../images/chapters/sscs.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -494,7 +506,7 @@ section {
 .chapter-img.optica {
   background:
     linear-gradient(rgba(0, 45, 114, 0.45), rgba(0, 45, 114, 0.45)),
-    url("https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=900&q=80");
+    url("../images/chapters/optica.jpg");
   background-size: cover;
   background-position: center;
 }

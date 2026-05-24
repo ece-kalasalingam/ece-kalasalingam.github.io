@@ -61,6 +61,8 @@ a {
   display: flex;
   align-items: stretch;
   height: 100%;
+  position: relative;
+  z-index: 30;
 }
 
 .topbar a {
@@ -130,6 +132,7 @@ nav a.active {
   display: flex;
   align-items: stretch;
   height: 100%;
+  isolation: isolate;
 }
 
 .topbar-dropdown-btn {
@@ -159,7 +162,7 @@ nav a.active {
 .topbar-submenu {
   display: none;
   position: absolute;
-  top: 100%;
+  top: calc(100% + 1px);
   right: 0;
   background: var(--white);
   border: 1px solid var(--border);
@@ -1080,6 +1083,36 @@ body.modal-open {
     height: auto;
     padding: 10px 4%;
     gap: 8px;
+  }
+
+  .topbar-links {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .topbar-links > a,
+  .topbar-dropdown {
+    flex: 1 1 calc(50% - 1px);
+    min-height: 40px;
+  }
+
+  .topbar a,
+  .topbar-dropdown-btn {
+    width: 100%;
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    border-left: 1px solid rgba(255, 255, 255, 0.18);
+    min-height: 40px;
+  }
+
+  .topbar-submenu {
+    position: static;
+    width: 100%;
+    min-width: 0;
+    margin-top: 0;
+    border-top: none;
+    box-shadow: none;
   }
 
   header {

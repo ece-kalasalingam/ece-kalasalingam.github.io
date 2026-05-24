@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-24 19:49 IST | author: Codex | type: fix
+- Summary: Fixed topbar conferences dropdown layout/visibility issues on homepage and directory page.
+- Files: `assets/css/home.css`, `CHANGELOG.md`
+- Details: Improved dropdown stacking/positioning and added responsive topbar rules for small screens: wrapped link rows, normalized button sizing, and switched submenu to static flow on mobile to prevent clipped or floating menu rendering.
+- Revert: No
+
 ## 2026-05-24 19:45 IST | author: Codex | type: fix
 - Summary: Fixed directory page null-container crash in faculty list loader.
 - Files: `assets/js/directory.js`, `CHANGELOG.md`

@@ -157,17 +157,23 @@ function pickRandomFaculty(items, count = 3) {
 function facultyCardTemplate(faculty, details) {
   const name = sanitizeText(faculty?.name, "Faculty Member");
   const designation = sanitizeText(faculty?.designation, "ECE Faculty");
-  const scopusId = sanitizeText(faculty?.scopus_id);
-  const email = parseEmail(details.email || faculty?.email);
+  const slug = sanitizeText(faculty?.slug);
   const hIndex = Number.isFinite(Number(details.hIndex)) ? Number(details.hIndex) : null;
   const publications = Number.isFinite(Number(details.totalPublications)) ? Number(details.totalPublications) : null;
+  const specialization = sanitizeText(details.specialization || "");
 
-  const points = [];
-  points.push(`Designation: ${designation}`);
-  if (publications !== null) points.push(`Publications: ${publications}`);
-  if (hIndex !== null) points.push(`h-index: ${hIndex}`);
-  if (scopusId) points.push(`Scopus ID: ${scopusId}`);
-  if (email) points.push(`Email: ${email}`);
+  const infoFallback = [
+    publications !== null ? `${publications} publications` : "",
+    hIndex !== null ? `h-index ${hIndex}` : ""
+  ].filter(Boolean).join(" · ");
+
+  const specHtml = specialization
+    ? `<span>${escapeHtml(specialization)}</span>`
+    : (infoFallback ? `<span>${escapeHtml(infoFallback)}</span>` : "");
+
+  const profileHtml = slug
+    ? `<a href="directory/${encodeURIComponent(slug)}">View Profile →</a>`
+    : "";
 
   return `<article class="faculty-card">
     <div class="faculty-photo-wrap">
@@ -176,10 +182,11 @@ function facultyCardTemplate(faculty, details) {
         <div class="photo-fallback" aria-hidden="true"></div>
       </div>
     </div>
-    <div class="faculty-body">
+    <div class="faculty-content">
       <h3>${escapeHtml(name)}</h3>
-      <p class="faculty-role">${escapeHtml(designation)}</p>
-      <ul class="faculty-points">${points.slice(0, 4).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul>
+      <p>${escapeHtml(designation)}</p>
+      ${specHtml}
+      ${profileHtml}
     </div>
   </article>`;
 }
@@ -195,7 +202,8 @@ async function fetchFacultyDetails(slug) {
       photoUrl: sanitizeText(data?.photo_url),
       email: profile["e-mail"] || profile["email"] || "",
       hIndex: data?.h_index,
-      totalPublications: data?.total_publications
+      totalPublications: data?.total_publications,
+      specialization: profile["area of specialization"] || profile["specialization"] || profile["research interest"] || profile["research interests"] || ""
     };
   } catch {
     return {};

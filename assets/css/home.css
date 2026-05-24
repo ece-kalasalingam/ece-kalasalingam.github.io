@@ -383,6 +383,91 @@ section {
   text-align: center;
 }
 
+/* ─── Student chapters ───────────────────────────────────────── */
+.chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 22px;
+}
+
+.chapter-card {
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.chapter-img {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+}
+
+.chapter-img.acm {
+  background:
+    linear-gradient(rgba(0, 45, 114, 0.45), rgba(0, 45, 114, 0.45)),
+    url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.chapter-img.eds {
+  background:
+    linear-gradient(rgba(0, 45, 114, 0.45), rgba(0, 45, 114, 0.45)),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.chapter-img.sps {
+  background:
+    linear-gradient(rgba(0, 45, 114, 0.45), rgba(0, 45, 114, 0.45)),
+    url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.chapter-img.sscs {
+  background:
+    linear-gradient(rgba(0, 45, 114, 0.45), rgba(0, 45, 114, 0.45)),
+    url("https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=900&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.chapter-img.optica {
+  background:
+    linear-gradient(rgba(0, 45, 114, 0.45), rgba(0, 45, 114, 0.45)),
+    url("https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=900&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.chapter-content {
+  padding: 22px;
+}
+
+.chapter-content h3 {
+  color: var(--blue);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.chapter-content p {
+  font-size: 15px;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.chapter-content a {
+  color: var(--light-blue);
+  font-weight: bold;
+}
+
+.chapter-content a:hover {
+  text-decoration: underline;
+}
+
 /* ─── Feed ───────────────────────────────────────────────────── */
 .feed-meta {
   margin: 0 0 20px;
@@ -660,6 +745,12 @@ body.modal-open {
   }
 }
 
+@media (max-width: 1100px) {
+  .chapter-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 600px) {
   .topbar {
     flex-direction: column;
@@ -695,7 +786,8 @@ body.modal-open {
 
   .cards,
   .stats,
-  .faculty-grid {
+  .faculty-grid,
+  .chapter-grid {
     grid-template-columns: 1fr;
   }
 

@@ -11,16 +11,6 @@
       "abstract": {}
     },
     {
-      "title": "Enhanced Galactic Swarm Algorithm with Encryption Technique for Medical Image Security in Internet of Things environment",
-      "source": "Securing Next Generation Connected Healthcare Systems Artificial Intelligence Technologies",
-      "date": "2024-01-01",
-      "doi": "10.1016/B978-0-443-13951-2.00008-8",
-      "citations": 0,
-      "eid": "2-s2.0-85199021415",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85199021415",
-      "abstract": {}
-    },
-    {
       "title": "Design and Analysis of Silicon Photonic Waveguides and Optical Micro-Ring Resonator for Next-Generation Computing, Communication and Sensing",
       "source": "10th International Conference on Advanced Computing and Communication Systems Icaccs 2024",
       "date": "2024-01-01",
@@ -28,6 +18,16 @@
       "citations": 2,
       "eid": "2-s2.0-85208605339",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85208605339",
+      "abstract": {}
+    },
+    {
+      "title": "Enhanced Galactic Swarm Algorithm with Encryption Technique for Medical Image Security in Internet of Things environment",
+      "source": "Securing Next Generation Connected Healthcare Systems Artificial Intelligence Technologies",
+      "date": "2024-01-01",
+      "doi": "10.1016/B978-0-443-13951-2.00008-8",
+      "citations": 0,
+      "eid": "2-s2.0-85199021415",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85199021415",
       "abstract": {}
     },
     {
@@ -61,16 +61,6 @@
       "abstract": {}
     },
     {
-      "title": "Smart Vehicle Locking System Using Pollution Sensor (Mq-07)",
-      "source": "2022 6th International Conference on Trends in Electronics and Informatics Icoei 2022 Proceedings",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICOEI53556.2022.9776911",
-      "citations": 1,
-      "eid": "2-s2.0-85131947059",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85131947059",
-      "abstract": {}
-    },
-    {
       "title": "Hybrid Deep Learning Enabled Air Pollution Monitoring in ITS Environment",
       "source": "Computers Materials and Continua",
       "date": "2022-01-01",
@@ -78,6 +68,16 @@
       "citations": 9,
       "eid": "2-s2.0-85125398690",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85125398690",
+      "abstract": {}
+    },
+    {
+      "title": "Smart Vehicle Locking System Using Pollution Sensor (Mq-07)",
+      "source": "2022 6th International Conference on Trends in Electronics and Informatics Icoei 2022 Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICOEI53556.2022.9776911",
+      "citations": 1,
+      "eid": "2-s2.0-85131947059",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85131947059",
       "abstract": {}
     },
     {
@@ -91,13 +91,13 @@
       "abstract": {}
     },
     {
-      "title": "Multimodality medical image fusion based on non-sub-sampled contourlet transform",
-      "source": "International Journal of Computer Applications in Technology",
+      "title": "Automated Internet of Medical Things (IoMT) Based Healthcare Monitoring System",
+      "source": "Studies in Systems Decision and Control",
       "date": "2021-01-01",
-      "doi": "10.1504/IJCAT.2021.117279",
-      "citations": 4,
-      "eid": "2-s2.0-85114344853",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85114344853",
+      "doi": "10.1007/978-3-030-55833-8_7",
+      "citations": 20,
+      "eid": "2-s2.0-85093857852",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85093857852",
       "abstract": {}
     },
     {
@@ -111,13 +111,13 @@
       "abstract": {}
     },
     {
-      "title": "Automated Internet of Medical Things (IoMT) Based Healthcare Monitoring System",
-      "source": "Studies in Systems Decision and Control",
+      "title": "Multimodality medical image fusion based on non-sub-sampled contourlet transform",
+      "source": "International Journal of Computer Applications in Technology",
       "date": "2021-01-01",
-      "doi": "10.1007/978-3-030-55833-8_7",
-      "citations": 20,
-      "eid": "2-s2.0-85093857852",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85093857852",
+      "doi": "10.1504/IJCAT.2021.117279",
+      "citations": 4,
+      "eid": "2-s2.0-85114344853",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85114344853",
       "abstract": {}
     },
     {

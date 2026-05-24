@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-24 13:30 IST | author: JP | type: redesign
+- Summary: Adopted user-provided HTML layout as the new homepage structure — topbar + dept header + hero image + intro/stats + program cards + research features + dynamic faculty + YouTube feed + CTA + footer.
+- Files: `index.html`, `assets/css/home.css`
+- Details: Moved all inline styles to external home.css (required by style-src 'self' CSP). Real KARE ECE content throughout: dept name, NAAC A++, Krishnankoil address, real chapter links, real publication/social links. Hero uses Unsplash background (allowed by img-src https: in CSP). Static hardcoded faculty replaced with id="faculty-spotlights" dynamic section. Static news replaced with id="content" YouTube feed. Footer includes all 5 student chapter links. Gold/navy/light-blue design tokens adopted.
+- Revert: No
+
 ## 2026-05-24 12:30 IST | author: JP | type: redesign
 - Summary: Complete structural rewrite of homepage — dark navy hero, research focus areas section, refined chapters grid, full institutional layout.
 - Files: `index.html`, `assets/css/home.css`

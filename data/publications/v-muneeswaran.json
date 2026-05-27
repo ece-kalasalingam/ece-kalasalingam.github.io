@@ -11,7 +11,7 @@
       "abstract": {
         "text": "Lung cancer is a main reason of death globally, and reducing death rates and enhancing treatment results depend heavily on quick identification. However, medical image diagnosis, including Computed Tomography (CT) scans, is difficult and demands a high level of experience. This research proposes a comprehensive and interpretable Computer-Aided Diagnosis (CAD) structure to identify lung cancer from medical images. The workflow initiates with an Adaptive Savitzky-Golay Filter, effectively enhancing image quality by smoothing while preserving critical structural edges. Hierarchical Adaptive Cluster Refinement (HACR) is then used for precise segmentation, adaptively identifying abnormal lung regions with high accuracy. For feature extraction, the proposed system utilizes the Deep Statistical Gray-Level Co-occurrence Matrix (DS-GLCM) approach, which captures deep spatial and statistical texture features essential for distinguishing cancerous tissue. At last stage, classification is performed using a novel Deep Learning (DL) model Crested Porcupine Optimized (CPO) Channel-Attention (CA) InceptionResNet. The CPO algorithm is exploited to tune the CA- InceptionResNet model's hyperparameters. To ensure transparency and reliability in clinical use, Explainable AI (XAI) technique- Local Interpretable Model-Agnostic Explanations (LIME) is used for visual interpretability, highlighting regions in CT images that contribute the most to model forecasts, thus boosting clinician trust and decision-making. The entire framework is implemented in Python, and experimental results on benchmark lung cancer imaging datasets demonstrate its superior performance in terms of performance metrics with an accuracy of 98.18% with sensitivity of 95.94 % and specificity of 99.10%. The combination of advanced DL and explainable AI makes the proposed framework a promising solution for lung cancer diagnosis.",
         "source": "crossref",
-        "fetched_at": "2026-05-26T06:12:47+00:00"
+        "fetched_at": "2026-05-27T06:26:49+00:00"
       }
     },
     {
@@ -25,7 +25,7 @@
       "abstract": {
         "text": "This paper examines the effectiveness of modern methods of teaching with special reference to Inquiry-Based Learning (IBL) in teaching Big Data Analytics to undergraduate students. 57 students participated in the hands-on activities, including poster presentations, learning games with Slido, a quiz with Mentimeter, peer group discussions, and reflective writings in journals. A well-designed survey provided some feedback that these unfamiliar teaching techniques were the key to shaping a deeper understanding of Big Data tools in Hive, Hadoop, and Pig. The students claimed that they felt more self-confident when it came to applying concepts to practice. They also attributed the increase in critical thinking and collaboration abilities. The motivational side is that many students were motivated enough to take additional courses or certifications in data science, and they stated that they would list these experiences in their resumes or during job interviews. The results indicate that IBL in combination with contemporary instructional practices in technical courses should prompt more learning, improved engagement, and improved career preparedness.",
         "source": "crossref",
-        "fetched_at": "2026-05-26T06:12:47+00:00"
+        "fetched_at": "2026-05-27T06:26:49+00:00"
       }
     },
     {

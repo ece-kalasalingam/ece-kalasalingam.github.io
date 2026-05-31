@@ -11,52 +11,8 @@
       "abstract": {
         "text": "Engineering education increasingly emphasizes the need for pedagogies that move beyond rote learning to foster problem-solving, teamwork, and innovation. Project and Problem-Based Learning (P2BL) provides such a framework by integrating authentic tasks within the curriculum. This study reports on the design, implementation, and evaluation of P2BL in the IoT Sensors and Devices course for second-year Electronics and Communication Engineering students. A total of 123 students participated, with 60 enrolled in the P2BL section and 63 in a lecture-based control group. The P2BL design included quizzes, laboratory tasks, idea pitching, hackathon participation, and prototype expo evaluation. Comparative quantitative analyses showed that the P2BL group outperformed the control group in quizzes (t(118) = 3.50, p = .001) and laboratory performance (t(118) = 5.80, p &lt; .001), though composite performance indices were comparable. One-sample t-tests against a benchmark of 70/100 indicated that P2BL students significantly exceeded expectations in Pitch (M = 74.2, p = .009), Hackathon (M = 77.0, p &lt; .001), and Prototype Expo (M = 74.9, p &lt; .001). Correlation analysis revealed that Pitch scores were the strongest predictor of Prototype quality (r = 0.80), followed by Lab (r = 0.40), while Quiz showed only a weak association (r = 0.30). Qualitative reflections reinforced these findings, with themes of teamwork, creativity, and applied problem-solving frequently reported. Overall, the study demonstrates that P2BL strengthens conceptual learning while fostering innovation and teamwork and can be embedded within existing curricula without altering syllabus structures.",
         "source": "crossref",
-        "fetched_at": "2026-05-30T05:53:21+00:00"
+        "fetched_at": "2026-05-31T07:00:43+00:00"
       }
-    },
-    {
-      "title": "VANET-based Ambulance Alert System for Vicinity Vehicles",
-      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICTMIM65579.2025.10988071",
-      "citations": 0,
-      "eid": "2-s2.0-105008005007",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105008005007",
-      "abstract": {}
-    },
-    {
-      "title": "Social interactions and attitudes toward remote learning vs perceptions of its effectiveness in the view of Education 4.0",
-      "source": "TQM Journal",
-      "date": "2025-01-01",
-      "doi": "10.1108/TQM-09-2024-0335",
-      "citations": 2,
-      "eid": "2-s2.0-86000563024",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/86000563024",
-      "abstract": {
-        "text": "Purpose This article presents findings on the relationship between social interactions in remote learning environments and the perceived effectiveness of remote learning. Specifically, it examines the impact of teacher-student interactions and student-student interactions on perceived effectiveness of remote learning, with a focus on how students’ attitudes towards remote education mediate this relationship. Additionally, it explores the moderating effects of cultural context and study form (full-time vs part-time) on these dynamics. Design/methodology/approach A quantitative research design was used, employing a structured survey questionnaire to collect data from a diverse group of students from Poland, India, Indonesia and the UK. The study involved 1,883 students and analysed the data using statistical methods to assess both mediation and moderation effects. The study employed data obtained from a survey of universities in four countries conducted between 2021 and 2022. Findings The results emphasise the significant influence of both teacher-student and student-student interactions on students’ perceptions of the effectiveness of remote learning. Positive attitudes towards remote learning were found to mediate this relationship, amplifying the beneficial effects of social interaction. Furthermore, the study reveals that cultural context and study form moderate these relationships, with varying impacts observed across different cultural backgrounds and study arrangements. The study has implications for theory, research, policy implementation and practice in improving education programs. Research limitations/implications The comparative analysis included only four countries, which may have affected the overall representativeness of the results. Because the study is limited to students from Poland, India, Indonesia and the UK, the findings may not fully capture the diversity of remote learning experiences across other cultural and socioeconomic contexts. As a result, there may be challenges in generalising these findings to all higher education settings globally. Future research is recommended to include a more extensive sample from additional countries and regions to validate the current results and enhance their generalisability. Therefore, it is worth continuing research in this area, considering more countries and potential moderating factors. Originality/value This research contributes original insights into the dynamics of remote learning during a global crisis, offering an understanding of how social interactions, student attitudes and contextual factors shape perceived effectiveness. These findings provide critical guidance for educators, policymakers and institutions seeking to optimise remote education strategies in diverse cultural and educational settings.",
-        "source": "crossref",
-        "fetched_at": "2026-05-30T05:53:21+00:00"
-      }
-    },
-    {
-      "title": "Simulation of WO3 Thin Film Transistor for Biosensors",
-      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICTMIM65579.2025.10988043",
-      "citations": 0,
-      "eid": "2-s2.0-105007994824",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007994824",
-      "abstract": {}
-    },
-    {
-      "title": "IoT-based Smart Milk Safety System for Preventing Overheating and Burn Risks",
-      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICTMIM65579.2025.10988023",
-      "citations": 0,
-      "eid": "2-s2.0-105007977692",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007977692",
-      "abstract": {}
     },
     {
       "title": "Intelligent Energy Meter with Alerting System",
@@ -69,6 +25,30 @@
       "abstract": {}
     },
     {
+      "title": "Assessment of Learning: Student Teams Achievement Division Technique for Empowering Students in Problem-Solving Courses",
+      "source": "Journal of Engineering Education Transformations",
+      "date": "2025-01-01",
+      "doi": "10.16920/jeet/2025/v38is2/25014",
+      "citations": 4,
+      "eid": "2-s2.0-105006742089",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105006742089",
+      "abstract": {
+        "text": "Nowadays, there is a growing interest in group activities as interdisciplinary and teamwork raises effective learning among the students than the conventional teaching methodology. It has become a huge challenge to foster learning interest among students and engage them during long hours of problem-solving courses. This study explores the effects of Student Teams Achievement Divisions (STAD) as a cooperative learning technique in classroom teaching, on student learning experiences focusing on engineering students' learning experiences within team dynamics. Through an online survey question, (n=89) responses were collected that included four main categorical questions. The questions were divided into the following four input attributes such as ‘Student – Professor Interaction’, ‘Student – Team Interaction’, ‘Learning Tool’ and ‘Assessment Methodology’ and each of these inputs were further divided into sub attributes. Regression analysis and correlation was examined to analyze the association between the inputs and the Student Learning Experience as the output for the purpose of this research. The findings indicate that STAD promoted positive correlation with (R2 = 0.71) on student learning experience for the input attributes like ‘Student – Team Interaction’ and (R2 = 0.77) for ‘Assessment’ respectively where the students exhibited problem solving skills particularly in the context of the control systems course, suggesting that STAD methodology fosters a conducive environment for active learning and motivation within engineering education.",
+        "source": "crossref",
+        "fetched_at": "2026-05-31T07:00:43+00:00"
+      }
+    },
+    {
+      "title": "An IoT-Enabled Whistle Counter System for Automated Monitoring and Control in the Cookers",
+      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICTMIM65579.2025.10988093",
+      "citations": 1,
+      "eid": "2-s2.0-105007974549",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007974549",
+      "abstract": {}
+    },
+    {
       "title": "Fabrication and Performance Analysis of Perovskite Solar Cells for High Energy Conversion",
       "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
       "date": "2025-01-01",
@@ -76,6 +56,16 @@
       "citations": 0,
       "eid": "2-s2.0-105007997460",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105007997460",
+      "abstract": {}
+    },
+    {
+      "title": "Simulation of WO3 Thin Film Transistor for Biosensors",
+      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICTMIM65579.2025.10988043",
+      "citations": 0,
+      "eid": "2-s2.0-105007994824",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007994824",
       "abstract": {}
     },
     {
@@ -99,23 +89,33 @@
       "abstract": {}
     },
     {
-      "title": "Assessment of Learning: Student Teams Achievement Division Technique for Empowering Students in Problem-Solving Courses",
-      "source": "Journal of Engineering Education Transformations",
+      "title": "IoT-based Smart Milk Safety System for Preventing Overheating and Burn Risks",
+      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
       "date": "2025-01-01",
-      "doi": "10.16920/jeet/2025/v38is2/25014",
-      "citations": 4,
-      "eid": "2-s2.0-105006742089",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105006742089",
+      "doi": "10.1109/ICTMIM65579.2025.10988023",
+      "citations": 0,
+      "eid": "2-s2.0-105007977692",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007977692",
       "abstract": {}
     },
     {
-      "title": "An IoT-Enabled Whistle Counter System for Automated Monitoring and Control in the Cookers",
+      "title": "VANET-based Ambulance Alert System for Vicinity Vehicles",
       "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
       "date": "2025-01-01",
-      "doi": "10.1109/ICTMIM65579.2025.10988093",
-      "citations": 1,
-      "eid": "2-s2.0-105007974549",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007974549",
+      "doi": "10.1109/ICTMIM65579.2025.10988071",
+      "citations": 0,
+      "eid": "2-s2.0-105008005007",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105008005007",
+      "abstract": {}
+    },
+    {
+      "title": "Social interactions and attitudes toward remote learning vs perceptions of its effectiveness in the view of Education 4.0",
+      "source": "TQM Journal",
+      "date": "2025-01-01",
+      "doi": "10.1108/TQM-09-2024-0335",
+      "citations": 2,
+      "eid": "2-s2.0-86000563024",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/86000563024",
       "abstract": {}
     },
     {
@@ -139,6 +139,16 @@
       "abstract": {}
     },
     {
+      "title": "Advanced Intelligent Systems for Optimizing Breast Cancer Thermography",
+      "source": "2024 IEEE Silchar Subsection Conference Silcon 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/SILCON63976.2024.10910658",
+      "citations": 2,
+      "eid": "2-s2.0-105001234096",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105001234096",
+      "abstract": {}
+    },
+    {
       "title": "Segmentation of Bruises in Fruit Thermograms During Post Harvest Stage Using K-Means Clustering Technique",
       "source": "2024 IEEE International Conference on Intelligent Techniques in Control Optimization and Signal Processing Incos 2024 Proceedings",
       "date": "2024-01-01",
@@ -146,6 +156,26 @@
       "citations": 1,
       "eid": "2-s2.0-85194092391",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85194092391",
+      "abstract": {}
+    },
+    {
+      "title": "Augmented mass detection of breast cancer in mammogram images using deep intelligent neural network model",
+      "source": "Artificial Intelligence in Biomedical and Modern Healthcare Informatics",
+      "date": "2024-01-01",
+      "doi": "10.1016/B978-0-443-21870-5.00035-2",
+      "citations": 0,
+      "eid": "2-s2.0-85216397886",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85216397886",
+      "abstract": {}
+    },
+    {
+      "title": "Implementation of Collaborative Filtering-based Recommendation System for Grading Diabetic Foot Thermograms",
+      "source": "Proceedings of the 5th International Conference on Data Intelligence and Cognitive Informatics Icdici 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICDICI62993.2024.10810783",
+      "citations": 0,
+      "eid": "2-s2.0-85216625155",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85216625155",
       "abstract": {}
     },
     {
@@ -163,39 +193,9 @@
       "source": "Proceedings of the 5th International Conference on Smart Electronics and Communication Icosec 2024",
       "date": "2024-01-01",
       "doi": "10.1109/ICOSEC61587.2024.10722762",
-      "citations": 1,
+      "citations": 2,
       "eid": "2-s2.0-85209887200",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85209887200",
-      "abstract": {}
-    },
-    {
-      "title": "Implementation of Collaborative Filtering-based Recommendation System for Grading Diabetic Foot Thermograms",
-      "source": "Proceedings of the 5th International Conference on Data Intelligence and Cognitive Informatics Icdici 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICDICI62993.2024.10810783",
-      "citations": 0,
-      "eid": "2-s2.0-85216625155",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85216625155",
-      "abstract": {}
-    },
-    {
-      "title": "Augmented mass detection of breast cancer in mammogram images using deep intelligent neural network model",
-      "source": "Artificial Intelligence in Biomedical and Modern Healthcare Informatics",
-      "date": "2024-01-01",
-      "doi": "10.1016/B978-0-443-21870-5.00035-2",
-      "citations": 0,
-      "eid": "2-s2.0-85216397886",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85216397886",
-      "abstract": {}
-    },
-    {
-      "title": "Advanced Intelligent Systems for Optimizing Breast Cancer Thermography",
-      "source": "2024 IEEE Silchar Subsection Conference Silcon 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/SILCON63976.2024.10910658",
-      "citations": 2,
-      "eid": "2-s2.0-105001234096",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105001234096",
       "abstract": {}
     },
     {
@@ -209,23 +209,33 @@
       "abstract": {}
     },
     {
-      "title": "Technologies and Therapies for Disease Diagnosis and Treatment",
-      "source": "Eai Springer Innovations in Communication and Computing",
-      "date": "2023-01-01",
-      "doi": "10.1007/978-3-031-27700-9_11",
-      "citations": 1,
-      "eid": "2-s2.0-85161937086",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161937086",
-      "abstract": {}
-    },
-    {
       "title": "Optimized TSA ResNet Architecture with TSH—Discriminatory Features for Kidney Stone Classification from QUS Images",
       "source": "Studies in Computational Intelligence",
       "date": "2023-01-01",
       "doi": "10.1007/978-3-031-38281-9_10",
-      "citations": 5,
+      "citations": 6,
       "eid": "2-s2.0-85183997448",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85183997448",
+      "abstract": {}
+    },
+    {
+      "title": "Design of Crop Recommender System using Machine Learning and IoT",
+      "source": "7th International Conference on Trends in Electronics and Informatics Icoei 2023 Proceedings",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICOEI56765.2023.10125963",
+      "citations": 3,
+      "eid": "2-s2.0-85161151045",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161151045",
+      "abstract": {}
+    },
+    {
+      "title": "Accent Conversion using Neural Style Transfer",
+      "source": "2023 International Conference on Recent Advances in Electrical Electronics Ubiquitous Communication and Computational Intelligence Raeeucci 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/RAEEUCCI57140.2023.10134121",
+      "citations": 1,
+      "eid": "2-s2.0-85161532486",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161532486",
       "abstract": {}
     },
     {
@@ -236,6 +246,16 @@
       "citations": 0,
       "eid": "2-s2.0-85173031873",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85173031873",
+      "abstract": {}
+    },
+    {
+      "title": "Automated Crop Recommender System using Pattern Classifiers",
+      "source": "Idciot 2023 International Conference on Intelligent Data Communication Technologies and Internet of Things Proceedings",
+      "date": "2023-01-01",
+      "doi": "10.1109/IDCIoT56793.2023.10053451",
+      "citations": 1,
+      "eid": "2-s2.0-85149752791",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85149752791",
       "abstract": {}
     },
     {
@@ -259,13 +279,13 @@
       "abstract": {}
     },
     {
-      "title": "Design of Crop Recommender System using Machine Learning and IoT",
-      "source": "7th International Conference on Trends in Electronics and Informatics Icoei 2023 Proceedings",
+      "title": "Technologies and Therapies for Disease Diagnosis and Treatment",
+      "source": "Eai Springer Innovations in Communication and Computing",
       "date": "2023-01-01",
-      "doi": "10.1109/ICOEI56765.2023.10125963",
-      "citations": 3,
-      "eid": "2-s2.0-85161151045",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161151045",
+      "doi": "10.1007/978-3-031-27700-9_11",
+      "citations": 1,
+      "eid": "2-s2.0-85161937086",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161937086",
       "abstract": {}
     },
     {
@@ -279,26 +299,6 @@
       "abstract": {}
     },
     {
-      "title": "Automated Crop Recommender System using Pattern Classifiers",
-      "source": "Idciot 2023 International Conference on Intelligent Data Communication Technologies and Internet of Things Proceedings",
-      "date": "2023-01-01",
-      "doi": "10.1109/IDCIoT56793.2023.10053451",
-      "citations": 1,
-      "eid": "2-s2.0-85149752791",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85149752791",
-      "abstract": {}
-    },
-    {
-      "title": "Accent Conversion using Neural Style Transfer",
-      "source": "2023 International Conference on Recent Advances in Electrical Electronics Ubiquitous Communication and Computational Intelligence Raeeucci 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/RAEEUCCI57140.2023.10134121",
-      "citations": 1,
-      "eid": "2-s2.0-85161532486",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161532486",
-      "abstract": {}
-    },
-    {
       "title": "Benefit of Foot Thermogram Analysis in the Treatment of Diabetic Foot Ulcer: A Systematic Review",
       "source": "Biomedical Research and Therapy",
       "date": "2022-05-31",
@@ -306,16 +306,6 @@
       "citations": 7,
       "eid": "2-s2.0-85149723334",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85149723334",
-      "abstract": {}
-    },
-    {
-      "title": "Performance Evaluation of LiNbO3-based Negative Capacitance Field Effect Transistors (NCFETs)",
-      "source": "Proceedings of 2022 IEEE International Conference of Electron Devices Society Kolkata Chapter Edkcon 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/EDKCON56221.2022.10032849",
-      "citations": 1,
-      "eid": "2-s2.0-85148697496",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148697496",
       "abstract": {}
     },
     {
@@ -329,13 +319,13 @@
       "abstract": {}
     },
     {
-      "title": "Analysis of a single server batch arrival non-Markovian queuing model approach in classification of foot thermograms",
-      "source": "International Journal of Mathematical Modelling and Numerical Optimisation",
+      "title": "Performance Evaluation of LiNbO3-based Negative Capacitance Field Effect Transistors (NCFETs)",
+      "source": "Proceedings of 2022 IEEE International Conference of Electron Devices Society Kolkata Chapter Edkcon 2022",
       "date": "2022-01-01",
-      "doi": "10.1504/ijmmno.2022.126555",
-      "citations": 13,
-      "eid": "2-s2.0-85142509043",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85142509043",
+      "doi": "10.1109/EDKCON56221.2022.10032849",
+      "citations": 1,
+      "eid": "2-s2.0-85148697496",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148697496",
       "abstract": {}
     },
     {
@@ -359,6 +349,16 @@
       "abstract": {}
     },
     {
+      "title": "Analysis of a single server batch arrival non-Markovian queuing model approach in classification of foot thermograms",
+      "source": "International Journal of Mathematical Modelling and Numerical Optimisation",
+      "date": "2022-01-01",
+      "doi": "10.1504/ijmmno.2022.126555",
+      "citations": 13,
+      "eid": "2-s2.0-85142509043",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85142509043",
+      "abstract": {}
+    },
+    {
       "title": "Classification of Foot Thermograms using Texture Features and Support Vector Machine",
       "source": "Proceedings of the 2nd International Conference on Electronics and Sustainable Communication Systems Icesc 2021",
       "date": "2021-08-04",
@@ -366,16 +366,6 @@
       "citations": 10,
       "eid": "2-s2.0-85116660478",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85116660478",
-      "abstract": {}
-    },
-    {
-      "title": "Statistical Analysis on Breast Thermograms using Logistic Regression for Image Classification",
-      "source": "2021 IEEE Bombay Section Signature Conference Ibssc 2021",
-      "date": "2021-01-01",
-      "doi": "10.1109/IBSSC53889.2021.9673168",
-      "citations": 5,
-      "eid": "2-s2.0-85125087150",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85125087150",
       "abstract": {}
     },
     {
@@ -389,13 +379,13 @@
       "abstract": {}
     },
     {
-      "title": "The Efficacy of Capturing Lateral View Breast Thermograms",
-      "source": "2019 International Conference on Clean Energy and Energy Efficient Electronics Circuit for Sustainable Development Incces 2019",
-      "date": "2019-12-01",
-      "doi": "10.1109/INCCES47820.2019.9167722",
-      "citations": 0,
-      "eid": "2-s2.0-85091508667",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85091508667",
+      "title": "Statistical Analysis on Breast Thermograms using Logistic Regression for Image Classification",
+      "source": "2021 IEEE Bombay Section Signature Conference Ibssc 2021",
+      "date": "2021-01-01",
+      "doi": "10.1109/IBSSC53889.2021.9673168",
+      "citations": 5,
+      "eid": "2-s2.0-85125087150",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85125087150",
       "abstract": {}
     },
     {
@@ -406,6 +396,16 @@
       "citations": 10,
       "eid": "2-s2.0-85067039088",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85067039088",
+      "abstract": {}
+    },
+    {
+      "title": "The Efficacy of Capturing Lateral View Breast Thermograms",
+      "source": "2019 International Conference on Clean Energy and Energy Efficient Electronics Circuit for Sustainable Development Incces 2019",
+      "date": "2019-12-01",
+      "doi": "10.1109/INCCES47820.2019.9167722",
+      "citations": 0,
+      "eid": "2-s2.0-85091508667",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85091508667",
       "abstract": {}
     },
     {

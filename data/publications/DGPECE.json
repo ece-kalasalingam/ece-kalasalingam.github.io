@@ -5,7 +5,7 @@
       "source": "Energy",
       "date": "2024-11-01",
       "doi": "10.1016/j.energy.2024.132926",
-      "citations": 17,
+      "citations": 18,
       "eid": "2-s2.0-85201712802",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85201712802",
       "abstract": {}
@@ -31,16 +31,6 @@
       "abstract": {}
     },
     {
-      "title": "DESIGN OPTIMISATION AND EXPERIMENTAL VERIFICATION OF SMALL ELECTRIC VEHICLES",
-      "source": "Journal of Environmental Protection and Ecology",
-      "date": "2023-01-01",
-      "doi": "",
-      "citations": 2,
-      "eid": "2-s2.0-85153291357",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153291357",
-      "abstract": {}
-    },
-    {
       "title": "Comparitive Analysis of Deep Learning Techniques for Assistive Soft Wearable Robots",
       "source": "Access 2023 2023 3rd International Conference on Advances in Computing Communication Embedded and Secure Systems",
       "date": "2023-01-01",
@@ -48,6 +38,16 @@
       "citations": 1,
       "eid": "2-s2.0-85168690994",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85168690994",
+      "abstract": {}
+    },
+    {
+      "title": "DESIGN OPTIMISATION AND EXPERIMENTAL VERIFICATION OF SMALL ELECTRIC VEHICLES",
+      "source": "Journal of Environmental Protection and Ecology",
+      "date": "2023-01-01",
+      "doi": "",
+      "citations": 2,
+      "eid": "2-s2.0-85153291357",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153291357",
       "abstract": {}
     },
     {
@@ -61,16 +61,6 @@
       "abstract": {}
     },
     {
-      "title": "Embedded Remote Condition Monitoring System for Industrial Machinery",
-      "source": "Lecture Notes in Mechanical Engineering",
-      "date": "2022-01-01",
-      "doi": "10.1007/978-981-19-0244-4_55",
-      "citations": 0,
-      "eid": "2-s2.0-85131918199",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85131918199",
-      "abstract": {}
-    },
-    {
       "title": "Computer Vision-based Advanced Valve Positioner",
       "source": "Proceedings of the 2022 3rd International Conference on Intelligent Computing Instrumentation and Control Technologies Computational Intelligence for Smart Systems Icicict 2022",
       "date": "2022-01-01",
@@ -78,6 +68,16 @@
       "citations": 4,
       "eid": "2-s2.0-85141360363",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85141360363",
+      "abstract": {}
+    },
+    {
+      "title": "Embedded Remote Condition Monitoring System for Industrial Machinery",
+      "source": "Lecture Notes in Mechanical Engineering",
+      "date": "2022-01-01",
+      "doi": "10.1007/978-981-19-0244-4_55",
+      "citations": 0,
+      "eid": "2-s2.0-85131918199",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85131918199",
       "abstract": {}
     },
     {
@@ -95,7 +95,7 @@
       "source": "World Electric Vehicle Journal",
       "date": "2021-01-01",
       "doi": "10.3390/wevj12010038",
-      "citations": 313,
+      "citations": 314,
       "eid": "2-s2.0-85103269242",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85103269242",
       "abstract": {}
@@ -108,6 +108,16 @@
       "citations": 4,
       "eid": "2-s2.0-85096959710",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85096959710",
+      "abstract": {}
+    },
+    {
+      "title": "Closed-loop Control of BLDC Motor in Electric Vehicle Applications",
+      "source": "2019 International Conference on Clean Energy and Energy Efficient Electronics Circuit for Sustainable Development Incces 2019",
+      "date": "2019-12-01",
+      "doi": "10.1109/INCCES47820.2019.9167730",
+      "citations": 10,
+      "eid": "2-s2.0-85091531442",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85091531442",
       "abstract": {}
     },
     {
@@ -128,16 +138,6 @@
       "citations": 0,
       "eid": "2-s2.0-85091490217",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85091490217",
-      "abstract": {}
-    },
-    {
-      "title": "Closed-loop Control of BLDC Motor in Electric Vehicle Applications",
-      "source": "2019 International Conference on Clean Energy and Energy Efficient Electronics Circuit for Sustainable Development Incces 2019",
-      "date": "2019-12-01",
-      "doi": "10.1109/INCCES47820.2019.9167730",
-      "citations": 10,
-      "eid": "2-s2.0-85091531442",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85091531442",
       "abstract": {}
     },
     {
@@ -178,16 +178,6 @@
       "citations": 13,
       "eid": "2-s2.0-84974604991",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/84974604991",
-      "abstract": {}
-    },
-    {
-      "title": "",
-      "source": "",
-      "date": "",
-      "doi": "",
-      "citations": 0,
-      "eid": "",
-      "link": "",
       "abstract": {}
     }
   ]

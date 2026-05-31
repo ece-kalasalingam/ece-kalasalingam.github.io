@@ -1,16 +1,6 @@
 {
   "publications": [
     {
-      "title": "Deep Learning-Powered Phishing Email Detection for Cybersecurity Enhancement",
-      "source": "Proceedings of 2025 2nd International Conference on Cognitive Robotics and Intelligent Systems Icc Robins 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICC-ROBINS64345.2025.11086246",
-      "citations": 0,
-      "eid": "2-s2.0-105013461491",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105013461491",
-      "abstract": {}
-    },
-    {
       "title": "A detailed review of the concepts, technologies, and industrial applications of Digital Twin",
       "source": "A Study on Next Generation Materials and Devicesv",
       "date": "2025-01-01",
@@ -18,6 +8,16 @@
       "citations": 0,
       "eid": "2-s2.0-105021697190",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105021697190",
+      "abstract": {}
+    },
+    {
+      "title": "Deep Learning-Powered Phishing Email Detection for Cybersecurity Enhancement",
+      "source": "Proceedings of 2025 2nd International Conference on Cognitive Robotics and Intelligent Systems Icc Robins 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICC-ROBINS64345.2025.11086246",
+      "citations": 0,
+      "eid": "2-s2.0-105013461491",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105013461491",
       "abstract": {}
     },
     {
@@ -31,16 +31,6 @@
       "abstract": {}
     },
     {
-      "title": "Signal Quality Evaluation and Processing for QRS Detection in ECG based Smart Healthcare Systems",
-      "source": "IEEE International Conference on Knowledge Engineering and Communication Systems Ickes 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICKECS56523.2022.10060422",
-      "citations": 1,
-      "eid": "2-s2.0-85150684321",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85150684321",
-      "abstract": {}
-    },
-    {
       "title": "DBN with a Developed Version of Thermal Exchange Optimization (TEO) Model for Skin Cancer Detection and Classification",
       "source": "Proceedings of the 2022 International Conference on Innovative Computing Intelligent Communication and Smart Electrical Systems Icses 2022",
       "date": "2022-01-01",
@@ -48,6 +38,16 @@
       "citations": 5,
       "eid": "2-s2.0-85141446622",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85141446622",
+      "abstract": {}
+    },
+    {
+      "title": "Signal Quality Evaluation and Processing for QRS Detection in ECG based Smart Healthcare Systems",
+      "source": "IEEE International Conference on Knowledge Engineering and Communication Systems Ickes 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICKECS56523.2022.10060422",
+      "citations": 1,
+      "eid": "2-s2.0-85150684321",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85150684321",
       "abstract": {}
     }
   ]

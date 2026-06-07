@@ -11,8 +11,18 @@
       "abstract": {
         "text": "Lung cancer is a main reason of death globally, and reducing death rates and enhancing treatment results depend heavily on quick identification. However, medical image diagnosis, including Computed Tomography (CT) scans, is difficult and demands a high level of experience. This research proposes a comprehensive and interpretable Computer-Aided Diagnosis (CAD) structure to identify lung cancer from medical images. The workflow initiates with an Adaptive Savitzky-Golay Filter, effectively enhancing image quality by smoothing while preserving critical structural edges. Hierarchical Adaptive Cluster Refinement (HACR) is then used for precise segmentation, adaptively identifying abnormal lung regions with high accuracy. For feature extraction, the proposed system utilizes the Deep Statistical Gray-Level Co-occurrence Matrix (DS-GLCM) approach, which captures deep spatial and statistical texture features essential for distinguishing cancerous tissue. At last stage, classification is performed using a novel Deep Learning (DL) model Crested Porcupine Optimized (CPO) Channel-Attention (CA) InceptionResNet. The CPO algorithm is exploited to tune the CA- InceptionResNet model's hyperparameters. To ensure transparency and reliability in clinical use, Explainable AI (XAI) technique- Local Interpretable Model-Agnostic Explanations (LIME) is used for visual interpretability, highlighting regions in CT images that contribute the most to model forecasts, thus boosting clinician trust and decision-making. The entire framework is implemented in Python, and experimental results on benchmark lung cancer imaging datasets demonstrate its superior performance in terms of performance metrics with an accuracy of 98.18% with sensitivity of 95.94 % and specificity of 99.10%. The combination of advanced DL and explainable AI makes the proposed framework a promising solution for lung cancer diagnosis.",
         "source": "crossref",
-        "fetched_at": "2026-06-07T06:35:33+00:00"
+        "fetched_at": "2026-06-07T07:08:21+00:00"
       }
+    },
+    {
+      "title": "An Interpretable Frame Work for Lung Cancer Prediction Using Artificial Rabbit Optimized Attention Convolution Neural Networks",
+      "source": "Journal of the Institution of Engineers India Series B",
+      "date": "2026-01-01",
+      "doi": "10.1007/s40031-026-01306-8",
+      "citations": 0,
+      "eid": "2-s2.0-105035432058",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035432058",
+      "abstract": {}
     },
     {
       "title": "Effectiveness of Modern Pedagogy in Big Data Analytics Using Inquiry-Based Learning (IBL)",
@@ -25,18 +35,8 @@
       "abstract": {
         "text": "This paper examines the effectiveness of modern methods of teaching with special reference to Inquiry-Based Learning (IBL) in teaching Big Data Analytics to undergraduate students. 57 students participated in the hands-on activities, including poster presentations, learning games with Slido, a quiz with Mentimeter, peer group discussions, and reflective writings in journals. A well-designed survey provided some feedback that these unfamiliar teaching techniques were the key to shaping a deeper understanding of Big Data tools in Hive, Hadoop, and Pig. The students claimed that they felt more self-confident when it came to applying concepts to practice. They also attributed the increase in critical thinking and collaboration abilities. The motivational side is that many students were motivated enough to take additional courses or certifications in data science, and they stated that they would list these experiences in their resumes or during job interviews. The results indicate that IBL in combination with contemporary instructional practices in technical courses should prompt more learning, improved engagement, and improved career preparedness.",
         "source": "crossref",
-        "fetched_at": "2026-06-07T06:35:33+00:00"
+        "fetched_at": "2026-06-07T07:08:21+00:00"
       }
-    },
-    {
-      "title": "An Interpretable Frame Work for Lung Cancer Prediction Using Artificial Rabbit Optimized Attention Convolution Neural Networks",
-      "source": "Journal of the Institution of Engineers India Series B",
-      "date": "2026-01-01",
-      "doi": "10.1007/s40031-026-01306-8",
-      "citations": 0,
-      "eid": "2-s2.0-105035432058",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035432058",
-      "abstract": {}
     },
     {
       "title": "Bio-inspired algorithms-based machine learning and deep learning models for Covid-19 diagnosis",
@@ -89,6 +89,46 @@
       "abstract": {}
     },
     {
+      "title": "PVT-ResNet Fusion: A Hybrid DL Framework for Lung Cancer Prediction Using Image Analysis and Explainable AI",
+      "source": "Iranian Journal of Science and Technology Transactions of Electrical Engineering",
+      "date": "2025-01-01",
+      "doi": "10.1007/s40998-025-00959-3",
+      "citations": 3,
+      "eid": "2-s2.0-105022620492",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105022620492",
+      "abstract": {}
+    },
+    {
+      "title": "Electrical Mesh and UV Light based Economical Mosquito Avoidance System",
+      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICTMIM65579.2025.10988165",
+      "citations": 0,
+      "eid": "2-s2.0-105007989453",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007989453",
+      "abstract": {}
+    },
+    {
+      "title": "Deep Learning Advancement for Brain-Tumor Classification and Comprehensive Diagnosis",
+      "source": "2025 3rd International Conference on Communication Security and Artificial Intelligence Iccsai 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICCSAI64074.2025.11064526",
+      "citations": 0,
+      "eid": "2-s2.0-105012116681",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105012116681",
+      "abstract": {}
+    },
+    {
+      "title": "Effect of Inquiry-based Learning on Engineering Students as Collaborative Approach in Problem-Solving and Research for Formal Language Automata Course",
+      "source": "Journal of Engineering Education Transformations",
+      "date": "2025-01-01",
+      "doi": "10.16920/jeet/2025/v38is2/25004",
+      "citations": 5,
+      "eid": "2-s2.0-105006790119",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105006790119",
+      "abstract": {}
+    },
+    {
       "title": "Rider Cat Optimized Alzheimer’s Disease and MCI Prediction Using Deep Attention BiLSTM and CRDF",
       "source": "IETE Journal of Research",
       "date": "2025-01-01",
@@ -109,73 +149,13 @@
       "abstract": {}
     },
     {
-      "title": "PVT-ResNet Fusion: A Hybrid DL Framework for Lung Cancer Prediction Using Image Analysis and Explainable AI",
-      "source": "Iranian Journal of Science and Technology Transactions of Electrical Engineering",
+      "title": "Advanced Lung Region Analysis and Anomaly Detection in CXR Images using Optimized VGG-16 Structure",
+      "source": "2025 3rd International Conference on Advancements in Electrical Electronics Communication Computing and Automation Icaeca 2025",
       "date": "2025-01-01",
-      "doi": "10.1007/s40998-025-00959-3",
-      "citations": 3,
-      "eid": "2-s2.0-105022620492",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105022620492",
-      "abstract": {}
-    },
-    {
-      "title": "Optimizing Video Compression for Real-Time and Bandwidth-Constrained Applications in IoT Enabled Cyber-Physical Systems",
-      "source": "Proceedings of 3rd International Conference on Intelligent Cyber Physical Systems and Internet of Things Icoici 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICoICI65217.2025.11254287",
+      "doi": "10.1109/ICAECA63854.2025.11012293",
       "citations": 0,
-      "eid": "2-s2.0-105030344766",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105030344766",
-      "abstract": {}
-    },
-    {
-      "title": "Multi Factor Authentication in the Cloud Bridging the Gap between Security and User Experience",
-      "source": "Icoicc 2025 3rd International Conference on Intelligent and Cloud Computing",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICoICC64033.2025.11052093",
-      "citations": 1,
-      "eid": "2-s2.0-105012106500",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105012106500",
-      "abstract": {}
-    },
-    {
-      "title": "Electrical Mesh and UV Light based Economical Mosquito Avoidance System",
-      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICTMIM65579.2025.10988165",
-      "citations": 0,
-      "eid": "2-s2.0-105007989453",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007989453",
-      "abstract": {}
-    },
-    {
-      "title": "Effect of Inquiry-based Learning on Engineering Students as Collaborative Approach in Problem-Solving and Research for Formal Language Automata Course",
-      "source": "Journal of Engineering Education Transformations",
-      "date": "2025-01-01",
-      "doi": "10.16920/jeet/2025/v38is2/25004",
-      "citations": 5,
-      "eid": "2-s2.0-105006790119",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105006790119",
-      "abstract": {}
-    },
-    {
-      "title": "Deep learning, artificial intelligence, and bioinformatics promises innovations and imminent forecasts in SARS-COVID-19 genome data analysis",
-      "source": "Emerging Trends and Applications of Deep Learning for Biomedical Data Analysis",
-      "date": "2025-01-01",
-      "doi": "10.1016/B978-0-443-26765-9.00001-9",
-      "citations": 0,
-      "eid": "2-s2.0-105011216882",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105011216882",
-      "abstract": {}
-    },
-    {
-      "title": "Deep Learning Advancement for Brain-Tumor Classification and Comprehensive Diagnosis",
-      "source": "2025 3rd International Conference on Communication Security and Artificial Intelligence Iccsai 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICCSAI64074.2025.11064526",
-      "citations": 0,
-      "eid": "2-s2.0-105012116681",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105012116681",
+      "eid": "2-s2.0-105008306413",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105008306413",
       "abstract": {}
     },
     {
@@ -189,13 +169,33 @@
       "abstract": {}
     },
     {
-      "title": "Advanced Lung Region Analysis and Anomaly Detection in CXR Images using Optimized VGG-16 Structure",
-      "source": "2025 3rd International Conference on Advancements in Electrical Electronics Communication Computing and Automation Icaeca 2025",
+      "title": "Deep learning, artificial intelligence, and bioinformatics promises innovations and imminent forecasts in SARS-COVID-19 genome data analysis",
+      "source": "Emerging Trends and Applications of Deep Learning for Biomedical Data Analysis",
       "date": "2025-01-01",
-      "doi": "10.1109/ICAECA63854.2025.11012293",
+      "doi": "10.1016/B978-0-443-26765-9.00001-9",
       "citations": 0,
-      "eid": "2-s2.0-105008306413",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105008306413",
+      "eid": "2-s2.0-105011216882",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105011216882",
+      "abstract": {}
+    },
+    {
+      "title": "Multi Factor Authentication in the Cloud Bridging the Gap between Security and User Experience",
+      "source": "Icoicc 2025 3rd International Conference on Intelligent and Cloud Computing",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICoICC64033.2025.11052093",
+      "citations": 1,
+      "eid": "2-s2.0-105012106500",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105012106500",
+      "abstract": {}
+    },
+    {
+      "title": "Optimizing Video Compression for Real-Time and Bandwidth-Constrained Applications in IoT Enabled Cyber-Physical Systems",
+      "source": "Proceedings of 3rd International Conference on Intelligent Cyber Physical Systems and Internet of Things Icoici 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICoICI65217.2025.11254287",
+      "citations": 0,
+      "eid": "2-s2.0-105030344766",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105030344766",
       "abstract": {}
     },
     {
@@ -229,13 +229,13 @@
       "abstract": {}
     },
     {
-      "title": "Precise and Prompt Identification of Jaundice in Infants using AI",
+      "title": "Deep Learning - based Hybrid Image Classification Model for Solid Waste Management",
       "source": "2024 International Conference on Cognitive Robotics and Intelligent Systems Icc Robins 2024",
       "date": "2024-01-01",
-      "doi": "10.1109/ICC-ROBINS60238.2024.10534016",
-      "citations": 1,
-      "eid": "2-s2.0-85195152895",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85195152895",
+      "doi": "10.1109/ICC-ROBINS60238.2024.10534019",
+      "citations": 10,
+      "eid": "2-s2.0-85195129367",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85195129367",
       "abstract": {}
     },
     {
@@ -249,13 +249,13 @@
       "abstract": {}
     },
     {
-      "title": "Enhancing Lung Cancer Detection and Segmentation Using Advanced Clustering Algorithm for Sustainable Healthcare Solutions",
-      "source": "Proceedings of the 9th International Conference on Communication and Electronics Systems Icces 2024",
+      "title": "Case Study: Application of Ensemble Classifier for Diabetes Healthcare Data Analytics",
+      "source": "Deep Learning for Smart Healthcare Trends Challenges and Applications",
       "date": "2024-01-01",
-      "doi": "10.1109/ICCES63552.2024.10860209",
-      "citations": 0,
-      "eid": "2-s2.0-85218410699",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85218410699",
+      "doi": "10.1201/9781003469605-13",
+      "citations": 3,
+      "eid": "2-s2.0-85192285580",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85192285580",
       "abstract": {}
     },
     {
@@ -269,33 +269,13 @@
       "abstract": {}
     },
     {
-      "title": "Deep Learning - based Hybrid Image Classification Model for Solid Waste Management",
-      "source": "2024 International Conference on Cognitive Robotics and Intelligent Systems Icc Robins 2024",
+      "title": "An Elucidative Review on the Current Status and Prospects of Eye Tracking in Spectroscopy",
+      "source": "Smart Innovation Systems and Technologies",
       "date": "2024-01-01",
-      "doi": "10.1109/ICC-ROBINS60238.2024.10534019",
-      "citations": 10,
-      "eid": "2-s2.0-85195129367",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85195129367",
-      "abstract": {}
-    },
-    {
-      "title": "Data Insights Nexus-Innovative Platform for Dynamic Modeling and Visual Analytics",
-      "source": "7th International Conference on Inventive Computation Technologies Icict 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICICT60155.2024.10544527",
+      "doi": "10.1007/978-981-99-5180-2_19",
       "citations": 1,
-      "eid": "2-s2.0-85196067408",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85196067408",
-      "abstract": {}
-    },
-    {
-      "title": "Case Study: Application of Ensemble Classifier for Diabetes Healthcare Data Analytics",
-      "source": "Deep Learning for Smart Healthcare Trends Challenges and Applications",
-      "date": "2024-01-01",
-      "doi": "10.1201/9781003469605-13",
-      "citations": 3,
-      "eid": "2-s2.0-85192285580",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85192285580",
+      "eid": "2-s2.0-85177053484",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85177053484",
       "abstract": {}
     },
     {
@@ -309,13 +289,33 @@
       "abstract": {}
     },
     {
-      "title": "An Elucidative Review on the Current Status and Prospects of Eye Tracking in Spectroscopy",
-      "source": "Smart Innovation Systems and Technologies",
+      "title": "Data Insights Nexus-Innovative Platform for Dynamic Modeling and Visual Analytics",
+      "source": "7th International Conference on Inventive Computation Technologies Icict 2024",
       "date": "2024-01-01",
-      "doi": "10.1007/978-981-99-5180-2_19",
+      "doi": "10.1109/ICICT60155.2024.10544527",
       "citations": 1,
-      "eid": "2-s2.0-85177053484",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85177053484",
+      "eid": "2-s2.0-85196067408",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85196067408",
+      "abstract": {}
+    },
+    {
+      "title": "Precise and Prompt Identification of Jaundice in Infants using AI",
+      "source": "2024 International Conference on Cognitive Robotics and Intelligent Systems Icc Robins 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICC-ROBINS60238.2024.10534016",
+      "citations": 1,
+      "eid": "2-s2.0-85195152895",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85195152895",
+      "abstract": {}
+    },
+    {
+      "title": "Enhancing Lung Cancer Detection and Segmentation Using Advanced Clustering Algorithm for Sustainable Healthcare Solutions",
+      "source": "Proceedings of the 9th International Conference on Communication and Electronics Systems Icces 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICCES63552.2024.10860209",
+      "citations": 0,
+      "eid": "2-s2.0-85218410699",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85218410699",
       "abstract": {}
     },
     {
@@ -343,7 +343,7 @@
       "source": "Scientific Reports",
       "date": "2023-12-01",
       "doi": "10.1038/s41598-023-44407-w",
-      "citations": 13,
+      "citations": 14,
       "eid": "2-s2.0-85175964887",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85175964887",
       "abstract": {}
@@ -369,6 +369,66 @@
       "abstract": {}
     },
     {
+      "title": "Optimized TSA ResNet Architecture with TSH—Discriminatory Features for Kidney Stone Classification from QUS Images",
+      "source": "Studies in Computational Intelligence",
+      "date": "2023-01-01",
+      "doi": "10.1007/978-3-031-38281-9_10",
+      "citations": 6,
+      "eid": "2-s2.0-85183997448",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85183997448",
+      "abstract": {}
+    },
+    {
+      "title": "A Structured Analysis on IPL 2022 matches by approaching various Data Visualization and Analytics",
+      "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICCCI56745.2023.10128575",
+      "citations": 5,
+      "eid": "2-s2.0-85163124304",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163124304",
+      "abstract": {}
+    },
+    {
+      "title": "Classification of Tweets Using Natural Language Processing from Twitter API Data",
+      "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICCCI56745.2023.10128222",
+      "citations": 5,
+      "eid": "2-s2.0-85163138141",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163138141",
+      "abstract": {}
+    },
+    {
+      "title": "E-Commerce Customer Churn Prediction Scheme Based on Customer Behaviour Using Machine Learning",
+      "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICCCI56745.2023.10128498",
+      "citations": 11,
+      "eid": "2-s2.0-85163086171",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163086171",
+      "abstract": {}
+    },
+    {
+      "title": "IPL Players Cost Pay Prediction using Machine Learning Techniques",
+      "source": "Proceedings of the 2023 2nd International Conference on Augmented Intelligence and Sustainable Systems Icaiss 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICAISS58487.2023.10250755",
+      "citations": 3,
+      "eid": "2-s2.0-85173612121",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85173612121",
+      "abstract": {}
+    },
+    {
+      "title": "Instagram - Driven Social Media Trend Forecasting with Learning Algorithm using Live Dataset",
+      "source": "2023 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICDSAAI59313.2023.10452604",
+      "citations": 1,
+      "eid": "2-s2.0-85187778091",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85187778091",
+      "abstract": {}
+    },
+    {
       "title": "Smart Segregation of Waste and Automatic Monitoring System",
       "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
       "date": "2023-01-01",
@@ -376,16 +436,6 @@
       "citations": 7,
       "eid": "2-s2.0-85163061284",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85163061284",
-      "abstract": {}
-    },
-    {
-      "title": "Sentimental Analysis of Job Classification using Machine Learning Algorithms",
-      "source": "Proceedings of the 8th International Conference on Communication and Electronics Systems Icces 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICCES57224.2023.10192717",
-      "citations": 6,
-      "eid": "2-s2.0-85168113971",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85168113971",
       "abstract": {}
     },
     {
@@ -399,13 +449,123 @@
       "abstract": {}
     },
     {
-      "title": "Optimized TSA ResNet Architecture with TSH—Discriminatory Features for Kidney Stone Classification from QUS Images",
-      "source": "Studies in Computational Intelligence",
+      "title": "A Hybrid CNN-LSTM Network For Brain Tumor Classification Using Transfer Learning",
+      "source": "9th International Conference on Smart Computing and Communications Intelligent Technologies and Applications Icscc 2023",
       "date": "2023-01-01",
-      "doi": "10.1007/978-3-031-38281-9_10",
-      "citations": 6,
-      "eid": "2-s2.0-85183997448",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85183997448",
+      "doi": "10.1109/ICSCC59169.2023.10335082",
+      "citations": 15,
+      "eid": "2-s2.0-85181403980",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85181403980",
+      "abstract": {}
+    },
+    {
+      "title": "Automatic Email Spam Classification Using Naïve Bayes",
+      "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICCCI56745.2023.10128233",
+      "citations": 3,
+      "eid": "2-s2.0-85163117545",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163117545",
+      "abstract": {}
+    },
+    {
+      "title": "Automated Horticulture for Farmers Using IoT",
+      "source": "Proceedings of the 2nd International Conference on Edge Computing and Applications Icecaa 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICECAA58104.2023.10212220",
+      "citations": 4,
+      "eid": "2-s2.0-85170825598",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85170825598",
+      "abstract": {}
+    },
+    {
+      "title": "Automatic Pressure Cooker Risk Detection and Control Using Arduino",
+      "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICCCI56745.2023.10128235",
+      "citations": 1,
+      "eid": "2-s2.0-85163085113",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163085113",
+      "abstract": {}
+    },
+    {
+      "title": "Design of IoT based Heterogeneity and Computing System",
+      "source": "Proceedings of the 7th International Conference on Intelligent Computing and Control Systems Iciccs 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICICCS56967.2023.10142365",
+      "citations": 2,
+      "eid": "2-s2.0-85163837092",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163837092",
+      "abstract": {}
+    },
+    {
+      "title": "Deep Learning-Based Classification of Flowers Using FlowerNet Model",
+      "source": "2023 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICDSAAI59313.2023.10452559",
+      "citations": 5,
+      "eid": "2-s2.0-85187786011",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85187786011",
+      "abstract": {}
+    },
+    {
+      "title": "Design of Intelligent Healthcare Information System Using Data Analytics",
+      "source": "Convergence of Iot Blockchain and Computational Intelligence in Smart Cities",
+      "date": "2023-01-01",
+      "doi": "10.1201/9781003353034-10",
+      "citations": 2,
+      "eid": "2-s2.0-85179229218",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85179229218",
+      "abstract": {}
+    },
+    {
+      "title": "Identifying Multiple Diseases in the Human Body using Machine Learning",
+      "source": "2023 4th International Conference on Electronics and Sustainable Communication Systems Icesc 2023 Proceedings",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICESC57686.2023.10193060",
+      "citations": 4,
+      "eid": "2-s2.0-85168314580",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85168314580",
+      "abstract": {}
+    },
+    {
+      "title": "Automated Stock Price Prediction Using LSTM-ANN",
+      "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICCCI56745.2023.10128264",
+      "citations": 5,
+      "eid": "2-s2.0-85163071468",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163071468",
+      "abstract": {}
+    },
+    {
+      "title": "A Robust Recession Detective Analysis System using IoT Smart Sensor Devices",
+      "source": "Proceedings of the 2nd International Conference on Edge Computing and Applications Icecaa 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICECAA58104.2023.10212166",
+      "citations": 4,
+      "eid": "2-s2.0-85170824266",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85170824266",
+      "abstract": {}
+    },
+    {
+      "title": "Development of Text Characterization Using Natural Language Processing Techniques",
+      "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICCCI56745.2023.10128224",
+      "citations": 1,
+      "eid": "2-s2.0-85163055317",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163055317",
+      "abstract": {}
+    },
+    {
+      "title": "Automatic Correction of Text Using Probabilistic Error Approach",
+      "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICCCI56745.2023.10128439",
+      "citations": 0,
+      "eid": "2-s2.0-85163053818",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163053818",
       "abstract": {}
     },
     {
@@ -429,123 +589,13 @@
       "abstract": {}
     },
     {
-      "title": "KARE - Presto Canteen Management System with an Android Application",
-      "source": "7th International Conference on Trends in Electronics and Informatics Icoei 2023 Proceedings",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICOEI56765.2023.10125634",
-      "citations": 4,
-      "eid": "2-s2.0-85161090515",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161090515",
-      "abstract": {}
-    },
-    {
-      "title": "Instinctual Synced Ventilation for Mushroom Growing using IoT",
-      "source": "2nd International Conference on Sustainable Computing and Data Communication Systems Icscds 2023 Proceedings",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICSCDS56580.2023.10104885",
-      "citations": 4,
-      "eid": "2-s2.0-85159080071",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85159080071",
-      "abstract": {}
-    },
-    {
-      "title": "Instagram - Driven Social Media Trend Forecasting with Learning Algorithm using Live Dataset",
-      "source": "2023 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICDSAAI59313.2023.10452604",
-      "citations": 1,
-      "eid": "2-s2.0-85187778091",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85187778091",
-      "abstract": {}
-    },
-    {
-      "title": "Identifying Multiple Diseases in the Human Body using Machine Learning",
-      "source": "2023 4th International Conference on Electronics and Sustainable Communication Systems Icesc 2023 Proceedings",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICESC57686.2023.10193060",
-      "citations": 4,
-      "eid": "2-s2.0-85168314580",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85168314580",
-      "abstract": {}
-    },
-    {
-      "title": "IPL Players Cost Pay Prediction using Machine Learning Techniques",
-      "source": "Proceedings of the 2023 2nd International Conference on Augmented Intelligence and Sustainable Systems Icaiss 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICAISS58487.2023.10250755",
-      "citations": 3,
-      "eid": "2-s2.0-85173612121",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85173612121",
-      "abstract": {}
-    },
-    {
-      "title": "Finding Concrete Cracks in a Building using Improved Deep Learning Algorithms",
-      "source": "Proceedings of the 2023 2nd International Conference on Augmented Intelligence and Sustainable Systems Icaiss 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICAISS58487.2023.10250468",
-      "citations": 0,
-      "eid": "2-s2.0-85173601602",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85173601602",
-      "abstract": {}
-    },
-    {
-      "title": "E-Commerce Customer Churn Prediction Scheme Based on Customer Behaviour Using Machine Learning",
+      "title": "Automated E-Commerce Price Comparison Website using PHP, XAMPP, MongoDB, Django, and Web Scrapping",
       "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
       "date": "2023-01-01",
-      "doi": "10.1109/ICCCI56745.2023.10128498",
-      "citations": 11,
-      "eid": "2-s2.0-85163086171",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163086171",
-      "abstract": {}
-    },
-    {
-      "title": "Development of Text Characterization Using Natural Language Processing Techniques",
-      "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICCCI56745.2023.10128224",
-      "citations": 1,
-      "eid": "2-s2.0-85163055317",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163055317",
-      "abstract": {}
-    },
-    {
-      "title": "Design of IoT based Heterogeneity and Computing System",
-      "source": "Proceedings of the 7th International Conference on Intelligent Computing and Control Systems Iciccs 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICICCS56967.2023.10142365",
-      "citations": 2,
-      "eid": "2-s2.0-85163837092",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163837092",
-      "abstract": {}
-    },
-    {
-      "title": "Design of Intelligent Healthcare Information System Using Data Analytics",
-      "source": "Convergence of Iot Blockchain and Computational Intelligence in Smart Cities",
-      "date": "2023-01-01",
-      "doi": "10.1201/9781003353034-10",
-      "citations": 2,
-      "eid": "2-s2.0-85179229218",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85179229218",
-      "abstract": {}
-    },
-    {
-      "title": "Deep Learning-Based Classification of Flowers Using FlowerNet Model",
-      "source": "2023 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICDSAAI59313.2023.10452559",
-      "citations": 5,
-      "eid": "2-s2.0-85187786011",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85187786011",
-      "abstract": {}
-    },
-    {
-      "title": "Comparative Analysis of Different Approaches to the Music Recommendation System",
-      "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICCCI56745.2023.10128645",
-      "citations": 4,
-      "eid": "2-s2.0-85163119281",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163119281",
+      "doi": "10.1109/ICCCI56745.2023.10128573",
+      "citations": 7,
+      "eid": "2-s2.0-85163085938",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163085938",
       "abstract": {}
     },
     {
@@ -559,43 +609,23 @@
       "abstract": {}
     },
     {
-      "title": "Classification of Tweets Using Natural Language Processing from Twitter API Data",
-      "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
+      "title": "A Peculiar Reading System for Blind People using OCR Technology",
+      "source": "Proceedings of the 2023 2nd International Conference on Electronics and Renewable Systems Icears 2023",
       "date": "2023-01-01",
-      "doi": "10.1109/ICCCI56745.2023.10128222",
-      "citations": 5,
-      "eid": "2-s2.0-85163138141",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163138141",
+      "doi": "10.1109/ICEARS56392.2023.10085372",
+      "citations": 4,
+      "eid": "2-s2.0-85153351631",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153351631",
       "abstract": {}
     },
     {
-      "title": "Automatic Pressure Cooker Risk Detection and Control Using Arduino",
+      "title": "Comparative Analysis of Different Approaches to the Music Recommendation System",
       "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
       "date": "2023-01-01",
-      "doi": "10.1109/ICCCI56745.2023.10128235",
-      "citations": 1,
-      "eid": "2-s2.0-85163085113",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163085113",
-      "abstract": {}
-    },
-    {
-      "title": "Automatic Email Spam Classification Using Naïve Bayes",
-      "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICCCI56745.2023.10128233",
-      "citations": 3,
-      "eid": "2-s2.0-85163117545",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163117545",
-      "abstract": {}
-    },
-    {
-      "title": "Automatic Correction of Text Using Probabilistic Error Approach",
-      "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICCCI56745.2023.10128439",
-      "citations": 0,
-      "eid": "2-s2.0-85163053818",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163053818",
+      "doi": "10.1109/ICCCI56745.2023.10128645",
+      "citations": 4,
+      "eid": "2-s2.0-85163119281",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163119281",
       "abstract": {}
     },
     {
@@ -609,73 +639,23 @@
       "abstract": {}
     },
     {
-      "title": "Automated Stock Price Prediction Using LSTM-ANN",
-      "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
+      "title": "Instinctual Synced Ventilation for Mushroom Growing using IoT",
+      "source": "2nd International Conference on Sustainable Computing and Data Communication Systems Icscds 2023 Proceedings",
       "date": "2023-01-01",
-      "doi": "10.1109/ICCCI56745.2023.10128264",
-      "citations": 5,
-      "eid": "2-s2.0-85163071468",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163071468",
-      "abstract": {}
-    },
-    {
-      "title": "Automated Horticulture for Farmers Using IoT",
-      "source": "Proceedings of the 2nd International Conference on Edge Computing and Applications Icecaa 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICECAA58104.2023.10212220",
+      "doi": "10.1109/ICSCDS56580.2023.10104885",
       "citations": 4,
-      "eid": "2-s2.0-85170825598",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85170825598",
+      "eid": "2-s2.0-85159080071",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85159080071",
       "abstract": {}
     },
     {
-      "title": "Automated E-Commerce Price Comparison Website using PHP, XAMPP, MongoDB, Django, and Web Scrapping",
-      "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
+      "title": "KARE - Presto Canteen Management System with an Android Application",
+      "source": "7th International Conference on Trends in Electronics and Informatics Icoei 2023 Proceedings",
       "date": "2023-01-01",
-      "doi": "10.1109/ICCCI56745.2023.10128573",
-      "citations": 7,
-      "eid": "2-s2.0-85163085938",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163085938",
-      "abstract": {}
-    },
-    {
-      "title": "A Structured Analysis on IPL 2022 matches by approaching various Data Visualization and Analytics",
-      "source": "2023 International Conference on Computer Communication and Informatics Iccci 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICCCI56745.2023.10128575",
-      "citations": 5,
-      "eid": "2-s2.0-85163124304",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163124304",
-      "abstract": {}
-    },
-    {
-      "title": "A Robust Recession Detective Analysis System using IoT Smart Sensor Devices",
-      "source": "Proceedings of the 2nd International Conference on Edge Computing and Applications Icecaa 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICECAA58104.2023.10212166",
+      "doi": "10.1109/ICOEI56765.2023.10125634",
       "citations": 4,
-      "eid": "2-s2.0-85170824266",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85170824266",
-      "abstract": {}
-    },
-    {
-      "title": "A Peculiar Reading System for Blind People using OCR Technology",
-      "source": "Proceedings of the 2023 2nd International Conference on Electronics and Renewable Systems Icears 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICEARS56392.2023.10085372",
-      "citations": 4,
-      "eid": "2-s2.0-85153351631",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153351631",
-      "abstract": {}
-    },
-    {
-      "title": "A Hybrid CNN-LSTM Network For Brain Tumor Classification Using Transfer Learning",
-      "source": "9th International Conference on Smart Computing and Communications Intelligent Technologies and Applications Icscc 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICSCC59169.2023.10335082",
-      "citations": 15,
-      "eid": "2-s2.0-85181403980",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85181403980",
+      "eid": "2-s2.0-85161090515",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161090515",
       "abstract": {}
     },
     {
@@ -689,53 +669,23 @@
       "abstract": {}
     },
     {
-      "title": "Voting System using Facial and FingerPrint Authentication",
-      "source": "2022 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICDSAAI55433.2022.10028783",
-      "citations": 2,
-      "eid": "2-s2.0-85148488512",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148488512",
+      "title": "Finding Concrete Cracks in a Building using Improved Deep Learning Algorithms",
+      "source": "Proceedings of the 2023 2nd International Conference on Augmented Intelligence and Sustainable Systems Icaiss 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICAISS58487.2023.10250468",
+      "citations": 0,
+      "eid": "2-s2.0-85173601602",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85173601602",
       "abstract": {}
     },
     {
-      "title": "Virtual Special Issue on Recent Advances in Discrete Swarm Intelligence Algorithms for Solving Engineering Problems",
-      "source": "Applied Soft Computing",
-      "date": "2022-01-01",
-      "doi": "10.1016/j.asoc.2021.107823",
-      "citations": 1,
-      "eid": "2-s2.0-85121428289",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85121428289",
-      "abstract": {}
-    },
-    {
-      "title": "University Recommender System based on Student Profile using Feature Weighted Algorithm and KNN",
-      "source": "International Conference on Sustainable Computing and Data Communication Systems Icscds 2022 Proceedings",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICSCDS53736.2022.9760852",
-      "citations": 31,
-      "eid": "2-s2.0-85130094948",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85130094948",
-      "abstract": {}
-    },
-    {
-      "title": "Tumor Identification in CTScan/UltraSound Using Deep Learning Technique",
-      "source": "2022 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICDSAAI55433.2022.10028855",
-      "citations": 4,
-      "eid": "2-s2.0-85148485962",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148485962",
-      "abstract": {}
-    },
-    {
-      "title": "Tobacco Plant Disease Detection and Classification using Deep Convolutional Neural Networks",
-      "source": "International Conference on Sustainable Computing and Data Communication Systems Icscds 2022 Proceedings",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICSCDS53736.2022.9760746",
-      "citations": 33,
-      "eid": "2-s2.0-85130093994",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85130093994",
+      "title": "Sentimental Analysis of Job Classification using Machine Learning Algorithms",
+      "source": "Proceedings of the 8th International Conference on Communication and Electronics Systems Icces 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICCES57224.2023.10192717",
+      "citations": 6,
+      "eid": "2-s2.0-85168113971",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85168113971",
       "abstract": {}
     },
     {
@@ -749,133 +699,13 @@
       "abstract": {}
     },
     {
-      "title": "Sensors for Bone Mineral Density Measurement to Identify the Level of Osteoporosis: A Study",
-      "source": "Proceedings 4th International Conference on Smart Systems and Inventive Technology Icssit 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICSSIT53264.2022.9716536",
-      "citations": 19,
-      "eid": "2-s2.0-85127348010",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85127348010",
-      "abstract": {}
-    },
-    {
-      "title": "Retracted: Ensemble Machine Learning (Grid Search & Random Forest) based Enhanced Medical Expert Recommendation System for Diabetes Mellitus Prediction (2022 3rd International Conference on Electronics and Sustainable Communication Systems (ICESC) DOI: 10.1109/ICESC54411.2022.10703477)",
-      "source": "3rd International Conference on Electronics and Sustainable Communication Systems Icesc 2022 Proceedings",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICESC54411.2022.9885312",
-      "citations": 0,
-      "eid": "2-s2.0-105039012851",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105039012851",
-      "abstract": {}
-    },
-    {
-      "title": "Retracted: Analysis of Seminary Learner Campus Network Behaviour using Machine Learning Techniques (2022 7th International Conference on Communication and Electronics Systems (ICCES) DOI: 10.1109/ICCES54183.2022.10703444)",
+      "title": "Analysis of Seminary Learner Campus Network Behaviour using Machine Learning Techniques",
       "source": "7th International Conference on Communication and Electronics Systems Icces 2022 Proceedings",
       "date": "2022-01-01",
       "doi": "10.1109/ICCES54183.2022.9835820",
-      "citations": 0,
-      "eid": "2-s2.0-105037524600",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105037524600",
-      "abstract": {}
-    },
-    {
-      "title": "Real Time Transformer Health Monitoring System Using IoT in R",
-      "source": "2022 International Conference on Computer Communication and Informatics Iccci 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICCCI54379.2022.9740847",
       "citations": 24,
-      "eid": "2-s2.0-85128729872",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85128729872",
-      "abstract": {}
-    },
-    {
-      "title": "Prototype Implementation of Neural Networks based Agricultural Farm Monitoring and Rain Prediction",
-      "source": "1st IEEE International Conference on Smart Technologies and Systems for Next Generation Computing Icstsn 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICSTSN53084.2022.9761333",
-      "citations": 9,
-      "eid": "2-s2.0-85130016890",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85130016890",
-      "abstract": {}
-    },
-    {
-      "title": "IoT based Multiple Vital Health Parameter Detection and Analyzer System",
-      "source": "7th International Conference on Communication and Electronics Systems Icces 2022 Proceedings",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICCES54183.2022.9835814",
-      "citations": 20,
-      "eid": "2-s2.0-85136334636",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85136334636",
-      "abstract": {}
-    },
-    {
-      "title": "Identification of Skin Diseases using a Novel Deep CNN",
-      "source": "3rd International Conference on Electronics and Sustainable Communication Systems Icesc 2022 Proceedings",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICESC54411.2022.9885330",
-      "citations": 19,
-      "eid": "2-s2.0-85139565805",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85139565805",
-      "abstract": {}
-    },
-    {
-      "title": "Fake Image Detection in Twitter using Flood Fill Algorithm and Deep Neural Networks",
-      "source": "Proceedings of the Confluence 2022 12th International Conference on Cloud Computing Data Science and Engineering",
-      "date": "2022-01-01",
-      "doi": "10.1109/Confluence52989.2022.9734208",
-      "citations": 44,
-      "eid": "2-s2.0-85127561264",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85127561264",
-      "abstract": {}
-    },
-    {
-      "title": "Ensemble Machine Learning (Grid Search & Random Forest) based Enhanced Medical Expert Recommendation System for Diabetes Mellitus Prediction",
-      "source": "3rd International Conference on Electronics and Sustainable Communication Systems Icesc 2022 Proceedings",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICESC54411.2022.9885312",
-      "citations": 37,
-      "eid": "2-s2.0-85139546221",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85139546221",
-      "abstract": {}
-    },
-    {
-      "title": "Edge Computing and Deep Learning Based Urban Street Cleanliness Assessment System",
-      "source": "2022 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICDSAAI55433.2022.10028816",
-      "citations": 6,
-      "eid": "2-s2.0-85148485348",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148485348",
-      "abstract": {}
-    },
-    {
-      "title": "Comparison of CNN Algorithms for Feature Extraction on Fundus Images to Detect Glaucoma",
-      "source": "Journal of Healthcare Engineering",
-      "date": "2022-01-01",
-      "doi": "10.1155/2022/7873300",
-      "citations": 17,
-      "eid": "2-s2.0-85123054690",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85123054690",
-      "abstract": {}
-    },
-    {
-      "title": "Automation of Glucose Control for Type-2 Diabetes Mellitus",
-      "source": "3rd International Conference on Electronics and Sustainable Communication Systems Icesc 2022 Proceedings",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICESC54411.2022.9885719",
-      "citations": 13,
-      "eid": "2-s2.0-85139563994",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85139563994",
-      "abstract": {}
-    },
-    {
-      "title": "Automatic and Adaptive Segmentation of Customer in R framework using K-means Clustering Technique",
-      "source": "2022 International Conference on Computer Communication and Informatics Iccci 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICCCI54379.2022.9741067",
-      "citations": 22,
-      "eid": "2-s2.0-85128719734",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85128719734",
+      "eid": "2-s2.0-85136335556",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85136335556",
       "abstract": {}
     },
     {
@@ -889,63 +719,23 @@
       "abstract": {}
     },
     {
-      "title": "Analysis of Spam Messages Using Various Machine Learning Classifier",
-      "source": "2022 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICDSAAI55433.2022.10028952",
-      "citations": 7,
-      "eid": "2-s2.0-85148486857",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148486857",
-      "abstract": {}
-    },
-    {
-      "title": "Analysis of Seminary Learner Campus Network Behaviour using Machine Learning Techniques",
+      "title": "Retracted: Analysis of Seminary Learner Campus Network Behaviour using Machine Learning Techniques (2022 7th International Conference on Communication and Electronics Systems (ICCES) DOI: 10.1109/ICCES54183.2022.10703444)",
       "source": "7th International Conference on Communication and Electronics Systems Icces 2022 Proceedings",
       "date": "2022-01-01",
       "doi": "10.1109/ICCES54183.2022.9835820",
-      "citations": 24,
-      "eid": "2-s2.0-85136335556",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85136335556",
+      "citations": 0,
+      "eid": "2-s2.0-105037524600",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105037524600",
       "abstract": {}
     },
     {
-      "title": "An Exemplary Template Matching Techniques for Counterfeit Currency Detection",
-      "source": "Lecture Notes in Networks and Systems",
+      "title": "IoT based Multiple Vital Health Parameter Detection and Analyzer System",
+      "source": "7th International Conference on Communication and Electronics Systems Icces 2022 Proceedings",
       "date": "2022-01-01",
-      "doi": "10.1007/978-3-030-84760-9_32",
-      "citations": 40,
-      "eid": "2-s2.0-85115614099",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85115614099",
-      "abstract": {}
-    },
-    {
-      "title": "An Empirical Data Analytics and Visualization for UBER Services: A Data Analysis Based Web Search Engine",
-      "source": "2022 International Conference on Computer Communication and Informatics Iccci 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICCCI54379.2022.9741016",
-      "citations": 16,
-      "eid": "2-s2.0-85128746198",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85128746198",
-      "abstract": {}
-    },
-    {
-      "title": "An Articulated Learning Method Based on Optimization Approach for Gallbladder Segmentation from MRCP Images and an Effective IoT Based Recommendation Framework",
-      "source": "Studies in Computational Intelligence",
-      "date": "2022-01-01",
-      "doi": "10.1007/978-3-030-97929-4_8",
-      "citations": 28,
-      "eid": "2-s2.0-85132648660",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85132648660",
-      "abstract": {}
-    },
-    {
-      "title": "A Systematic Parking System Using bi-class Machine Learning Techniques",
-      "source": "International Conference on Sustainable Computing and Data Communication Systems Icscds 2022 Proceedings",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICSCDS53736.2022.9760903",
-      "citations": 21,
-      "eid": "2-s2.0-85130093351",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85130093351",
+      "doi": "10.1109/ICCES54183.2022.9835814",
+      "citations": 20,
+      "eid": "2-s2.0-85136334636",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85136334636",
       "abstract": {}
     },
     {
@@ -959,23 +749,103 @@
       "abstract": {}
     },
     {
-      "title": "A Review on Recognition of Disguise Face Mask Using Novel Deep Convolutional Neural Network",
-      "source": "Proceedings International Conference on Augmented Intelligence and Sustainable Systems Icaiss 2022",
+      "title": "Analysis of Spam Messages Using Various Machine Learning Classifier",
+      "source": "2022 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2022",
       "date": "2022-01-01",
-      "doi": "10.1109/ICAISS55157.2022.10010708",
-      "citations": 4,
-      "eid": "2-s2.0-85147547668",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85147547668",
+      "doi": "10.1109/ICDSAAI55433.2022.10028952",
+      "citations": 7,
+      "eid": "2-s2.0-85148486857",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148486857",
       "abstract": {}
     },
     {
-      "title": "A Review on Automated Algorithms Used for Osteoporosis Diagnosis",
-      "source": "Lecture Notes in Networks and Systems",
+      "title": "Fake Image Detection in Twitter using Flood Fill Algorithm and Deep Neural Networks",
+      "source": "Proceedings of the Confluence 2022 12th International Conference on Cloud Computing Data Science and Engineering",
       "date": "2022-01-01",
-      "doi": "10.1007/978-981-19-1012-8_17",
-      "citations": 10,
-      "eid": "2-s2.0-85135827869",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85135827869",
+      "doi": "10.1109/Confluence52989.2022.9734208",
+      "citations": 44,
+      "eid": "2-s2.0-85127561264",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85127561264",
+      "abstract": {}
+    },
+    {
+      "title": "Comparison of CNN Algorithms for Feature Extraction on Fundus Images to Detect Glaucoma",
+      "source": "Journal of Healthcare Engineering",
+      "date": "2022-01-01",
+      "doi": "10.1155/2022/7873300",
+      "citations": 17,
+      "eid": "2-s2.0-85123054690",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85123054690",
+      "abstract": {}
+    },
+    {
+      "title": "Voting System using Facial and FingerPrint Authentication",
+      "source": "2022 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICDSAAI55433.2022.10028783",
+      "citations": 2,
+      "eid": "2-s2.0-85148488512",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148488512",
+      "abstract": {}
+    },
+    {
+      "title": "Tobacco Plant Disease Detection and Classification using Deep Convolutional Neural Networks",
+      "source": "International Conference on Sustainable Computing and Data Communication Systems Icscds 2022 Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICSCDS53736.2022.9760746",
+      "citations": 33,
+      "eid": "2-s2.0-85130093994",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85130093994",
+      "abstract": {}
+    },
+    {
+      "title": "Tumor Identification in CTScan/UltraSound Using Deep Learning Technique",
+      "source": "2022 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICDSAAI55433.2022.10028855",
+      "citations": 4,
+      "eid": "2-s2.0-85148485962",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148485962",
+      "abstract": {}
+    },
+    {
+      "title": "Virtual Special Issue on Recent Advances in Discrete Swarm Intelligence Algorithms for Solving Engineering Problems",
+      "source": "Applied Soft Computing",
+      "date": "2022-01-01",
+      "doi": "10.1016/j.asoc.2021.107823",
+      "citations": 1,
+      "eid": "2-s2.0-85121428289",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85121428289",
+      "abstract": {}
+    },
+    {
+      "title": "An Articulated Learning Method Based on Optimization Approach for Gallbladder Segmentation from MRCP Images and an Effective IoT Based Recommendation Framework",
+      "source": "Studies in Computational Intelligence",
+      "date": "2022-01-01",
+      "doi": "10.1007/978-3-030-97929-4_8",
+      "citations": 28,
+      "eid": "2-s2.0-85132648660",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85132648660",
+      "abstract": {}
+    },
+    {
+      "title": "Identification of Skin Diseases using a Novel Deep CNN",
+      "source": "3rd International Conference on Electronics and Sustainable Communication Systems Icesc 2022 Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICESC54411.2022.9885330",
+      "citations": 19,
+      "eid": "2-s2.0-85139565805",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85139565805",
+      "abstract": {}
+    },
+    {
+      "title": "Edge Computing and Deep Learning Based Urban Street Cleanliness Assessment System",
+      "source": "2022 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICDSAAI55433.2022.10028816",
+      "citations": 6,
+      "eid": "2-s2.0-85148485348",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148485348",
       "abstract": {}
     },
     {
@@ -989,13 +859,13 @@
       "abstract": {}
     },
     {
-      "title": "A Novel Scheme for Papaya Fruit Disease Prediction and Classification using Convolutional Neural Networks",
-      "source": "2022 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2022",
+      "title": "Prototype Implementation of Neural Networks based Agricultural Farm Monitoring and Rain Prediction",
+      "source": "1st IEEE International Conference on Smart Technologies and Systems for Next Generation Computing Icstsn 2022",
       "date": "2022-01-01",
-      "doi": "10.1109/ICDSAAI55433.2022.10028918",
-      "citations": 11,
-      "eid": "2-s2.0-85148485003",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148485003",
+      "doi": "10.1109/ICSTSN53084.2022.9761333",
+      "citations": 9,
+      "eid": "2-s2.0-85130016890",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85130016890",
       "abstract": {}
     },
     {
@@ -1006,6 +876,136 @@
       "citations": 12,
       "eid": "2-s2.0-85133725269",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85133725269",
+      "abstract": {}
+    },
+    {
+      "title": "Sensors for Bone Mineral Density Measurement to Identify the Level of Osteoporosis: A Study",
+      "source": "Proceedings 4th International Conference on Smart Systems and Inventive Technology Icssit 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICSSIT53264.2022.9716536",
+      "citations": 19,
+      "eid": "2-s2.0-85127348010",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85127348010",
+      "abstract": {}
+    },
+    {
+      "title": "A Novel Scheme for Papaya Fruit Disease Prediction and Classification using Convolutional Neural Networks",
+      "source": "2022 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICDSAAI55433.2022.10028918",
+      "citations": 11,
+      "eid": "2-s2.0-85148485003",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148485003",
+      "abstract": {}
+    },
+    {
+      "title": "Automatic and Adaptive Segmentation of Customer in R framework using K-means Clustering Technique",
+      "source": "2022 International Conference on Computer Communication and Informatics Iccci 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICCCI54379.2022.9741067",
+      "citations": 22,
+      "eid": "2-s2.0-85128719734",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85128719734",
+      "abstract": {}
+    },
+    {
+      "title": "Automation of Glucose Control for Type-2 Diabetes Mellitus",
+      "source": "3rd International Conference on Electronics and Sustainable Communication Systems Icesc 2022 Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICESC54411.2022.9885719",
+      "citations": 13,
+      "eid": "2-s2.0-85139563994",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85139563994",
+      "abstract": {}
+    },
+    {
+      "title": "A Review on Automated Algorithms Used for Osteoporosis Diagnosis",
+      "source": "Lecture Notes in Networks and Systems",
+      "date": "2022-01-01",
+      "doi": "10.1007/978-981-19-1012-8_17",
+      "citations": 10,
+      "eid": "2-s2.0-85135827869",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85135827869",
+      "abstract": {}
+    },
+    {
+      "title": "An Empirical Data Analytics and Visualization for UBER Services: A Data Analysis Based Web Search Engine",
+      "source": "2022 International Conference on Computer Communication and Informatics Iccci 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICCCI54379.2022.9741016",
+      "citations": 16,
+      "eid": "2-s2.0-85128746198",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85128746198",
+      "abstract": {}
+    },
+    {
+      "title": "A Review on Recognition of Disguise Face Mask Using Novel Deep Convolutional Neural Network",
+      "source": "Proceedings International Conference on Augmented Intelligence and Sustainable Systems Icaiss 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICAISS55157.2022.10010708",
+      "citations": 4,
+      "eid": "2-s2.0-85147547668",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85147547668",
+      "abstract": {}
+    },
+    {
+      "title": "Real Time Transformer Health Monitoring System Using IoT in R",
+      "source": "2022 International Conference on Computer Communication and Informatics Iccci 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICCCI54379.2022.9740847",
+      "citations": 24,
+      "eid": "2-s2.0-85128729872",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85128729872",
+      "abstract": {}
+    },
+    {
+      "title": "University Recommender System based on Student Profile using Feature Weighted Algorithm and KNN",
+      "source": "International Conference on Sustainable Computing and Data Communication Systems Icscds 2022 Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICSCDS53736.2022.9760852",
+      "citations": 31,
+      "eid": "2-s2.0-85130094948",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85130094948",
+      "abstract": {}
+    },
+    {
+      "title": "Retracted: Ensemble Machine Learning (Grid Search & Random Forest) based Enhanced Medical Expert Recommendation System for Diabetes Mellitus Prediction (2022 3rd International Conference on Electronics and Sustainable Communication Systems (ICESC) DOI: 10.1109/ICESC54411.2022.10703477)",
+      "source": "3rd International Conference on Electronics and Sustainable Communication Systems Icesc 2022 Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICESC54411.2022.9885312",
+      "citations": 0,
+      "eid": "2-s2.0-105039012851",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105039012851",
+      "abstract": {}
+    },
+    {
+      "title": "An Exemplary Template Matching Techniques for Counterfeit Currency Detection",
+      "source": "Lecture Notes in Networks and Systems",
+      "date": "2022-01-01",
+      "doi": "10.1007/978-3-030-84760-9_32",
+      "citations": 40,
+      "eid": "2-s2.0-85115614099",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85115614099",
+      "abstract": {}
+    },
+    {
+      "title": "A Systematic Parking System Using bi-class Machine Learning Techniques",
+      "source": "International Conference on Sustainable Computing and Data Communication Systems Icscds 2022 Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICSCDS53736.2022.9760903",
+      "citations": 21,
+      "eid": "2-s2.0-85130093351",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85130093351",
+      "abstract": {}
+    },
+    {
+      "title": "Ensemble Machine Learning (Grid Search & Random Forest) based Enhanced Medical Expert Recommendation System for Diabetes Mellitus Prediction",
+      "source": "3rd International Conference on Electronics and Sustainable Communication Systems Icesc 2022 Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICESC54411.2022.9885312",
+      "citations": 37,
+      "eid": "2-s2.0-85139546221",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85139546221",
       "abstract": {}
     },
     {
@@ -1063,7 +1063,7 @@
       "source": "2021 5th International Conference on Computer Communication and Signal Processing Icccsp 2021",
       "date": "2021-05-24",
       "doi": "10.1109/ICCCSP52374.2021.9465512",
-      "citations": 47,
+      "citations": 48,
       "eid": "2-s2.0-85113894645",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85113894645",
       "abstract": {}
@@ -1079,16 +1079,6 @@
       "abstract": {}
     },
     {
-      "title": "Codification of dental codes for the cogent recognition of an individual",
-      "source": "Proceedings 5th International Conference on Intelligent Computing and Control Systems Iciccs 2021",
-      "date": "2021-05-06",
-      "doi": "10.1109/ICICCS51141.2021.9432141",
-      "citations": 29,
-      "eid": "2-s2.0-85107584246",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85107584246",
-      "abstract": {}
-    },
-    {
       "title": "Astute Segmentation and Classification of leucocytes in blood microscopic smear images using titivated K-means clustering and robust SVM techniques",
       "source": "Proceedings 5th International Conference on Intelligent Computing and Control Systems Iciccs 2021",
       "date": "2021-05-06",
@@ -1099,13 +1089,13 @@
       "abstract": {}
     },
     {
-      "title": "Wieldy Water thermos-A health conducive Solar Powered Purification and Monitoring System",
-      "source": "2021 International Conference on Advance Computing and Innovative Technologies in Engineering Icacite 2021",
-      "date": "2021-03-04",
-      "doi": "10.1109/ICACITE51222.2021.9404690",
-      "citations": 1,
-      "eid": "2-s2.0-85104935761",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85104935761",
+      "title": "Codification of dental codes for the cogent recognition of an individual",
+      "source": "Proceedings 5th International Conference on Intelligent Computing and Control Systems Iciccs 2021",
+      "date": "2021-05-06",
+      "doi": "10.1109/ICICCS51141.2021.9432141",
+      "citations": 29,
+      "eid": "2-s2.0-85107584246",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85107584246",
       "abstract": {}
     },
     {
@@ -1126,6 +1116,16 @@
       "citations": 19,
       "eid": "2-s2.0-85104960177",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85104960177",
+      "abstract": {}
+    },
+    {
+      "title": "Wieldy Water thermos-A health conducive Solar Powered Purification and Monitoring System",
+      "source": "2021 International Conference on Advance Computing and Innovative Technologies in Engineering Icacite 2021",
+      "date": "2021-03-04",
+      "doi": "10.1109/ICACITE51222.2021.9404690",
+      "citations": 1,
+      "eid": "2-s2.0-85104935761",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85104935761",
       "abstract": {}
     },
     {
@@ -1173,7 +1173,7 @@
       "source": "Proceedings of the International Conference on Intelligent Computing and Control Systems Iciccs 2020",
       "date": "2020-05-01",
       "doi": "10.1109/ICICCS48265.2020.9121126",
-      "citations": 49,
+      "citations": 50,
       "eid": "2-s2.0-85087449519",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85087449519",
       "abstract": {}
@@ -1229,13 +1229,13 @@
       "abstract": {}
     },
     {
-      "title": "Local contrast regularized contrast limited adaptive histogram equalization using tree seed algorithm—An aid for mammogram images enhancement",
-      "source": "Smart Innovation Systems and Technologies",
+      "title": "Automatic segmentation of gallbladder using intuitionistic fuzzy based active contour model",
+      "source": "Lecture Notes in Electrical Engineering",
       "date": "2019-01-01",
-      "doi": "10.1007/978-981-13-1921-1_67",
-      "citations": 18,
-      "eid": "2-s2.0-85054854191",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85054854191",
+      "doi": "10.1007/978-981-13-1906-8_66",
+      "citations": 12,
+      "eid": "2-s2.0-85056343548",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85056343548",
       "abstract": {}
     },
     {
@@ -1249,13 +1249,13 @@
       "abstract": {}
     },
     {
-      "title": "Automatic segmentation of gallbladder using intuitionistic fuzzy based active contour model",
-      "source": "Lecture Notes in Electrical Engineering",
+      "title": "Local contrast regularized contrast limited adaptive histogram equalization using tree seed algorithm—An aid for mammogram images enhancement",
+      "source": "Smart Innovation Systems and Technologies",
       "date": "2019-01-01",
-      "doi": "10.1007/978-981-13-1906-8_66",
-      "citations": 12,
-      "eid": "2-s2.0-85056343548",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85056343548",
+      "doi": "10.1007/978-981-13-1921-1_67",
+      "citations": 18,
+      "eid": "2-s2.0-85054854191",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85054854191",
       "abstract": {}
     },
     {
@@ -1279,16 +1279,6 @@
       "abstract": {}
     },
     {
-      "title": "Offline Analysis for Designing Electrooculogram Based Human Computer Interface Control for Paralyzed Patients",
-      "source": "IEEE Access",
-      "date": "2018-01-01",
-      "doi": "10.1109/ACCESS.2018.2884411",
-      "citations": 37,
-      "eid": "2-s2.0-85057775413",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85057775413",
-      "abstract": {}
-    },
-    {
       "title": "Gallbladder shape estimation using tree-seed optimization tuned radial basis function network for assessment of acute cholecystitis",
       "source": "Advances in Intelligent Systems and Computing",
       "date": "2018-01-01",
@@ -1306,6 +1296,16 @@
       "citations": 8,
       "eid": "2-s2.0-85028380601",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85028380601",
+      "abstract": {}
+    },
+    {
+      "title": "Offline Analysis for Designing Electrooculogram Based Human Computer Interface Control for Paralyzed Patients",
+      "source": "IEEE Access",
+      "date": "2018-01-01",
+      "doi": "10.1109/ACCESS.2018.2884411",
+      "citations": 37,
+      "eid": "2-s2.0-85057775413",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85057775413",
       "abstract": {}
     },
     {

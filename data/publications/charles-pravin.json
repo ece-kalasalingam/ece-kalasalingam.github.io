@@ -31,23 +31,13 @@
       "abstract": {}
     },
     {
-      "title": "Simulation of WO3 Thin Film Transistor for Biosensors",
-      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
+      "title": "Design and Implementation of APB Based Memory Communication",
+      "source": "2025 International Conference on Emerging Technologies in Engineering Applications Icetea 2025 Proceedings",
       "date": "2025-01-01",
-      "doi": "10.1109/ICTMIM65579.2025.10988043",
+      "doi": "10.1109/ICETEA64585.2025.11099632",
       "citations": 0,
-      "eid": "2-s2.0-105007994824",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007994824",
-      "abstract": {}
-    },
-    {
-      "title": "Reliability-Aware Design Approaches for High-Performance Normally-Off GaN HEMTs",
-      "source": "5th IEEE International Conference on Mobile Networks and Wireless Communications Icmnwc 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICMNWC66779.2025.11354333",
-      "citations": 0,
-      "eid": "2-s2.0-105033634571",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105033634571",
+      "eid": "2-s2.0-105015648535",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105015648535",
       "abstract": {}
     },
     {
@@ -71,13 +61,23 @@
       "abstract": {}
     },
     {
-      "title": "Design and Implementation of APB Based Memory Communication",
-      "source": "2025 International Conference on Emerging Technologies in Engineering Applications Icetea 2025 Proceedings",
+      "title": "Simulation of WO3 Thin Film Transistor for Biosensors",
+      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
       "date": "2025-01-01",
-      "doi": "10.1109/ICETEA64585.2025.11099632",
+      "doi": "10.1109/ICTMIM65579.2025.10988043",
       "citations": 0,
-      "eid": "2-s2.0-105015648535",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105015648535",
+      "eid": "2-s2.0-105007994824",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007994824",
+      "abstract": {}
+    },
+    {
+      "title": "Reliability-Aware Design Approaches for High-Performance Normally-Off GaN HEMTs",
+      "source": "5th IEEE International Conference on Mobile Networks and Wireless Communications Icmnwc 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICMNWC66779.2025.11354333",
+      "citations": 0,
+      "eid": "2-s2.0-105033634571",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105033634571",
       "abstract": {}
     },
     {
@@ -121,6 +121,16 @@
       "abstract": {}
     },
     {
+      "title": "Analyzing Ga-Polar and N-Polar GaN HEMTs: A Comparative Study for High-Power DC Performance in Semiconductor Applications",
+      "source": "Icdcs 2024 2024 7th International Conference on Devices Circuits and Systems",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICDCS59278.2024.10560584",
+      "citations": 6,
+      "eid": "2-s2.0-85197953834",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85197953834",
+      "abstract": {}
+    },
+    {
       "title": "Implement a PnR Flow to Boost the Pin Density in Block Level Chip Design",
       "source": "2024 IEEE International Conference on Information Technology Electronics and Intelligent Communication Systems Iciteics 2024",
       "date": "2024-01-01",
@@ -151,16 +161,6 @@
       "abstract": {}
     },
     {
-      "title": "Analyzing Ga-Polar and N-Polar GaN HEMTs: A Comparative Study for High-Power DC Performance in Semiconductor Applications",
-      "source": "Icdcs 2024 2024 7th International Conference on Devices Circuits and Systems",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICDCS59278.2024.10560584",
-      "citations": 6,
-      "eid": "2-s2.0-85197953834",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85197953834",
-      "abstract": {}
-    },
-    {
       "title": "Analytical modeling and quasi-static characterization of a lithium niobate (LiNbO3)-based metal–ferroelectric–metal–insulator–semiconductor (MFMIS) NCFET",
       "source": "Journal of Computational Electronics",
       "date": "2023-10-01",
@@ -181,6 +181,16 @@
       "abstract": {}
     },
     {
+      "title": "Design and Implementation of High-Performance PnR Block-Level Design with Timing Placement",
+      "source": "Proceedings of the 7th International Conference on Intelligent Computing and Control Systems Iciccs 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICICCS56967.2023.10142497",
+      "citations": 2,
+      "eid": "2-s2.0-85163827808",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163827808",
+      "abstract": {}
+    },
+    {
       "title": "Performance Evaluation of Sub 5 nm GAA NWMBCFET using Silicon Carbide Source/Drain Material",
       "source": "IETE Journal of Research",
       "date": "2023-01-01",
@@ -198,16 +208,6 @@
       "citations": 1,
       "eid": "2-s2.0-85178664842",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85178664842",
-      "abstract": {}
-    },
-    {
-      "title": "Design and Implementation of High-Performance PnR Block-Level Design with Timing Placement",
-      "source": "Proceedings of the 7th International Conference on Intelligent Computing and Control Systems Iciccs 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICICCS56967.2023.10142497",
-      "citations": 2,
-      "eid": "2-s2.0-85163827808",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163827808",
       "abstract": {}
     },
     {
@@ -235,7 +235,7 @@
       "source": "Silicon",
       "date": "2022-04-01",
       "doi": "10.1007/s12633-021-01010-w",
-      "citations": 10,
+      "citations": 11,
       "eid": "2-s2.0-85101762106",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85101762106",
       "abstract": {}
@@ -251,6 +251,16 @@
       "abstract": {}
     },
     {
+      "title": "Influence of Interface trap distributions over the device characteristics of AlGaN/GaN/AlInN MOS-HEMT using Cubic Spline Interpolation technique",
+      "source": "International Journal of Numerical Modelling Electronic Networks Devices and Fields",
+      "date": "2022-01-01",
+      "doi": "10.1002/jnm.2936",
+      "citations": 5,
+      "eid": "2-s2.0-85109949015",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85109949015",
+      "abstract": {}
+    },
+    {
       "title": "Performance Evaluation of LiNbO3-based Negative Capacitance Field Effect Transistors (NCFETs)",
       "source": "Proceedings of 2022 IEEE International Conference of Electron Devices Society Kolkata Chapter Edkcon 2022",
       "date": "2022-01-01",
@@ -258,16 +268,6 @@
       "citations": 1,
       "eid": "2-s2.0-85148697496",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85148697496",
-      "abstract": {}
-    },
-    {
-      "title": "Performance Analysis of Negative Capacitance Field Effect Transistor using Lithium Niobate",
-      "source": "2022 1st International Conference on Electrical Electronics Information and Communication Technologies Iceeict 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICEEICT53079.2022.9768460",
-      "citations": 1,
-      "eid": "2-s2.0-85130285177",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85130285177",
       "abstract": {}
     },
     {
@@ -281,13 +281,13 @@
       "abstract": {}
     },
     {
-      "title": "Influence of Interface trap distributions over the device characteristics of AlGaN/GaN/AlInN MOS-HEMT using Cubic Spline Interpolation technique",
-      "source": "International Journal of Numerical Modelling Electronic Networks Devices and Fields",
+      "title": "Performance Analysis of Negative Capacitance Field Effect Transistor using Lithium Niobate",
+      "source": "2022 1st International Conference on Electrical Electronics Information and Communication Technologies Iceeict 2022",
       "date": "2022-01-01",
-      "doi": "10.1002/jnm.2936",
-      "citations": 5,
-      "eid": "2-s2.0-85109949015",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85109949015",
+      "doi": "10.1109/ICEEICT53079.2022.9768460",
+      "citations": 1,
+      "eid": "2-s2.0-85130285177",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85130285177",
       "abstract": {}
     },
     {
@@ -301,16 +301,6 @@
       "abstract": {}
     },
     {
-      "title": "Evaluation of DC Characteristics for a Zinc Oxide (ZnO) based Thin Film Transistor by influence of a Cobalt material",
-      "source": "Proceedings of the 5th International Conference on Trends in Electronics and Informatics Icoei 2021",
-      "date": "2021-06-03",
-      "doi": "10.1109/ICOEI51242.2021.9452886",
-      "citations": 0,
-      "eid": "2-s2.0-85113437952",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85113437952",
-      "abstract": {}
-    },
-    {
       "title": "Effect of Nickel material over the DC characteristics of a Silicon Nanowire Cylindrical MOSFET",
       "source": "Proceedings of the 5th International Conference on Trends in Electronics and Informatics Icoei 2021",
       "date": "2021-06-03",
@@ -321,6 +311,16 @@
       "abstract": {}
     },
     {
+      "title": "Evaluation of DC Characteristics for a Zinc Oxide (ZnO) based Thin Film Transistor by influence of a Cobalt material",
+      "source": "Proceedings of the 5th International Conference on Trends in Electronics and Informatics Icoei 2021",
+      "date": "2021-06-03",
+      "doi": "10.1109/ICOEI51242.2021.9452886",
+      "citations": 0,
+      "eid": "2-s2.0-85113437952",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85113437952",
+      "abstract": {}
+    },
+    {
       "title": "Lowering the Schottky Barrier Height by Titanium Contact for High-Drain Current in Mono-layer MoS2 Transistor",
       "source": "Journal of Electronic Materials",
       "date": "2021-06-01",
@@ -328,26 +328,6 @@
       "citations": 14,
       "eid": "2-s2.0-85102948296",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85102948296",
-      "abstract": {}
-    },
-    {
-      "title": "Investigation of RF and DC Performance of E-Mode In0.80Ga0.20As/InAs/In0.80Ga0.20as Channel based DG-HEMTs for Future Submillimetre Wave and THz Applications",
-      "source": "IETE Journal of Research",
-      "date": "2021-01-01",
-      "doi": "10.1080/03772063.2018.1553641",
-      "citations": 5,
-      "eid": "2-s2.0-85058176347",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85058176347",
-      "abstract": {}
-    },
-    {
-      "title": "Influence of Tunable Work Function on SOI-based DMG Multi-channel Junctionless Thin Film Transistor",
-      "source": "Journal of Nano and Electronic Physics",
-      "date": "2021-01-01",
-      "doi": "10.21272/jnep.13(1).01005",
-      "citations": 1,
-      "eid": "2-s2.0-85102290849",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85102290849",
       "abstract": {}
     },
     {
@@ -371,6 +351,26 @@
       "abstract": {}
     },
     {
+      "title": "Investigation of RF and DC Performance of E-Mode In0.80Ga0.20As/InAs/In0.80Ga0.20as Channel based DG-HEMTs for Future Submillimetre Wave and THz Applications",
+      "source": "IETE Journal of Research",
+      "date": "2021-01-01",
+      "doi": "10.1080/03772063.2018.1553641",
+      "citations": 5,
+      "eid": "2-s2.0-85058176347",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85058176347",
+      "abstract": {}
+    },
+    {
+      "title": "Influence of Tunable Work Function on SOI-based DMG Multi-channel Junctionless Thin Film Transistor",
+      "source": "Journal of Nano and Electronic Physics",
+      "date": "2021-01-01",
+      "doi": "10.21272/jnep.13(1).01005",
+      "citations": 2,
+      "eid": "2-s2.0-85102290849",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85102290849",
+      "abstract": {}
+    },
+    {
       "title": "CSI based Analytical Model for evaluation of DC Characteristics in AlGaN/GaN/AlInN MOS-HEMT using high-k dielectrics",
       "source": "Proceedings of the 4th International Conference on Electronics Communication and Aerospace Technology Iceca 2020",
       "date": "2020-11-05",
@@ -391,16 +391,6 @@
       "abstract": {}
     },
     {
-      "title": "Silicon-on-Insulator based MOSFET for Bio sensing Applications",
-      "source": "Icdcs 2020 2020 5th International Conference on Devices Circuits and Systems",
-      "date": "2020-03-01",
-      "doi": "10.1109/ICDCS48716.2020.243610",
-      "citations": 0,
-      "eid": "2-s2.0-85084654088",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85084654088",
-      "abstract": {}
-    },
-    {
       "title": "Design and Simulation of 22nm FinFET Structure Using TCAD",
       "source": "Icdcs 2020 2020 5th International Conference on Devices Circuits and Systems",
       "date": "2020-03-01",
@@ -408,6 +398,16 @@
       "citations": 15,
       "eid": "2-s2.0-85084656340",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85084656340",
+      "abstract": {}
+    },
+    {
+      "title": "Silicon-on-Insulator based MOSFET for Bio sensing Applications",
+      "source": "Icdcs 2020 2020 5th International Conference on Devices Circuits and Systems",
+      "date": "2020-03-01",
+      "doi": "10.1109/ICDCS48716.2020.243610",
+      "citations": 0,
+      "eid": "2-s2.0-85084654088",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85084654088",
       "abstract": {}
     },
     {
@@ -421,16 +421,6 @@
       "abstract": {}
     },
     {
-      "title": "High Performance Double Gated Molybdenum Disulfide (MoS2) Transistor for Low Power Applications",
-      "source": "2019 International Conference on Clean Energy and Energy Efficient Electronics Circuit for Sustainable Development Incces 2019",
-      "date": "2019-12-01",
-      "doi": "10.1109/INCCES47820.2019.9167712",
-      "citations": 1,
-      "eid": "2-s2.0-85091492644",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85091492644",
-      "abstract": {}
-    },
-    {
       "title": "Evaluation of Device Performance on AlGaN/InGaN/GaN High Electron Mobility Transistors (HEMTs) using TCAD Software",
       "source": "2019 International Conference on Clean Energy and Energy Efficient Electronics Circuit for Sustainable Development Incces 2019",
       "date": "2019-12-01",
@@ -438,6 +428,16 @@
       "citations": 1,
       "eid": "2-s2.0-85091481418",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85091481418",
+      "abstract": {}
+    },
+    {
+      "title": "High Performance Double Gated Molybdenum Disulfide (MoS2) Transistor for Low Power Applications",
+      "source": "2019 International Conference on Clean Energy and Energy Efficient Electronics Circuit for Sustainable Development Incces 2019",
+      "date": "2019-12-01",
+      "doi": "10.1109/INCCES47820.2019.9167712",
+      "citations": 1,
+      "eid": "2-s2.0-85091492644",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85091492644",
       "abstract": {}
     },
     {
@@ -581,16 +581,6 @@
       "abstract": {}
     },
     {
-      "title": "Implementation of nanoscale circuits using dual metal gate engineered nanowire MOSFET with high-k dielectrics for low power applications",
-      "source": "Physica E Low Dimensional Systems and Nanostructures",
-      "date": "2016-09-01",
-      "doi": "10.1016/j.physe.2016.04.017",
-      "citations": 77,
-      "eid": "2-s2.0-84964893927",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/84964893927",
-      "abstract": {}
-    },
-    {
       "title": "A New Drain Current Model for a Dual Metal Junctionless Transistor for Enhanced Digital Circuit Performance",
       "source": "IEEE Transactions on Electron Devices",
       "date": "2016-09-01",
@@ -598,6 +588,16 @@
       "citations": 31,
       "eid": "2-s2.0-84979937542",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/84979937542",
+      "abstract": {}
+    },
+    {
+      "title": "Implementation of nanoscale circuits using dual metal gate engineered nanowire MOSFET with high-k dielectrics for low power applications",
+      "source": "Physica E Low Dimensional Systems and Nanostructures",
+      "date": "2016-09-01",
+      "doi": "10.1016/j.physe.2016.04.017",
+      "citations": 77,
+      "eid": "2-s2.0-84964893927",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/84964893927",
       "abstract": {}
     },
     {

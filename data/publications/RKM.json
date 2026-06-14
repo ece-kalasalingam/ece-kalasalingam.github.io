@@ -11,7 +11,7 @@
       "abstract": {
         "text": "Timely identification of brain tumors helps improve treatment outcomes and reduces mortality. Accurate and non-invasive diagnostic tools for segmenting and classifying tumor regions in brain MRI scans are crucial for minimizing the need for surgical biopsies. This study builds a deep learning model for tumor segmentation and classification, aiming high accuracy and efficiency. A gaussian bilateral filter is used for noise reduction and to improve MRI image quality. Tumor segmentation is performed using an advanced U-Net model, the Dual Attention AtroDense U-Net (DA-AtroDense U-Net), which integrates dense connections, atrous convolution and attention mechanisms to preserve spatial detail and improve boundary localization. Texture-based radiomic features are subsequently extracted from the segmented tumor region using Kirsch Edge Detector (KED) and Gray-Level Co-occurrence Matrix (GLCM) and refined through feature selection to reduce redundancy using the Cat-and-Mouse Optimization (CMO) algorithm. Tumor classification employs an Auction-Optimized hybrid LSTM Network (AOHLN). Evaluated on BraTS 2019 and 2020 datasets, the developed model achieved a Dice Similarity Coefficient of 0.9907 and a Jaccard Index of 0.9816 for segmentation accuracy and an overall accuracy of 98.99% for classification, highlighting its potential as a dependable and non-invasive diagnostic solution.",
         "source": "crossref",
-        "fetched_at": "2026-06-12T06:48:55+00:00"
+        "fetched_at": "2026-06-14T06:47:35+00:00"
       }
     },
     {
@@ -119,9 +119,19 @@
       "source": "IETE Journal of Research",
       "date": "2025-01-01",
       "doi": "10.1080/03772063.2025.2451721",
-      "citations": 5,
+      "citations": 6,
       "eid": "2-s2.0-85216238685",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85216238685",
+      "abstract": {}
+    },
+    {
+      "title": "Refining Brain Tumour Segmentation in MRI: A Synergistic Approach with Modified FCM and JAYA Algorithm",
+      "source": "2025 3rd International Conference on Sustainable Computing and Smart Systems Icscss 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICSCSS64956.2025.11500817",
+      "citations": 0,
+      "eid": "2-s2.0-105041152118",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105041152118",
       "abstract": {}
     },
     {
@@ -132,6 +142,16 @@
       "citations": 0,
       "eid": "2-s2.0-105021738758",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105021738758",
+      "abstract": {}
+    },
+    {
+      "title": "Recent Advancements in Automated Detection and Grade Classification of Ankle Osteoarthritis on Clinical Images",
+      "source": "2025 3rd International Conference on Sustainable Computing and Smart Systems Icscss 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICSCSS64956.2025.11500659",
+      "citations": 0,
+      "eid": "2-s2.0-105041158368",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105041158368",
       "abstract": {}
     },
     {
@@ -245,11 +265,21 @@
       "abstract": {}
     },
     {
+      "title": "Data-Driven Machine Learning Framework for Early and Non-Invasive Kidney Stone Detection",
+      "source": "2025 3rd International Conference on Sustainable Computing and Smart Systems Icscss 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICSCSS64956.2025.11500903",
+      "citations": 0,
+      "eid": "2-s2.0-105040955305",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105040955305",
+      "abstract": {}
+    },
+    {
       "title": "Custom Voice Assistants: Enhancing Accessibility for the Visually Impaired",
       "source": "Proceedings of the 3rd International Conference on Intelligent and Innovative Technologies in Computing Electrical and Electronics Iitcee 2025",
       "date": "2025-01-01",
       "doi": "10.1109/IITCEE64140.2025.10915383",
-      "citations": 5,
+      "citations": 6,
       "eid": "2-s2.0-105001537714",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105001537714",
       "abstract": {}

@@ -1,6 +1,16 @@
 {
   "publications": [
     {
+      "title": "A Hybrid Spatial Temporal Transformer Network Optimised for Accurate Disease Identification in Shrimp Producers",
+      "source": "Iranian Journal of Science and Technology Transactions of Electrical Engineering",
+      "date": "2026-06-01",
+      "doi": "10.1007/s40998-025-00929-9",
+      "citations": 0,
+      "eid": "2-s2.0-105021225838",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105021225838",
+      "abstract": {}
+    },
+    {
       "title": "Redundant MPC Over Edge for Process Industries",
       "source": "International Journal of Control Automation and Systems",
       "date": "2026-02-01",
@@ -115,7 +125,7 @@
       "source": "Journal of Materials Science Materials in Electronics",
       "date": "2025-01-01",
       "doi": "10.1007/s10854-024-14161-4",
-      "citations": 8,
+      "citations": 9,
       "eid": "2-s2.0-85214239791",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85214239791",
       "abstract": {}
@@ -138,16 +148,6 @@
       "citations": 0,
       "eid": "2-s2.0-105022606746",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105022606746",
-      "abstract": {}
-    },
-    {
-      "title": "A Hybrid Spatial Temporal Transformer Network Optimised for Accurate Disease Identification in Shrimp Producers",
-      "source": "Iranian Journal of Science and Technology Transactions of Electrical Engineering",
-      "date": "2025-01-01",
-      "doi": "10.1007/s40998-025-00929-9",
-      "citations": 0,
-      "eid": "2-s2.0-105021225838",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105021225838",
       "abstract": {}
     },
     {

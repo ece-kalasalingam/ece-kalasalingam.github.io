@@ -11,23 +11,13 @@
       "abstract": {}
     },
     {
-      "title": "Early Detection of Apraxia of Speech in Children using MATLAB",
-      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
+      "title": "Tea Leaves Disease Multi Class Classification using MobileNet-V2",
+      "source": "2025 Global Conference on Information Technology and Communication Networks Gitcon 2025",
       "date": "2025-01-01",
-      "doi": "10.1109/ICECMSN68058.2025.11382894",
+      "doi": "10.1109/GITCON65266.2025.11377940",
       "citations": 0,
-      "eid": "2-s2.0-105035501886",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035501886",
-      "abstract": {}
-    },
-    {
-      "title": "Artificial Intelligence GIS Algorithm Based on Deep Learning Technology for Land and Water Detection",
-      "source": "Proceedings of the 1st IEEE International Conference on Advances in Next Gen Computer Science Icancs 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICANCS65819.2025.11377906",
-      "citations": 0,
-      "eid": "2-s2.0-105035626466",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035626466",
+      "eid": "2-s2.0-105035592047",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035592047",
       "abstract": {}
     },
     {
@@ -41,23 +31,13 @@
       "abstract": {}
     },
     {
-      "title": "Early Uterine Cancer Detection Using Ultrasound Images by Different Machine Learning Techniques",
-      "source": "2025 Global Conference on Information Technology and Communication Networks Gitcon 2025",
+      "title": "Solar-Powered Hand Gesture-Controlled Compact Lawn Mower",
+      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
       "date": "2025-01-01",
-      "doi": "10.1109/GITCON65266.2025.11376852",
+      "doi": "10.1109/ICECMSN68058.2025.11383074",
       "citations": 0,
-      "eid": "2-s2.0-105035599225",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035599225",
-      "abstract": {}
-    },
-    {
-      "title": "Tea Leaves Disease Multi Class Classification using MobileNet-V2",
-      "source": "2025 Global Conference on Information Technology and Communication Networks Gitcon 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/GITCON65266.2025.11377940",
-      "citations": 0,
-      "eid": "2-s2.0-105035592047",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035592047",
+      "eid": "2-s2.0-105035478748",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035478748",
       "abstract": {}
     },
     {
@@ -71,23 +51,23 @@
       "abstract": {}
     },
     {
-      "title": "Solar-Powered Hand Gesture-Controlled Compact Lawn Mower",
-      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
+      "title": "Early Uterine Cancer Detection Using Ultrasound Images by Different Machine Learning Techniques",
+      "source": "2025 Global Conference on Information Technology and Communication Networks Gitcon 2025",
       "date": "2025-01-01",
-      "doi": "10.1109/ICECMSN68058.2025.11383074",
+      "doi": "10.1109/GITCON65266.2025.11376852",
       "citations": 0,
-      "eid": "2-s2.0-105035478748",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035478748",
+      "eid": "2-s2.0-105035599225",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035599225",
       "abstract": {}
     },
     {
-      "title": "AI-Based Classification and Detection of Multi Cancer from Histopathology and Microscopic Images using CNN",
-      "source": "4th International Conference on Automation Computing and Renewable Systems Icacrs 2025 Proceedings",
+      "title": "Early Detection of Apraxia of Speech in Children using MATLAB",
+      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
       "date": "2025-01-01",
-      "doi": "10.1109/ICACRS67045.2025.11324206",
+      "doi": "10.1109/ICECMSN68058.2025.11382894",
       "citations": 0,
-      "eid": "2-s2.0-105032724322",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105032724322",
+      "eid": "2-s2.0-105035501886",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035501886",
       "abstract": {}
     },
     {
@@ -98,6 +78,26 @@
       "citations": 0,
       "eid": "2-s2.0-105016788822",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105016788822",
+      "abstract": {}
+    },
+    {
+      "title": "Artificial Intelligence GIS Algorithm Based on Deep Learning Technology for Land and Water Detection",
+      "source": "Proceedings of the 1st IEEE International Conference on Advances in Next Gen Computer Science Icancs 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICANCS65819.2025.11377906",
+      "citations": 0,
+      "eid": "2-s2.0-105035626466",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035626466",
+      "abstract": {}
+    },
+    {
+      "title": "AI-Based Classification and Detection of Multi Cancer from Histopathology and Microscopic Images using CNN",
+      "source": "4th International Conference on Automation Computing and Renewable Systems Icacrs 2025 Proceedings",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICACRS67045.2025.11324206",
+      "citations": 0,
+      "eid": "2-s2.0-105032724322",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105032724322",
       "abstract": {}
     },
     {
@@ -121,13 +121,13 @@
       "abstract": {}
     },
     {
-      "title": "Design and Development of Serial Driver Verification Scoreboard Module using UVM",
-      "source": "7th International Conference on Inventive Computation Technologies Icict 2024",
+      "title": "Improved Extreme Learning Machine Based Hunger Games Search for Automatic IP Configuration and Duplicate Node Detection",
+      "source": "Journal of Communications",
       "date": "2024-01-01",
-      "doi": "10.1109/ICICT60155.2024.10544523",
-      "citations": 1,
-      "eid": "2-s2.0-85196067155",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85196067155",
+      "doi": "10.12720/jcm.19.3.152-160",
+      "citations": 5,
+      "eid": "2-s2.0-85189139812",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85189139812",
       "abstract": {}
     },
     {
@@ -141,6 +141,16 @@
       "abstract": {}
     },
     {
+      "title": "Design and Development of Serial Driver Verification Scoreboard Module using UVM",
+      "source": "7th International Conference on Inventive Computation Technologies Icict 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICICT60155.2024.10544523",
+      "citations": 1,
+      "eid": "2-s2.0-85196067155",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85196067155",
+      "abstract": {}
+    },
+    {
       "title": "An Effective Investigation on Implementation of Different Learning Techniques Used for Heart Disease Prediction",
       "source": "2024 11th International Conference on Reliability Infocom Technologies and Optimization Trends and Future Directions Icrito 2024",
       "date": "2024-01-01",
@@ -151,23 +161,13 @@
       "abstract": {}
     },
     {
-      "title": "Improved Extreme Learning Machine Based Hunger Games Search for Automatic IP Configuration and Duplicate Node Detection",
-      "source": "Journal of Communications",
-      "date": "2024-01-01",
-      "doi": "10.12720/jcm.19.3.152-160",
-      "citations": 5,
-      "eid": "2-s2.0-85189139812",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85189139812",
-      "abstract": {}
-    },
-    {
-      "title": "Developing a Smart Wireless Sensor System Using IoT Network Architecture for Precision Agriculture",
-      "source": "Smart Innovation Systems and Technologies",
+      "title": "TiO2Thick film Gas sensor for Detection H2S Gas Using ANN and Machine Learning Technique",
+      "source": "Iccece 2023 International Conference on Computer Electrical and Communication Engineering",
       "date": "2023-01-01",
-      "doi": "10.1007/978-981-99-4717-1_48",
+      "doi": "10.1109/ICCECE51049.2023.10085220",
       "citations": 1,
-      "eid": "2-s2.0-85174448749",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85174448749",
+      "eid": "2-s2.0-85153337198",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153337198",
       "abstract": {}
     },
     {
@@ -181,13 +181,13 @@
       "abstract": {}
     },
     {
-      "title": "TiO2Thick film Gas sensor for Detection H2S Gas Using ANN and Machine Learning Technique",
-      "source": "Iccece 2023 International Conference on Computer Electrical and Communication Engineering",
+      "title": "Developing a Smart Wireless Sensor System Using IoT Network Architecture for Precision Agriculture",
+      "source": "Smart Innovation Systems and Technologies",
       "date": "2023-01-01",
-      "doi": "10.1109/ICCECE51049.2023.10085220",
+      "doi": "10.1007/978-981-99-4717-1_48",
       "citations": 1,
-      "eid": "2-s2.0-85153337198",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153337198",
+      "eid": "2-s2.0-85174448749",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85174448749",
       "abstract": {}
     },
     {

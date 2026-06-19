@@ -1,6 +1,16 @@
 {
   "publications": [
     {
+      "title": "HEAL Lite: A Smart Wearable Tremor Monitoring and prediction System with AI and Hybrid Storage",
+      "source": "Icdcs 2026 2026 8th International Conference on Devices Circuits and Systems",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICDCS68853.2026.11511068",
+      "citations": 0,
+      "eid": "2-s2.0-105041537846",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105041537846",
+      "abstract": {}
+    },
+    {
       "title": "Design of an Automatic Fire Extinguisher, Tracking and Emergency Evacuation System for Multi-Storey Buildings",
       "source": "2026 International Conference on Emerging Technologies and Future Innovations Etfi 2026",
       "date": "2026-01-01",
@@ -8,6 +18,16 @@
       "citations": 0,
       "eid": "2-s2.0-105040706547",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105040706547",
+      "abstract": {}
+    },
+    {
+      "title": "Design and Integration of Low Power Memory Subsytems in RISC-V cores",
+      "source": "Icdcs 2026 2026 8th International Conference on Devices Circuits and Systems",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICDCS68853.2026.11511162",
+      "citations": 0,
+      "eid": "2-s2.0-105041514170",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105041514170",
       "abstract": {}
     },
     {

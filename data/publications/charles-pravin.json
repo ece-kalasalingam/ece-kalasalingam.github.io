@@ -11,6 +11,36 @@
       "abstract": {}
     },
     {
+      "title": "Physics Informed ANN Based Compact Modeling of Gate All Around FETs for Sub 5nm Technology Nodes",
+      "source": "Icdcs 2026 2026 8th International Conference on Devices Circuits and Systems",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICDCS68853.2026.11510975",
+      "citations": 0,
+      "eid": "2-s2.0-105041577355",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105041577355",
+      "abstract": {}
+    },
+    {
+      "title": "Design and Evaluation of FA/MA-Graded FAxMA1-xSnI3 Absorber for High-Efficiency, Lead-Free Perovskite Solar Cells",
+      "source": "Icdcs 2026 2026 8th International Conference on Devices Circuits and Systems",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICDCS68853.2026.11511023",
+      "citations": 0,
+      "eid": "2-s2.0-105041506169",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105041506169",
+      "abstract": {}
+    },
+    {
+      "title": "A Comprehensive Review on the Performance of Parallel Prefix Adders in VLSI",
+      "source": "Conference Proceedngs Wccst 2026 World Conference on Computational Science and Technology",
+      "date": "2026-01-01",
+      "doi": "10.1109/WcCST67302.2026.11496162",
+      "citations": 0,
+      "eid": "2-s2.0-105040788479",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105040788479",
+      "abstract": {}
+    },
+    {
       "title": "Performance Enhancement of T-gated GaN HEMTs Using Polarization-Graded AlGaN Back Barrier for High-Frequency Applications",
       "source": "Semiconductors",
       "date": "2025-12-01",
@@ -28,6 +58,16 @@
       "citations": 0,
       "eid": "2-s2.0-105014280504",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105014280504",
+      "abstract": {}
+    },
+    {
+      "title": "Exploring vertical transition metal dichalcogenide heterostructure MOSFET: A comprehensive review",
+      "source": "Field Effect Transistors",
+      "date": "2025-03-28",
+      "doi": "10.1002/9781394248506.ch22",
+      "citations": 0,
+      "eid": "2-s2.0-105001768389",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105001768389",
       "abstract": {}
     },
     {

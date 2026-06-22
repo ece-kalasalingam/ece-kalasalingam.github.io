@@ -11,7 +11,7 @@
       "abstract": {
         "text": "Timely identification of brain tumors helps improve treatment outcomes and reduces mortality. Accurate and non-invasive diagnostic tools for segmenting and classifying tumor regions in brain MRI scans are crucial for minimizing the need for surgical biopsies. This study builds a deep learning model for tumor segmentation and classification, aiming high accuracy and efficiency. A gaussian bilateral filter is used for noise reduction and to improve MRI image quality. Tumor segmentation is performed using an advanced U-Net model, the Dual Attention AtroDense U-Net (DA-AtroDense U-Net), which integrates dense connections, atrous convolution and attention mechanisms to preserve spatial detail and improve boundary localization. Texture-based radiomic features are subsequently extracted from the segmented tumor region using Kirsch Edge Detector (KED) and Gray-Level Co-occurrence Matrix (GLCM) and refined through feature selection to reduce redundancy using the Cat-and-Mouse Optimization (CMO) algorithm. Tumor classification employs an Auction-Optimized hybrid LSTM Network (AOHLN). Evaluated on BraTS 2019 and 2020 datasets, the developed model achieved a Dice Similarity Coefficient of 0.9907 and a Jaccard Index of 0.9816 for segmentation accuracy and an overall accuracy of 98.99% for classification, highlighting its potential as a dependable and non-invasive diagnostic solution.",
         "source": "crossref",
-        "fetched_at": "2026-06-21T06:57:05+00:00"
+        "fetched_at": "2026-06-22T07:31:26+00:00"
       }
     },
     {

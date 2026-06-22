@@ -11,8 +11,58 @@
       "abstract": {
         "text": "ABSTRACT Gliomas are very common malignant brain lesions with distinct grades that relatively estimate the survival rate in affected persons. Tumor grading and segmentation are significant and common for treatment planning and diagnosis. The approach of glioma grading is highly performed by the imaging models at clinical practice. The accurate glioma grading in the operation time supports the clinicians in estimating the highest excision region. But, it is highly complex for medical experts to estimate the glioma grades alone at the time of operation. Hence, an accurate and rapid tumor tissue diagnosis during the surgery period is essential. Nowadays, deep learning strategies have been utilized for the evaluation of medical images and the diagnosis of diseases. But, the problems of near‐infrared images such as low resolution, noise, and small scale cause the complexity of training a promising model. Multimodal imaging can offer harmonizing data to improve the system performance, yet continuously developing a proper model and employing the multimodal data is complex. Therefore, this work proposes a glioma grading classification approach using multimodal medical images and deep learning. Initially, the necessary multimodal images such as CT and MRI are accumulated from benchmark datasets, and the garnered multimodal images are fused with the help of discrete wavelet transformation (DWT). Further, the fused multimodal image is fed into the tumor segmentation module, where the multilevel attention‐based transformer residual Unet++ (MA‐TRUnet++) technique is supported. Furthermore, the tumor‐segmented images are subjected to the adaptive dilated residual network (ADRNet) module. In this module, at first, the brain tumor is detected and classified as normal and abnormal. If the tumor is malignant, then the same ADRNet technique is employed for classifying the glioma grades. Here, the revised chameleon swarm algorithm (RCSA) is utilized for fine tuning the parameters in ADRNet. Finally, the classified glioma grade is achieved and the performance analysis is conducted for the presented work by comparing it with the baseline approaches to ensure the efficacy of the offered model. The github link of the developed fusion‐based glioma detection model is given in https://github.com/gurusigaamani0/Multimodel‐Medical‐Image‐Fusion/tree/main .",
         "source": "crossref",
-        "fetched_at": "2026-06-21T08:03:17+00:00"
+        "fetched_at": "2026-06-22T07:31:44+00:00"
       }
+    },
+    {
+      "title": "Optimizing Brain Tumor Classification with GridSearchCV using Multimodal Image Fusion: A Hyperparameter Tuning Approach",
+      "source": "Proceedings of 8th International Conference on Inventive Computation Technologies Icict 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICICT64420.2025.11004891",
+      "citations": 0,
+      "eid": "2-s2.0-105007419701",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007419701",
+      "abstract": {}
+    },
+    {
+      "title": "Morlet Empowering Wavelet Decision Neural Network with Lotus Effect Optimization Algorithm based Classification of Skin Cancer",
+      "source": "Proceedings of the 9th International Conference on Electronics Communication and Aerospace Technology Iceca 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICECA66444.2025.11383508",
+      "citations": 0,
+      "eid": "2-s2.0-105034832426",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034832426",
+      "abstract": {}
+    },
+    {
+      "title": "Leukemia Blood Cancer Detection using Mobile Net",
+      "source": "3rd International Conference on Intelligent Data Communication Technologies and Internet of Things Idciot 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/IDCIOT64235.2025.10914829",
+      "citations": 1,
+      "eid": "2-s2.0-105001666166",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105001666166",
+      "abstract": {}
+    },
+    {
+      "title": "Inclusive Education via Emotion-Aware Tutoring using Real-Time Recognition",
+      "source": "Proceedings of the 7th International Conference on Innovative Data Communication Technologies and Application Icidca 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICIDCA66325.2025.11280349",
+      "citations": 1,
+      "eid": "2-s2.0-105031405818",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105031405818",
+      "abstract": {}
+    },
+    {
+      "title": "Enhanced CNN Model Techniques for Classification of Brain Tumor and Approaches",
+      "source": "Lecture Notes in Electrical Engineering",
+      "date": "2025-01-01",
+      "doi": "10.1007/978-981-96-7249-3_24",
+      "citations": 0,
+      "eid": "2-s2.0-105021397751",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105021397751",
+      "abstract": {}
     },
     {
       "title": "Design and Development of a Fractal Antenna for Material Classification",
@@ -45,56 +95,6 @@
       "abstract": {}
     },
     {
-      "title": "Inclusive Education via Emotion-Aware Tutoring using Real-Time Recognition",
-      "source": "Proceedings of the 7th International Conference on Innovative Data Communication Technologies and Application Icidca 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICIDCA66325.2025.11280349",
-      "citations": 1,
-      "eid": "2-s2.0-105031405818",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105031405818",
-      "abstract": {}
-    },
-    {
-      "title": "Enhanced CNN Model Techniques for Classification of Brain Tumor and Approaches",
-      "source": "Lecture Notes in Electrical Engineering",
-      "date": "2025-01-01",
-      "doi": "10.1007/978-981-96-7249-3_24",
-      "citations": 0,
-      "eid": "2-s2.0-105021397751",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105021397751",
-      "abstract": {}
-    },
-    {
-      "title": "Optimizing Brain Tumor Classification with GridSearchCV using Multimodal Image Fusion: A Hyperparameter Tuning Approach",
-      "source": "Proceedings of 8th International Conference on Inventive Computation Technologies Icict 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICICT64420.2025.11004891",
-      "citations": 0,
-      "eid": "2-s2.0-105007419701",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007419701",
-      "abstract": {}
-    },
-    {
-      "title": "Leukemia Blood Cancer Detection using Mobile Net",
-      "source": "3rd International Conference on Intelligent Data Communication Technologies and Internet of Things Idciot 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/IDCIOT64235.2025.10914829",
-      "citations": 1,
-      "eid": "2-s2.0-105001666166",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105001666166",
-      "abstract": {}
-    },
-    {
-      "title": "Morlet Empowering Wavelet Decision Neural Network with Lotus Effect Optimization Algorithm based Classification of Skin Cancer",
-      "source": "Proceedings of the 9th International Conference on Electronics Communication and Aerospace Technology Iceca 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICECA66444.2025.11383508",
-      "citations": 0,
-      "eid": "2-s2.0-105034832426",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034832426",
-      "abstract": {}
-    },
-    {
       "title": "Effect of Cr3+ substitution on the structural and magnetic properties of Co0.5Cu0.25Mg0.25Fe2−xCrxO4 nano ferrites",
       "source": "Journal of Materials Science Materials in Electronics",
       "date": "2024-06-01",
@@ -112,6 +112,26 @@
       "citations": 44,
       "eid": "2-s2.0-85101785726",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85101785726",
+      "abstract": {}
+    },
+    {
+      "title": "Sandpiper Optimization Algorithm With Region Growing Based Robust Retinal Blood Vessel Segmentation Approach",
+      "source": "IEEE Access",
+      "date": "2024-01-01",
+      "doi": "10.1109/ACCESS.2024.3365273",
+      "citations": 8,
+      "eid": "2-s2.0-85186092788",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85186092788",
+      "abstract": {}
+    },
+    {
+      "title": "Fusion-based Digital Twin Framework with Convolutional Neural Networks (CNN) for Real-Time Threat Detection and Image Enhancement in Low-Light IoT Environments",
+      "source": "2nd IEEE International Conference on Integrated Intelligence and Communication Systems Iciics 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICIICS63763.2024.10859361",
+      "citations": 0,
+      "eid": "2-s2.0-85218180717",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85218180717",
       "abstract": {}
     },
     {
@@ -142,26 +162,6 @@
       "citations": 4,
       "eid": "2-s2.0-85191839945",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85191839945",
-      "abstract": {}
-    },
-    {
-      "title": "Sandpiper Optimization Algorithm With Region Growing Based Robust Retinal Blood Vessel Segmentation Approach",
-      "source": "IEEE Access",
-      "date": "2024-01-01",
-      "doi": "10.1109/ACCESS.2024.3365273",
-      "citations": 8,
-      "eid": "2-s2.0-85186092788",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85186092788",
-      "abstract": {}
-    },
-    {
-      "title": "Fusion-based Digital Twin Framework with Convolutional Neural Networks (CNN) for Real-Time Threat Detection and Image Enhancement in Low-Light IoT Environments",
-      "source": "2nd IEEE International Conference on Integrated Intelligence and Communication Systems Iciics 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICIICS63763.2024.10859361",
-      "citations": 0,
-      "eid": "2-s2.0-85218180717",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85218180717",
       "abstract": {}
     },
     {
@@ -225,16 +225,6 @@
       "abstract": {}
     },
     {
-      "title": "Deep Learning Enabled Object Detection and Tracking Model for Big Data Environment",
-      "source": "Computers Materials and Continua",
-      "date": "2022-01-01",
-      "doi": "10.32604/cmc.2022.028570",
-      "citations": 1,
-      "eid": "2-s2.0-85132113177",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85132113177",
-      "abstract": {}
-    },
-    {
       "title": "Design of Multimodal Fusion-Based Deep Learning Approach for COVID-19 Diagnosis Using Chest X-Ray Images",
       "source": "Intelligent Systems Reference Library",
       "date": "2022-01-01",
@@ -245,16 +235,6 @@
       "abstract": {}
     },
     {
-      "title": "AI based traffic flow prediction model for connected and autonomous electric vehicles",
-      "source": "Computers Materials and Continua",
-      "date": "2022-01-01",
-      "doi": "10.32604/cmc.2022.020197",
-      "citations": 15,
-      "eid": "2-s2.0-85115989379",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85115989379",
-      "abstract": {}
-    },
-    {
       "title": "Deep learning enabled predictive model for p2p energy trading in tem",
       "source": "Computers Materials and Continua",
       "date": "2022-01-01",
@@ -262,6 +242,26 @@
       "citations": 4,
       "eid": "2-s2.0-85118605691",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85118605691",
+      "abstract": {}
+    },
+    {
+      "title": "Deep Learning Enabled Object Detection and Tracking Model for Big Data Environment",
+      "source": "Computers Materials and Continua",
+      "date": "2022-01-01",
+      "doi": "10.32604/cmc.2022.028570",
+      "citations": 1,
+      "eid": "2-s2.0-85132113177",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85132113177",
+      "abstract": {}
+    },
+    {
+      "title": "AI based traffic flow prediction model for connected and autonomous electric vehicles",
+      "source": "Computers Materials and Continua",
+      "date": "2022-01-01",
+      "doi": "10.32604/cmc.2022.020197",
+      "citations": 15,
+      "eid": "2-s2.0-85115989379",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85115989379",
       "abstract": {}
     },
     {
@@ -295,13 +295,13 @@
       "abstract": {}
     },
     {
-      "title": "Automated Internet of Medical Things (IoMT) Based Healthcare Monitoring System",
-      "source": "Studies in Systems Decision and Control",
+      "title": "Multimodality medical image fusion based on non-sub-sampled contourlet transform",
+      "source": "International Journal of Computer Applications in Technology",
       "date": "2021-01-01",
-      "doi": "10.1007/978-3-030-55833-8_7",
-      "citations": 20,
-      "eid": "2-s2.0-85093857852",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85093857852",
+      "doi": "10.1504/IJCAT.2021.117279",
+      "citations": 4,
+      "eid": "2-s2.0-85114344853",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85114344853",
       "abstract": {}
     },
     {
@@ -315,23 +315,13 @@
       "abstract": {}
     },
     {
-      "title": "Multimodality medical image fusion based on non-sub-sampled contourlet transform",
-      "source": "International Journal of Computer Applications in Technology",
+      "title": "Automated Internet of Medical Things (IoMT) Based Healthcare Monitoring System",
+      "source": "Studies in Systems Decision and Control",
       "date": "2021-01-01",
-      "doi": "10.1504/IJCAT.2021.117279",
-      "citations": 4,
-      "eid": "2-s2.0-85114344853",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85114344853",
-      "abstract": {}
-    },
-    {
-      "title": "A novel approach in multimodality medical image fusion using optimal shearlet and deep learning",
-      "source": "International Journal of Imaging Systems and Technology",
-      "date": "2020-12-01",
-      "doi": "10.1002/ima.22436",
-      "citations": 39,
-      "eid": "2-s2.0-85084198108",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85084198108",
+      "doi": "10.1007/978-3-030-55833-8_7",
+      "citations": 20,
+      "eid": "2-s2.0-85093857852",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85093857852",
       "abstract": {}
     },
     {
@@ -342,6 +332,16 @@
       "citations": 45,
       "eid": "2-s2.0-85068834030",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85068834030",
+      "abstract": {}
+    },
+    {
+      "title": "A novel approach in multimodality medical image fusion using optimal shearlet and deep learning",
+      "source": "International Journal of Imaging Systems and Technology",
+      "date": "2020-12-01",
+      "doi": "10.1002/ima.22436",
+      "citations": 39,
+      "eid": "2-s2.0-85084198108",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85084198108",
       "abstract": {}
     },
     {

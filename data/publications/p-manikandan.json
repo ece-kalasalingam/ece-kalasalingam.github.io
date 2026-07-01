@@ -1,6 +1,16 @@
 {
   "publications": [
     {
+      "title": "Blockchain-Powered intrusion detection: a decentralized approach to cyber threat defense",
+      "source": "Ships and Offshore Structures",
+      "date": "2026-01-01",
+      "doi": "10.1080/17445302.2026.2681715",
+      "citations": 0,
+      "eid": "2-s2.0-105042242275",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105042242275",
+      "abstract": {}
+    },
+    {
       "title": "Respiratory Disease Diagnosis Reporting System Using CNN and LSTM Machine Learning Algorithms",
       "source": "2025 6th International Conference on Data Intelligence and Cognitive Informatics Icdici 2025",
       "date": "2025-01-01",

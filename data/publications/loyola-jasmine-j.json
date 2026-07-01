@@ -1,6 +1,46 @@
 {
   "publications": [
     {
+      "title": "Mobile Net for Animal Immobility - A Deep Learning Model to Protect Cultivated Agricultural Land",
+      "source": "Lecture Notes in Networks and Systems",
+      "date": "2026-01-01",
+      "doi": "10.1007/978-981-95-0681-1_6",
+      "citations": 0,
+      "eid": "2-s2.0-105024380482",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105024380482",
+      "abstract": {}
+    },
+    {
+      "title": "FOSSIL FUME OVERSIGHT: Tracking and Managing Harmful Emissions",
+      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICECMSN68058.2025.11382658",
+      "citations": 0,
+      "eid": "2-s2.0-105035532966",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035532966",
+      "abstract": {}
+    },
+    {
+      "title": "Deep Learning-Powered Phishing Email Detection for Cybersecurity Enhancement",
+      "source": "Proceedings of 2025 2nd International Conference on Cognitive Robotics and Intelligent Systems Icc Robins 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICC-ROBINS64345.2025.11086246",
+      "citations": 0,
+      "eid": "2-s2.0-105013461491",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105013461491",
+      "abstract": {}
+    },
+    {
+      "title": "A detailed review of the concepts, technologies, and industrial applications of Digital Twin",
+      "source": "A Study on Next Generation Materials and Devicesv",
+      "date": "2025-01-01",
+      "doi": "10.1201/9781003675259-11",
+      "citations": 0,
+      "eid": "2-s2.0-105021697190",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105021697190",
+      "abstract": {}
+    },
+    {
       "title": "",
       "source": "",
       "date": "",

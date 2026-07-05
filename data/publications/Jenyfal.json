@@ -1,13 +1,13 @@
 {
   "publications": [
     {
-      "title": "HEAL Lite: A Smart Wearable Tremor Monitoring and prediction System with AI and Hybrid Storage",
+      "title": "Design and Integration of Low Power Memory Subsytems in RISC-V cores",
       "source": "Icdcs 2026 2026 8th International Conference on Devices Circuits and Systems",
       "date": "2026-01-01",
-      "doi": "10.1109/ICDCS68853.2026.11511068",
+      "doi": "10.1109/ICDCS68853.2026.11511162",
       "citations": 0,
-      "eid": "2-s2.0-105041537846",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105041537846",
+      "eid": "2-s2.0-105041514170",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105041514170",
       "abstract": {}
     },
     {
@@ -21,13 +21,13 @@
       "abstract": {}
     },
     {
-      "title": "Design and Integration of Low Power Memory Subsytems in RISC-V cores",
+      "title": "HEAL Lite: A Smart Wearable Tremor Monitoring and prediction System with AI and Hybrid Storage",
       "source": "Icdcs 2026 2026 8th International Conference on Devices Circuits and Systems",
       "date": "2026-01-01",
-      "doi": "10.1109/ICDCS68853.2026.11511162",
+      "doi": "10.1109/ICDCS68853.2026.11511068",
       "citations": 0,
-      "eid": "2-s2.0-105041514170",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105041514170",
+      "eid": "2-s2.0-105041537846",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105041537846",
       "abstract": {}
     },
     {
@@ -41,16 +41,6 @@
       "abstract": {}
     },
     {
-      "title": "Enhanced Galactic Swarm Algorithm with Encryption Technique for Medical Image Security in Internet of Things environment",
-      "source": "Securing Next Generation Connected Healthcare Systems Artificial Intelligence Technologies",
-      "date": "2024-01-01",
-      "doi": "10.1016/B978-0-443-13951-2.00008-8",
-      "citations": 0,
-      "eid": "2-s2.0-85199021415",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85199021415",
-      "abstract": {}
-    },
-    {
       "title": "Design and Analysis of Silicon Photonic Waveguides and Optical Micro-Ring Resonator for Next-Generation Computing, Communication and Sensing",
       "source": "10th International Conference on Advanced Computing and Communication Systems Icaccs 2024",
       "date": "2024-01-01",
@@ -61,11 +51,21 @@
       "abstract": {}
     },
     {
+      "title": "Enhanced Galactic Swarm Algorithm with Encryption Technique for Medical Image Security in Internet of Things environment",
+      "source": "Securing Next Generation Connected Healthcare Systems Artificial Intelligence Technologies",
+      "date": "2024-01-01",
+      "doi": "10.1016/B978-0-443-13951-2.00008-8",
+      "citations": 0,
+      "eid": "2-s2.0-85199021415",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85199021415",
+      "abstract": {}
+    },
+    {
       "title": "A Polymer Sensor Integrated T-Shirt for Long-Term Monitoring Of Sleep Disordered Breathing",
       "source": "7th International Conference on Trends in Electronics and Informatics Icoei 2023 Proceedings",
       "date": "2023-05-24",
       "doi": "10.1109/ICOEI56765.2023.10125930",
-      "citations": 0,
+      "citations": 1,
       "eid": "2-s2.0-85161188451",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85161188451",
       "abstract": {}
@@ -91,16 +91,6 @@
       "abstract": {}
     },
     {
-      "title": "Smart Vehicle Locking System Using Pollution Sensor (Mq-07)",
-      "source": "2022 6th International Conference on Trends in Electronics and Informatics Icoei 2022 Proceedings",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICOEI53556.2022.9776911",
-      "citations": 1,
-      "eid": "2-s2.0-85131947059",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85131947059",
-      "abstract": {}
-    },
-    {
       "title": "Hybrid Deep Learning Enabled Air Pollution Monitoring in ITS Environment",
       "source": "Computers Materials and Continua",
       "date": "2022-01-01",
@@ -108,6 +98,16 @@
       "citations": 9,
       "eid": "2-s2.0-85125398690",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85125398690",
+      "abstract": {}
+    },
+    {
+      "title": "Smart Vehicle Locking System Using Pollution Sensor (Mq-07)",
+      "source": "2022 6th International Conference on Trends in Electronics and Informatics Icoei 2022 Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICOEI53556.2022.9776911",
+      "citations": 1,
+      "eid": "2-s2.0-85131947059",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85131947059",
       "abstract": {}
     },
     {
@@ -121,26 +121,6 @@
       "abstract": {}
     },
     {
-      "title": "Multimodality medical image fusion based on non-sub-sampled contourlet transform",
-      "source": "International Journal of Computer Applications in Technology",
-      "date": "2021-01-01",
-      "doi": "10.1504/IJCAT.2021.117279",
-      "citations": 4,
-      "eid": "2-s2.0-85114344853",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85114344853",
-      "abstract": {}
-    },
-    {
-      "title": "Hyperparameter Optimization of Deep Neural Network in Multimodality Fused Medical Image Classification for Medical and Industrial IoT",
-      "source": "Internet of Things",
-      "date": "2021-01-01",
-      "doi": "10.1007/978-3-030-52624-5_9",
-      "citations": 5,
-      "eid": "2-s2.0-85101156884",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85101156884",
-      "abstract": {}
-    },
-    {
       "title": "Automated Internet of Medical Things (IoMT) Based Healthcare Monitoring System",
       "source": "Studies in Systems Decision and Control",
       "date": "2021-01-01",
@@ -148,6 +128,26 @@
       "citations": 20,
       "eid": "2-s2.0-85093857852",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85093857852",
+      "abstract": {}
+    },
+    {
+      "title": "Hyperparameter Optimization of Deep Neural Network in Multimodality Fused Medical Image Classification for Medical and Industrial IoT",
+      "source": "Internet of Things",
+      "date": "2021-01-01",
+      "doi": "10.1007/978-3-030-52624-5_9",
+      "citations": 6,
+      "eid": "2-s2.0-85101156884",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85101156884",
+      "abstract": {}
+    },
+    {
+      "title": "Multimodality medical image fusion based on non-sub-sampled contourlet transform",
+      "source": "International Journal of Computer Applications in Technology",
+      "date": "2021-01-01",
+      "doi": "10.1504/IJCAT.2021.117279",
+      "citations": 4,
+      "eid": "2-s2.0-85114344853",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85114344853",
       "abstract": {}
     },
     {

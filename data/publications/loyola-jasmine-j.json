@@ -11,13 +11,13 @@
       "abstract": {}
     },
     {
-      "title": "FOSSIL FUME OVERSIGHT: Tracking and Managing Harmful Emissions",
-      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
+      "title": "A detailed review of the concepts, technologies, and industrial applications of Digital Twin",
+      "source": "A Study on Next Generation Materials and Devicesv",
       "date": "2025-01-01",
-      "doi": "10.1109/ICECMSN68058.2025.11382658",
+      "doi": "10.1201/9781003675259-11",
       "citations": 0,
-      "eid": "2-s2.0-105035532966",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035532966",
+      "eid": "2-s2.0-105021697190",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105021697190",
       "abstract": {}
     },
     {
@@ -31,23 +31,53 @@
       "abstract": {}
     },
     {
-      "title": "A detailed review of the concepts, technologies, and industrial applications of Digital Twin",
-      "source": "A Study on Next Generation Materials and Devicesv",
+      "title": "FOSSIL FUME OVERSIGHT: Tracking and Managing Harmful Emissions",
+      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
       "date": "2025-01-01",
-      "doi": "10.1201/9781003675259-11",
+      "doi": "10.1109/ICECMSN68058.2025.11382658",
       "citations": 0,
-      "eid": "2-s2.0-105021697190",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105021697190",
+      "eid": "2-s2.0-105035532966",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035532966",
       "abstract": {}
     },
     {
-      "title": "",
-      "source": "",
-      "date": "",
+      "title": "Real-Time Sign Language and Audio Conversion Using AI",
+      "source": "3rd International Conference on Communication Control and Intelligent Systems Ccis 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/CCIS63231.2024.10931891",
+      "citations": 4,
+      "eid": "2-s2.0-105002271831",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105002271831",
+      "abstract": {}
+    },
+    {
+      "title": "Smart Services in Health Industry",
+      "source": "15th International Conference on Advances in Computing Control and Telecommunication Technologies Act 2024",
+      "date": "2024-01-01",
       "doi": "",
       "citations": 0,
-      "eid": "",
-      "link": "",
+      "eid": "2-s2.0-85209134127",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85209134127",
+      "abstract": {}
+    },
+    {
+      "title": "DBN with a Developed Version of Thermal Exchange Optimization (TEO) Model for Skin Cancer Detection and Classification",
+      "source": "Proceedings of the 2022 International Conference on Innovative Computing Intelligent Communication and Smart Electrical Systems Icses 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICSES55317.2022.9914009",
+      "citations": 5,
+      "eid": "2-s2.0-85141446622",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85141446622",
+      "abstract": {}
+    },
+    {
+      "title": "Signal Quality Evaluation and Processing for QRS Detection in ECG based Smart Healthcare Systems",
+      "source": "IEEE International Conference on Knowledge Engineering and Communication Systems Ickes 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICKECS56523.2022.10060422",
+      "citations": 1,
+      "eid": "2-s2.0-85150684321",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85150684321",
       "abstract": {}
     }
   ]

@@ -41,6 +41,16 @@
       "abstract": {}
     },
     {
+      "title": "Decision Support System for Crop Planning and Agricultural Health using Machine and Deep Learning Methods",
+      "source": "Proceedings 4th International Conference on Smart Technologies Communication and Robotics 2025 Stcr 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/STCR62650.2025.11019984",
+      "citations": 0,
+      "eid": "2-s2.0-105008424727",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105008424727",
+      "abstract": {}
+    },
+    {
       "title": "Cloud Based Proficient Cardiovascular Disease Prediction Using Hybrid Machine Learning Models",
       "source": "2025 5th International Conference on Advances in Electrical Computing Communication and Sustainable Technologies Icaect 2025",
       "date": "2025-01-01",
@@ -61,16 +71,6 @@
       "abstract": {}
     },
     {
-      "title": "Decision Support System for Crop Planning and Agricultural Health using Machine and Deep Learning Methods",
-      "source": "Proceedings 4th International Conference on Smart Technologies Communication and Robotics 2025 Stcr 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/STCR62650.2025.11019984",
-      "citations": 0,
-      "eid": "2-s2.0-105008424727",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105008424727",
-      "abstract": {}
-    },
-    {
       "title": "Modeling and realization of photonic biosensor for hazardous virus detection using ML approach",
       "source": "Journal of Optics India",
       "date": "2024-11-01",
@@ -78,26 +78,6 @@
       "citations": 6,
       "eid": "2-s2.0-85184180286",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85184180286",
-      "abstract": {}
-    },
-    {
-      "title": "A SYSTEMATIC REVIEW FOR THE CLASSIFICATION AND SEGMENTATION OF DIABETIC RETINOPATHY LESION FROM FUNDUS",
-      "source": "Artificial Intelligence and Machine Learning Techniques in Image Processing and Computer Vision",
-      "date": "2024-01-01",
-      "doi": "",
-      "citations": 0,
-      "eid": "2-s2.0-105000572762",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105000572762",
-      "abstract": {}
-    },
-    {
-      "title": "Design and Development of Serial Driver Verification and Test Module using Universal Verification Methodology",
-      "source": "Proceedings 2024 4th International Conference on Pervasive Computing and Social Networking Icpcsn 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICPCSN62568.2024.00126",
-      "citations": 0,
-      "eid": "2-s2.0-85201685837",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85201685837",
       "abstract": {}
     },
     {
@@ -111,16 +91,6 @@
       "abstract": {}
     },
     {
-      "title": "Proctored Secure Face Lock System",
-      "source": "Industrial Control Systems",
-      "date": "2024-01-01",
-      "doi": "10.1002/9781119829430.ch4",
-      "citations": 0,
-      "eid": "2-s2.0-85194770797",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85194770797",
-      "abstract": {}
-    },
-    {
       "title": "Smart IoT Medication Companion",
       "source": "2024 3rd International Conference on Smart Technologies and Systems for Next Generation Computing Icstsn 2024",
       "date": "2024-01-01",
@@ -131,13 +101,13 @@
       "abstract": {}
     },
     {
-      "title": "Electromyography Controlled Smart Prosthetic Arm",
-      "source": "2024 IEEE International Conference on Intelligent Techniques in Control Optimization and Signal Processing Incos 2024 Proceedings",
+      "title": "Proctored Secure Face Lock System",
+      "source": "Industrial Control Systems",
       "date": "2024-01-01",
-      "doi": "10.1109/INCOS59338.2024.10527527",
-      "citations": 8,
-      "eid": "2-s2.0-85194034082",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85194034082",
+      "doi": "10.1002/9781119829430.ch4",
+      "citations": 0,
+      "eid": "2-s2.0-85194770797",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85194770797",
       "abstract": {}
     },
     {
@@ -151,6 +121,26 @@
       "abstract": {}
     },
     {
+      "title": "IoT Enabled Diabetic Health Surveillance",
+      "source": "3rd International Conference on Automation Computing and Renewable Systems Icacrs 2024 Proceedings",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICACRS62842.2024.10841749",
+      "citations": 1,
+      "eid": "2-s2.0-85217397860",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85217397860",
+      "abstract": {}
+    },
+    {
+      "title": "Electromyography Controlled Smart Prosthetic Arm",
+      "source": "2024 IEEE International Conference on Intelligent Techniques in Control Optimization and Signal Processing Incos 2024 Proceedings",
+      "date": "2024-01-01",
+      "doi": "10.1109/INCOS59338.2024.10527527",
+      "citations": 8,
+      "eid": "2-s2.0-85194034082",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85194034082",
+      "abstract": {}
+    },
+    {
       "title": "Development of an IoT Based Sugar Tracker Diabetic Monitoring System",
       "source": "Proceedings of 5th International Conference on Iot Based Control Networks and Intelligent Systems Icicnis 2024",
       "date": "2024-01-01",
@@ -158,6 +148,16 @@
       "citations": 1,
       "eid": "2-s2.0-85217177887",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85217177887",
+      "abstract": {}
+    },
+    {
+      "title": "Design and Development of Serial Driver Verification and Test Module using Universal Verification Methodology",
+      "source": "Proceedings 2024 4th International Conference on Pervasive Computing and Social Networking Icpcsn 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICPCSN62568.2024.00126",
+      "citations": 0,
+      "eid": "2-s2.0-85201685837",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85201685837",
       "abstract": {}
     },
     {
@@ -171,13 +171,13 @@
       "abstract": {}
     },
     {
-      "title": "IoT Enabled Diabetic Health Surveillance",
-      "source": "3rd International Conference on Automation Computing and Renewable Systems Icacrs 2024 Proceedings",
+      "title": "A SYSTEMATIC REVIEW FOR THE CLASSIFICATION AND SEGMENTATION OF DIABETIC RETINOPATHY LESION FROM FUNDUS",
+      "source": "Artificial Intelligence and Machine Learning Techniques in Image Processing and Computer Vision",
       "date": "2024-01-01",
-      "doi": "10.1109/ICACRS62842.2024.10841749",
-      "citations": 1,
-      "eid": "2-s2.0-85217397860",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85217397860",
+      "doi": "",
+      "citations": 0,
+      "eid": "2-s2.0-105000572762",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105000572762",
       "abstract": {}
     },
     {
@@ -201,13 +201,13 @@
       "abstract": {}
     },
     {
-      "title": "Enhancing Textile Quality Assurance with TensorFlow: Detecting Fabric Anomalies",
-      "source": "Proceedings of the 2nd International Conference on Applied Artificial Intelligence and Computing Icaaic 2023",
+      "title": "Residential Home Surveillance System",
+      "source": "2023 World Conference on Communication and Computing Wconf 2023",
       "date": "2023-01-01",
-      "doi": "10.1109/ICAAIC56838.2023.10141312",
-      "citations": 3,
-      "eid": "2-s2.0-85163663264",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163663264",
+      "doi": "10.1109/WCONF58270.2023.10234836",
+      "citations": 0,
+      "eid": "2-s2.0-85173003166",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85173003166",
       "abstract": {}
     },
     {
@@ -221,6 +221,16 @@
       "abstract": {}
     },
     {
+      "title": "Printed rGO-Based Temperature Sensor for Wireless Body Area Network Applications",
+      "source": "Nature Inspired Methods for Smart Healthcare Systems and Medical Data",
+      "date": "2023-01-01",
+      "doi": "10.1007/978-3-031-45952-8_10",
+      "citations": 0,
+      "eid": "2-s2.0-85196250087",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85196250087",
+      "abstract": {}
+    },
+    {
       "title": "Performance Analysis of Ischemic Stroke Lesion Segmentation in Brain MR Images using Histogram based Filter Enhanced FCM",
       "source": "Proceedings 5th International Conference on Smart Systems and Inventive Technology Icssit 2023",
       "date": "2023-01-01",
@@ -231,43 +241,13 @@
       "abstract": {}
     },
     {
-      "title": "Residential Home Surveillance System",
-      "source": "2023 World Conference on Communication and Computing Wconf 2023",
+      "title": "Enhancing Textile Quality Assurance with TensorFlow: Detecting Fabric Anomalies",
+      "source": "Proceedings of the 2nd International Conference on Applied Artificial Intelligence and Computing Icaaic 2023",
       "date": "2023-01-01",
-      "doi": "10.1109/WCONF58270.2023.10234836",
-      "citations": 0,
-      "eid": "2-s2.0-85173003166",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85173003166",
-      "abstract": {}
-    },
-    {
-      "title": "A Review on Ongoing Medical Care Observing Framework for Cardiovascular Patients Utilizing IoT",
-      "source": "Proceedings 7th International Conference on Computing Methodologies and Communication Iccmc 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICCMC56507.2023.10084082",
-      "citations": 5,
-      "eid": "2-s2.0-85153564166",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153564166",
-      "abstract": {}
-    },
-    {
-      "title": "Air Cushion Restraint and Extended Safety System with Sensor and Control Module",
-      "source": "2023 2nd International Conference on Smart Technologies and Systems for Next Generation Computing Icstsn 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICSTSN57873.2023.10151617",
-      "citations": 0,
-      "eid": "2-s2.0-85164265976",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85164265976",
-      "abstract": {}
-    },
-    {
-      "title": "An Efficient IoT Device for Chronic Kidney Disease affected Patient Data Collection",
-      "source": "2023 International Conference on Energy Materials and Communication Engineering Icemce 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICEMCE57940.2023.10434095",
-      "citations": 1,
-      "eid": "2-s2.0-85186770778",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85186770778",
+      "doi": "10.1109/ICAAIC56838.2023.10141312",
+      "citations": 3,
+      "eid": "2-s2.0-85163663264",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163663264",
       "abstract": {}
     },
     {
@@ -281,13 +261,33 @@
       "abstract": {}
     },
     {
-      "title": "Printed rGO-Based Temperature Sensor for Wireless Body Area Network Applications",
-      "source": "Nature Inspired Methods for Smart Healthcare Systems and Medical Data",
+      "title": "An Efficient IoT Device for Chronic Kidney Disease affected Patient Data Collection",
+      "source": "2023 International Conference on Energy Materials and Communication Engineering Icemce 2023",
       "date": "2023-01-01",
-      "doi": "10.1007/978-3-031-45952-8_10",
+      "doi": "10.1109/ICEMCE57940.2023.10434095",
+      "citations": 1,
+      "eid": "2-s2.0-85186770778",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85186770778",
+      "abstract": {}
+    },
+    {
+      "title": "Air Cushion Restraint and Extended Safety System with Sensor and Control Module",
+      "source": "2023 2nd International Conference on Smart Technologies and Systems for Next Generation Computing Icstsn 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICSTSN57873.2023.10151617",
       "citations": 0,
-      "eid": "2-s2.0-85196250087",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85196250087",
+      "eid": "2-s2.0-85164265976",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85164265976",
+      "abstract": {}
+    },
+    {
+      "title": "A Review on Ongoing Medical Care Observing Framework for Cardiovascular Patients Utilizing IoT",
+      "source": "Proceedings 7th International Conference on Computing Methodologies and Communication Iccmc 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICCMC56507.2023.10084082",
+      "citations": 5,
+      "eid": "2-s2.0-85153564166",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153564166",
       "abstract": {}
     },
     {
@@ -321,13 +321,33 @@
       "abstract": {}
     },
     {
-      "title": "A Survey on Design Parameters of Antenna in Terahertz Wireless Body Area Networks",
-      "source": "2022 International Conference on Advanced Computing Technologies and Applications Icacta 2022",
+      "title": "Prototype Implementation of Neural Networks based Agricultural Farm Monitoring and Rain Prediction",
+      "source": "1st IEEE International Conference on Smart Technologies and Systems for Next Generation Computing Icstsn 2022",
       "date": "2022-01-01",
-      "doi": "10.1109/ICACTA54488.2022.9753091",
-      "citations": 5,
-      "eid": "2-s2.0-85129190778",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85129190778",
+      "doi": "10.1109/ICSTSN53084.2022.9761333",
+      "citations": 9,
+      "eid": "2-s2.0-85130016890",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85130016890",
+      "abstract": {}
+    },
+    {
+      "title": "Osteomyelitis Patients Monitoring System Using IoT",
+      "source": "2022 International Conference on Advances in Computing Communication and Materials Icaccm 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICACCM56405.2022.10009536",
+      "citations": 0,
+      "eid": "2-s2.0-85146885802",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85146885802",
+      "abstract": {}
+    },
+    {
+      "title": "IoT Based Diabetic Retinopathy Monitoring System",
+      "source": "Proceedings of 2022 IEEE International Conference of Electron Devices Society Kolkata Chapter Edkcon 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/EDKCON56221.2022.10032854",
+      "citations": 1,
+      "eid": "2-s2.0-85148685711",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148685711",
       "abstract": {}
     },
     {
@@ -351,36 +371,6 @@
       "abstract": {}
     },
     {
-      "title": "Prototype Implementation of Neural Networks based Agricultural Farm Monitoring and Rain Prediction",
-      "source": "1st IEEE International Conference on Smart Technologies and Systems for Next Generation Computing Icstsn 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICSTSN53084.2022.9761333",
-      "citations": 9,
-      "eid": "2-s2.0-85130016890",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85130016890",
-      "abstract": {}
-    },
-    {
-      "title": "IoT Based Diabetic Retinopathy Monitoring System",
-      "source": "Proceedings of 2022 IEEE International Conference of Electron Devices Society Kolkata Chapter Edkcon 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/EDKCON56221.2022.10032854",
-      "citations": 1,
-      "eid": "2-s2.0-85148685711",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148685711",
-      "abstract": {}
-    },
-    {
-      "title": "Osteomyelitis Patients Monitoring System Using IoT",
-      "source": "2022 International Conference on Advances in Computing Communication and Materials Icaccm 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICACCM56405.2022.10009536",
-      "citations": 0,
-      "eid": "2-s2.0-85146885802",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85146885802",
-      "abstract": {}
-    },
-    {
       "title": "Design and Simulation of a Slotted Inset Feed Patch Antenna for Wireless Body Area Network Applications",
       "source": "IEEE International Conference on Knowledge Engineering and Communication Systems Ickes 2022",
       "date": "2022-01-01",
@@ -398,6 +388,16 @@
       "citations": 11,
       "eid": "2-s2.0-85149576292",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85149576292",
+      "abstract": {}
+    },
+    {
+      "title": "A Survey on Design Parameters of Antenna in Terahertz Wireless Body Area Networks",
+      "source": "2022 International Conference on Advanced Computing Technologies and Applications Icacta 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICACTA54488.2022.9753091",
+      "citations": 5,
+      "eid": "2-s2.0-85129190778",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85129190778",
       "abstract": {}
     },
     {
@@ -451,16 +451,6 @@
       "abstract": {}
     },
     {
-      "title": "Retinal Blood Vessels Segmentation of Diabetic Retinopathy",
-      "source": "2021 IEEE International Conference on Mobile Networks and Wireless Communications Icmnwc 2021",
-      "date": "2021-01-01",
-      "doi": "10.1109/ICMNWC52512.2021.9688408",
-      "citations": 4,
-      "eid": "2-s2.0-85125718694",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85125718694",
-      "abstract": {}
-    },
-    {
       "title": "The significant contextual predictors of industrial academic collaboration in engineering",
       "source": "Journal of Engineering Education Transformations",
       "date": "2021-01-01",
@@ -468,6 +458,16 @@
       "citations": 3,
       "eid": "2-s2.0-85099856773",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85099856773",
+      "abstract": {}
+    },
+    {
+      "title": "Retinal Blood Vessels Segmentation of Diabetic Retinopathy",
+      "source": "2021 IEEE International Conference on Mobile Networks and Wireless Communications Icmnwc 2021",
+      "date": "2021-01-01",
+      "doi": "10.1109/ICMNWC52512.2021.9688408",
+      "citations": 4,
+      "eid": "2-s2.0-85125718694",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85125718694",
       "abstract": {}
     },
     {
@@ -481,16 +481,6 @@
       "abstract": {}
     },
     {
-      "title": "Smart automated pesticide spraying bot",
-      "source": "Proceedings of the 3rd International Conference on Intelligent Sustainable Systems Iciss 2020",
-      "date": "2020-12-03",
-      "doi": "10.1109/ICISS49785.2020.9316063",
-      "citations": 14,
-      "eid": "2-s2.0-85100742820",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85100742820",
-      "abstract": {}
-    },
-    {
       "title": "Source production for free energy generation",
       "source": "Proceedings of the 3rd International Conference on Intelligent Sustainable Systems Iciss 2020",
       "date": "2020-12-03",
@@ -498,6 +488,16 @@
       "citations": 2,
       "eid": "2-s2.0-85100716622",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85100716622",
+      "abstract": {}
+    },
+    {
+      "title": "Smart automated pesticide spraying bot",
+      "source": "Proceedings of the 3rd International Conference on Intelligent Sustainable Systems Iciss 2020",
+      "date": "2020-12-03",
+      "doi": "10.1109/ICISS49785.2020.9316063",
+      "citations": 14,
+      "eid": "2-s2.0-85100742820",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85100742820",
       "abstract": {}
     },
     {
@@ -511,16 +511,6 @@
       "abstract": {}
     },
     {
-      "title": "Ear recognition system using adaptive approach Runge-Kutta (AARK) threshold segmentation with cart classifier",
-      "source": "Multimedia Tools and Applications",
-      "date": "2020-04-01",
-      "doi": "10.1007/s11042-019-7418-6",
-      "citations": 8,
-      "eid": "2-s2.0-85063203465",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85063203465",
-      "abstract": {}
-    },
-    {
       "title": "Safe biometrics system integrated with srmed security",
       "source": "Journal of Green Engineering",
       "date": "2020-04-01",
@@ -528,6 +518,16 @@
       "citations": 0,
       "eid": "2-s2.0-85086990628",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85086990628",
+      "abstract": {}
+    },
+    {
+      "title": "Ear recognition system using adaptive approach Runge-Kutta (AARK) threshold segmentation with cart classifier",
+      "source": "Multimedia Tools and Applications",
+      "date": "2020-04-01",
+      "doi": "10.1007/s11042-019-7418-6",
+      "citations": 8,
+      "eid": "2-s2.0-85063203465",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85063203465",
       "abstract": {}
     },
     {

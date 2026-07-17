@@ -21,8 +21,18 @@
       "abstract": {
         "text": "Lung cancer is a main reason of death globally, and reducing death rates and enhancing treatment results depend heavily on quick identification. However, medical image diagnosis, including Computed Tomography (CT) scans, is difficult and demands a high level of experience. This research proposes a comprehensive and interpretable Computer-Aided Diagnosis (CAD) structure to identify lung cancer from medical images. The workflow initiates with an Adaptive Savitzky-Golay Filter, effectively enhancing image quality by smoothing while preserving critical structural edges. Hierarchical Adaptive Cluster Refinement (HACR) is then used for precise segmentation, adaptively identifying abnormal lung regions with high accuracy. For feature extraction, the proposed system utilizes the Deep Statistical Gray-Level Co-occurrence Matrix (DS-GLCM) approach, which captures deep spatial and statistical texture features essential for distinguishing cancerous tissue. At last stage, classification is performed using a novel Deep Learning (DL) model Crested Porcupine Optimized (CPO) Channel-Attention (CA) InceptionResNet. The CPO algorithm is exploited to tune the CA- InceptionResNet model's hyperparameters. To ensure transparency and reliability in clinical use, Explainable AI (XAI) technique- Local Interpretable Model-Agnostic Explanations (LIME) is used for visual interpretability, highlighting regions in CT images that contribute the most to model forecasts, thus boosting clinician trust and decision-making. The entire framework is implemented in Python, and experimental results on benchmark lung cancer imaging datasets demonstrate its superior performance in terms of performance metrics with an accuracy of 98.18% with sensitivity of 95.94 % and specificity of 99.10%. The combination of advanced DL and explainable AI makes the proposed framework a promising solution for lung cancer diagnosis.",
         "source": "crossref",
-        "fetched_at": "2026-07-15T04:56:29+00:00"
+        "fetched_at": "2026-07-17T05:18:37+00:00"
       }
+    },
+    {
+      "title": "Smart Surveillance System for Traffic Rule Enforcement",
+      "source": "International Conference on AI Driven Innovations and Applications IC Aida 2026 Conference Proceedings",
+      "date": "2026-01-01",
+      "doi": "10.1109/IC-AIDA68291.2026.11564176",
+      "citations": 0,
+      "eid": "2-s2.0-105044304594",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105044304594",
+      "abstract": {}
     },
     {
       "title": "Real-Time on-Site Grid Fault Detection and Automated Load Management Using Arduino with GSM Alert for Voltage and Frequency Thershold Monitoring",
@@ -45,6 +55,16 @@
       "abstract": {}
     },
     {
+      "title": "Design and Performance Evaluation of a Hybrid Reversible Logic and CMOS based 32-Bit Arithmetic Logic Unit for Low-Power Biomedical Applications",
+      "source": "7th International Conference on Inventive Research in Computing Applications Icirca 2026 Proceedings",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICIRCA69024.2026.11570303",
+      "citations": 0,
+      "eid": "2-s2.0-105044196330",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105044196330",
+      "abstract": {}
+    },
+    {
       "title": "Design and Development of an Accessible and Transparent Web Application Tool for Early-Stage Diabetes Prediction in Women",
       "source": "Proceedings 2026 International Conference on Innovations in Computational Intelligence Icici 2026",
       "date": "2026-01-01",
@@ -52,6 +72,16 @@
       "citations": 0,
       "eid": "2-s2.0-105043679807",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105043679807",
+      "abstract": {}
+    },
+    {
+      "title": "An Adaptive Radiomics-Guided Spatial Clustering Framework for Lung Tumor Segmentation from CT Images",
+      "source": "7th International Conference on Inventive Research in Computing Applications Icirca 2026 Proceedings",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICIRCA69024.2026.11570554",
+      "citations": 0,
+      "eid": "2-s2.0-105044254026",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105044254026",
       "abstract": {}
     },
     {

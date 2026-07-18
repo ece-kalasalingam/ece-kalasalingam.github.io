@@ -21,7 +21,7 @@
       "abstract": {
         "text": "Lung cancer is a main reason of death globally, and reducing death rates and enhancing treatment results depend heavily on quick identification. However, medical image diagnosis, including Computed Tomography (CT) scans, is difficult and demands a high level of experience. This research proposes a comprehensive and interpretable Computer-Aided Diagnosis (CAD) structure to identify lung cancer from medical images. The workflow initiates with an Adaptive Savitzky-Golay Filter, effectively enhancing image quality by smoothing while preserving critical structural edges. Hierarchical Adaptive Cluster Refinement (HACR) is then used for precise segmentation, adaptively identifying abnormal lung regions with high accuracy. For feature extraction, the proposed system utilizes the Deep Statistical Gray-Level Co-occurrence Matrix (DS-GLCM) approach, which captures deep spatial and statistical texture features essential for distinguishing cancerous tissue. At last stage, classification is performed using a novel Deep Learning (DL) model Crested Porcupine Optimized (CPO) Channel-Attention (CA) InceptionResNet. The CPO algorithm is exploited to tune the CA- InceptionResNet model's hyperparameters. To ensure transparency and reliability in clinical use, Explainable AI (XAI) technique- Local Interpretable Model-Agnostic Explanations (LIME) is used for visual interpretability, highlighting regions in CT images that contribute the most to model forecasts, thus boosting clinician trust and decision-making. The entire framework is implemented in Python, and experimental results on benchmark lung cancer imaging datasets demonstrate its superior performance in terms of performance metrics with an accuracy of 98.18% with sensitivity of 95.94 % and specificity of 99.10%. The combination of advanced DL and explainable AI makes the proposed framework a promising solution for lung cancer diagnosis.",
         "source": "crossref",
-        "fetched_at": "2026-07-17T05:18:37+00:00"
+        "fetched_at": "2026-07-18T04:53:20+00:00"
       }
     },
     {
@@ -232,6 +232,16 @@
       "citations": 1,
       "eid": "2-s2.0-105002677814",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105002677814",
+      "abstract": {}
+    },
+    {
+      "title": "Bias and Mitigation in Large Language Models: Addressing Inequalities and Promoting Ethical AI Development",
+      "source": "2025 Asian Conference on Communication and Networks Asiancomnet 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ASIANComNet68615.2025.11579569",
+      "citations": 0,
+      "eid": "2-s2.0-105044454190",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105044454190",
       "abstract": {}
     },
     {

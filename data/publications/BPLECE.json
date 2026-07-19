@@ -1,16 +1,6 @@
 {
   "publications": [
     {
-      "title": "Reconfigurable Microstrip Antenna Design Using Geometric Slot Techniques",
-      "source": "Proceedings of 5th International Conference on Communication Computing and Electronics Systems Iccces 2026",
-      "date": "2026-01-01",
-      "doi": "10.1109/ICCCES62661.2026.11436251",
-      "citations": 0,
-      "eid": "2-s2.0-105037430828",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105037430828",
-      "abstract": {}
-    },
-    {
       "title": "JEEVA RAKSHAKA 1.0-AI-Driven Vision-Based Drowsiness Detection System for Driver Safety and Accident Prevention",
       "source": "Lecture Notes in Networks and Systems",
       "date": "2026-01-01",
@@ -18,6 +8,16 @@
       "citations": 0,
       "eid": "2-s2.0-105039268496",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105039268496",
+      "abstract": {}
+    },
+    {
+      "title": "Reconfigurable Microstrip Antenna Design Using Geometric Slot Techniques",
+      "source": "Proceedings of 5th International Conference on Communication Computing and Electronics Systems Iccces 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICCCES62661.2026.11436251",
+      "citations": 0,
+      "eid": "2-s2.0-105037430828",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105037430828",
       "abstract": {}
     },
     {
@@ -31,33 +31,13 @@
       "abstract": {}
     },
     {
-      "title": "Reduction of noise in multimodal brain images using adaptive filtering techniques",
+      "title": "Development of plant health monitoring device",
       "source": "A Study on Next Generation Materials and Devicesv",
       "date": "2025-01-01",
-      "doi": "10.1201/9781003675259-53",
+      "doi": "10.1201/9781003675259-1",
       "citations": 0,
-      "eid": "2-s2.0-105021738758",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105021738758",
-      "abstract": {}
-    },
-    {
-      "title": "Moringa oliefera plant leaf diseases detection using deep learning techniques",
-      "source": "International Conference on Computational Robotics Testing and Engineering Evaluation Iccrtee 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICCRTEE64519.2025.11053086",
-      "citations": 0,
-      "eid": "2-s2.0-105012163080",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105012163080",
-      "abstract": {}
-    },
-    {
-      "title": "Invoice Generation Using Speech Processing",
-      "source": "Proceedings of IEEE International Conference on Emerging Engineering Technologies and Applications IC Eeta 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/IC-EETA66496.2025.11548080",
-      "citations": 0,
-      "eid": "2-s2.0-105042644838",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105042644838",
+      "eid": "2-s2.0-105021736677",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105021736677",
       "abstract": {}
     },
     {
@@ -71,26 +51,6 @@
       "abstract": {}
     },
     {
-      "title": "Green Cycle : A Sustainable Delivery Platform for Connecting Consumers with Fresh Greens and Incentivizing Composting through Discounted Services",
-      "source": "International Conference on Computational Robotics Testing and Engineering Evaluation Iccrtee 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICCRTEE64519.2025.11053087",
-      "citations": 0,
-      "eid": "2-s2.0-105012171042",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105012171042",
-      "abstract": {}
-    },
-    {
-      "title": "Development of plant health monitoring device",
-      "source": "A Study on Next Generation Materials and Devicesv",
-      "date": "2025-01-01",
-      "doi": "10.1201/9781003675259-1",
-      "citations": 0,
-      "eid": "2-s2.0-105021736677",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105021736677",
-      "abstract": {}
-    },
-    {
       "title": "A Real-Time AI-Powered Security System with Enhanced Security Monitoring",
       "source": "2025 International Conference on Emerging Technologies in Engineering Applications Icetea 2025 Proceedings",
       "date": "2025-01-01",
@@ -98,6 +58,46 @@
       "citations": 0,
       "eid": "2-s2.0-105015625033",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105015625033",
+      "abstract": {}
+    },
+    {
+      "title": "Moringa oliefera plant leaf diseases detection using deep learning techniques",
+      "source": "International Conference on Computational Robotics Testing and Engineering Evaluation Iccrtee 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICCRTEE64519.2025.11053086",
+      "citations": 0,
+      "eid": "2-s2.0-105012163080",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105012163080",
+      "abstract": {}
+    },
+    {
+      "title": "Reduction of noise in multimodal brain images using adaptive filtering techniques",
+      "source": "A Study on Next Generation Materials and Devicesv",
+      "date": "2025-01-01",
+      "doi": "10.1201/9781003675259-53",
+      "citations": 0,
+      "eid": "2-s2.0-105021738758",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105021738758",
+      "abstract": {}
+    },
+    {
+      "title": "Invoice Generation Using Speech Processing",
+      "source": "Proceedings of IEEE International Conference on Emerging Engineering Technologies and Applications IC Eeta 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/IC-EETA66496.2025.11548080",
+      "citations": 0,
+      "eid": "2-s2.0-105042644838",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105042644838",
+      "abstract": {}
+    },
+    {
+      "title": "Green Cycle : A Sustainable Delivery Platform for Connecting Consumers with Fresh Greens and Incentivizing Composting through Discounted Services",
+      "source": "International Conference on Computational Robotics Testing and Engineering Evaluation Iccrtee 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICCRTEE64519.2025.11053087",
+      "citations": 0,
+      "eid": "2-s2.0-105012171042",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105012171042",
       "abstract": {}
     },
     {
@@ -121,13 +121,13 @@
       "abstract": {}
     },
     {
-      "title": "Smart Aquaponics Oversight: IoT Sensors and Mobile App Empowered Monitoring",
-      "source": "2nd International Conference on Emerging Trends in Information Technology and Engineering Ic Etite 2024",
+      "title": "Enhanced Blood Group Prediction with Fingerprint Images using Deep Learning",
+      "source": "3rd International Conference on Automation Computing and Renewable Systems Icacrs 2024 Proceedings",
       "date": "2024-01-01",
-      "doi": "10.1109/ic-ETITE58242.2024.10493576",
-      "citations": 1,
-      "eid": "2-s2.0-85192532990",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85192532990",
+      "doi": "10.1109/ICACRS62842.2024.10841725",
+      "citations": 18,
+      "eid": "2-s2.0-85217422158",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85217422158",
       "abstract": {}
     },
     {
@@ -141,26 +141,6 @@
       "abstract": {}
     },
     {
-      "title": "Guardian X: Smart Copilot for Real-time Automobile accidents detection",
-      "source": "Proceedings 2024 5th International Conference on Image Processing and Capsule Networks Icipcn 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICIPCN63822.2024.00105",
-      "citations": 1,
-      "eid": "2-s2.0-85204772693",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85204772693",
-      "abstract": {}
-    },
-    {
-      "title": "Enhanced Blood Group Prediction with Fingerprint Images using Deep Learning",
-      "source": "3rd International Conference on Automation Computing and Renewable Systems Icacrs 2024 Proceedings",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICACRS62842.2024.10841725",
-      "citations": 18,
-      "eid": "2-s2.0-85217422158",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85217422158",
-      "abstract": {}
-    },
-    {
       "title": "Efficient Feature Extraction and Segmentation Methods Used in Tuberculosis Detection",
       "source": "2024 International Conference on Emerging Smart Computing and Informatics Esci 2024",
       "date": "2024-01-01",
@@ -168,6 +148,16 @@
       "citations": 0,
       "eid": "2-s2.0-85191686722",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85191686722",
+      "abstract": {}
+    },
+    {
+      "title": "Guardian X: Smart Copilot for Real-time Automobile accidents detection",
+      "source": "Proceedings 2024 5th International Conference on Image Processing and Capsule Networks Icipcn 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICIPCN63822.2024.00105",
+      "citations": 1,
+      "eid": "2-s2.0-85204772693",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85204772693",
       "abstract": {}
     },
     {
@@ -181,6 +171,16 @@
       "abstract": {}
     },
     {
+      "title": "Smart Aquaponics Oversight: IoT Sensors and Mobile App Empowered Monitoring",
+      "source": "2nd International Conference on Emerging Trends in Information Technology and Engineering Ic Etite 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ic-ETITE58242.2024.10493576",
+      "citations": 1,
+      "eid": "2-s2.0-85192532990",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85192532990",
+      "abstract": {}
+    },
+    {
       "title": "Intelligent Airflow of Nebulizer using IoT-Based circuit Integration for Smart Healthcare Management",
       "source": "Aip Conference Proceedings",
       "date": "2023-12-11",
@@ -188,66 +188,6 @@
       "citations": 1,
       "eid": "2-s2.0-85180304192",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85180304192",
-      "abstract": {}
-    },
-    {
-      "title": "Vehicle Controlling System for Traffic Law Enforcement using Internet of Things",
-      "source": "Proceedings of the 2023 2nd International Conference on Augmented Intelligence and Sustainable Systems Icaiss 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICAISS58487.2023.10250674",
-      "citations": 8,
-      "eid": "2-s2.0-85173613031",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85173613031",
-      "abstract": {}
-    },
-    {
-      "title": "Text Translation for Indian Languages",
-      "source": "Vitecon 2023 2nd IEEE International Conference on Vision Towards Emerging Trends in Communication and Networking Technologies Proceedings",
-      "date": "2023-01-01",
-      "doi": "10.1109/ViTECoN58111.2023.10157002",
-      "citations": 1,
-      "eid": "2-s2.0-85193726304",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85193726304",
-      "abstract": {}
-    },
-    {
-      "title": "Student Engagement Detection in Classroom using Deep CNN-based Learning Approach",
-      "source": "Proceedings of the 8th International Conference on Communication and Electronics Systems Icces 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICCES57224.2023.10192809",
-      "citations": 4,
-      "eid": "2-s2.0-85168162289",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85168162289",
-      "abstract": {}
-    },
-    {
-      "title": "Smart Agriculture using Bio-Sensors and AI",
-      "source": "2nd International Conference on Automation Computing and Renewable Systems Icacrs 2023 Proceedings",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICACRS58579.2023.10405336",
-      "citations": 1,
-      "eid": "2-s2.0-85185371725",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85185371725",
-      "abstract": {}
-    },
-    {
-      "title": "PolyglotPiscis: A Multilingual Monitoring System for Enhanced Pisciculture",
-      "source": "2nd International Conference on Automation Computing and Renewable Systems Icacrs 2023 Proceedings",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICACRS58579.2023.10404792",
-      "citations": 0,
-      "eid": "2-s2.0-85185383555",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85185383555",
-      "abstract": {}
-    },
-    {
-      "title": "Performance Analysis of Single and Multi Pumps usage in Water Distribution System using Two Timer Relay and Differential Pressure Switch",
-      "source": "2023 1st International Conference on Advances in Electrical Electronics and Computational Intelligence Icaeeci 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICAEECI58247.2023.10370964",
-      "citations": 1,
-      "eid": "2-s2.0-85183562986",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85183562986",
       "abstract": {}
     },
     {
@@ -261,13 +201,13 @@
       "abstract": {}
     },
     {
-      "title": "Design and Development of Vision-Based Ibot-Kare-Robot for Automation",
-      "source": "2023 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2023",
+      "title": "Smart Agriculture using Bio-Sensors and AI",
+      "source": "2nd International Conference on Automation Computing and Renewable Systems Icacrs 2023 Proceedings",
       "date": "2023-01-01",
-      "doi": "10.1109/ICDSAAI59313.2023.10452487",
+      "doi": "10.1109/ICACRS58579.2023.10405336",
       "citations": 1,
-      "eid": "2-s2.0-85187781966",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85187781966",
+      "eid": "2-s2.0-85185371725",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85185371725",
       "abstract": {}
     },
     {
@@ -281,13 +221,63 @@
       "abstract": {}
     },
     {
-      "title": "Computer-Aided Diagnosis Using Hybrid Technique for Fastened and Accurate Analysis of Tuberculosis Detection with Adaboost and Learning Vector Quantization",
-      "source": "International Journal of Pattern Recognition and Artificial Intelligence",
-      "date": "2022-12-30",
-      "doi": "10.1142/S0218001422400080",
-      "citations": 2,
-      "eid": "2-s2.0-85143740377",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85143740377",
+      "title": "Performance Analysis of Single and Multi Pumps usage in Water Distribution System using Two Timer Relay and Differential Pressure Switch",
+      "source": "2023 1st International Conference on Advances in Electrical Electronics and Computational Intelligence Icaeeci 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICAEECI58247.2023.10370964",
+      "citations": 1,
+      "eid": "2-s2.0-85183562986",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85183562986",
+      "abstract": {}
+    },
+    {
+      "title": "Text Translation for Indian Languages",
+      "source": "Vitecon 2023 2nd IEEE International Conference on Vision Towards Emerging Trends in Communication and Networking Technologies Proceedings",
+      "date": "2023-01-01",
+      "doi": "10.1109/ViTECoN58111.2023.10157002",
+      "citations": 1,
+      "eid": "2-s2.0-85193726304",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85193726304",
+      "abstract": {}
+    },
+    {
+      "title": "Vehicle Controlling System for Traffic Law Enforcement using Internet of Things",
+      "source": "Proceedings of the 2023 2nd International Conference on Augmented Intelligence and Sustainable Systems Icaiss 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICAISS58487.2023.10250674",
+      "citations": 8,
+      "eid": "2-s2.0-85173613031",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85173613031",
+      "abstract": {}
+    },
+    {
+      "title": "PolyglotPiscis: A Multilingual Monitoring System for Enhanced Pisciculture",
+      "source": "2nd International Conference on Automation Computing and Renewable Systems Icacrs 2023 Proceedings",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICACRS58579.2023.10404792",
+      "citations": 0,
+      "eid": "2-s2.0-85185383555",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85185383555",
+      "abstract": {}
+    },
+    {
+      "title": "Student Engagement Detection in Classroom using Deep CNN-based Learning Approach",
+      "source": "Proceedings of the 8th International Conference on Communication and Electronics Systems Icces 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICCES57224.2023.10192809",
+      "citations": 4,
+      "eid": "2-s2.0-85168162289",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85168162289",
+      "abstract": {}
+    },
+    {
+      "title": "Design and Development of Vision-Based Ibot-Kare-Robot for Automation",
+      "source": "2023 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICDSAAI59313.2023.10452487",
+      "citations": 1,
+      "eid": "2-s2.0-85187781966",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85187781966",
       "abstract": {}
     },
     {
@@ -301,6 +291,16 @@
       "abstract": {}
     },
     {
+      "title": "Computer-Aided Diagnosis Using Hybrid Technique for Fastened and Accurate Analysis of Tuberculosis Detection with Adaboost and Learning Vector Quantization",
+      "source": "International Journal of Pattern Recognition and Artificial Intelligence",
+      "date": "2022-12-30",
+      "doi": "10.1142/S0218001422400080",
+      "citations": 2,
+      "eid": "2-s2.0-85143740377",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85143740377",
+      "abstract": {}
+    },
+    {
       "title": "A hybrid deep learning based brain tumor classification and segmentation by stationary wavelet packet transform and adaptive kernel fuzzy c means clustering",
       "source": "Advances in Engineering Software",
       "date": "2022-08-01",
@@ -308,26 +308,6 @@
       "citations": 36,
       "eid": "2-s2.0-85131458584",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85131458584",
-      "abstract": {}
-    },
-    {
-      "title": "Tumor Identification in CTScan/UltraSound Using Deep Learning Technique",
-      "source": "2022 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICDSAAI55433.2022.10028855",
-      "citations": 4,
-      "eid": "2-s2.0-85148485962",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148485962",
-      "abstract": {}
-    },
-    {
-      "title": "Real Time Transformer Health Monitoring System Using IoT in R",
-      "source": "2022 International Conference on Computer Communication and Informatics Iccci 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICCCI54379.2022.9740847",
-      "citations": 25,
-      "eid": "2-s2.0-85128729872",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85128729872",
       "abstract": {}
     },
     {
@@ -341,13 +321,13 @@
       "abstract": {}
     },
     {
-      "title": "Internet of Things based Weather and Water Quality Monitoring System",
-      "source": "3rd International Conference on Electronics and Sustainable Communication Systems Icesc 2022 Proceedings",
+      "title": "Tumor Identification in CTScan/UltraSound Using Deep Learning Technique",
+      "source": "2022 International Conference on Data Science Agents and Artificial Intelligence Icdsaai 2022",
       "date": "2022-01-01",
-      "doi": "10.1109/ICESC54411.2022.9885645",
-      "citations": 18,
-      "eid": "2-s2.0-85139564912",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85139564912",
+      "doi": "10.1109/ICDSAAI55433.2022.10028855",
+      "citations": 4,
+      "eid": "2-s2.0-85148485962",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148485962",
       "abstract": {}
     },
     {
@@ -371,13 +351,23 @@
       "abstract": {}
     },
     {
-      "title": "Detection of Food Adulteration using Arduino IDE",
-      "source": "Proceedings of the 2nd International Conference on Electronics and Sustainable Communication Systems Icesc 2021",
-      "date": "2021-08-04",
-      "doi": "10.1109/ICESC51422.2021.9532720",
-      "citations": 5,
-      "eid": "2-s2.0-85116601755",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85116601755",
+      "title": "Real Time Transformer Health Monitoring System Using IoT in R",
+      "source": "2022 International Conference on Computer Communication and Informatics Iccci 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICCCI54379.2022.9740847",
+      "citations": 25,
+      "eid": "2-s2.0-85128729872",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85128729872",
+      "abstract": {}
+    },
+    {
+      "title": "Internet of Things based Weather and Water Quality Monitoring System",
+      "source": "3rd International Conference on Electronics and Sustainable Communication Systems Icesc 2022 Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICESC54411.2022.9885645",
+      "citations": 18,
+      "eid": "2-s2.0-85139564912",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85139564912",
       "abstract": {}
     },
     {
@@ -388,6 +378,16 @@
       "citations": 10,
       "eid": "2-s2.0-85116715921",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85116715921",
+      "abstract": {}
+    },
+    {
+      "title": "Detection of Food Adulteration using Arduino IDE",
+      "source": "Proceedings of the 2nd International Conference on Electronics and Sustainable Communication Systems Icesc 2021",
+      "date": "2021-08-04",
+      "doi": "10.1109/ICESC51422.2021.9532720",
+      "citations": 5,
+      "eid": "2-s2.0-85116601755",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85116601755",
       "abstract": {}
     },
     {
@@ -525,7 +525,7 @@
       "source": "Proceedings of the 3rd International Conference on Electronics and Communication and Aerospace Technology Iceca 2019",
       "date": "2019-06-01",
       "doi": "10.1109/ICECA.2019.8821805",
-      "citations": 9,
+      "citations": 10,
       "eid": "2-s2.0-85072843986",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85072843986",
       "abstract": {}

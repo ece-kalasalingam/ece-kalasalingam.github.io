@@ -1,6 +1,16 @@
 {
   "publications": [
     {
+      "title": "Low-power design and implementation of an enhanced I2C bus controller using open lane: from RTL to GDSII",
+      "source": "Scientific Reports",
+      "date": "2026-12-01",
+      "doi": "10.1038/s41598-026-53211-1",
+      "citations": 0,
+      "eid": "2-s2.0-105045059665",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105045059665",
+      "abstract": {}
+    },
+    {
       "title": "Multidimensional calcium phosphate coatings for bio activation of titanium implant surfaces using methodological approach",
       "source": "Journal of Industrial and Engineering Chemistry",
       "date": "2024-05-25",

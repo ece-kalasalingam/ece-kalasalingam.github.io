@@ -21,7 +21,7 @@
       "abstract": {
         "text": "Timely identification of brain tumors helps improve treatment outcomes and reduces mortality. Accurate and non-invasive diagnostic tools for segmenting and classifying tumor regions in brain MRI scans are crucial for minimizing the need for surgical biopsies. This study builds a deep learning model for tumor segmentation and classification, aiming high accuracy and efficiency. A gaussian bilateral filter is used for noise reduction and to improve MRI image quality. Tumor segmentation is performed using an advanced U-Net model, the Dual Attention AtroDense U-Net (DA-AtroDense U-Net), which integrates dense connections, atrous convolution and attention mechanisms to preserve spatial detail and improve boundary localization. Texture-based radiomic features are subsequently extracted from the segmented tumor region using Kirsch Edge Detector (KED) and Gray-Level Co-occurrence Matrix (GLCM) and refined through feature selection to reduce redundancy using the Cat-and-Mouse Optimization (CMO) algorithm. Tumor classification employs an Auction-Optimized hybrid LSTM Network (AOHLN). Evaluated on BraTS 2019 and 2020 datasets, the developed model achieved a Dice Similarity Coefficient of 0.9907 and a Jaccard Index of 0.9816 for segmentation accuracy and an overall accuracy of 98.99% for classification, highlighting its potential as a dependable and non-invasive diagnostic solution.",
         "source": "crossref",
-        "fetched_at": "2026-07-29T05:27:50+00:00"
+        "fetched_at": "2026-07-31T05:40:31+00:00"
       }
     },
     {
@@ -35,6 +35,26 @@
       "abstract": {}
     },
     {
+      "title": "Impulse and Step Response Analysis of LTI Systems in the Laplace Domain",
+      "source": "2026 International Conference on Computing Theory and Wireless Communications Icctwc 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICCTWC68241.2026.11583549",
+      "citations": 0,
+      "eid": "2-s2.0-105045461859",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105045461859",
+      "abstract": {}
+    },
+    {
+      "title": "Graphical User Interface (GUI) Design for Z-Transform Analysis in Signal Processing",
+      "source": "2026 International Conference on Computing Theory and Wireless Communications Icctwc 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICCTWC68241.2026.11583386",
+      "citations": 0,
+      "eid": "2-s2.0-105045458134",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105045458134",
+      "abstract": {}
+    },
+    {
       "title": "Deep learning-based prediction of cognitive shifts induced by infinity walks using an optimized convolutional LSTM model",
       "source": "Journal of the Chinese Institute of Engineers Transactions of the Chinese Institute of Engineers Series A",
       "date": "2026-01-01",
@@ -42,6 +62,16 @@
       "citations": 0,
       "eid": "2-s2.0-105023323077",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105023323077",
+      "abstract": {}
+    },
+    {
+      "title": "Deconvolution of Discrete-Time Signals Using Z Transform in Signal Processing Applications",
+      "source": "2026 International Conference on Computing Theory and Wireless Communications Icctwc 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICCTWC68241.2026.11583148",
+      "citations": 0,
+      "eid": "2-s2.0-105045467531",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105045467531",
       "abstract": {}
     },
     {

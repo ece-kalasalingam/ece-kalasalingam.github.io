@@ -1,6 +1,16 @@
 {
   "publications": [
     {
+      "title": "Design and Development of 5kW Dynamic Wireless Power Transfer System for Electric Vehicles",
+      "source": "2026 International Conference on Computing Theory and Wireless Communications Icctwc 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICCTWC68241.2026.11583595",
+      "citations": 0,
+      "eid": "2-s2.0-105045466358",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105045466358",
+      "abstract": {}
+    },
+    {
       "title": "Real Time Eye Blink Recognition for Virtual Mouse using Raspberry Pi",
       "source": "3rd International Conference on Intelligent Data Communication Technologies and Internet of Things Idciot 2025",
       "date": "2025-01-01",

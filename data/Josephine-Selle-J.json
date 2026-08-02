@@ -5,5 +5,102 @@
   "h_index": 6,
   "total_publications": 44,
   "publications_file": "publications/Josephine-Selle-J.json",
-  "sections": []
+  "sections": [
+    {
+      "id": "profile",
+      "title": "Profile",
+      "type": "kv",
+      "items": [
+        {
+          "label": "Name",
+          "value": "Dr. Josephine Selle Jeyanathan"
+        },
+        {
+          "label": "E-mail",
+          "value": "josephine@klu.ac.in, drjjosephine@gmail.com"
+        },
+        {
+          "label": "DoB",
+          "value": "01.07.1987"
+        },
+        {
+          "label": "Passport number",
+          "value": "Z6310708"
+        },
+        {
+          "label": "Areas of Expertise",
+          "value": "Medical Image Processing, IoT, Machine Learning techniques, Breast Thermography"
+        },
+        {
+          "label": "Google Scholar",
+          "value": "https://scholar.google.com/citations?user=byOW1VQAAAAJ&hl=en"
+        },
+        {
+          "label": "LinkedIn Profile",
+          "value": "www.linkedin.com/in/drjosephine"
+        }
+      ]
+    },
+    {
+      "id": "academic-timeline",
+      "title": "Academic Timeline",
+      "type": "table",
+      "columns": [
+        "Examination / Degree",
+        "Name of Institution",
+        "University / Board",
+        "Year of Passing",
+        "Class",
+        "Specialization"
+      ],
+      "rows": [
+        [
+          "Ph.D",
+          "Anna University",
+          "Anna University",
+          "2019",
+          "First Class",
+          "Image Processing"
+        ],
+        [
+          "M.E.",
+          "National Engineering College",
+          "Anna University",
+          "2011",
+          "First Class with distinction",
+          "Communication Systems"
+        ],
+        [
+          "B.E.",
+          "Karunya University",
+          "Karunya University",
+          "2009",
+          "First Class",
+          "Electronics and Communication Engineering"
+        ],
+        [
+          "Higher secondary school",
+          "Vivek Vidyalaya College of Science",
+          "Maharashtra State Board of Secondary and Higher Secondary Education, Pune",
+          "2005",
+          "First Class",
+          "Science"
+        ],
+        [
+          "Secondary school",
+          "St. Joseph’s high school, Mumbai",
+          "Maharashtra State Board of Secondary and Higher Secondary Education, Pune",
+          "2003",
+          "First Class",
+          "Science"
+        ]
+      ]
+    },
+    {
+      "id": "notable-achievements",
+      "title": "Notable Achievements",
+      "type": "markdown",
+      "markdown": "1. Presented a paper titled “Analysis of Breast Thermograms in Lateral Views using Texture Features”, IEEE Region 10 (Asia - Pacific) Conference, TENCON 2018 held from 28th to 31st October 2018 at Ramada Hotel, Jeju, Korea.\n2. Completed certification course on IIEECP - IUCEE International Engineering Educator Certification Program Fall 2022 organized by IUCEE Foundation.                                                                                                                                     3. Completed AICTE-QIP-PG programme on “Internet of Things” which was held at IIT Jammu from July – December 2024.                                                                                                                                                                                         4. Supported and tutored the 2025 ISIP internship students at Avignon University, France from 23rd June to 26th July 2025."
+    }
+  ]
 }

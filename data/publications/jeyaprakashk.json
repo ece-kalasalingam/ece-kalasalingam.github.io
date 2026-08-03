@@ -15,7 +15,7 @@
       "source": "Lecture Notes in Networks and Systems",
       "date": "2026-01-01",
       "doi": "10.1007/978-3-032-14041-8_27",
-      "citations": 0,
+      "citations": 1,
       "eid": "2-s2.0-105038712084",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105038712084",
       "abstract": {}
@@ -51,16 +51,6 @@
       "abstract": {}
     },
     {
-      "title": "Identification of Voice Disorderliness Using Machine Learning Algorithm",
-      "source": "2025 International Conference on Computing and Communication Technologies Iccct 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICCCT63501.2025.11019856",
-      "citations": 0,
-      "eid": "2-s2.0-105008995633",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105008995633",
-      "abstract": {}
-    },
-    {
       "title": "Machine Learning for Early Detection and Continuous Monitoring of Rheumatoid Arthritis",
       "source": "Proceedings 2025 2nd International Conference on Networks and Soft Computing Icnsoc 2025",
       "date": "2025-01-01",
@@ -71,53 +61,13 @@
       "abstract": {}
     },
     {
-      "title": "Design and Analysis of Silicon Photonic Waveguides and Optical Micro-Ring Resonator for Next-Generation Computing, Communication and Sensing",
-      "source": "10th International Conference on Advanced Computing and Communication Systems Icaccs 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICACCS60874.2024.10717292",
-      "citations": 2,
-      "eid": "2-s2.0-85208605339",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85208605339",
-      "abstract": {}
-    },
-    {
-      "title": "ML-assisted Defect Detection in Power line Insulators for Reducing Energy Wastage",
-      "source": "8th International Conference on Electronics Communication and Aerospace Technology Iceca 2024 Proceedings",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICECA63461.2024.10801031",
-      "citations": 1,
-      "eid": "2-s2.0-85216181187",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85216181187",
-      "abstract": {}
-    },
-    {
-      "title": "AI and IoT-assisted Water Quality Monitoring and Prediction",
-      "source": "8th International Conference on Electronics Communication and Aerospace Technology Iceca 2024 Proceedings",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICECA63461.2024.10801021",
-      "citations": 3,
-      "eid": "2-s2.0-85216185712",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85216185712",
-      "abstract": {}
-    },
-    {
-      "title": "Gesture-Enhanced Communication Systems for the Deaf and Dumb: An In-Depth Review",
-      "source": "4th International Conference on Power Energy Control and Transmission Systems Harnessing Power and Energy for an Affordable Electrification of India Icpects 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICPECTS62210.2024.10780357",
-      "citations": 2,
-      "eid": "2-s2.0-85215518349",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85215518349",
-      "abstract": {}
-    },
-    {
-      "title": "A Deep Learning Approach for YouTube Music Recommendation Based on Facial Emotion",
-      "source": "Proceedings of 2024 2nd International Conference on Recent Trends in Microelectronics Automation Computing and Communications Systems Exploration and Blend of Emerging Technologies for Future Innovation Icmacc 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICMACC62921.2024.10894134",
-      "citations": 3,
-      "eid": "2-s2.0-105000441884",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105000441884",
+      "title": "Identification of Voice Disorderliness Using Machine Learning Algorithm",
+      "source": "2025 International Conference on Computing and Communication Technologies Iccct 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICCCT63501.2025.11019856",
+      "citations": 0,
+      "eid": "2-s2.0-105008995633",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105008995633",
       "abstract": {}
     },
     {
@@ -141,6 +91,56 @@
       "abstract": {}
     },
     {
+      "title": "ML-assisted Defect Detection in Power line Insulators for Reducing Energy Wastage",
+      "source": "8th International Conference on Electronics Communication and Aerospace Technology Iceca 2024 Proceedings",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICECA63461.2024.10801031",
+      "citations": 1,
+      "eid": "2-s2.0-85216181187",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85216181187",
+      "abstract": {}
+    },
+    {
+      "title": "Gesture-Enhanced Communication Systems for the Deaf and Dumb: An In-Depth Review",
+      "source": "4th International Conference on Power Energy Control and Transmission Systems Harnessing Power and Energy for an Affordable Electrification of India Icpects 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICPECTS62210.2024.10780357",
+      "citations": 2,
+      "eid": "2-s2.0-85215518349",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85215518349",
+      "abstract": {}
+    },
+    {
+      "title": "Design and Analysis of Silicon Photonic Waveguides and Optical Micro-Ring Resonator for Next-Generation Computing, Communication and Sensing",
+      "source": "10th International Conference on Advanced Computing and Communication Systems Icaccs 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICACCS60874.2024.10717292",
+      "citations": 2,
+      "eid": "2-s2.0-85208605339",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85208605339",
+      "abstract": {}
+    },
+    {
+      "title": "AI and IoT-assisted Water Quality Monitoring and Prediction",
+      "source": "8th International Conference on Electronics Communication and Aerospace Technology Iceca 2024 Proceedings",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICECA63461.2024.10801021",
+      "citations": 3,
+      "eid": "2-s2.0-85216185712",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85216185712",
+      "abstract": {}
+    },
+    {
+      "title": "A Deep Learning Approach for YouTube Music Recommendation Based on Facial Emotion",
+      "source": "Proceedings of 2024 2nd International Conference on Recent Trends in Microelectronics Automation Computing and Communications Systems Exploration and Blend of Emerging Technologies for Future Innovation Icmacc 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICMACC62921.2024.10894134",
+      "citations": 3,
+      "eid": "2-s2.0-105000441884",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105000441884",
+      "abstract": {}
+    },
+    {
       "title": "A Machine Learning-Based Energy Optimization System for Electric Vehicles",
       "source": "E3s Web of Conferences",
       "date": "2023-05-15",
@@ -161,16 +161,6 @@
       "abstract": {}
     },
     {
-      "title": "Enhanced Archimedes Optimization Algorithm for Clustered Wireless Sensor Networks",
-      "source": "Computers Materials and Continua",
-      "date": "2022-01-01",
-      "doi": "10.32604/cmc.2022.025939",
-      "citations": 8,
-      "eid": "2-s2.0-85130177633",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85130177633",
-      "abstract": {}
-    },
-    {
       "title": "Wireless Medical Sensor Networks: a Secure-Anonymous User Authentication Scheme",
       "source": "2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering Icacite 2022",
       "date": "2022-01-01",
@@ -178,6 +168,16 @@
       "citations": 1,
       "eid": "2-s2.0-85135481119",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85135481119",
+      "abstract": {}
+    },
+    {
+      "title": "Enhanced Archimedes Optimization Algorithm for Clustered Wireless Sensor Networks",
+      "source": "Computers Materials and Continua",
+      "date": "2022-01-01",
+      "doi": "10.32604/cmc.2022.025939",
+      "citations": 8,
+      "eid": "2-s2.0-85130177633",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85130177633",
       "abstract": {}
     },
     {
@@ -201,6 +201,16 @@
       "abstract": {}
     },
     {
+      "title": "Machine learning based effective linear regression model for TSV layer assignment in 3DIC",
+      "source": "Microprocessors and Microsystems",
+      "date": "2021-06-01",
+      "doi": "10.1016/j.micpro.2021.103953",
+      "citations": 18,
+      "eid": "2-s2.0-85099608579",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85099608579",
+      "abstract": {}
+    },
+    {
       "title": "Floor Planning of 3D IC Design Using Hybrid Multi-verse Optimizer",
       "source": "Wireless Personal Communications",
       "date": "2021-06-01",
@@ -211,13 +221,13 @@
       "abstract": {}
     },
     {
-      "title": "Machine learning based effective linear regression model for TSV layer assignment in 3DIC",
-      "source": "Microprocessors and Microsystems",
-      "date": "2021-06-01",
-      "doi": "10.1016/j.micpro.2021.103953",
-      "citations": 18,
-      "eid": "2-s2.0-85099608579",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85099608579",
+      "title": "Thermal analysis for power efficient 3d IC routing using memetic algorithm based on hill climbing algorithm",
+      "source": "Journal of Green Engineering",
+      "date": "2021-01-01",
+      "doi": "",
+      "citations": 2,
+      "eid": "2-s2.0-85100040850",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85100040850",
       "abstract": {}
     },
     {
@@ -238,16 +248,6 @@
       "citations": 6,
       "eid": "2-s2.0-85126801495",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85126801495",
-      "abstract": {}
-    },
-    {
-      "title": "Thermal analysis for power efficient 3d IC routing using memetic algorithm based on hill climbing algorithm",
-      "source": "Journal of Green Engineering",
-      "date": "2021-01-01",
-      "doi": "",
-      "citations": 2,
-      "eid": "2-s2.0-85100040850",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85100040850",
       "abstract": {}
     },
     {

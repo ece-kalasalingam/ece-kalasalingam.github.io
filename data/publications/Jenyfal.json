@@ -1,6 +1,20 @@
 {
   "publications": [
     {
+      "title": "Optimization of milling operation parameters using Python-assisted GRA for enhanced surface quality and material behaviour",
+      "source": "Rsc Advances",
+      "date": "2026-01-01",
+      "doi": "10.1039/d6ra03051c",
+      "citations": 0,
+      "eid": "2-s2.0-105046295692",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105046295692",
+      "abstract": {
+        "text": "Modern manufacturing's paradigm has changed a lot with the inclusion of optimization and smart manufacturing techniques.",
+        "source": "crossref",
+        "fetched_at": "2026-08-11T03:49:51+00:00"
+      }
+    },
+    {
       "title": "HEAL Lite: A Smart Wearable Tremor Monitoring and prediction System with AI and Hybrid Storage",
       "source": "Icdcs 2026 2026 8th International Conference on Devices Circuits and Systems",
       "date": "2026-01-01",

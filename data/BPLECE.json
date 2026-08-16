@@ -7,21 +7,6 @@
   "publications_file": "publications/BPLECE.json",
   "sections": [
     {
-      "id": "profile",
-      "title": "Profile",
-      "type": "kv",
-      "items": [
-        {
-          "label": "Name",
-          "value": "Dr. B.Perumal"
-        },
-        {
-          "label": "E-mail",
-          "value": "perumal@klu.ac.in, palanimet@gmail.com"
-        }
-      ]
-    },
-    {
       "id": "education",
       "title": "Education",
       "type": "table",

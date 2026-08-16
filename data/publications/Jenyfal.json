@@ -1,27 +1,13 @@
 {
   "publications": [
     {
-      "title": "Optimization of milling operation parameters using Python-assisted GRA for enhanced surface quality and material behaviour",
-      "source": "Rsc Advances",
-      "date": "2026-01-01",
-      "doi": "10.1039/d6ra03051c",
-      "citations": 0,
-      "eid": "2-s2.0-105046295692",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105046295692",
-      "abstract": {
-        "text": "Modern manufacturing's paradigm has changed a lot with the inclusion of optimization and smart manufacturing techniques.",
-        "source": "crossref",
-        "fetched_at": "2026-08-16T03:05:25+00:00"
-      }
-    },
-    {
-      "title": "HEAL Lite: A Smart Wearable Tremor Monitoring and prediction System with AI and Hybrid Storage",
+      "title": "Design and Integration of Low Power Memory Subsytems in RISC-V cores",
       "source": "Icdcs 2026 2026 8th International Conference on Devices Circuits and Systems",
       "date": "2026-01-01",
-      "doi": "10.1109/ICDCS68853.2026.11511068",
+      "doi": "10.1109/ICDCS68853.2026.11511162",
       "citations": 0,
-      "eid": "2-s2.0-105041537846",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105041537846",
+      "eid": "2-s2.0-105041514170",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105041514170",
       "abstract": {}
     },
     {
@@ -35,13 +21,27 @@
       "abstract": {}
     },
     {
-      "title": "Design and Integration of Low Power Memory Subsytems in RISC-V cores",
+      "title": "Optimization of milling operation parameters using Python-assisted GRA for enhanced surface quality and material behaviour",
+      "source": "Rsc Advances",
+      "date": "2026-01-01",
+      "doi": "10.1039/d6ra03051c",
+      "citations": 0,
+      "eid": "2-s2.0-105046295692",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105046295692",
+      "abstract": {
+        "text": "Modern manufacturing's paradigm has changed a lot with the inclusion of optimization and smart manufacturing techniques.",
+        "source": "crossref",
+        "fetched_at": "2026-08-16T03:55:49+00:00"
+      }
+    },
+    {
+      "title": "HEAL Lite: A Smart Wearable Tremor Monitoring and prediction System with AI and Hybrid Storage",
       "source": "Icdcs 2026 2026 8th International Conference on Devices Circuits and Systems",
       "date": "2026-01-01",
-      "doi": "10.1109/ICDCS68853.2026.11511162",
+      "doi": "10.1109/ICDCS68853.2026.11511068",
       "citations": 0,
-      "eid": "2-s2.0-105041514170",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105041514170",
+      "eid": "2-s2.0-105041537846",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105041537846",
       "abstract": {}
     },
     {
@@ -55,16 +55,6 @@
       "abstract": {}
     },
     {
-      "title": "Enhanced Galactic Swarm Algorithm with Encryption Technique for Medical Image Security in Internet of Things environment",
-      "source": "Securing Next Generation Connected Healthcare Systems Artificial Intelligence Technologies",
-      "date": "2024-01-01",
-      "doi": "10.1016/B978-0-443-13951-2.00008-8",
-      "citations": 0,
-      "eid": "2-s2.0-85199021415",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85199021415",
-      "abstract": {}
-    },
-    {
       "title": "Design and Analysis of Silicon Photonic Waveguides and Optical Micro-Ring Resonator for Next-Generation Computing, Communication and Sensing",
       "source": "10th International Conference on Advanced Computing and Communication Systems Icaccs 2024",
       "date": "2024-01-01",
@@ -72,6 +62,16 @@
       "citations": 2,
       "eid": "2-s2.0-85208605339",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85208605339",
+      "abstract": {}
+    },
+    {
+      "title": "Enhanced Galactic Swarm Algorithm with Encryption Technique for Medical Image Security in Internet of Things environment",
+      "source": "Securing Next Generation Connected Healthcare Systems Artificial Intelligence Technologies",
+      "date": "2024-01-01",
+      "doi": "10.1016/B978-0-443-13951-2.00008-8",
+      "citations": 0,
+      "eid": "2-s2.0-85199021415",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85199021415",
       "abstract": {}
     },
     {
@@ -105,16 +105,6 @@
       "abstract": {}
     },
     {
-      "title": "Smart Vehicle Locking System Using Pollution Sensor (Mq-07)",
-      "source": "2022 6th International Conference on Trends in Electronics and Informatics Icoei 2022 Proceedings",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICOEI53556.2022.9776911",
-      "citations": 1,
-      "eid": "2-s2.0-85131947059",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85131947059",
-      "abstract": {}
-    },
-    {
       "title": "Hybrid Deep Learning Enabled Air Pollution Monitoring in ITS Environment",
       "source": "Computers Materials and Continua",
       "date": "2022-01-01",
@@ -122,6 +112,16 @@
       "citations": 9,
       "eid": "2-s2.0-85125398690",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85125398690",
+      "abstract": {}
+    },
+    {
+      "title": "Smart Vehicle Locking System Using Pollution Sensor (Mq-07)",
+      "source": "2022 6th International Conference on Trends in Electronics and Informatics Icoei 2022 Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICOEI53556.2022.9776911",
+      "citations": 1,
+      "eid": "2-s2.0-85131947059",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85131947059",
       "abstract": {}
     },
     {
@@ -135,13 +135,13 @@
       "abstract": {}
     },
     {
-      "title": "Multimodality medical image fusion based on non-sub-sampled contourlet transform",
-      "source": "International Journal of Computer Applications in Technology",
+      "title": "Automated Internet of Medical Things (IoMT) Based Healthcare Monitoring System",
+      "source": "Studies in Systems Decision and Control",
       "date": "2021-01-01",
-      "doi": "10.1504/IJCAT.2021.117279",
-      "citations": 4,
-      "eid": "2-s2.0-85114344853",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85114344853",
+      "doi": "10.1007/978-3-030-55833-8_7",
+      "citations": 20,
+      "eid": "2-s2.0-85093857852",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85093857852",
       "abstract": {}
     },
     {
@@ -155,13 +155,13 @@
       "abstract": {}
     },
     {
-      "title": "Automated Internet of Medical Things (IoMT) Based Healthcare Monitoring System",
-      "source": "Studies in Systems Decision and Control",
+      "title": "Multimodality medical image fusion based on non-sub-sampled contourlet transform",
+      "source": "International Journal of Computer Applications in Technology",
       "date": "2021-01-01",
-      "doi": "10.1007/978-3-030-55833-8_7",
-      "citations": 20,
-      "eid": "2-s2.0-85093857852",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85093857852",
+      "doi": "10.1504/IJCAT.2021.117279",
+      "citations": 4,
+      "eid": "2-s2.0-85114344853",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85114344853",
       "abstract": {}
     },
     {
@@ -169,7 +169,7 @@
       "source": "International Journal of Imaging Systems and Technology",
       "date": "2020-12-01",
       "doi": "10.1002/ima.22436",
-      "citations": 39,
+      "citations": 40,
       "eid": "2-s2.0-85084198108",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85084198108",
       "abstract": {}
@@ -179,7 +179,7 @@
       "source": "Physical Communication",
       "date": "2020-08-01",
       "doi": "10.1016/j.phycom.2020.101119",
-      "citations": 26,
+      "citations": 27,
       "eid": "2-s2.0-85084336075",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85084336075",
       "abstract": {}

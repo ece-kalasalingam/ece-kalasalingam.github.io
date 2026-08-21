@@ -7,6 +7,21 @@
   "publications_file": "publications/SKDargar.json",
   "sections": [
     {
+      "id": "profile",
+      "title": "Profile",
+      "type": "kv",
+      "items": [
+        {
+          "label": "Name",
+          "value": "Dr. Shashi Kant Dargar"
+        },
+        {
+          "label": "E-mail",
+          "value": "skdargar@klu.ac.in, drshashikant.dargar@ieee.org"
+        }
+      ]
+    },
+    {
       "id": "education",
       "title": "Education",
       "type": "table",

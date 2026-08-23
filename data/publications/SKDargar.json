@@ -1,26 +1,6 @@
 {
   "publications": [
     {
-      "title": "Technology Computer-Aided Design (TCAD) for Simulation of Advanced Transistor Design",
-      "source": "Micro and Nano Semiconductor Devices for Digital Analog and Sensor Design",
-      "date": "2026-01-01",
-      "doi": "10.1002/9781394307340.ch6",
-      "citations": 0,
-      "eid": "2-s2.0-105035266286",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035266286",
-      "abstract": {}
-    },
-    {
-      "title": "Modeling and Simulation of a MOSFET Biosensor for Early Stage Oral Cancer Detection",
-      "source": "Proceedings of the 4th IEEE International Conference on Interdisciplinary Approaches in Technology and Management for Social Innovation Iatmsi 2026",
-      "date": "2026-01-01",
-      "doi": "10.1109/IATMSI68868.2026.11465486",
-      "citations": 0,
-      "eid": "2-s2.0-105036951266",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105036951266",
-      "abstract": {}
-    },
-    {
       "title": "Design and Development of Control Logic Circuit for Autonomous Powerloom Management in Textile Production",
       "source": "International Conference on Signal Systems and Computing for Next Gen Automation Icsscna 2026 Proceedings",
       "date": "2026-01-01",
@@ -41,6 +21,26 @@
       "abstract": {}
     },
     {
+      "title": "Technology Computer-Aided Design (TCAD) for Simulation of Advanced Transistor Design",
+      "source": "Micro and Nano Semiconductor Devices for Digital Analog and Sensor Design",
+      "date": "2026-01-01",
+      "doi": "10.1002/9781394307340.ch6",
+      "citations": 0,
+      "eid": "2-s2.0-105035266286",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035266286",
+      "abstract": {}
+    },
+    {
+      "title": "Modeling and Simulation of a MOSFET Biosensor for Early Stage Oral Cancer Detection",
+      "source": "Proceedings of the 4th IEEE International Conference on Interdisciplinary Approaches in Technology and Management for Social Innovation Iatmsi 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/IATMSI68868.2026.11465486",
+      "citations": 0,
+      "eid": "2-s2.0-105036951266",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105036951266",
+      "abstract": {}
+    },
+    {
       "title": "Punishment Mechanism for Cognitive Radio Networks in Advanced Wireless Communication Systems",
       "source": "Journal of Communications",
       "date": "2025-10-21",
@@ -48,6 +48,26 @@
       "citations": 0,
       "eid": "2-s2.0-105021029375",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105021029375",
+      "abstract": {}
+    },
+    {
+      "title": "Deep Learning Technique for Computer Vision-Based Pose Estimation for Augmented Reality",
+      "source": "Lecture Notes in Electrical Engineering",
+      "date": "2025-01-01",
+      "doi": "10.1007/978-981-97-8429-5_21",
+      "citations": 0,
+      "eid": "2-s2.0-85215304315",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85215304315",
+      "abstract": {}
+    },
+    {
+      "title": "Novel Sandwich-Stacked Heterojunction Junctionless TFET for Low Power Applications",
+      "source": "Lecture Notes in Electrical Engineering",
+      "date": "2025-01-01",
+      "doi": "10.1007/978-981-97-8464-6_13",
+      "citations": 0,
+      "eid": "2-s2.0-85218473455",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85218473455",
       "abstract": {}
     },
     {
@@ -61,13 +81,13 @@
       "abstract": {}
     },
     {
-      "title": "Novel Sandwich-Stacked Heterojunction Junctionless TFET for Low Power Applications",
-      "source": "Lecture Notes in Electrical Engineering",
+      "title": "Dementia Patients for Raspberry Pi and YOLOv5 using Machine Learning",
+      "source": "2025 3rd World Conference on Communication and Computing Wconf 2025",
       "date": "2025-01-01",
-      "doi": "10.1007/978-981-97-8464-6_13",
+      "doi": "10.1109/WCONF64849.2025.11233365",
       "citations": 0,
-      "eid": "2-s2.0-85218473455",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85218473455",
+      "eid": "2-s2.0-105029722876",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105029722876",
       "abstract": {}
     },
     {
@@ -88,26 +108,6 @@
       "citations": 3,
       "eid": "2-s2.0-105008578170",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105008578170",
-      "abstract": {}
-    },
-    {
-      "title": "Dementia Patients for Raspberry Pi and YOLOv5 using Machine Learning",
-      "source": "2025 3rd World Conference on Communication and Computing Wconf 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/WCONF64849.2025.11233365",
-      "citations": 0,
-      "eid": "2-s2.0-105029722876",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105029722876",
-      "abstract": {}
-    },
-    {
-      "title": "Deep Learning Technique for Computer Vision-Based Pose Estimation for Augmented Reality",
-      "source": "Lecture Notes in Electrical Engineering",
-      "date": "2025-01-01",
-      "doi": "10.1007/978-981-97-8429-5_21",
-      "citations": 0,
-      "eid": "2-s2.0-85215304315",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85215304315",
       "abstract": {}
     },
     {
@@ -141,13 +141,13 @@
       "abstract": {}
     },
     {
-      "title": "Robust Xception-Based Skin Disease Classification System with Blockchain Integration",
-      "source": "Proceedings of International Conference on Contemporary Computing and Informatics Ic3i 2024",
+      "title": "Enhancing Engineering Education Through Pedagogical Change: “Application to Abstract",
+      "source": "Journal of Engineering Education Transformations",
       "date": "2024-01-01",
-      "doi": "10.1109/IC3I61595.2024.10829292",
-      "citations": 1,
-      "eid": "2-s2.0-85217412475",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85217412475",
+      "doi": "10.16920/jeet/2024/v37is2/24127",
+      "citations": 4,
+      "eid": "2-s2.0-85193758685",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85193758685",
       "abstract": {}
     },
     {
@@ -161,26 +161,6 @@
       "abstract": {}
     },
     {
-      "title": "Improved Extreme Learning Machine Based Hunger Games Search for Automatic IP Configuration and Duplicate Node Detection",
-      "source": "Journal of Communications",
-      "date": "2024-01-01",
-      "doi": "10.12720/jcm.19.3.152-160",
-      "citations": 6,
-      "eid": "2-s2.0-85189139812",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85189139812",
-      "abstract": {}
-    },
-    {
-      "title": "Enhancing Engineering Education Through Pedagogical Change: “Application to Abstract",
-      "source": "Journal of Engineering Education Transformations",
-      "date": "2024-01-01",
-      "doi": "10.16920/jeet/2024/v37is2/24127",
-      "citations": 4,
-      "eid": "2-s2.0-85193758685",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85193758685",
-      "abstract": {}
-    },
-    {
       "title": "Different Optimization Technique for Ant Cluster Head and Routing Protocol in Wireless Sensor Networks",
       "source": "2024 IEEE 3rd World Conference on Applied Intelligence and Computing Aic 2024",
       "date": "2024-01-01",
@@ -188,16 +168,6 @@
       "citations": 0,
       "eid": "2-s2.0-85210254232",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85210254232",
-      "abstract": {}
-    },
-    {
-      "title": "Design of PnR Flow For Block Level Chip for Optimizing Leakage Power",
-      "source": "2024 IEEE International Conference on Intelligent Techniques in Control Optimization and Signal Processing Incos 2024 Proceedings",
-      "date": "2024-01-01",
-      "doi": "10.1109/INCOS59338.2024.10527496",
-      "citations": 3,
-      "eid": "2-s2.0-85194106579",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85194106579",
       "abstract": {}
     },
     {
@@ -221,6 +191,36 @@
       "abstract": {}
     },
     {
+      "title": "Improved Extreme Learning Machine Based Hunger Games Search for Automatic IP Configuration and Duplicate Node Detection",
+      "source": "Journal of Communications",
+      "date": "2024-01-01",
+      "doi": "10.12720/jcm.19.3.152-160",
+      "citations": 6,
+      "eid": "2-s2.0-85189139812",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85189139812",
+      "abstract": {}
+    },
+    {
+      "title": "Design of PnR Flow For Block Level Chip for Optimizing Leakage Power",
+      "source": "2024 IEEE International Conference on Intelligent Techniques in Control Optimization and Signal Processing Incos 2024 Proceedings",
+      "date": "2024-01-01",
+      "doi": "10.1109/INCOS59338.2024.10527496",
+      "citations": 3,
+      "eid": "2-s2.0-85194106579",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85194106579",
+      "abstract": {}
+    },
+    {
+      "title": "Robust Xception-Based Skin Disease Classification System with Blockchain Integration",
+      "source": "Proceedings of International Conference on Contemporary Computing and Informatics Ic3i 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/IC3I61595.2024.10829292",
+      "citations": 1,
+      "eid": "2-s2.0-85217412475",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85217412475",
+      "abstract": {}
+    },
+    {
       "title": "Teaching Diversified Socio-Cultural Skills to Autism Spectrum Disorder (ASD) Students in Clinical Setting",
       "source": "Aip Conference Proceedings",
       "date": "2023-12-11",
@@ -231,16 +231,6 @@
       "abstract": {}
     },
     {
-      "title": "IoT based Smart Crop-Culture Monitoring system for Managing Nursery",
-      "source": "Aip Conference Proceedings",
-      "date": "2023-12-11",
-      "doi": "10.1063/5.0168818",
-      "citations": 0,
-      "eid": "2-s2.0-85180337457",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85180337457",
-      "abstract": {}
-    },
-    {
       "title": "Intelligent Airflow of Nebulizer using IoT-Based circuit Integration for Smart Healthcare Management",
       "source": "Aip Conference Proceedings",
       "date": "2023-12-11",
@@ -248,6 +238,16 @@
       "citations": 1,
       "eid": "2-s2.0-85180304192",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85180304192",
+      "abstract": {}
+    },
+    {
+      "title": "IoT based Smart Crop-Culture Monitoring system for Managing Nursery",
+      "source": "Aip Conference Proceedings",
+      "date": "2023-12-11",
+      "doi": "10.1063/5.0168818",
+      "citations": 0,
+      "eid": "2-s2.0-85180337457",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85180337457",
       "abstract": {}
     },
     {
@@ -271,46 +271,6 @@
       "abstract": {}
     },
     {
-      "title": "TiO2Thick film Gas sensor for Detection H2S Gas Using ANN and Machine Learning Technique",
-      "source": "Iccece 2023 International Conference on Computer Electrical and Communication Engineering",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICCECE51049.2023.10085220",
-      "citations": 1,
-      "eid": "2-s2.0-85153337198",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153337198",
-      "abstract": {}
-    },
-    {
-      "title": "Millimetre-Wave Beam-Space MIMO System for 5G Applications",
-      "source": "RF Circuits for 5g Applications Designing with Mmwave Circuitry",
-      "date": "2023-01-01",
-      "doi": "10.1002/9781119792949.ch3",
-      "citations": 0,
-      "eid": "2-s2.0-85153431798",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153431798",
-      "abstract": {}
-    },
-    {
-      "title": "Markov Chain Model Used in Agricultural Yield Predictions Utilizing on Indian Agriculture",
-      "source": "Proceedings 2023 IEEE World Conference on Applied Intelligence and Computing Aic 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/AIC57670.2023.10263850",
-      "citations": 6,
-      "eid": "2-s2.0-85174522800",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85174522800",
-      "abstract": {}
-    },
-    {
-      "title": "Low Power Designs in Nanodevices and Circuits for Emerging Applications",
-      "source": "Low Power Designs in Nanodevices and Circuits for Emerging Applications",
-      "date": "2023-01-01",
-      "doi": "10.1201/9781003459231",
-      "citations": 1,
-      "eid": "2-s2.0-85199243714",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85199243714",
-      "abstract": {}
-    },
-    {
       "title": "High-Performance 10-Transistor Adder Cell for Low-Power Applications",
       "source": "IETE Journal of Research",
       "date": "2023-01-01",
@@ -331,13 +291,23 @@
       "abstract": {}
     },
     {
-      "title": "Design of Cu-Doped SnO2 Thick-Film Gas Sensor for Methanol Using ANN Technique",
-      "source": "Lecture Notes in Networks and Systems",
+      "title": "Markov Chain Model Used in Agricultural Yield Predictions Utilizing on Indian Agriculture",
+      "source": "Proceedings 2023 IEEE World Conference on Applied Intelligence and Computing Aic 2023",
       "date": "2023-01-01",
-      "doi": "10.1007/978-981-19-4863-3_20",
+      "doi": "10.1109/AIC57670.2023.10263850",
+      "citations": 6,
+      "eid": "2-s2.0-85174522800",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85174522800",
+      "abstract": {}
+    },
+    {
+      "title": "A State Feedback Approach based Design of a Robust Yaw Control for Submersible Autonomous Robot through Semi-Definite Programming",
+      "source": "2023 3rd International Conference on Artificial Intelligence and Signal Processing Aisp 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/AISP57993.2023.10135041",
       "citations": 0,
-      "eid": "2-s2.0-85144569212",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85144569212",
+      "eid": "2-s2.0-85163182523",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163182523",
       "abstract": {}
     },
     {
@@ -361,13 +331,43 @@
       "abstract": {}
     },
     {
-      "title": "A State Feedback Approach based Design of a Robust Yaw Control for Submersible Autonomous Robot through Semi-Definite Programming",
-      "source": "2023 3rd International Conference on Artificial Intelligence and Signal Processing Aisp 2023",
+      "title": "Design of Cu-Doped SnO2 Thick-Film Gas Sensor for Methanol Using ANN Technique",
+      "source": "Lecture Notes in Networks and Systems",
       "date": "2023-01-01",
-      "doi": "10.1109/AISP57993.2023.10135041",
+      "doi": "10.1007/978-981-19-4863-3_20",
       "citations": 0,
-      "eid": "2-s2.0-85163182523",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163182523",
+      "eid": "2-s2.0-85144569212",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85144569212",
+      "abstract": {}
+    },
+    {
+      "title": "Millimetre-Wave Beam-Space MIMO System for 5G Applications",
+      "source": "RF Circuits for 5g Applications Designing with Mmwave Circuitry",
+      "date": "2023-01-01",
+      "doi": "10.1002/9781119792949.ch3",
+      "citations": 0,
+      "eid": "2-s2.0-85153431798",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153431798",
+      "abstract": {}
+    },
+    {
+      "title": "TiO2Thick film Gas sensor for Detection H2S Gas Using ANN and Machine Learning Technique",
+      "source": "Iccece 2023 International Conference on Computer Electrical and Communication Engineering",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICCECE51049.2023.10085220",
+      "citations": 1,
+      "eid": "2-s2.0-85153337198",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153337198",
+      "abstract": {}
+    },
+    {
+      "title": "Low Power Designs in Nanodevices and Circuits for Emerging Applications",
+      "source": "Low Power Designs in Nanodevices and Circuits for Emerging Applications",
+      "date": "2023-01-01",
+      "doi": "10.1201/9781003459231",
+      "citations": 1,
+      "eid": "2-s2.0-85199243714",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85199243714",
       "abstract": {}
     },
     {
@@ -391,16 +391,6 @@
       "abstract": {}
     },
     {
-      "title": "Retraction:Evolving Long Short-Term Memory Network-Based Text Classification",
-      "source": "Computational Intelligence and Neuroscience",
-      "date": "2022-01-01",
-      "doi": "10.1155/2022/4725639",
-      "citations": 18,
-      "eid": "2-s2.0-85125611055",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85125611055",
-      "abstract": {}
-    },
-    {
       "title": "Recessed Ground Parasitic Rectangular Patch Antenna for Wireless Communication",
       "source": "Proceedings of the 2nd International Conference on Artificial Intelligence and Smart Energy Icais 2022",
       "date": "2022-01-01",
@@ -408,96 +398,6 @@
       "citations": 4,
       "eid": "2-s2.0-85128193636",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85128193636",
-      "abstract": {}
-    },
-    {
-      "title": "Performance analysis of 2% Fe2O3 Doped Thick-film Gas Sensor in Toxic Liquid Detection Using Machine Learning Techniques",
-      "source": "Proceedings 4th International Conference on Smart Systems and Inventive Technology Icssit 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICSSIT53264.2022.9716258",
-      "citations": 2,
-      "eid": "2-s2.0-85127335971",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85127335971",
-      "abstract": {}
-    },
-    {
-      "title": "Performance Analysis of Oxide Capacitance at Gate-Dielectric Variation in Surrounding-Gate MOSFET Structure",
-      "source": "Lecture Notes in Electrical Engineering",
-      "date": "2022-01-01",
-      "doi": "10.1007/978-981-19-0252-9_16",
-      "citations": 0,
-      "eid": "2-s2.0-85133028615",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85133028615",
-      "abstract": {}
-    },
-    {
-      "title": "Low-Cost Automatic Purchase Cart for Hassle-free Uncrowded Shopping in Indian Supermarkets",
-      "source": "Proceedings 2022 2nd International Conference on Innovative Sustainable Computational Technologies Cisct 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/CISCT55310.2022.10046503",
-      "citations": 2,
-      "eid": "2-s2.0-85149443765",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85149443765",
-      "abstract": {}
-    },
-    {
-      "title": "Implementation of a Wild Animal Intrusion Detection Model Based on Internet of Things",
-      "source": "Proceedings of the 2nd International Conference on Artificial Intelligence and Smart Energy Icais 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICAIS53314.2022.9742948",
-      "citations": 38,
-      "eid": "2-s2.0-85128190730",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85128190730",
-      "abstract": {}
-    },
-    {
-      "title": "House Prices Prediction Using Machine Learning Regression Models",
-      "source": "2022 IEEE 2nd International Conference on Mobile Networks and Wireless Communications Icmnwc 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICMNWC56175.2022.10031728",
-      "citations": 10,
-      "eid": "2-s2.0-85148291040",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148291040",
-      "abstract": {}
-    },
-    {
-      "title": "Design of U-Slot Microstrip Patch Antenna for Wireless Applications",
-      "source": "2022 2nd International Conference on Advances in Electrical Computing Communication and Sustainable Technologies Icaect 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICAECT54875.2022.9807838",
-      "citations": 3,
-      "eid": "2-s2.0-85134225730",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85134225730",
-      "abstract": {}
-    },
-    {
-      "title": "Comparison between Rectangular Microstrip Patch Antenna with and without Defected Ground Structure at 1.85 GHz",
-      "source": "2022 International Conference for Advancement in Technology Iconat 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICONAT53423.2022.9726044",
-      "citations": 8,
-      "eid": "2-s2.0-85127593856",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85127593856",
-      "abstract": {}
-    },
-    {
-      "title": "Clustering Method Response and Recovery Time Analysis with Different Temperature for different Toxic Gas",
-      "source": "Proceedings of 2nd International Conference on Innovative Practices in Technology and Management Iciptm 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICIPTM54933.2022.9754047",
-      "citations": 0,
-      "eid": "2-s2.0-85129364040",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85129364040",
-      "abstract": {}
-    },
-    {
-      "title": "A Voice Assisted Chatbot Framework for Real-Time Implementation in Medical Care",
-      "source": "Communications in Computer and Information Science",
-      "date": "2022-01-01",
-      "doi": "10.1007/978-3-031-12638-3_5",
-      "citations": 3,
-      "eid": "2-s2.0-85135915921",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85135915921",
       "abstract": {}
     },
     {
@@ -511,6 +411,106 @@
       "abstract": {}
     },
     {
+      "title": "Performance Analysis of Oxide Capacitance at Gate-Dielectric Variation in Surrounding-Gate MOSFET Structure",
+      "source": "Lecture Notes in Electrical Engineering",
+      "date": "2022-01-01",
+      "doi": "10.1007/978-981-19-0252-9_16",
+      "citations": 0,
+      "eid": "2-s2.0-85133028615",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85133028615",
+      "abstract": {}
+    },
+    {
+      "title": "Clustering Method Response and Recovery Time Analysis with Different Temperature for different Toxic Gas",
+      "source": "Proceedings of 2nd International Conference on Innovative Practices in Technology and Management Iciptm 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICIPTM54933.2022.9754047",
+      "citations": 0,
+      "eid": "2-s2.0-85129364040",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85129364040",
+      "abstract": {}
+    },
+    {
+      "title": "Performance analysis of 2% Fe2O3 Doped Thick-film Gas Sensor in Toxic Liquid Detection Using Machine Learning Techniques",
+      "source": "Proceedings 4th International Conference on Smart Systems and Inventive Technology Icssit 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICSSIT53264.2022.9716258",
+      "citations": 2,
+      "eid": "2-s2.0-85127335971",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85127335971",
+      "abstract": {}
+    },
+    {
+      "title": "Comparison between Rectangular Microstrip Patch Antenna with and without Defected Ground Structure at 1.85 GHz",
+      "source": "2022 International Conference for Advancement in Technology Iconat 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICONAT53423.2022.9726044",
+      "citations": 8,
+      "eid": "2-s2.0-85127593856",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85127593856",
+      "abstract": {}
+    },
+    {
+      "title": "Low-Cost Automatic Purchase Cart for Hassle-free Uncrowded Shopping in Indian Supermarkets",
+      "source": "Proceedings 2022 2nd International Conference on Innovative Sustainable Computational Technologies Cisct 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/CISCT55310.2022.10046503",
+      "citations": 2,
+      "eid": "2-s2.0-85149443765",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85149443765",
+      "abstract": {}
+    },
+    {
+      "title": "House Prices Prediction Using Machine Learning Regression Models",
+      "source": "2022 IEEE 2nd International Conference on Mobile Networks and Wireless Communications Icmnwc 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICMNWC56175.2022.10031728",
+      "citations": 10,
+      "eid": "2-s2.0-85148291040",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148291040",
+      "abstract": {}
+    },
+    {
+      "title": "A Voice Assisted Chatbot Framework for Real-Time Implementation in Medical Care",
+      "source": "Communications in Computer and Information Science",
+      "date": "2022-01-01",
+      "doi": "10.1007/978-3-031-12638-3_5",
+      "citations": 3,
+      "eid": "2-s2.0-85135915921",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85135915921",
+      "abstract": {}
+    },
+    {
+      "title": "Retraction:Evolving Long Short-Term Memory Network-Based Text Classification",
+      "source": "Computational Intelligence and Neuroscience",
+      "date": "2022-01-01",
+      "doi": "10.1155/2022/4725639",
+      "citations": 18,
+      "eid": "2-s2.0-85125611055",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85125611055",
+      "abstract": {}
+    },
+    {
+      "title": "Implementation of a Wild Animal Intrusion Detection Model Based on Internet of Things",
+      "source": "Proceedings of the 2nd International Conference on Artificial Intelligence and Smart Energy Icais 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICAIS53314.2022.9742948",
+      "citations": 38,
+      "eid": "2-s2.0-85128190730",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85128190730",
+      "abstract": {}
+    },
+    {
+      "title": "Design of U-Slot Microstrip Patch Antenna for Wireless Applications",
+      "source": "2022 2nd International Conference on Advances in Electrical Computing Communication and Sustainable Technologies Icaect 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICAECT54875.2022.9807838",
+      "citations": 3,
+      "eid": "2-s2.0-85134225730",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85134225730",
+      "abstract": {}
+    },
+    {
       "title": "Current challenges and opportunities in computation and simulation to align 4ir paradigm shift",
       "source": "Indonesian Journal of Electrical Engineering and Informatics",
       "date": "2020-09-01",
@@ -518,16 +518,6 @@
       "citations": 7,
       "eid": "2-s2.0-85101700718",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85101700718",
-      "abstract": {}
-    },
-    {
-      "title": "Moisture content investigation in the soil samples using microwave dielectric constant measurement method",
-      "source": "International Journal of Electrical and Computer Engineering",
-      "date": "2020-01-01",
-      "doi": "10.11591/ijece.v10i1.pp704-710",
-      "citations": 7,
-      "eid": "2-s2.0-85074457568",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85074457568",
       "abstract": {}
     },
     {
@@ -541,6 +531,16 @@
       "abstract": {}
     },
     {
+      "title": "Moisture content investigation in the soil samples using microwave dielectric constant measurement method",
+      "source": "International Journal of Electrical and Computer Engineering",
+      "date": "2020-01-01",
+      "doi": "10.11591/ijece.v10i1.pp704-710",
+      "citations": 7,
+      "eid": "2-s2.0-85074457568",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85074457568",
+      "abstract": {}
+    },
+    {
       "title": "Performance analysis of high-k dielectric based silicon nanowire gate-all-around tunneling FET",
       "source": "International Journal of Electrical and Electronic Engineering and Telecommunications",
       "date": "2019-11-01",
@@ -548,26 +548,6 @@
       "citations": 13,
       "eid": "2-s2.0-85080610318",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85080610318",
-      "abstract": {}
-    },
-    {
-      "title": "Performance Analysis of High- k Dielectric Based Double-gate Carbon Nanotube MOSFET",
-      "source": "Progress in Electromagnetics Research Symposium",
-      "date": "2019-06-01",
-      "doi": "10.1109/PIERS-Spring46901.2019.9017411",
-      "citations": 2,
-      "eid": "2-s2.0-85077471015",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85077471015",
-      "abstract": {}
-    },
-    {
-      "title": "Double-gate Tri-active Layer Channel Amorphous-IGZO Thin Film Transistor for AMLCD Pixel Circuit",
-      "source": "Progress in Electromagnetics Research Symposium",
-      "date": "2019-06-01",
-      "doi": "10.1109/PIERS-Spring46901.2019.9017367",
-      "citations": 7,
-      "eid": "2-s2.0-85074849133",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85074849133",
       "abstract": {}
     },
     {
@@ -581,13 +561,23 @@
       "abstract": {}
     },
     {
-      "title": "Performance Analysis of 10 nm FinFET with Scaled Fin-Dimension and Oxide Thickness",
-      "source": "2019 International Conference on Automation Computational and Technology Management Icactm 2019",
-      "date": "2019-04-01",
-      "doi": "10.1109/ICACTM.2019.8776710",
-      "citations": 20,
-      "eid": "2-s2.0-85070626928",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85070626928",
+      "title": "Double-gate Tri-active Layer Channel Amorphous-IGZO Thin Film Transistor for AMLCD Pixel Circuit",
+      "source": "Progress in Electromagnetics Research Symposium",
+      "date": "2019-06-01",
+      "doi": "10.1109/PIERS-Spring46901.2019.9017367",
+      "citations": 7,
+      "eid": "2-s2.0-85074849133",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85074849133",
+      "abstract": {}
+    },
+    {
+      "title": "Performance Analysis of High- k Dielectric Based Double-gate Carbon Nanotube MOSFET",
+      "source": "Progress in Electromagnetics Research Symposium",
+      "date": "2019-06-01",
+      "doi": "10.1109/PIERS-Spring46901.2019.9017411",
+      "citations": 2,
+      "eid": "2-s2.0-85077471015",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85077471015",
       "abstract": {}
     },
     {
@@ -601,13 +591,13 @@
       "abstract": {}
     },
     {
-      "title": "Design and analysis of novel tri-active layer channel amorphous-IGZO thin-film transistor",
-      "source": "Micro and Nano Letters",
-      "date": "2019-01-01",
-      "doi": "10.1049/mnl.2019.0293",
-      "citations": 5,
-      "eid": "2-s2.0-85074865362",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85074865362",
+      "title": "Performance Analysis of 10 nm FinFET with Scaled Fin-Dimension and Oxide Thickness",
+      "source": "2019 International Conference on Automation Computational and Technology Management Icactm 2019",
+      "date": "2019-04-01",
+      "doi": "10.1109/ICACTM.2019.8776710",
+      "citations": 20,
+      "eid": "2-s2.0-85070626928",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85070626928",
       "abstract": {}
     },
     {
@@ -621,6 +611,16 @@
       "abstract": {}
     },
     {
+      "title": "Design and analysis of novel tri-active layer channel amorphous-IGZO thin-film transistor",
+      "source": "Micro and Nano Letters",
+      "date": "2019-01-01",
+      "doi": "10.1049/mnl.2019.0293",
+      "citations": 5,
+      "eid": "2-s2.0-85074865362",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85074865362",
+      "abstract": {}
+    },
+    {
       "title": "Performance Estimation of Amorphouss-IGZO Based Thin Film Transistor",
       "source": "2018 International Conference on Advanced Computation and Telecommunication Icacat 2018",
       "date": "2018-12-01",
@@ -631,16 +631,6 @@
       "abstract": {}
     },
     {
-      "title": "Performance Comparison of Amorphous-IGZO and Hydrogenated Silicon Based Thin Film Transistor",
-      "source": "2018 International Conference on Advanced Computation and Telecommunication Icacat 2018",
-      "date": "2018-12-01",
-      "doi": "10.1109/ICACAT.2018.8933691",
-      "citations": 5,
-      "eid": "2-s2.0-85077970519",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85077970519",
-      "abstract": {}
-    },
-    {
       "title": "Effect of Gate-lap and Oxide Material at 10-nm FinFET Device Performance",
       "source": "2018 International Conference on Advanced Computation and Telecommunication Icacat 2018",
       "date": "2018-12-01",
@@ -648,6 +638,16 @@
       "citations": 3,
       "eid": "2-s2.0-85077458820",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85077458820",
+      "abstract": {}
+    },
+    {
+      "title": "Performance Comparison of Amorphous-IGZO and Hydrogenated Silicon Based Thin Film Transistor",
+      "source": "2018 International Conference on Advanced Computation and Telecommunication Icacat 2018",
+      "date": "2018-12-01",
+      "doi": "10.1109/ICACAT.2018.8933691",
+      "citations": 5,
+      "eid": "2-s2.0-85077970519",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85077970519",
       "abstract": {}
     },
     {

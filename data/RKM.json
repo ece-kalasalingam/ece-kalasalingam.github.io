@@ -7,6 +7,49 @@
   "publications_file": "publications/RKM.json",
   "sections": [
     {
+      "id": "profile",
+      "title": "Profile",
+      "type": "kv",
+      "items": [
+        {
+          "label": "Name",
+          "value": "Dr. R. Kottaimalai"
+        },
+        {
+          "label": "E-mail",
+          "value": "r.kottaimalai@klu.ac.in, rkottaimalai@gmail.com"
+        },
+        {
+          "label": "Designation",
+          "value": "Associate Professor"
+        },
+        {
+          "label": "Department",
+          "value": "Electronics and Communication Engineering"
+        },
+        {
+          "label": "School",
+          "value": "School of Electronics, Electrical and Biomedical Technology"
+        },
+        {
+          "label": "Administrative Responsibility",
+          "value": "Deputy Director - Accreditation & Ranking"
+        },
+        {
+          "label": "Google Scholar Link:",
+          "value": "https://scholar.google.com/citations?hl=en&user=YFaxZlgAAAAJ"
+        },
+        {
+          "label": "Scopus Link",
+          "value": "https://www.scopus.com/authid/detail.uri?authorId=55811890500"
+        },
+        {
+          "label": "ORCID ID:",
+          "value": "https://orcid.org/0000-0002-4846-6067"
+        }
+      ]
+    },
+    {
       "id": "about-me",
       "title": "About Me",
       "type": "markdown",

@@ -41,26 +41,6 @@
       "abstract": {}
     },
     {
-      "title": "Cloud Classification and Rainfall Prediction",
-      "source": "2nd International Conference on Artificial Intelligence and Machine Learning Applications Healthcare and Internet of Things Aimla 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/AIMLA59606.2024.10531390",
-      "citations": 0,
-      "eid": "2-s2.0-85195120056",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85195120056",
-      "abstract": {}
-    },
-    {
-      "title": "Smart Artificial Intelligence Based Face Aging Recognition System Using Modified Hybrid Learning Strategy",
-      "source": "Proceedings of 9th International Conference on Science Technology Engineering and Mathematics the Role of Emerging Technologies in Digital Transformation Iconstem 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICONSTEM60960.2024.10568629",
-      "citations": 0,
-      "eid": "2-s2.0-85198840470",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85198840470",
-      "abstract": {}
-    },
-    {
       "title": "The structurized Reconstruction model for visual recognition systems",
       "source": "2024 15th International Conference on Computing Communication and Networking Technologies Icccnt 2024",
       "date": "2024-01-01",
@@ -68,76 +48,6 @@
       "citations": 0,
       "eid": "2-s2.0-85211143420",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85211143420",
-      "abstract": {}
-    },
-    {
-      "title": "Retracted: The smart analysis of image features using CNN based model (2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT) DOI: 10.1109/ICCCNT61001.2024.10724546)",
-      "source": "2024 15th International Conference on Computing Communication and Networking Technologies Icccnt 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICCCNT61001.2024.11422609",
-      "citations": 0,
-      "eid": "2-s2.0-105034748411",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034748411",
-      "abstract": {}
-    },
-    {
-      "title": "Retraction Notice: The smart analysis of image features using CNN based model (2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT) DOI: 10.1109/ICCCNT61001.2024.10724546)",
-      "source": "2024 15th International Conference on Computing Communication and Networking Technologies Icccnt 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICCCNT61001.2024.11422609",
-      "citations": 0,
-      "eid": "2-s2.0-105032995906",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105032995906",
-      "abstract": {}
-    },
-    {
-      "title": "Experimental Design of a Delay Reduction Model using Enhanced Routing Protocol to Ensure Lifetime Enhancement of Nodes in Wireless Sensor Network",
-      "source": "Proceedings of 9th International Conference on Science Technology Engineering and Mathematics the Role of Emerging Technologies in Digital Transformation Iconstem 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICONSTEM60960.2024.10568696",
-      "citations": 0,
-      "eid": "2-s2.0-85198838144",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85198838144",
-      "abstract": {}
-    },
-    {
-      "title": "A Robust Design of Fault Nodes Identification and Recovery Model Over Wireless Sensor Network",
-      "source": "Proceedings of 9th International Conference on Science Technology Engineering and Mathematics the Role of Emerging Technologies in Digital Transformation Iconstem 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICONSTEM60960.2024.10568749",
-      "citations": 2,
-      "eid": "2-s2.0-85198847268",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85198847268",
-      "abstract": {}
-    },
-    {
-      "title": "Retraction Notice: The structurized Reconstruction model for visual recognition systems (2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT) DOI: 10.1109/ICCCNT61001.2024.10724863)",
-      "source": "2024 15th International Conference on Computing Communication and Networking Technologies Icccnt 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICCCNT61001.2024.11422635",
-      "citations": 0,
-      "eid": "2-s2.0-105033022719",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105033022719",
-      "abstract": {}
-    },
-    {
-      "title": "Retracted: The structurized Reconstruction model for visual recognition systems (2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT) DOI: 10.1109/ICCCNT61001.2024.10724863)",
-      "source": "2024 15th International Conference on Computing Communication and Networking Technologies Icccnt 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICCCNT61001.2024.11422635",
-      "citations": 0,
-      "eid": "2-s2.0-105034749063",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034749063",
-      "abstract": {}
-    },
-    {
-      "title": "Automatic Door Closure System Based on Lighting Conditions",
-      "source": "2nd International Conference on Intelligent Data Communication Technologies and Internet of Things Idciot 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/IDCIoT59759.2024.10467419",
-      "citations": 1,
-      "eid": "2-s2.0-85190107592",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85190107592",
       "abstract": {}
     },
     {
@@ -151,6 +61,96 @@
       "abstract": {}
     },
     {
+      "title": "Smart Artificial Intelligence Based Face Aging Recognition System Using Modified Hybrid Learning Strategy",
+      "source": "Proceedings of 9th International Conference on Science Technology Engineering and Mathematics the Role of Emerging Technologies in Digital Transformation Iconstem 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICONSTEM60960.2024.10568629",
+      "citations": 0,
+      "eid": "2-s2.0-85198840470",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85198840470",
+      "abstract": {}
+    },
+    {
+      "title": "Retraction Notice: The structurized Reconstruction model for visual recognition systems (2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT) DOI: 10.1109/ICCCNT61001.2024.10724863)",
+      "source": "2024 15th International Conference on Computing Communication and Networking Technologies Icccnt 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICCCNT61001.2024.11422635",
+      "citations": 0,
+      "eid": "2-s2.0-105033022719",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105033022719",
+      "abstract": {}
+    },
+    {
+      "title": "Retraction Notice: The smart analysis of image features using CNN based model (2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT) DOI: 10.1109/ICCCNT61001.2024.10724546)",
+      "source": "2024 15th International Conference on Computing Communication and Networking Technologies Icccnt 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICCCNT61001.2024.11422609",
+      "citations": 0,
+      "eid": "2-s2.0-105032995906",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105032995906",
+      "abstract": {}
+    },
+    {
+      "title": "Retracted: The structurized Reconstruction model for visual recognition systems (2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT) DOI: 10.1109/ICCCNT61001.2024.10724863)",
+      "source": "2024 15th International Conference on Computing Communication and Networking Technologies Icccnt 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICCCNT61001.2024.11422635",
+      "citations": 0,
+      "eid": "2-s2.0-105034749063",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034749063",
+      "abstract": {}
+    },
+    {
+      "title": "Retracted: The smart analysis of image features using CNN based model (2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT) DOI: 10.1109/ICCCNT61001.2024.10724546)",
+      "source": "2024 15th International Conference on Computing Communication and Networking Technologies Icccnt 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICCCNT61001.2024.11422609",
+      "citations": 0,
+      "eid": "2-s2.0-105034748411",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034748411",
+      "abstract": {}
+    },
+    {
+      "title": "Experimental Design of a Delay Reduction Model using Enhanced Routing Protocol to Ensure Lifetime Enhancement of Nodes in Wireless Sensor Network",
+      "source": "Proceedings of 9th International Conference on Science Technology Engineering and Mathematics the Role of Emerging Technologies in Digital Transformation Iconstem 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICONSTEM60960.2024.10568696",
+      "citations": 0,
+      "eid": "2-s2.0-85198838144",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85198838144",
+      "abstract": {}
+    },
+    {
+      "title": "Cloud Classification and Rainfall Prediction",
+      "source": "2nd International Conference on Artificial Intelligence and Machine Learning Applications Healthcare and Internet of Things Aimla 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/AIMLA59606.2024.10531390",
+      "citations": 0,
+      "eid": "2-s2.0-85195120056",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85195120056",
+      "abstract": {}
+    },
+    {
+      "title": "Automatic Door Closure System Based on Lighting Conditions",
+      "source": "2nd International Conference on Intelligent Data Communication Technologies and Internet of Things Idciot 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/IDCIoT59759.2024.10467419",
+      "citations": 1,
+      "eid": "2-s2.0-85190107592",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85190107592",
+      "abstract": {}
+    },
+    {
+      "title": "A Robust Design of Fault Nodes Identification and Recovery Model Over Wireless Sensor Network",
+      "source": "Proceedings of 9th International Conference on Science Technology Engineering and Mathematics the Role of Emerging Technologies in Digital Transformation Iconstem 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICONSTEM60960.2024.10568749",
+      "citations": 2,
+      "eid": "2-s2.0-85198847268",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85198847268",
+      "abstract": {}
+    },
+    {
       "title": "Efficient Load Balancing in WSN Using Quasi – oppositional Based Jaya Optimization with Cluster Head Selection",
       "source": "International Journal of Computer Network and Information Security",
       "date": "2023-04-01",
@@ -158,86 +158,6 @@
       "citations": 3,
       "eid": "2-s2.0-85153519075",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85153519075",
-      "abstract": {}
-    },
-    {
-      "title": "Self Asserted Power Optimization Protocol for Heterogeneous WSN",
-      "source": "2023 2nd International Conference on Electrical Electronics Information and Communication Technologies Iceeict 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICEEICT56924.2023.10157441",
-      "citations": 0,
-      "eid": "2-s2.0-85165743164",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85165743164",
-      "abstract": {}
-    },
-    {
-      "title": "Detection of Lung Nodule using Novel Deep Learning Algorithm based on Computed Tomographic Images",
-      "source": "Proceedings of 8th IEEE International Conference on Science Technology Engineering and Mathematics Iconstem 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICONSTEM56934.2023.10142876",
-      "citations": 6,
-      "eid": "2-s2.0-105003852724",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105003852724",
-      "abstract": {}
-    },
-    {
-      "title": "Experimental Design of a Robotic Ventilator to Support Covid-19 and Related Pandemic Situations",
-      "source": "Proceedings of 8th IEEE International Conference on Science Technology Engineering and Mathematics Iconstem 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICONSTEM56934.2023.10142510",
-      "citations": 1,
-      "eid": "2-s2.0-105003852674",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105003852674",
-      "abstract": {}
-    },
-    {
-      "title": "A Robust and Improved sparrow search algorithm for optimization in wireless sensor network",
-      "source": "Proceedings of the International Conference on Artificial Intelligence and Knowledge Discovery in Concurrent Engineering Iceconf 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICECONF57129.2023.10083538",
-      "citations": 0,
-      "eid": "2-s2.0-105003852692",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105003852692",
-      "abstract": {}
-    },
-    {
-      "title": "RETRACTION:A neuro-fuzzy approach for multipoint data prediction in passive clustered wireless sensor networks",
-      "source": "Journal of Intelligent and Fuzzy Systems",
-      "date": "2023-01-01",
-      "doi": "10.3233/JIFS-212214",
-      "citations": 2,
-      "eid": "2-s2.0-85148033180",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148033180",
-      "abstract": {}
-    },
-    {
-      "title": "Design of an Autonomous Mower with Height Adjustable Cutting Motor",
-      "source": "Icspc 2023 4th International Conference on Signal Processing and Communication",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICSPC57692.2023.10125879",
-      "citations": 4,
-      "eid": "2-s2.0-85161204847",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161204847",
-      "abstract": {}
-    },
-    {
-      "title": "Optimal Metaheuristic Sparrow Tuba Search Clustering for Load Balancing in Wireless Sensor Networks",
-      "source": "Ad Hoc and Sensor Wireless Networks",
-      "date": "2023-01-01",
-      "doi": "10.32908/ahswn.v57.10101",
-      "citations": 1,
-      "eid": "2-s2.0-85178959089",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85178959089",
-      "abstract": {}
-    },
-    {
-      "title": "Hybrid muddy electric fish and grasshopper optimization algorithm (MEF-GOA) based CNN for detection and severity differentiation of glaucoma in retinal fundus image",
-      "source": "Journal of Intelligent and Fuzzy Systems",
-      "date": "2023-01-01",
-      "doi": "10.3233/JIFS-221262",
-      "citations": 0,
-      "eid": "2-s2.0-85147988634",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85147988634",
       "abstract": {}
     },
     {
@@ -251,13 +171,13 @@
       "abstract": {}
     },
     {
-      "title": "A Novel Design of Secured BlockChain Assisted Land Registration Mechanism by using Enhanced Verification Principles",
-      "source": "2023 IEEE International Conference on Research Methodologies in Knowledge Management Artificial Intelligence and Telecommunication Engineering Rmkmate 2023",
+      "title": "Self Asserted Power Optimization Protocol for Heterogeneous WSN",
+      "source": "2023 2nd International Conference on Electrical Electronics Information and Communication Technologies Iceeict 2023",
       "date": "2023-01-01",
-      "doi": "10.1109/RMKMATE59243.2023.10369546",
-      "citations": 10,
-      "eid": "2-s2.0-85183536045",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85183536045",
+      "doi": "10.1109/ICEEICT56924.2023.10157441",
+      "citations": 0,
+      "eid": "2-s2.0-85165743164",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85165743164",
       "abstract": {}
     },
     {
@@ -271,16 +191,6 @@
       "abstract": {}
     },
     {
-      "title": "Design and Development of Multipurpose Data Acquisition for Effective Transportation",
-      "source": "2023 9th International Conference on Advanced Computing and Communication Systems Icaccs 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICACCS57279.2023.10112724",
-      "citations": 0,
-      "eid": "2-s2.0-85159762409",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85159762409",
-      "abstract": {}
-    },
-    {
       "title": "Real-time scanning and tracking of health records through a centralized ecosystem based on Internet of Things and fog computing",
       "source": "Proceedings of the International Conference on Artificial Intelligence and Knowledge Discovery in Concurrent Engineering Iceconf 2023",
       "date": "2023-01-01",
@@ -291,13 +201,23 @@
       "abstract": {}
     },
     {
-      "title": "A Safe and Reliable Digital Fingerprint Recognition Method for Internet of Things (IoT) Devices",
-      "source": "Proceedings of the International Conference on Artificial Intelligence and Knowledge Discovery in Concurrent Engineering Iceconf 2023",
+      "title": "RETRACTION:A neuro-fuzzy approach for multipoint data prediction in passive clustered wireless sensor networks",
+      "source": "Journal of Intelligent and Fuzzy Systems",
       "date": "2023-01-01",
-      "doi": "10.1109/ICECONF57129.2023.10083840",
+      "doi": "10.3233/JIFS-212214",
+      "citations": 2,
+      "eid": "2-s2.0-85148033180",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85148033180",
+      "abstract": {}
+    },
+    {
+      "title": "Optimal Metaheuristic Sparrow Tuba Search Clustering for Load Balancing in Wireless Sensor Networks",
+      "source": "Ad Hoc and Sensor Wireless Networks",
+      "date": "2023-01-01",
+      "doi": "10.32908/ahswn.v57.10101",
       "citations": 1,
-      "eid": "2-s2.0-85153091833",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153091833",
+      "eid": "2-s2.0-85178959089",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85178959089",
       "abstract": {}
     },
     {
@@ -311,43 +231,93 @@
       "abstract": {}
     },
     {
-      "title": "Retracted: A Clustering Prediction Model-based Data Collection for WSN (2022 7th International Conference on Communication and Electronics Systems (ICCES) DOI: 10.1109/ICCES54183.2022.11408427)",
-      "source": "7th International Conference on Communication and Electronics Systems Icces 2022 Proceedings",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICCES54183.2022.9835928",
+      "title": "Hybrid muddy electric fish and grasshopper optimization algorithm (MEF-GOA) based CNN for detection and severity differentiation of glaucoma in retinal fundus image",
+      "source": "Journal of Intelligent and Fuzzy Systems",
+      "date": "2023-01-01",
+      "doi": "10.3233/JIFS-221262",
       "citations": 0,
-      "eid": "2-s2.0-105046186162",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105046186162",
+      "eid": "2-s2.0-85147988634",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85147988634",
       "abstract": {}
     },
     {
-      "title": "A Clustering Prediction Model-based Data Collection for WSN",
-      "source": "7th International Conference on Communication and Electronics Systems Icces 2022 Proceedings",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICCES54183.2022.9835928",
+      "title": "Experimental Design of a Robotic Ventilator to Support Covid-19 and Related Pandemic Situations",
+      "source": "Proceedings of 8th IEEE International Conference on Science Technology Engineering and Mathematics Iconstem 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICONSTEM56934.2023.10142510",
+      "citations": 1,
+      "eid": "2-s2.0-105003852674",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105003852674",
+      "abstract": {}
+    },
+    {
+      "title": "Detection of Lung Nodule using Novel Deep Learning Algorithm based on Computed Tomographic Images",
+      "source": "Proceedings of 8th IEEE International Conference on Science Technology Engineering and Mathematics Iconstem 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICONSTEM56934.2023.10142876",
+      "citations": 6,
+      "eid": "2-s2.0-105003852724",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105003852724",
+      "abstract": {}
+    },
+    {
+      "title": "Design of an Autonomous Mower with Height Adjustable Cutting Motor",
+      "source": "Icspc 2023 4th International Conference on Signal Processing and Communication",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICSPC57692.2023.10125879",
       "citations": 4,
-      "eid": "2-s2.0-85136328361",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85136328361",
+      "eid": "2-s2.0-85161204847",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161204847",
       "abstract": {}
     },
     {
-      "title": "An Effective Design of Wireless Android based Robotic Operation Control using 8051 Microcontroller",
-      "source": "Proceedings IEEE International Conference on Advances in Computing Communication and Applied Informatics Accai 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ACCAI53970.2022.9752510",
-      "citations": 7,
-      "eid": "2-s2.0-85128849274",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85128849274",
-      "abstract": {}
-    },
-    {
-      "title": "Retraction Notice: A Clustering Prediction Model-based Data Collection for WSN (2022 7th International Conference on Communication and Electronics Systems (ICCES) DOI: 10.1109/ICCES54183.2022.9835928)",
-      "source": "7th International Conference on Communication and Electronics Systems Icces 2022 Proceedings",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICCES54183.2022.11391693",
+      "title": "Design and Development of Multipurpose Data Acquisition for Effective Transportation",
+      "source": "2023 9th International Conference on Advanced Computing and Communication Systems Icaccs 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICACCS57279.2023.10112724",
       "citations": 0,
-      "eid": "2-s2.0-105032813561",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105032813561",
+      "eid": "2-s2.0-85159762409",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85159762409",
+      "abstract": {}
+    },
+    {
+      "title": "A Safe and Reliable Digital Fingerprint Recognition Method for Internet of Things (IoT) Devices",
+      "source": "Proceedings of the International Conference on Artificial Intelligence and Knowledge Discovery in Concurrent Engineering Iceconf 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICECONF57129.2023.10083840",
+      "citations": 1,
+      "eid": "2-s2.0-85153091833",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153091833",
+      "abstract": {}
+    },
+    {
+      "title": "A Robust and Improved sparrow search algorithm for optimization in wireless sensor network",
+      "source": "Proceedings of the International Conference on Artificial Intelligence and Knowledge Discovery in Concurrent Engineering Iceconf 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICECONF57129.2023.10083538",
+      "citations": 0,
+      "eid": "2-s2.0-105003852692",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105003852692",
+      "abstract": {}
+    },
+    {
+      "title": "A Novel Design of Secured BlockChain Assisted Land Registration Mechanism by using Enhanced Verification Principles",
+      "source": "2023 IEEE International Conference on Research Methodologies in Knowledge Management Artificial Intelligence and Telecommunication Engineering Rmkmate 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/RMKMATE59243.2023.10369546",
+      "citations": 10,
+      "eid": "2-s2.0-85183536045",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85183536045",
+      "abstract": {}
+    },
+    {
+      "title": "Wavelet thresholding techniques implementation in retinal images for suppressing noises",
+      "source": "Materials Today Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1016/j.matpr.2021.12.059",
+      "citations": 4,
+      "eid": "2-s2.0-85129077162",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85129077162",
       "abstract": {}
     },
     {
@@ -361,13 +331,43 @@
       "abstract": {}
     },
     {
-      "title": "A Wireless Communication Protocol Enabled School Bus Tracking System using Internet of Things Support",
-      "source": "Proceedings IEEE International Conference on Advances in Computing Communication and Applied Informatics Accai 2022",
+      "title": "Retraction Notice: A Clustering Prediction Model-based Data Collection for WSN (2022 7th International Conference on Communication and Electronics Systems (ICCES) DOI: 10.1109/ICCES54183.2022.9835928)",
+      "source": "7th International Conference on Communication and Electronics Systems Icces 2022 Proceedings",
       "date": "2022-01-01",
-      "doi": "10.1109/ACCAI53970.2022.9752566",
-      "citations": 4,
-      "eid": "2-s2.0-85128827582",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85128827582",
+      "doi": "10.1109/ICCES54183.2022.11391693",
+      "citations": 0,
+      "eid": "2-s2.0-105032813561",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105032813561",
+      "abstract": {}
+    },
+    {
+      "title": "Retracted: A Clustering Prediction Model-based Data Collection for WSN (2022 7th International Conference on Communication and Electronics Systems (ICCES) DOI: 10.1109/ICCES54183.2022.11408427)",
+      "source": "7th International Conference on Communication and Electronics Systems Icces 2022 Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICCES54183.2022.9835928",
+      "citations": 0,
+      "eid": "2-s2.0-105046186162",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105046186162",
+      "abstract": {}
+    },
+    {
+      "title": "Remodeling Control with Filter in Collaboration among Isolated Robot Systems with Force Feedback",
+      "source": "Proceedings of the 2022 International Conference on Innovative Computing Intelligent Communication and Smart Electrical Systems Icses 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICSES55317.2022.9914218",
+      "citations": 0,
+      "eid": "2-s2.0-85141455120",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85141455120",
+      "abstract": {}
+    },
+    {
+      "title": "LoRaWAN Mesh Networks: An efficient mesh formation of LoRa devices in rural energy system",
+      "source": "Proceedings of the 2022 International Conference on Innovative Computing Intelligent Communication and Smart Electrical Systems Icses 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICSES55317.2022.9914273",
+      "citations": 56,
+      "eid": "2-s2.0-85141476122",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85141476122",
       "abstract": {}
     },
     {
@@ -401,16 +401,6 @@
       "abstract": {}
     },
     {
-      "title": "LoRaWAN Mesh Networks: An efficient mesh formation of LoRa devices in rural energy system",
-      "source": "Proceedings of the 2022 International Conference on Innovative Computing Intelligent Communication and Smart Electrical Systems Icses 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICSES55317.2022.9914273",
-      "citations": 56,
-      "eid": "2-s2.0-85141476122",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85141476122",
-      "abstract": {}
-    },
-    {
       "title": "Design and Experimental Investigation of Tapered Vivaldi Patch Antenna for Microwave Imaging",
       "source": "Proceedings IEEE International Conference on Advances in Computing Communication and Applied Informatics Accai 2022",
       "date": "2022-01-01",
@@ -421,23 +411,33 @@
       "abstract": {}
     },
     {
-      "title": "Remodeling Control with Filter in Collaboration among Isolated Robot Systems with Force Feedback",
-      "source": "Proceedings of the 2022 International Conference on Innovative Computing Intelligent Communication and Smart Electrical Systems Icses 2022",
+      "title": "An Effective Design of Wireless Android based Robotic Operation Control using 8051 Microcontroller",
+      "source": "Proceedings IEEE International Conference on Advances in Computing Communication and Applied Informatics Accai 2022",
       "date": "2022-01-01",
-      "doi": "10.1109/ICSES55317.2022.9914218",
-      "citations": 0,
-      "eid": "2-s2.0-85141455120",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85141455120",
+      "doi": "10.1109/ACCAI53970.2022.9752510",
+      "citations": 7,
+      "eid": "2-s2.0-85128849274",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85128849274",
       "abstract": {}
     },
     {
-      "title": "Wavelet thresholding techniques implementation in retinal images for suppressing noises",
-      "source": "Materials Today Proceedings",
+      "title": "A Wireless Communication Protocol Enabled School Bus Tracking System using Internet of Things Support",
+      "source": "Proceedings IEEE International Conference on Advances in Computing Communication and Applied Informatics Accai 2022",
       "date": "2022-01-01",
-      "doi": "10.1016/j.matpr.2021.12.059",
+      "doi": "10.1109/ACCAI53970.2022.9752566",
       "citations": 4,
-      "eid": "2-s2.0-85129077162",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85129077162",
+      "eid": "2-s2.0-85128827582",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85128827582",
+      "abstract": {}
+    },
+    {
+      "title": "A Clustering Prediction Model-based Data Collection for WSN",
+      "source": "7th International Conference on Communication and Electronics Systems Icces 2022 Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICCES54183.2022.9835928",
+      "citations": 4,
+      "eid": "2-s2.0-85136328361",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85136328361",
       "abstract": {}
     },
     {

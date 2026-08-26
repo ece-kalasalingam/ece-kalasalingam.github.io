@@ -11,7 +11,7 @@
       "abstract": {
         "text": "A bstract Physiological signal-driven stress detection has recently been recognized as a promising paradigm for the objective evaluation of acute and chronic stress conditions, with potential applications in clinical practice, wearable biotechnology, and precision medicine. However, the advances reported in these existing studies have been based on heterogeneous datasets, non-uniform validation protocols, and overly optimistic accuracy claims, which limit generalizability in real-world scenarios. This review offers a structured and critical appraisal of unimodal and multimodal stress classification architectures using electrocardiogram, photoplethysmogram, electromyogram, and electroencephalogram physiological signals. The review provides cross-modality studies designed to assess the ability of the systems to detect stress types, robustness to noise, computational feasibility, and deployment suitability. The review also discusses key methodological issues, such as dataset bias, population homogeneity, and the absence of standardized benchmarking. The review further outlines future research directions that focus on subject-independent validation, longitudinal and cross-cultural datasets, explainable and personalized modeling, and federated learning frameworks. So, this review collectively results in the establishment of practical guidance for building robust, interpretable, and clinically translatable methods for detecting stress.",
         "source": "crossref",
-        "fetched_at": "2026-08-25T03:04:02+00:00"
+        "fetched_at": "2026-08-26T03:11:01+00:00"
       }
     },
     {

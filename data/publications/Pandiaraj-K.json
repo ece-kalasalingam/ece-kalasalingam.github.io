@@ -21,16 +21,6 @@
       "abstract": {}
     },
     {
-      "title": "InfoMate - Smart Conversational System for Academic Assistance",
-      "source": "Proceedings of 5th International Conference on Ubiquitous Computing and Intelligent Information Systems Icuis 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICUIS67429.2025.11380491",
-      "citations": 0,
-      "eid": "2-s2.0-105034833066",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034833066",
-      "abstract": {}
-    },
-    {
       "title": "Static Timing and Power Analysis of a RISC-V Pipelined Processor",
       "source": "4th International Conference on Automation Computing and Renewable Systems Icacrs 2025 Proceedings",
       "date": "2025-01-01",
@@ -38,46 +28,6 @@
       "citations": 1,
       "eid": "2-s2.0-105032735388",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105032735388",
-      "abstract": {}
-    },
-    {
-      "title": "Automated Seating Arrangement for Conducting Examination",
-      "source": "Proceedings of the International Conference on Multi Agent Systems for Collaborative Intelligence Icmsci 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICMSCI62561.2025.10894025",
-      "citations": 4,
-      "eid": "2-s2.0-105000467091",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105000467091",
-      "abstract": {}
-    },
-    {
-      "title": "IoT based Air Quality Monitoring and Air Purifier System",
-      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICTMIM65579.2025.10988388",
-      "citations": 0,
-      "eid": "2-s2.0-105007973090",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007973090",
-      "abstract": {}
-    },
-    {
-      "title": "An AI and IoT-based Personalized Agriculture Crop Life Cycle Management System",
-      "source": "3rd International Conference on Emerging Applications of Material Science and Technology Iceamst 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICEAMST67459.2025.11335620",
-      "citations": 0,
-      "eid": "2-s2.0-105033629198",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105033629198",
-      "abstract": {}
-    },
-    {
-      "title": "Oil Spill Detection using Deep Learning and CNN: Polarimetric Scattering Information from S-1 SAR Images",
-      "source": "International Conference on Computational Robotics Testing and Engineering Evaluation Iccrtee 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICCRTEE64519.2025.11052935",
-      "citations": 0,
-      "eid": "2-s2.0-105012171865",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105012171865",
       "abstract": {}
     },
     {
@@ -91,13 +41,33 @@
       "abstract": {}
     },
     {
-      "title": "Designing of an SoC Bus Bridge IP AXI-Stream to APB Bridge with Multi-Peripheral Controllers",
-      "source": "13th International Conference on Intelligent Embedded Microelectronics Communication and Optical Networks Iemecon 2025",
+      "title": "Oil Spill Detection using Deep Learning and CNN: Polarimetric Scattering Information from S-1 SAR Images",
+      "source": "International Conference on Computational Robotics Testing and Engineering Evaluation Iccrtee 2025",
       "date": "2025-01-01",
-      "doi": "10.1109/IEMECON69302.2025.11365722",
+      "doi": "10.1109/ICCRTEE64519.2025.11052935",
       "citations": 0,
-      "eid": "2-s2.0-105035593820",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035593820",
+      "eid": "2-s2.0-105012171865",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105012171865",
+      "abstract": {}
+    },
+    {
+      "title": "IoT based Air Quality Monitoring and Air Purifier System",
+      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICTMIM65579.2025.10988388",
+      "citations": 0,
+      "eid": "2-s2.0-105007973090",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007973090",
+      "abstract": {}
+    },
+    {
+      "title": "InfoMate - Smart Conversational System for Academic Assistance",
+      "source": "Proceedings of 5th International Conference on Ubiquitous Computing and Intelligent Information Systems Icuis 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICUIS67429.2025.11380491",
+      "citations": 0,
+      "eid": "2-s2.0-105034833066",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034833066",
       "abstract": {}
     },
     {
@@ -108,6 +78,36 @@
       "citations": 2,
       "eid": "2-s2.0-105012168537",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105012168537",
+      "abstract": {}
+    },
+    {
+      "title": "Designing of an SoC Bus Bridge IP AXI-Stream to APB Bridge with Multi-Peripheral Controllers",
+      "source": "13th International Conference on Intelligent Embedded Microelectronics Communication and Optical Networks Iemecon 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/IEMECON69302.2025.11365722",
+      "citations": 0,
+      "eid": "2-s2.0-105035593820",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035593820",
+      "abstract": {}
+    },
+    {
+      "title": "Automated Seating Arrangement for Conducting Examination",
+      "source": "Proceedings of the International Conference on Multi Agent Systems for Collaborative Intelligence Icmsci 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICMSCI62561.2025.10894025",
+      "citations": 4,
+      "eid": "2-s2.0-105000467091",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105000467091",
+      "abstract": {}
+    },
+    {
+      "title": "An AI and IoT-based Personalized Agriculture Crop Life Cycle Management System",
+      "source": "3rd International Conference on Emerging Applications of Material Science and Technology Iceamst 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICEAMST67459.2025.11335620",
+      "citations": 0,
+      "eid": "2-s2.0-105033629198",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105033629198",
       "abstract": {}
     },
     {
@@ -131,13 +131,13 @@
       "abstract": {}
     },
     {
-      "title": "Implementation of a PnR Flow at Block Level to Achieve the High Utilisation Rate",
-      "source": "7th International Conference on Inventive Computation Technologies Icict 2024",
+      "title": "SPI Verification Monitor Module Using UVM",
+      "source": "10th International Conference on Advanced Computing and Communication Systems Icaccs 2024",
       "date": "2024-01-01",
-      "doi": "10.1109/ICICT60155.2024.10544638",
-      "citations": 2,
-      "eid": "2-s2.0-85196119418",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85196119418",
+      "doi": "10.1109/ICACCS60874.2024.10717216",
+      "citations": 1,
+      "eid": "2-s2.0-85208613951",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85208613951",
       "abstract": {}
     },
     {
@@ -151,23 +151,13 @@
       "abstract": {}
     },
     {
-      "title": "SPI Verification Monitor Module Using UVM",
-      "source": "10th International Conference on Advanced Computing and Communication Systems Icaccs 2024",
+      "title": "Implementation of a PnR Flow at Block Level to Achieve the High Utilisation Rate",
+      "source": "7th International Conference on Inventive Computation Technologies Icict 2024",
       "date": "2024-01-01",
-      "doi": "10.1109/ICACCS60874.2024.10717216",
-      "citations": 1,
-      "eid": "2-s2.0-85208613951",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85208613951",
-      "abstract": {}
-    },
-    {
-      "title": "Five Stage Pipelined MIPS Processor Verification Coverage Module Using UVM",
-      "source": "2023 9th International Conference on Advanced Computing and Communication Systems Icaccs 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICACCS57279.2023.10112791",
-      "citations": 3,
-      "eid": "2-s2.0-85159768436",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85159768436",
+      "doi": "10.1109/ICICT60155.2024.10544638",
+      "citations": 2,
+      "eid": "2-s2.0-85196119418",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85196119418",
       "abstract": {}
     },
     {
@@ -178,6 +168,16 @@
       "citations": 1,
       "eid": "2-s2.0-85166208447",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85166208447",
+      "abstract": {}
+    },
+    {
+      "title": "Five Stage Pipelined MIPS Processor Verification Coverage Module Using UVM",
+      "source": "2023 9th International Conference on Advanced Computing and Communication Systems Icaccs 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICACCS57279.2023.10112791",
+      "citations": 3,
+      "eid": "2-s2.0-85159768436",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85159768436",
       "abstract": {}
     },
     {
@@ -211,16 +211,6 @@
       "abstract": {}
     },
     {
-      "title": "Floor Planning of 3D IC Design Using Hybrid Multi-verse Optimizer",
-      "source": "Wireless Personal Communications",
-      "date": "2021-06-01",
-      "doi": "10.1007/s11277-021-08166-z",
-      "citations": 14,
-      "eid": "2-s2.0-85100922531",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85100922531",
-      "abstract": {}
-    },
-    {
       "title": "Machine learning based effective linear regression model for TSV layer assignment in 3DIC",
       "source": "Microprocessors and Microsystems",
       "date": "2021-06-01",
@@ -231,6 +221,16 @@
       "abstract": {}
     },
     {
+      "title": "Floor Planning of 3D IC Design Using Hybrid Multi-verse Optimizer",
+      "source": "Wireless Personal Communications",
+      "date": "2021-06-01",
+      "doi": "10.1007/s11277-021-08166-z",
+      "citations": 14,
+      "eid": "2-s2.0-85100922531",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85100922531",
+      "abstract": {}
+    },
+    {
       "title": "RFID Based Automatic Lane Clearance for Ambulance",
       "source": "2021 International Conference on Advance Computing and Innovative Technologies in Engineering Icacite 2021",
       "date": "2021-03-04",
@@ -238,6 +238,16 @@
       "citations": 3,
       "eid": "2-s2.0-85105021002",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85105021002",
+      "abstract": {}
+    },
+    {
+      "title": "Thermal analysis for power efficient 3d IC routing using memetic algorithm based on hill climbing algorithm",
+      "source": "Journal of Green Engineering",
+      "date": "2021-01-01",
+      "doi": "",
+      "citations": 2,
+      "eid": "2-s2.0-85100040850",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85100040850",
       "abstract": {}
     },
     {
@@ -261,16 +271,6 @@
       "abstract": {}
     },
     {
-      "title": "Thermal analysis for power efficient 3d IC routing using memetic algorithm based on hill climbing algorithm",
-      "source": "Journal of Green Engineering",
-      "date": "2021-01-01",
-      "doi": "",
-      "citations": 2,
-      "eid": "2-s2.0-85100040850",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85100040850",
-      "abstract": {}
-    },
-    {
       "title": "Optimization of thermal aware multilevel routing for 3D IC",
       "source": "Analog Integrated Circuits and Signal Processing",
       "date": "2020-04-01",
@@ -281,16 +281,6 @@
       "abstract": {}
     },
     {
-      "title": "Minimizationof wirelength in 3d IC routing by using differential evolution algorithm",
-      "source": "Proceedings 2017 IEEE International Conference on Electrical Instrumentation and Communication Engineering Iceice 2017",
-      "date": "2017-12-12",
-      "doi": "10.1109/ICEICE.2017.8191950",
-      "citations": 7,
-      "eid": "2-s2.0-85047219533",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85047219533",
-      "abstract": {}
-    },
-    {
       "title": "Reduction of temperature rise in 3D IC routing",
       "source": "Proceedings 2017 IEEE International Conference on Electrical Instrumentation and Communication Engineering Iceice 2017",
       "date": "2017-12-12",
@@ -298,6 +288,16 @@
       "citations": 4,
       "eid": "2-s2.0-85047207473",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85047207473",
+      "abstract": {}
+    },
+    {
+      "title": "Minimizationof wirelength in 3d IC routing by using differential evolution algorithm",
+      "source": "Proceedings 2017 IEEE International Conference on Electrical Instrumentation and Communication Engineering Iceice 2017",
+      "date": "2017-12-12",
+      "doi": "10.1109/ICEICE.2017.8191950",
+      "citations": 7,
+      "eid": "2-s2.0-85047219533",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85047219533",
       "abstract": {}
     },
     {

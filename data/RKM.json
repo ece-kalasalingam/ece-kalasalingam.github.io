@@ -3,7 +3,434 @@
   "slug": "RKM",
   "scopus_id": "55811890500",
   "h_index": 10,
-  "total_publications": 106,
+  "total_publications": 107,
   "publications_file": "publications/RKM.json",
-  "sections": []
+  "sections": [
+    {
+      "id": "profile",
+      "title": "Profile",
+      "type": "kv",
+      "items": [
+        {
+          "label": "Name",
+          "value": "Dr. R. Kottaimalai"
+        },
+        {
+          "label": "E-mail",
+          "value": "r.kottaimalai@klu.ac.in, rkottaimalai@gmail.com"
+        },
+        {
+          "label": "Designation",
+          "value": "Associate Professor"
+        },
+        {
+          "label": "Department",
+          "value": "Electronics and Communication Engineering"
+        },
+        {
+          "label": "School",
+          "value": "School of Electronics, Electrical and Biomedical Technology"
+        },
+        {
+          "label": "Administrative Responsibility",
+          "value": "Deputy Director - Accreditation & Ranking"
+        },
+        {
+          "label": "Google Scholar Link:",
+          "value": "https://scholar.google.com/citations?hl=en&user=YFaxZlgAAAAJ"
+        },
+        {
+          "label": "Scopus Link",
+          "value": "https://www.scopus.com/authid/detail.uri?authorId=55811890500"
+        },
+        {
+          "label": "ORCID ID:",
+          "value": "https://orcid.org/0000-0002-4846-6067"
+        }
+      ]
+    },
+    {
+      "id": "about-me",
+      "title": "About Me",
+      "type": "markdown",
+      "markdown": "Dr. R. Kottaimalai is a dedicated academician, researcher, and innovator with over 15 years of professional experience spanning teaching, research, and industry. He specializes in the interdisciplinary domains of artificial intelligence, medical image processing, and biomedical instrumentation, with a strong focus on developing technology-driven solutions for healthcare applications.\n\nHe holds a Ph.D. in Instrumentation and Control Engineering, with research centered on multimodal brain image analysis using soft computing techniques for clinical and therapeutic applications. His academic excellence is reflected in his achievement as a Gold Medalist in M.Tech, demonstrating a strong foundation in engineering and analytical problem-solving.\n\nDr. R. Kottaimalai has made notable research contributions through numerous publications in high-impact SCI and Scopus-indexed journals, with an established research profile indicated by a strong citation record. His work primarily focuses on applying machine learning and deep learning techniques for early disease detection, including neurological disorders, osteoporosis, and other medical conditions.\n\nHe has successfully secured and contributed to multiple funded research projects, particularly in the areas of non-invasive diagnostic systems, smart healthcare devices, and emerging technologies. In addition, he actively serves as a reviewer for reputed international journals, contributing to the advancement of global research standards.\n\nWith extensive teaching experience, he is known for his effective teaching methodology and student mentoring, consistently achieving excellent academic outcomes. He has guided several undergraduate and postgraduate projects and is actively supervising research scholars in cutting-edge areas.\n\nBeyond academics, Dr. R. Kottaimalai contributes significantly to institutional development, accreditation processes, and academic administration, demonstrating strong leadership and organizational capabilities.\n\nDriven by a passion for innovation and societal impact, he continues to work towards integrating advanced engineering solutions with real-world healthcare challenges, aiming to bridge the gap between research and practical implementation."
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "type": "table",
+      "columns": [
+        "Examination / Degree",
+        "Name of Institution/ University",
+        "Year of Passing",
+        "Class",
+        "Specialization"
+      ],
+      "rows": [
+        [
+          "Ph.D",
+          "Kalasalingam Academy of Research and Education (Deemed to be University)",
+          "2022",
+          "-",
+          "Biomedical Image Processing"
+        ],
+        [
+          "M.E.",
+          "Kalasalingam University",
+          "2013",
+          "First Class with Distinction",
+          "Control and Instrumentation"
+        ],
+        [
+          "B.E.",
+          "Arulmigu Kalasalingam College of Engineering / Anna University",
+          "2007",
+          "First Class",
+          "Instrumentation and Control Engineering"
+        ]
+      ]
+    },
+    {
+      "id": "experience",
+      "title": "Experience",
+      "type": "table",
+      "columns": [
+        "S. No",
+        "Organization",
+        "Designation",
+        "Duration",
+        "Experience"
+      ],
+      "rows": [
+        [
+          "1",
+          "Kalasalingam Academy of Research and Education, Krishnankoil",
+          "Associate Professor",
+          "15.11.2023 – Till Date",
+          "Ongoing"
+        ],
+        [
+          "2",
+          "Kalasalingam Academy of Research and Education, Krishnankoil",
+          "Project Associate",
+          "10.07.2021 – 30.06.2023",
+          "2 Years"
+        ],
+        [
+          "3",
+          "Sree Sowdambika College of Engineering, Aruppukottai",
+          "Assistant Professor",
+          "03.06.2013 – 30.06.2021",
+          "8 Years 1 Month"
+        ],
+        [
+          "4",
+          "Himu Accessories Private Ltd, Chennai",
+          "New Product Development & Testing Engineer",
+          "28.12.2009 – 24.06.2011",
+          "1 Year 6 Months"
+        ],
+        [
+          "5",
+          "Vibromech Engineers & Services Ltd, Chennai",
+          "New Product Development & Testing Engineer",
+          "11.08.2007 – 26.12.2009",
+          "2 Years 4 Months"
+        ]
+      ]
+    },
+    {
+      "id": "funds-received-from-agencies",
+      "title": "Funds Received From Agencies",
+      "type": "table",
+      "columns": [
+        "S.No.",
+        "Project Title",
+        "Funding Agency",
+        "Amount in Rs.",
+        "Year of Funding"
+      ],
+      "rows": [
+        [
+          "1",
+          "Smart Urinalysis Device",
+          "Seed Money Scheme\n (Kalasalingam Academy of Research and Education)",
+          "2,49,990",
+          "2024"
+        ],
+        [
+          "2",
+          "AI-Enabled Therapeutic System for Rehabilitation Care",
+          "EDII-TN Innovation Voucher Programme",
+          "3,37,500",
+          "2024"
+        ],
+        [
+          "3",
+          "Kidney Stone Prediction System",
+          "MSME IDEA HACKATHON 4.0",
+          "15,00,000",
+          "2025"
+        ],
+        [
+          "4",
+          "Design and Development of a Cost-Effective Terahertz Device for Non-Invasive Physiotherapy Applications",
+          "AICTE Research Promotion Scheme (RPS): Lab to Market – 2025",
+          "20,00,000",
+          "2026"
+        ],
+        [
+          "5",
+          "Portable Therapeutic Device for Pain Management",
+          "MSME IDEA HACKATHON 5.0",
+          "15,00,000",
+          "2026"
+        ],
+        [
+          "6",
+          "Smart Dustbin for Efficient Waste Management",
+          "Unnat Bharat Abhiyan 2.0",
+          "1,00,000",
+          "2026"
+        ]
+      ]
+    },
+    {
+      "id": "research-scholars",
+      "title": "Research Scholars",
+      "type": "table",
+      "columns": [
+        "S.No.",
+        "Name of the Research Scholar",
+        "Research Title",
+        "Year of Enrolment"
+      ],
+      "rows": [
+        [
+          "1",
+          "Mr. S. Vengidusamy",
+          "Prediction of Autism Spectrum Disorder on Facial Images of Children Using Deep Learning Techniques",
+          "2024"
+        ],
+        [
+          "2",
+          "Ms. T. Jeyasri",
+          "Low-Cost Portable Design and Development of an Optical Coherence Tomography (OCT) System for Retinal Disease Detection",
+          "2024"
+        ],
+        [
+          "3",
+          "Mrs. P. Sindhuja",
+          "Automated and Intelligent Grade Classification of Ankle Osteoarthritis Using Neural Networks",
+          "2025"
+        ],
+        [
+          "4",
+          "Mr. S. Radhakrishnan",
+          "Deep Learning-Based Diagnostic Models for Early-Stage Esophagel Cancer Using Endoscopic and Radiological Images",
+          "2025"
+        ],
+        [
+          "5",
+          "Mrs. Divya Rajan",
+          "Otologic Disease Classification from Oto-Endoscopic Images Using Deep Learning Techniques",
+          "2025"
+        ]
+      ]
+    },
+    {
+      "id": "patents-published",
+      "title": "Patents Published",
+      "type": "table",
+      "columns": [
+        "S.No.",
+        "Application No.",
+        "Title of the Invention",
+        "Year"
+      ],
+      "rows": [
+        [
+          "1",
+          "202441104762",
+          "AUTOMATIC GREETING MACHINE",
+          "2024"
+        ],
+        [
+          "2",
+          "202541046705",
+          "AUTOMATED DRIVER EVALUATION SYSTEM FOR MOTORCYCLE AND FOUR-WHEELER LICENSING USING SENSOR BASED MONITORING",
+          "2025"
+        ],
+        [
+          "3",
+          "202541091231",
+          "DESIGN AND DEVELOPMENT OF A SMART WEARABLE DEVICE FOR MONITORING STRESS AND EMOTIONAL RESPONSE IN CHILDREN WITH AUTISM",
+          "2025"
+        ],
+        [
+          "4",
+          "202541101957",
+          "SMART BIODEGRADABLE MEDBOX FOR AUTOMATED DOSAGE DELIVERY, INSULIN STORAGE, AND REAL-TIME PATIENT ACCESS",
+          "2025"
+        ],
+        [
+          "5",
+          "202541101959",
+          "MULTI-MODAL EQUIPMENT FOR EARLY DETECTION OF ALZHEIMERS DISEASE USING COGNITIVE,PHYSIOLOGICAL AND AI-BASED ANALYSIS",
+          "2025"
+        ],
+        [
+          "6",
+          "202541101993",
+          "LIGHT-ACTIVATED POWER SUPPLY SYSTEM USING NON-SOLAR PHOTOCONDUCTIVE MATERIALS FOR DIRECT SMARTPHONE OPERATION",
+          "2025"
+        ],
+        [
+          "7",
+          "202541101994",
+          "AUTOMATED INTRAVENOUS INFUSION SYSTEM WITH REAL-TIME MONITORING AND GLUCOSE-LEVEL-BASED ADJUSTMENT USING RASPBERRY PI",
+          "2025"
+        ],
+        [
+          "8",
+          "202641023309",
+          "DESIGN AND DEVELOPMENT OF A ACOST-EFFECTIVE, PORTABLE, AND WIRELESS CONTROLLED TERAHERTZ DEVICE FOR PHYSIOTHERAPY APPLICATIONS",
+          "2026"
+        ],
+        [
+          "9",
+          "202641023328",
+          "DESIGN AND DEVELOPMENT OF SMART URINAL SYSTEM FOR EARLY DETECTION OF KIDNEY STONES THROUGH URINALYSI",
+          "2026"
+        ]
+      ]
+    },
+    {
+      "id": "book-published",
+      "title": "Book Published",
+      "type": "markdown",
+      "markdown": "Dr.R.Kottaimalai, Dr.Sakthivel Sankaran, Dr.S.Vijayalakshmi, and Dr.S.Dilipkumar, “Measurements and Instrumentation” published on July 2023 by Scientific International Publishing House, ISBN: 978-93-5757-460-0."
+    },
+    {
+      "id": "research-centre-lab-at-irc",
+      "title": "Research Centre (lab At Irc)",
+      "type": "markdown",
+      "markdown": "Centre for Biomedical Research and Diagnostic Techniques Development\r\n\r\n\r\nAbout the Centre:\r\nThe Centre for Biomedical Research and Diagnostic Techniques Development is established with the vision of advancing innovative healthcare technologies through interdisciplinary research and development. The centre focuses on designing and developing cost-effective, non-invasive diagnostic solutions to address critical challenges in modern healthcare.\r\nThe centre aims to bridge the gap between engineering and medical sciences by integrating advanced methodologies such as Artificial Intelligence, Machine Learning, Medical Image Processing, and Biomedical Instrumentation. It actively promotes translational research that can be applied in real-world clinical environments for early diagnosis, monitoring, and treatment support.\r\n\r\n\r\nObjectives:\r\n•        To develop innovative diagnostic systems for early disease detection \r\n•        To promote AI-driven healthcare solutions \r\n•        To design low-cost biomedical devices for societal impact \r\n•        To encourage interdisciplinary collaboration between engineers, clinicians, and researchers \r\n•        To support student research, innovation, and entrepreneurship in healthcare technologies \r\n\r\n\r\nKey Focus Areas:\r\n•        Medical Image Processing and Analysis \r\n•        AI and Machine Learning in Healthcare \r\n•        Bone Health and Osteoporosis Detection \r\n•        Neurological Disorder Analysis (Brain Imaging) \r\n•        Biomedical Signal Processing (ECG, EEG) \r\n•        IoT-based Healthcare Systems \r\n•        Non-invasive Diagnostic Device Development \r\n\r\n\r\nFacilities & Expertise:\r\nThe centre is equipped with tools and platforms supporting:\r\n•        Simulation and modeling (MATLAB, LabVIEW) \r\n•        Medical data analysis and AI frameworks \r\n•        Biomedical instrumentation setups \r\n•        Sensor-based system development \r\nThe centre also benefits from strong expertise in:\r\n•        Clinical image analysis \r\n•        Algorithm development \r\n•        Embedded system design for healthcare \r\n\r\n\r\nResearch & Contributions:\r\nThe centre actively contributes through:\r\n•        High-quality publications in SCI and Scopus-indexed journals \r\n•        Funded research projects from government and innovation agencies \r\n•        Development of prototypes and patented technologies \r\n•        Collaboration with healthcare professionals for clinical validation \r\n\r\n\r\nVision:\r\nTo become a centre of excellence in biomedical research and diagnostic innovation, delivering impactful solutions for improving healthcare accessibility and quality.\r\n\r\n\r\nMission:\r\n•        To foster research-driven innovation in healthcare technologies \r\n•        To develop affordable and accessible diagnostic solutions \r\n•        To nurture skilled researchers and innovators in biomedical engineering \r\n•        To contribute to societal well-being through technology"
+    },
+    {
+      "id": "professional-membership",
+      "title": "Professional Membership",
+      "type": "markdown",
+      "markdown": "Life time member in Indian Society for Technical Education (ISTE)"
+    },
+    {
+      "id": "collaborators",
+      "title": "Collaborators",
+      "type": "table",
+      "columns": [
+        "S.No.",
+        "Name of the Collaborator",
+        "Affiliation",
+        "National / International"
+      ],
+      "rows": [
+        [
+          "1",
+          "Dr Wai Kit Wong",
+          "Multimedia University, Melaka, Malaysia",
+          "International"
+        ],
+        [
+          "2",
+          "Dr Poh Kiat Ng",
+          "Multimedia University, Melaka, Malaysia",
+          "International"
+        ],
+        [
+          "3",
+          "Dr Md. Jakir Hossen",
+          "Multimedia University, Melaka, Malaysia",
+          "International"
+        ],
+        [
+          "4",
+          "Dr Yudong Zhang",
+          "University of Leicester, united kingdom",
+          "International"
+        ],
+        [
+          "5",
+          "Dr Shui-Hua Wang",
+          "University of Leicester, united kingdom",
+          "International"
+        ],
+        [
+          "6",
+          "Dr Prabu Pachiyannan",
+          "Imam Mohammad Ibn Saud Islamic University (IMSIU), Saudi Arabia",
+          "International"
+        ],
+        [
+          "7",
+          "Dr Abdul Khader Jilani Saudagar",
+          "Imam Mohammad Ibn Saud Islamic University (IMSIU), Saudi Arabia",
+          "International"
+        ],
+        [
+          "8",
+          "Dr B. Sundaravadivazhagan",
+          "University of Technology and Applied Sciences (UTAS), Oman",
+          "International"
+        ],
+        [
+          "9",
+          "Dr Baiju Karun",
+          "University of Technology and Applied Sciences (UTAS), Oman",
+          "International"
+        ],
+        [
+          "10",
+          "Dr. V Saravanan",
+          "University of Technology and Applied Sciences (UTAS), Oman",
+          "International"
+        ],
+        [
+          "11",
+          "Dr. A, Santhanavijayan",
+          "National Institute of Technology, Tiruchirappalli",
+          "National"
+        ],
+        [
+          "12",
+          "Dr L Thangamariappan",
+          "Vellore institute of technology, Vellore",
+          "National"
+        ],
+        [
+          "13",
+          "Dr.G. vishnuvarthanan",
+          "VIT Bhopal University",
+          "National"
+        ],
+        [
+          "14",
+          "Dr.R.Sayee Vengatesh, DM (Cardio)",
+          "Tamil Nadu Government Multi Super Specality Hospital, Omandurar, Chennai",
+          "National (Medical)"
+        ],
+        [
+          "15",
+          "Dr. M. Thirumurugan, MS (Ortho)",
+          "Government Hospital, Rajapalayam",
+          "National (Medical)"
+        ],
+        [
+          "16",
+          "Dr. Mohamad Saleem, BAMS, MD",
+          "ALSHIFA AYUSH Hospital, Tirunelveli",
+          "National (Medical)"
+        ]
+      ]
+    }
+  ]
 }

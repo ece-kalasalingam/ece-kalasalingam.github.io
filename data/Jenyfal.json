@@ -22,41 +22,6 @@
       ]
     },
     {
-      "id": "education",
-      "title": "Education",
-      "type": "table",
-      "columns": [
-        "Examination / Degree",
-        "Name of Institution/ University",
-        "Year of Passing",
-        "Class",
-        "Specialization"
-      ],
-      "rows": [
-        [
-          "Ph.D",
-          "Kalasalingam Academy of Research and Education (Deemed to be University)",
-          "2024",
-          "",
-          "VLSI Device Modelling"
-        ],
-        [
-          "M.Tech.",
-          "Karunya Institute of Technology and Sciences (Deemed to be University)",
-          "2010",
-          "First Class with Distinction",
-          "VLSI Design"
-        ],
-        [
-          "B. E.",
-          "C.S.I. Institute of Technology (Anna University)",
-          "2008",
-          "First Class",
-          "Electronics and Communication Engineering"
-        ]
-      ]
-    },
-    {
       "id": "awards",
       "title": "Awards",
       "type": "markdown",

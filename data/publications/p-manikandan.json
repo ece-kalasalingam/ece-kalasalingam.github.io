@@ -1,6 +1,16 @@
 {
   "publications": [
     {
+      "title": "Automated Crop Protection System From Animal Intrusion",
+      "source": "International Conference on AI Driven Innovations and Applications IC Aida 2026 Conference Proceedings",
+      "date": "2026-01-01",
+      "doi": "10.1109/IC-AIDA68291.2026.11564192",
+      "citations": 0,
+      "eid": "2-s2.0-105044294712",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105044294712",
+      "abstract": {}
+    },
+    {
       "title": "Smart Surveillance System for Traffic Rule Enforcement",
       "source": "International Conference on AI Driven Innovations and Applications IC Aida 2026 Conference Proceedings",
       "date": "2026-01-01",
@@ -21,13 +31,13 @@
       "abstract": {}
     },
     {
-      "title": "Automated Crop Protection System From Animal Intrusion",
-      "source": "International Conference on AI Driven Innovations and Applications IC Aida 2026 Conference Proceedings",
-      "date": "2026-01-01",
-      "doi": "10.1109/IC-AIDA68291.2026.11564192",
+      "title": "Electrical Mesh and UV Light based Economical Mosquito Avoidance System",
+      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICTMIM65579.2025.10988165",
       "citations": 0,
-      "eid": "2-s2.0-105044294712",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105044294712",
+      "eid": "2-s2.0-105007989453",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007989453",
       "abstract": {}
     },
     {
@@ -41,6 +51,16 @@
       "abstract": {}
     },
     {
+      "title": "Comparative Review of Large Language Models",
+      "source": "Proceedings of 5th International Conference on Soft Computing for Security Applications Icscsa 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICSCSA66339.2025.11170906",
+      "citations": 1,
+      "eid": "2-s2.0-105018453400",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105018453400",
+      "abstract": {}
+    },
+    {
       "title": "Performance Analysis of Communication Protocols (I2C, SPI) for Embedded Applications with IMU Sensor using Verilog",
       "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
       "date": "2025-01-01",
@@ -48,6 +68,16 @@
       "citations": 2,
       "eid": "2-s2.0-105008011445",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105008011445",
+      "abstract": {}
+    },
+    {
+      "title": "Empowering Gamers: Building Customized Game Tools Through API Integration - A Case Study with Clash of Clans",
+      "source": "2025 2nd International Conference on Computing and Data Science Iccds 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICCDS64403.2025.11209661",
+      "citations": 0,
+      "eid": "2-s2.0-105023864966",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105023864966",
       "abstract": {}
     },
     {
@@ -71,56 +101,6 @@
       "abstract": {}
     },
     {
-      "title": "Empowering Gamers: Building Customized Game Tools Through API Integration - A Case Study with Clash of Clans",
-      "source": "2025 2nd International Conference on Computing and Data Science Iccds 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICCDS64403.2025.11209661",
-      "citations": 0,
-      "eid": "2-s2.0-105023864966",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105023864966",
-      "abstract": {}
-    },
-    {
-      "title": "Electrical Mesh and UV Light based Economical Mosquito Avoidance System",
-      "source": "Proceedings of 5th International Conference on Trends in Material Science and Inventive Materials Ictmim 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICTMIM65579.2025.10988165",
-      "citations": 0,
-      "eid": "2-s2.0-105007989453",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007989453",
-      "abstract": {}
-    },
-    {
-      "title": "Comparative Review of Large Language Models",
-      "source": "Proceedings of 5th International Conference on Soft Computing for Security Applications Icscsa 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICSCSA66339.2025.11170906",
-      "citations": 1,
-      "eid": "2-s2.0-105018453400",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105018453400",
-      "abstract": {}
-    },
-    {
-      "title": "Predictive Modeling of Global Warming Trends Using Machine Learning",
-      "source": "2024 IEEE Silchar Subsection Conference Silcon 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/SILCON63976.2024.10910470",
-      "citations": 0,
-      "eid": "2-s2.0-105001396082",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105001396082",
-      "abstract": {}
-    },
-    {
-      "title": "Intelligent Monitoring System for Automatic Air Conditioning System",
-      "source": "Proceedings of 5th International Conference on Iot Based Control Networks and Intelligent Systems Icicnis 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICICNIS64247.2024.10823121",
-      "citations": 2,
-      "eid": "2-s2.0-85217164445",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85217164445",
-      "abstract": {}
-    },
-    {
       "title": "Flood Risk Assesment System using Logistic Regression",
       "source": "8th International Conference on Electronics Communication and Aerospace Technology Iceca 2024 Proceedings",
       "date": "2024-01-01",
@@ -128,26 +108,6 @@
       "citations": 4,
       "eid": "2-s2.0-85216224874",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85216224874",
-      "abstract": {}
-    },
-    {
-      "title": "Evaluating and Contrasting the Performance of Web Development Technologies",
-      "source": "Proceedings of the 9th International Conference on Communication and Electronics Systems Icces 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICCES63552.2024.10859720",
-      "citations": 0,
-      "eid": "2-s2.0-85218420668",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85218420668",
-      "abstract": {}
-    },
-    {
-      "title": "Enhanced Health Monitoring System for Internet of Medical Things using Machine Learning",
-      "source": "2024 15th International Conference on Computing Communication and Networking Technologies Icccnt 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICCCNT61001.2024.10725617",
-      "citations": 1,
-      "eid": "2-s2.0-85212831207",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85212831207",
       "abstract": {}
     },
     {
@@ -181,6 +141,46 @@
       "abstract": {}
     },
     {
+      "title": "Predictive Modeling of Global Warming Trends Using Machine Learning",
+      "source": "2024 IEEE Silchar Subsection Conference Silcon 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/SILCON63976.2024.10910470",
+      "citations": 0,
+      "eid": "2-s2.0-105001396082",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105001396082",
+      "abstract": {}
+    },
+    {
+      "title": "Intelligent Monitoring System for Automatic Air Conditioning System",
+      "source": "Proceedings of 5th International Conference on Iot Based Control Networks and Intelligent Systems Icicnis 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICICNIS64247.2024.10823121",
+      "citations": 2,
+      "eid": "2-s2.0-85217164445",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85217164445",
+      "abstract": {}
+    },
+    {
+      "title": "Enhanced Health Monitoring System for Internet of Medical Things using Machine Learning",
+      "source": "2024 15th International Conference on Computing Communication and Networking Technologies Icccnt 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICCCNT61001.2024.10725617",
+      "citations": 1,
+      "eid": "2-s2.0-85212831207",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85212831207",
+      "abstract": {}
+    },
+    {
+      "title": "Evaluating and Contrasting the Performance of Web Development Technologies",
+      "source": "Proceedings of the 9th International Conference on Communication and Electronics Systems Icces 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICCES63552.2024.10859720",
+      "citations": 0,
+      "eid": "2-s2.0-85218420668",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85218420668",
+      "abstract": {}
+    },
+    {
       "title": "Intelligent Airflow of Nebulizer using IoT-Based circuit Integration for Smart Healthcare Management",
       "source": "Aip Conference Proceedings",
       "date": "2023-12-11",
@@ -188,86 +188,6 @@
       "citations": 1,
       "eid": "2-s2.0-85180304192",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85180304192",
-      "abstract": {}
-    },
-    {
-      "title": "Synergistic Multi-Sensor Fusion for Enhanced Vehicle Safety and Security-Integrating Advanced Technologies and Intelligent Systems",
-      "source": "Proceedings IEEE 2023 5th International Conference on Advances in Computing Communication Control and Networking Icac3n 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICAC3N60023.2023.10541830",
-      "citations": 1,
-      "eid": "2-s2.0-85195802772",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85195802772",
-      "abstract": {}
-    },
-    {
-      "title": "Method of Fuel Control and Monitoring System Under Electromagnetic Impulses using STM32 Microcontroller",
-      "source": "Proceedings of the 2nd International Conference on Applied Artificial Intelligence and Computing Icaaic 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICAAIC56838.2023.10141230",
-      "citations": 1,
-      "eid": "2-s2.0-85163584784",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163584784",
-      "abstract": {}
-    },
-    {
-      "title": "Machine Learning Algorithms for Estimation of State-of-Charge of Li-Ion Batteries",
-      "source": "7th International Conference on Electronics Communication and Aerospace Technology Iceca 2023 Proceedings",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICECA58529.2023.10395268",
-      "citations": 5,
-      "eid": "2-s2.0-85186116009",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85186116009",
-      "abstract": {}
-    },
-    {
-      "title": "Literature Review: Metamaterials in RF and Microwave Applications",
-      "source": "Proceedings IEEE 2023 5th International Conference on Advances in Computing Communication Control and Networking Icac3n 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICAC3N60023.2023.10541385",
-      "citations": 2,
-      "eid": "2-s2.0-85195791971",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85195791971",
-      "abstract": {}
-    },
-    {
-      "title": "KARE - Presto Canteen Management System with an Android Application",
-      "source": "7th International Conference on Trends in Electronics and Informatics Icoei 2023 Proceedings",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICOEI56765.2023.10125634",
-      "citations": 4,
-      "eid": "2-s2.0-85161090515",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161090515",
-      "abstract": {}
-    },
-    {
-      "title": "Implementation of Faulty Pipe Detection System for Generalized Locations",
-      "source": "International Conference on Sustainable Computing and Smart Systems Icscss 2023 Proceedings",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICSCSS57650.2023.10169457",
-      "citations": 0,
-      "eid": "2-s2.0-85166184133",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85166184133",
-      "abstract": {}
-    },
-    {
-      "title": "GPS Assistive Communication Tool for Fishermen Community using Internet of Things",
-      "source": "Proceedings of the 8th International Conference on Communication and Electronics Systems Icces 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICCES57224.2023.10192755",
-      "citations": 3,
-      "eid": "2-s2.0-85168119648",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85168119648",
-      "abstract": {}
-    },
-    {
-      "title": "Execution measures of a non-Markovian queuing system in avionic communication",
-      "source": "International Journal of Process Management and Benchmarking",
-      "date": "2023-01-01",
-      "doi": "10.1504/IJPMB.2023.131262",
-      "citations": 6,
-      "eid": "2-s2.0-85161973665",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161973665",
       "abstract": {}
     },
     {
@@ -281,13 +201,33 @@
       "abstract": {}
     },
     {
-      "title": "Automatic Train Tracking and Announcement System",
-      "source": "Proceedings IEEE 2023 5th International Conference on Advances in Computing Communication Control and Networking Icac3n 2023",
+      "title": "A Smart Electronics Energy Measurement, Monitoring, Billing and Payment System using IoT",
+      "source": "Proceedings of the 2nd International Conference on Applied Artificial Intelligence and Computing Icaaic 2023",
       "date": "2023-01-01",
-      "doi": "10.1109/ICAC3N60023.2023.10541459",
-      "citations": 3,
-      "eid": "2-s2.0-85195799850",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85195799850",
+      "doi": "10.1109/ICAAIC56838.2023.10140929",
+      "citations": 4,
+      "eid": "2-s2.0-85163614986",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163614986",
+      "abstract": {}
+    },
+    {
+      "title": "A Comprehensive Review on Analysing of Brain Signals Using Different Clustering Methods",
+      "source": "Proceedings of the 4th International Conference on Smart Electronics and Communication Icosec 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICOSEC58147.2023.10275953",
+      "citations": 0,
+      "eid": "2-s2.0-85175691261",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85175691261",
+      "abstract": {}
+    },
+    {
+      "title": "Machine Learning Algorithms for Estimation of State-of-Charge of Li-Ion Batteries",
+      "source": "7th International Conference on Electronics Communication and Aerospace Technology Iceca 2023 Proceedings",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICECA58529.2023.10395268",
+      "citations": 5,
+      "eid": "2-s2.0-85186116009",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85186116009",
       "abstract": {}
     },
     {
@@ -301,13 +241,33 @@
       "abstract": {}
     },
     {
-      "title": "A Smart Electronics Energy Measurement, Monitoring, Billing and Payment System using IoT",
-      "source": "Proceedings of the 2nd International Conference on Applied Artificial Intelligence and Computing Icaaic 2023",
+      "title": "Execution measures of a non-Markovian queuing system in avionic communication",
+      "source": "International Journal of Process Management and Benchmarking",
       "date": "2023-01-01",
-      "doi": "10.1109/ICAAIC56838.2023.10140929",
-      "citations": 4,
-      "eid": "2-s2.0-85163614986",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163614986",
+      "doi": "10.1504/IJPMB.2023.131262",
+      "citations": 6,
+      "eid": "2-s2.0-85161973665",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161973665",
+      "abstract": {}
+    },
+    {
+      "title": "Automatic Train Tracking and Announcement System",
+      "source": "Proceedings IEEE 2023 5th International Conference on Advances in Computing Communication Control and Networking Icac3n 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICAC3N60023.2023.10541459",
+      "citations": 3,
+      "eid": "2-s2.0-85195799850",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85195799850",
+      "abstract": {}
+    },
+    {
+      "title": "Synergistic Multi-Sensor Fusion for Enhanced Vehicle Safety and Security-Integrating Advanced Technologies and Intelligent Systems",
+      "source": "Proceedings IEEE 2023 5th International Conference on Advances in Computing Communication Control and Networking Icac3n 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICAC3N60023.2023.10541830",
+      "citations": 1,
+      "eid": "2-s2.0-85195802772",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85195802772",
       "abstract": {}
     },
     {
@@ -321,13 +281,53 @@
       "abstract": {}
     },
     {
-      "title": "A Comprehensive Review on Analysing of Brain Signals Using Different Clustering Methods",
-      "source": "Proceedings of the 4th International Conference on Smart Electronics and Communication Icosec 2023",
+      "title": "Implementation of Faulty Pipe Detection System for Generalized Locations",
+      "source": "International Conference on Sustainable Computing and Smart Systems Icscss 2023 Proceedings",
       "date": "2023-01-01",
-      "doi": "10.1109/ICOSEC58147.2023.10275953",
+      "doi": "10.1109/ICSCSS57650.2023.10169457",
       "citations": 0,
-      "eid": "2-s2.0-85175691261",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85175691261",
+      "eid": "2-s2.0-85166184133",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85166184133",
+      "abstract": {}
+    },
+    {
+      "title": "Literature Review: Metamaterials in RF and Microwave Applications",
+      "source": "Proceedings IEEE 2023 5th International Conference on Advances in Computing Communication Control and Networking Icac3n 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICAC3N60023.2023.10541385",
+      "citations": 2,
+      "eid": "2-s2.0-85195791971",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85195791971",
+      "abstract": {}
+    },
+    {
+      "title": "GPS Assistive Communication Tool for Fishermen Community using Internet of Things",
+      "source": "Proceedings of the 8th International Conference on Communication and Electronics Systems Icces 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICCES57224.2023.10192755",
+      "citations": 3,
+      "eid": "2-s2.0-85168119648",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85168119648",
+      "abstract": {}
+    },
+    {
+      "title": "KARE - Presto Canteen Management System with an Android Application",
+      "source": "7th International Conference on Trends in Electronics and Informatics Icoei 2023 Proceedings",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICOEI56765.2023.10125634",
+      "citations": 4,
+      "eid": "2-s2.0-85161090515",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161090515",
+      "abstract": {}
+    },
+    {
+      "title": "Method of Fuel Control and Monitoring System Under Electromagnetic Impulses using STM32 Microcontroller",
+      "source": "Proceedings of the 2nd International Conference on Applied Artificial Intelligence and Computing Icaaic 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICAAIC56838.2023.10141230",
+      "citations": 1,
+      "eid": "2-s2.0-85163584784",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163584784",
       "abstract": {}
     },
     {
@@ -351,46 +351,6 @@
       "abstract": {}
     },
     {
-      "title": "Traceability of Tea powder Supply Chain based on Hyperledger Fabric",
-      "source": "3rd International Conference on Smart Electronics and Communication Icosec 2022 Proceedings",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICOSEC54921.2022.9952056",
-      "citations": 6,
-      "eid": "2-s2.0-85143668202",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85143668202",
-      "abstract": {}
-    },
-    {
-      "title": "Soil nutrients monitoring and analyzing system using Internet of Things",
-      "source": "2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering Icacite 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICACITE53722.2022.9823486",
-      "citations": 16,
-      "eid": "2-s2.0-85135472238",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85135472238",
-      "abstract": {}
-    },
-    {
-      "title": "Smart Voice Assitance System for Visually Impaired Persons",
-      "source": "Proceedings 2022 4th International Conference on Advances in Computing Communication Control and Networking Icac3n 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICAC3N56670.2022.10074529",
-      "citations": 8,
-      "eid": "2-s2.0-85152199015",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85152199015",
-      "abstract": {}
-    },
-    {
-      "title": "Multi-band Antenna with CSRR Loaded Ground Plane and Stubs Incorporated Patch for WiMAX/WLAN Applications",
-      "source": "Pertanika Journal of Science and Technology",
-      "date": "2022-01-01",
-      "doi": "10.47836/PJST.30.1.03",
-      "citations": 7,
-      "eid": "2-s2.0-85127418115",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85127418115",
-      "abstract": {}
-    },
-    {
       "title": "Microcontroller based Wheel Alignment and Compulsion Scrutinizing System",
       "source": "International Conference on Edge Computing and Applications Icecaa 2022 Proceedings",
       "date": "2022-01-01",
@@ -401,13 +361,43 @@
       "abstract": {}
     },
     {
-      "title": "Li-Fi Technology for Vehicle-to-Vehicle Communication",
-      "source": "International Conference on Edge Computing and Applications Icecaa 2022 Proceedings",
+      "title": "A Smart Paperless Electronic Ticketing System using RFID and Bluetooth Technologies",
+      "source": "Proceedings 2022 4th International Conference on Advances in Computing Communication Control and Networking Icac3n 2022",
       "date": "2022-01-01",
-      "doi": "10.1109/ICECAA55415.2022.9936315",
+      "doi": "10.1109/ICAC3N56670.2022.10074108",
+      "citations": 2,
+      "eid": "2-s2.0-85152194385",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85152194385",
+      "abstract": {}
+    },
+    {
+      "title": "Fractal Based Switchable Multiband Antenna for 5G Applications",
+      "source": "Proceedings 2022 4th International Conference on Advances in Computing Communication Control and Networking Icac3n 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICAC3N56670.2022.10074300",
+      "citations": 2,
+      "eid": "2-s2.0-85152188008",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85152188008",
+      "abstract": {}
+    },
+    {
+      "title": "Traceability of Tea powder Supply Chain based on Hyperledger Fabric",
+      "source": "3rd International Conference on Smart Electronics and Communication Icosec 2022 Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICOSEC54921.2022.9952056",
+      "citations": 6,
+      "eid": "2-s2.0-85143668202",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85143668202",
+      "abstract": {}
+    },
+    {
+      "title": "Smart Voice Assitance System for Visually Impaired Persons",
+      "source": "Proceedings 2022 4th International Conference on Advances in Computing Communication Control and Networking Icac3n 2022",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICAC3N56670.2022.10074529",
       "citations": 8,
-      "eid": "2-s2.0-85142767619",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85142767619",
+      "eid": "2-s2.0-85152199015",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85152199015",
       "abstract": {}
     },
     {
@@ -431,23 +421,23 @@
       "abstract": {}
     },
     {
-      "title": "Fractal Based Switchable Multiband Antenna for 5G Applications",
-      "source": "Proceedings 2022 4th International Conference on Advances in Computing Communication Control and Networking Icac3n 2022",
+      "title": "Li-Fi Technology for Vehicle-to-Vehicle Communication",
+      "source": "International Conference on Edge Computing and Applications Icecaa 2022 Proceedings",
       "date": "2022-01-01",
-      "doi": "10.1109/ICAC3N56670.2022.10074300",
-      "citations": 2,
-      "eid": "2-s2.0-85152188008",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85152188008",
+      "doi": "10.1109/ICECAA55415.2022.9936315",
+      "citations": 8,
+      "eid": "2-s2.0-85142767619",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85142767619",
       "abstract": {}
     },
     {
-      "title": "Energy Efficient High Performance Adder/Subtractor Circuits",
-      "source": "3rd International Conference on Smart Electronics and Communication Icosec 2022 Proceedings",
+      "title": "Soil nutrients monitoring and analyzing system using Internet of Things",
+      "source": "2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering Icacite 2022",
       "date": "2022-01-01",
-      "doi": "10.1109/ICOSEC54921.2022.9952136",
-      "citations": 13,
-      "eid": "2-s2.0-85143693754",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85143693754",
+      "doi": "10.1109/ICACITE53722.2022.9823486",
+      "citations": 16,
+      "eid": "2-s2.0-85135472238",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85135472238",
       "abstract": {}
     },
     {
@@ -461,6 +451,26 @@
       "abstract": {}
     },
     {
+      "title": "Multi-band Antenna with CSRR Loaded Ground Plane and Stubs Incorporated Patch for WiMAX/WLAN Applications",
+      "source": "Pertanika Journal of Science and Technology",
+      "date": "2022-01-01",
+      "doi": "10.47836/PJST.30.1.03",
+      "citations": 7,
+      "eid": "2-s2.0-85127418115",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85127418115",
+      "abstract": {}
+    },
+    {
+      "title": "Energy Efficient High Performance Adder/Subtractor Circuits",
+      "source": "3rd International Conference on Smart Electronics and Communication Icosec 2022 Proceedings",
+      "date": "2022-01-01",
+      "doi": "10.1109/ICOSEC54921.2022.9952136",
+      "citations": 13,
+      "eid": "2-s2.0-85143693754",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85143693754",
+      "abstract": {}
+    },
+    {
       "title": "Application of Multi-Domain Feature for Automated Seizure Detection from EEG Signal",
       "source": "3rd International Conference on Smart Electronics and Communication Icosec 2022 Proceedings",
       "date": "2022-01-01",
@@ -468,16 +478,6 @@
       "citations": 12,
       "eid": "2-s2.0-85143668497",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85143668497",
-      "abstract": {}
-    },
-    {
-      "title": "A Smart Paperless Electronic Ticketing System using RFID and Bluetooth Technologies",
-      "source": "Proceedings 2022 4th International Conference on Advances in Computing Communication Control and Networking Icac3n 2022",
-      "date": "2022-01-01",
-      "doi": "10.1109/ICAC3N56670.2022.10074108",
-      "citations": 2,
-      "eid": "2-s2.0-85152194385",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85152194385",
       "abstract": {}
     },
     {
@@ -501,13 +501,13 @@
       "abstract": {}
     },
     {
-      "title": "IoT Based Air Quality Monitoring System with Email Notification",
+      "title": "Automatic Accident Detector to Decrease the Death Rate in Highways and Remote Areas",
       "source": "Proceedings of the 6th International Conference on Communication and Electronics Systems Icces 2021",
       "date": "2021-07-08",
-      "doi": "10.1109/ICCES51350.2021.9489027",
-      "citations": 27,
-      "eid": "2-s2.0-85113742618",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85113742618",
+      "doi": "10.1109/ICCES51350.2021.9488942",
+      "citations": 18,
+      "eid": "2-s2.0-85113734426",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85113734426",
       "abstract": {}
     },
     {
@@ -521,23 +521,13 @@
       "abstract": {}
     },
     {
-      "title": "Automatic Accident Detector to Decrease the Death Rate in Highways and Remote Areas",
+      "title": "IoT Based Air Quality Monitoring System with Email Notification",
       "source": "Proceedings of the 6th International Conference on Communication and Electronics Systems Icces 2021",
       "date": "2021-07-08",
-      "doi": "10.1109/ICCES51350.2021.9488942",
-      "citations": 18,
-      "eid": "2-s2.0-85113734426",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85113734426",
-      "abstract": {}
-    },
-    {
-      "title": "Smart Nursing Robot for COVID-19 Patients",
-      "source": "2021 International Conference on Advance Computing and Innovative Technologies in Engineering Icacite 2021",
-      "date": "2021-03-04",
-      "doi": "10.1109/ICACITE51222.2021.9404698",
-      "citations": 33,
-      "eid": "2-s2.0-85104977493",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85104977493",
+      "doi": "10.1109/ICCES51350.2021.9489027",
+      "citations": 27,
+      "eid": "2-s2.0-85113742618",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85113742618",
       "abstract": {}
     },
     {
@@ -558,6 +548,16 @@
       "citations": 19,
       "eid": "2-s2.0-85104960177",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85104960177",
+      "abstract": {}
+    },
+    {
+      "title": "Smart Nursing Robot for COVID-19 Patients",
+      "source": "2021 International Conference on Advance Computing and Innovative Technologies in Engineering Icacite 2021",
+      "date": "2021-03-04",
+      "doi": "10.1109/ICACITE51222.2021.9404698",
+      "citations": 33,
+      "eid": "2-s2.0-85104977493",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85104977493",
       "abstract": {}
     },
     {

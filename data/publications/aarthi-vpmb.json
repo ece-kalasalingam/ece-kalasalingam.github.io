@@ -11,8 +11,18 @@
       "abstract": {
         "text": "Cancer remains one of the leading causes of mortality worldwide, where early-stage detection significantly improves therapeutic outcomes and survival rates. However, conventional diagnostic modalities such as imaging systems and histopathological examination are often costly, infrastructure-intensive, and inaccessible in resource-constrained healthcare environments, limiting timely screening. To address this gap, this study proposes the Affordable Electrochemical Sensor Platform (AESP)—a cloud-integrated conceptual framework designed to enable rapid and point-of-care cancer biomarker screening in low-resource settings. The AESP architecture integrates a miniaturized electrochemical sensing module with a portable acquisition interface and cloud-based analytical pipeline for biomarker signal interpretation. Rather than representing a physically fabricated device, the platform is currently presented as an architectural and computational model that outlines theoretical signal acquisition, preprocessing, and cloud-assisted decision workflows. The system emphasizes affordability, scalability, and modularity for distributed healthcare deployment. Performance was assessed using public clinical datasets to simulate biomarker classification and signal discrimination, reflecting theoretical predictive capability rather than physical electrochemical testing. Claims on reproducibility, stability, and biological resistance are based on computational modeling, not wet-lab validation. The AESP framework shows feasibility for connecting centralized diagnostics with decentralized screening via cloud analytics. Experimental validation is pending, but it offers a scalable, cost-effective model for cancer screening in underserved regions.",
         "source": "crossref",
-        "fetched_at": "2026-09-06T07:00:46+00:00"
+        "fetched_at": "2026-09-06T07:44:12+00:00"
       }
+    },
+    {
+      "title": "Design of an on-Chip Microring Resonator Based Silicon Photonic Sensor",
+      "source": "Proceedings of the 4th IEEE International Conference on Interdisciplinary Approaches in Technology and Management for Social Innovation Iatmsi 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/IATMSI68868.2026.11466302",
+      "citations": 0,
+      "eid": "2-s2.0-105036952082",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105036952082",
+      "abstract": {}
     },
     {
       "title": "Surrogate Assisted Optimization Of A Dual Band FR4 Microstrip Patch Antenna Using Random Forest Modeling And Genetic Algorithm",
@@ -35,6 +45,16 @@
       "abstract": {}
     },
     {
+      "title": "Design and Simulation of a Hexagonal Fractal Antenna Tuned for 5.6 GHz WLAN/ISM Band Applications",
+      "source": "Proceeding of International Conference on Computing Communication Control and Cyber Physical Systems I5cps 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/I5CPS67958.2026.11452289",
+      "citations": 0,
+      "eid": "2-s2.0-105037442571",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105037442571",
+      "abstract": {}
+    },
+    {
       "title": "Energy-Aware Routing Protocol for Wireless Sensor Networks using Reinforced Sparrow Search Optimization (RSSO)",
       "source": "Proceedings of the 2026 International Conference on AI Driven Smart Systems and Ubiquitous Computing Icauc 2026",
       "date": "2026-01-01",
@@ -45,23 +65,33 @@
       "abstract": {}
     },
     {
-      "title": "Design of an on-Chip Microring Resonator Based Silicon Photonic Sensor",
-      "source": "Proceedings of the 4th IEEE International Conference on Interdisciplinary Approaches in Technology and Management for Social Innovation Iatmsi 2026",
-      "date": "2026-01-01",
-      "doi": "10.1109/IATMSI68868.2026.11466302",
+      "title": "GSR-Based Automated Pain Detection Using Machine Learning",
+      "source": "4th International Conference on Applied Artificial Intelligence and Computing Icaaic 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICAAIC64647.2025.11330600",
       "citations": 0,
-      "eid": "2-s2.0-105036952082",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105036952082",
+      "eid": "2-s2.0-105034862298",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034862298",
       "abstract": {}
     },
     {
-      "title": "Design and Simulation of a Hexagonal Fractal Antenna Tuned for 5.6 GHz WLAN/ISM Band Applications",
-      "source": "Proceeding of International Conference on Computing Communication Control and Cyber Physical Systems I5cps 2026",
-      "date": "2026-01-01",
-      "doi": "10.1109/I5CPS67958.2026.11452289",
+      "title": "Development of Assistive Technology for Pain Detection in Neonates",
+      "source": "Proceedings 3rd International Conference on Artificial Intelligence and Machine Learning Applications Healthcare and Internet of Things Aimla 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/AIMLA63829.2025.11040737",
+      "citations": 1,
+      "eid": "2-s2.0-105010565509",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105010565509",
+      "abstract": {}
+    },
+    {
+      "title": "Game-Theoretic Incentive Mechanisms for Cooperative Energy Consumption in Wireless Sensor Network",
+      "source": "Proceedings of 10th International Conference on Communication and Electronics Systems Icces 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICCES67310.2025.11336278",
       "citations": 0,
-      "eid": "2-s2.0-105037442571",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105037442571",
+      "eid": "2-s2.0-105033525439",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105033525439",
       "abstract": {}
     },
     {
@@ -85,26 +115,6 @@
       "abstract": {}
     },
     {
-      "title": "Game-Theoretic Incentive Mechanisms for Cooperative Energy Consumption in Wireless Sensor Network",
-      "source": "Proceedings of 10th International Conference on Communication and Electronics Systems Icces 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICCES67310.2025.11336278",
-      "citations": 0,
-      "eid": "2-s2.0-105033525439",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105033525439",
-      "abstract": {}
-    },
-    {
-      "title": "GSR-Based Automated Pain Detection Using Machine Learning",
-      "source": "4th International Conference on Applied Artificial Intelligence and Computing Icaaic 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICAAIC64647.2025.11330600",
-      "citations": 0,
-      "eid": "2-s2.0-105034862298",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034862298",
-      "abstract": {}
-    },
-    {
       "title": "Explainable AI for Cardiovascular Health: A SHAP-Based Framework",
       "source": "2025 International Conference on Pervasive Computational Technologies Icpct 2025",
       "date": "2025-01-01",
@@ -112,26 +122,6 @@
       "citations": 7,
       "eid": "2-s2.0-105002857631",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105002857631",
-      "abstract": {}
-    },
-    {
-      "title": "Dynamic Load Management in High Traffic Web Applications Using Machine Learning",
-      "source": "Proceedings of 8th International Conference on Trends in Electronics and Informatics Icoei 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICOEI65986.2025.11013572",
-      "citations": 0,
-      "eid": "2-s2.0-105007780837",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007780837",
-      "abstract": {}
-    },
-    {
-      "title": "Development of Assistive Technology for Pain Detection in Neonates",
-      "source": "Proceedings 3rd International Conference on Artificial Intelligence and Machine Learning Applications Healthcare and Internet of Things Aimla 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/AIMLA63829.2025.11040737",
-      "citations": 1,
-      "eid": "2-s2.0-105010565509",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105010565509",
       "abstract": {}
     },
     {
@@ -145,6 +135,16 @@
       "abstract": {}
     },
     {
+      "title": "Dynamic Load Management in High Traffic Web Applications Using Machine Learning",
+      "source": "Proceedings of 8th International Conference on Trends in Electronics and Informatics Icoei 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICOEI65986.2025.11013572",
+      "citations": 0,
+      "eid": "2-s2.0-105007780837",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105007780837",
+      "abstract": {}
+    },
+    {
       "title": "Multiband plasmonic MIMO antenna array for 6G communications",
       "source": "Optical and Quantum Electronics",
       "date": "2024-06-01",
@@ -152,16 +152,6 @@
       "citations": 10,
       "eid": "2-s2.0-85191327138",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85191327138",
-      "abstract": {}
-    },
-    {
-      "title": "Explainable Raman Spectral Classification - Towards Clinical Practice of Cancer Diagnosis",
-      "source": "Proceedings of the 9th International Conference on Communication and Electronics Systems Icces 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICCES63552.2024.10860163",
-      "citations": 0,
-      "eid": "2-s2.0-85218409801",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85218409801",
       "abstract": {}
     },
     {
@@ -175,16 +165,6 @@
       "abstract": {}
     },
     {
-      "title": "Deep Learning Based Voice Assisted Traffic Sign Detection Using RCNN",
-      "source": "2024 International Conference on Recent Innovation in Smart and Sustainable Technology Icrisst 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICRISST59181.2024.10922024",
-      "citations": 0,
-      "eid": "2-s2.0-105001663338",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105001663338",
-      "abstract": {}
-    },
-    {
       "title": "Cloud Computing's IoT based ThingSpeak, NodeMCU for Weather Monitoring",
       "source": "5th International Conference on Electronics and Sustainable Communication Systems Icesc 2024 Proceedings",
       "date": "2024-01-01",
@@ -195,53 +175,23 @@
       "abstract": {}
     },
     {
-      "title": "Non-Invasive Transcutaneous Bilirubinometer Using STM32 - A Review",
-      "source": "2023 International Conference on Next Generation Electronics Nelex 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/NEleX59773.2023.10421483",
+      "title": "Explainable Raman Spectral Classification - Towards Clinical Practice of Cancer Diagnosis",
+      "source": "Proceedings of the 9th International Conference on Communication and Electronics Systems Icces 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICCES63552.2024.10860163",
       "citations": 0,
-      "eid": "2-s2.0-85186516127",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85186516127",
+      "eid": "2-s2.0-85218409801",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85218409801",
       "abstract": {}
     },
     {
-      "title": "IoT-based Web Application for Passenger Travel Tracking System",
-      "source": "7th International Conference on Trends in Electronics and Informatics Icoei 2023 Proceedings",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICOEI56765.2023.10125610",
+      "title": "Deep Learning Based Voice Assisted Traffic Sign Detection Using RCNN",
+      "source": "2024 International Conference on Recent Innovation in Smart and Sustainable Technology Icrisst 2024",
+      "date": "2024-01-01",
+      "doi": "10.1109/ICRISST59181.2024.10922024",
       "citations": 0,
-      "eid": "2-s2.0-85161199203",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161199203",
-      "abstract": {}
-    },
-    {
-      "title": "IoT-Based App for Commuter Travel Tracking System: A Review",
-      "source": "Lecture Notes on Data Engineering and Communications Technologies",
-      "date": "2023-01-01",
-      "doi": "10.1007/978-981-99-1767-9_20",
-      "citations": 0,
-      "eid": "2-s2.0-85161398394",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161398394",
-      "abstract": {}
-    },
-    {
-      "title": "Five Stage Pipelined MIPS Processor Verification Scoreboard Module using UVM",
-      "source": "2023 International Conference in Advances in Power Signal and Information Technology Apsit 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/APSIT58554.2023.10201745",
-      "citations": 3,
-      "eid": "2-s2.0-85168669485",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85168669485",
-      "abstract": {}
-    },
-    {
-      "title": "FPGA-Based System for Real-time Epileptic Seizure Detection using KNN Classifier",
-      "source": "2023 2nd International Conference on Electrical Electronics Information and Communication Technologies Iceeict 2023",
-      "date": "2023-01-01",
-      "doi": "10.1109/ICEEICT56924.2023.10157075",
-      "citations": 6,
-      "eid": "2-s2.0-85165769525",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85165769525",
+      "eid": "2-s2.0-105001663338",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105001663338",
       "abstract": {}
     },
     {
@@ -255,6 +205,26 @@
       "abstract": {}
     },
     {
+      "title": "10 GB MAC CORE Verification Zero Inter Packet Gap Module for Ethernet Technology",
+      "source": "Proceedings of the 7th International Conference on Intelligent Computing and Control Systems Iciccs 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICICCS56967.2023.10142494",
+      "citations": 1,
+      "eid": "2-s2.0-85163886469",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163886469",
+      "abstract": {}
+    },
+    {
+      "title": "IoT-Based App for Commuter Travel Tracking System: A Review",
+      "source": "Lecture Notes on Data Engineering and Communications Technologies",
+      "date": "2023-01-01",
+      "doi": "10.1007/978-981-99-1767-9_20",
+      "citations": 0,
+      "eid": "2-s2.0-85161398394",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161398394",
+      "abstract": {}
+    },
+    {
       "title": "Deep Learning Based Facial Obfuscation Using MobileNet",
       "source": "2023 World Conference on Communication and Computing Wconf 2023",
       "date": "2023-01-01",
@@ -262,6 +232,16 @@
       "citations": 1,
       "eid": "2-s2.0-85173064126",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85173064126",
+      "abstract": {}
+    },
+    {
+      "title": "IoT-based Web Application for Passenger Travel Tracking System",
+      "source": "7th International Conference on Trends in Electronics and Informatics Icoei 2023 Proceedings",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICOEI56765.2023.10125610",
+      "citations": 0,
+      "eid": "2-s2.0-85161199203",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85161199203",
       "abstract": {}
     },
     {
@@ -275,13 +255,33 @@
       "abstract": {}
     },
     {
-      "title": "10 GB MAC CORE Verification Zero Inter Packet Gap Module for Ethernet Technology",
-      "source": "Proceedings of the 7th International Conference on Intelligent Computing and Control Systems Iciccs 2023",
+      "title": "Five Stage Pipelined MIPS Processor Verification Scoreboard Module using UVM",
+      "source": "2023 International Conference in Advances in Power Signal and Information Technology Apsit 2023",
       "date": "2023-01-01",
-      "doi": "10.1109/ICICCS56967.2023.10142494",
-      "citations": 1,
-      "eid": "2-s2.0-85163886469",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85163886469",
+      "doi": "10.1109/APSIT58554.2023.10201745",
+      "citations": 3,
+      "eid": "2-s2.0-85168669485",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85168669485",
+      "abstract": {}
+    },
+    {
+      "title": "Non-Invasive Transcutaneous Bilirubinometer Using STM32 - A Review",
+      "source": "2023 International Conference on Next Generation Electronics Nelex 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/NEleX59773.2023.10421483",
+      "citations": 0,
+      "eid": "2-s2.0-85186516127",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85186516127",
+      "abstract": {}
+    },
+    {
+      "title": "FPGA-Based System for Real-time Epileptic Seizure Detection using KNN Classifier",
+      "source": "2023 2nd International Conference on Electrical Electronics Information and Communication Technologies Iceeict 2023",
+      "date": "2023-01-01",
+      "doi": "10.1109/ICEEICT56924.2023.10157075",
+      "citations": 6,
+      "eid": "2-s2.0-85165769525",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85165769525",
       "abstract": {}
     },
     {
@@ -305,16 +305,6 @@
       "abstract": {}
     },
     {
-      "title": "A review on security aspects in 5G systems: VLSI perspective",
-      "source": "Proceedings of the 2017 International Conference on Wireless Communications Signal Processing and Networking Wispnet 2017",
-      "date": "2017-07-02",
-      "doi": "10.1109/WiSPNET.2017.8299848",
-      "citations": 0,
-      "eid": "2-s2.0-85046361818",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85046361818",
-      "abstract": {}
-    },
-    {
       "title": "A review on resource efficient polar decoders-present and past",
       "source": "Proceedings of the 2017 IEEE International Conference on Communication and Signal Processing Iccsp 2017",
       "date": "2017-07-02",
@@ -322,6 +312,16 @@
       "citations": 1,
       "eid": "2-s2.0-85046666274",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/85046666274",
+      "abstract": {}
+    },
+    {
+      "title": "A review on security aspects in 5G systems: VLSI perspective",
+      "source": "Proceedings of the 2017 International Conference on Wireless Communications Signal Processing and Networking Wispnet 2017",
+      "date": "2017-07-02",
+      "doi": "10.1109/WiSPNET.2017.8299848",
+      "citations": 0,
+      "eid": "2-s2.0-85046361818",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85046361818",
       "abstract": {}
     },
     {

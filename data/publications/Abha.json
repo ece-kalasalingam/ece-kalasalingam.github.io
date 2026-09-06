@@ -11,7 +11,7 @@
       "abstract": {
         "text": "A bstract Physiological signal-driven stress detection has recently been recognized as a promising paradigm for the objective evaluation of acute and chronic stress conditions, with potential applications in clinical practice, wearable biotechnology, and precision medicine. However, the advances reported in these existing studies have been based on heterogeneous datasets, non-uniform validation protocols, and overly optimistic accuracy claims, which limit generalizability in real-world scenarios. This review offers a structured and critical appraisal of unimodal and multimodal stress classification architectures using electrocardiogram, photoplethysmogram, electromyogram, and electroencephalogram physiological signals. The review provides cross-modality studies designed to assess the ability of the systems to detect stress types, robustness to noise, computational feasibility, and deployment suitability. The review also discusses key methodological issues, such as dataset bias, population homogeneity, and the absence of standardized benchmarking. The review further outlines future research directions that focus on subject-independent validation, longitudinal and cross-cultural datasets, explainable and personalized modeling, and federated learning frameworks. So, this review collectively results in the establishment of practical guidance for building robust, interpretable, and clinically translatable methods for detecting stress.",
         "source": "crossref",
-        "fetched_at": "2026-09-06T07:01:08+00:00"
+        "fetched_at": "2026-09-06T07:44:47+00:00"
       }
     },
     {
@@ -25,56 +25,6 @@
       "abstract": {}
     },
     {
-      "title": "Tea Leaves Disease Multi Class Classification using MobileNet-V2",
-      "source": "2025 Global Conference on Information Technology and Communication Networks Gitcon 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/GITCON65266.2025.11377940",
-      "citations": 0,
-      "eid": "2-s2.0-105035592047",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035592047",
-      "abstract": {}
-    },
-    {
-      "title": "Strain Net-Sparse Multi Attention Residual Transformer Network",
-      "source": "2025 8th International Conference on Circuit Power and Computing Technologies Iccpct 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICCPCT65132.2025.11176722",
-      "citations": 0,
-      "eid": "2-s2.0-105020178063",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105020178063",
-      "abstract": {}
-    },
-    {
-      "title": "Solar-Powered Hand Gesture-Controlled Compact Lawn Mower",
-      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/ICECMSN68058.2025.11383074",
-      "citations": 0,
-      "eid": "2-s2.0-105035478748",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035478748",
-      "abstract": {}
-    },
-    {
-      "title": "Smart Healthcare Systems with IoT-Based used Hunger Games Search Optimization and Deep Learning",
-      "source": "2025 Global Conference on Information Technology and Communication Networks Gitcon 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/GITCON65266.2025.11377492",
-      "citations": 0,
-      "eid": "2-s2.0-105035601672",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035601672",
-      "abstract": {}
-    },
-    {
-      "title": "Early Uterine Cancer Detection Using Ultrasound Images by Different Machine Learning Techniques",
-      "source": "2025 Global Conference on Information Technology and Communication Networks Gitcon 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/GITCON65266.2025.11376852",
-      "citations": 0,
-      "eid": "2-s2.0-105035599225",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035599225",
-      "abstract": {}
-    },
-    {
       "title": "Early Detection of Apraxia of Speech in Children using MATLAB",
       "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
       "date": "2025-01-01",
@@ -82,16 +32,6 @@
       "citations": 0,
       "eid": "2-s2.0-105035501886",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105035501886",
-      "abstract": {}
-    },
-    {
-      "title": "Convolutional Neural Networks for the Identification and Forecasting of Potato Leaf Disease",
-      "source": "2025 6th International Conference for Emerging Technology Incet 2025",
-      "date": "2025-01-01",
-      "doi": "10.1109/INCET64471.2025.11140785",
-      "citations": 0,
-      "eid": "2-s2.0-105016788822",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/105016788822",
       "abstract": {}
     },
     {
@@ -105,6 +45,56 @@
       "abstract": {}
     },
     {
+      "title": "Strain Net-Sparse Multi Attention Residual Transformer Network",
+      "source": "2025 8th International Conference on Circuit Power and Computing Technologies Iccpct 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICCPCT65132.2025.11176722",
+      "citations": 0,
+      "eid": "2-s2.0-105020178063",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105020178063",
+      "abstract": {}
+    },
+    {
+      "title": "Early Uterine Cancer Detection Using Ultrasound Images by Different Machine Learning Techniques",
+      "source": "2025 Global Conference on Information Technology and Communication Networks Gitcon 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/GITCON65266.2025.11376852",
+      "citations": 0,
+      "eid": "2-s2.0-105035599225",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035599225",
+      "abstract": {}
+    },
+    {
+      "title": "Tea Leaves Disease Multi Class Classification using MobileNet-V2",
+      "source": "2025 Global Conference on Information Technology and Communication Networks Gitcon 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/GITCON65266.2025.11377940",
+      "citations": 0,
+      "eid": "2-s2.0-105035592047",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035592047",
+      "abstract": {}
+    },
+    {
+      "title": "Smart Healthcare Systems with IoT-Based used Hunger Games Search Optimization and Deep Learning",
+      "source": "2025 Global Conference on Information Technology and Communication Networks Gitcon 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/GITCON65266.2025.11377492",
+      "citations": 0,
+      "eid": "2-s2.0-105035601672",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035601672",
+      "abstract": {}
+    },
+    {
+      "title": "Solar-Powered Hand Gesture-Controlled Compact Lawn Mower",
+      "source": "Proceedings of 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks Icecmsn 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICECMSN68058.2025.11383074",
+      "citations": 0,
+      "eid": "2-s2.0-105035478748",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105035478748",
+      "abstract": {}
+    },
+    {
       "title": "AI-Based Classification and Detection of Multi Cancer from Histopathology and Microscopic Images using CNN",
       "source": "4th International Conference on Automation Computing and Renewable Systems Icacrs 2025 Proceedings",
       "date": "2025-01-01",
@@ -112,6 +102,16 @@
       "citations": 0,
       "eid": "2-s2.0-105032724322",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105032724322",
+      "abstract": {}
+    },
+    {
+      "title": "Convolutional Neural Networks for the Identification and Forecasting of Potato Leaf Disease",
+      "source": "2025 6th International Conference for Emerging Technology Incet 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/INCET64471.2025.11140785",
+      "citations": 0,
+      "eid": "2-s2.0-105016788822",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105016788822",
       "abstract": {}
     },
     {
@@ -135,13 +135,13 @@
       "abstract": {}
     },
     {
-      "title": "Improved Extreme Learning Machine Based Hunger Games Search for Automatic IP Configuration and Duplicate Node Detection",
-      "source": "Journal of Communications",
+      "title": "Design and Development of Serial Driver Verification Scoreboard Module using UVM",
+      "source": "7th International Conference on Inventive Computation Technologies Icict 2024",
       "date": "2024-01-01",
-      "doi": "10.12720/jcm.19.3.152-160",
-      "citations": 6,
-      "eid": "2-s2.0-85189139812",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85189139812",
+      "doi": "10.1109/ICICT60155.2024.10544523",
+      "citations": 1,
+      "eid": "2-s2.0-85196067155",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85196067155",
       "abstract": {}
     },
     {
@@ -155,16 +155,6 @@
       "abstract": {}
     },
     {
-      "title": "Design and Development of Serial Driver Verification Scoreboard Module using UVM",
-      "source": "7th International Conference on Inventive Computation Technologies Icict 2024",
-      "date": "2024-01-01",
-      "doi": "10.1109/ICICT60155.2024.10544523",
-      "citations": 1,
-      "eid": "2-s2.0-85196067155",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85196067155",
-      "abstract": {}
-    },
-    {
       "title": "An Effective Investigation on Implementation of Different Learning Techniques Used for Heart Disease Prediction",
       "source": "2024 11th International Conference on Reliability Infocom Technologies and Optimization Trends and Future Directions Icrito 2024",
       "date": "2024-01-01",
@@ -175,13 +165,23 @@
       "abstract": {}
     },
     {
-      "title": "TiO2Thick film Gas sensor for Detection H2S Gas Using ANN and Machine Learning Technique",
-      "source": "Iccece 2023 International Conference on Computer Electrical and Communication Engineering",
+      "title": "Improved Extreme Learning Machine Based Hunger Games Search for Automatic IP Configuration and Duplicate Node Detection",
+      "source": "Journal of Communications",
+      "date": "2024-01-01",
+      "doi": "10.12720/jcm.19.3.152-160",
+      "citations": 6,
+      "eid": "2-s2.0-85189139812",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85189139812",
+      "abstract": {}
+    },
+    {
+      "title": "Developing a Smart Wireless Sensor System Using IoT Network Architecture for Precision Agriculture",
+      "source": "Smart Innovation Systems and Technologies",
       "date": "2023-01-01",
-      "doi": "10.1109/ICCECE51049.2023.10085220",
+      "doi": "10.1007/978-981-99-4717-1_48",
       "citations": 1,
-      "eid": "2-s2.0-85153337198",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153337198",
+      "eid": "2-s2.0-85174448749",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85174448749",
       "abstract": {}
     },
     {
@@ -195,13 +195,13 @@
       "abstract": {}
     },
     {
-      "title": "Developing a Smart Wireless Sensor System Using IoT Network Architecture for Precision Agriculture",
-      "source": "Smart Innovation Systems and Technologies",
+      "title": "TiO2Thick film Gas sensor for Detection H2S Gas Using ANN and Machine Learning Technique",
+      "source": "Iccece 2023 International Conference on Computer Electrical and Communication Engineering",
       "date": "2023-01-01",
-      "doi": "10.1007/978-981-99-4717-1_48",
+      "doi": "10.1109/ICCECE51049.2023.10085220",
       "citations": 1,
-      "eid": "2-s2.0-85174448749",
-      "link": "https://api.elsevier.com/content/abstract/scopus_id/85174448749",
+      "eid": "2-s2.0-85153337198",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/85153337198",
       "abstract": {}
     },
     {

@@ -7,21 +7,6 @@
   "publications_file": "publications/Pandiaraj-K.json",
   "sections": [
     {
-      "id": "profile",
-      "title": "Profile",
-      "type": "kv",
-      "items": [
-        {
-          "label": "Name",
-          "value": "Dr. K. Pandiaraj"
-        },
-        {
-          "label": "E-mail",
-          "value": "pandiaraj@klu.ac.in, pandian.raj@gmail.com"
-        }
-      ]
-    },
-    {
       "id": "education",
       "title": "Education",
       "type": "table",

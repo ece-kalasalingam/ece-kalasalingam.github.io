@@ -3,7 +3,7 @@
     {
       "title": "Early cancer biomarker detection using a prism-based multi-resonant Ag/BaTiO₃/BP plasmonic sensor",
       "source": "Scientific Reports",
-      "date": "2026-06-17",
+      "date": "2026-12-01",
       "doi": "10.1038/s41598-026-58593-w",
       "citations": 0,
       "eid": "2-s2.0-105049246010",
@@ -11,7 +11,7 @@
       "abstract": {
         "text": "Abstract Early and precise detection of cancer biomarkers with a ultra low concentration is a critical issue in clinical diagnostics mainly because of limited sensitivity, low selectivity as well as variable workability of the conventional surface plasmon resonance (SPR) biosensors. In order to deal with these drawbacks, this paper suggests a new prism-based, multi-resonant SPR biosensor with an Ag/BaTiO3/Black Phosphorus (BP) heterostructure. The goal is to improve field confinement, responsive refractive index and multiplexing capability to detected cancer biomarkers at an early-stage. The transfer matrix method was used to model the biosensor design and this was confirmed by finite element-based electromagnetic finite element simulations. The main plasmonic coating is Silver, BaTiO3 is a high-permittivity dielectric spacer to stabilize field coupling and the anisotropic BP is the active sensing material. Results of the simulation show an angular sensitivity of 412.14°/RIU and a figure of merit (FOM) of 352.26 RIU − 1 and a perception of 1.06/°, which is better than most state-of-the-art designs. Also, the sensor has multi-resonance behavior, which allows detecting multiple biomarkers with characteristic angular shifts simultaneously, thereby improving the diagnostic reliability and specificity. The paper shows that ferroelectric spacer of BaTiO 3 and 2D BP layer integration results in a synergistic increase in resolution of sensors, environmental stability and spectral sharpness. The characteristics of the sensor also qualify it as a good contender of real-time, label-free, and non-invasive cancer diagnostics. This platform has future application of extending this to the lab-on-chip level, wearable sensors, and AI based spectral classification with widespread biomedical use. In contrast to more traditional Ag–dielectric 2D material SPR designs that require enhancement of a single mode resonance, the presented sensor is based on a prism-based multi-resonant heterostructure using Ag/BaTiO 3 /black phosphorus and allows simultaneous excitation of numerous sharp plasmonic modes. High permittivity BaTiO 3 as a middle-level layer offers a great benefit to enhancing the confining of electromagnetic fields and splitting of the modes to generate ultra-high angular sensitivity and a better figure of merit. The multi-resonant approach offers a paradigm shift in sensing that can be used in multi-purpose plexus of early cancer biomarkers sensing.",
         "source": "crossref",
-        "fetched_at": "2026-09-11T07:10:50+00:00"
+        "fetched_at": "2026-09-12T07:02:19+00:00"
       }
     },
     {

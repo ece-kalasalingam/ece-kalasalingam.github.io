@@ -1,6 +1,20 @@
 {
   "publications": [
     {
+      "title": "Mechanical, morphological and interfacial characterization of peanut shell powder modified milkweed–Aristida hystrix hybrid fiber reinforced epoxy composites",
+      "source": "Rsc Sustainability",
+      "date": "2026-06-11",
+      "doi": "10.1039/d6su00165c",
+      "citations": 0,
+      "eid": "2-s2.0-105038430467",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105038430467",
+      "abstract": {
+        "text": "Milkweed– Aristida hystrix fiber reinforced epoxy composites with peanut shell powder were fabricated and evaluated. Hybridization enhanced mechanical strength, interfacial adhesion, and sustainability for lightweight engineering applications",
+        "source": "crossref",
+        "fetched_at": "2026-09-23T07:36:15+00:00"
+      }
+    },
+    {
       "title": "A Multimodal Medical Image Fusion-Based of Glioma Grading Classification System With Adaptive Dilated ResNet and ResUnet++-Aided Segmentation",
       "source": "Computational Intelligence",
       "date": "2026-02-01",
@@ -11,8 +25,48 @@
       "abstract": {
         "text": "ABSTRACT Gliomas are very common malignant brain lesions with distinct grades that relatively estimate the survival rate in affected persons. Tumor grading and segmentation are significant and common for treatment planning and diagnosis. The approach of glioma grading is highly performed by the imaging models at clinical practice. The accurate glioma grading in the operation time supports the clinicians in estimating the highest excision region. But, it is highly complex for medical experts to estimate the glioma grades alone at the time of operation. Hence, an accurate and rapid tumor tissue diagnosis during the surgery period is essential. Nowadays, deep learning strategies have been utilized for the evaluation of medical images and the diagnosis of diseases. But, the problems of near‐infrared images such as low resolution, noise, and small scale cause the complexity of training a promising model. Multimodal imaging can offer harmonizing data to improve the system performance, yet continuously developing a proper model and employing the multimodal data is complex. Therefore, this work proposes a glioma grading classification approach using multimodal medical images and deep learning. Initially, the necessary multimodal images such as CT and MRI are accumulated from benchmark datasets, and the garnered multimodal images are fused with the help of discrete wavelet transformation (DWT). Further, the fused multimodal image is fed into the tumor segmentation module, where the multilevel attention‐based transformer residual Unet++ (MA‐TRUnet++) technique is supported. Furthermore, the tumor‐segmented images are subjected to the adaptive dilated residual network (ADRNet) module. In this module, at first, the brain tumor is detected and classified as normal and abnormal. If the tumor is malignant, then the same ADRNet technique is employed for classifying the glioma grades. Here, the revised chameleon swarm algorithm (RCSA) is utilized for fine tuning the parameters in ADRNet. Finally, the classified glioma grade is achieved and the performance analysis is conducted for the presented work by comparing it with the baseline approaches to ensure the efficacy of the offered model. The github link of the developed fusion‐based glioma detection model is given in https://github.com/gurusigaamani0/Multimodel‐Medical‐Image‐Fusion/tree/main .",
         "source": "crossref",
-        "fetched_at": "2026-09-22T07:33:25+00:00"
+        "fetched_at": "2026-09-23T07:36:15+00:00"
       }
+    },
+    {
+      "title": "Post-Quantum Cryptography for Next-Generation High-Bandwidth Communication Systems",
+      "source": "Proceedings of the 2026 13th International Conference on Computing for Sustainable Global Development Indiacom 2026",
+      "date": "2026-01-01",
+      "doi": "10.23919/INDIACom70271.2026.11526004",
+      "citations": 0,
+      "eid": "2-s2.0-105041860904",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105041860904",
+      "abstract": {}
+    },
+    {
+      "title": "HEAL Lite: A Smart Wearable Tremor Monitoring and prediction System with AI and Hybrid Storage",
+      "source": "Icdcs 2026 2026 8th International Conference on Devices Circuits and Systems",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICDCS68853.2026.11511068",
+      "citations": 0,
+      "eid": "2-s2.0-105041537846",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105041537846",
+      "abstract": {}
+    },
+    {
+      "title": "Design of an Automatic Fire Extinguisher, Tracking and Emergency Evacuation System for Multi-Storey Buildings",
+      "source": "2026 International Conference on Emerging Technologies and Future Innovations Etfi 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/ETFI68128.2026.11484828",
+      "citations": 0,
+      "eid": "2-s2.0-105040706547",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105040706547",
+      "abstract": {}
+    },
+    {
+      "title": "Design and Integration of Low Power Memory Subsytems in RISC-V cores",
+      "source": "Icdcs 2026 2026 8th International Conference on Devices Circuits and Systems",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICDCS68853.2026.11511162",
+      "citations": 0,
+      "eid": "2-s2.0-105041514170",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105041514170",
+      "abstract": {}
     },
     {
       "title": "Optimizing Brain Tumor Classification with GridSearchCV using Multimodal Image Fusion: A Hyperparameter Tuning Approach",
@@ -62,6 +116,16 @@
       "citations": 0,
       "eid": "2-s2.0-105021397751",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105021397751",
+      "abstract": {}
+    },
+    {
+      "title": "Energy Efficiency Optimization in Smart Buildings Using IoT and Grey Wolf Scheduling",
+      "source": "Proceedings 2025 2nd International Conference on Electronic Circuits and Signaling Technologies Icecst 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICECST66106.2025.11307664",
+      "citations": 0,
+      "eid": "2-s2.0-105032515066",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105032515066",
       "abstract": {}
     },
     {

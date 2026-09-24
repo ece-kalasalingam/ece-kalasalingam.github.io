@@ -1,6 +1,20 @@
 {
   "publications": [
     {
+      "title": "Optimised cascaded CNN for tuberculosis diagnosis: integrating bird swarm algorithm with advanced image segmentation",
+      "source": "Egyptian Journal of Radiology and Nuclear Medicine",
+      "date": "2026-12-01",
+      "doi": "10.1186/s43055-026-01854-5",
+      "citations": 0,
+      "eid": "2-s2.0-105050598470",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105050598470",
+      "abstract": {
+        "text": "Abstract The rising global burden of tuberculosis (TB), specifically in resource-constrained areas, necessitates more reliable and efficient diagnostic solutions. Chest X-ray imaging, while commonly utilised for diagnosis, poses challenges owing to the complexity of TB systems and inconsistencies in the quality of image. This research introduces advanced image processing techniques with deep learning architecture to raise the precision and efficacy of TB prediction utilising chest X-ray. The initial preprocessing stage prepares the chest X-ray, involving resizing to a standard dimension followed by histogram equalisation to enhance image contrast. The improved bilateral filter (IBF) smooths the images with reduction in noise and preservation of edge information. The segmentation step employs an adaptive fuzzy c-means (AFCM) clustering technique for precise segmentation by isolating regions in chest X-ray. The segmented output features are extracted by grey-level co-occurrence matrix (GLCM) which assists in extracting important texture features. Finally classification is performed by bird swarm algorithm (BSA) optimised cascaded convolutional neural network (BSCasNet) for predicting TB. The BSA optimisation technique fine-tunes the cascaded CNN parameters utilising the collective and coordinated behaviour of birds flocking in search of food during migration for achieving more optimal solution. The execution of proposed TB detection system is analysed using the Python platform, and the results indicate that the proposed BSCasNet architecture results in an enhanced accuracy of 99.05% in classifying normal and tuberculosis compared to state-of-the-art approaches.",
+        "source": "crossref",
+        "fetched_at": "2026-09-24T07:28:24+00:00"
+      }
+    },
+    {
       "title": "Deep learning and IoT-based framework for sesame plant identification and weed detection",
       "source": "Scientific Reports",
       "date": "2026-12-01",
@@ -28,11 +42,7 @@
       "citations": 0,
       "eid": "2-s2.0-105029862730",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105029862730",
-      "abstract": {
-        "text": "Lung cancer is a main reason of death globally, and reducing death rates and enhancing treatment results depend heavily on quick identification. However, medical image diagnosis, including Computed Tomography (CT) scans, is difficult and demands a high level of experience. This research proposes a comprehensive and interpretable Computer-Aided Diagnosis (CAD) structure to identify lung cancer from medical images. The workflow initiates with an Adaptive Savitzky-Golay Filter, effectively enhancing image quality by smoothing while preserving critical structural edges. Hierarchical Adaptive Cluster Refinement (HACR) is then used for precise segmentation, adaptively identifying abnormal lung regions with high accuracy. For feature extraction, the proposed system utilizes the Deep Statistical Gray-Level Co-occurrence Matrix (DS-GLCM) approach, which captures deep spatial and statistical texture features essential for distinguishing cancerous tissue. At last stage, classification is performed using a novel Deep Learning (DL) model Crested Porcupine Optimized (CPO) Channel-Attention (CA) InceptionResNet. The CPO algorithm is exploited to tune the CA- InceptionResNet model's hyperparameters. To ensure transparency and reliability in clinical use, Explainable AI (XAI) technique- Local Interpretable Model-Agnostic Explanations (LIME) is used for visual interpretability, highlighting regions in CT images that contribute the most to model forecasts, thus boosting clinician trust and decision-making. The entire framework is implemented in Python, and experimental results on benchmark lung cancer imaging datasets demonstrate its superior performance in terms of performance metrics with an accuracy of 98.18% with sensitivity of 95.94 % and specificity of 99.10%. The combination of advanced DL and explainable AI makes the proposed framework a promising solution for lung cancer diagnosis.",
-        "source": "crossref",
-        "fetched_at": "2026-09-23T07:36:06+00:00"
-      }
+      "abstract": {}
     },
     {
       "title": "Smart Surveillance System for Traffic Rule Enforcement",

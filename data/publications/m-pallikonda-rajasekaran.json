@@ -1,6 +1,16 @@
 {
   "publications": [
     {
+      "title": "Integration of AI-based load forecasting and hybrid metaheuristic optimization for sustainable capacity expansion planning in decarbonized solar energy systems",
+      "source": "Energy Reports",
+      "date": "2026-12-01",
+      "doi": "10.1016/j.egyr.2026.109622",
+      "citations": 0,
+      "eid": "2-s2.0-105047516693",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105047516693",
+      "abstract": {}
+    },
+    {
       "title": "GITIRNet: Ensemble-Based Gastrointestinal Tract Image Retrieval Network Using Deep Classification and Query Expansion with Fusion of Traditional and Deep Features",
       "source": "Sensing and Imaging",
       "date": "2026-12-01",
@@ -21,6 +31,16 @@
       "abstract": {}
     },
     {
+      "title": "Hybrid HOG–ResNet50V2 framework for early autism spectrum disorder detection from facial images",
+      "source": "Array",
+      "date": "2026-09-01",
+      "doi": "10.1016/j.array.2026.100936",
+      "citations": 1,
+      "eid": "2-s2.0-105042568422",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105042568422",
+      "abstract": {}
+    },
+    {
       "title": "A Novel Hybrid Model for Brain Tumor Analysis Using Dual Attention AtroDense U-Net and Auction Optimized LSTM Network",
       "source": "International Journal of Intelligent Systems and Applications",
       "date": "2026-02-01",
@@ -28,11 +48,47 @@
       "citations": 0,
       "eid": "2-s2.0-105030171334",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105030171334",
-      "abstract": {
-        "text": "Timely identification of brain tumors helps improve treatment outcomes and reduces mortality. Accurate and non-invasive diagnostic tools for segmenting and classifying tumor regions in brain MRI scans are crucial for minimizing the need for surgical biopsies. This study builds a deep learning model for tumor segmentation and classification, aiming high accuracy and efficiency. A gaussian bilateral filter is used for noise reduction and to improve MRI image quality. Tumor segmentation is performed using an advanced U-Net model, the Dual Attention AtroDense U-Net (DA-AtroDense U-Net), which integrates dense connections, atrous convolution and attention mechanisms to preserve spatial detail and improve boundary localization. Texture-based radiomic features are subsequently extracted from the segmented tumor region using Kirsch Edge Detector (KED) and Gray-Level Co-occurrence Matrix (GLCM) and refined through feature selection to reduce redundancy using the Cat-and-Mouse Optimization (CMO) algorithm. Tumor classification employs an Auction-Optimized hybrid LSTM Network (AOHLN). Evaluated on BraTS 2019 and 2020 datasets, the developed model achieved a Dice Similarity Coefficient of 0.9907 and a Jaccard Index of 0.9816 for segmentation accuracy and an overall accuracy of 98.99% for classification, highlighting its potential as a dependable and non-invasive diagnostic solution.",
-        "source": "crossref",
-        "fetched_at": "2026-09-24T07:28:11+00:00"
-      }
+      "abstract": {}
+    },
+    {
+      "title": "JEEVA RAKSHAKA 1.0-AI-Driven Vision-Based Drowsiness Detection System for Driver Safety and Accident Prevention",
+      "source": "Lecture Notes in Networks and Systems",
+      "date": "2026-01-01",
+      "doi": "10.1007/978-3-032-19690-3_27",
+      "citations": 0,
+      "eid": "2-s2.0-105039268496",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105039268496",
+      "abstract": {}
+    },
+    {
+      "title": "Intelligent Energy Meter with Predictive Alerts and Security Management",
+      "source": "7th International Conference on Mobile Computing and Sustainable Informatics Icmcsi 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICMCSI67283.2026.11412415",
+      "citations": 0,
+      "eid": "2-s2.0-105034859870",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105034859870",
+      "abstract": {}
+    },
+    {
+      "title": "Improved Health Monitoring R-peak Detection in Long-term ECG Signal: Leveraging Hybrid Linearization and LSTM with Grey Wolf Optimization",
+      "source": "Recent Advances in Electrical and Electronic Engineering",
+      "date": "2026-01-01",
+      "doi": "10.2174/0123520965377041250514070741",
+      "citations": 1,
+      "eid": "2-s2.0-105036703114",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105036703114",
+      "abstract": {}
+    },
+    {
+      "title": "FusionNet: Multi-contrast MRI Fusion and Deep Learning for Automated Segmentation and Analysis of Wrist Ganglion Cysts",
+      "source": "Information Systems Engineering and Management",
+      "date": "2026-01-01",
+      "doi": "10.1007/978-3-032-20735-7_2",
+      "citations": 0,
+      "eid": "2-s2.0-105046071276",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105046071276",
+      "abstract": {}
     },
     {
       "title": "Deep learning-based prediction of cognitive shifts induced by infinity walks using an optimized convolutional LSTM model",
@@ -42,6 +98,36 @@
       "citations": 0,
       "eid": "2-s2.0-105023323077",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105023323077",
+      "abstract": {}
+    },
+    {
+      "title": "Blockchain Associated Machine Learning Approach for Earlier Prognosis and Preclusion of Osteoporosis in Elderly",
+      "source": "Healthcare 5 0 AI Driven Workspace in Sustainable Telehealth",
+      "date": "2026-01-01",
+      "doi": "10.1007/978-3-032-09582-4_13",
+      "citations": 0,
+      "eid": "2-s2.0-105032051143",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105032051143",
+      "abstract": {}
+    },
+    {
+      "title": "Automated Quality Inspection in Robotic Assembly Lines Using Logistic Regression and Deep Feature",
+      "source": "Conference Proceedings 1st International Conference on Advancing Sustainable Solutions Through Technologies Icasst 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICASST68917.2026.11484371",
+      "citations": 0,
+      "eid": "2-s2.0-105038456477",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105038456477",
+      "abstract": {}
+    },
+    {
+      "title": "An Innovative Multiscale Convoluted Variational Autoencoder Model for Social Media Network Recommendation for User Data Handling in Online Platforms",
+      "source": "IEEE International Conference on Intelligent Systems Smart and Green Technologies Harnessing Generative AI to Foster Innovation in Energy Education and Healthcare for Achieving the Sdgs Icissgt 2026",
+      "date": "2026-01-01",
+      "doi": "10.1109/ICISSGT67741.2026.11483730",
+      "citations": 0,
+      "eid": "2-s2.0-105040676991",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105040676991",
       "abstract": {}
     },
     {
@@ -155,6 +241,16 @@
       "abstract": {}
     },
     {
+      "title": "Recent Advancements in Automated Detection and Grade Classification of Ankle Osteoarthritis on Clinical Images",
+      "source": "2025 3rd International Conference on Sustainable Computing and Smart Systems Icscss 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICSCSS64956.2025.11500659",
+      "citations": 0,
+      "eid": "2-s2.0-105041158368",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105041158368",
+      "abstract": {}
+    },
+    {
       "title": "Estimation of Bone Degeneration and Porosity Using T-Score from DXA Images for Osteoporotic Patient Classification and Therapy Ideation",
       "source": "Signals and Communication Technology",
       "date": "2025-01-01",
@@ -232,6 +328,26 @@
       "citations": 0,
       "eid": "2-s2.0-105021760976",
       "link": "https://api.elsevier.com/content/abstract/scopus_id/105021760976",
+      "abstract": {}
+    },
+    {
+      "title": "Deep Learning Approaches for Diabetic Foot Ulcer Diagnosis and Classification Across Various Imaging Modalities",
+      "source": "Proceedings of International Conference on Sustainable Communication Networks and Application Icscn 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICSCN67106.2025.11308289",
+      "citations": 0,
+      "eid": "2-s2.0-105032721457",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105032721457",
+      "abstract": {}
+    },
+    {
+      "title": "Data-Driven Machine Learning Framework for Early and Non-Invasive Kidney Stone Detection",
+      "source": "2025 3rd International Conference on Sustainable Computing and Smart Systems Icscss 2025",
+      "date": "2025-01-01",
+      "doi": "10.1109/ICSCSS64956.2025.11500903",
+      "citations": 0,
+      "eid": "2-s2.0-105040955305",
+      "link": "https://api.elsevier.com/content/abstract/scopus_id/105040955305",
       "abstract": {}
     },
     {
